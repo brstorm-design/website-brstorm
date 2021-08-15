@@ -1,0 +1,8 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(5px);
+}
+
