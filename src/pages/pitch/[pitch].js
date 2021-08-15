@@ -2,7 +2,7 @@ import React from 'react';
 import data from '../../../public/content.json';
 import Head from 'next/head';
 import Header from 'src/components/Header';
-import Button from 'src/components/common/Button';
+import ImagePLaceholder from 'src/components/common/ImagePLaceholder';
 
 export default function Pitch(props) {
   const pitch = props.pitch
@@ -19,6 +19,8 @@ export default function Pitch(props) {
         <li>Name: {pitch.name.toUpperCase()}</li>
         <li>ID: {pitch.id}</li>
       </ul>
+
+      
     </>
   )
 }

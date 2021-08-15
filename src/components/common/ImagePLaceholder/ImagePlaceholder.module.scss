@@ -1,0 +1,9 @@
+@import '../../../styles/scss/colors';
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark;
+  border-radius: 2px;
+}
