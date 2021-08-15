@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../../../public/content.json';
 import Head from 'next/head';
 import Header from 'src/components/Header';
+import Button from 'src/components/common/Button';
 
 export default function Pitch(props) {
   const pitch = props.pitch
@@ -13,37 +14,11 @@ export default function Pitch(props) {
       </Head>
 
       <Header />
-      
+
       <ul>
         <li>Name: {pitch.name.toUpperCase()}</li>
         <li>ID: {pitch.id}</li>
       </ul>
-
-      <section>
-        <div className="square1" />
-        <div className="square2" />
-        <div className="square3" />
-      </section>
-
-      <style jsx>{`
-        section {
-          display: flex;
-        }
-        div {
-          height: 100px;
-          width: 100px;
-          margin-right: 20px;
-        }
-        .square1 {
-          background-color: red;
-        }
-        .square2 {
-          background-color: green;
-        }
-        .square3 {
-          background-color: blue;
-        }
-      `}</style>
     </>
   )
 }

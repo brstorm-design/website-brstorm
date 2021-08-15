@@ -1,27 +1,56 @@
 /* Ripple effect */
-.ripple {
+/* .button {
   background-position: center;
   transition: background 0.8s;
-}
-.ripple:hover {
-  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-}
-.ripple:active {
-  background-color: #6eb9f7;
-  background-size: 100%;
-  transition: background 0s;
-}
-
-/* Button style */
-button {
-  border: none;
+  border: 1px solid #fff;
   border-radius: 2px;
-  padding: 12px 18px;
-  font-size: 16px;
-  text-transform: uppercase;
+  padding: 0 16px;
   cursor: pointer;
-  color: white;
-  background-color: #2196f3;
+  color: #000;
+  background-color: #fff;
   box-shadow: 0 0 4px #999;
   outline: none;
+
+  &:hover {
+    background: #000 radial-gradient(circle, transparent 1%, #000 1%) center/15000%;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #f7f7f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+} */
+
+.button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 0 16px;
+  cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  transition: all 150ms ease;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.small {
+  font-size: 14px;
+  line-height: 20px;
+  height: 32px;
+}
+
+.large {
+  font-size: 16px;
+  line-height: 24px;
+  height: 48px;
 }
