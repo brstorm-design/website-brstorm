@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'ImagePlaceholder.module.scss';
+import styles from './ImagePlaceholder.module.scss';
 import icon from '../../../../public/images/icon-image.svg';
 import Image from 'next/image';
 
