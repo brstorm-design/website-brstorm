@@ -2,7 +2,14 @@
   height: 80px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: saturate(180%) blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
 
+.shrink {
+  height: 65px;
+}
