@@ -1,5 +1,6 @@
 body {
   background-color: $black;
+  color: $lightGray;
   font-family: 'Inter', sans-serif;
 }
 
@@ -61,11 +62,15 @@ strong, .strong {
   font-weight: 600;
 }
 
-a {
+.nav-link {
+  padding: 0 !important;
+}
+
+a:not(.btn) {
   text-decoration: none;
-  color: $gray;
+  color: $gray !important;
   transition: all 250ms ease;
   &:hover {
-    color: $white;
+    color: $white !important;
   }
 }
