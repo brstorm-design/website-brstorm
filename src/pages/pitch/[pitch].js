@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from 'src/components/Header';
 import ImagePLaceholder from 'src/components/common/ImagePLaceholder';
 import Hero from 'src/components/pitch/Hero';
+import Cover from 'src/components/pitch/Cover';
 
 export default function Pitch(props) {
   const pitch = props.pitch
@@ -21,6 +22,7 @@ export default function Pitch(props) {
         <li>ID: {pitch.id}</li>
       </ul> */}
 
+      <Cover />
       <Hero />
     </>
   )
