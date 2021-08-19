@@ -7,18 +7,19 @@ export default function Header() {
 
   useEffect(() => {
     const header = document.querySelector('header');
+    console.log(header);
     window.onscroll = () => {
       if (window.pageYOffset > 24) {
-        header.classNameList.add(styles.shrink);
+        header.classList.add(styles.shrink);
       }
       else {
-        header.classNameList.remove(styles.shrink);
+        header.classList.remove(styles.shrink);
       }
     }
   }, [])
 
   return (
-    <header classNameName={styles.header}>
+    <header className={styles.header}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <Link href="/">
@@ -48,7 +49,7 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <a href="#" classNameName="btn small">Book a Meeting</a>
+          <a href="#" className="btn small">Book a Meeting</a>
         </div>
       </nav>
     </header>

@@ -3,6 +3,7 @@ import data from '../../../public/content.json';
 import Head from 'next/head';
 import Header from 'src/components/Header';
 import ImagePLaceholder from 'src/components/common/ImagePLaceholder';
+import Hero from 'src/components/pitch/Hero';
 
 export default function Pitch(props) {
   const pitch = props.pitch
@@ -15,12 +16,12 @@ export default function Pitch(props) {
 
       <Header />
 
-      <ul>
+      {/* <ul>
         <li>Name: {pitch.name.toUpperCase()}</li>
         <li>ID: {pitch.id}</li>
-      </ul>
+      </ul> */}
 
-      
+      <Hero />
     </>
   )
 }

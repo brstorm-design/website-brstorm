@@ -1,22 +1,19 @@
+@import './colors';
+
 .btn {
-  border: 1px solid #fff;
-  background-color: #fff;
+  border: 1px solid $white;
+  background-color: $white;
   border-radius: 2px;
   padding: 0 16px;
   cursor: pointer;
   color: #000;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 14px;
   line-height: 20px;
   height: 40px;
   transform: none;
   transition: all 150ms ease;
-
-  &:hover {
-    background-color: #000;
-    color: #fff;
-  }
 
   &.small {
     font-size: 14px;
@@ -30,5 +27,18 @@
     line-height: 24px;
     height: 48px;
     padding: 0 18px;
+  }
+
+  &.ghost {
+    border-color: $ghost;
+    color: $ghost;
+    background-color: transparent;
+  }
+    
+
+  &:hover {
+    background-color: transparent;
+    color: $white;
+    border-color: $white;
   }
 }
