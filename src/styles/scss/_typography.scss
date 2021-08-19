@@ -1,3 +1,5 @@
+@import 'colors';
+
 body {
   background-color: $black;
   color: $lightGray;
@@ -57,6 +59,7 @@ p, span {
 
 strong, .strong {
   font-weight: 600;
+  color: $white;
 }
 
 .nav-link {

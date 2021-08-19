@@ -33,6 +33,13 @@
     border-color: $ghost;
     color: $ghost;
     background-color: transparent;
+
+    svg {
+      margin-left: 8px;
+    }
+    &:hover path {
+      fill: $white;
+    }
   }
     
 

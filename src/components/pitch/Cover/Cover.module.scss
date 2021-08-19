@@ -55,13 +55,4 @@
     margin-top: 25px;
     margin-bottom: 50px;
   }
-
-  a {
-    svg {
-    margin-left: 8px;
-    }
-    &:hover path {
-      fill: $white;
-    }
-  }
 }

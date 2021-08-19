@@ -5,6 +5,7 @@ import Header from 'src/components/Header';
 import ImagePLaceholder from 'src/components/common/ImagePLaceholder';
 import Hero from 'src/components/pitch/Hero';
 import Cover from 'src/components/pitch/Cover';
+import Purpose from 'src/components/pitch/Purpose';
 
 export default function Pitch(props) {
   const pitch = props.pitch
@@ -24,6 +25,7 @@ export default function Pitch(props) {
 
       <Cover />
       <Hero />
+      <Purpose />
     </>
   )
 }
