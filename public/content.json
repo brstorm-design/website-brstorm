@@ -1,4 +1,144 @@
 {
+  "cover": {
+    "title": "Let your brand speak for you!",
+    "subtitle": "Your customer's first contact with you is your brand."
+  },
+
+  "hero": {
+    "body": "We prepared a brief presentation for you to better know us and the solutions we provide. If you are interested, let’s schedule a meeting to talk more."
+  },
+
+  "services": {
+    "branding": {
+      "title": "Branding",
+      "subtitle": "Your brand goes beyond the visual!",
+      "body": "It’s not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand.",
+      "items": [
+        {
+          "name": "Logo Design",
+          "description": "Symbol and Type Design Variations"
+        },
+        {
+          "name": "Visual Identity",
+          "description": "Color Scheme, Typography, Patterns, and More"
+        },
+        {
+          "name": "Brandbook",
+          "description": "Instructions for Brand Applications"
+        },
+        {
+          "name": "Brand Collaterals",
+          "description": "Stationery, Packaging, Signage, and Any Other Materials You Might Need"
+        }
+      ]
+    },
+    "webDesign": {
+      "title": "Web Design",
+      "subtitle": "What is not registered is not remembered!",
+      "body": "Where people can learn more about your company's history, values, or even about your products and services. What big business you know doesn't have a website? You need one too, and we can help you with that.",
+      "items": [
+        {
+          "name": "Website",
+          "description": "Responsive Design for Desktop and Mobile Devices"
+        },
+        {
+          "name": "Blogs",
+          "description": "Made for Content Creation with our Management System Integration"
+        },
+        {
+          "name": "Landing Pages",
+          "description": "Focus on Marketing or Advertising Campaign"
+        },
+        {
+          "name": "E-commerce",
+          "description": "Web Store for Selling Products and Services"
+        }
+      ]
+    }
+  },
+
+  "potifolio": {
+    "topLeft": "/images/portifolio/ph-top-left.svg",
+    "topRight": "/images/portifolio/ph-top-right.svg",
+    "bottomLeft": "/images/portifolio/ph-bottom-left.svg",
+    "bottomRight": "/images/portifolio/ph-bottom-right.svg",
+    "small": "/images/portifolio/ph-small.svg"
+  },
+
+  "testimonials": [
+    {
+      "body": "Highly refined sense of design and aesthetics; Very passionate individual who puts in a lot of thought to his work; Detail oriented; Good communication and understands requirements; Patient and cooperative; Takes feedback well. We recruited us for our second project already!",
+      "author": "Paras Mehta",
+      "company": "Casting Bell",
+      "photo": "/"
+    },
+    {
+      "body": "Them delivered a logo that met and exceeded our expectations, the first go. The logo presented to us was simple (in the best way possible), bold, and captured who we are as a company. We could not be any happier and would gladly work with Br.Storm again!",
+      "author": "Michael Smith",
+      "company": "New Age Constructions",
+      "photo": "/"
+    },
+    {
+      "body": "The best designers I’ve ever worked with, they know a lot about visual identity and took care of every detail so that the result turned out unique as I wanted.",
+      "author": "Willian Medeiros",
+      "company": "Chibum Game Studio",
+      "photo": "/"
+    },
+    {
+      "body": "We've spent a lot of time looking for the perfect logo. His process really helped bring out the soul of our logo, but it was the execution that really blew us away. If you've been searching as we have, stop-the journey ends here. Highly highly recommended.",
+      "author": "Jarrod Milford",
+      "company": "Maptrack",
+      "photo": "/"
+    },
+    {
+      "body": "Kelvin is one of the best branding specialists I've worked with and will definitely come again. Thanks!",
+      "author": "Hazem Alshakr",
+      "company": "Rivana",
+      "photo": "/"
+    }
+  ],
+
+  "whyUs": [
+    {
+      "title": "Autonomy and Freedom",
+      "body": "Whether in web design or branding projects, we provide tools that allow you to use the project without the need for an expert.",
+      "image": "/images/whyUs/icon.svg"
+    },
+    {
+      "title": "Premium Support",
+      "body": "You will never be helpless, we provide our phone number and you can contact us whenever you need.",
+      "image": "/images/whyUs/icon.svg"
+    },
+    {
+      "title": "Tailor-made for your Business",
+      "body": "Exclusive design, made especially for your business.",
+      "image": "/images/whyUs/icon.svg"
+    },
+    {
+      "title": "Perfect Delivery",
+      "body": "Unlimited revisions, we will adjust whatever it takes so that the project delivery turns out perfect.",
+      "image": "/images/whyUs/icon.svg"
+    }
+  ],
+
+  "socials": [
+    {
+      "name": "Instagram",
+      "href": "https://instagram.com/brstorm.design",
+      "icon": "/images/socials/instagram.svg"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://instagram.com/brstorm.design",
+      "icon": "/images/socials/instagram.svg"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://instagram.com/brstorm.design",
+      "icon": "/images/socials/instagram.svg"
+    }
+  ],
+
   "clients": [
     {
       "name": "zezinho",
