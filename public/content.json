@@ -57,13 +57,28 @@
     }
   },
 
-  "potifolio": {
-    "topLeft": "/images/portifolio/ph-top-left.svg",
-    "topRight": "/images/portifolio/ph-top-right.svg",
-    "bottomLeft": "/images/portifolio/ph-bottom-left.svg",
-    "bottomRight": "/images/portifolio/ph-bottom-right.svg",
-    "small": "/images/portifolio/ph-small.svg"
-  },
+  "portifolio": [
+    {
+      "cover": "/images/portifolio/ph-top-left.svg",
+      "size": "6"
+    },
+    {
+      "cover": "/images/portifolio/ph-top-right.svg",
+      "size": "6"
+    },
+    {
+      "cover": "/images/portifolio/ph-bottom-left.svg",
+      "size": "6"
+    },
+    {
+      "cover": "/images/portifolio/ph-bottom-right.svg",
+      "size": "6"
+    },
+    {
+      "cover": "/images/portifolio/ph-small.svg",
+      "size": "3"
+    }
+  ],
 
   "testimonials": [
     {

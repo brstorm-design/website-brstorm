@@ -7,14 +7,14 @@ import Hero from 'src/components/pitch/Hero';
 import Cover from 'src/components/pitch/Cover';
 import Purpose from 'src/components/pitch/Purpose';
 import WhatWeDo from 'src/components/pitch/WhatWeDo';
+import Projects from 'src/components/pitch/Projects';
 
 export default function Pitch(props) {
-  const pitch = props.pitch
 
   return (
     <>
       <Head>
-        <title>{pitch.name}</title>
+        <title>Pitch</title>
       </Head>
 
       <Header />
@@ -28,6 +28,7 @@ export default function Pitch(props) {
       <Hero />
       <Purpose />
       <WhatWeDo />
+      <Projects content={props.portifolio} />
     </>
   )
 }
@@ -39,17 +40,17 @@ export async function getStaticPaths() {
   return { paths, fallback: false }
 }
 
-export async function getStaticProps({ params }) {
+/* export async function getStaticProps({ params }) {
   const pitchSlug = params.pitch.split('-');
   const [pitchClient, pitchID] = pitchSlug;
   const pitch = data.clients.find(client => client.id === pitchID);
   return {
     props: { pitch }
   }
-}
+} */
 
-/* export async function getStaticProps() {
+export async function getStaticProps() {
   return {
     props: data
   }
-} */
+}

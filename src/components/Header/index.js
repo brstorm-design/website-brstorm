@@ -7,7 +7,6 @@ export default function Header() {
 
   useEffect(() => {
     const header = document.querySelector('header');
-    console.log(header);
     window.onscroll = () => {
       if (window.pageYOffset > 24) {
         header.classList.add(styles.shrink);
