@@ -46,6 +46,7 @@ h6 { // xs
 small, .small {
   font-size: 14px;
   line-height: 21px;
+  color: $gray;
 }
 
 p, span, strong {
@@ -70,7 +71,15 @@ a:not(.btn) {
   text-decoration: none;
   color: $gray !important;
   transition: all 250ms ease;
+
+  path {
+    transition: all 250ms ease;
+  }
+
   &:hover {
     color: $white !important;
+    path {
+      fill: $white;
+    }
   }
 }

@@ -1,0 +1,45 @@
+@import '../../../styles/scss/colors';
+
+.section {
+  padding-top: 250px;
+
+  article {
+    &:last-child {
+      margin-top: 150px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+    h4 {
+      margin-bottom: 30px;
+    }
+    div {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    a {
+      color: $ghost !important;
+      svg {
+        margin-left: 5px;
+        path {
+          color: $ghost;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  h2 {
+    color: $gray;
+  }
+  h1 {
+    margin-bottom: 50px;
+  }
+}
+
+.img {
+  position: sticky;
+  top: 150px;
+}
