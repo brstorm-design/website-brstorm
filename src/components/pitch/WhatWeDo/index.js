@@ -18,7 +18,7 @@ export default function WhatWeDo() {
               <h2>Branding</h2>
               <h4>Your Brand goes beyond the visual!</h4>
               <p>
-                It’s not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand. <strong>Here’s what we offer</strong>:
+                It's not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand. <strong>Here’s what we offer</strong>:
               </p>
               <div>
                 <strong>Logo Design</strong>

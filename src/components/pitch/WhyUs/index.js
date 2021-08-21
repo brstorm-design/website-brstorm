@@ -11,9 +11,9 @@ export default function WhyUs({ content }) {
       <div className="container">
         <div className="row">
           {
-            content.map(item => {
+            content.map((item, index) => {
               return (
-                <div className="col-12 col-lg-3">
+                <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>
                     <img src={item.image} alt="" />
                     <h5>{item.title}</h5>

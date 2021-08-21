@@ -22,9 +22,9 @@ export default function Projects({ content }) {
         </div>
         <div className="row gy-4">
           {
-            content.map(item => {
+            content.map((item, index) => {
               return (
-                <div className={`col-12 col-lg-${item.size} ${styles.projects}`}>
+                <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
                   <img src={item.cover} alt="Project" />
                 </div>
               )

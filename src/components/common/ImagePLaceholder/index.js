@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function ImagePlaceholder({ width, height }) {
   return (
     <div className={styles.image} style={{width: width + 'px', height: height + 'px'}}>
-      <Image src={icon} />
+      <Image src={icon} alt="" />
     </div>
   )
 }

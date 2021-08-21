@@ -34,9 +34,9 @@ export default function Testimonials({ content }) {
         </div>
         <Swiper spaceBetween={24} slidesPerView={'auto'}>
           {
-            content.map(item => {
+            content.map((item, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={`testim-${index}`}>
                   <div className={styles.testimonial}>
                     <img src="/images/testimonials/quotation.svg" alt="" />
                     <small>{item.body}</small>

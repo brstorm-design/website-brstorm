@@ -15,9 +15,9 @@ export default function Footer({content}) {
             <small>Copyright © 2021 – Br.Storm Design</small>
             <div className={styles.socials}>
               {
-                content.map(item => {
+                content.map((item, index) => {
                   return (
-                    <a title={item.name} href={item.href} rel="noopener noreferrer" target="_blank">
+                    <a key={`social-${index}`} title={item.name} href={item.href} rel="noopener noreferrer" target="_blank">
                       <img src={item.icon} alt="" />
                     </a>
                   )
