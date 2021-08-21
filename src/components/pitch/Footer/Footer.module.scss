@@ -1,0 +1,34 @@
+@import '../../../styles/scss/colors';
+
+.section {
+  margin-top: 125px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+  border-top: 1px solid $ghost;
+
+  small {
+    color: $ghost;
+  }
+
+  & > a:last-child {
+    cursor: pointer;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  & > a:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

@@ -143,14 +143,14 @@
       "icon": "/images/socials/instagram.svg"
     },
     {
-      "name": "Instagram",
-      "href": "https://instagram.com/brstorm.design",
-      "icon": "/images/socials/instagram.svg"
+      "name": "Behance",
+      "href": "#",
+      "icon": "/images/socials/behance.svg"
     },
     {
-      "name": "Instagram",
-      "href": "https://instagram.com/brstorm.design",
-      "icon": "/images/socials/instagram.svg"
+      "name": "Dribbble",
+      "href": "#",
+      "icon": "/images/socials/dribbble.svg"
     }
   ],
 
