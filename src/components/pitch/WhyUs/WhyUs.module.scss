@@ -1,0 +1,32 @@
+@import '../../../styles/scss/colors';
+
+.section {
+  margin-top: 175px;
+  padding-bottom: 275px;
+  background-color: $dark;
+}
+
+.title {
+  padding-top: 125px;
+  padding-bottom: 75px;
+
+  h1 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.card {
+  padding: 40px 25px;
+  height: 270px;
+  background-color: $black;
+
+  h5 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
