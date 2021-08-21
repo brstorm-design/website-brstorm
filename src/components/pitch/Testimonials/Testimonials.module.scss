@@ -1,0 +1,87 @@
+@import '../../../styles/scss/colors';
+
+.section {
+  margin-top: 200px;
+
+  :global {
+    .swiper-container {
+      overflow: initial;
+      margin-left: 16.66666667% !important;
+    }
+    .swiper-slide {
+      width: 395px !important;
+    }
+  }
+}
+
+.titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: $dark;
+    color: $ghost;
+    border: 0;
+    transition: all 250ms ease;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $dark;
+    }
+  }
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: grab;
+  padding: 35px 30px;
+  background-color: $dark;
+  height: 350px;
+
+  img {
+    width: 17px;
+    height: 14px;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  small {
+    display: inline-block;
+  }
+
+  & > div:last-child {
+    display: flex;
+    align-items: center;
+    
+    strong {
+      font-weight: 500;
+      color: $lightGray;
+      display: inline-block;
+    }
+
+    div {
+      color: $gray;
+    }
+
+    img {
+      margin-right: 15px;
+      height: 35px;
+      width: 35px;
+    }
+  }
+}

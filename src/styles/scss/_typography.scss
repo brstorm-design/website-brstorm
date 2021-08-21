@@ -5,6 +5,7 @@ body {
   color: $lightGray;
   font-family: 'Inter', sans-serif;
   margin-top: 80px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,6 +62,11 @@ p, span {
 strong, .strong {
   font-weight: 600;
   color: $white;
+}
+
+.details {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .nav-link {

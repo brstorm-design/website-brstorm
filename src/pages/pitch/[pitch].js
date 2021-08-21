@@ -8,6 +8,7 @@ import Cover from 'src/components/pitch/Cover';
 import Purpose from 'src/components/pitch/Purpose';
 import WhatWeDo from 'src/components/pitch/WhatWeDo';
 import Projects from 'src/components/pitch/Projects';
+import Testimonials from 'src/components/pitch/Testimonials';
 
 export default function Pitch(props) {
 
@@ -29,6 +30,7 @@ export default function Pitch(props) {
       <Purpose />
       <WhatWeDo />
       <Projects content={props.portifolio} />
+      <Testimonials content={props.testimonials} />
     </>
   )
 }
