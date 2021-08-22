@@ -6,7 +6,7 @@ export default function WhatWeDo() {
     <section className={styles.section}>
       <div className="container">
         <div className={styles.title}>
-          <h2>Don't know where to start?</h2>
+          <h3>Don't know where to start?</h3>
           <h1>We're here to help!</h1>
         </div>
         <div className="row">
@@ -21,23 +21,19 @@ export default function WhatWeDo() {
                 It's not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand. <strong>Here’s what we offer</strong>:
               </p>
               <div>
-                <strong>Logo Design</strong>
-                <br />
+                <h5>Logo Design</h5>
                 <small>Symbol and Type Design Variations</small>
               </div>
               <div>
-                <strong>Visual Identity</strong>
-                <br />
+                <h5>Visual Identity</h5>
                 <small>Color Scheme, Typography, Patterns, and More</small>
               </div>
               <div>
-                <strong>Brandbook</strong>
-                <br />
+                <h5>Brandbook</h5>
                 <small>Instructions for Brand Applications</small>
               </div>
               <div>
-                <strong>Brand Collaterals</strong>
-                <br />
+                <h5>Brand Collaterals</h5>
                 <small>Stationery, Packaging, Signage, and Any Other Materials You Might Need</small>
               </div>
               <a href="#">
@@ -53,23 +49,19 @@ export default function WhatWeDo() {
                 Where people can learn more about your company's history, values, or even about your products and services. What big business you know doesn't have a website? You need one too, and we can help you with that. <strong>Here’s what we offer</strong>:
               </p>
               <div>
-                <strong>Website</strong>
-                <br />
+                <h5>Website</h5>
                 <small>Responsive Design for Desktop and Mobile Devices</small>
               </div>
               <div>
-                <strong>Blogs</strong>
-                <br />
+                <h5>Blogs</h5>
                 <small>Made for Content Creation with our Management System Integration</small>
               </div>
               <div>
-                <strong>Landing Pages</strong>
-                <br />
+                <h5>Landing Pages</h5>
                 <small>Focus on Marketing or Advertising Campaign</small>
               </div>
               <div>
-                <strong>E-commerce</strong>
-                <br />
+                <h5>E-commerce</h5>
                 <small>Web Store for Selling Products and Services</small>
               </div>
               <a href="#">

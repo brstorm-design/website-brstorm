@@ -8,12 +8,10 @@
       margin-top: 150px;
     }
 
-    h2 {
+    h2, h3, h4 {
       margin-bottom: 30px;
     }
-    h4 {
-      margin-bottom: 30px;
-    }
+
     div {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -31,7 +29,7 @@
 }
 
 .title {
-  h2 {
+  h3 {
     color: $gray;
   }
   h1 {
