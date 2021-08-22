@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mixins';
 
 body {
   background-color: $black;
@@ -44,15 +45,20 @@ h6 { // xs
   line-height: 21px;
 }
 
+p, span, strong {
+  font-size: 16px;
+  line-height: 26px;
+}
+
 small, .small {
   font-size: 14px;
   line-height: 21px;
   color: $gray;
 }
 
-p, span, strong {
-  font-size: 16px;
-  line-height: 26px;
+.details {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 p, span {
@@ -62,11 +68,6 @@ p, span {
 strong, .strong {
   font-weight: 600;
   color: $white;
-}
-
-.details {
-  font-size: 12px;
-  line-height: 18px;
 }
 
 .nav-link {
@@ -87,5 +88,52 @@ a:not(.btn) {
     path {
       fill: $white;
     }
+  }
+}
+
+@include lg() {
+  h1 { // xxl
+    font-size: 32px;
+    line-height: 44px;
+  }
+  
+  h2 { // xl
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  h3 { // lg
+    font-size: 22px;
+    line-height: 32px;
+  }
+  
+  h4 { // md
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  h5 { // sm
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  h6 { // xs
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  p, span, strong {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  small, .small {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  
+  .details {
+    font-size: 10px;
+    line-height: 18px;
   }
 }

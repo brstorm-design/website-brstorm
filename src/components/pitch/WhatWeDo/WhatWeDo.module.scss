@@ -2,6 +2,9 @@
 
 .section {
   padding-top: 250px;
+  & * {
+    overflow-x: unset;
+  }
 
   article {
     &:last-child {
