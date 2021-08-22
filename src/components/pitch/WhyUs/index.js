@@ -9,7 +9,7 @@ export default function WhyUs({ content }) {
         <p>We always strive for the best, in everything <br /> we do we always focus on delivering:</p>
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row gy-4 gy-md-0">
           {
             content.map((item, index) => {
               return (

@@ -1,8 +1,27 @@
+@import '../../../styles/scss/mixins';
+
 .section {
   margin-top: 250px;
 
   article div {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  @include lg {
+    margin-top: 75px;
+  }
+
+  @include md() {
+    article {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
   }
 }

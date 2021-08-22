@@ -6,7 +6,7 @@ export default function Purpose() {
     <section className={styles.section}>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 d-none d-lg-block">
             <img src="/images/img-placeholder-hero.svg" alt="" className="img-fluid" />
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
@@ -27,7 +27,7 @@ export default function Purpose() {
                 </p>
               </div>
               <a className="btn large ghost">
-                See More
+                Contact Us
                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
               </a>
             </article>

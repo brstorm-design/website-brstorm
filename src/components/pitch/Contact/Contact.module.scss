@@ -1,16 +1,36 @@
 @import '../../../styles/scss/colors';
+@import '../../../styles/scss/mixins';
+
+.section {
+  margin-top: -125px;
+  @include md() {
+    margin-top: -50%;
+  }
+}
 
 .contact {
   position: relative;
-  top: -50%;
   height: 250px;
   border-radius: 2px;
   background: rgba(1, 1, 1, 0.5);
   backdrop-filter: blur(5px);
   border: 1px solid rgba($color: $white, $alpha: 0.15);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+
+  @include lg() {
+    height: auto;
+    padding: 50px 40px;
+    h1 {
+      margin-bottom: 50px;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
 
   & > div:last-child {
     a {
@@ -20,6 +40,10 @@
     small {
       display: block;
       text-align: right;
+
+      @include lg {
+        text-align: center;
+      }
     }
   }
 }

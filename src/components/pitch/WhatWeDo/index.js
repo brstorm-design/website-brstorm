@@ -5,13 +5,17 @@ export default function WhatWeDo() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <div className={styles.title}>
+        <div className={`d-none d-lg-block ${styles.title}`}>
           <h3>Don't know where to start?</h3>
           <h1>We're here to help!</h1>
         </div>
         <div className="row">
           <div className="col-12 col-lg-6">
             <img src="/images/img-placeholder-hero.svg" alt="" className={`${styles.img} img-fluid`} />
+            <div className={`d-block d-lg-none ${styles.title}`}>
+              <h3>Don't know where to start?</h3>
+              <h1>We're here to help!</h1>
+            </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1">
             <article>

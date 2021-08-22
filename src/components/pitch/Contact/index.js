@@ -12,7 +12,7 @@ export default function Contact() {
                 <h1>Let's Connect</h1>
                 <p>
                   <strong>What did you think?</strong> If you have any doubts to clear
-                  or <br /> questions to ask, feel free to schedule a meeting with us.
+                  or <br className="d-none d-lg-block" /> questions to ask, feel free to schedule a meeting with us.
                 </p>
               </div>
               <div>

@@ -1,5 +1,7 @@
+@import '../../styles/scss/mixins';
+
 .header {
-  height: 80px;
+  min-height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,4 +26,8 @@
 
 .shrink {
   height: 65px;
+}
+
+@include md() {
+  
 }

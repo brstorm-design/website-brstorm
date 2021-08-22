@@ -1,7 +1,8 @@
 @import '../../../styles/scss/colors';
+@import '../../../styles/scss/mixins';
 
 .section {
-  padding-top: 250px;
+  margin-top: 250px;
   & * {
     overflow-x: unset;
   }
@@ -9,6 +10,9 @@
   article {
     &:last-child {
       margin-top: 150px;
+      @include md() {
+        margin-top: 75px;
+      }
     }
 
     h2, h3, h4 {
@@ -16,8 +20,8 @@
     }
 
     div {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
     a {
       color: $ghost !important;
@@ -26,6 +30,19 @@
         path {
           color: $ghost;
         }
+      }
+    }
+  }
+
+  @include md() {
+    margin-top: 150px;
+
+    article {
+      h2 {
+        margin-bottom: 35px;
+      }
+      h5 {
+        margin-bottom: 0;
       }
     }
   }
@@ -38,9 +55,22 @@
   h1 {
     margin-bottom: 50px;
   }
+
+  @include md() {
+    h3 {
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 75px;
+    }
+  }
 }
 
 .img {
   position: sticky;
   top: 150px;
+
+  @include md() {
+    margin-bottom: 75px;
+  }
 }

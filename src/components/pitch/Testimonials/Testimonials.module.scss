@@ -1,15 +1,23 @@
 @import '../../../styles/scss/colors';
+@import '../../../styles/scss/mixins';
 
 .section {
   margin-top: 200px;
+  overflow-x: hidden;
 
   :global {
     .swiper-container {
       overflow: initial;
       margin-left: 16.66666667% !important;
+      @include md() {
+        margin-left: 0 !important;
+      }
     }
     .swiper-slide {
       width: 395px !important;
+      @include md() {
+        width: 315px !important;
+      }
     }
   }
 }
@@ -20,24 +28,11 @@
   align-items: center;
   margin-bottom: 75px;
 
-  button {
-    display: inline-flex;
+  @include md() {
     justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 30px;
-    background-color: $dark;
-    color: $ghost;
-    border: 0;
-    transition: all 250ms ease;
-
-    &:first-child {
-      margin-right: 10px;
-    }
-
-    &:hover {
-      background-color: $white;
-      color: $dark;
+    margin-bottom: 50px;
+    h1 {
+      white-space: break-spaces;
     }
   }
 }
@@ -82,6 +77,33 @@
       margin-right: 15px;
       height: 35px;
       width: 35px;
+    }
+  }
+
+  @include md() {
+    height: 325px;
+  }
+}
+
+.nav {
+  button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: $dark;
+    color: $ghost;
+    border: 0;
+    transition: all 250ms ease;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $dark;
     }
   }
 }

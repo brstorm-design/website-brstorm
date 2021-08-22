@@ -10,7 +10,7 @@ export default function Projects({ content }) {
           <div className="col-12 col-lg-6 mx-auto">
             <div className={styles.intro}>
               <h4>Projects & Reviews</h4>
-              <h1>Trusted By Many Clients Around the World</h1>
+              <h1>{'Trusted By \nMany Clients \nAround the World'}</h1>
               <p>
                 We are a team with vast experience, having already served clients around
                 the world, always delivering <strong>beautiful and creative results.</strong>
