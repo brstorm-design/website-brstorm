@@ -14,6 +14,10 @@
   backdrop-filter: saturate(180%) blur(5px);
   border-bottom: 1px solid rgba(255, 255, 255, .15);
 
+  @include md() {
+    padding: 0 25px;
+  }
+
   nav {
     width: 100%;
     padding: 0;
@@ -26,8 +30,4 @@
 
 .shrink {
   height: 65px;
-}
-
-@include md() {
-  
 }
