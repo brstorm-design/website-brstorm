@@ -15,3 +15,10 @@ body {
     overflow-x: hidden;
   }
 }
+
+@include sm() {
+  div.col-12 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

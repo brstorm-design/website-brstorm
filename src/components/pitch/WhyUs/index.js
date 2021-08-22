@@ -5,7 +5,7 @@ export default function WhyUs({ content }) {
   return (
     <section className={styles.section}>
       <div className={styles.title}>
-        <h1>Reasons Why Hire Us</h1>
+        <h1 />
         <p>We always strive for the best, in everything <br /> we do we always focus on delivering:</p>
       </div>
       <div className="container">

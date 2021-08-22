@@ -36,7 +36,6 @@
 
   @include md() {
     margin-top: 150px;
-
     article {
       h2 {
         margin-bottom: 35px;
@@ -44,6 +43,12 @@
       h5 {
         margin-bottom: 0;
       }
+    }
+  }
+
+  @include sm() {
+    article {
+      padding: 0 15px;
     }
   }
 }

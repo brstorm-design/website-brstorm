@@ -19,6 +19,11 @@
         width: 315px !important;
       }
     }
+    .container {
+      @include sm() {
+        padding: 0 30px;
+      }
+    }
   }
 }
 
