@@ -1,9 +1,35 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import styles from './Cover.module.scss';
 
 export default function Cover() {
+  useEffect(() => {
+    window.onmousemove = e => {
+      getMousePos(e);
+    }
+
+    return function cleanup() {
+      window.onmousemove = null;
+    }
+  }, [])
+
+  function getMousePos(e) {
+    let relX = (e.pageX * 100) / window.innerWidth;
+    let relY = (e.pageY * 100) / window.innerHeight;
+    let translateX1 = (10 * relX) / 100;
+    let translateY1 = (10 * relY) / 100;
+    let translateX2 = (20 * relX) / 100;
+    let translateY2 = (20 * relY) / 100;
+
+    window.requestAnimationFrame(() => {
+      document.querySelectorAll('#cover-section img').forEach(element => {
+        element.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
+      })
+      document.getElementById('asd').style.transform = `translateX(-${translateX2}px) translateY(-${translateY2}px)`;
+    })
+  }
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="cover-section">
       <div className="container">
 
       <img className={styles.topLeft} src="/images/cover/ph-top-left.svg" alt="" />
@@ -13,7 +39,7 @@ export default function Cover() {
 
         <div className="row">
           <div className="col-12 col-lg-9">
-            <div className={styles.content}>
+            <div className={styles.content} id="asd">
               <h1>Let your brand speak for you!</h1>
               <h4>Your customer's first contact with you is your brand.</h4>
               <a className="btn large ghost">

@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from '../../../public/content.json';
 import Head from 'next/head';
 import Header from 'src/components/Header';
-import ImagePLaceholder from 'src/components/common/ImagePLaceholder';
 import Hero from 'src/components/pitch/Hero';
 import Cover from 'src/components/pitch/Cover';
 import Purpose from 'src/components/pitch/Purpose';
@@ -14,6 +13,10 @@ import Contact from 'src/components/pitch/Contact';
 import Footer from 'src/components/pitch/Footer';
 
 export default function Pitch(props) {
+
+  useEffect(() => {
+    console.log(document);
+  }, [])
 
   return (
     <>

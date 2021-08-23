@@ -25,7 +25,9 @@ export default function Projects({ content }) {
             content.map((item, index) => {
               return (
                 <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
-                  <img src={item.cover} alt="Project" />
+                  <a href="#">
+                    <img src={item.cover} alt="Project" />
+                  </a>
                 </div>
               )
             })
