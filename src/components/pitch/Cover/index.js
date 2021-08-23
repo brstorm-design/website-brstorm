@@ -15,16 +15,16 @@ export default function Cover() {
   function getMousePos(e) {
     let relX = (e.pageX * 100) / window.innerWidth;
     let relY = (e.pageY * 100) / window.innerHeight;
-    let translateX1 = (10 * relX) / 100;
-    let translateY1 = (10 * relY) / 100;
-    let translateX2 = (20 * relX) / 100;
-    let translateY2 = (20 * relY) / 100;
+    let translateX1 = - (((10 * relX) / 100) - 5);
+    let translateY1 = - (((10 * relY) / 100) - 5);
+    let translateX2 = (((20 * relX) / 100) - 10);
+    let translateY2 = (((20 * relY) / 100) - 10);
 
     window.requestAnimationFrame(() => {
       document.querySelectorAll('#cover-section img').forEach(element => {
         element.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
       })
-      document.getElementById('asd').style.transform = `translateX(-${translateX2}px) translateY(-${translateY2}px)`;
+      document.getElementById('asd').style.transform = `translateX(${translateX2}px) translateY(${translateY2}px)`;
     })
   }
 
