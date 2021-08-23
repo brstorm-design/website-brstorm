@@ -1,5 +1,6 @@
 import {React, useEffect} from 'react';
 import styles from './Cover.module.scss';
+import {App} from '../../../modules/App';
 
 export default function Cover() {
   useEffect(() => {
@@ -12,6 +13,9 @@ export default function Cover() {
     }
   }, [])
 
+  let a = new App('cláudio', 'admin', 54);
+  console.log(a);
+
   function getMousePos(e) {
     let relX = (e.pageX * 100) / window.innerWidth;
     let relY = (e.pageY * 100) / window.innerHeight;
@@ -21,7 +25,7 @@ export default function Cover() {
     let translateY2 = (((20 * relY) / 100) - 10);
 
     window.requestAnimationFrame(() => {
-      document.querySelectorAll('#cover-section img').forEach(element => {
+      document.querySelectorAll('#cover img').forEach(element => {
         element.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
       })
       document.getElementById('asd').style.transform = `translateX(${translateX2}px) translateY(${translateY2}px)`;
@@ -29,7 +33,7 @@ export default function Cover() {
   }
 
   return (
-    <section className={styles.section} id="cover-section">
+    <section className={styles.section} id="cover">
       <div className="container">
 
       <img className={styles.topLeft} src="/images/cover/ph-top-left.svg" alt="" />

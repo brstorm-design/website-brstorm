@@ -15,7 +15,7 @@ export default function Testimonials({ content }) {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="testimonials">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-10 offset-lg-2">

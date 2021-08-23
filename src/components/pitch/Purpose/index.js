@@ -3,7 +3,7 @@ import styles from './Purpose.module.scss';
 
 export default function Purpose() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="purpose">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 d-none d-lg-block">

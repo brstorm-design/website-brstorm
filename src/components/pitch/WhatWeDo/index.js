@@ -3,7 +3,7 @@ import styles from './WhatWeDo.module.scss';
 
 export default function WhatWeDo() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="what-we-do">
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
           <h3>Don't know where to start?</h3>

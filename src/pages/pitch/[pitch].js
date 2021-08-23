@@ -15,7 +15,7 @@ import Footer from 'src/components/pitch/Footer';
 export default function Pitch(props) {
 
   useEffect(() => {
-    console.log(document);
+    
   }, [])
 
   return (
@@ -26,11 +26,6 @@ export default function Pitch(props) {
 
       <Header />
 
-      {/* <ul>
-        <li>Name: {pitch.name.toUpperCase()}</li>
-        <li>ID: {pitch.id}</li>
-      </ul> */}
-
       <Cover />
       <Hero />
       <Purpose />
@@ -39,6 +34,7 @@ export default function Pitch(props) {
       <Testimonials content={props.testimonials} />
       <WhyUs content={props.whyUs} />
       <Contact />
+      
       <Footer content={props.socials} />
     </>
   )

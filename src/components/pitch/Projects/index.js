@@ -4,7 +4,7 @@ import styles from './Projects.module.scss';
 export default function Projects({ content }) {
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="projects">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">

@@ -3,7 +3,7 @@ import styles from './Hero.module.scss';
 
 export default function Hero() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="hero">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5 d-flex align-items-center">

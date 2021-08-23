@@ -3,7 +3,7 @@ import styles from './WhyUs.module.scss';
 
 export default function WhyUs({ content }) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="why-us">
       <div className={styles.title}>
         <h1 />
         <p>We always strive for the best, in everything <br /> we do we always focus on delivering:</p>
