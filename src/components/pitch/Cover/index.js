@@ -3,13 +3,26 @@ import styles from './Cover.module.scss';
 
 export default function Cover() {
   useEffect(() => {
-    window.onmousemove = e => {
-      getMousePos(e);
-    }
-
-    return function cleanup() {
+    function cleanup() {
       window.onmousemove = null;
     }
+
+    const observer = new IntersectionObserver(callback);
+    observer.observe(document.getElementById('cover'));
+
+    function callback(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          window.onmousemove = e => {
+            getMousePos(e);
+          }
+        } else {
+          cleanup();
+        }
+      });
+    }
+    
+    return cleanup();
   }, [])
 
   function getMousePos(e) {
