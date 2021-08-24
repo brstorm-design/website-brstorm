@@ -36,7 +36,6 @@ export default function WhatWeDo() {
   useEffect(() => {
     if (animations && animations.length > 3) {
       handleIntersection(Array.from(element.current.children), animations);
-      console.log(animations);
     }
   }, [animations])
 
@@ -56,7 +55,7 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1" ref={element}>
-            <article>
+            <article id="art1">
               <h2>Branding</h2>
               <h4>Your Brand goes beyond the visual!</h4>
               <p>
@@ -84,7 +83,7 @@ export default function WhatWeDo() {
               </a>
             </article>
 
-            <article>
+            <article id="art2">
               <h2>Web Design</h2>
               <h4>What is not registered is not remembered!</h4>
               <p>

@@ -35,7 +35,7 @@ export function handleIntersection(targets, animations) {
       if (entry.isIntersecting) {
         animations.forEach(animatable => {
           animatable.forEach(animation => {
-            if (animation.playState !== 'finished') {
+            if (animation.playState !== 'finished' && animation.effect.target.parentElement.id === entry.target.id) {
               animation.play()
             }
           })
