@@ -1,7 +1,35 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Purpose.module.scss';
 
 export default function Purpose() {
+  const element = useRef(null);
+  const refs = [element.current];
+  const [animations, setAnimations] = useState(null);
+
+  useEffect(() => {
+    let targets = Array.from(element.current.children);
+    let opt = {
+      duration: 1200,
+      easing: 'ease',
+      fill: 'both',
+      delay: 0
+    };
+    let keyframes = {
+      opacity: [0, 1],
+      transform: ['translateY(-50px)', 'initial']
+    };
+
+    let textAnimation = constructSequentialAnimation(targets, keyframes, opt, 600)
+    setAnimations([textAnimation]);
+  }, [])
+
+  useEffect(() => {
+    if (animations) {
+      handleIntersection(refs, animations);
+    }
+  }, [animations])
+
   return (
     <section className={styles.section} id="purpose">
       <div className="container">
@@ -10,7 +38,7 @@ export default function Purpose() {
             <img src="/images/img-placeholder-hero.svg" alt="" className="img-fluid" />
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
-            <article>
+            <article ref={element}>
               <h2>What is Our Purpose</h2>
               <div>
                 <p>

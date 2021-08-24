@@ -22,11 +22,11 @@ export default function Hero() {
       transform: ['translateY(+100px)', 'initial']
     };
 
-    let asd = constructSequentialAnimation(target1, keyframes, opt, 200);
+    let textAnimation = constructSequentialAnimation(target1, keyframes, opt, 200);
     opt.delay += opt.duration;
-    let asd2 = constructSequentialAnimation(target2, keyframes, opt, 250);
+    let buttonAnimation = constructSequentialAnimation(target2, keyframes, opt, 250);
 
-    setAnimations([asd, asd2]);
+    setAnimations([textAnimation, buttonAnimation]);
   }, [])
 
   useEffect(() => {
