@@ -1,8 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Testimonials.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 
 export default function Testimonials({ content }) {
+  const element = useRef(null);
+  const refs = [element.current];
+  const [animations, setAnimations] = useState(null);
+
+  useEffect(() => {
+    let targets = Array.from(element.current.firstChild.children);
+    console.log(targets);
+    let opt = {
+      duration: 1200,
+      easing: 'cubic-bezier(0.02, 0.62, 0.04, 1.01)',
+      fill: 'backwards',
+      delay: 0
+    };
+    let keyframes = {
+      opacity: [0, 1],
+      transform: ['translateY(+500px)', 'initial']
+    };
+
+    let textAnimation = constructSequentialAnimation(targets, keyframes, opt, 200)
+    setAnimations([textAnimation]);
+  }, [])
+
+  useEffect(() => {
+    if (animations) {
+      handleIntersection(refs, animations);
+    }
+  }, [animations])
 
   function handleClick(e) {
     const swiper = document.querySelector('.swiper-container').swiper;
@@ -32,7 +60,7 @@ export default function Testimonials({ content }) {
             </div>
           </div>
         </div>
-        <Swiper spaceBetween={24} slidesPerView={'auto'}>
+        <Swiper spaceBetween={24} slidesPerView={'auto'} ref={element}>
           {
             content.map((item, index) => {
               return (
