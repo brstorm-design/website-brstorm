@@ -10,7 +10,6 @@ export default function Testimonials({ content }) {
 
   useEffect(() => {
     let targets = Array.from(element.current.firstChild.children);
-    console.log(targets);
     let opt = {
       duration: 1200,
       easing: 'cubic-bezier(0.02, 0.62, 0.04, 1.01)',
