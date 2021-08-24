@@ -1,6 +1,5 @@
 import {React, useEffect} from 'react';
 import styles from './Cover.module.scss';
-import {App} from '../../../modules/App';
 
 export default function Cover() {
   useEffect(() => {
@@ -12,9 +11,6 @@ export default function Cover() {
       window.onmousemove = null;
     }
   }, [])
-
-  let a = new App('cláudio', 'admin', 54);
-  console.log(a);
 
   function getMousePos(e) {
     let relX = (e.pageX * 100) / window.innerWidth;
