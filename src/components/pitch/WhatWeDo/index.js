@@ -1,7 +1,45 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './WhatWeDo.module.scss';
 
 export default function WhatWeDo() {
+  const element = useRef(null);
+  const refs = [element.current];
+  const [animations, setAnimations] = useState([]);
+
+  useEffect(() => {
+    let articles = Array.from(element.current.children);
+    articles.forEach(art => {
+      let target1 = Array.from(art.children).slice(0, 3);
+      let target2 = Array.from(art.children).slice(3);
+
+      let opt = {
+        duration: 800,
+        easing: 'cubic-bezier(0.02, 0.62, 0.04, 1.01)',
+        fill: 'both',
+        delay: 0
+      };
+      let keyframes = {
+        opacity: [0, 1],
+        transform: ['translateY(+100px)', 'initial']
+      };
+
+      let introAnimation = constructSequentialAnimation(target1, keyframes, opt, 200);
+      opt.delay += opt.duration;
+      keyframes.transform = ['translateX(+150px)', 'initial']
+      let listAnimation = constructSequentialAnimation(target2, keyframes, opt, 200);
+
+      setAnimations(oldArrray => [...oldArrray, introAnimation, listAnimation]);
+    })
+  }, [])
+
+  useEffect(() => {
+    if (animations && animations.length > 3) {
+      handleIntersection(Array.from(element.current.children), animations);
+      console.log(animations);
+    }
+  }, [animations])
+
   return (
     <section className={styles.section} id="what-we-do">
       <div className="container">
@@ -17,7 +55,7 @@ export default function WhatWeDo() {
               <h1>We're here to help!</h1>
             </div>
           </div>
-          <div className="col-12 col-lg-5 offset-lg-1">
+          <div className="col-12 col-lg-5 offset-lg-1" ref={element}>
             <article>
               <h2>Branding</h2>
               <h4>Your Brand goes beyond the visual!</h4>

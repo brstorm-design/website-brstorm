@@ -30,7 +30,7 @@ export function constructAnimation(target, keyframes, options) {
 // // // //
 
 export function handleIntersection(targets, animations) {
-  function callback(entries, observer) {
+  function callback(entries) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         animations.forEach(animatable => {
