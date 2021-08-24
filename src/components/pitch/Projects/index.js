@@ -1,14 +1,41 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Projects.module.scss';
 
 export default function Projects({ content }) {
+  const element = useRef(null);
+  const refs = [element.current];
+  const [animations, setAnimations] = useState(null);
+
+  useEffect(() => {
+    let targets = Array.from(element.current.children);
+    let opt = {
+      duration: 1200,
+      easing: 'cubic-bezier(0.27, 0.6, 0.12, 1.02)',
+      fill: 'both',
+      delay: 0
+    };
+    let keyframes = {
+      opacity: [0, 1],
+      transform: ['translateY(+500px)', 'initial']
+    };
+
+    let textAnimation = constructSequentialAnimation(targets, keyframes, opt, 200)
+    setAnimations([textAnimation]);
+  }, [])
+
+  useEffect(() => {
+    if (animations) {
+      handleIntersection(refs, animations);
+    }
+  }, [animations])
 
   return (
     <section className={styles.section} id="projects">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">
-            <div className={styles.intro}>
+            <div className={styles.intro} ref={element}>
               <h4>Projects & Reviews</h4>
               <h1>{'Trusted By \nMany Clients \nAround the World'}</h1>
               <p>
