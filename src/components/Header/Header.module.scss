@@ -1,4 +1,5 @@
 @import '../../styles/scss/mixins';
+@import '../../styles/scss/colors';
 
 .header {
   min-height: 80px;
@@ -13,6 +14,12 @@
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: saturate(180%) blur(5px);
   border-bottom: 1px solid rgba(255, 255, 255, .15);
+
+  a:hover {
+    path:last-child {
+      fill: $pink;
+    }
+  }
 
   @include md() {
     padding: 0 25px;
@@ -29,5 +36,5 @@
 }
 
 .shrink {
-  height: 65px;
+  min-height: 65px;
 }
