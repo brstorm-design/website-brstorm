@@ -68,7 +68,7 @@ strong, .strong {
 
 a:not(.btn) {
   text-decoration: none;
-  color: $gray !important;
+  color: $gray;
   transition: all 250ms ease;
 
   path {
