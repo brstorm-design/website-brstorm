@@ -43,7 +43,7 @@ export default function Pitch(props) {
       <Header />
 
       <Cover />
-      <Hero />
+      {/* <Hero /> */}
       <Purpose />
       <WhatWeDo />
       <Projects content={props.portifolio} />
