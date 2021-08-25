@@ -59,24 +59,34 @@
 
   "portifolio": [
     {
-      "cover": "/images/portifolio/ph-top-left.svg",
-      "size": "6"
+      "cover": "/images/portifolio/petsvida.png",
+      "size": "6",
+      "name": "PetsVida Brand Identity",
+      "type": "E-commerce Pet Shop"
     },
     {
-      "cover": "/images/portifolio/ph-top-right.svg",
-      "size": "6"
+      "cover": "/images/portifolio/rivana.png",
+      "size": "6",
+      "name": "Rivana Brand Identity",
+      "type": "Clothing E-Commerce"
     },
     {
-      "cover": "/images/portifolio/ph-bottom-left.svg",
-      "size": "6"
+      "cover": "/images/portifolio/maptrack.png",
+      "size": "6",
+      "name": "MapTrack Brand Identity",
+      "type": "Asset Tracking Startup"
     },
     {
-      "cover": "/images/portifolio/ph-bottom-right.svg",
-      "size": "6"
+      "cover": "/images/portifolio/cartage.png",
+      "size": "6",
+      "name": "Catarge Brand Identity",
+      "type": "Engineering and Architecture"
     },
     {
-      "cover": "/images/portifolio/ph-small.svg",
-      "size": "3"
+      "cover": "/images/portifolio/daia.png",
+      "size": "3",
+      "name": "Daia Brand Identity",
+      "type": "Family Photographer"
     }
   ],
 

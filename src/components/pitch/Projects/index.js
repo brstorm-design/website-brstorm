@@ -54,6 +54,10 @@ export default function Projects({ content }) {
                 <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
                   <a href="#">
                     <img src={item.cover} alt="Project" />
+                    <div>
+                      <h5>{item.name}</h5>
+                      <span className="details">{item.type}</span>
+                    </div>
                   </a>
                 </div>
               )
