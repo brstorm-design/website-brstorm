@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import '../../public/css/bootstrap.css';
 import 'src/styles/styles.scss';
+import 'src/styles/css/animated-logo.css';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 

@@ -1,4 +1,5 @@
 import { React, useEffect } from 'react';
+import AnimatedLogo from 'src/components/svg/AnimatedLogo';
 import Circle from 'src/components/svg/Circle';
 import Square from 'src/components/svg/Square';
 import Triangle from 'src/components/svg/Triangle';
@@ -25,6 +26,8 @@ export default function Cover() {
       });
     }
 
+    document.querySelector('#cover svg').classList.add('active');
+
     return cleanup();
   }, [])
 
@@ -47,7 +50,7 @@ export default function Cover() {
     <section className={styles.section} id="cover">
       <div className="container">
 
-        <img className={`${styles.topLeft} track`} src="/images/cover/ph-top-left.svg" alt="" />
+        <AnimatedLogo className={`${styles.topLeft} track`} />
         <img className={`${styles.topRight}`} src="/images/cover/logo-rotate-360.svg" alt="" />
         <img className={`${styles.bottomLeft} track`} src="/images/cover/grids-design.svg" alt="" />
         <img className={`${styles.bottomRight} track`} src="/images/cover/mobile-ui.svg" alt="" />

@@ -23,6 +23,8 @@
   }
 
   .topLeft {
+    position: absolute;
+    transition: transform 200ms ease-out;
     top: 10px;
     left: 0;
     z-index: 1;
