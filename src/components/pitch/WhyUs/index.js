@@ -26,9 +26,17 @@ export default function WhyUs({ content }) {
 
   useEffect(() => {
     if (animations) {
-      handleIntersection(refs, animations);
+      const onEnd = animation => {
+        animation.effect.target.querySelector('object').contentDocument.firstChild.classList.add('active');
+      }
+      handleIntersection(refs, animations, onEnd);
     }
   }, [animations])
+
+  useEffect(() => {
+    let targets = Array.from(element.current.children);
+
+  },)
 
   return (
     <section className={styles.section} id="why-us">
@@ -43,7 +51,7 @@ export default function WhyUs({ content }) {
               return (
                 <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>
-                    <img src={item.image} alt="" />
+                    <object data={item.image} type="image/svg+xml" />
                     <h5>{item.title}</h5>
                     <small>{item.body}</small>
                   </div>

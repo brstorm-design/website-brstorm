@@ -29,7 +29,7 @@ export function constructAnimation(target, keyframes, options) {
 
 // // // //
 
-export function handleIntersection(targets, animations) {
+export function handleIntersection(targets, animations, onEnd) {
   function callback(entries) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -37,6 +37,9 @@ export function handleIntersection(targets, animations) {
           animatable.forEach(animation => {
             if (animation.playState !== 'finished' && animation.effect.target.parentElement.id === entry.target.id) {
               animation.play()
+            }
+            if (onEnd) {
+              animation.finished.then(a => onEnd(a))
             }
           })
         })

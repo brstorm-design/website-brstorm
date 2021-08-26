@@ -63,7 +63,7 @@ export default function Testimonials({ content }) {
           {
             content.map((item, index) => {
               return (
-                <SwiperSlide key={`testim-${index}`}>
+                <SwiperSlide key={`testimonial-${index}`}>
                   <div className={styles.testimonial}>
                     <img src="/images/testimonials/quotation.svg" alt="" />
                     <small>{item.body}</small>
