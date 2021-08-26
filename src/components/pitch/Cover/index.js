@@ -26,7 +26,9 @@ export default function Cover() {
       });
     }
 
-    document.querySelector('#cover svg').classList.add('active');
+    setTimeout(() => {
+      document.querySelector('#cover svg').classList.add('active');
+    }, 2000);
 
     return cleanup();
   }, [])
@@ -34,15 +36,18 @@ export default function Cover() {
   function getMousePos(e) {
     let relX = (e.pageX * 100) / window.innerWidth;
     let relY = (e.pageY * 100) / window.innerHeight;
-    let translateX1 = - (((10 * relX) / 100) - 5);
-    let translateY1 = - (((10 * relY) / 100) - 5);
-    let translateX2 = (((20 * relX) / 100) - 10);
-    let translateY2 = (((20 * relY) / 100) - 10);
+    let translateX1 = - (((50 * relX) / 100) - 25);
+    let translateY1 = - (((50 * relY) / 100) - 25);
+    let translateX2 = (((50 * relX) / 100) - 25);
+    let translateY2 = (((50 * relY) / 100) - 25);
+    let translateX3 = (((90 * relX) / 100) - 45);
+    let translateY3 = (((90 * relY) / 100) - 45);
 
     window.requestAnimationFrame(() => {
-      document.querySelectorAll('.track').forEach(element => {
-        element.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
-      })
+      let track = document.querySelectorAll('.track');
+      track[0].style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
+      track[1].style.transform = `translateX(${translateX2}px) translateY(${translateY2}px)`;
+      track[2].style.transform = `translateX(${translateX3}px) translateY(${translateY3}px)`;
     })
   }
 

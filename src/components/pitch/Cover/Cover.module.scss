@@ -3,7 +3,7 @@
 @import '../../../styles/scss/keyframes';
 
 .section {
-  margin-top: calc(80px + 65px);
+  margin-top: 65px;
   position: relative;
 
   & > div > div > div {
@@ -36,7 +36,7 @@
   }
 
   .topRight {
-    animation: rotate 25s linear infinite;
+    animation: rotate 15s linear infinite;
     top: 0;
     right: 60px;
     z-index: -1;
