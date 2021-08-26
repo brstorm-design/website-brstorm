@@ -33,11 +33,6 @@ export default function WhyUs({ content }) {
     }
   }, [animations])
 
-  useEffect(() => {
-    let targets = Array.from(element.current.children);
-
-  },)
-
   return (
     <section className={styles.section} id="why-us">
       <div className={styles.title}>

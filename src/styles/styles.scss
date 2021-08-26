@@ -24,7 +24,7 @@ body {
       url("/images/backgrounds/footer.svg");
     background-position: -400px 0, calc(100% + 550px) -400px, calc(100% + 100px) calc(100% + 650px);
     background-repeat: no-repeat;
-    animation: pulse 5s infinite alternate;
+    animation: gradient-pulse 5s infinite alternate;
     animation-delay: 1.5s;
   }
 }

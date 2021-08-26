@@ -26,7 +26,14 @@ export default function Purpose() {
 
   useEffect(() => {
     if (animations) {
-      handleIntersection(refs, animations);
+      const onEnd = animation => {
+        const localName = animation.effect.target.localName;
+        if (localName === 'h2') {
+          document.getElementById('color').classList.add('active');
+          document.getElementById('obj').contentDocument.firstChild.classList.add('active');
+        }
+      }
+      handleIntersection(refs, animations, onEnd);
     }
   }, [animations])
 
@@ -35,7 +42,20 @@ export default function Purpose() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 d-none d-lg-block">
-            <img src="/images/img-placeholder-hero.svg" alt="" className="img-fluid" />
+            <div className={styles.image}>
+              <div>
+                <img src="/images/purpose/david.png" alt="david" />
+                <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g style={{ mixBlendMode: 'overlay' }}><rect width="150" height="40" fill="#E93CAC" /></g><g style={{ mixBlendMode: 'multiply' }}><rect width="150" height="40" fill="#E93CAC" /></g></svg>
+                <img src="/images/purpose/seal.svg" alt="seal" />
+                <img src="/images/purpose/comment-michelangelo.svg" alt="comment-michelangelo" />
+                <img src="/images/purpose/pattern.svg" alt="pattern" />
+                <img src="/images/purpose/pin.svg" alt="pin" />
+                <img src="/images/purpose/exploring-the-infinite.svg" alt="exploring-the-infinite" />
+                <div>
+                  <object id="obj" data="/images/purpose/words.svg" type="text/svg+xml" />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
             <article ref={element}>

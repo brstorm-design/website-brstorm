@@ -1,7 +1,14 @@
-@import '../../../styles/scss/mixins';
+@import "../../../styles/scss/mixins";
+@import "../../../styles/scss/colors";
+@import "../../../styles/scss/keyframes";
 
 .section {
   margin-top: 250px;
+  backdrop-filter: opacity(1);
+
+  article {
+    z-index: 1;
+  }
 
   article div {
     margin-top: 50px;
@@ -22,6 +29,75 @@
     p {
       margin-top: 35px;
       margin-bottom: 35px;
+    }
+  }
+}
+
+.image {
+  position: relative;
+
+  & > div {
+    z-index: 1;
+
+    & > div {
+      position: absolute;
+      top: 140px;
+      left: -25px;
+      z-index: -1;
+    }
+
+    position: relative;
+    width: max-content;
+    margin: auto;
+    background: $black;
+
+    img:not(img:first-child) {
+      position: absolute;
+    }
+    //david
+    img:first-child {
+      position: relative;
+    }
+    // color
+    svg {
+      position: absolute;
+      top: 60px;
+      left: 260px;
+      transition: all 1500ms ease;
+
+      &:global(.active) {
+        left: 40px;
+      }
+    }
+    // seal
+    img:nth-of-type(2) {
+      top: 0;
+      right: 0;
+      animation: rotate 25s linear infinite;
+    }
+    // comment
+    img:nth-of-type(3) {
+      bottom: 25px;
+      right: -65px;
+    }
+    // pattern
+    img:nth-of-type(4) {
+      bottom: 175px;
+      left: -25px;
+    }
+    // pin
+    img:nth-of-type(5) {
+      bottom: 135px;
+      right: 145px;
+      border-radius: 50%;
+      animation: pin-pulse 2s infinite;
+    }
+    // exploring the infinite
+    img:nth-of-type(6) {
+      bottom: -5px;
+      left: 90px;
+      transform: rotate(-10deg);
+      transform-origin: top right;
     }
   }
 }
