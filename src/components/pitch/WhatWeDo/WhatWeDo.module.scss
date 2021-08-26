@@ -54,8 +54,6 @@
 }
 
 .title {
-  position: sticky;
-  top: 150px;
   h3 {
     color: $gray;
   }
@@ -75,7 +73,7 @@
 
 .img {
   position: sticky;
-  top: 300px;
+  top: 150px;
 
   @include md() {
     margin-bottom: 75px;
