@@ -68,7 +68,7 @@ export default function Testimonials({ content }) {
                     <img src="/images/testimonials/quotation.svg" alt="" />
                     <small>{item.body}</small>
                     <div>
-                      <img src="/images/testimonials/client-picture.svg" alt="Client Photo" />
+                      <img src={item.photo} alt="Client Photo" />
                       <div>
                         <strong className="details">{item.author}</strong>
                         <div className="details">{item.company}</div>

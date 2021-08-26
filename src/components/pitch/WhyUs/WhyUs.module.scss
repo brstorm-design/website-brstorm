@@ -4,6 +4,7 @@
 .section {
   margin-top: 175px;
   padding-bottom: 275px;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, #0A0A0A 46.35%, rgba(10, 10, 10, 0) 100%);
 
   @include md() {
     margin-top: 150px;
@@ -43,6 +44,8 @@
   padding: 40px 25px;
   height: 270px;
   background-color: $black;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
 
   h5 {
     margin-top: 25px;
