@@ -1,6 +1,15 @@
 import Head from 'next/head';
 import data from '../../public/content.json';
 import Link from 'next/link';
+import Header from 'src/components/Header';
+import Cover from 'src/components/pitch/Cover';
+import Purpose from 'src/components/pitch/Purpose';
+import WhatWeDo from 'src/components/pitch/WhatWeDo';
+import Projects from 'src/components/pitch/Projects';
+import Testimonials from 'src/components/pitch/Testimonials';
+import WhyUs from 'src/components/pitch/WhyUs';
+import Contact from 'src/components/pitch/Contact';
+import Footer from 'src/components/pitch/Footer';
 
 export default function Home(props) {
   const clients = props.clients;
@@ -8,23 +17,21 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Pithces</title>
+        <title>Br.Storm Design</title>
       </Head>
 
-      <h1>Pithces</h1>
-      <ul>
-      {
-        clients.map(client => {
-          return (
-            <li key={`${client.name}_${client.id}`}>
-              <Link href={`/pitch/${client.name}-${client.id}`}>
-                <a>{client.name}</a>
-              </Link>
-            </li>
-          )
-        })
-      }
-      </ul>
+      <Header />
+
+      <Cover />
+      {/* <Hero /> */}
+      <Purpose />
+      <WhatWeDo />
+      <Projects content={props.portifolio} />
+      <Testimonials content={props.testimonials} />
+      <WhyUs content={props.whyUs} />
+      <Contact />
+
+      <Footer content={props.socials} />
     </>
   )
 }
