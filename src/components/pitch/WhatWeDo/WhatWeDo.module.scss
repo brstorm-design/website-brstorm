@@ -55,8 +55,11 @@
 }
 
 .title {
+  text-align: center;
+
   h3 {
     color: $gray;
+    margin: 0 auto;
   }
   h1 {
     margin-bottom: 50px;
