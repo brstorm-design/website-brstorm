@@ -36,7 +36,7 @@ export default function Projects({ content }) {
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">
             <div className={styles.intro} ref={element}>
-              <h4>Projects & Reviews</h4>
+              <h4 className="gradient-bg">Projects & Reviews</h4>
               <h1>{'Trusted By \nMany Clients \nAround the World'}</h1>
               <p>
                 We are a team with vast experience, having already served clients around

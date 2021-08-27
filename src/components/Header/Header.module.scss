@@ -15,11 +15,14 @@
   backdrop-filter: saturate(180%) blur(5px);
   border-bottom: 1px solid rgba(255, 255, 255, .15);
 
-  svg {
-    path {
-      display: none;
-      &:nth-child(n+9) {
-        display: block;
+
+  @include md() {
+    svg {
+      path {
+        display: none;
+        &:nth-child(n+9) {
+          display: block;
+        }
       }
     }
   }

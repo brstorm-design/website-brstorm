@@ -74,7 +74,7 @@ export default function WhatWeDo() {
     <section className={styles.section} id="what-we-do">
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
-          <h3>Don't know where to start?</h3>
+          <h3 className="gradient-bg">Don't know where to start?</h3>
           <h1>We're here to help!</h1>
         </div>
         <div className="row">
