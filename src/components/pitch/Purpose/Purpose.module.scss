@@ -38,6 +38,10 @@
 
   & > div {
     z-index: 1;
+    position: relative;
+    width: max-content;
+    margin: auto;
+    background: $black;
 
     & > div {
       position: absolute;
@@ -45,11 +49,6 @@
       left: -25px;
       z-index: -1;
     }
-
-    position: relative;
-    width: max-content;
-    margin: auto;
-    background: $black;
 
     img:not(img:first-child) {
       position: absolute;
