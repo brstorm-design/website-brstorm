@@ -68,3 +68,17 @@ body {
 #__next {
   overflow: hidden;
 }
+
+.grain {
+  animation: grain 6s steps(10) infinite;
+  background-image: url('/images/backgrounds/grain-bg.png');
+  background-repeat: repeat;
+  height: 300%;
+  left: -100%;
+  opacity: .06;
+  pointer-events: none;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  z-index: 1;
+}
