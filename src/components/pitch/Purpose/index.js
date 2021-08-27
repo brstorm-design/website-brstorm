@@ -37,17 +37,43 @@ export default function Purpose() {
     }
   }, [animations])
 
+  /* useEffect(() => {
+    function cleanup() {
+      document.getElementById('purpose').removeEventListener('mousemove', e => {
+        getMousePos(e);
+      })
+    }
+
+    document.getElementById('purpose').addEventListener('mousemove', e => {
+      getMousePos(e);
+    })
+
+    return cleanup();
+  }, [])
+
+  function getMousePos(e) {
+    let track = document.querySelector('#purpose img[alt="comment"]');
+    let relX = (e.offsetX * 100) / document.getElementById('purpose').clientWidth;
+    let relY = (e.offsetY * 100) / document.getElementById('purpose').clientHeight;
+    let translateX1 =  (((50 * relX) / 100) - 25);
+    let translateY1 =  (((50 * relY) / 100) - 25);
+
+    window.requestAnimationFrame(() => {
+      track.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
+    })
+  } */
+
   return (
     <section className={styles.section} id="purpose">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-6 d-none d-lg-block">
+          <div className="col-12 col-lg-6">
             <div className={styles.image}>
               <div>
                 <img src="/images/purpose/david.png" alt="david" />
                 <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g style={{ mixBlendMode: 'overlay' }}><rect width="150" height="40" fill="#E93CAC" /></g><g style={{ mixBlendMode: 'multiply' }}><rect width="150" height="40" fill="#E93CAC" /></g></svg>
                 <img src="/images/purpose/seal.svg" alt="seal" />
-                <img src="/images/purpose/comment-michelangelo.svg" alt="comment-michelangelo" />
+                <img src="/images/purpose/comment-michelangelo.svg" alt="comment" />
                 <img src="/images/purpose/pattern.svg" alt="pattern" />
                 <img src="/images/purpose/pin.svg" alt="pin" />
                 <img src="/images/purpose/exploring-the-infinite.svg" alt="exploring-the-infinite" />

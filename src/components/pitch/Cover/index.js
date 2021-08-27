@@ -8,23 +8,14 @@ import styles from './Cover.module.scss';
 export default function Cover() {
   useEffect(() => {
     function cleanup() {
-      window.onmousemove = null;
-    }
-
-    const observer = new IntersectionObserver(callback);
-    observer.observe(document.getElementById('cover'));
-
-    function callback(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          window.onmousemove = e => {
-            getMousePos(e);
-          }
-        } else {
-          cleanup();
-        }
+      document.getElementById('cover').removeEventListener('mousemove', e => {
+        getMousePos(e)
       });
     }
+
+    document.getElementById('cover').addEventListener('mousemove', e => {
+      getMousePos(e)
+    })
 
     setTimeout(() => {
       document.querySelector('#cover svg').classList.add('active');

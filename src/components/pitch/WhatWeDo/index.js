@@ -40,6 +40,36 @@ export default function WhatWeDo() {
     }
   }, [animations])
 
+  /* useEffect(() => {
+    function cleanup() {
+      document.getElementById('what-we-do').removeEventListener('mousemove', e => {
+        getMousePos(e);
+      })
+    }
+
+    document.getElementById('what-we-do').addEventListener('mousemove', e => {
+      getMousePos(e);
+    })
+
+    return cleanup();
+  }, [])
+
+  function getMousePos(e) {
+    let relX = (e.pageX * 100) / window.innerWidth;
+    let relY = (e.pageY * 100) / window.innerHeight;
+    let translateX1 =  (((50 * relX) / 100) - 25);
+    let translateY1 =  (((50 * relY) / 100) - 25);
+    let translateX2 = -(((50 * relX) / 100) - 25);
+    let translateY2 = -(((50 * relY) / 100) - 25);
+
+    window.requestAnimationFrame(() => {
+      let grayscale = document.querySelector('#what-we-do img[alt="grayscale"]');
+      let picker = document.querySelector('#what-we-do img[alt="picker"]');
+      grayscale.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
+      picker.style.transform = `translateX(${translateX2}px) translateY(${translateY2}px)`;
+    })
+  } */
+
   return (
     <section className={styles.section} id="what-we-do">
       <div className="container">
