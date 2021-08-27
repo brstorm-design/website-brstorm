@@ -99,7 +99,7 @@ export default function WhatWeDo() {
               </div>
             </div>
             <div className={`d-block d-lg-none ${styles.title}`}>
-              <h3>Don't know where to start?</h3>
+              <h3 className="gradient-bg">Don't know where to start?</h3>
               <h1>We're here to help!</h1>
             </div>
           </div>

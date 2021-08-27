@@ -141,9 +141,13 @@ a:not(.btn) {
   color: transparent !important;
   background-clip: text;
   animation: text-gradient 10s ease-in-out infinite alternate;
-  background-size: 300%;
-  background-image:
-    linear-gradient(-60deg, $pink, $cyan);
+  background-size: 500%;
+  width: max-content;
+  background-image: linear-gradient(-60deg, $pink, $cyan);
+
+  @include md() {
+    width: auto;
+  }
 }
 
 @keyframes text-gradient {
