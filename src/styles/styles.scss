@@ -8,7 +8,7 @@ body {
   color: $lightGray;
   font-family: "Inter", sans-serif;
   padding-top: 80px;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
   position: relative;
 
@@ -26,6 +26,7 @@ body {
     background-repeat: no-repeat;
     animation: gradient-pulse 5s infinite alternate;
     animation-delay: 1.5s;
+    overflow: hidden;
   }
 }
 
@@ -42,13 +43,16 @@ body {
   }
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: $ghost;
-  border-radius: 1000px;
+@media (min-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $ghost;
+    border-radius: 1000px;
+  }
+  
 }
