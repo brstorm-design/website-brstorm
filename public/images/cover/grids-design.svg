@@ -1,36 +1,54 @@
-<svg width="257" height="180" viewBox="0 0 257 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1.22168" y="0.688477" width="254.557" height="178.623" rx="1.75" fill="#010101"/>
-<rect x="16.1717" y="15.6385" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="52.0141" y1="15.4385" x2="52.0141" y2="87.1238" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="15.9717" y1="51.0805" x2="51.8143" y2="51.0805" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="92.8571" y="15.6397" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="93.7503" y1="86.454" x2="163.699" y2="15.2995" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="92.5145" y1="73.2341" x2="149.466" y2="15.3001" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="92.5145" y1="59.1305" x2="135.603" y2="15.2989" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="92.5144" y1="45.9094" x2="122.606" y2="15.2986" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="92.5144" y1="32.6894" x2="109.609" y2="15.2995" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="128.641" y1="51.1398" x2="164.484" y2="86.9825" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="169.542" y="15.6387" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="205.185" y="27.0944" width="34.2067" height="34.2067" transform="rotate(45 205.185 27.0944)" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="205.385" y1="15.4387" x2="205.385" y2="87.124" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="16.172" y="92.326" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="15.8304" y1="163.669" x2="87.5157" y2="91.9836" stroke="#B6B6B6" stroke-width="0.4"/>
-<line y1="-0.2" x2="101.378" y2="-0.2" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 87.657 163.81)" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="92.8574" y="92.8262" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
-<circle cx="129.118" cy="127.851" r="18.9573" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="93.8934" y1="128.268" x2="164.343" y2="128.268" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="128.918" y1="163.693" x2="128.918" y2="93.2438" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="169.543" y="93.0762" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="180.666" y1="92.876" x2="180.666" y2="164.561" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="193.026" y1="92.876" x2="193.026" y2="164.561" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="205.386" y1="92.876" x2="205.386" y2="164.561" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="205.186" y1="130.99" x2="241.028" y2="130.99" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="205.186" y1="118.63" x2="241.028" y2="118.63" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="205.186" y1="106.271" x2="241.028" y2="106.271" stroke="#B6B6B6" stroke-width="0.4"/>
-<line x1="205.322" y1="131.043" x2="241.164" y2="164.414" stroke="#B6B6B6" stroke-width="0.4"/>
-<rect x="1.22168" y="0.688477" width="254.557" height="178.623" rx="1.75" stroke="url(#paint0_linear)" stroke-width="0.5"/>
+<svg width="265" height="188" viewBox="0 0 265 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bd)">
+<rect x="4.97168" y="0.438477" width="255.057" height="179.123" rx="2" fill="url(#paint0_linear)" shape-rendering="crispEdges"/>
+<rect x="20.1717" y="15.6385" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="56.0141" y1="15.4385" x2="56.0141" y2="87.1238" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="19.9717" y1="51.0805" x2="55.8143" y2="51.0805" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="96.8571" y="15.6397" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="97.7503" y1="86.454" x2="167.699" y2="15.2995" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="96.5145" y1="73.2341" x2="153.466" y2="15.3001" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="96.5145" y1="59.1305" x2="139.603" y2="15.2989" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="96.5144" y1="45.9094" x2="126.606" y2="15.2986" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="96.5144" y1="32.6894" x2="113.609" y2="15.2995" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="132.641" y1="51.1398" x2="168.484" y2="86.9825" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="173.542" y="15.6387" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="209.185" y="27.0944" width="34.2067" height="34.2067" transform="rotate(45 209.185 27.0944)" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="209.385" y1="15.4387" x2="209.385" y2="87.124" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="20.172" y="92.326" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="19.8304" y1="163.669" x2="91.5157" y2="91.9836" stroke="#B6B6B6" stroke-width="0.4"/>
+<line y1="-0.2" x2="101.378" y2="-0.2" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 91.657 163.81)" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="96.8574" y="92.8262" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
+<circle cx="133.118" cy="127.851" r="18.9573" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="97.8934" y1="128.268" x2="168.343" y2="128.268" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="132.918" y1="163.693" x2="132.918" y2="93.2438" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="173.543" y="93.0762" width="71.2853" height="71.2853" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="184.666" y1="92.876" x2="184.666" y2="164.561" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="197.026" y1="92.876" x2="197.026" y2="164.561" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="209.386" y1="92.876" x2="209.386" y2="164.561" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="209.186" y1="130.99" x2="245.028" y2="130.99" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="209.186" y1="118.63" x2="245.028" y2="118.63" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="209.186" y1="106.271" x2="245.028" y2="106.271" stroke="#B6B6B6" stroke-width="0.4"/>
+<line x1="209.322" y1="131.043" x2="245.164" y2="164.414" stroke="#B6B6B6" stroke-width="0.4"/>
+<rect x="5.22168" y="0.688477" width="254.557" height="178.623" rx="1.75" stroke="url(#paint1_linear)" stroke-width="0.5" shape-rendering="crispEdges"/>
+</g>
 <defs>
-<linearGradient id="paint0_linear" x1="128.5" y1="0.438477" x2="128.5" y2="179.562" gradientUnits="userSpaceOnUse">
+<filter id="filter0_bd" x="-0.0283203" y="-4.56152" width="265.057" height="192.123" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="2.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_backgroundBlur" result="effect2_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="132.5" y1="0.438477" x2="132.5" y2="179.562" gradientUnits="userSpaceOnUse">
+<stop stop-color="#010101" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#010101" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="132.5" y1="0.438477" x2="132.5" y2="179.562" gradientUnits="userSpaceOnUse">
 <stop stop-color="#555555" stop-opacity="0"/>
 <stop offset="1" stop-color="#555555"/>
 </linearGradient>

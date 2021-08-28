@@ -12,6 +12,7 @@ body {
   position: relative;
   height: 100%;
   overflow-x: clip;
+  
   &::before {
     content: "";
     position: absolute;
@@ -25,7 +26,7 @@ body {
     background-position: -400px 0, calc(100% + 550px) -400px, calc(100% + 100px) calc(100% + 650px);
     background-repeat: no-repeat;
     animation: gradient-pulse 5s infinite alternate;
-    animation-delay: 1.5s;
+    animation-delay: 3s;
     overflow: hidden;
   }
 }
@@ -75,7 +76,7 @@ body {
   background-repeat: repeat;
   height: 300%;
   left: -100%;
-  opacity: .04;
+  opacity: .025;
   pointer-events: none;
   position: fixed;
   top: -100%;

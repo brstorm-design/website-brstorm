@@ -71,7 +71,7 @@
 // --
 
   @include md() {
-    margin-top: calc(80px + 50px);
+    margin-top: 75px;
   }
 }
 
@@ -97,8 +97,12 @@
     text-align: center;
   }
 
+  h1 {
+    margin-bottom: 0;
+  }
+
   h4 {
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 50px;
   }
 
