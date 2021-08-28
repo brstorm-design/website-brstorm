@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 
-export default function Footer({content}) {
+export default function Footer({ content }) {
 
   function goToTop() {
     window.scroll(0, 0);
@@ -17,9 +17,14 @@ export default function Footer({content}) {
               {
                 content.map((item, index) => {
                   return (
-                    <a key={`social-${index}`} title={item.name} href={item.href} rel="noopener noreferrer" target="_blank">
-                      <img src={item.icon} alt="" />
-                    </a>
+                    <a
+                      key={`social-${index}`}
+                      title={item.name}
+                      href={item.href}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      dangerouslySetInnerHTML={{__html: item.icon}}
+                    />
                   )
                 })
               }

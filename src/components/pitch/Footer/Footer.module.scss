@@ -1,11 +1,12 @@
 @import '../../../styles/scss/colors';
 @import '../../../styles/scss/mixins';
+@import '../../../styles/scss/keyframes';
 
 .section {
   margin-top: 125px;
-  border-top: 1px solid $ghost;
+  border-top: 1px solid rgba($color: $white, $alpha: 0.15);
   backdrop-filter: blur(5px);
-  background-color: rgba(1, 1, 1, 0.5);
+  background-color: rgba($color: $black, $alpha: 0.5);
 
   @include md() {
     margin-top: 100px;
@@ -29,6 +30,10 @@
   & > a:last-child {
     cursor: pointer;
 
+    &:hover {
+      transform: translateY(-4px);
+    }
+
     svg {
       margin-right: 10px;
     }
@@ -44,14 +49,21 @@
 .socials {
   display: flex;
   align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      transform: translateY(-4px);
+      path {
+        fill: $pink;
+      }
+    }
+  }
+
   & > a:nth-child(2) {
     margin-left: 20px;
     margin-right: 20px;
   }
-}
-
-.bg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
