@@ -17,6 +17,10 @@
     }
   }
 
+  a:first-of-type {
+    cursor: context-menu;
+  }
+
   img {
     position: absolute;
     transition: transform 200ms ease-out;

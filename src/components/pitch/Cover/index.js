@@ -49,7 +49,9 @@ export default function Cover() {
         <AnimatedLogo className={`${styles.topLeft} track`} />
         <img className={`${styles.topRight}`} src="/images/cover/logo-rotate-360.svg" alt="" />
         <img className={`${styles.bottomLeft} track`} src="/images/cover/grids-design.svg" alt="" />
-        <img className={`${styles.bottomRight} track`} src="/images/cover/mobile-ui.svg" alt="" />
+        <a href="https://instagram.com/brstorm.design" target="_blank" rel="noopener noreferrer">
+          <img className={`${styles.bottomRight} track`} src="/images/cover/mobile-ui.svg" alt="" />
+        </a>
 
         <div className="row">
           <div className="col-12 col-lg-9">
