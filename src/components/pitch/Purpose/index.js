@@ -12,7 +12,7 @@ export default function Purpose() {
     let opt = {
       duration: 1200,
       easing: 'ease',
-      fill: 'both',
+      fill: 'backwards',
       delay: 0
     };
     let keyframes = {
