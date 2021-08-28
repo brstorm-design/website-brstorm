@@ -90,6 +90,13 @@
   border-image: linear-gradient(rgb(182, 182, 182) 0%, rgba(182, 182, 182, 0) 100%) 1;
   backdrop-filter: blur(5px);
 
+  & > a {
+    transition: all 300ms ease-out;
+    &:hover {
+      transform: translateY(8px);
+    }
+  }
+
   @include md() {
     padding: 0 35px;
     margin-top: 0;

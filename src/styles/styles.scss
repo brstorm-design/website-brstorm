@@ -83,3 +83,7 @@ body {
   width: 300%;
   z-index: 1;
 }
+
+::selection {
+  background-color: $pink;
+}

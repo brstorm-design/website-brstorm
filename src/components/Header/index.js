@@ -58,7 +58,7 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <a href="#" className="btn small">Book a Meeting</a>
+          <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn small">Book a Meeting</a>
         </div>
       </nav>
     </header>

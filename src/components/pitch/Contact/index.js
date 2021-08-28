@@ -44,7 +44,7 @@ export default function Contact() {
                 </p>
               </div>
               <div>
-                <a href="#" className="btn large">Book a Meeting Right Now</a>
+                <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn large">Book a Meeting Right Now</a>
                 <small><sup>*</sup> We’re available for meeting <br /> Mon to Fri | 10am to 7pm</small>
               </div>
             </div>
