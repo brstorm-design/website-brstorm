@@ -20,8 +20,6 @@ export default function Home(props) {
         <title>Br.Storm Design</title>
       </Head>
 
-      <div className="grain" />
-
       <Header />
 
       <Cover />

@@ -154,12 +154,12 @@
     },
     {
       "name": "Behance",
-      "href": "#",
+      "href": "http://be.net/brstorm-design",
       "icon": "/images/socials/behance.svg"
     },
     {
       "name": "Dribbble",
-      "href": "#",
+      "href": "https://dribbble.com/brstorm-design",
       "icon": "/images/socials/dribbble.svg"
     }
   ],
