@@ -19,6 +19,9 @@
         width: 315px !important;
       }
     }
+    .swiper-wrapper {
+      overflow-y: clip;
+    }
     .container {
       @include sm() {
         padding: 0 30px;

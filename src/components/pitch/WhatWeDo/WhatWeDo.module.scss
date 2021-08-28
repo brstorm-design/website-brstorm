@@ -79,6 +79,9 @@
 .image {
   position: sticky;
   top: 120px;
+  @include md() {
+    transform: translateX(-150px);
+  }
 
   & > div {
     position: relative;
@@ -124,12 +127,16 @@
       top: 150px;
       left: 20px;
       z-index: -1;
+      @include md() {
+        left: 55px;
+      }
 
       code {
         position: absolute;
         top: 103px;
         left: 83px;
         display: flex;
+        align-items: center;
 
         div {
           :global {
@@ -156,5 +163,6 @@
 
   @include md() {
     margin-bottom: 75px;
+    position: static;
   }
 }
