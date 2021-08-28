@@ -12,9 +12,10 @@
   position: relative;
   height: 250px;
   border-radius: 2px;
-  background: rgba(1, 1, 1, 0.5);
+  background: rgba($color: $black, $alpha: 0.25);
   backdrop-filter: blur(5px);
-  border: 1px solid rgba($color: $white, $alpha: 0.15);
+  border: 1px solid;
+  border-image: linear-gradient(rgb(182, 182, 182) 0%, rgba(182, 182, 182, 0) 100%) 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
