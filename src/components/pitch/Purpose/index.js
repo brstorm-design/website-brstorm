@@ -4,7 +4,8 @@ import styles from './Purpose.module.scss';
 
 export default function Purpose() {
   const element = useRef(null);
-  const refs = [element.current];
+  const element1 = useRef(null);
+  const refs = [element.current, element1.current];
   const [animations, setAnimations] = useState(null);
 
   useEffect(() => {
@@ -37,39 +38,13 @@ export default function Purpose() {
     }
   }, [animations])
 
-  /* useEffect(() => {
-    function cleanup() {
-      document.getElementById('purpose').removeEventListener('mousemove', e => {
-        getMousePos(e);
-      })
-    }
-
-    document.getElementById('purpose').addEventListener('mousemove', e => {
-      getMousePos(e);
-    })
-
-    return cleanup();
-  }, [])
-
-  function getMousePos(e) {
-    let track = document.querySelector('#purpose img[alt="comment"]');
-    let relX = (e.offsetX * 100) / document.getElementById('purpose').clientWidth;
-    let relY = (e.offsetY * 100) / document.getElementById('purpose').clientHeight;
-    let translateX1 =  (((50 * relX) / 100) - 25);
-    let translateY1 =  (((50 * relY) / 100) - 25);
-
-    window.requestAnimationFrame(() => {
-      track.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
-    })
-  } */
-
   return (
     <section className={styles.section} id="purpose">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
             <div className={styles.image}>
-              <div>
+              <div ref={element1} id="purpose-image">
                 <img src="/images/purpose/david.png" alt="david" />
                 <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g style={{ mixBlendMode: 'overlay' }}><rect width="150" height="40" fill="#E93CAC" /></g><g style={{ mixBlendMode: 'multiply' }}><rect width="150" height="40" fill="#E93CAC" /></g></svg>
                 <img src="/images/purpose/seal.svg" alt="seal" />
@@ -84,7 +59,7 @@ export default function Purpose() {
             </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
-            <article ref={element}>
+            <article ref={element} id="purpose-article">
               <h2>What is Our Purpose</h2>
               <div>
                 <p>
@@ -94,10 +69,10 @@ export default function Purpose() {
                   <br />
                   <br />
                   In such a stormy world, less is more. Having <strong>clear and
-                    assertive communication</strong> is essential to stand out.
+                  assertive communication</strong> is essential to stand out.
                   We specialize in creating unique and memorable projects
                   exploring the best in each business. <strong>Let's do a
-                    remarkable project?</strong>
+                  remarkable project?</strong>
                 </p>
               </div>
               <a className="btn large ghost" href="#contact">

@@ -3,12 +3,32 @@ import { constructSequentialAnimation, handleIntersection } from 'src/modules/Ap
 import styles from './Projects.module.scss';
 
 export default function Projects({ content }) {
-  const element = useRef(null);
-  const refs = [element.current];
-  const [animations, setAnimations] = useState(null);
+  const introText = useRef(null);
+  const projects = useRef(null);
+  const [animations, setAnimations] = useState([]);
 
   useEffect(() => {
-    let targets = Array.from(element.current.children);
+    const refs = [introText.current, projects.current];
+    let dur = 1200;
+    refs.forEach(ref => {
+      let targets = Array.from(ref.children);
+      let opt = {
+        duration: dur,
+        easing: 'cubic-bezier(0.27, 0.6, 0.12, 1.02)',
+        fill: 'both',
+        delay: 0
+      };
+      let keyframes = {
+        opacity: [0, 1],
+        transform: [`translateY(+500px)`, 'initial']
+      };
+      dur += 1000;
+
+      let entranceAnimation = constructSequentialAnimation(targets, keyframes, opt, 200);
+      setAnimations(oldArray => [...oldArray, entranceAnimation]);
+    });
+
+    /* let targets = Array.from(introText.current.children);
     let opt = {
       duration: 1200,
       easing: 'cubic-bezier(0.27, 0.6, 0.12, 1.02)',
@@ -21,10 +41,11 @@ export default function Projects({ content }) {
     };
 
     let textAnimation = constructSequentialAnimation(targets, keyframes, opt, 200)
-    setAnimations([textAnimation]);
+    setAnimations([textAnimation]); */
   }, [])
 
   useEffect(() => {
+    const refs = [introText.current, projects.current];
     if (animations) {
       handleIntersection(refs, animations);
     }
@@ -35,7 +56,7 @@ export default function Projects({ content }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">
-            <div className={styles.intro} ref={element}>
+            <div className={styles.intro} ref={introText} id="projects-text">
               <h4 className="gradient-bg">Projects & Reviews</h4>
               <h1>{'Trusted By \nMany Clients \nAround the World'}</h1>
               <p>
@@ -47,7 +68,7 @@ export default function Projects({ content }) {
             </div>
           </div>
         </div>
-        <div className="row gy-4">
+        <div className="row gy-4" ref={projects} id="projects-cards">
           {
             content.map((item, index) => {
               return (
