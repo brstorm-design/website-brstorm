@@ -3,6 +3,7 @@ import AnimatedLogo from 'src/components/svg/AnimatedLogo';
 import Circle from 'src/components/svg/Circle';
 import Square from 'src/components/svg/Square';
 import Triangle from 'src/components/svg/Triangle';
+import { useAppContext } from 'src/context/store';
 import styles from './Cover.module.scss';
 
 export default function Cover() {
@@ -41,6 +42,9 @@ export default function Cover() {
       track[2].style.transform = `translateX(${translateX3}px) translateY(${translateY3}px)`;
     })
   }
+
+  const asd = useAppContext();
+  console.log(asd);
 
   return (
     <section className={styles.section} id="cover">
