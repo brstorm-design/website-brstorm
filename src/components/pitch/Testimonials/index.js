@@ -47,7 +47,7 @@ export default function Testimonials({ content }) {
         <div className="row">
           <div className="col-12 col-lg-10 offset-lg-2">
             <div className={styles.titleSection}>
-              <h1>{'What People \nSay About Us'}</h1>
+              <h1>{content.title}</h1>
               <div className={`d-none d-lg-block ${styles.nav}`}>
                 <button onClick={handleClick} id="prev">
                   <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z" fill="currentColor" /></svg>
@@ -61,7 +61,7 @@ export default function Testimonials({ content }) {
         </div>
         <Swiper spaceBetween={24} slidesPerView={'auto'} ref={element}>
           {
-            content.map((item, index) => {
+            content.cards.map((item, index) => {
               return (
                 <SwiperSlide key={`testimonial-${index}`}>
                   <div className={styles.testimonial}>

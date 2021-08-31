@@ -36,13 +36,13 @@ export default function WhyUs({ content }) {
   return (
     <section className={styles.section} id="why-us">
       <div className={styles.title}>
-        <h1 />
-        <p>We always strive for the best, in everything <br /> we do we always focus on delivering:</p>
+        <h1 dangerouslySetInnerHTML={{__html: content.title}} />
+        <p>{content.subtitle}</p>
       </div>
       <div className="container">
         <div className="row gy-4 gy-md-0" ref={element}>
           {
-            content.map((item, index) => {
+            content.cards.map((item, index) => {
               return (
                 <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>

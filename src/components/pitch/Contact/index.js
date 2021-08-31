@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Contact.module.scss';
 
-export default function Contact() {
+export default function Contact({ content, common }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -37,17 +37,14 @@ export default function Contact() {
           <div className="col-12 col-lg-10 mx-auto">
             <div className={styles.contact}>
               <div>
-                <h1>Let's Connect</h1>
-                <p>
-                  <strong>What did you think?</strong> If you have any doubts to clear
-                  or <br className="d-none d-lg-block" /> questions to ask, feel free to schedule a meeting with us.
-                </p>
+                <h1>{content.title}</h1>
+                <p dangerouslySetInnerHTML={{__html: content.paragraph}} />
               </div>
               <div>
                 <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn large">
-                  {'Book a Meeting\nRight Now'}
+                  {common.bookMeetingNow}
                 </a>
-                <small><sup>*</sup> We’re available for meeting <br /> Mon to Fri | 10am to 7pm</small>
+                <small dangerouslySetInnerHTML={{__html: content.availableHours}} />
               </div>
             </div>
           </div>

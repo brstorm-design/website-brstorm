@@ -15,6 +15,11 @@
         z-index: 5;
       }
     }
+    .col-12.col-lg-6:nth-child(4) {
+      &:hover {
+        z-index: 3;
+      }
+    }
   }
 }
 
@@ -160,7 +165,7 @@
   &:hover {
     z-index: 4;
     path {
-      fill: #1769FF;
+      fill: #1769ff;
     }
   }
 

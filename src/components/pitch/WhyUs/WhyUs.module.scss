@@ -18,13 +18,16 @@
   h1 {
     margin-bottom: 50px;
     text-align: center;
-    &::before {
-      content: "Reasons Why Hire Us";
+    span {
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
     }
   }
   p {
     margin-bottom: 0;
     text-align: center;
+    white-space: break-spaces;
   }
 
   @include md() {
@@ -32,9 +35,6 @@
     padding-bottom: 50px;
     h1 {
       margin-bottom: 30px;
-      &::before {
-        content: "Why Hire Us";
-      }
     }
   }
 }
