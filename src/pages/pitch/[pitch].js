@@ -13,27 +13,6 @@ import Contact from 'src/components/pitch/Contact';
 import Footer from 'src/components/pitch/Footer';
 
 export default function Pitch(props) {
-  /* const options = {
-    rootMargin: '-150px 0px -150px 0px'
-  }
-
-
-  function handle(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        console.log(entry.target.id);
-      }
-    })
-  }
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(handle, options);
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-      observer.observe(section);
-    })
-  }, []) */
-
   return (
     <>
       <Head>

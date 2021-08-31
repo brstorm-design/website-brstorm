@@ -40,38 +40,24 @@ export default function WhatWeDo() {
     }
   }, [animations])
 
-  /* useEffect(() => {
-    function cleanup() {
-      document.getElementById('what-we-do').removeEventListener('mousemove', e => {
-        getMousePos(e);
-      })
-    }
-
-    document.getElementById('what-we-do').addEventListener('mousemove', e => {
-      getMousePos(e);
-    })
-
-    return cleanup();
-  }, [])
-
-  function getMousePos(e) {
-    let relX = (e.pageX * 100) / window.innerWidth;
-    let relY = (e.pageY * 100) / window.innerHeight;
-    let translateX1 =  (((50 * relX) / 100) - 25);
-    let translateY1 =  (((50 * relY) / 100) - 25);
-    let translateX2 = -(((50 * relX) / 100) - 25);
-    let translateY2 = -(((50 * relY) / 100) - 25);
+  function move(e) {
+    let relX = (e.clientX * 100) / window.innerWidth;
+    let relY = (e.clientY * 100) / window.innerHeight;
+    let translateX1 = - (((40 * relX) / 100) - 20);
+    let translateY1 = - (((40 * relY) / 100) - 20);
+    let translateX2 = (((40 * relX) / 100) - 20);
+    let translateY2 = (((40 * relY) / 100) - 20);
 
     window.requestAnimationFrame(() => {
-      let grayscale = document.querySelector('#what-we-do img[alt="grayscale"]');
-      let picker = document.querySelector('#what-we-do img[alt="picker"]');
-      grayscale.style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
-      picker.style.transform = `translateX(${translateX2}px) translateY(${translateY2}px)`;
+      let picker = document.querySelector('img[alt="picker"]');
+      let grayscale  = document.querySelector('img[alt="grayscale"]');
+      picker.style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
+      grayscale.style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
     })
-  } */
+  }
 
   return (
-    <section className={styles.section} id="what-we-do">
+    <section className={styles.section} id="what-we-do" onMouseMove={move}>
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
           <h3 className="gradient-bg">Don't know where to start?</h3>

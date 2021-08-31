@@ -38,8 +38,24 @@ export default function Purpose() {
     }
   }, [animations])
 
+  function move(e) {
+    let relX = (e.clientX * 100) / window.innerWidth;
+    let relY = (e.clientY * 100) / window.innerHeight;
+    let translateX1 = - (((40 * relX) / 100) - 20);
+    let translateY1 = - (((40 * relY) / 100) - 20);
+    let translateX2 = (((40 * relX) / 100) - 20);
+    let translateY2 = (((40 * relY) / 100) - 20);
+
+    window.requestAnimationFrame(() => {
+      let comment = document.querySelector('img[alt="comment"]');
+      let writing  = document.querySelector('img[alt="writing"]');
+      comment.style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
+      writing.style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
+    })
+  }
+
   return (
-    <section className={styles.section} id="purpose">
+    <section className={styles.section} id="purpose" onMouseMove={move}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
@@ -51,7 +67,7 @@ export default function Purpose() {
                 <img src="/images/purpose/comment-michelangelo.svg" alt="comment" />
                 <img src="/images/purpose/pattern.svg" alt="pattern" />
                 <img src="/images/purpose/pin.svg" alt="pin" />
-                <img src="/images/purpose/exploring-the-infinite.svg" alt="exploring-the-infinite" />
+                <img src="/images/purpose/exploring-the-infinite.svg" alt="writing" />
                 <div>
                   <object id="obj" data="/images/purpose/words.svg" type="text/svg+xml" />
                 </div>

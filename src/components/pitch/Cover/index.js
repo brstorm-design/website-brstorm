@@ -26,8 +26,8 @@ export default function Cover() {
   }, [])
 
   function getMousePos(e) {
-    let relX = (e.pageX * 100) / window.innerWidth;
-    let relY = (e.pageY * 100) / window.innerHeight;
+    let relX = (e.clientX * 100) / window.innerWidth;
+    let relY = (e.clientY * 100) / window.innerHeight;
     let translateX1 = - (((50 * relX) / 100) - 25);
     let translateY1 = - (((50 * relY) / 100) - 25);
     let translateX2 = (((50 * relX) / 100) - 25);
@@ -37,9 +37,9 @@ export default function Cover() {
 
     window.requestAnimationFrame(() => {
       let track = document.querySelectorAll('.track');
-      track[0].style.transform = `translateX(${translateX1}px) translateY(${translateY1}px)`;
-      track[1].style.transform = `translateX(${translateX2}px) translateY(${translateY2}px)`;
-      track[2].style.transform = `translateX(${translateX3}px) translateY(${translateY3}px)`;
+      track[0].style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
+      track[1].style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
+      track[2].style.transform = `translate3d(${translateX3}px, ${translateY3}px, 0)`;
     })
   }
 

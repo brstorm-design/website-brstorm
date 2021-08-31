@@ -58,6 +58,7 @@
 
     img:not(img:first-child) {
       position: absolute;
+      transition: transform 200ms ease-out;
     }
     //david
     img:first-child {
