@@ -42,7 +42,7 @@ export default function Contact({ content, common }) {
               </div>
               <div>
                 <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn large">
-                  {common.bookMeetingNow}
+                  {common.bookMeeting}
                 </a>
                 <small dangerouslySetInnerHTML={{__html: content.availableHours}} />
               </div>
