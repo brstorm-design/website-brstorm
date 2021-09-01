@@ -60,8 +60,8 @@ export default function WhatWeDo({ content, common }) {
     <section className={styles.section} id="what-we-do" onMouseMove={move}>
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
-          <h3 className="gradient-bg">Don't know where to start?</h3>
-          <h1>We're here to help!</h1>
+          <h3 className="gradient-bg">{content.subtitle}</h3>
+          <h1>{content.title}</h1>
         </div>
         <div className="row">
           <div className="col-12 col-lg-6">
@@ -85,8 +85,8 @@ export default function WhatWeDo({ content, common }) {
               </div>
             </div>
             <div className={`d-block d-lg-none ${styles.title}`}>
-              <h3 className="gradient-bg">Don't know where to start?</h3>
-              <h1>We're here to help!</h1>
+              <h3 className="gradient-bg">{content.subtitle}</h3>
+              <h1>{content.title}</h1>
             </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1" ref={element}>
@@ -94,9 +94,9 @@ export default function WhatWeDo({ content, common }) {
               content.services.map((service, index) => {
                 return (
                   <article key={`article-${index}`} id={`art${index + 1}`}>
-                    <h2>{service.name}</h2>
+                    <h2>{service.title}</h2>
                     <h4>{service.subtitle}</h4>
-                    <p>{service.paragraph}</p>
+                    <p dangerouslySetInnerHTML={{__html: service.paragraph}} />
                     {
                       service.features.map((feature, index) => {
                         return (

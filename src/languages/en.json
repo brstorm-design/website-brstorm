@@ -42,7 +42,7 @@
         {
           "title": "Branding",
           "subtitle": "Your Brand goes beyond the visual!",
-          "paragraph": "It's not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand.",
+          "paragraph": "It's not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand. <strong>Here's what we offer</strong>:",
           "features": [
             {
               "title": "Logo Design",
@@ -65,7 +65,7 @@
         {
           "title": "Web Design",
           "subtitle": "What is not registered is not remembered!",
-          "paragraph": "Where people can learn more about your company's history, values, or even about your products and services. What big business you know doesn't have a website? You need one too, and we can help you with that.",
+          "paragraph": "Where people can learn more about your company's history, values, or even about your products and services. What big business you know doesn't have a website? You need one too, and we can help you with that. <strong>Here's what we offer</strong>:",
           "features": [
             {
               "title": "Website",
@@ -137,7 +137,7 @@
           "photo": "/images/testimonials/paras.jpg"
         },
         {
-          "body": "Them delivered a logo that met and exceeded our expectations, the first go. The logo presented to us was simple (in the best way possible), bold, and captured who we are as a company. We could not be any happier and would gladly work with Br.Storm again!",
+          "body": "They delivered a logo that met and exceeded our expectations, the first go. The logo presented to us was simple (in the best way possible), bold, and captured who we are as a company. We could not be any happier and would gladly work with Br.Storm again!",
           "author": "Michael Smith",
           "company": "New Age Constructions",
           "photo": "/images/testimonials/michael.jpg"

@@ -43,14 +43,10 @@ export default function Purpose({content, common}) {
     let relY = (e.clientY * 100) / window.innerHeight;
     let translateX1 = - (((40 * relX) / 100) - 20);
     let translateY1 = - (((40 * relY) / 100) - 20);
-    let translateX2 = (((40 * relX) / 100) - 20);
-    let translateY2 = (((40 * relY) / 100) - 20);
 
     window.requestAnimationFrame(() => {
       let comment = document.querySelector('img[alt="comment"]');
-      let writing  = document.querySelector('img[alt="writing"]');
       comment.style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
-      writing.style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
     })
   }
 
