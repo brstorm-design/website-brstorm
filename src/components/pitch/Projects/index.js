@@ -36,6 +36,15 @@ export default function Projects({ content, common }) {
     }
   }, [animations])
 
+  function handleHover(e) {
+    if (e.type === 'mouseenter') {
+      e.currentTarget.parentElement.style.zIndex = '3';
+    }
+    else if (e.type === 'mouseleave') {
+      e.currentTarget.parentElement.style.zIndex = 'initial';
+    }
+  }
+
   return (
     <section className={styles.section} id="projects">
       <div className="container">
@@ -53,7 +62,7 @@ export default function Projects({ content, common }) {
             content.portifolio.map((item, index) => {
               return (
                 <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
-                  <a href="#">
+                  <a href="#" onMouseEnter={handleHover} onMouseLeave={handleHover}>
                     <img src={item.cover} alt="Project" />
                     <div>
                       <h5>{item.name}</h5>

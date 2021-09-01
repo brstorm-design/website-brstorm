@@ -20,6 +20,11 @@
         z-index: 3;
       }
     }
+    .col-12.col-lg-6:nth-child(3) {
+      &:hover {
+        z-index: 3;
+      }
+    }
   }
 }
 
