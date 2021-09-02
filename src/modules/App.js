@@ -11,6 +11,7 @@ export class App {
 export function constructSequentialAnimation(targets, keyframes, options, interval) {
   let animations = [];
   let delay = options.delay;
+  
   targets.forEach(target => {
     options.delay = delay;
     let ani = constructAnimation(target, keyframes, options);

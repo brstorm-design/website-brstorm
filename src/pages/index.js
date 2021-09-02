@@ -12,6 +12,7 @@ import Testimonials from 'src/components/pitch/Testimonials';
 import WhyUs from 'src/components/pitch/WhyUs';
 import Contact from 'src/components/pitch/Contact';
 import Footer from 'src/components/pitch/Footer';
+import Cursor from 'src/components/common/Cursor';
 
 export default function Home(props) {
   const page = props.home;
@@ -22,6 +23,8 @@ export default function Home(props) {
       <Head>
         <title>Br.Storm Design</title>
       </Head>
+
+      <Cursor />
 
       <Header content={page.header} common={common} />
 

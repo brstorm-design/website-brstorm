@@ -1,4 +1,15 @@
+@import '../../../styles/scss/colors';
+
 .cursor {
   position: absolute;
   z-index: 99999999;
+  transform: scale(10);
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  background-color: $white;
+  pointer-events: none;
+  transition: transform 50ms linear;
 }
