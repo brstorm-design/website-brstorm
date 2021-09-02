@@ -17,8 +17,12 @@ export default function Cover({content, common}) {
       getMousePos(e)
     })
 
-    setTimeout(() => {
-      document.querySelector('#cover svg').classList.add('active');
+    setTimeout(function toggle() {
+      let logo = document.querySelector('#cover svg');
+      logo.classList.toggle('active');
+      setTimeout(() => {
+        toggle();
+      }, 4000);
     }, 2000);
 
     return cleanup();

@@ -31,12 +31,21 @@ export default function Purpose({content, common}) {
         const localName = animation.effect.target.localName;
         if (localName === 'h2') {
           document.getElementById('color').classList.add('active');
-          document.getElementById('obj').contentDocument.firstChild.classList.add('active');
         }
       }
       handleIntersection(refs, animations, onEnd);
     }
   }, [animations])
+
+  useEffect(() => {
+    setTimeout(function toggle() {
+      let words = document.getElementById('obj').contentDocument.firstChild;
+      words.classList.toggle('active');
+      setTimeout(() => {
+        toggle();
+      }, 3000);
+    }, 2000);
+  }, [])
 
   function move(e) {
     let relX = (e.clientX * 100) / window.innerWidth;
