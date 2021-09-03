@@ -24,8 +24,6 @@ export default function Home(props) {
         <title>Br.Storm Design</title>
       </Head>
 
-      <Cursor />
-
       <Header content={page.header} common={common} />
 
       <Cover content={page.cover} common={common} />

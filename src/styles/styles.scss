@@ -87,10 +87,3 @@ body {
 ::selection {
   background-color: $pink;
 }
-
-* {
-  cursor: none !important;
-  :hover {
-    cursor: none !important;
-  }
-}

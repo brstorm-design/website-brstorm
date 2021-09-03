@@ -1,4 +1,4 @@
-export class App {
+export class AnimationSequence {
   name = 'John';
   occupation = 'Developer';
   age = 35;

@@ -40,6 +40,16 @@ export default function WhatWeDo({ content, common }) {
     }
   }, [animations])
 
+  useEffect(() => {
+    setTimeout(function toggle() {
+      let words = document.getElementById('obj-tech').contentDocument.firstChild;
+      words.classList.toggle('active');
+      setTimeout(() => {
+        toggle();
+      }, 5000);
+    }, 2000);
+  }, [])
+
   function move(e) {
     let relX = (e.clientX * 100) / window.innerWidth;
     let relY = (e.clientY * 100) / window.innerHeight;
@@ -72,7 +82,9 @@ export default function WhatWeDo({ content, common }) {
                 <img src="/images/whatWeDo/pattern.svg" alt="pattern" />
                 <img src="/images/whatWeDo/grayscale.svg" alt="grayscale" />
                 <img src="/images/whatWeDo/picker.svg" alt="picker" />
-                <img src="/images/whatWeDo/tech-creativity.svg" alt="tech-creativity" />
+                <div>
+                  <object id="obj-tech" data="/images/whatWeDo/tech-creativity.svg" type="image/svg+xml" />
+                </div>
                 <img src="/images/whatWeDo/pin.svg" alt="pin" />
                 <div>
                   <code>
@@ -96,7 +108,7 @@ export default function WhatWeDo({ content, common }) {
                   <article key={`article-${index}`} id={`art${index + 1}`}>
                     <h2>{service.title}</h2>
                     <h4>{service.subtitle}</h4>
-                    <p dangerouslySetInnerHTML={{__html: service.paragraph}} />
+                    <p dangerouslySetInnerHTML={{ __html: service.paragraph }} />
                     {
                       service.features.map((feature, index) => {
                         return (
