@@ -40,7 +40,7 @@
       "subtitle": "Não sabe por onde começar?",
       "services": [
         {
-          "title": "Branding",
+          "title": "Brand Design",
           "subtitle": "Sua marca muito além do visual!",
           "paragraph": "Não basta ter apenas um simples desenho qualquer para representar sua empresa. Sua marca precisa comunicar suas missão e valores, afinal esse é o primeiro contato do seu cliente com você. Estudamos e elaboramos cada detalhe para que sua empresa tenha uma marca forte, coesa e atraente. <strong>Veja o que engloba um projeto de Branding</strong>:",
           "features": [
@@ -89,7 +89,7 @@
     },
 
     "projects": {
-      "title": "Clientes Satisfeitos e Realizados em \nTodo o Mundo",
+      "title": "Clientes Satisfeitos \nem Todo o Mundo",
       "subtitle": "Projetos & Depoimentos",
       "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
       "portifolio": [
@@ -178,7 +178,7 @@
           "image": "/images/whyUs/support.svg"
         },
         {
-          "title": "Feito sob mediada para sua empresa",
+          "title": "Feito Sob Medida",
           "body": "Design exclusivo, feito especialmente para o seu negócio.",
           "image": "/images/whyUs/tailor-made.svg"
         },
@@ -193,7 +193,7 @@
     "contact": {
       "title": "Vamos Conversar",
       "paragraph": "<strong>O que você achou?</strong> Se você quiser sanar qualquer dúvida ou <br class='d-none d-lg-block'> fazer uma pergunta, fique à vontade para agendar uma reunião conosco.",
-      "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 10am às 7pm."
+      "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 9am às 3pm."
     },
 
     "footer": {

@@ -40,7 +40,7 @@
       "subtitle": "Don't know where to start?",
       "services": [
         {
-          "title": "Branding",
+          "title": "Brand Design",
           "subtitle": "Your Brand goes beyond the visual!",
           "paragraph": "It's not enough to have only a basic logo to represent your company. Your brand needs to communicate your company values, it is your customer's first contact with you. We study and elaborate every detail so that your company has a strong, cohesive, and eye-catching brand. <strong>Here's what we offer</strong>:",
           "features": [
@@ -169,7 +169,7 @@
       "cards": [
         {
           "title": "Autonomy and Freedom",
-          "body": "Whether in web design or branding projects, we provide tools that allow you to use the project without the need for an expert.",
+          "body": "We provide tools that allow you to use the project without an expert.",
           "image": "/images/whyUs/autonomy.svg"
         },
         {
@@ -193,7 +193,7 @@
     "contact": {
       "title": "Let's Connect",
       "paragraph": "<strong>What did you think?</strong> If you have any doubts to clear or <br class='d-none d-lg-block'> questions to ask, feel free to schedule a meeting with us.",
-      "availableHours": "<sup>*</sup> We’re available for meeting <br> Mon to Fri | 10am to 7pm."
+      "availableHours": "<sup>*</sup> We’re available for meeting <br> Mon to Fri | 1pm to 7pm."
     },
 
     "footer": {
