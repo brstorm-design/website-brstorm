@@ -87,7 +87,9 @@
     bottom: 140px;
     height: auto;
     div {
-      display: none;
+      span {
+        display: none;
+      }
     }
   }
 

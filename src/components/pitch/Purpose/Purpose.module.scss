@@ -100,6 +100,9 @@
       right: 145px;
       border-radius: 50%;
       animation: pin-pulse 2s infinite;
+      @include md() {
+        display: none;
+      }
     }
     // exploring the infinite
     img:nth-of-type(6) {
