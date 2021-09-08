@@ -31,6 +31,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: auto !important;
+}
+
 @include lg() {
   html {
     overflow-x: hidden;

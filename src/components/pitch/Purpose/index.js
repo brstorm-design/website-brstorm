@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Purpose.module.scss';
 
-export default function Purpose({content, common}) {
+export default function Purpose({ content, common }) {
   const element = useRef(null);
   const element1 = useRef(null);
   const refs = [element.current, element1.current];
@@ -59,6 +59,42 @@ export default function Purpose({content, common}) {
     })
   }
 
+  function inOutQuad(n) {
+    n *= 2;
+    if (n < 1) return 0.5 * n * n;
+    return - 0.5 * (--n * (n - 2) - 1);
+  };
+
+  function startAnimation() {
+    let stop = false;
+
+    // animating x (margin-left) from 20 to 300, for example
+    let doc = document.documentElement;
+    let startx = doc.scrollTop;
+    let destx = doc.scrollHeight - window.innerHeight;
+    let duration = 2000;
+    let start = null;
+    let end = null;
+
+    function startAnim(timeStamp) {
+      console.log(timeStamp);
+      start = timeStamp;
+      end = start + duration;
+      draw(timeStamp);
+    }
+
+    function draw(now) {
+      if (stop) return;
+      if (now - start >= duration) stop = true;
+      let p = (now - start) / duration;
+      let val = inOutQuad(p);
+      let x = startx + (destx - startx) * val;
+      window.scrollTo(0, x);
+      requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(startAnim);
+  }
+
   return (
     <section className={styles.section} id="purpose" onMouseMove={move}>
       <div className="container">
@@ -82,8 +118,8 @@ export default function Purpose({content, common}) {
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
             <article ref={element} id="purpose-article">
               <h2>{content.title}</h2>
-              <div dangerouslySetInnerHTML={{__html: content.paragraph}} />
-              <a className="btn large ghost" href="#contact">
+              <div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
+              <a className="btn large ghost" onClick={startAnimation}>
                 {common.contactUs}
                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
               </a>

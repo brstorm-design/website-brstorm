@@ -4,6 +4,7 @@
 .section {
   margin-top: 100px;
   padding-bottom: 275px;
+  overflow-y: hidden;
 
   @include md() {
     margin-top: 150px;

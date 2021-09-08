@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
-import Logo from '../common/Logo';
+import Logo from '../../components/common/Logo';
 import styles from './Header.module.scss';
 
 export default function Header({ content, common }) {

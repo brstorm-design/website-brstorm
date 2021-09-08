@@ -217,6 +217,11 @@
       ]
     }
   },
+
+  "propose": {
+    "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos. Se tiver interesse, estamos disponíveis para conversamos mais em uma reunião."
+  },
+
   "common": {
     "bookMeeting": "Marque uma Reunião",
     "bookMeetingNow": "Marque uma Reunião\nAgora Mesmo",

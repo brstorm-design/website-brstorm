@@ -107,6 +107,9 @@
     margin-bottom: 115px;
     text-align: center;
   }
+  @include lg() {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.475) 0%, rgba(1, 1, 1, 0.3) 100%);
+  }
 
   h1 {
     margin-bottom: 0;
