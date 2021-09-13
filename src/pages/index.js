@@ -2,13 +2,13 @@ import Head from 'next/head';
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
 import Header from 'src/layouts/Header';
-import Cover from 'src/components/pitch/Cover';
-import Purpose from 'src/components/pitch/Purpose';
-import WhatWeDo from 'src/components/pitch/WhatWeDo';
-import Projects from 'src/components/pitch/Projects';
-import Testimonials from 'src/components/pitch/Testimonials';
-import WhyUs from 'src/components/pitch/WhyUs';
-import Contact from 'src/components/pitch/Contact';
+import Cover from 'src/components/home/Cover';
+import Purpose from 'src/components/home/Purpose';
+import WhatWeDo from 'src/components/home/WhatWeDo';
+import Projects from 'src/components/home/Projects';
+import Testimonials from 'src/components/home/Testimonials';
+import WhyUs from 'src/components/home/WhyUs';
+import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
 
 export default function Home(props) {
