@@ -9,6 +9,7 @@ import WhyUs from 'src/components/home/WhyUs';
 import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
 import Details from 'src/components/pitch/Details';
+import ProjectsSlider from 'src/components/pitch/ProjectsSlider';
 
 export default function Pitch(props) {
   const home = props.home;
@@ -24,7 +25,7 @@ export default function Pitch(props) {
 
       <Hero content={pitch.hero} common={common} />
       <Details content={pitch.details} />
-      {/* <ProjectsSlider/> */}
+      <ProjectsSlider content={home.projects} />
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} />
       {/* <Methodology/> */}
