@@ -12,6 +12,7 @@ body {
   position: relative;
   height: 100%;
   overflow-x: clip;
+  counter-set: step;
   
   &::before {
     content: "";

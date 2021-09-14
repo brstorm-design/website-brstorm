@@ -10,6 +10,7 @@ import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
 import Details from 'src/components/pitch/Details';
 import ProjectsSlider from 'src/components/pitch/ProjectsSlider';
+import Methodology from 'src/components/pitch/Methodology';
 
 export default function Pitch(props) {
   const home = props.home;
@@ -28,7 +29,7 @@ export default function Pitch(props) {
       <ProjectsSlider content={home.projects} />
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} />
-      {/* <Methodology/> */}
+      <Methodology content={pitch.method} />
       {/* <Pricing/> */}
       <Contact content={home.contact} common={common} />
 

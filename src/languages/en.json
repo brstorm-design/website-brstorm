@@ -236,34 +236,42 @@
       "subtitle": "Meet Our Method",
       "steps": [
         {
+          "icon": "img-icon.svg",
           "name": "Design Brief",
           "text": "Gathering of all essential information for project execution."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Research",
           "text": "Briefing study, competition analysis, market research and mental map."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Design Concepts",
           "text": "Brainstorm, moodboard, sketches, prototypes and tests."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Refinement",
           "text": "Typography definition, symbol, color scheme and other visual elements."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Presentation",
           "text": "Description of the paths to the achieved result and elaboration of visual samples."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Feedback and Review",
           "text": "Project validation and, if necessary, adjust and adapt to the client's expectations."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Brand Collaterals",
           "text": "Development of all complementary materials included in the brand package."
         },
         {
+          "icon": "img-icon.svg",
           "name": "Final Delivery",
           "text": "Finalization and delivery of the project, followed by attendance and support on the brand use."
         }

@@ -1,0 +1,82 @@
+@import "../../../styles/scss/colors";
+
+.section {
+  margin-top: 225px;
+
+  & > div:first-child {
+    text-align: center;
+    margin-bottom: 65px;
+
+    h3 {
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+}
+
+.cards {
+  position: relative;
+
+  & > div {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $lightDark;
+    padding: 40px 30px;
+
+    img {
+      height: 32px;
+      width: 32px;
+    }
+
+    h5 {
+      margin: 20px 0;
+    }
+
+    &::before {
+      counter-increment: step;
+      content: "" counter(step);
+      position: absolute;
+      left: -85px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: $lightDark;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      color: $gray;
+    }
+
+    &:first-child {
+      margin-top: 100px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: -65px;
+        height: calc(100% * 8.6);
+        top: 50%;
+        width: 1px;
+        z-index: -1;
+        border-left: 1px dashed $ghost;
+        /* border-right: 1px dashed red; */
+      }
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  position: sticky;
+  top: 65px;
+}
