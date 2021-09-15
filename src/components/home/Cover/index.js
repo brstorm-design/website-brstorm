@@ -1,8 +1,10 @@
 import { React, useEffect } from 'react';
+import AnchorButton from 'src/components/common/AnchorButton';
 import AnimatedLogo from 'src/components/svg/AnimatedLogo';
 import Circle from 'src/components/svg/Circle';
 import Square from 'src/components/svg/Square';
 import Triangle from 'src/components/svg/Triangle';
+import { inOutQuad } from 'src/utils/easings';
 import styles from './Cover.module.scss';
 
 export default function Cover({content, common}) {
@@ -62,10 +64,10 @@ export default function Cover({content, common}) {
             <div className={styles.content}>
               <h1>{content.title}</h1>
               <h4>{content.subtitle}</h4>
-              <a className="btn large ghost" href="#purpose">
+              <AnchorButton className="btn large ghost" href="#purpose" easing={inOutQuad} duration={1000}>
                 {common.seeMore}
                 <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
-              </a>
+              </AnchorButton>
 
               <div>
                 <div>
