@@ -16,6 +16,7 @@ export default function Pitch(props) {
   const home = props.home;
   const common = props.common;
   const pitch = props.pitch
+  console.log(pitch);
 
   return (
     <>
