@@ -279,14 +279,14 @@
     },
 
     "deliverables": {
-      "title": "The Best Choice for Your Business",
+      "title": "The Best Choice for \n Your Business",
       "subtitle": "Our Service Packages",
-      "text": "<p>No matter the size or phase of your business, <strong>we can certainly help</strong> you choose the package that suits you.</p>",
+      "text": "No matter the size or phase of your business, <strong>we can <br class='d-none d-lg-block'/> certainly help</strong> you choose the package that suits you.",
       "note": "Note: To find out more about our payment terms and conditions please contact us.",
       "packages": [
         {
           "name": "Starter",
-          "vale": "£370,00",
+          "value": "£370,00",
           "shortText": "Only Logo",
           "longText": "This package basically includes the brand and all its assets. The needful for starting your business.",
           "included": [
@@ -310,7 +310,7 @@
         },
         {
           "name": "Essential",
-          "vale": "£540,00",
+          "value": "£540,00",
           "shortText": "Brand & Collateral",
           "longText": "Ideal for those who already have a more organized business and need some essential materials as well.",
           "included": [
@@ -356,7 +356,7 @@
         },
         {
           "name": "Premium",
-          "vale": "£780,00",
+          "value": "£780,00",
           "shortText": "Full Brand & Extras",
           "longText": "Ideal for those who already have a more organized business and need some essential materials as well.",
           "included": [

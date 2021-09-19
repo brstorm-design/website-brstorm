@@ -2,34 +2,6 @@ import React from 'react';
 import styles from './Methodology.module.scss';
 
 export default function Methodology({ content }) {
-
-  const images = [
-    {
-      id: '1'
-    },
-    {
-      id: '2'
-    },
-    {
-      id: '3'
-    },
-    {
-      id: '4'
-    },
-    {
-      id: '5'
-    },
-    {
-      id: '6'
-    },
-    {
-      id: '7'
-    },
-    {
-      id: '8'
-    },
-  ]
-
   return (
     <section className={styles.section}>
       <div>
@@ -55,8 +27,8 @@ export default function Methodology({ content }) {
                     )
                   })
                 }
+                <div className={styles.line} />
               </div>
-              <div className={styles.line} />
             </div>
           </div>
         </div>

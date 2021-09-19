@@ -11,12 +11,12 @@ import Footer from 'src/layouts/Footer';
 import Details from 'src/components/pitch/Details';
 import ProjectsSlider from 'src/components/pitch/ProjectsSlider';
 import Methodology from 'src/components/pitch/Methodology';
+import Pricing from 'src/components/pitch/Pricing';
 
 export default function Pitch(props) {
   const home = props.home;
   const common = props.common;
   const pitch = props.pitch
-  console.log(pitch);
 
   return (
     <>
@@ -31,7 +31,7 @@ export default function Pitch(props) {
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} />
       <Methodology content={pitch.method} />
-      {/* <Pricing/> */}
+      <Pricing content={pitch.deliverables} />
       <Contact content={home.contact} common={common} />
 
       <Footer content={home.footer} common={common} />
