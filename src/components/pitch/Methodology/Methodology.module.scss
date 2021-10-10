@@ -27,6 +27,21 @@
     justify-content: center;
     background-color: $lightDark;
     padding: 40px 30px;
+    transition: all 500ms ease;
+
+    &.active {
+      background: $lightGray;
+      h5 {
+        color: $dark;
+      }
+      small {
+        color: $ghost;
+      }
+      &::before {
+        background: $lightGray;
+        color: $dark;
+      }
+    }
 
     img {
       height: 32px;
@@ -51,29 +66,30 @@
       border-radius: 50%;
       color: $gray;
     }
-
-    &:first-child {
-      margin-top: 100px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: -65px;
-        height: calc(100% * 8.6);
-        top: 50%;
-        width: 1px;
-        z-index: -1;
-        border-left: 1px dashed $ghost;
-        /* border-right: 1px dashed red; */
-      }
-    }
   }
 }
 
 .line {
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: -2;
+  top: 50%;
+  left: -65px;
+  height: calc(100% * 8.6);
+  width: 1px;
+  border-left: 1px dashed $ghost;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    border-left: 1px dashed $lightGray;
+    height: 0;
+    transition: height 150ms ease; 
+  }
+}
+
+.lineFill {
+  z-index: -1;
 }
 
 .image {

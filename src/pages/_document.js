@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import GoogleAnalytics from 'src/components/scripts/GoogleAnalytics'
 import GoogleTagManager from 'src/components/scripts/GoogleTagManager'
 import NoScript from 'src/components/scripts/NoScript'
+import { isDev } from 'src/lib/env'
 
 class MyDocument extends Document {
 
@@ -9,8 +10,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <GoogleAnalytics />
-          <GoogleTagManager />
+          {
+            isDev ? null : (
+              <>
+                <GoogleAnalytics />
+                <GoogleTagManager />
+              </>
+            )
+          }
           <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
