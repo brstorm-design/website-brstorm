@@ -220,82 +220,82 @@
   
   "pitch": {
     "hero": {
-      "title": "Hi, ",
-      "subtitle": "We will bring value to ",
-      "text": "We prepared a brief presentation for you to better know us and the solutions we provide. If you are interested, let's schedule a meeting to talk more."
+      "title": "Olá, ",
+      "subtitle": "Nós vamos agregar valor para a ",
+      "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos. Se tiver interesse, estamos disponíveis para conversamos mais em uma reunião."
     },
 
     "details": {
-      "title": "What is a Brand Project",
-      "subtitle": "Your brand goes beyond the visual!",
-      "text": "<p>A <strong>well-planned and striking visual identity</strong> is a fundamental step to present yourself to your client as a company in which he can <strong>believe</strong> and <strong>invest</strong>.</p><br/><br/><p>Big names in the market are represented by images and colors that <strong>awaken our memory</strong>, even unconsciously. It is this type of impact that you must make on your audience: a visual identity that <strong>makes your mission visible and makes you recognizable anywhere</strong>.</p>"
+      "title": "O Que é um Projeto de Branding",
+      "subtitle": "Sua marca vai muito além do visual!",
+      "text": "<p>Uma identidade visual bem arquitetada e marcante é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode acreditar e investir.</p><br/><br/><p>Grandes nomes do mercado são representados por imagens e cores que despertam a nossa memória, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que transpareça a sua missão e lhe torne reconhecível em qualquer lugar.</p>"
     },
 
     "method": {
-      "title": "Creative Process Steps",
-      "subtitle": "Meet Our Method",
+      "title": "Etapas do Processo de Criação",
+      "subtitle": "Conheça Nosso Método",
       "steps": [
         {
-          "name": "Design Brief",
-          "text": "Gathering of all essential information for project execution."
+          "name": "Briefing",
+          "text": "Coleta de todas as informações essenciais para a execução do projeto."
         },
         {
-          "name": "Research",
-          "text": "Briefing study, competition analysis, market research and mental map."
+          "name": "Pesquisa",
+          "text": "Estudo do briefing, análise de concorrentes, pesquisa de mercado e mapa mental."
         },
         {
-          "name": "Design Concepts",
-          "text": "Brainstorm, moodboard, sketches, prototypes and tests."
+          "name": "Desenho",
+          "text": "Brainstorm, moodboard, rascunhos, protótipos e testes."
         },
         {
-          "name": "Refinement",
-          "text": "Typography definition, symbol, color scheme and other visual elements."
+          "name": "Refinamento",
+          "text": "Definição da tipografia, símbolo, acordo cromático e elementos de apoio."
         },
         {
-          "name": "Presentation",
-          "text": "Description of the paths to the achieved result and elaboration of visual samples."
+          "name": "Apresentação",
+          "text": "Descrição dos caminhos até o resultado alcançado e elaboração de amostras visuais."
         },
         {
-          "name": "Feedback and Review",
-          "text": "Project validation and, if necessary, adjust and adapt to the client's expectations."
+          "name": "Avaliação e Ajustes",
+          "text": "Validação do projeto e caso necessário ajuste e adequação as expectativas do cliente. "
         },
         {
-          "name": "Brand Collaterals",
-          "text": "Development of all complementary materials included in the brand package."
+          "name": "Materiais",
+          "text": "Desenvolvimento de todos os materiais complementares inclusos no pacote da marca."
         },
         {
-          "name": "Final Delivery",
-          "text": "Finalization and delivery of the project, followed by attendance and support on the brand use."
+          "name": "Entrega Final",
+          "text": "Finalização e entrega do projeto, seguido de atendimento e suporte no uso da marca."
         }
       ]
     },
 
     "deliverables": {
-      "title": "The Best Choice for Your Business",
-      "subtitle": "Our Service Packages",
-      "text": "<p>No matter the size or phase of your business, <strong>we can certainly help</strong> you choose the package that suits you.</p>",
-      "note": "Note: To find out more about our payment terms and conditions please contact us.",
+      "title": "A Melhor Escolha para o Seu Negócio",
+      "subtitle": "Nossos Pacotes de Serviços",
+      "text": "<p>Não importa o tamanho ou a fase do seu negócio, nós certamente podemos lhe ajudar, escolha o pacote que lhe atende.</p>",
+      "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
       "packages": [
         {
           "name": "Starter",
-          "vale": "£370,00",
-          "shortText": "Only Logo",
-          "longText": "This package basically includes the brand and all its assets. The needful for starting your business.",
+          "value": "£370,00",
+          "shortText": "Apenas a Marca",
+          "longText": "Esse pacote contempla basicamente a marca e todos os seus arquivos complementares. O indispensável para dar inicio ao seu negócio.",
           "included": [
             {
-              "name": "Unique Logo Concept",
+              "name": "Desenho Exclusivo da Marca",
               "items": [
-                "High Quality JPG & Transparent PNG",
-                "Black & White Versions",
-                "Vector Files for Printing"
+                "JPG de Alta Qualidade e PNG Transparentes",
+                "Versões em Preto e Branco",
+                "Arquivos Vetoriais para Impressão"
               ]
             },
             {
-              "name": "Visual Identity",
+              "name": "Identidade Visual",
               "items": [
-                "Color Scheme",
-                "Typography",
-                "Pattern"
+                "Paleta de Cores",
+                "Tipografia",
+                "Grafismos"
               ]
             }
           ]
@@ -303,45 +303,45 @@
         {
           "name": "Essential",
           "vale": "£540,00",
-          "shortText": "Brand & Collateral",
-          "longText": "Ideal for those who already have a more organized business and need some essential materials as well.",
+          "shortText": "Marca e Materiais",
+          "longText": "Esse pacote é o ideal pra quem já tem um negócio mais estruturado e precisa da marca e alguns materiais iniciais também.",
           "included": [
             {
-              "name": "Unique Logo Concept",
+              "name": "Desenho Exclusivo da Marca",
               "items": [
-                "High Quality JPG & Transparent PNG",
-                "Black & White Versions",
-                "Vector Files for Printing"
+                "JPG de Alta Qualidade e PNG Transparentes",
+                "Versões em Preto e Branco",
+                "Arquivos Vetoriais para Impressão"
               ]
             },
             {
-              "name": "Visual Identity",
+              "name": "Identidade Visual",
               "items": [
-                "Color Scheme",
-                "Typography",
-                "Pattern"
+                "Paleta de Cores",
+                "Tipografia",
+                "Grafismos"
               ]
             },
             {
-              "name": "Social Media Kit",
+              "name": "Redes Sociais",
               "items": [
-                "Profile",
-                "Banner Cover",
-                "Highlights Cover"
+                "Perfil",
+                "Capa",
+                "Destaques"
               ]
             },
             {
-              "name": "Stationery Kit",
+              "name": "Papelaria Básica",
               "items": [
-                "Business Card",
-                "Letterhead",
+                "Cartões de Visitas",
+                "Timbrado",
                 "Envelope"
               ]
             },
             {
               "name": "Brandbook",
               "items": [
-                "Brand usage manual with all visual guidelines."
+                "Manual de uso da marca com todas as diretrizes visuais."
               ]
             }
           ]
@@ -349,56 +349,56 @@
         {
           "name": "Premium",
           "vale": "£780,00",
-          "shortText": "Full Brand & Extras",
-          "longText": "Ideal for those who already have a more organized business and need some essential materials as well.",
+          "shortText": "Marca Completa",
+          "longText": "Perfeito para um negócio crescente e que demanda aplicar a marca em múltiplos pontos de contato. Mais de 10 materiais extras.",
           "included": [
             {
-              "name": "Unique Logo Concept",
+              "name": "Desenho Exclusivo da Marca",
               "items": [
-                "High Quality JPG & Transparent PNG",
-                "Black & White Versions",
-                "Vector Files for Printing"
+                "JPG de Alta Qualidade e PNG Transparentes",
+                "Versões em Preto e Branco",
+                "Arquivos Vetoriais para Impressão"
               ]
             },
             {
-              "name": "Visual Identity",
+              "name": "Identidade Visual",
               "items": [
-                "Color Scheme",
-                "Typography",
-                "Pattern"
+                "Paleta de Cores",
+                "Tipografia",
+                "Grafismos"
               ]
             },
             {
-              "name": "Social Media Kit",
+              "name": "Redes Sociais",
               "items": [
-                "Profile",
-                "Banner Cover",
-                "Highlights Cover"
+                "Perfil",
+                "Capa",
+                "Destaques"
               ]
             },
             {
-              "name": "Stationery Kit",
+              "name": "Papelaria Básica",
               "items": [
-                "Business Card",
-                "Letterhead",
+                "Cartões de Visitas",
+                "Timbrado",
                 "Envelope"
               ]
             },
             {
-              "name": "Extended Collaterals",
+              "name": "Materiais Extras",
               "items": [
-                "Uniform",
-                "Banner",
+                "Uniforme",
+                "Crachá",
                 "Flyers",
-                "Badge Identity Card",
-                "E-mail Signature",
+                "Banner",
+                "Assinatura de E-mail",
                 "And 5 more items of your choice."
               ]
             },
             {
               "name": "Brandbook",
               "items": [
-                "Brand usage manual with all visual guidelines."
+                "Manual de uso da marca com todas as diretrizes visuais."
               ]
             }
           ]
@@ -407,8 +407,8 @@
     },
 
     "contact": {
-      "title": "Let's Close a Deal?",
-      "text": "<strong>Are you interested?</strong> Do you want to hire our services or ask any questions about what we offer? Make an appointment right now."
+      "title": "Vamos fechar negócio?",
+      "text": "Você se interessou? Quer contratar nossos serviços ou tirar alguma dúvida sobre o que ofertamos? Marque uma reunião agora mesmo, será um prazer lhe atender."
     }
   },
 
