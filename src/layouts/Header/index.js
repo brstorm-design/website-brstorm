@@ -47,7 +47,7 @@ export default function Header({ content, common }) {
   }
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="header">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <Link href="/">

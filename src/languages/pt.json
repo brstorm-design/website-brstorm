@@ -97,34 +97,40 @@
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "Identidade VIsual PetsVida",
-          "type": "E-commerce Pet Shop"
+          "type": "E-commerce Pet Shop",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Identidade Visual Rivana",
-          "type": "E-Commerce de Vestuário"
+          "type": "E-Commerce de Vestuário",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "Identidade Visual MapTrack",
-          "type": "Startup de Rastreamento de Ativos"
+          "type": "Startup de Rastreamento de Ativos",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Identidade Visual Catarge",
-          "type": "Engenharia e Arquitetura"
+          "type": "Engenharia e Arquitetura",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Identidade Visual Daia",
-          "type": "Fotógrafa de Família"
+          "type": "Fotógrafa de Família",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         }
       ],
-      "fullPortifolio": "Portifólio Completo"
+      "fullPortifolio": "Portifólio Completo",
+      "url": "https://www.behance.net/brstorm-design"
     },
 
     "testimonials": {
