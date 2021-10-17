@@ -172,7 +172,7 @@
   &:hover {
     z-index: 4;
     path {
-      fill: #1769ff;
+      fill: #1769ff !important;
     }
   }
 
@@ -194,5 +194,11 @@
 
   @include md() {
     top: auto;
+  }
+}
+
+.seeAll {
+  span {
+    color: $ghost !important;
   }
 }
