@@ -25,7 +25,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   p {
     margin-bottom: 100px;
   }
@@ -39,7 +39,7 @@
   transition: all 350ms ease;
 
   &:hover {
-    transform: scale(1.1);
+    transform: translateY(-20px);
     opacity: 1;
   }
 
@@ -147,4 +147,9 @@
       margin-bottom: 0;
     }
   }
+}
+
+.active {
+  transform: translateY(-20px);
+  opacity: 1;
 }
