@@ -37,7 +37,7 @@
       small {
         color: $ghost;
       }
-      &::before {
+      .number {
         background: $lightGray;
         color: $dark;
       }
@@ -52,7 +52,7 @@
       margin: 20px 0;
     }
 
-    &::before {
+    .number {
       counter-increment: step;
       content: "" counter(step);
       position: absolute;

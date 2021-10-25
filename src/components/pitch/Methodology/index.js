@@ -77,6 +77,7 @@ export default function Methodology({ content }) {
                   content.steps.map((step, index) => {
                     return (
                       <div key={`step-${index}`}>
+                        <span className={styles.number}>{index + 1}</span>
                         <img src={`/images/wireframes/${step.icon}`} alt="" />
                         <h5>{step.name}</h5>
                         <small>{step.text}</small>
