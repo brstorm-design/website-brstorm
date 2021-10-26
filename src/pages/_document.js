@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import GoogleAnalytics from 'src/components/scripts/GoogleAnalytics'
 import GoogleTagManager from 'src/components/scripts/GoogleTagManager'
 import NoScript from 'src/components/scripts/NoScript'
-import { isDev } from 'src/lib/env'
+import { isDev } from 'src/utils/env'
 
 class MyDocument extends Document {
 
