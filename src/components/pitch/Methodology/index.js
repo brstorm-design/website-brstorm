@@ -68,7 +68,7 @@ export default function Methodology({ content }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <img src="/images/wireframes/method.svg" className={styles.image} alt="Method" />
+            <img src="/images/wireframes/method.svg" className={`${styles.image} img-fluid`} alt="Method" />
           </div>
           <div className="col-12 col-lg-4 offset-lg-2">
             <div>

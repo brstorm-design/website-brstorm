@@ -7,7 +7,7 @@ export default function Details({content}) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5">
-            <img src="/images/wireframes/project-details.svg" alt="Details" />
+            <img src="/images/wireframes/project-details.svg" className="img-fluid" alt="Details" />
           </div>
           <div className="col-12 col-lg-6 offset-lg-1 d-flex align-items-center">
             <article>
