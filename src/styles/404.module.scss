@@ -1,0 +1,41 @@
+@import "scss/colors";
+@import "scss/mixins";
+
+.section {
+  height: 100vh;
+}
+
+.error {
+  padding-top: 130px;
+  height: calc(100vh - 286px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+
+  & > div {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-right: 25px;
+    margin-right: 25px;
+    border-right: 1px solid $ghost;
+  }
+
+  h2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  :global {
+    footer {
+      margin-top: 0;
+    }
+  }
+}
