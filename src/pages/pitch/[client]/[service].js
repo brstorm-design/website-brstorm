@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import data from '../../../public/clients.json';
+import data from '../../../../public/data.json';
 
 export default function Pitch(props) {
   const pitch = props.pitch
@@ -22,17 +22,29 @@ export default function Pitch(props) {
 }
 
 export async function getStaticPaths() {
-  const paths = data.clients.map((client) => ({
-    params: { client: `${client.slug}-${client.id}` },
-  }))
+  function getPaths() {
+    return data.clients.flatMap(client => {
+      return data.services.map(service => {
+        return {
+          params: {
+            client: `${client.slugName}-${client.id}`,
+            service: service.slug,
+          },
+        }
+      })
+    })
+  }
+  const paths = getPaths();
   return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
   const pitchSlug = params.client.split('-');
   const [pitchClient, pitchID] = pitchSlug;
+  // props
   const pitch = data.clients.find(client => client.id === pitchID);
+  const service = data.services.find(service => service.slug === params.service);
   return {
-    props: { pitch }
+    props: { pitch, service }
   }
 }
