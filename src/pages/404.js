@@ -7,22 +7,21 @@ import Header from "src/layouts/Header";
 import Footer from "src/layouts/Footer";
 
 export default function NotFound(props) {
-  console.log(props);
   return (
     <div>
-      <Header content={props.home.header} common={props.common} />
+      <Header content={props.content.home.header} common={props.content.common} />
 
       <div className={styles.error}>
         <div>
           <h1>404</h1>
-          <h2>Esta página não foi encontrada.</h2>
+          <h2>{props.text}</h2>
         </div>
         <Link href="/">
-          <a>← Voltar à página principal</a>
+          <a>← {props.back}</a>
         </Link>
       </div>
 
-      <Footer content={props.home.footer} common={props.common} />
+      <Footer content={props.content.home.footer} common={props.content.common} />
     </div>
   )
 }
@@ -30,12 +29,20 @@ export default function NotFound(props) {
 export async function getStaticProps(context) {
   if (context.locale === 'pt') {
     return {
-      props: pt
+      props: {
+        content: pt,
+        text: 'Esta página não foi encontrada.',
+        back: 'Voltar à página principal',
+      }
     }
   }
   else {
     return {
-      props: en
+      props: {
+        content: en,
+        text: 'This page could not be found.',
+        back: 'Back to the home page',
+      }
     }
   }
 }

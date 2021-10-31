@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import en from 'src/languages/en.json';
+import pt from 'src/languages/pt.json';
 import data from '../../../../public/data.json';
 
 export default function Pitch(props) {
@@ -16,21 +18,24 @@ export default function Pitch(props) {
         <li>ID: {pitch.id}</li>
       </ul>
 
-      
+
     </>
   )
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   function getPaths() {
     return data.clients.flatMap(client => {
-      return data.services.map(service => {
-        return {
-          params: {
-            client: `${client.slugName}-${client.id}`,
-            service: service.slug,
-          },
-        }
+      return data.services.flatMap(service => {
+        return locales.map(locale => {
+          return {
+            params: {
+              client: `${client.slugName}-${client.id}`,
+              service: service.slug,
+            },
+            locale: locale,
+          }
+        })
       })
     })
   }
@@ -38,13 +43,22 @@ export async function getStaticPaths() {
   return { paths, fallback: false }
 }
 
-export async function getStaticProps({ params }) {
-  const pitchSlug = params.client.split('-');
+export async function getStaticProps(context) {
+  console.log(context.params);
+  const pitchSlug = context.params.client.split('-');
   const [pitchClient, pitchID] = pitchSlug;
   // props
   const pitch = data.clients.find(client => client.id === pitchID);
-  const service = data.services.find(service => service.slug === params.service);
-  return {
-    props: { pitch, service }
+  const service = data.services.find(service => service.slug === context.params.service);
+
+  if (context.locale === 'pt') {
+    return {
+      props: {pitch, service, pt}
+    }
+  }
+  else {
+    return {
+      props: {pitch, service, en}
+    }
   }
 }
