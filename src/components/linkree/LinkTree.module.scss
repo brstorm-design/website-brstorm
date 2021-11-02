@@ -1,12 +1,28 @@
 @import "../../styles/scss/colors";
+@import "../../styles/scss/mixins";
 
 .section {
-  height: calc(100vh - 80px);
+  height: 100vh;
+
+  @include md() {
+    height: auto;
+  }
 
   :global {
     .row {
-      position: relative;
-      top: -80px;
+      height: 100%;
+    }
+    .instagram {
+      display: none;
+    }
+    @include md() {
+      .row {
+        height: auto;
+        padding-top: 75px;
+      }
+      .instagram {
+        display: inline-flex;
+      }
     }
   }
 }
@@ -36,11 +52,32 @@
       margin-left: 7px;
     }
   }
+
+  @include md() {
+    p,
+    strong {
+      display: none;
+    }
+
+    h4 {
+      text-align: center;
+      white-space: break-spaces;
+      margin-bottom: 0;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 69%;
+    }
+  }
 }
 
 .links {
   display: flex;
   flex-direction: column;
+  margin: 60px 0;
 
   svg {
     margin-left: 50px;
@@ -82,12 +119,31 @@
       color: $white;
     }
   }
+
+  @include lg() {
+    span,
+    small {
+      display: none;
+    }
+
+    a {
+      justify-content: center;
+    }
+
+    svg {
+      margin-left: 0;
+    }
+  }
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  @include md() {
+    position: relative;
+  }
 }
 
 .footerText {
@@ -103,5 +159,9 @@
     svg {
       margin-right: 10px;
     }
+  }
+
+  @include md() {
+    justify-content: center;
   }
 }

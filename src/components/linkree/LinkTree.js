@@ -6,11 +6,12 @@ export default function LinkTree({ content }) {
   return (
     <section className={styles.section}>
       <div className="container h-100">
-        <div className="row h-100 align-items-center">
-          <div className="col-12 col-lg-4 offset-lg-1">
+        <div className="row align-items-center">
+          <div className="col-12 col-md-4 offset-md-1">
             <div className={styles.article}>
-              <img src={content.logo} alt="Logo" />
-              <h4>The infinite possibilities of Design!</h4>
+              <img className="img-fluid" src={content.logo} alt="Logo" />
+              <h4 className="d-none d-md-block">{content.desktopTitle}</h4>
+              <h4 className="d-block d-md-none">{content.mobileTitle}</h4>
               <p>We specialize in creating unique and memorable projects exploring the best in each business.</p>
               <strong>Let's do a remarkable project?</strong>
               <p>
@@ -22,12 +23,13 @@ export default function LinkTree({ content }) {
             </div>
           </div>
 
-          <div className="col-12 col-lg-4 offset-lg-1">
+          <div className="col-12 col-xxl-4 col-md-5 offset-md-1">
             <div className={styles.links}>
               {
                 content.links.map(link => {
+                  let slug = link.name.toLowerCase();
                   return (
-                    <a target="_blank" rel="noreferrer noopener" className="btn" href={link.href}>
+                    <a target="_blank" rel="noreferrer noopener" className={`btn ${slug}`} href={link.href}>
                       <Svg code={link.logo} />
                       <strong>{link.name}</strong>   <span>|</span>   <small>{link.text}</small>
                     </a>
@@ -39,9 +41,9 @@ export default function LinkTree({ content }) {
         </div>
       </div>
       <footer className={styles.footer}>
-        <div className="container">
+        <div className="container-md">
           <div className={styles.footerText}>
-            <a href={content.instagram.href}>
+            <a href={content.instagram.href} className="d-none d-md-flex">
               <Svg code={content.instagram.logo} />
               { content.instagram.text }
             </a>
