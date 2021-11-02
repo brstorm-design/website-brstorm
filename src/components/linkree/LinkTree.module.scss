@@ -1,0 +1,107 @@
+@import "../../styles/scss/colors";
+
+.section {
+  height: calc(100vh - 80px);
+
+  :global {
+    .row {
+      position: relative;
+      top: -80px;
+    }
+  }
+}
+
+.article {
+  img {
+    margin-bottom: 45px;
+  }
+
+  h4 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      fill: $gray;
+      margin-left: 7px;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    margin-left: 50px;
+    margin-right: 24px;
+    path {
+      fill: black;
+    }
+  }
+
+  a {
+    margin-bottom: 30px;
+    color: $black;
+    height: 56px;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      * {
+        color: $white;
+        fill: $white;
+      }
+    }
+  }
+
+  span {
+    padding: 0 24px;
+  }
+
+  small,
+  strong,
+  span {
+    display: inline-block;
+    color: $black;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerText {
+  border-top: 1px solid $ghost;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+import React from 'react'
+import Svg from '../svg/Svg';
+import styles from './LinkTree.module.scss';
+
+export default function LinkTree({ content }) {
+  return (
+    <section className={styles.section}>
+      <div className="container h-100">
+        <div className="row h-100 align-items-center">
+          <div className="col-12 col-lg-4 offset-lg-1">
+            <div className={styles.article}>
+              <img src={content.logo} alt="Logo" />
+              <h4>The infinite possibilities of Design!</h4>
+              <p>We specialize in creating unique and memorable projects exploring the best in each business.</p>
+              <strong>Let's do a remarkable project?</strong>
+              <p>
+                <a href={content.bookBtn.href}>
+                  {content.bookBtn.text}
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L4.11875 0.88125L7.60625 4.375H0V5.625H7.60625L4.11875 9.11875L5 10L10 5L5 0Z" fill="currnetColor"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="col-12 col-lg-4 offset-lg-1">
+            <div className={styles.links}>
+              {
+                content.links.map(link => {
+                  return (
+                    <a target="_blank" rel="noreferrer noopener" className="btn" href={link.href}>
+                      <Svg code={link.logo} />
+                      <strong>{link.name}</strong>   <span>|</span>   <small>{link.text}</small>
+                    </a>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer className={styles.footer}>
+        <div className="container">
+          <div className={styles.footerText}>
+            <a href={content.instagram.href}>
+              <Svg code={content.instagram.logo} />
+              { content.instagram.text }
+            </a>
+            <small>{content.copyright}</small>
+          </div>
+        </div>
+      </footer>
+    </section>
+  )
+}
