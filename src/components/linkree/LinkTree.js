@@ -26,10 +26,10 @@ export default function LinkTree({ content }) {
           <div className="col-12 col-xxl-4 col-md-5 offset-md-1">
             <div className={styles.links}>
               {
-                content.links.map(link => {
+                content.links.map((link, index) => {
                   let slug = link.name.toLowerCase();
                   return (
-                    <a target="_blank" rel="noreferrer noopener" className={`btn ${slug}`} href={link.href}>
+                    <a target="_blank" rel="noreferrer noopener" className={`btn ${slug}`} href={link.href} key={`link-${index}`}>
                       <Svg code={link.logo} />
                       <strong>{link.name}</strong>   <span>|</span>   <small>{link.text}</small>
                     </a>

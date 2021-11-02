@@ -15,10 +15,14 @@
     .instagram {
       display: none;
     }
+
     @include md() {
       .row {
         height: auto;
         padding-top: 75px;
+      }
+      .container-md {
+        padding: 0;
       }
       .instagram {
         display: inline-flex;
