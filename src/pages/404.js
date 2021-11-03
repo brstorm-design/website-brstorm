@@ -5,10 +5,16 @@ import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
 import Header from "src/layouts/Header";
 import Footer from "src/layouts/Footer";
+import Head from "next/head";
 
 export default function NotFound(props) {
   return (
     <div>
+      <Head>
+        <title>404 Not Found</title>
+        <meta name="robots" content="noindex" />
+      </Head>
+
       <Header content={props.content.home.header} common={props.content.common} />
 
       <div className={styles.error}>
