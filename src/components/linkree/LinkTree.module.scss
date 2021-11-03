@@ -11,6 +11,8 @@
   :global {
     .row {
       height: 100%;
+      position: relative;
+      top: -37px;
     }
     .instagram {
       display: none;
@@ -20,6 +22,7 @@
       .row {
         height: auto;
         padding-top: 75px;
+        top: 0;
       }
       .container-md {
         padding: 0;

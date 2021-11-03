@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../common/Logo';
 import Svg from '../svg/Svg';
 import styles from './LinkTree.module.scss';
 
@@ -17,7 +18,7 @@ export default function LinkTree({ content }) {
               <p>
                 <a href={content.bookBtn.href}>
                   {content.bookBtn.text}
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L4.11875 0.88125L7.60625 4.375H0V5.625H7.60625L4.11875 9.11875L5 10L10 5L5 0Z" fill="currnetColor"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L4.11875 0.88125L7.60625 4.375H0V5.625H7.60625L4.11875 9.11875L5 10L10 5L5 0Z" fill="currnetColor" /></svg>
                 </a>
               </p>
             </div>
@@ -43,10 +44,12 @@ export default function LinkTree({ content }) {
       <footer className={styles.footer}>
         <div className="container-md">
           <div className={styles.footerText}>
-            <a href={content.instagram.href} className="d-none d-md-flex">
-              <Svg code={content.instagram.logo} />
-              { content.instagram.text }
-            </a>
+            <small>
+              <a href={content.instagram.href} className="d-none d-md-flex">
+                <Svg code={content.instagram.logo} />
+                {content.instagram.text}
+              </a>
+            </small>
             <small>{content.copyright}</small>
           </div>
         </div>
