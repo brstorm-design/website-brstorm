@@ -11,8 +11,8 @@ export default function Pricing({ content }) {
     })
   }, [])
 
-  function removeStyles() {
-    document.querySelectorAll(`.${styles.pack}`)[1].classList.remove(styles.active);
+  function toggleStyle() {
+    document.querySelectorAll(`.${styles.pack}`)[1].classList.toggle(styles.active);
   }
 
   return (
@@ -31,7 +31,7 @@ export default function Pricing({ content }) {
             content.packages.map((pack, packIndex) => {
               return (
                 <div className="col-12 col-lg-4" key={`pack-${packIndex}`}>
-                  <div className={`${styles.pack} ${packIndex === 1 ? styles.active : ''}`} onMouseOver={removeStyles}>
+                  <div className={`${styles.pack} ${packIndex === 1 ? styles.active : ''}`} onMouseEnter={toggleStyle} onMouseLeave={toggleStyle}>
                     <div className={styles.title}>
                       <h2>{pack.name}</h2>
                       <h6>{pack.shortText}</h6>
