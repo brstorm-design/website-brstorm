@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
+import it from 'src/languages/it.json';
 import React from 'react';
 import Hero from 'src/components/home/Hero';
 import Header from 'src/layouts/Header';
@@ -32,7 +33,7 @@ export default function Pitch(props) {
       <WhyUs content={home.whyUs} />
       <Methodology content={pitch.method} />
       <Pricing content={pitch.deliverables} />
-      <Contact content={home.contact} common={common} />
+      <Contact content={pitch.contact} common={common} />
 
       <Footer content={home.footer} common={common} />
     </>
@@ -40,14 +41,23 @@ export default function Pitch(props) {
 }
 
 export async function getStaticProps(context) {
-  if (context.locale === 'pt') {
+/*   if (context.locale === 'pt') {
     return {
       props: pt
     }
   }
-  else {
+  else if (context.loc) {
     return {
       props: en
     }
+  } */
+
+  switch (context.locale) {
+    case 'pt':
+      return { props: pt };
+    case 'en':
+      return { props: en };
+    case 'it':
+      return { props: it };
   }
 }

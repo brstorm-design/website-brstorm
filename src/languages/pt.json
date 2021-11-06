@@ -414,7 +414,8 @@
 
     "contact": {
       "title": "Vamos fechar negócio?",
-      "text": "Você se interessou? Quer contratar nossos serviços ou tirar alguma dúvida sobre o que ofertamos? Marque uma reunião agora mesmo, será um prazer lhe atender."
+      "paragraph": "<strong>Você se interessou?</strong> Quer contratar nossos serviços ou tirar alguma dúvida sobre <br> o que ofertamos? Marque uma reunião agora mesmo, será um prazer lhe atender.",
+      "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 9am às 3pm."
     }
   },
 
