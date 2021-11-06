@@ -38,7 +38,7 @@ export default function Pricing({ content }) {
                     </div>
                     <div>
                       <small>{pack.longText}</small>
-                      <strong> <small>Included items:</small></strong>
+                      
                       <ul>
 
                         {/* loop dos itens inclusos */}

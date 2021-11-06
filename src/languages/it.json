@@ -308,7 +308,7 @@
         },
         {
           "name": "Essential",
-          "vale": "£540,00",
+          "value": "£540,00",
           "shortText": "Marca e Materiali",
           "longText": "Questo é un pacco ideale per chi ha giá un negozio piú strutturato e ha anche bisogno di una marca iniziale.",
           "included": [
@@ -354,7 +354,7 @@
         },
         {
           "name": "Premium",
-          "vale": "£780,00",
+          "value": "£780,00",
           "shortText": "Marca Completa",
           "longText": "Perfetto per un negozio crescente e che necessita applicare la marca in multipli punti di contatto. Piu 10 materiali extras.",
           "included": [
