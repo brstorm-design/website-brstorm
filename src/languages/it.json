@@ -279,7 +279,7 @@
     "deliverables": {
       "title": "La miglior scelta per il tuo negozio",
       "subtitle": "I nostri pacchi di servizi",
-      "text": "<p>Non importa la grandezza o la fase del tuo negozio, noi certamente potremo aiutarti, scegli il pacco che ti conviene.</p>",
+      "text": "Non importa la grandezza o la fase del tuo negozio, <strong>noi certamente <br class='d-none d-lg-block'> potremo aiutarti</strong>, scegli il pacco che ti conviene.",
       "note": "Osservazione: Per sapere di piú sulle scadenze e condizioni di pagamento contattaci.",
       "packages": [
         {

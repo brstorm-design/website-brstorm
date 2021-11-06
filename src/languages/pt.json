@@ -175,7 +175,7 @@
       "cards": [
         {
           "title": "Autonomia e Liberdade",
-          "body": "Tanto em projetos de marca quanto web design, provemos ferramentas que lhe permitem fazer o uso do projeto sem a necessidade de um especialista.",
+          "body": "Provemos ferramentas que lhe permitem fazer o uso do projeto sem a necessidade de um especialista.",
           "image": "/images/whyUs/autonomy.svg"
         },
         {
@@ -277,9 +277,9 @@
     },
 
     "deliverables": {
-      "title": "A Melhor Escolha para o Seu Negócio",
+      "title": "A Melhor Escolha\npara o Seu Negócio",
       "subtitle": "Nossos Pacotes de Serviços",
-      "text": "<p>Não importa o tamanho ou a fase do seu negócio, nós certamente podemos lhe ajudar, escolha o pacote que lhe atende.</p>",
+      "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente <br class='d-none d-lg-block'> podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
       "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
       "packages": [
         {
@@ -308,7 +308,7 @@
         },
         {
           "name": "Essential",
-          "vale": "£540,00",
+          "value": "£540,00",
           "shortText": "Marca e Materiais",
           "longText": "Esse pacote é o ideal pra quem já tem um negócio mais estruturado e precisa da marca e alguns materiais iniciais também.",
           "included": [
@@ -354,7 +354,7 @@
         },
         {
           "name": "Premium",
-          "vale": "£780,00",
+          "value": "£780,00",
           "shortText": "Marca Completa",
           "longText": "Perfeito para um negócio crescente e que demanda aplicar a marca em múltiplos pontos de contato. Mais de 10 materiais extras.",
           "included": [
@@ -413,7 +413,7 @@
     },
 
     "contact": {
-      "title": "Vamos fechar negócio?",
+      "title": "Vamos Fechar Negócio?",
       "paragraph": "<strong>Você se interessou?</strong> Quer contratar nossos serviços ou tirar alguma dúvida sobre <br> o que ofertamos? Marque uma reunião agora mesmo, será um prazer lhe atender.",
       "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 9am às 3pm."
     }
