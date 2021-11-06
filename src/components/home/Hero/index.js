@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.scss';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import AnchorButton from 'src/components/common/AnchorButton';
+import { inOutQuad } from 'src/utils/easings';
 
-export default function Hero({content, common, client}) {
+export default function Hero({ content, common, client }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -35,7 +37,7 @@ export default function Hero({content, common, client}) {
     }
   }, [animations])
 
-  
+
 
   return (
     <section className={styles.section} id="hero">
@@ -47,16 +49,18 @@ export default function Hero({content, common, client}) {
               <h4>{`${content.subtitle} ${client.businessName}`}</h4>
               <p>{content.text}</p>
               <div className="d-flex d-md-block">
-                <a className="btn large">{common.bookAppointment}</a>
-                <a className="btn large ghost">
+                <a className="btn large" href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer">
+                  {common.bookAppointment}
+                </a>
+                <AnchorButton className="btn large ghost" href="#details" easing={inOutQuad} duration={1000}>
                   {common.seeMore}
                   <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
-                </a>
+                </AnchorButton>
               </div>
             </div>
           </div>
           <div className="col-12 col-lg-6 offset-lg-1">
-            <img src="/images/wireframes/hero.svg" alt="" className="img-fluid" />
+            <img src="/images/illustrations/venus.png" alt="" className="img-fluid" />
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@
           "href": "/#projects"
         },
         {
-          "name": "Perché noi?",
+          "name": "Perché noi",
           "href": "/#why-us"
         },
         {
@@ -89,9 +89,9 @@
     },
 
     "projects": {
-      "title": "Clientes Satisfeitos \nem Todo o Mundo",
-      "subtitle": "Projetos & Depoimentos",
-      "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
+      "title": "Clienti Soddisfatti \nin Tutto il Mondo",
+      "subtitle": "Progetti & Recensioni",
+      "paragraph": "Siamo una squadra con vasta esperienza, ci occupiamo di diversi clienti nel Mondo, consegnando sempre <strong>risultati creativi.</strong> Guarda alcuni dei nostri progetti e conosci di piú il nostro <strong>lavoro, stile e qualità</strong>.",
       "portifolio": [
         {
           "cover": "/images/portifolio/petsvida.png",
@@ -134,34 +134,34 @@
     },
 
     "testimonials": {
-      "title": "O que dizem \nSobre Nós",
+      "title": "Cosa dicono \nSu di Noi",
       "cards": [
         {
-          "body": "Senso de design e estética altamente refinado; Indivíduo muito apaixonado que pensa muito no seu trabalho; Focado em detalhes; Boa comunicação e compreensão dos requisitos; Paciente e cooperativo; Aceita bem os feedbacks. Já nos recrutamos para o nosso segundo projeto!",
+          "body": "Highly refined sense of design and aesthetics; Very passionate individual who puts in a lot of thought to his work; Detail oriented; Good communication and understands requirements; Patient and cooperative; Takes feedback well. We recruited us for our second project already!",
           "author": "Paras Mehta",
           "company": "Casting Bell",
           "photo": "/images/testimonials/paras.jpg"
         },
         {
-          "body": "Eles entregaram um logotipo que atendeu e superou nossas expectativas de primeira. O logotipo que nos foi apresentado era simples (da melhor forma possível), arrojado e captava quem somos como empresa. Não poderíamos estar mais felizes e teríamos o maior prazer em trabalhar com o Br.Storm novamente!",
+          "body": "They delivered a logo that met and exceeded our expectations, the first go. The logo presented to us was simple (in the best way possible), bold, and captured who we are as a company. We could not be any happier and would gladly work with Br.Storm again!",
           "author": "Michael Smith",
           "company": "New Age Constructions",
           "photo": "/images/testimonials/michael.jpg"
         },
         {
-          "body": "Os melhores designers com quem já trabalhei, eles sabem muito sobre identidade visual e cuidaram de cada detalhe para que o resultado fosse único como eu queria.",
+          "body": "The best designers I’ve ever worked with, they know a lot about visual identity and took care of every detail so that the result turned out unique as I wanted.",
           "author": "Willian Medeiros",
           "company": "Chibum Game Studio",
           "photo": "/images/testimonials/willian.jpg"
         },
         {
-          "body": "Passamos muito tempo procurando o logotipo perfeito. Seu processo realmente ajudou a trazer à tona a alma do nosso logotipo, mas foi a execução que realmente nos surpreendeu. Se você tem pesquisado como nós, pare - a jornada termina aqui. Altamente recomendado.",
+          "body": "We've spent a lot of time looking for the perfect logo. His process really helped bring out the soul of our logo, but it was the execution that really blew us away. If you've been searching as we have, stop-the journey ends here. Highly highly recommended.",
           "author": "Jarrod Milford",
           "company": "Maptrack",
           "photo": "/images/testimonials/jarrod.jpg"
         },
         {
-          "body": "Kelvin é um dos melhores especialistas em marca com quem trabalhei e com certeza voltarei. Obrigado!",
+          "body": "Kelvin is one of the best branding specialists I've worked with and will definitely come again. Thanks!",
           "author": "Hazem Alshakr",
           "company": "Rivana",
           "photo": "/images/testimonials/hazem.jpg"
@@ -170,27 +170,27 @@
     },
 
     "whyUs": {
-      "title": "Por Que Nos Contratar",
-      "subtitle": "Nos esforçamos para o melhor, em tudo o que \nfazemos sempre nos focamos em entregar:",
+      "title": "Perché Scegliere Noi",
+      "subtitle": "Ci sforziamo per il meglio, in tutto quello che \nfacciamo e sempre ci poniamo in consegnare:",
       "cards": [
         {
-          "title": "Autonomia e Liberdade",
-          "body": "Tanto em projetos de marca quanto web design, provemos ferramentas que lhe permitem fazer o uso do projeto sem a necessidade de um especialista.",
+          "title": "Autonomia e Libertà",
+          "body": "Sia il progetto di marca che l'web design, provvediamo strumenti che ti permetteranno fare l'uso del progetto senza necessità di uno specialista.",
           "image": "/images/whyUs/autonomy.svg"
         },
         {
-          "title": "Suporte Premium",
-          "body": "Você nunca ficará desamparado, nós fornecemos nosso número de telefone privado e você pode nos contatar sempre que precisar.",
+          "title": "Supporto Premium",
+          "body": "Non rimarrai mai solo, ti forniremo il nostro numero di telefono privato e potrai contattarci sempre quando avrai bisogno.",
           "image": "/images/whyUs/support.svg"
         },
         {
-          "title": "Feito Sob Medida",
-          "body": "Design exclusivo, feito especialmente para o seu negócio.",
+          "title": "Fatto su Misura",
+          "body": "Design esclusivo, fatto specialmente per il tuo negozio.",
           "image": "/images/whyUs/tailor-made.svg"
         },
         {
-          "title": "Entrega Perfeita",
-          "body": "Revisões ilimitadas, ajustaremos o que for preciso para que a entrega do projeto seja perfeita.",
+          "title": "Consegna Perfetta",
+          "body": "Revisioni illimitate, aggiusteremo il necessario affinchè la consegna del progetto sia perfetta.",
           "image": "/images/whyUs/delivery.svg"
         }
       ]
@@ -255,7 +255,7 @@
         },
         {
           "name": "Refinatezza",
-          "text": "Definizione della tipografia, simbolo, accordo cromatico e elementi di apoggio."
+          "text": "Definizione della tipografia, simbolo, accordo cromatico e elementi di appoggio."
         },
         {
           "name": "Presentazione",
@@ -279,7 +279,7 @@
     "deliverables": {
       "title": "La miglior scelta per il tuo negozio",
       "subtitle": "I nostri pacchi di servizi",
-      "text": "Non importa la grandezza o la fase del tuo negozio, <strong>noi certamente <br class='d-none d-lg-block'> potremo aiutarti</strong>, scegli il pacco che ti conviene.",
+      "text": "<p>Non importa la grandezza o la fase del tuo negozio, noi certamente potremo aiutarti, scegli il pacco che ti conviene.</p>",
       "note": "Osservazione: Per sapere di piú sulle scadenze e condizioni di pagamento contattaci.",
       "packages": [
         {
@@ -308,7 +308,7 @@
         },
         {
           "name": "Essential",
-          "value": "£540,00",
+          "vale": "£540,00",
           "shortText": "Marca e Materiali",
           "longText": "Questo é un pacco ideale per chi ha giá un negozio piú strutturato e ha anche bisogno di una marca iniziale.",
           "included": [
@@ -354,7 +354,7 @@
         },
         {
           "name": "Premium",
-          "value": "£780,00",
+          "vale": "£780,00",
           "shortText": "Marca Completa",
           "longText": "Perfetto per un negozio crescente e che necessita applicare la marca in multipli punti di contatto. Piu 10 materiali extras.",
           "included": [
@@ -415,7 +415,7 @@
     "contact": {
       "title": "Ci stai?",
       "paragraph": "<strong>Ti sei interessato?</strong> Vuoi assumere il nostro servizio o schiarire qualque dubbio su <br> quello che offriamo? Prendi un appuntamento adesso, sará un piacere riceverti.",
-      "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 9am às 3pm."
+      "availableHours": "<sup>*</sup> Siamo disponibili per una reunione <br> Da Lun a Ven | Dalle 9am alle 3pm."
     }
   },
 
@@ -480,11 +480,11 @@
   },
 
   "common": {
-    "bookMeeting": "Marque uma Reunião",
-    "bookMeetingNow": "Marque uma Reunião\nAgora Mesmo",
-    "bookAppointment": "Marque um Encontro",
-    "seeMore": "Ver Mais",
-    "contactUs": "Entre em Contato",
-    "scrollToTop": "Voltar ao topo"
+    "bookMeeting": "Prenota un appuntamento",
+    "bookMeetingNow": "Prenota un appuntamento \nAdesso",
+    "bookAppointment": "Prenota un appuntamento",
+    "seeMore": "Altro",
+    "contactUs": "Contattaci",
+    "scrollToTop": "Ritorna all'inizio"
   }
 }

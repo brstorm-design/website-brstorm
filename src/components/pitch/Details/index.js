@@ -3,11 +3,11 @@ import styles from './Details.module.scss';
 
 export default function Details({content}) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="details">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5">
-            <img src="/images/wireframes/project-details.svg" className="img-fluid" alt="Details" />
+            <img src="/images/illustrations/david.png" className="img-fluid" alt="Details" />
           </div>
           <div className="col-12 col-lg-6 offset-lg-1 d-flex align-items-center">
             <article>
