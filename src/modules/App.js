@@ -11,7 +11,7 @@ export class AnimationSequence {
 export function constructSequentialAnimation(targets, keyframes, options, interval) {
   let animations = [];
   let delay = options.delay;
-  
+
   targets.forEach(target => {
     options.delay = delay;
     let ani = constructAnimation(target, keyframes, options);
@@ -60,3 +60,11 @@ export function handleIntersection(targets, animations, onEnd) {
   easing: 'ease',
   fill: 'both'
 }; */
+
+export function getTranslateValue(e, offset = 40) {
+  let relX = (e.clientX * 100) / window.innerWidth;
+  let relY = (e.clientY * 100) / window.innerHeight;
+  let translateX = - (((offset * relX) / 100) - (offset / 2));
+  let translateY = - (((offset * relY) / 100) - (offset / 2));
+  return [translateX, translateY];
+}

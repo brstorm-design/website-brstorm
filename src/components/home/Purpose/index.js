@@ -1,14 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import AnchorButton from 'src/components/common/AnchorButton';
-import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import { constructSequentialAnimation, getTranslateValue, handleIntersection } from 'src/modules/App';
 import styles from './Purpose.module.scss';
 import { inOutQuad } from 'src/utils/easings';
+import David from 'src/components/illustrations/David';
 
 export default function Purpose({ content, common }) {
   const element = useRef(null);
   const element1 = useRef(null);
   const refs = [element.current, element1.current];
   const [animations, setAnimations] = useState(null);
+  const [mousePosition, setMousePosition] = useState({x: null, y: null,});
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -50,15 +52,8 @@ export default function Purpose({ content, common }) {
   }, [])
 
   function move(e) {
-    let relX = (e.clientX * 100) / window.innerWidth;
-    let relY = (e.clientY * 100) / window.innerHeight;
-    let translateX1 = - (((40 * relX) / 100) - 20);
-    let translateY1 = - (((40 * relY) / 100) - 20);
-
-    window.requestAnimationFrame(() => {
-      let comment = document.querySelector('img[alt="comment"]');
-      comment.style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
-    })
+    let [tX, tY] = getTranslateValue(e, 40);
+    setMousePosition({ x: tX, y: tY, });
   }
 
   return (
@@ -66,20 +61,7 @@ export default function Purpose({ content, common }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <div className={styles.image}>
-              <div ref={element1} id="purpose-image">
-                <img src="/images/purpose/david.png" alt="david" />
-                <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g style={{ mixBlendMode: 'overlay' }}><rect width="150" height="40" fill="#E93CAC" /></g><g style={{ mixBlendMode: 'multiply' }}><rect width="150" height="40" fill="#E93CAC" /></g></svg>
-                <img src="/images/purpose/seal.svg" alt="seal" />
-                <img src="/images/purpose/comment-michelangelo.svg" alt="comment" />
-                <img src="/images/purpose/pattern.svg" alt="pattern" />
-                <img src="/images/purpose/pin.svg" alt="pin" />
-                <img src="/images/purpose/exploring-the-infinite.svg" alt="writing" />
-                <div>
-                  <object id="obj" data="/images/purpose/words.svg" type="text/svg+xml" />
-                </div>
-              </div>
-            </div>
+            <David forwardedRef={element1} x={mousePosition.x} y={mousePosition.y} />
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
             <article ref={element} id="purpose-article">
