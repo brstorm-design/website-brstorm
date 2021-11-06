@@ -78,7 +78,7 @@ export default function Methodology({ content }) {
                     return (
                       <div key={`step-${index}`}>
                         <span className={styles.number}>{index + 1}</span>
-                        <img src={`/images/wireframes/${step.icon}`} alt="" />
+                        <img src={`/images/wireframes/img-icon.svg`} alt="" />
                         <h5>{step.name}</h5>
                         <small>{step.text}</small>
                         {index === 0 ? <Line /> : null}

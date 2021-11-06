@@ -2,21 +2,9 @@
   "clients": [
     {
       "id": "0012021",
-      "slugName": "claudio",
-      "name": "Cláudio",
-      "businessName": "Padaria Nova Era"
-    },
-    {
-      "id": "0022021",
-      "slugName": "rubens",
-      "name": "Rubens",
-      "businessName": "Pastelaria Lux"
-    },
-    {
-      "id": "0032021",
-      "slugName": "marcia",
-      "name": "Márcia",
-      "businessName": "Mecânica do Barão"
+      "slugName": "zankysdeli",
+      "name": "Fabio e Sara",
+      "businessName": "Zanky's Deli"
     }
   ],
 

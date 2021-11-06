@@ -17,7 +17,7 @@ import Pricing from 'src/components/pitch/Pricing';
 export default function Pitch(props) {
   const home = props.home;
   const common = props.common;
-  const pitch = props.pitch
+  const pitch = props.pitch;
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function Pitch(props) {
       </Head>
       <Header content={home.header} common={common} />
 
-      <Hero content={pitch.hero} common={common} />
+      <Hero pitch={pitch} content={pitch.hero} common={common} />
       <Details content={pitch.details} />
       <ProjectsSlider content={home.projects} />
       <Testimonials content={home.testimonials} />
@@ -41,17 +41,6 @@ export default function Pitch(props) {
 }
 
 export async function getStaticProps(context) {
-/*   if (context.locale === 'pt') {
-    return {
-      props: pt
-    }
-  }
-  else if (context.loc) {
-    return {
-      props: en
-    }
-  } */
-
   switch (context.locale) {
     case 'pt':
       return { props: pt };

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.scss';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 
-export default function Hero({content, common}) {
+export default function Hero({content, common, client}) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -43,8 +43,8 @@ export default function Hero({content, common}) {
         <div className="row">
           <div className="col-12 col-lg-5 d-flex align-items-center">
             <div ref={element}>
-              <h1>{content.title + '"Client Name"!'}</h1>
-              <h4>{content.subtitle + '"Business Name".'}</h4>
+              <h1>{`${content.title}, ${client.name}`}</h1>
+              <h4>{`${content.subtitle} ${client.businessName}`}</h4>
               <p>{content.text}</p>
               <div className="d-flex d-md-block">
                 <a className="btn large">{common.bookAppointment}</a>
