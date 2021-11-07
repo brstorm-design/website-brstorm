@@ -1,0 +1,94 @@
+@import '../../../styles/scss/colors';
+@import '../../../styles/scss/mixins';
+
+.image {
+  position: sticky;
+  top: 120px;
+  @include md() {
+    transform: translateX(-150px);
+  }
+
+  & > div {
+    position: relative;
+    z-index: 1;
+
+    img:not(img:first-child) {
+      position: absolute;
+      transition: transform 200ms ease-out;
+    }
+
+    svg {
+      position: absolute;
+      top: 100px;
+      left: 315px;
+    }
+    // pattern
+    img:nth-of-type(2) {
+      top: 100px;
+      left: 245px;
+    }
+    // grayscale
+    img:nth-of-type(3) {
+      top: 350px;
+      left: 160px;
+    }
+    // picker
+    img:nth-of-type(4) {
+      top: 225px;
+      left: 405px;
+    }
+    // tech creativity
+    div:nth-child(6) {
+      top: 435px;
+      left: 345px;
+    }
+    //pin
+    img:nth-of-type(5) {
+      top: 200px;
+      left: 400px;
+    }
+
+    & > div {
+      position: absolute;
+      top: 150px;
+      left: 20px;
+      z-index: -1;
+      @include md() {
+        left: 55px;
+      }
+
+      code {
+        position: absolute;
+        top: 103px;
+        left: 83px;
+        display: flex;
+        align-items: center;
+
+        div {
+          :global {
+            .Typewriter__wrapper {
+              font-size: 11px;
+              color: $darkGray;
+            }
+          }
+        }
+
+        & > span:first-child,
+        & > span:last-child {
+          display: inline-block;
+          font-size: 11px;
+          color: #f5d67b;
+        }
+
+        & > span:last-child {
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+
+  @include md() {
+    margin-bottom: 75px;
+    position: static;
+  }
+}
