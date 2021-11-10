@@ -38,7 +38,7 @@ export default function Cover({content, common}) {
     let translateX2 = (((50 * relX) / 100) - 25);
     let translateY2 = (((50 * relY) / 100) - 25);
     let translateX3 = (((90 * relX) / 100) - 45);
-    let translateY3 = (((90 * relY) / 100) - 45);
+    let translateY3 = - (((90 * relY) / 100) - 45);
 
     window.requestAnimationFrame(() => {
       let track = document.querySelectorAll('.track');
