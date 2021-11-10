@@ -10,7 +10,7 @@ export default function Purpose({ content, common }) {
   const element1 = useRef(null);
   const refs = [element.current, element1.current];
   const [animations, setAnimations] = useState(null);
-  const [mousePosition, setMousePosition] = useState({x: null, y: null,});
+  const [mousePosition, setMousePosition] = useState(null);
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -52,8 +52,7 @@ export default function Purpose({ content, common }) {
   }, [])
 
   function move(e) {
-    let [tX, tY] = getTranslateValue(e, 40);
-    setMousePosition({ x: tX, y: tY, });
+    setMousePosition(getTranslateValue(e, [40]));
   }
 
   return (
@@ -61,7 +60,7 @@ export default function Purpose({ content, common }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <David forwardedRef={element1} x={mousePosition.x} y={mousePosition.y} />
+            <David forwardedRef={element1} translate={mousePosition} />
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
             <article ref={element} id="purpose-article">

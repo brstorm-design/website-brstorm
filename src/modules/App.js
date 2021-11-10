@@ -61,10 +61,28 @@ export function handleIntersection(targets, animations, onEnd) {
   fill: 'both'
 }; */
 
-export function getTranslateValue(e, offset1 = 40, offset2 = 40) {
+export function getTranslateValue(e, offsets) {
   let relX = (e.clientX * 100) / window.innerWidth;
   let relY = (e.clientY * 100) / window.innerHeight;
-  let translateX = - (((offset1 * relX) / 100) - (offset1 / 2));
-  let translateY = - (((offset1 * relY) / 100) - (offset1 / 2));
-  return [translateX, translateY];
+  let rel = { x: relX, y: relY };
+
+  return offsets.map(offset => {
+    let obj = {};
+    for (const axis in rel) {
+      obj[axis] = calcTranslate(offset, rel[axis]);
+    }
+    return obj;
+  })
+}
+
+function calcTranslate(amount, rel) {
+  return (((amount * rel) / 100) - (amount / 2));
+}
+
+export function applyStyles(targets = [], translate = []) {
+  targets.forEach((target, index) => {
+    if (translate) {
+      target.style.transform = `translate3d(${translate[index].x}px, ${translate[index].y}px, 0)`;
+    }
+  })
 }

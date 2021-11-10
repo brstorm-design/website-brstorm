@@ -1,14 +1,15 @@
 import { useEffect } from 'react';
+import { applyStyles } from 'src/modules/App';
 import styles from './David.module.scss';
 
-export default function David({ forwardedRef, x, y }) {
+export default function David({ forwardedRef, translate }) {
 
   useEffect(() => {
+    let targets = forwardedRef.current.querySelectorAll('img[alt="comment"]');
     window.requestAnimationFrame(() => {
-      let comment = forwardedRef.current.querySelector('img[alt="comment"]');
-      comment.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-    })
-  })
+      applyStyles(targets, translate);
+    });
+  });
 
   return (
     <div className={styles.image}>

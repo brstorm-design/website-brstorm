@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import TypeEffect from 'src/components/common/TypeEffect';
+import { applyStyles } from 'src/modules/App';
 import styles from './Samothrace.module.scss';
 
-export default function Samothrace() {
+export default function Samothrace({ translateValues }) {
+  const container = useRef(null);
+  
+  useEffect(() => {
+    let targets = container.current.querySelectorAll('img[alt="picker"], img[alt="grayscale"]');
+    window.requestAnimationFrame(() => {
+      applyStyles(targets, translateValues);
+    });
+  });
+
   return (
     <div className={styles.image}>
-      <div>
+      <div ref={container}>
         <img src="/images/whatWeDo/samothrace.png" alt="samothrace" />
         <svg width="156" height="127" viewBox="0 0 156 127" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g style={{ mixBlendMode: 'multiply' }}>

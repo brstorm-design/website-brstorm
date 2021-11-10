@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import TypeEffect from 'src/components/common/TypeEffect';
 import Samothrace from 'src/components/illustrations/Samothrace';
-import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import { constructSequentialAnimation, getTranslateValue, handleIntersection } from 'src/modules/App';
 import styles from './WhatWeDo.module.scss';
 
 export default function WhatWeDo({ content, common }) {
   const element = useRef(null);
-  const refs = [element.current];
   const [animations, setAnimations] = useState([]);
+  const [mousePosition, setMousePosition] = useState(null);
 
   useEffect(() => {
     let articles = Array.from(element.current.children);
@@ -52,19 +51,7 @@ export default function WhatWeDo({ content, common }) {
   }, [])
 
   function move(e) {
-    let relX = (e.clientX * 100) / window.innerWidth;
-    let relY = (e.clientY * 100) / window.innerHeight;
-    let translateX1 = - (((40 * relX) / 100) - 20);
-    let translateY1 = - (((40 * relY) / 100) - 20);
-    let translateX2 = (((40 * relX) / 100) - 20);
-    let translateY2 = (((40 * relY) / 100) - 20);
-
-    window.requestAnimationFrame(() => {
-      let picker = document.querySelector('img[alt="picker"]');
-      let grayscale = document.querySelector('img[alt="grayscale"]');
-      picker.style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
-      grayscale.style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
-    })
+    setMousePosition(getTranslateValue(e, [-40, 40]));
   }
 
   return (
@@ -76,7 +63,7 @@ export default function WhatWeDo({ content, common }) {
         </div>
         <div className="row">
           <div className="col-12 col-lg-6">
-            <Samothrace />
+            <Samothrace translateValues={mousePosition} />
             <div className={`d-block d-lg-none ${styles.title}`}>
               <h3 className="gradient-bg">{content.subtitle}</h3>
               <h1>{content.title}</h1>

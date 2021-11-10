@@ -33,7 +33,7 @@ export default function Cover({content, common}) {
   function getMousePos(e) {
     let relX = (e.clientX * 100) / window.innerWidth;
     let relY = (e.clientY * 100) / window.innerHeight;
-    let translateX1 = - (((50 * relX) / 100) - 25);
+    let translateX1 = - (((50 * relX) / 100) - 25); // [50, 50, 90]
     let translateY1 = - (((50 * relY) / 100) - 25);
     let translateX2 = (((50 * relX) / 100) - 25);
     let translateY2 = (((50 * relY) / 100) - 25);
