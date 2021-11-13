@@ -5,13 +5,23 @@ import styles from './Samothrace.module.scss';
 
 export default function Samothrace({ translateValues }) {
   const container = useRef(null);
-  
+
   useEffect(() => {
     let targets = container.current.querySelectorAll('img[alt="picker"], img[alt="grayscale"]');
     window.requestAnimationFrame(() => {
       applyStyles(targets, translateValues);
     });
   });
+
+  useEffect(() => {
+    setTimeout(function toggle() {
+      let words = document.getElementById('obj-tech').contentDocument.firstChild;
+      words.classList.toggle('active');
+      setTimeout(() => {
+        toggle();
+      }, 5000);
+    }, 2000);
+  }, []);
 
   return (
     <div className={styles.image}>

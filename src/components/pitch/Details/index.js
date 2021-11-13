@@ -1,4 +1,5 @@
 import React from 'react';
+import David from 'src/components/illustrations/David';
 import styles from './Details.module.scss';
 
 export default function Details({content}) {
@@ -7,7 +8,7 @@ export default function Details({content}) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5">
-            <img src="/images/illustrations/david.png" className="img-fluid" alt="Details" />
+            <David />
           </div>
           <div className="col-12 col-lg-6 offset-lg-1 d-flex align-items-center">
             <article>

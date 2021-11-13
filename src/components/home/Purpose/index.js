@@ -31,25 +31,9 @@ export default function Purpose({ content, common }) {
 
   useEffect(() => {
     if (animations) {
-      const onEnd = animation => {
-        const localName = animation.effect.target.localName;
-        if (localName === 'h2') {
-          document.getElementById('color').classList.add('active');
-        }
-      }
-      handleIntersection(refs, animations, onEnd);
+      handleIntersection(refs, animations);
     }
   }, [animations])
-
-  useEffect(() => {
-    setTimeout(function toggle() {
-      let words = document.getElementById('obj').contentDocument.firstChild;
-      words.classList.toggle('active');
-      setTimeout(() => {
-        toggle();
-      }, 3000);
-    }, 2000);
-  }, [])
 
   function move(e) {
     setMousePosition(getTranslateValue(e, [40]));

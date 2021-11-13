@@ -17,7 +17,8 @@ export function constructSequentialAnimation(targets, keyframes, options, interv
     let ani = constructAnimation(target, keyframes, options);
     delay += interval;
     animations.push(ani);
-    ani.play(); ani.pause();
+    ani.play();
+    ani.pause();
   });
 
   return animations;

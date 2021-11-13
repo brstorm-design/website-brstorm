@@ -40,16 +40,6 @@ export default function WhatWeDo({ content, common }) {
     }
   }, [animations])
 
-  useEffect(() => {
-    setTimeout(function toggle() {
-      let words = document.getElementById('obj-tech').contentDocument.firstChild;
-      words.classList.toggle('active');
-      setTimeout(() => {
-        toggle();
-      }, 5000);
-    }, 2000);
-  }, [])
-
   function move(e) {
     setMousePosition(getTranslateValue(e, [-40, 40]));
   }

@@ -11,6 +11,41 @@ export default function David({ forwardedRef, translate }) {
     });
   });
 
+  useEffect(() => {
+    setTimeout(function toggle() {
+      let words = document.getElementById('obj').contentDocument.firstChild;
+      words.classList.toggle('active');
+      setTimeout(() => {
+        toggle();
+      }, 3000);
+    }, 2000);
+  }, []);
+
+  const options = {
+    rootMargin: '-200px 0px -200px 0px'
+  }
+
+  function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          document.getElementById('color').classList.add('active');
+        }, 1500);
+        observer.unobserve(entry.target);
+      }
+    })
+  }
+
+  useEffect(() => {
+    const target = document.getElementById('purpose-image');
+    let observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+
+    return () => {
+      observer.unobserve(target);
+    }
+  }, []);
+
   return (
     <div className={styles.image}>
       <div ref={forwardedRef} id="purpose-image">
