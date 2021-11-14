@@ -1,7 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Samothrace from 'src/components/illustrations/Samothrace';
+import { getTranslateValue } from 'src/modules/App';
 import styles from './Methodology.module.scss';
 
 export default function Methodology({ content }) {
+  const [mousePosition, setMousePosition] = useState(null);
+
   let thres = [];
   for (let index = 0; index <= 1.0; index = index + 0.01) {
     thres.push(index);
@@ -59,8 +63,12 @@ export default function Methodology({ content }) {
     )
   }
 
+  function move(e) {
+    setMousePosition(getTranslateValue(e, [-40, 40]));
+  }
+
   return (
-    <section className={styles.section}>
+    <section className={styles.section} onMouseMove={move}>
       <div>
         <h3 className="gradient-bg">{content.subtitle}</h3>
         <h1>{content.title}</h1>
@@ -68,7 +76,7 @@ export default function Methodology({ content }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <img src="/images/illustrations/samothrace.png" className={`${styles.image} img-fluid`} alt="Method" />
+            <Samothrace translateValues={mousePosition} />
           </div>
           <div className="col-12 col-lg-4 offset-lg-2">
             <div>
