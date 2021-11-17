@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Projects.module.scss';
 
-export default function Projects({ content, common }) {
+export default function Projects({ content, common, client }) {
   const introText = useRef(null);
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
+
+  const portifolio = client ? client.portifolio : content.portifolio;
 
   useEffect(() => {
     const refs = [introText.current, projects.current];
@@ -59,7 +61,7 @@ export default function Projects({ content, common }) {
         </div>
         <div className="row gy-4" ref={projects} id="projects-cards">
           {
-            content.portifolio.map((item, index) => {
+            portifolio.map((item, index) => {
               return (
                 <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
                   <a href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>

@@ -32,7 +32,7 @@ export default function Pitch(props) {
 
       <Hero client={client} pitch={pitch} content={pitch.hero} common={common} />
       <Details content={pitch.details} />
-      <Projects content={home.projects} common={common} />
+      <Projects content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} />
       <Methodology content={pitch.method} />
