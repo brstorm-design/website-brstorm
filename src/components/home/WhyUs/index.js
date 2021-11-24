@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './WhyUs.module.scss';
 
-export default function WhyUs({ content }) {
+export default function WhyUs({ content, pitch }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -34,7 +34,7 @@ export default function WhyUs({ content }) {
   }, [animations])
 
   return (
-    <section className={styles.section} id="why-us">
+    <section className={styles.section} id="why-us" style={pitch ? {paddingBottom: '0'} : null}>
       <div className={styles.title}>
         <h1 dangerouslySetInnerHTML={{__html: content.title}} />
         <p>{content.subtitle}</p>

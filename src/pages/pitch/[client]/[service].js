@@ -7,7 +7,6 @@ import data from '../../../../public/data.json';
 import Header from "src/layouts/Header";
 import Hero from "src/components/home/Hero";
 import Details from "src/components/pitch/Details";
-import ProjectsSlider from "src/components/pitch/ProjectsSlider";
 import Testimonials from "src/components/home/Testimonials";
 import WhyUs from "src/components/home/WhyUs";
 import Methodology from "src/components/pitch/Methodology";
@@ -34,7 +33,7 @@ export default function Pitch(props) {
       <Details content={pitch.details} />
       <Projects content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
-      <WhyUs content={home.whyUs} />
+      <WhyUs content={home.whyUs} pitch />
       <Methodology content={pitch.method} />
       <Pricing content={pitch.deliverables} />
       <Contact content={pitch.contact} common={common} />
@@ -70,17 +69,6 @@ export async function getStaticProps(context) {
   // props
   const pitch = data.clients.find(client => client.id === pitchID);
   const service = data.services.find(service => service.slug === context.params.service);
-
-/*   if (context.locale === 'pt') {
-    return {
-      props: {pitch, service, pt}
-    }
-  }
-  else {
-    return {
-      props: {pitch, service, en}
-    }
-  } */
 
   switch (context.locale) {
     case 'pt':
