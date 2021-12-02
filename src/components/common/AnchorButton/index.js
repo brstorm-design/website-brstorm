@@ -7,7 +7,7 @@ export default function AnchorButton(props) {
 
     let doc = document.documentElement;
     let startx = doc.scrollTop;
-    let destx = document.querySelector(props.href).offsetTop - 150;
+    let destx = document.querySelector(props.href ? props.href : 'body').offsetTop - 150;
     let duration = props.duration;
     let start = null;
     let end = null;
@@ -31,7 +31,7 @@ export default function AnchorButton(props) {
   }
 
   return (
-    <a onClick={startAnimation} href={props.href} className={props.className}>
+    <a onClick={startAnimation} href={props.href ? props.href : '#'} className={props.className}>
       {
         props.children
       }

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import LinkTree from "src/components/linkree/LinkTree";
+import LinkTree from "src/components/linktree/LinkTree";
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
 
