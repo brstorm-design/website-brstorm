@@ -133,11 +133,18 @@
   "services": [
     {
       "name": "Brand Design",
-      "slug": "brand-design"
+      "slug": "brand-design",
+      "json": "brandDesign"
     },
     {
       "name": "Web Design",
-      "slug": "web-design"
+      "slug": "web-design",
+      "json": "webDesign"
+    },
+    {
+      "name": "Social Media",
+      "slug": "social-media",
+      "json": "socialMedia"
     }
   ]
 }

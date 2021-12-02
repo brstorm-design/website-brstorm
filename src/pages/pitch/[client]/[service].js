@@ -20,6 +20,7 @@ export default function Pitch(props) {
   const home = props.content.home;
   const common = props.content.common;
   const client = props.pitch;
+  const pitchContent = props.pitchContent;
 
   return (
     <>
@@ -29,13 +30,13 @@ export default function Pitch(props) {
       </Head>
       <Header content={home.header} common={common} />
 
-      <Hero client={client} pitch={pitch} content={pitch.hero} common={common} />
-      <Details content={pitch.details} />
+      <Hero client={client} content={pitch.hero} common={common} />
+      <Details content={pitchContent.details} />
       <Projects content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} pitch />
-      <Methodology content={pitch.method} />
-      <Pricing content={pitch.deliverables} />
+      <Methodology content={pitchContent.method} />
+      <Pricing content={pitchContent.deliverables} />
       <Contact content={pitch.contact} common={common} />
 
       <Footer content={home.footer} common={common} />
@@ -72,10 +73,10 @@ export async function getStaticProps(context) {
 
   switch (context.locale) {
     case 'pt':
-      return { props: {content: pt, pitch, service} };
+      return { props: {content: pt, pitch, service, pitchContent: pt.pitch[service.json]} };
     case 'en':
-      return { props: {content: en, pitch, service} };
+      return { props: {content: en, pitch, service, pitchContent: en.pitch[service.json]} };
     case 'it':
-      return { props: {content: it, pitch, service} };
+      return { props: {content: it, pitch, service, pitchContent: it.pitch[service.json]} };
   }
 }

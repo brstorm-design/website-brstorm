@@ -24,17 +24,14 @@
         }
       ]
     },
-
     "cover": {
       "title": "Deixe sua marca falar por você!",
       "subtitle": "O primeiro contato do seu cliente com você é a sua marca."
     },
-
     "purpose": {
       "title": "Nosso Propósito",
       "paragraph": "<p>Somos apaixonados por ir a fundo e pensar em cada detalhe, <strong>explorando assim as infinitas possibilidades do Design</strong>. Esse é o espírito que rege nosso trabalho.<br><br>Em um mundo tão tempestuoso, menos é mais. Ter uma <strong>comunicação clara e assertiva</strong> é fundamental para se destacar. Somos especializados em criar projetos únicos e memoráveis explorando o melhor em cada negócio. <strong>Vamos fazer um projeto singular?</strong></p>"
     },
-
     "whatWeDo": {
       "title": "Nós podemos lhe ajudar!",
       "subtitle": "Não sabe por onde começar?",
@@ -87,7 +84,6 @@
         }
       ]
     },
-
     "projects": {
       "title": "Clientes Satisfeitos \nem Todo o Mundo",
       "subtitle": "Projetos & Depoimentos",
@@ -132,7 +128,6 @@
       "fullPortifolio": "Portifólio Completo",
       "url": "https://www.behance.net/brstorm-design"
     },
-
     "testimonials": {
       "title": "O que dizem \nSobre Nós",
       "cards": [
@@ -168,7 +163,6 @@
         }
       ]
     },
-
     "whyUs": {
       "title": "Por Que Nos Contratar",
       "subtitle": "Nos esforçamos para o melhor, em tudo o que \nfazemos sempre nos focamos em entregar:",
@@ -195,13 +189,11 @@
         }
       ]
     },
-
     "contact": {
       "title": "Vamos Conversar",
       "paragraph": "<strong>O que você achou?</strong> Se você quiser sanar qualquer dúvida ou <br class='d-none d-lg-block'> fazer uma pergunta, fique à vontade para agendar uma reunião conosco.",
       "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 9am às 3pm."
     },
-
     "footer": {
       "copyright": "Copyright © 2021 – Br.Storm Design",
       "socials": [
@@ -223,202 +215,604 @@
       ]
     }
   },
-  
   "pitch": {
     "hero": {
       "title": "Olá",
       "subtitle": "Nós vamos agregar valor para a",
       "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos. Se tiver interesse, estamos disponíveis para conversamos mais em uma reunião."
     },
-
-    "details": {
-      "title": "O Que é um Projeto de Brand Design",
-      "subtitle": "Sua marca vai muito além do visual!",
-      "text": "<p>Uma identidade visual bem arquitetada e marcante é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode acreditar e investir.</p><br/><br/><p>Grandes nomes do mercado são representados por imagens e cores que despertam a nossa memória, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que transpareça a sua missão e lhe torne reconhecível em qualquer lugar.</p>"
+    "brandDesign": {
+      "details": {
+        "title": "O Que é um Projeto de Brand Design",
+        "subtitle": "Sua marca vai muito além do visual!",
+        "text": "<p>Uma identidade visual bem arquitetada e marcante é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode acreditar e investir.</p><br/><br/><p>Grandes nomes do mercado são representados por imagens e cores que despertam a nossa memória, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que transpareça a sua missão e lhe torne reconhecível em qualquer lugar.</p>"
+      },
+      "method": {
+        "title": "Etapas do Processo de Criação",
+        "subtitle": "Conheça Nosso Método",
+        "steps": [
+          {
+            "name": "Briefing",
+            "text": "Coleta de todas as informações essenciais para a execução do projeto."
+          },
+          {
+            "name": "Pesquisa",
+            "text": "Estudo do briefing, análise de concorrentes, pesquisa de mercado e mapa mental."
+          },
+          {
+            "name": "Desenho",
+            "text": "Brainstorm, moodboard, rascunhos, protótipos e testes."
+          },
+          {
+            "name": "Refinamento",
+            "text": "Definição da tipografia, símbolo, acordo cromático e elementos de apoio."
+          },
+          {
+            "name": "Apresentação",
+            "text": "Descrição dos caminhos até o resultado alcançado e elaboração de amostras visuais."
+          },
+          {
+            "name": "Avaliação e Ajustes",
+            "text": "Validação do projeto e caso necessário ajuste e adequação as expectativas do cliente. "
+          },
+          {
+            "name": "Materiais",
+            "text": "Desenvolvimento de todos os materiais complementares inclusos no pacote da marca."
+          },
+          {
+            "name": "Entrega Final",
+            "text": "Finalização e entrega do projeto, seguido de atendimento e suporte no uso da marca."
+          }
+        ]
+      },
+      "deliverables": {
+        "title": "A Melhor Escolha\npara o Seu Negócio",
+        "subtitle": "Nossos Pacotes de Serviços",
+        "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente <br class='d-none d-lg-block'> podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
+        "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
+        "packages": [
+          {
+            "name": "Starter",
+            "value": "£370,00",
+            "shortText": "Apenas a Marca",
+            "longText": "Esse pacote contempla basicamente a marca e todos os seus arquivos complementares. O indispensável para dar inicio ao seu negócio.",
+            "included": [
+              {
+                "name": "Desenho Exclusivo da Marca",
+                "items": [
+                  "JPG de Alta Qualidade e PNG Transparentes",
+                  "Versões em Preto e Branco",
+                  "Arquivos Vetoriais para Impressão"
+                ]
+              },
+              {
+                "name": "Identidade Visual",
+                "items": [
+                  "Paleta de Cores",
+                  "Tipografia",
+                  "Grafismos"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Essential",
+            "value": "£540,00",
+            "shortText": "Marca e Materiais",
+            "longText": "Esse pacote é o ideal pra quem já tem um negócio mais estruturado e precisa da marca e alguns materiais iniciais também.",
+            "included": [
+              {
+                "name": "Desenho Exclusivo da Marca",
+                "items": [
+                  "JPG de Alta Qualidade e PNG Transparentes",
+                  "Versões em Preto e Branco",
+                  "Arquivos Vetoriais para Impressão"
+                ]
+              },
+              {
+                "name": "Identidade Visual",
+                "items": [
+                  "Paleta de Cores",
+                  "Tipografia",
+                  "Grafismos"
+                ]
+              },
+              {
+                "name": "Redes Sociais",
+                "items": [
+                  "Perfil",
+                  "Capa",
+                  "Destaques"
+                ]
+              },
+              {
+                "name": "Papelaria Básica",
+                "items": [
+                  "Cartões de Visitas",
+                  "Timbrado",
+                  "Envelope"
+                ]
+              },
+              {
+                "name": "Brandbook",
+                "items": [
+                  "Manual de uso da marca com todas as diretrizes visuais."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Premium",
+            "value": "£780,00",
+            "shortText": "Marca Completa",
+            "longText": "Perfeito para um negócio crescente e que demanda aplicar a marca em múltiplos pontos de contato. Mais de 10 materiais extras.",
+            "included": [
+              {
+                "name": "Desenho Exclusivo da Marca",
+                "items": [
+                  "JPG de Alta Qualidade e PNG Transparentes",
+                  "Versões em Preto e Branco",
+                  "Arquivos Vetoriais para Impressão"
+                ]
+              },
+              {
+                "name": "Identidade Visual",
+                "items": [
+                  "Paleta de Cores",
+                  "Tipografia",
+                  "Grafismos"
+                ]
+              },
+              {
+                "name": "Redes Sociais",
+                "items": [
+                  "Perfil",
+                  "Capa",
+                  "Destaques"
+                ]
+              },
+              {
+                "name": "Papelaria Básica",
+                "items": [
+                  "Cartões de Visitas",
+                  "Timbrado",
+                  "Envelope"
+                ]
+              },
+              {
+                "name": "Materiais Extras",
+                "items": [
+                  "Uniforme",
+                  "Crachá",
+                  "Flyers",
+                  "Banner",
+                  "Assinatura de E-mail",
+                  "And 5 more items of your choice."
+                ]
+              },
+              {
+                "name": "Brandbook",
+                "items": [
+                  "Manual de uso da marca com todas as diretrizes visuais."
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
-
-    "method": {
-      "title": "Etapas do Processo de Criação",
-      "subtitle": "Conheça Nosso Método",
-      "steps": [
-        {
-          "name": "Briefing",
-          "text": "Coleta de todas as informações essenciais para a execução do projeto."
-        },
-        {
-          "name": "Pesquisa",
-          "text": "Estudo do briefing, análise de concorrentes, pesquisa de mercado e mapa mental."
-        },
-        {
-          "name": "Desenho",
-          "text": "Brainstorm, moodboard, rascunhos, protótipos e testes."
-        },
-        {
-          "name": "Refinamento",
-          "text": "Definição da tipografia, símbolo, acordo cromático e elementos de apoio."
-        },
-        {
-          "name": "Apresentação",
-          "text": "Descrição dos caminhos até o resultado alcançado e elaboração de amostras visuais."
-        },
-        {
-          "name": "Avaliação e Ajustes",
-          "text": "Validação do projeto e caso necessário ajuste e adequação as expectativas do cliente. "
-        },
-        {
-          "name": "Materiais",
-          "text": "Desenvolvimento de todos os materiais complementares inclusos no pacote da marca."
-        },
-        {
-          "name": "Entrega Final",
-          "text": "Finalização e entrega do projeto, seguido de atendimento e suporte no uso da marca."
-        }
-      ]
+    "webDesign": {
+      "details": {
+        "title": "O Que é um Projeto de Web Design",
+        "subtitle": "Quem não é visto não é lembrado!",
+        "text": "<p>Websites bem desenvolvidos não só chamam a atenção por sua estética, como também trazem inúmeros benfícios para a empresa.</p><br/><br/><p>Eles proporcionam um meio simples, direto e interativo pelo qual o público pode conhecer a empresa e a marca, bem como suas visões, valores e missões. Onde é possível divulgar diversos conteúdos relacionados à empresa.</p>"
+      },
+      "method": {
+        "title": "Etapas do Processo de Criação",
+        "subtitle": "Conheça Nosso Método",
+        "steps": [
+          {
+            "icon": "img-icon.svg",
+            "name": "Briefing",
+            "text": "Coleta de todas as informações essenciais para a execução do projeto."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Layout",
+            "text": "Arquitetura e organização do conteúdo do projeto."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Design",
+            "text": "Definição de todas as diretrizes e aspectos visuais do projeto."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Desenvolvimento",
+            "text": "Conversão dos componentes visuais em itens interativos e funcionais."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Entrega",
+            "text": "Implementação, hospedagem e publicação do projeto."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Suporte",
+            "text": "Período destinado a ajustes e correções de eventuais bugs."
+          }
+        ]
+      },
+      "deliverables": {
+        "title": "A Melhor Escolha \n para o Seu Negócio",
+        "subtitle": "Nossos Pacotes de Serviços",
+        "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente <br class='d-none d-lg-block'/> podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
+        "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
+        "packages": [
+          {
+            "name": "Single",
+            "value": "£290,00",
+            "shortText": "Landing Page",
+            "longText": "Ideal para a apresentação de um produto ou oferta individual, limitando-se a uma única página com estrutura similar ou equivalente aos seguintes itens:",
+            "included": [
+              {
+                "name": "Chamada",
+                "items": [
+                  "Título",
+                  "Subtítulo",
+                  "Botões de Ação (\"Call To Action\")"
+                ]
+              },
+              {
+                "name": "Descição da Oferta",
+                "items": [
+                  "Texto Curto e Persuasivo",
+                  "Tópicos com Vantagens e Benefícios"
+                ]
+              },
+              {
+                "name": "Prova Social",
+                "items": [
+                  "Feedback e Depoimentos",
+                  "Lista de Logos de Clientes Atendidos"
+                ]
+              },
+              {
+                "name": "Imagens",
+                "items": [
+                  "1 a 3 Imagens Ilustrativas"
+                ]
+              },
+              {
+                "name": "Formulários de contato",
+                "items": [
+                  "Redirecionamento para Caixa de Entrada ou Sistema de Mailing"
+                ]
+              },
+              {
+                "name": "Redirecionamentos",
+                "items": [
+                  "Chat WhatsApp",
+                  "Website Institucional"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Business",
+            "value": "£840,00",
+            "shortText": "Site Institucional",
+            "longText": "Melhor opção para ser reconhecido, lembrado e fortalecer a imagem da sua emopresa, bem como permite a apresentação de múltiplos itens, tais como:",
+            "included": [
+              {
+                "name": "Página Principal",
+                "items": [
+                  "Prévia de Todos os Conteúdos",
+                  "Banner Randômico",
+                  "Carrossel de Imagens",
+                  "Depoimentos",
+                  "Botões de Ação (Call To Action)"
+                ]
+              },
+              {
+                "name": "Sobre Nós",
+                "items": [
+                  "Nossa Equipe",
+                  "Galeria de Fotos",
+                  "Textos Informativos",
+                  "Missão / Visão / Valores"
+                ]
+              },
+              {
+                "name": "Produtos / Serviços",
+                "items": [
+                  "Imagens Ilustrativas",
+                  "Textos Descritivos",
+                  "Botões de Download e/ou Redirecionamento"
+                ]
+              },
+              {
+                "name": "Contato",
+                "items": [
+                  "Dados de Contato (Telefone, Email, Localização...)",
+                  "Formulários",
+                  "Textos Informativos"
+                ]
+              },
+              {
+                "name": "Redirecionamentos",
+                "items": [
+                  "Chat WhatsApp",
+                  "Redes Sociais",
+                  "Trabalhe Conosco",
+                  "Página de Captura (Landing Page)"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Commercial",
+            "value": "£1560,00",
+            "shortText": "E-Commerce",
+            "longText": "Feito para quem visa comercializar seus produtos e/ou serviços através de uma plataforma exclusiva otimizada para venda, contando com a seguinte estrutura:",
+            "included": [
+              {
+                "name": "Área do Cliente",
+                "items": [
+                  "Login com Redes Sociais",
+                  "Cadastro Fácil e Rápido",
+                  "Gerenciamento de Compra",
+                  "Sistema Criptografado e Seguro (LGPD)"
+                ]
+              },
+              {
+                "name": "Integrações de Compra",
+                "items": [
+                  "Dados Cadastrais",
+                  "Meios de Pagamento",
+                  "Ferramentas de Agendamento",
+                  "Sistemas de Entrega",
+                  "Sistemas de Estoque",
+                  "Sistemas de Monitoramento"
+                ]
+              },
+              {
+                "name": "Produtos / Serviços",
+                "items": [
+                  "Imagens Ilustrativas",
+                  "Textos Descritivos",
+                  "Botões de Compra",
+                  "Filtros de Pesquisa",
+                  "Categorias"
+                ]
+              },
+              {
+                "name": "Página Principal",
+                "items": [
+                  "Prévia de Todos os Conteúdos",
+                  "Banner Randômico",
+                  "Carrossel de Imagens",
+                  "Depoimentos",
+                  "Botões de Ação (Call To Action)"
+                ]
+              },
+              {
+                "name": "Sobre Nós",
+                "items": [
+                  "Nossa Equipe",
+                  "Galeria de Fotos",
+                  "Textos Informativos",
+                  "Missão / Visão / Valores"
+                ]
+              },
+              {
+                "name": "Contato",
+                "items": [
+                  "Dados de Contato (Telefone, Email, Localização...)",
+                  "Formulários",
+                  "Textos Informativos"
+                ]
+              },
+              {
+                "name": "Redirecionamentos",
+                "items": [
+                  "Chat WhatsApp",
+                  "Redes Sociais",
+                  "Trabalhe Conosco",
+                  "Página de Captura (Landing Page)"
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
-
-    "deliverables": {
-      "title": "A Melhor Escolha\npara o Seu Negócio",
-      "subtitle": "Nossos Pacotes de Serviços",
-      "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente <br class='d-none d-lg-block'> podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
-      "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
-      "packages": [
-        {
-          "name": "Starter",
-          "value": "£370,00",
-          "shortText": "Apenas a Marca",
-          "longText": "Esse pacote contempla basicamente a marca e todos os seus arquivos complementares. O indispensável para dar inicio ao seu negócio.",
-          "included": [
-            {
-              "name": "Desenho Exclusivo da Marca",
-              "items": [
-                "JPG de Alta Qualidade e PNG Transparentes",
-                "Versões em Preto e Branco",
-                "Arquivos Vetoriais para Impressão"
-              ]
-            },
-            {
-              "name": "Identidade Visual",
-              "items": [
-                "Paleta de Cores",
-                "Tipografia",
-                "Grafismos"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Essential",
-          "value": "£540,00",
-          "shortText": "Marca e Materiais",
-          "longText": "Esse pacote é o ideal pra quem já tem um negócio mais estruturado e precisa da marca e alguns materiais iniciais também.",
-          "included": [
-            {
-              "name": "Desenho Exclusivo da Marca",
-              "items": [
-                "JPG de Alta Qualidade e PNG Transparentes",
-                "Versões em Preto e Branco",
-                "Arquivos Vetoriais para Impressão"
-              ]
-            },
-            {
-              "name": "Identidade Visual",
-              "items": [
-                "Paleta de Cores",
-                "Tipografia",
-                "Grafismos"
-              ]
-            },
-            {
-              "name": "Redes Sociais",
-              "items": [
-                "Perfil",
-                "Capa",
-                "Destaques"
-              ]
-            },
-            {
-              "name": "Papelaria Básica",
-              "items": [
-                "Cartões de Visitas",
-                "Timbrado",
-                "Envelope"
-              ]
-            },
-            {
-              "name": "Brandbook",
-              "items": [
-                "Manual de uso da marca com todas as diretrizes visuais."
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Premium",
-          "value": "£780,00",
-          "shortText": "Marca Completa",
-          "longText": "Perfeito para um negócio crescente e que demanda aplicar a marca em múltiplos pontos de contato. Mais de 10 materiais extras.",
-          "included": [
-            {
-              "name": "Desenho Exclusivo da Marca",
-              "items": [
-                "JPG de Alta Qualidade e PNG Transparentes",
-                "Versões em Preto e Branco",
-                "Arquivos Vetoriais para Impressão"
-              ]
-            },
-            {
-              "name": "Identidade Visual",
-              "items": [
-                "Paleta de Cores",
-                "Tipografia",
-                "Grafismos"
-              ]
-            },
-            {
-              "name": "Redes Sociais",
-              "items": [
-                "Perfil",
-                "Capa",
-                "Destaques"
-              ]
-            },
-            {
-              "name": "Papelaria Básica",
-              "items": [
-                "Cartões de Visitas",
-                "Timbrado",
-                "Envelope"
-              ]
-            },
-            {
-              "name": "Materiais Extras",
-              "items": [
-                "Uniforme",
-                "Crachá",
-                "Flyers",
-                "Banner",
-                "Assinatura de E-mail",
-                "And 5 more items of your choice."
-              ]
-            },
-            {
-              "name": "Brandbook",
-              "items": [
-                "Manual de uso da marca com todas as diretrizes visuais."
-              ]
-            }
-          ]
-        }
-      ]
+    "socialMedia": {
+      "details": {
+        "title": "O Que é um Projeto de Brand Design",
+        "subtitle": "Sua marca vai muito além do visual!",
+        "text": "<p>Uma identidade visual bem arquitetada e marcante é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode acreditar e investir.</p><br/><br/><p>Grandes nomes do mercado são representados por imagens e cores que despertam a nossa memória, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que transpareça a sua missão e lhe torne reconhecível em qualquer lugar.</p>"
+      },
+      "method": {
+        "title": "Etapas do Processo de Criação",
+        "subtitle": "Conheça Nosso Método",
+        "steps": [
+          {
+            "name": "Briefing",
+            "text": "Coleta de todas as informações essenciais para a execução do projeto."
+          },
+          {
+            "name": "Pesquisa",
+            "text": "Estudo do briefing, análise de concorrentes, pesquisa de mercado e mapa mental."
+          },
+          {
+            "name": "Desenho",
+            "text": "Brainstorm, moodboard, rascunhos, protótipos e testes."
+          },
+          {
+            "name": "Refinamento",
+            "text": "Definição da tipografia, símbolo, acordo cromático e elementos de apoio."
+          },
+          {
+            "name": "Apresentação",
+            "text": "Descrição dos caminhos até o resultado alcançado e elaboração de amostras visuais."
+          },
+          {
+            "name": "Avaliação e Ajustes",
+            "text": "Validação do projeto e caso necessário ajuste e adequação as expectativas do cliente. "
+          },
+          {
+            "name": "Materiais",
+            "text": "Desenvolvimento de todos os materiais complementares inclusos no pacote da marca."
+          },
+          {
+            "name": "Entrega Final",
+            "text": "Finalização e entrega do projeto, seguido de atendimento e suporte no uso da marca."
+          }
+        ]
+      },
+      "deliverables": {
+        "title": "A Melhor Escolha\npara o Seu Negócio",
+        "subtitle": "Nossos Pacotes de Serviços",
+        "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente <br class='d-none d-lg-block'> podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
+        "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
+        "packages": [
+          {
+            "name": "Starter",
+            "value": "£370,00",
+            "shortText": "Apenas a Marca",
+            "longText": "Esse pacote contempla basicamente a marca e todos os seus arquivos complementares. O indispensável para dar inicio ao seu negócio.",
+            "included": [
+              {
+                "name": "Desenho Exclusivo da Marca",
+                "items": [
+                  "JPG de Alta Qualidade e PNG Transparentes",
+                  "Versões em Preto e Branco",
+                  "Arquivos Vetoriais para Impressão"
+                ]
+              },
+              {
+                "name": "Identidade Visual",
+                "items": [
+                  "Paleta de Cores",
+                  "Tipografia",
+                  "Grafismos"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Essential",
+            "value": "£540,00",
+            "shortText": "Marca e Materiais",
+            "longText": "Esse pacote é o ideal pra quem já tem um negócio mais estruturado e precisa da marca e alguns materiais iniciais também.",
+            "included": [
+              {
+                "name": "Desenho Exclusivo da Marca",
+                "items": [
+                  "JPG de Alta Qualidade e PNG Transparentes",
+                  "Versões em Preto e Branco",
+                  "Arquivos Vetoriais para Impressão"
+                ]
+              },
+              {
+                "name": "Identidade Visual",
+                "items": [
+                  "Paleta de Cores",
+                  "Tipografia",
+                  "Grafismos"
+                ]
+              },
+              {
+                "name": "Redes Sociais",
+                "items": [
+                  "Perfil",
+                  "Capa",
+                  "Destaques"
+                ]
+              },
+              {
+                "name": "Papelaria Básica",
+                "items": [
+                  "Cartões de Visitas",
+                  "Timbrado",
+                  "Envelope"
+                ]
+              },
+              {
+                "name": "Brandbook",
+                "items": [
+                  "Manual de uso da marca com todas as diretrizes visuais."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Premium",
+            "value": "£780,00",
+            "shortText": "Marca Completa",
+            "longText": "Perfeito para um negócio crescente e que demanda aplicar a marca em múltiplos pontos de contato. Mais de 10 materiais extras.",
+            "included": [
+              {
+                "name": "Desenho Exclusivo da Marca",
+                "items": [
+                  "JPG de Alta Qualidade e PNG Transparentes",
+                  "Versões em Preto e Branco",
+                  "Arquivos Vetoriais para Impressão"
+                ]
+              },
+              {
+                "name": "Identidade Visual",
+                "items": [
+                  "Paleta de Cores",
+                  "Tipografia",
+                  "Grafismos"
+                ]
+              },
+              {
+                "name": "Redes Sociais",
+                "items": [
+                  "Perfil",
+                  "Capa",
+                  "Destaques"
+                ]
+              },
+              {
+                "name": "Papelaria Básica",
+                "items": [
+                  "Cartões de Visitas",
+                  "Timbrado",
+                  "Envelope"
+                ]
+              },
+              {
+                "name": "Materiais Extras",
+                "items": [
+                  "Uniforme",
+                  "Crachá",
+                  "Flyers",
+                  "Banner",
+                  "Assinatura de E-mail",
+                  "And 5 more items of your choice."
+                ]
+              },
+              {
+                "name": "Brandbook",
+                "items": [
+                  "Manual de uso da marca com todas as diretrizes visuais."
+                ]
+              }
+            ]
+          }
+        ]
+      }
     },
-
     "contact": {
       "title": "Vamos Fechar Negócio?",
       "paragraph": "<strong>Você se interessou?</strong> Quer contratar nossos serviços ou tirar alguma dúvida sobre <br> o que ofertamos? Marque uma reunião agora mesmo, será um prazer lhe atender.",
       "availableHours": "<sup>*</sup> Estamos disponíveis para reunião <br> Seg à Sex | 9am às 3pm."
     }
   },
-
   "linkTree": {
     "logo": "/images/brstorm-horizontal-colored.svg",
     "desktopTitle": "As infinitas posibilidades do Design!",
@@ -474,11 +868,9 @@
       }
     ]
   },
-
   "propose": {
     "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos. Se tiver interesse, estamos disponíveis para conversamos mais em uma reunião."
   },
-
   "common": {
     "bookMeeting": "Marque uma Reunião",
     "bookMeetingNow": "Marque uma Reunião\nAgora Mesmo",
