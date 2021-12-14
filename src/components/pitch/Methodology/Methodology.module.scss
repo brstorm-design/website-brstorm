@@ -51,20 +51,11 @@
     h5 {
       margin: 20px 0;
     }
+  }
 
+  & > div:last-child {
     .number {
-      counter-increment: step;
-      content: "" counter(step);
-      position: absolute;
-      left: -85px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background: $lightDark;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      color: $gray;
+      overflow: hidden;
     }
   }
 }
@@ -76,15 +67,15 @@
   left: -65px;
   height: calc(100% * 8.6);
   width: 1px;
-  border-left: 1px dashed $ghost;
+  border-left: 1px solid $ghost;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &:last-child {
-    border-left: 1px dashed $lightGray;
+    border-left: 1px solid $lightGray /* $lightGray */;
     height: 0;
-    transition: height 150ms ease; 
+    transition: height 150ms ease;
   }
 }
 
@@ -95,4 +86,28 @@
 .image {
   position: sticky;
   top: 130px;
+}
+
+.number {
+  position: absolute;
+  left: -85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $lightDark;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: $gray;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    height: calc(100% + 205px);
+    width: 1px;
+    border-left: 1px dashed $ghost
+  }
 }
