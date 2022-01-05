@@ -12,19 +12,21 @@ export default function Projects({ content, common, client }) {
   useEffect(() => {
     const refs = [introText.current, projects.current];
     let dur = 1200;
+    let delay = 0;
     refs.forEach(ref => {
       let targets = Array.from(ref.children);
       let opt = {
         duration: dur,
         easing: 'cubic-bezier(0.27, 0.6, 0.12, 1.02)',
         fill: 'both',
-        delay: 0
+        delay: delay
       };
       let keyframes = {
         opacity: [0, 1],
         transform: [`translateY(+500px)`, 'initial']
       };
       dur += 1000;
+      delay += 700;
 
       let entranceAnimation = constructSequentialAnimation(targets, keyframes, opt, 200);
       setAnimations(oldArray => [...oldArray, entranceAnimation]);
