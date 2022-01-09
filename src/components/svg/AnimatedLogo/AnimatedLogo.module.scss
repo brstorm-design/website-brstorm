@@ -1,0 +1,47 @@
+@import "../../../styles/scss/mixins";
+@import "../../../styles/scss/colors";
+
+.topLeft {
+  position: absolute;
+  transition: transform 200ms ease-out;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+
+  @include md() {
+    width: 100px;
+    height: auto;
+    top: 120px;
+    left: -50px;
+  }
+}
+
+@include stroke-animation(logo-middle, 163);
+@include stroke-animation(logo-outer, 243);
+@include stroke-animation(logo-inner, 107);
+
+.inner,
+.middle,
+.outer {
+  stroke: $darkGray;
+  fill: transparent;
+}
+
+.middle {
+  stroke-dashoffset: 163;
+  stroke-dasharray: 163;
+  animation: logo-middle 3s ease 0s infinite alternate;
+}
+
+.outer {
+  stroke-dashoffset: 243;
+  stroke-dasharray: 243;
+  animation: logo-outer 3s ease 0s infinite alternate;
+}
+
+.inner {
+  stroke-dashoffset: 107;
+  stroke-dasharray: 107;
+  animation: logo-inner 3s ease 0s infinite alternate;
+}

@@ -19,13 +19,13 @@ export default function Cover({content, common}) {
       getMousePos(e)
     })
 
-    setTimeout(function toggle() {
+    /* setTimeout(function toggle() {
       let logo = document.querySelector('#cover svg');
       logo.classList.toggle('active');
       setTimeout(() => {
         toggle();
       }, 4000);
-    }, 2000);
+    }, 2000); */
 
     return cleanup();
   }, [])
@@ -52,7 +52,7 @@ export default function Cover({content, common}) {
     <section className={styles.section} id="cover">
       <div className="container">
 
-        <AnimatedLogo className={`${styles.topLeft} track`} />
+        <AnimatedLogo />
         <img className={`${styles.topRight}`} src="/images/cover/logo-rotate-360.svg" alt="" />
         <img className={`${styles.bottomLeft} track`} src="/images/cover/grids-design.svg" alt="" />
         <a href="https://instagram.com/brstorm.design" target="_blank" rel="noopener noreferrer">

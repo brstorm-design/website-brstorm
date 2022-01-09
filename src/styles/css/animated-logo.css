@@ -1,8 +1,8 @@
+/* middle */
 svg .logo-svg-elem-1 {
-  stroke-dashoffset: 162.01290893554688px;
-  stroke-dasharray: 162.01290893554688px;
+  stroke-dashoffset: 162.01290893554688;
+  stroke-dasharray: 162.01290893554688;
   fill: transparent;
-  -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
   transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
 }
 
@@ -18,11 +18,12 @@ svg .logo-svg-elem-2 {
   -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s, fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
   transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s, fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
 }
-
 svg.active .logo-svg-elem-2 {
   stroke-dashoffset: 0;
   fill: rgb(213, 213, 213);
 }
+
+
 
 svg .logo-svg-elem-3 {
   stroke-dashoffset: 106.44315338134766px;
@@ -31,7 +32,6 @@ svg .logo-svg-elem-3 {
   -webkit-transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s, fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
   transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s, fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
 }
-
 svg.active .logo-svg-elem-3 {
   stroke-dashoffset: 0;
   fill: rgb(213, 213, 213);

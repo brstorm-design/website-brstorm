@@ -1,25 +1,44 @@
-@mixin xxl() {
+@import 'colors';
+
+@mixin xxl {
   @media (max-width: 1400px) {
     @content;
   }
 }
-@mixin xl() {
+@mixin xl {
   @media (max-width: 1200px) {
     @content;
   }
 }
-@mixin lg() {
+@mixin lg {
   @media (max-width: 992px) {
     @content;
   }
 }
-@mixin md() {
+@mixin md {
   @media (max-width: 768px) {
     @content;
   }
 }
-@mixin sm() {
+@mixin sm {
   @media (max-width: 576px) {
     @content;
+  }
+}
+
+@mixin stroke-animation($name, $length, ) {
+  @keyframes #{$name} {
+    0% {
+      stroke-dashoffset: $length;
+    }
+    10% {
+      stroke-dashoffset: $length;
+    }
+    90% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
   }
 }
