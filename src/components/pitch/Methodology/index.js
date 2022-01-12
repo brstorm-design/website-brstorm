@@ -66,7 +66,7 @@ export default function Methodology({ content }) {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-6">
+          <div className={`col-12 col-lg-6 ${styles.illustration}`}>
             <Samothrace translateValues={mousePosition} />
           </div>
           <div className="col-12 col-lg-4 offset-lg-2">

@@ -25,6 +25,8 @@
   }
 
   @include md() {
+    margin-top: 175px;
+
     article {
       text-align: center;
       margin-top: 75px;

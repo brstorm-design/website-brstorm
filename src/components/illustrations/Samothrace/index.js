@@ -14,13 +14,15 @@ export default function Samothrace({ translateValues }) {
   });
 
   useEffect(() => {
-    setTimeout(function toggle() {
-      let words = document.getElementById('obj-tech').contentDocument.firstChild;
-      words.classList.toggle('active');
-      setTimeout(() => {
-        toggle();
-      }, 5000);
-    }, 2000);
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      setTimeout(function toggle() {
+        let words = document.getElementById('obj-tech').contentDocument.firstChild;
+        words.classList.toggle('active');
+        setTimeout(() => {
+          toggle();
+        }, 5000);
+      }, 2000);
+    }
   }, []);
 
   return (

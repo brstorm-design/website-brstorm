@@ -1,4 +1,5 @@
 @import "../../../styles/scss/colors";
+@import "../../../styles/scss/mixins";
 
 .section {
   margin-top: 225px;
@@ -12,10 +13,37 @@
       margin: 0 auto;
     }
   }
+
+  @include md {
+    margin-top: 125px;
+
+    & > div:first-child {
+      margin-bottom: 50px;
+
+      h3 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.illustration {
+  @include md {
+    display: none;
+  }
 }
 
 .cards {
   position: relative;
+
+  @include md {
+    & > div:not(.line):first-child {
+      margin-top: 0;
+    }
+    & > div:not(.line):last-child {
+      margin-bottom: 0;
+    }
+  }
 
   & > div:not(.line) {
     width: 100%;
@@ -26,6 +54,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: $lightDark;
+    padding: 40px 30px;
     padding: 40px 30px;
     transition: all 500ms ease;
 
@@ -108,6 +137,6 @@
     left: 50%;
     height: calc(100% + 205px);
     width: 1px;
-    border-left: 1px dashed $ghost
+    border-left: 1px dashed $ghost;
   }
 }

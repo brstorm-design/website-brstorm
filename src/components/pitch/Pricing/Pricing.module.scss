@@ -3,7 +3,14 @@
 
 .section {
   margin-top: 150px;
-  padding-bottom: 375px;
+
+  @include lg {
+    :global {
+      .col-12:nth-child(2) > div {
+        margin: 35px 0;
+      }
+    }
+  }
 }
 
 .intro {
@@ -15,19 +22,22 @@
     white-space: break-spaces;
   }
 
-  @include md() {
-    h1 {
-      white-space: normal;
-    }
-  }
-
   h4 {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
   }
 
   p {
     margin-bottom: 100px;
+  }
+
+  @include md() {
+    h1 {
+      white-space: normal;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -41,6 +51,10 @@
   &:hover {
     transform: translateY(-20px);
     opacity: 1;
+
+    @include lg {
+      transform: initial;
+    }
   }
 
   p {
@@ -152,4 +166,8 @@
 .active {
   transform: translateY(-20px);
   opacity: 1;
+
+  @include lg {
+    transform: initial;
+  }
 }

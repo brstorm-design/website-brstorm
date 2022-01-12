@@ -2,9 +2,9 @@
 @import '../../../styles/scss/mixins';
 
 .section {
-  margin-top: -125px;
+  margin-top: 150px;
   @include md() {
-    margin-top: -50%;
+    margin-top: 125px;
   }
 }
 

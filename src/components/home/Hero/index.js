@@ -43,7 +43,7 @@ export default function Hero({ content, common, client }) {
     <section className={styles.section} id="hero">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-5 d-flex align-items-center">
+          <div className="col-12 col-lg-5 d-flex align-items-center order-2 order-lg-1">
             <div ref={element}>
               <h1>{`${content.title}, ${client.name}`}</h1>
               <h4>{`${content.subtitle} ${client.businessName}`}</h4>
@@ -59,7 +59,7 @@ export default function Hero({ content, common, client }) {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6 offset-lg-1">
+          <div className="col-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
             <img src="/images/illustrations/venus.png" alt="" className="img-fluid" />
           </div>
         </div>

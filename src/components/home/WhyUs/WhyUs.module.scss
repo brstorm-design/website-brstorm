@@ -2,22 +2,14 @@
 @import '../../../styles/scss/mixins';
 
 .section {
-  margin-top: 100px;
-  overflow-y: hidden;
+  margin-top: 250px;
 
   @include md() {
     margin-top: 150px;
-    padding-bottom: 315px;
   }
 }
 
-.section:nth-child(7) {
-  padding-bottom: 275px;
-}
-
 .title {
-  padding: 125px 30px 75px 30px;
-
   h1 {
     margin-bottom: 50px;
     text-align: center;
@@ -28,14 +20,12 @@
     }
   }
   p {
-    margin-bottom: 0;
+    margin-bottom: 75px;
     text-align: center;
     white-space: break-spaces;
   }
 
   @include md() {
-    padding-top: 100px;
-    padding-bottom: 50px;
     h1 {
       margin-bottom: 30px;
     }

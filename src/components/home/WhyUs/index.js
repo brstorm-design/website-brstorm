@@ -34,7 +34,7 @@ export default function WhyUs({ content, pitch }) {
   }, [animations])
 
   return (
-    <section className={styles.section} id="why-us" style={pitch ? {paddingBottom: '0'} : null}>
+    <section className={styles.section} id="why-us">
       <div className={styles.title}>
         <h1 dangerouslySetInnerHTML={{__html: content.title}} />
         <p>{content.subtitle}</p>

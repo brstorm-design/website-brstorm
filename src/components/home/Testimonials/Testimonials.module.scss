@@ -28,6 +28,10 @@
       }
     }
   }
+
+  @include md {
+    margin-top: 150px;
+  }
 }
 
 .titleSection {
