@@ -1,4 +1,4 @@
-@import 'colors';
+@import "colors";
 
 @mixin xxl {
   @media (max-width: 1400px) {
@@ -26,15 +26,15 @@
   }
 }
 
-@mixin stroke-animation($name, $length, ) {
+@mixin stroke-animation($name, $length) {
   @keyframes #{$name} {
     0% {
       stroke-dashoffset: $length;
     }
-    10% {
+    25% {
       stroke-dashoffset: $length;
     }
-    90% {
+    75% {
       stroke-dashoffset: 0;
     }
     100% {

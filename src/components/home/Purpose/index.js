@@ -4,6 +4,7 @@ import { constructSequentialAnimation, getTranslateValue, handleIntersection } f
 import styles from './Purpose.module.scss';
 import { inOutQuad } from 'src/utils/easings';
 import David from 'src/components/illustrations/David';
+import Arrow from 'public/images/arrow-down.svg';
 
 export default function Purpose({ content, common }) {
   const element = useRef(null);
@@ -41,6 +42,7 @@ export default function Purpose({ content, common }) {
 
   return (
     <section className={styles.section} id="purpose" onMouseMove={move}>
+      <Arrow className="asdasd" />
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">

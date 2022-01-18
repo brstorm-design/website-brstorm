@@ -1,4 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Autonomy from 'src/components/svg/reasons/Autonomy';
+import Delivery from 'src/components/svg/reasons/Delivery';
+import Support from 'src/components/svg/reasons/Support';
+import TailorMade from 'src/components/svg/reasons/TailorMade';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './WhyUs.module.scss';
 
@@ -26,12 +30,16 @@ export default function WhyUs({ content, pitch }) {
 
   useEffect(() => {
     if (animations) {
-      const onEnd = animation => {
-        animation.effect.target.querySelector('object').contentDocument.firstChild.classList.add('active');
-      }
-      handleIntersection(refs, animations, onEnd);
+      handleIntersection(refs, animations);
     }
-  }, [animations])
+  }, [animations]);
+
+  const icons = {
+    0: <Autonomy styles={styles} />,
+    1: <Support styles={styles} />,
+    2: <TailorMade styles={styles} />,
+    3: <Delivery styles={styles} />,
+  }
 
   return (
     <section className={styles.section} id="why-us">
@@ -46,8 +54,8 @@ export default function WhyUs({ content, pitch }) {
               return (
                 <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>
-                    <object data={item.image} type="image/svg+xml" />
-                    <h5>{item.title}</h5>
+                    { icons[index] }
+                    <h5 className={styles.boxBottom}>{item.title}</h5>
                     <small>{item.body}</small>
                   </div>
                 </div>
