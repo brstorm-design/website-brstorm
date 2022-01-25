@@ -5,6 +5,10 @@
       "slugName": "zankysdeli",
       "name": "Fabio e Sara",
       "businessName": "Zanky's Deli",
+      "parameters": {
+        "langs": ["it", "en"],
+        "services": [0, 1]
+      },
       "portifolio": [
         {
           "cover": "/images/portifolio/petsvida.png",
@@ -48,6 +52,10 @@
       "slugName": "kingmotorcycles",
       "name": "Victor",
       "businessName": "King Motorcycles",
+      "parameters": {
+        "langs": ["en"],
+        "services": [0]
+      },
       "portifolio": [
         {
           "cover": "/images/portifolio/petsvida.png",
@@ -91,6 +99,10 @@
       "slugName": "realbrasilstore",
       "name": "Gefferson",
       "businessName": "Real Brasil Store",
+      "parameters": {
+        "langs": ["en"],
+        "services": [0]
+      },
       "portifolio": [
         {
           "cover": "/images/portifolio/petsvida.png",
@@ -134,6 +146,10 @@
       "slugName": "georgemechanic",
       "name": "George",
       "businessName": "your business",
+      "parameters": {
+        "langs": ["en"],
+        "services": [0]
+      },
       "portifolio": [
         {
           "cover": "/images/portifolio/petsvida.png",
@@ -177,6 +193,10 @@
       "slugName": "zero27",
       "name": "Monique",
       "businessName": "Zero27 Barbering",
+      "parameters": {
+        "langs": ["en"],
+        "services": [0]
+      },
       "portifolio": [
         {
           "cover": "/images/portifolio/petsvida.png",
@@ -218,16 +238,19 @@
   ],
   "services": [
     {
+      "id": 0,
       "name": "Brand Design",
       "slug": "brand-design",
       "json": "brandDesign"
     },
     {
+      "id": 1,
       "name": "Web Design",
       "slug": "web-design",
       "json": "webDesign"
     },
     {
+      "id": 2,
       "name": "Social Media",
       "slug": "social-media",
       "json": "socialMedia"

@@ -49,18 +49,22 @@ export async function getStaticPaths({ locales }) {
     return data.clients.flatMap(client => {
       return data.services.flatMap(service => {
         return locales.map(locale => {
-          return {
-            params: {
-              client: `${client.slugName}-${client.id}`,
-              service: service.slug,
-            },
-            locale: locale,
+          if (client.parameters.langs.includes(locale) && client.parameters.services.includes(service.id)) {
+            return {
+              params: {
+                client: `${client.slugName}-${client.id}`,
+                service: service.slug,
+              },
+              locale: locale,
+            }
           }
         })
       })
     })
   }
-  const paths = getPaths();
+  const arr = getPaths();
+  const paths = arr.filter(el => el !== undefined);
+  console.log(paths);
   return { paths, fallback: false }
 }
 
@@ -73,10 +77,10 @@ export async function getStaticProps(context) {
 
   switch (context.locale) {
     case 'pt':
-      return { props: {content: pt, pitch, service, pitchContent: pt.pitch[service.json]} };
+      return { props: { content: pt, pitch, service, pitchContent: pt.pitch[service.json] } };
     case 'en':
-      return { props: {content: en, pitch, service, pitchContent: en.pitch[service.json]} };
+      return { props: { content: en, pitch, service, pitchContent: en.pitch[service.json] } };
     case 'it':
-      return { props: {content: it, pitch, service, pitchContent: it.pitch[service.json]} };
+      return { props: { content: it, pitch, service, pitchContent: it.pitch[service.json] } };
   }
 }
