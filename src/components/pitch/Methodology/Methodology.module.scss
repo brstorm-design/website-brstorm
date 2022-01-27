@@ -1,5 +1,5 @@
-@import "../../../styles/scss/colors";
-@import "../../../styles/scss/mixins";
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
 
 .section {
   margin-top: 225px;
@@ -14,7 +14,7 @@
     }
   }
 
-  @include md {
+  @include mixins.md {
     margin-top: 125px;
 
     & > div:first-child {
@@ -28,7 +28,7 @@
 }
 
 .illustration {
-  @include md {
+  @include mixins.md {
     display: none;
   }
 }
@@ -36,7 +36,7 @@
 .cards {
   position: relative;
 
-  @include md {
+  @include mixins.md {
     & > div:not(.line):first-child {
       margin-top: 0;
     }
@@ -53,22 +53,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $lightDark;
+    background-color: colors.$lightDark;
     padding: 40px 30px;
     padding: 40px 30px;
     transition: all 500ms ease;
 
     &.active {
-      background: $lightGray;
+      background: colors.$lightGray;
       h5 {
-        color: $dark;
+        color: colors.$dark;
       }
       small {
-        color: $ghost;
+        color: colors.$ghost;
       }
       .number {
-        background: $lightGray;
-        color: $dark;
+        background: colors.$lightGray;
+        color: colors.$dark;
       }
     }
 
@@ -96,13 +96,13 @@
   left: -65px;
   height: calc(100% * 8.6);
   width: 1px;
-  border-left: 1px solid $ghost;
+  border-left: 1px solid colors.$ghost;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &:last-child {
-    border-left: 1px solid $lightGray /* $lightGray */;
+    border-left: 1px solid colors.$lightGray /* $lightGray */;
     height: 0;
     transition: height 150ms ease;
   }
@@ -123,11 +123,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $lightDark;
+  background: colors.$lightDark;
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  color: $gray;
+  color: colors.$gray;
 
   &::after {
     content: "";
@@ -137,6 +137,6 @@
     left: 50%;
     height: calc(100% + 205px);
     width: 1px;
-    border-left: 1px dashed $ghost;
+    border-left: 1px dashed colors.$ghost;
   }
 }

@@ -1,5 +1,5 @@
-@import '../../styles/scss/mixins';
-@import '../../styles/scss/colors';
+@use '../../styles/scss/mixins';
+@use '../../styles/scss/colors';
 
 .header {
   min-height: 80px;
@@ -17,11 +17,11 @@
 
   a:hover {
     path:last-child {
-      fill: $pink;
+      fill: colors.$pink;
     }
   }
 
-  @include md() {
+  @include mixins.md() {
     padding: 0 25px;
   }
 

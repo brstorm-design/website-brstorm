@@ -1,4 +1,4 @@
-@import "../../../styles/scss/mixins";
+@use "../../../styles/scss/mixins";
 
 .section {
   margin-top: 250px;
@@ -16,7 +16,7 @@
     }
   }
 
-  @include md {
+  @include mixins.md {
     margin-top: 150px;
   }
 }

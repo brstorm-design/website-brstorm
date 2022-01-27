@@ -1,4 +1,4 @@
-@import '../../../styles/scss/mixins';
+@use '../../../styles/scss/mixins';
 
 .section {
   margin-top: 300px;
@@ -23,7 +23,7 @@
     margin-bottom: 0;
   }
 
-  @include md() {
+  @include mixins.md() {
     margin-bottom: 50px;
     h1 {
       white-space: break-spaces;

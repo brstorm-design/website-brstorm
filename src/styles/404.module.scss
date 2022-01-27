@@ -1,5 +1,5 @@
-@import "scss/colors";
-@import "scss/mixins";
+@use "scss/colors";
+@use "scss/mixins";
 
 .section {
   height: 100vh;
@@ -25,7 +25,7 @@
     margin: 0;
     padding-right: 25px;
     margin-right: 25px;
-    border-right: 1px solid $ghost;
+    border-right: 1px solid colors.$ghost;
   }
 
   h2 {

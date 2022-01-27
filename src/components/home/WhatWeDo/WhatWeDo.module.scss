@@ -1,6 +1,6 @@
-@import "../../../styles/scss/colors";
-@import "../../../styles/scss/mixins";
-@import "../../../styles/scss/keyframes";
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/keyframes";
 
 .section {
   margin-top: 250px;
@@ -9,7 +9,7 @@
   article {
     &:last-child {
       margin-top: 150px;
-      @include md() {
+      @include mixins.md() {
         margin-top: 75px;
       }
     }
@@ -26,17 +26,17 @@
     }
     a {
       display: none;
-      color: $ghost !important;
+      color: colors.$ghost !important;
       svg {
         margin-left: 5px;
         path {
-          color: $ghost;
+          color: colors.$ghost;
         }
       }
     }
   }
 
-  @include md() {
+  @include mixins.md() {
     margin-top: 150px;
     article {
       h2 {
@@ -48,7 +48,7 @@
     }
   }
 
-  @include sm() {
+  @include mixins.sm() {
     article {
       padding: 0 15px;
     }
@@ -59,14 +59,14 @@
   text-align: center;
 
   h3 {
-    color: $gray;
+    color: colors.$gray;
     margin: 0 auto;
   }
   h1 {
     margin-bottom: 50px;
   }
 
-  @include md() {
+  @include mixins.md() {
     h3 {
       text-align: center;
     }

@@ -1,11 +1,14 @@
-@import "scss/colors";
-@import "scss/typography";
-@import "scss/buttons";
-@import "scss/keyframes";
+@use "sass:color";
+@use "scss/colors";
+@use "scss/typography";
+@use "scss/buttons";
+@use "scss/keyframes";
+@use "scss/mixins";
+
 
 body {
-  background-color: $black;
-  color: $lightGray;
+  background-color: colors.$black;
+  color: colors.$lightGray;
   font-family: "Inter", sans-serif;
   z-index: 1;
   position: relative;
@@ -35,7 +38,7 @@ html {
   overflow-x: clip;
 }
 
-@include sm() {
+@include mixins.sm() {
   div.col-12 {
     padding-right: 30px;
     padding-left: 30px;
@@ -50,16 +53,16 @@ html {
     background-color: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: rgba($color: $gray, $alpha: 0.6);
+    background-color: rgba($color: colors.$gray, $alpha: 0.6);
     border-radius: 1000px;
     transition: all 350ms ease;
 
     &:hover {
-      background-color: darken($gray, 10%);
+      background-color: color.adjust(colors.$gray, $lightness: -10%);
     }
 
     &:active {
-      background-color: darken($gray, 30%);
+      background-color: color.adjust(colors.$gray, $lightness: -30%);
     }
   }  
 }
@@ -83,6 +86,6 @@ html {
 }
 
 ::selection {
-  background-color: $pink;
-  color: $white;
+  background-color: colors.$pink;
+  color: colors.$white;
 }

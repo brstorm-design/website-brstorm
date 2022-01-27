@@ -1,8 +1,8 @@
-@import './colors';
+@use 'colors';
 
 .btn {
-  border: 1px solid $white;
-  background-color: $white;
+  border: 1px solid colors.$white;
+  background-color: colors.$white;
   border-radius: 2px;
   padding: 0 16px;
   cursor: pointer;
@@ -30,22 +30,22 @@
   }
 
   &.ghost {
-    border-color: $ghost;
-    color: $ghost;
+    border-color: colors.$ghost;
+    color: colors.$ghost;
     background-color: transparent;
 
     svg {
       margin-left: 8px;
     }
     &:hover path {
-      fill: $white;
+      fill: colors.$white;
     }
   }
     
 
   &:hover {
     background-color: transparent;
-    color: $white;
-    border-color: $white;
+    color: colors.$white;
+    border-color: colors.$white;
   }
 }

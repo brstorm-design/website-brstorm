@@ -1,4 +1,4 @@
-@import "colors";
+@use "colors";
 
 @mixin xxl {
   @media (max-width: 1400px) {

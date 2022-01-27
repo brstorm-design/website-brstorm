@@ -1,9 +1,9 @@
-@import '../../../styles/scss/colors';
+@use '../../../styles/scss/colors';
 
 .image {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $dark;
+  background-color: colors.$dark;
   border-radius: 2px;
 }

@@ -1,6 +1,6 @@
-@import '../../../styles/scss/colors';
-@import '../../../styles/scss/mixins';
-@import '../../../styles/scss/keyframes';
+@use '../../../styles/scss/colors';
+@use '../../../styles/scss/mixins';
+@use '../../../styles/scss/keyframes';
 
 .section {
   margin-top: 65px;
@@ -27,7 +27,7 @@
     top: 0;
     right: 60px;
     z-index: -1;
-    @include md() {
+    @include mixins.md() {
       display: none;
     }
   }
@@ -37,7 +37,7 @@
     left: 0;
     z-index: 1;
     backdrop-filter: blur(5px);
-    @include md() {
+    @include mixins.md() {
       height: 125px;
       z-index: 1;
       bottom: 50px;
@@ -50,7 +50,7 @@
     right: 40px;
     z-index: 1;
     backdrop-filter: blur(5px);
-    @include md() {
+    @include mixins.md() {
       height: 250px;
       right: -70px;
       bottom: -40px;
@@ -59,7 +59,7 @@
   
 // --
 
-  @include md() {
+  @include mixins.md() {
     margin-top: 75px;
   }
 }
@@ -86,13 +86,13 @@
     }
   }
 
-  @include md() {
+  @include mixins.md() {
     padding: 0 35px;
     margin-top: 0;
     margin-bottom: 115px;
     text-align: center;
   }
-  @include lg() {
+  @include mixins.lg() {
     background: linear-gradient(180deg, rgba(10, 10, 10, 0.475) 0%, rgba(1, 1, 1, 0.3) 100%);
   }
 
@@ -115,7 +115,7 @@
     a {
       font-family: Montserrat, 'sans-serif';
       font-size: 10px;
-      color: $ghost;
+      color: colors.$ghost;
       display: inline-flex;
       justify-content: center;
       padding-top: 15px;
@@ -127,7 +127,7 @@
         bottom: 0;
         width: 50px;
         height: 1px;
-        border-bottom: 1px dotted $ghost;
+        border-bottom: 1px dotted colors.$ghost;
       }
     }
 

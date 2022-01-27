@@ -1,6 +1,6 @@
-@import "../../../styles/scss/mixins";
-@import "../../../styles/scss/colors";
-@import "../../../styles/scss/keyframes";
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/keyframes";
 
 .section {
   margin-top: 250px;
@@ -24,7 +24,7 @@
     margin-bottom: 50px;
   }
 
-  @include md() {
+  @include mixins.md() {
     margin-top: 175px;
 
     article {

@@ -1,4 +1,4 @@
-@import '../../../styles/scss/colors';
+@use '../../../styles/scss/colors';
 
 .cursor {
   position: absolute;
@@ -9,7 +9,7 @@
   height: 1px;
   width: 1px;
   border-radius: 50%;
-  background-color: $white;
+  background-color: colors.$white;
   pointer-events: none;
   transition: transform 50ms linear;
 }

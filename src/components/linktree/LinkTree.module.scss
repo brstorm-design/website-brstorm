@@ -1,10 +1,10 @@
-@import "../../styles/scss/colors";
-@import "../../styles/scss/mixins";
+@use "../../styles/scss/colors";
+@use "../../styles/scss/mixins";
 
 .section {
   height: 100vh;
 
-  @include md() {
+  @include mixins.md() {
     height: auto;
   }
 
@@ -18,7 +18,7 @@
       display: none;
     }
 
-    @include md() {
+    @include mixins.md() {
       .row {
         height: auto;
         padding-top: 75px;
@@ -55,12 +55,12 @@
     align-items: center;
 
     svg {
-      fill: $gray;
+      fill: colors.$gray;
       margin-left: 7px;
     }
   }
 
-  @include md() {
+  @include mixins.md() {
     p,
     strong {
       display: none;
@@ -96,7 +96,7 @@
 
   a {
     margin-bottom: 30px;
-    color: $black;
+    color: colors.$black;
     height: 56px;
     padding: 0;
 
@@ -106,8 +106,8 @@
 
     &:hover {
       * {
-        color: $white;
-        fill: $white;
+        color: colors.$white;
+        fill: colors.$white;
       }
     }
   }
@@ -120,14 +120,14 @@
   strong,
   span {
     display: inline-block;
-    color: $black;
+    color: colors.$black;
 
     &:hover {
-      color: $white;
+      color: colors.$white;
     }
   }
 
-  @include lg() {
+  @include mixins.lg() {
     span,
     small {
       display: none;
@@ -148,13 +148,13 @@
   bottom: 0;
   width: 100%;
 
-  @include md() {
+  @include mixins.md() {
     position: relative;
   }
 }
 
 .footerText {
-  border-top: 1px solid $ghost;
+  border-top: 1px solid colors.$ghost;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
@@ -168,7 +168,7 @@
     }
   }
 
-  @include md() {
+  @include mixins.md() {
     justify-content: center;
   }
 }

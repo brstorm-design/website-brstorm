@@ -1,10 +1,10 @@
-@import "../../../styles/scss/mixins";
-@import "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/colors";
 
 .section {
   margin-top: 150px;
 
-  @include lg {
+  @include mixins.lg {
     :global {
       .col-12:nth-child(2) > div {
         margin: 35px 0;
@@ -32,7 +32,7 @@
     margin-bottom: 100px;
   }
 
-  @include md() {
+  @include mixins.md() {
     h1 {
       white-space: normal;
       margin-top: 20px;
@@ -42,8 +42,8 @@
 }
 
 .pack {
-  background-color: $dark;
-  border: 1px solid $ghost;
+  background-color: colors.$dark;
+  border: 1px solid colors.$ghost;
   padding: 50px 40px;
   opacity: 0.5;
   transition: all 350ms ease;
@@ -52,14 +52,14 @@
     transform: translateY(-20px);
     opacity: 1;
 
-    @include lg {
+    @include mixins.lg {
       transform: initial;
     }
   }
 
   p {
     margin-bottom: 0;
-    color: $ghost;
+    color: colors.$ghost;
   }
 
   //Card Header
@@ -77,13 +77,13 @@
 
   //Card Body
   & > div:nth-child(2) {
-    border-top: 1px solid $ghost;
-    border-bottom: 1px solid $ghost;
+    border-top: 1px solid colors.$ghost;
+    border-bottom: 1px solid colors.$ghost;
     padding: 40px 0;
     margin: 50px 0;
 
     strong small {
-      color: $white;
+      color: colors.$white;
     }
 
     a {
@@ -167,7 +167,7 @@
   transform: translateY(-20px);
   opacity: 1;
 
-  @include lg {
+  @include mixins.lg {
     transform: initial;
   }
 }

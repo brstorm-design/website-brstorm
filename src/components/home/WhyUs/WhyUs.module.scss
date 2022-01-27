@@ -1,11 +1,12 @@
 @use 'sass:math';
-@import "../../../styles/scss/colors";
-@import "../../../styles/scss/mixins";
+@use "sass:list";
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
 
 .section {
   margin-top: 250px;
 
-  @include md() {
+  @include mixins.md() {
     margin-top: 150px;
   }
 }
@@ -26,7 +27,7 @@
     white-space: break-spaces;
   }
 
-  @include md() {
+  @include mixins.md() {
     h1 {
       margin-bottom: 30px;
     }
@@ -36,7 +37,7 @@
 .card {
   padding: 40px 25px;
   height: 270px;
-  background-color: $black;
+  background-color: colors.$black;
   border: 1px solid;
   border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
 
@@ -86,8 +87,8 @@ $iconPaths: (
 
 @each $icon, $paths in $iconPaths {
   @each $pathName, $size in $paths {
-    @include stroke-animation(#{$icon}__#{$pathName}, $size);
-    $i: index(($paths), ($pathName $size));
+    @include mixins.stroke-animation(#{$icon}__#{$pathName}, $size);
+    $i: list.index(($paths), ($pathName $size));
     .#{$pathName} {
       animation: #{$icon}__#{$pathName} 3s ease #{0 + math.div($i - 1, 8)}s infinite alternate both;
       stroke-dasharray: $size;
