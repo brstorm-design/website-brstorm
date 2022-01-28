@@ -4,7 +4,7 @@
 .section {
   height: 100vh;
 
-  @include mixins.md() {
+  @include mixins.md {
     height: auto;
   }
 
@@ -18,7 +18,7 @@
       display: none;
     }
 
-    @include mixins.md() {
+    @include mixins.md {
       .row {
         height: auto;
         padding-top: 75px;
@@ -60,7 +60,7 @@
     }
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     p,
     strong {
       display: none;
@@ -127,7 +127,7 @@
     }
   }
 
-  @include mixins.lg() {
+  @include mixins.lg {
     span,
     small {
       display: none;
@@ -148,7 +148,7 @@
   bottom: 0;
   width: 100%;
 
-  @include mixins.md() {
+  @include mixins.md {
     position: relative;
   }
 }
@@ -168,7 +168,7 @@
     }
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     justify-content: center;
   }
 }

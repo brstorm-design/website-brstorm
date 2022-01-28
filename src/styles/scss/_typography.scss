@@ -84,7 +84,7 @@ a:not(.btn) {
   }
 }
 
-@include mixins.lg() {
+@include mixins.lg {
   h1 { // xxl
     font-size: 32px;
     line-height: 44px;
@@ -131,7 +131,7 @@ a:not(.btn) {
   }
 }
 
-@include mixins.md() {
+@include mixins.md {
   h1 {
     text-align: center;
   }
@@ -145,7 +145,7 @@ a:not(.btn) {
   width: max-content;
   background-image: linear-gradient(-60deg, colors.$pink, colors.$cyan);
 
-  @include mixins.md() {
+  @include mixins.md {
     width: auto;
   }
 }

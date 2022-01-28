@@ -9,7 +9,7 @@
   article {
     &:last-child {
       margin-top: 150px;
-      @include mixins.md() {
+      @include mixins.md {
         margin-top: 75px;
       }
     }
@@ -36,7 +36,7 @@
     }
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     margin-top: 150px;
     article {
       h2 {
@@ -48,7 +48,7 @@
     }
   }
 
-  @include mixins.sm() {
+  @include mixins.sm {
     article {
       padding: 0 15px;
     }
@@ -66,7 +66,7 @@
     margin-bottom: 50px;
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     h3 {
       text-align: center;
     }

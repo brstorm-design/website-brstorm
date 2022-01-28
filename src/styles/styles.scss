@@ -38,7 +38,7 @@ html {
   overflow-x: clip;
 }
 
-@include mixins.sm() {
+@include mixins.sm {
   div.col-12 {
     padding-right: 30px;
     padding-left: 30px;

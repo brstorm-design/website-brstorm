@@ -60,7 +60,7 @@
  */
 .section {
   margin-top: 150px;
-  @include mixins.md() {
+  @include mixins.md {
     margin-top: 125px;
   }
 }
@@ -83,7 +83,7 @@
     /* animation: rotate-border 850ms ease-out infinite; */
   }
 
-  @include mixins.lg() {
+  @include mixins.lg {
     height: auto;
     padding: 50px 40px;
     h1 {
@@ -100,14 +100,14 @@
     flex-direction: column;
     align-items: flex-end;
 
-    @include mixins.lg() {
+    @include mixins.lg {
       align-items: center;
     }
 
     a {
       margin-bottom: 25px;
 
-      @include mixins.md() {
+      @include mixins.md {
         padding: 0 15px;
       }
     }

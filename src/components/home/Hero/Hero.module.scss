@@ -20,11 +20,11 @@
     margin-right: 20px;
   }
 
-  @include mixins.lg() {
+  @include mixins.lg {
     margin-top: 75px;
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     h4 {
       text-align: center;
     }

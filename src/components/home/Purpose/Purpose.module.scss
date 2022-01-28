@@ -24,7 +24,7 @@
     margin-bottom: 50px;
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     margin-top: 175px;
 
     article {

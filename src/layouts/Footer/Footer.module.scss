@@ -8,7 +8,7 @@
   backdrop-filter: blur(5px);
   background-color: rgba($color: colors.$black, $alpha: 0.5);
 
-  @include mixins.md() {
+  @include mixins.md {
     margin-top: 100px;
   }
 }
@@ -21,7 +21,7 @@
 
   small {
     color: colors.$darkGray;
-    @include mixins.md() {
+    @include mixins.md {
       order: 1;
       margin-top: 15px;
     }
@@ -39,7 +39,7 @@
     }
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     flex-direction: column;
     align-items: center;
     padding: 25px 0;

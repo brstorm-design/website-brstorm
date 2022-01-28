@@ -21,7 +21,7 @@
     }
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     padding: 0 25px;
   }
 

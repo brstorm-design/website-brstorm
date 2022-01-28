@@ -9,13 +9,13 @@
     .swiper-container {
       overflow: initial;
       margin-left: 16.66666667% !important;
-      @include mixins.md() {
+      @include mixins.md {
         margin-left: 0 !important;
       }
     }
     .swiper-slide {
       width: 395px !important;
-      @include mixins.md() {
+      @include mixins.md {
         width: 315px !important;
       }
     }
@@ -23,7 +23,7 @@
       overflow-y: clip;
     }
     .container {
-      @include mixins.sm() {
+      @include mixins.sm {
         padding: 0 30px;
       }
     }
@@ -40,7 +40,7 @@
   align-items: center;
   margin-bottom: 75px;
 
-  @include mixins.md() {
+  @include mixins.md {
     justify-content: center;
     margin-bottom: 50px;
     h1 {
@@ -94,7 +94,7 @@
     }
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     height: 325px;
   }
 }

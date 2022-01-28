@@ -23,7 +23,7 @@
     margin-bottom: 0;
   }
 
-  @include mixins.md() {
+  @include mixins.md {
     margin-bottom: 50px;
     h1 {
       white-space: break-spaces;
