@@ -1,6 +1,9 @@
+import Image from 'next/image';
 import { useEffect } from 'react';
 import { applyStyles } from 'src/modules/App';
 import styles from './David.module.scss';
+import david from 'public/images/purpose/david.png';
+import Words from 'public/images/purpose/words.svg';
 
 export default function David({ forwardedRef, translate }) {
 
@@ -10,16 +13,6 @@ export default function David({ forwardedRef, translate }) {
       applyStyles(targets, translate);
     });
   });
-
-  useEffect(() => {
-    setTimeout(function toggle() {
-      let words = document.getElementById('obj').contentDocument.firstChild;
-      words.classList.toggle('active');
-      setTimeout(() => {
-        toggle();
-      }, 3000);
-    }, 2000);
-  }, []);
 
   const options = {
     rootMargin: '-200px 0px -200px 0px'
@@ -49,7 +42,7 @@ export default function David({ forwardedRef, translate }) {
   return (
     <div className={styles.image}>
       <div ref={forwardedRef} id="purpose-image">
-        <img src="/images/purpose/david.png" alt="david" />
+        <Image src={david} alt="David" />
         <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g style={{ mixBlendMode: 'overlay' }}>
             <rect width="150" height="40" fill="#E93CAC" />
@@ -63,9 +56,7 @@ export default function David({ forwardedRef, translate }) {
         <img src="/images/purpose/pattern.svg" alt="pattern" />
         <img src="/images/purpose/pin.svg" alt="pin" />
         <img src="/images/purpose/exploring-the-infinite.svg" alt="writing" />
-        <div>
-          <object id="obj" data="/images/purpose/words.svg" type="text/svg+xml" />
-        </div>
+        <Words />
       </div>
     </div>
   )

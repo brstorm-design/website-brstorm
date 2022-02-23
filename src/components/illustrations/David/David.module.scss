@@ -3,6 +3,7 @@
 @use '../../../styles/scss/keyframes';
 
 @include mixins.pin-pulse(colors.$pink);
+@include mixins.stroke-fill-animation(words-animation, false);
 
 .image {
   position: relative;
@@ -14,11 +15,12 @@
     margin: auto;
     background: colors.$black;
 
-    & > div {
+    & > svg:last-of-type {
       position: absolute;
       top: 140px;
       left: -25px;
       z-index: -1;
+      animation: words-animation 3s ease-in-out infinite alternate;
     }
 
     img:not(img:first-child) {
@@ -41,13 +43,13 @@
       }
     }
     // seal
-    img:nth-of-type(2) {
+    img:nth-last-of-type(5) {
       top: 0;
       right: 0;
       animation: rotate 10s linear infinite;
     }
     // comment
-    img:nth-of-type(3) {
+    img:nth-last-of-type(4) {
       bottom: 25px;
       right: -65px;
       @include mixins.md {
@@ -55,12 +57,12 @@
       }
     }
     // pattern
-    img:nth-of-type(4) {
+    img:nth-last-of-type(3) {
       bottom: 175px;
       left: -25px;
     }
     // pin
-    img:nth-of-type(5) {
+    img:nth-last-of-type(2) {
       bottom: 135px;
       right: 145px;
       border-radius: 50%;
@@ -70,7 +72,7 @@
       }
     }
     // exploring the infinite
-    img:nth-of-type(6) {
+    img ~ img:nth-last-of-type(1) {
       bottom: -5px;
       left: 90px;
       transform: rotate(-10deg);
