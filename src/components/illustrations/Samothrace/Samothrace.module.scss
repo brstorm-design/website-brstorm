@@ -1,5 +1,8 @@
 @use '../../../styles/scss/colors';
 @use '../../../styles/scss/mixins';
+@use '../../../styles/scss/keyframes';
+
+@include mixins.pin-pulse(colors.$cyan);
 
 .image {
   position: sticky;
@@ -44,6 +47,8 @@
     }
     //pin
     img:nth-of-type(5) {
+      animation: pin-pulse 2s infinite;
+      border-radius: 50%;
       top: 200px;
       left: 400px;
     }

@@ -2,6 +2,8 @@
 @use '../../../styles/scss/mixins';
 @use '../../../styles/scss/keyframes';
 
+@include mixins.pin-pulse(colors.$pink);
+
 .image {
   position: relative;
 
