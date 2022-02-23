@@ -14,4 +14,6 @@ module.exports = {
     defaultLocale: 'en',
     localeDetection: false,
   },
+
+  reactStrictMode: true,
 }
