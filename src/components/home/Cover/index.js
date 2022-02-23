@@ -1,11 +1,13 @@
 import { React, useEffect } from 'react';
 import AnchorButton from 'src/components/common/AnchorButton';
 import AnimatedLogo from 'src/components/svg/AnimatedLogo';
-import Circle from 'src/components/svg/Circle';
-import Square from 'src/components/svg/Square';
-import Triangle from 'src/components/svg/Triangle';
+import Circle from 'public/images/cover/circle.svg';
+import Square from 'public/images/cover/square.svg';
+import Triangle from 'public/images/cover/triangle.svg';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './Cover.module.scss';
+import Arrow from 'public/images/arrow-down.svg';
+import MobileUI from 'public/images/cover/mobile-ui.svg'
 
 export default function Cover({content, common}) {
   useEffect(() => {
@@ -56,7 +58,9 @@ export default function Cover({content, common}) {
         <img className={`${styles.topRight}`} src="/images/cover/logo-rotate-360.svg" alt="" />
         <img className={`${styles.bottomLeft} track`} src="/images/cover/grids-design.svg" alt="" />
         <a href="https://instagram.com/brstorm.design" target="_blank" rel="noopener noreferrer">
-          <img className={`${styles.bottomRight} track`} src="/images/cover/mobile-ui.svg" alt="" />
+          <div className={`${styles.bottomRight} track`}>
+            <MobileUI />
+          </div>
         </a>
 
         <div className="row">
@@ -66,7 +70,7 @@ export default function Cover({content, common}) {
               <h4>{content.subtitle}</h4>
               <AnchorButton className="btn large ghost" href="#purpose" easing={inOutQuad} duration={1000}>
                 {common.seeMore}
-                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
+                <Arrow />
               </AnchorButton>
 
               <div>

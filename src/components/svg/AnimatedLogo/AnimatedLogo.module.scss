@@ -1,6 +1,8 @@
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/colors";
 
+@include mixins.stroke-fill-animation(logo-animation);
+
 .topLeft {
   position: absolute;
   transition: transform 200ms ease-out;
@@ -16,33 +18,10 @@
     top: 120px;
     left: -50px;
   }
-}
 
-@include mixins.stroke-animation(logo-middle, 163);
-@include mixins.stroke-animation(logo-outer, 243);
-@include mixins.stroke-animation(logo-inner, 107);
-
-.inner,
-.middle,
-.outer {
-  stroke: colors.$darkGray;
-  fill: transparent;
-}
-
-.middle {
-  stroke-dashoffset: 163;
-  stroke-dasharray: 163;
-  animation: logo-middle 3s ease 0s infinite alternate;
-}
-
-.outer {
-  stroke-dashoffset: 243;
-  stroke-dasharray: 243;
-  animation: logo-outer 3s ease 0s infinite alternate;
-}
-
-.inner {
-  stroke-dashoffset: 107;
-  stroke-dasharray: 107;
-  animation: logo-inner 3s ease 0s infinite alternate;
+  .inner,
+  .middle,
+  .outer {
+    animation: logo-animation 5s ease-in-out infinite alternate;
+  }
 }
