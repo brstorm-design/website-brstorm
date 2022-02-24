@@ -1,6 +1,6 @@
-@use '../../../styles/scss/colors';
-@use '../../../styles/scss/mixins';
-@use '../../../styles/scss/keyframes';
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/keyframes";
 
 @include mixins.pin-pulse(colors.$cyan);
 
@@ -15,38 +15,60 @@
     position: relative;
     z-index: 1;
 
-    img:not(img:first-child) {
+    svg {
       position: absolute;
       transition: transform 200ms ease-out;
     }
 
-    svg {
+    svg:nth-of-type(1) {
       position: absolute;
       top: 100px;
       left: 315px;
     }
     // pattern
-    img:nth-of-type(2) {
+    svg:nth-of-type(2) {
       top: 100px;
       left: 245px;
     }
     // grayscale
-    img:nth-of-type(3) {
+    svg:nth-of-type(3) {
       top: 350px;
       left: 160px;
     }
     // picker
-    img:nth-of-type(4) {
+    svg:nth-of-type(4) {
       top: 225px;
       left: 405px;
     }
     // tech creativity
-    div:nth-child(6) {
+    svg:nth-of-type(5) {
       top: 435px;
       left: 345px;
+
+      path,
+      line {
+        // "TECH &" animation
+        $techDelay: 0;
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            animation: tech-and 6s #{$techDelay}ms ease-in-out infinite alternate;
+          }
+          $techDelay: $techDelay + 50;
+        }
+
+        // "Creativity" animation
+        $creatDelay: 0;
+        @for $i from 6 through 17 {
+          &:nth-child(#{$i}) {
+            animation: creativity 6s #{$creatDelay}ms ease-in-out infinite alternate;
+          }
+          $creatDelay: $creatDelay + 250;
+        }
+      }
+
     }
     //pin
-    img:nth-of-type(5) {
+    svg:nth-of-type(6) {
       animation: pin-pulse 2s infinite;
       border-radius: 50%;
       top: 200px;
@@ -58,6 +80,7 @@
       top: 150px;
       left: 20px;
       z-index: -1;
+
       @include mixins.md {
         left: 55px;
       }
@@ -95,5 +118,34 @@
   @include mixins.md {
     margin-bottom: 75px;
     position: static;
+  }
+}
+
+
+@keyframes creativity {
+  0%,
+  35% {
+    stroke-dasharray: 0 100%;
+    stroke-width: 0;
+  }
+
+  40% {
+    stroke-width: 1.75;
+  }
+
+  65%,
+  100% {
+    stroke-dasharray: 100% 0;
+    stroke-width: 1.75;
+  }
+}
+
+@keyframes tech-and {
+  0%, 15% {
+    fill-opacity: 0;
+  }
+
+  35%, 100% {
+    fill-opacity: 1;
   }
 }
