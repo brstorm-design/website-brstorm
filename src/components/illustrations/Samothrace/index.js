@@ -14,7 +14,7 @@ export default function Samothrace({ translateValues }) {
   const container = useRef(null);
 
   useEffect(() => {
-    let targets = container.current.querySelectorAll('img[alt="picker"], img[alt="grayscale"]');
+    let targets = container.current.querySelectorAll(`svg:nth-child(4), svg:nth-child(5)`);
     window.requestAnimationFrame(() => {
       applyStyles(targets, translateValues);
     });

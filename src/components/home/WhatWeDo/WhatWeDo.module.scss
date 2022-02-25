@@ -9,7 +9,7 @@
   article {
     &:last-child {
       margin-top: 150px;
-      @include mixins.md {
+      @include mixins.lg {
         margin-top: 75px;
       }
     }
