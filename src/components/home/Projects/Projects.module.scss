@@ -165,8 +165,14 @@
   background-color: colors.$lightGray;
   transition: all 350ms cubic-bezier(0.27, 0.6, 0.12, 1.02);
 
+  svg {
+    width: 35px;
+    height: 25px;
+  }
+
   path {
     transition: all 350ms ease;
+    fill: colors.$dark;
   }
 
   &:hover {

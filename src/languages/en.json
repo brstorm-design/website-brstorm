@@ -90,6 +90,7 @@
       "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
@@ -97,6 +98,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
@@ -104,6 +106,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
@@ -111,6 +114,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
@@ -118,6 +122,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",

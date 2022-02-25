@@ -90,6 +90,7 @@
       "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "Identidade VIsual PetsVida",
@@ -97,6 +98,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Identidade Visual Rivana",
@@ -104,6 +106,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "Identidade Visual MapTrack",
@@ -111,6 +114,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Identidade Visual Catarge",
@@ -118,6 +122,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Identidade Visual Daia",
