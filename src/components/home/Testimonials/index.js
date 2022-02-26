@@ -2,6 +2,24 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Testimonials.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import Quote from 'public/images/testimonials/quotation.svg';
+import Prev from 'public/images/navigate-before.svg';
+import Next from 'public/images/navigate-next.svg';
+//
+import paras from 'public/images/testimonials/paras.png';
+import michael from 'public/images/testimonials/michael.png';
+import willian from 'public/images/testimonials/willian.png';
+import jarrod from 'public/images/testimonials/jarrod.png';
+import hazem from 'public/images/testimonials/hazem.png';
+import Image from 'next/image';
+
+const clients = {
+  'Paras Mehta': paras,
+  'Michael Smith': michael,
+  'Willian Medeiros': willian,
+  'Jarrod Milford': jarrod,
+  'Hazem Alshakr': hazem,
+}
 
 export default function Testimonials({ content }) {
   const element = useRef(null);
@@ -50,10 +68,10 @@ export default function Testimonials({ content }) {
               <h1>{content.title}</h1>
               <div className={`d-none d-lg-block ${styles.nav}`}>
                 <button onClick={handleClick} id="prev">
-                  <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z" fill="currentColor" /></svg>
+                  <Prev />
                 </button>
                 <button onClick={handleClick} id="next">
-                  <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.93394 6.35317L5.28634 6L4.93394 5.64683L0.706722 1.41039L1.41 0.707107L6.7029 6L1.41 11.2929L0.706722 10.5896L4.93394 6.35317Z" stroke="currentColor" /></svg>
+                  <Next />
                 </button>
               </div>
             </div>
@@ -65,10 +83,12 @@ export default function Testimonials({ content }) {
               return (
                 <SwiperSlide key={`testimonial-${index}`}>
                   <div className={styles.testimonial}>
-                    <img src="/images/testimonials/quotation.svg" alt="" />
+                    <Quote />
                     <small>{item.body}</small>
                     <div>
-                      <img src={item.photo} alt="Client Photo" />
+                      <div>
+                        <Image src={clients[item.author]} width={35} height={35} />
+                      </div>
                       <div>
                         <strong className="details">{item.author}</strong>
                         <div className="details">{item.company}</div>
@@ -82,10 +102,10 @@ export default function Testimonials({ content }) {
         </Swiper>
         <div className={`d-block d-lg-none mt-4 ${styles.nav}`}>
           <button onClick={handleClick} id="prev">
-            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z" fill="currentColor" /></svg>
+            <Prev />
           </button>
           <button onClick={handleClick} id="next">
-            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.93394 6.35317L5.28634 6L4.93394 5.64683L0.706722 1.41039L1.41 0.707107L6.7029 6L1.41 11.2929L0.706722 10.5896L4.93394 6.35317Z" stroke="currentColor" /></svg>
+            <Next />
           </button>
         </div>
       </div>

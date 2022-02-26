@@ -73,7 +73,7 @@
     display: inline-block;
   }
 
-  & > div:last-child {
+  & > div {
     display: flex;
     align-items: center;
     
@@ -85,12 +85,12 @@
 
     div {
       color: colors.$gray;
-    }
-
-    img {
-      margin-right: 15px;
-      height: 35px;
-      width: 35px;
+      display: flex;
+      flex-direction: column;
+      
+      &:first-child {
+        margin-right: 15px;
+      }
     }
   }
 
