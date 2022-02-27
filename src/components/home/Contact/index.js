@@ -6,6 +6,7 @@ export default function Contact({ content, common }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
+  /*
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -28,7 +29,7 @@ export default function Contact({ content, common }) {
     if (animations) {
       handleIntersection(refs, animations);
     }
-  }, [animations])
+  }, [animations]) */
 
   return (
     <section className={styles.section} id="contact">

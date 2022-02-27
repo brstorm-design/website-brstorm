@@ -24,8 +24,8 @@ export default function Projects({ content, common, client }) {
   const introText = useRef(null);
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
-
   const portifolio = client ? client.portifolio : content.portifolio;
+  /*
 
   useEffect(() => {
     const refs = [introText.current, projects.current];
@@ -56,7 +56,7 @@ export default function Projects({ content, common, client }) {
     if (animations) {
       handleIntersection(refs, animations);
     }
-  }, [animations])
+  }, [animations]) */
 
   function handleHover(e) {
     if (e.type === 'mouseenter') {

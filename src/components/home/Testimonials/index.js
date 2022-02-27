@@ -25,6 +25,7 @@ export default function Testimonials({ content }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
+  /*
 
   useEffect(() => {
     let targets = Array.from(element.current.firstChild.children);
@@ -47,7 +48,7 @@ export default function Testimonials({ content }) {
     if (animations) {
       handleIntersection(refs, animations);
     }
-  }, [animations])
+  }, [animations]) */
 
   function handleClick(e) {
     const swiper = document.querySelector('.swiper-container').swiper;

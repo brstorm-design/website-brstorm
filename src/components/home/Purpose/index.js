@@ -7,11 +7,11 @@ import David from 'src/components/illustrations/David';
 import Arrow from 'public/images/arrow-down.svg';
 
 export default function Purpose({ content, common }) {
-  const element = useRef(null);
+  const [mousePosition, setMousePosition] = useState(null);
   const element1 = useRef(null);
+  /* const element = useRef(null);
   const refs = [element.current, element1.current];
   const [animations, setAnimations] = useState(null);
-  const [mousePosition, setMousePosition] = useState(null);
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -34,7 +34,7 @@ export default function Purpose({ content, common }) {
     if (animations) {
       handleIntersection(refs, animations);
     }
-  }, [animations])
+  }, [animations]) */
 
   function move(e) {
     setMousePosition(getTranslateValue(e, [40]));
@@ -48,7 +48,7 @@ export default function Purpose({ content, common }) {
             <David forwardedRef={element1} translate={mousePosition} />
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 d-flex align-items-center">
-            <article ref={element} id="purpose-article">
+            <article /* ref={element} */ id="purpose-article">
               <h2>{content.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
               <AnchorButton className="btn large ghost" easing={inOutQuad} duration={3000} href="#contact">

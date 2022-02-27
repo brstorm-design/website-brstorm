@@ -10,6 +10,7 @@ export default function WhyUs({ content, pitch }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
+  /*
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -32,7 +33,7 @@ export default function WhyUs({ content, pitch }) {
     if (animations) {
       handleIntersection(refs, animations);
     }
-  }, [animations]);
+  }, [animations]); */
 
   const icons = {
     0: <Autonomy styles={styles} />,

@@ -5,8 +5,8 @@ import styles from './WhatWeDo.module.scss';
 
 export default function WhatWeDo({ content, common }) {
   const element = useRef(null);
-  const [animations, setAnimations] = useState([]);
   const [mousePosition, setMousePosition] = useState(null);
+  /* const [animations, setAnimations] = useState([]);
 
   useEffect(() => {
     let articles = Array.from(element.current.children);
@@ -38,7 +38,7 @@ export default function WhatWeDo({ content, common }) {
     if (animations && animations.length > 3) {
       handleIntersection(Array.from(element.current.children), animations);
     }
-  }, [animations])
+  }, [animations]) */
 
   function move(e) {
     setMousePosition(getTranslateValue(e, [-40, 40]));
