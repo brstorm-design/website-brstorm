@@ -2,8 +2,6 @@ import React from 'react';
 import AnchorButton from 'src/components/common/AnchorButton';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './Footer.module.scss';
-import ArrowUp from 'public/images/double-arrow-up.svg';
-
 export default function Footer({ content, common }) {
   return (
     <footer className={styles.section} id="footer">
@@ -28,7 +26,6 @@ export default function Footer({ content, common }) {
               }
             </div>
             <AnchorButton className="small d-none d-md-inline-block" easing={inOutQuad} duration={2100}>
-            <ArrowUp />
               {common.scrollToTop}
             </AnchorButton>
           </div>

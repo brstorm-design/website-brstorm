@@ -4,7 +4,6 @@ import { constructSequentialAnimation, getTranslateValue, handleIntersection } f
 import styles from './Purpose.module.scss';
 import { inOutQuad } from 'src/utils/easings';
 import David from 'src/components/illustrations/David';
-import Arrow from 'public/images/arrow-down.svg';
 
 export default function Purpose({ content, common }) {
   const [mousePosition, setMousePosition] = useState(null);
@@ -53,7 +52,6 @@ export default function Purpose({ content, common }) {
               <div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
               <AnchorButton className="btn large ghost" easing={inOutQuad} duration={3000} href="#contact">
                 {common.contactUs}
-                <Arrow />
               </AnchorButton>
             </article>
           </div>

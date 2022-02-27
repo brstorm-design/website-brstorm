@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Testimonials.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
-import Quote from 'public/images/testimonials/quotation.svg';
-import Prev from 'public/images/navigate-before.svg';
-import Next from 'public/images/navigate-next.svg';
 //
 import paras from 'public/images/testimonials/paras.png';
 import michael from 'public/images/testimonials/michael.png';
@@ -69,10 +66,8 @@ export default function Testimonials({ content }) {
               <h1>{content.title}</h1>
               <div className={`d-none d-lg-block ${styles.nav}`}>
                 <button onClick={handleClick} id="prev">
-                  <Prev />
                 </button>
                 <button onClick={handleClick} id="next">
-                  <Next />
                 </button>
               </div>
             </div>
@@ -84,7 +79,6 @@ export default function Testimonials({ content }) {
               return (
                 <SwiperSlide key={`testimonial-${index}`}>
                   <div className={styles.testimonial}>
-                    <Quote />
                     <small>{item.body}</small>
                     <div>
                       <div>
@@ -103,10 +97,8 @@ export default function Testimonials({ content }) {
         </Swiper>
         <div className={`d-block d-lg-none mt-4 ${styles.nav}`}>
           <button onClick={handleClick} id="prev">
-            <Prev />
           </button>
           <button onClick={handleClick} id="next">
-            <Next />
           </button>
         </div>
       </div>

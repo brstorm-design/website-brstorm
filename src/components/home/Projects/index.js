@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Projects.module.scss';
-import Behance from 'public/images/socials/behance.svg';
 import Image from 'next/image';
 //
 import catarge from 'public/images/portifolio/catarge.png';
@@ -98,7 +96,6 @@ export default function Projects({ content, common, client }) {
           }
           <div className="col-12 col-lg-3 offset-lg-5">
             <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
-              <Behance />
               <div>
                 <h4>{content.fullPortifolio}</h4>
                 <span>{common.seeMore}</span>
