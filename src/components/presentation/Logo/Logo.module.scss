@@ -1,0 +1,15 @@
+@use "../../../styles/scss/mixins";
+
+@include mixins.stroke-fill-animation(logo-animation, true);
+
+.logo {
+  stroke: white;
+
+  width: 450px;
+
+  path {
+    &:last-child {
+      animation: logo-animation 5s ease-in-out infinite alternate;
+    }
+  }
+}
