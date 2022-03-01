@@ -138,19 +138,19 @@ a:not(.btn) {
 }
 
 .gradient-bg {
-  color: transparent !important;
+  color: white !important;
   background-clip: text;
-  animation: text-gradient 10s ease-in-out infinite alternate;
+  /* animation: text-gradient 10s ease-in-out infinite alternate; */
   background-size: 500%;
   width: max-content;
-  background-image: linear-gradient(-60deg, colors.$pink, colors.$cyan);
+  /* background-image: linear-gradient(-60deg, colors.$pink, colors.$cyan); */
 
   @include mixins.md {
     width: auto;
   }
 }
 
-@keyframes text-gradient {
+/* @keyframes text-gradient {
   0% {
     background-position: 0 50%;
   }
@@ -160,4 +160,4 @@ a:not(.btn) {
   100% {
     background-position: 0 50%;
   }
-}
+} */

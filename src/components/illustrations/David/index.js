@@ -22,7 +22,6 @@ export default function David({ forwardedRef, translate }) {
     <div className={styles.image}>
       <div ref={forwardedRef} id="purpose-image">
         <Image src={david} alt="David" />
-        
         <img src="/images/purpose/seal.svg" alt="seal" />
         <img src="/images/purpose/comment-michelangelo.svg" alt="comment" />
         <img src="/images/purpose/pattern.svg" alt="pattern" />
