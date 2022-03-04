@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useRef } from 'react';
 import AnchorButton from 'src/components/common/AnchorButton';
 import AnimatedLogo from 'src/components/svg/AnimatedLogo';
 import Circle from 'public/images/cover/circle.svg';
@@ -8,6 +8,7 @@ import { inOutQuad } from 'src/utils/easings';
 import styles from './Cover.module.scss';
 import Arrow from 'public/images/arrow-down.svg';
 import MobileUI from 'public/images/cover/mobile-ui.svg'
+import usePausableAnimation from 'src/hooks/usePausableAnimations';
 
 export default function Cover({content, common}) {
   useEffect(() => {
@@ -21,16 +22,8 @@ export default function Cover({content, common}) {
       getMousePos(e)
     })
 
-    /* setTimeout(function toggle() {
-      let logo = document.querySelector('#cover svg');
-      logo.classList.toggle('active');
-      setTimeout(() => {
-        toggle();
-      }, 4000);
-    }, 2000); */
-
     return cleanup();
-  }, [])
+  }, []);
 
   function getMousePos(e) {
     let relX = (e.clientX * 100) / window.innerWidth;
@@ -50,12 +43,16 @@ export default function Cover({content, common}) {
     })
   }
 
+  const section = useRef(null);
+  
+  usePausableAnimation(section.current);
+
   return (
-    <section className={styles.section} id="cover">
+    <section ref={section} className={styles.section} id="cover">
       <div className="container">
 
         <AnimatedLogo />
-        <img className={`${styles.topRight}`} src="/images/cover/logo-rotate-360.svg" alt="" />
+        <img className={`${styles.topRight}`} data-animated src="/images/cover/logo-rotate-360.svg" alt="" />
         <img className={`${styles.bottomLeft} track`} src="/images/cover/grids-design.svg" alt="" />
         <a href="https://instagram.com/brstorm.design" target="_blank" rel="noopener noreferrer">
           <div className={`${styles.bottomRight} track`}>
