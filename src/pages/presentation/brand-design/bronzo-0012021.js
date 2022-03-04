@@ -5,7 +5,8 @@ import Slides from 'src/components/presentation/Slides';
 export default function Presentation() {
 
   useEffect(() => {
-    document.body.style.backgroundColor = '#e5e7e8';
+    document.body.style.backgroundColor = '#0a0a0a';
+    document.documentElement.style.overflow = 'hidden';
   }, [])
 
   return (
