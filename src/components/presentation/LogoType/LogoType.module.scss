@@ -1,0 +1,19 @@
+@use "../../../styles/scss/mixins";
+
+@include mixins.stroke-fill-animation(logo-animation, false);
+
+.logo {
+  stroke: white;
+
+  width: 100vw;
+
+  g:last-child > path {
+    $delay: 0;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        animation: logo-animation 7s #{$delay}ms ease-in-out infinite alternate;
+      }
+      $delay: $delay + 120;
+    }
+  }
+}

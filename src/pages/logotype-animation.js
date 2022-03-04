@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import Logo from 'src/components/presentation/Logo';
+import { React, useEffect } from 'react';
+import LogoType from 'src/components/presentation/LogoType';
 import Head from 'next/head';
 
-export default function LogoAnimation() {
+export default function LogoTypeAnimation() {
 
   useEffect(() => {
     document.body.classList.add('page');
@@ -15,7 +15,7 @@ export default function LogoAnimation() {
         <title>Logo Animation</title>
       </Head>
 
-      <Logo />
+      <LogoType />
     </>
   )
 }
