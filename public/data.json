@@ -2,15 +2,17 @@
   "clients": [
     {
       "id": "0012021",
-      "slugName": "zankysdeli",
+      "slugName": "bronzo",
       "name": "Fabio e Sara",
-      "businessName": "Zanky's Deli",
+      "businessName": "Bronzo",
       "parameters": {
-        "langs": ["it", "en"],
-        "services": [0, 1]
+        "langs": ["en"],
+        "services": [0, 2],
+        "content": [0, 2]
       },
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
@@ -18,6 +20,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
@@ -25,6 +28,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
@@ -32,6 +36,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
@@ -39,6 +44,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
@@ -54,10 +60,12 @@
       "businessName": "King Motorcycles",
       "parameters": {
         "langs": ["en"],
-        "services": [0]
+        "services": [0],
+        "content": [0]
       },
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
@@ -65,6 +73,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
@@ -72,6 +81,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
@@ -79,6 +89,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
@@ -86,6 +97,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
@@ -101,10 +113,12 @@
       "businessName": "Real Brasil Store",
       "parameters": {
         "langs": ["en"],
-        "services": [0]
+        "services": [0],
+        "content": [0]
       },
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
@@ -112,6 +126,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
@@ -119,6 +134,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
@@ -126,6 +142,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
@@ -133,6 +150,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
@@ -148,10 +166,12 @@
       "businessName": "your business",
       "parameters": {
         "langs": ["en"],
-        "services": [0]
+        "services": [0],
+        "content": [0]
       },
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
@@ -159,6 +179,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
@@ -166,6 +187,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
@@ -173,6 +195,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
@@ -180,6 +203,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
@@ -195,10 +219,12 @@
       "businessName": "Zero27 Barbering",
       "parameters": {
         "langs": ["en"],
-        "services": [0]
+        "services": [0],
+        "content": [0]
       },
       "portifolio": [
         {
+          "slug": "petsvida",
           "cover": "/images/portifolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
@@ -206,6 +232,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "rivana",
           "cover": "/images/portifolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
@@ -213,6 +240,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "maptrack",
           "cover": "/images/portifolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
@@ -220,6 +248,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "catarge",
           "cover": "/images/portifolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
@@ -227,6 +256,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
+          "slug": "daia",
           "cover": "/images/portifolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
@@ -236,24 +266,46 @@
       ]
     }
   ],
+
   "services": [
     {
       "id": 0,
-      "name": "Brand Design",
-      "slug": "brand-design",
-      "json": "brandDesign"
+      "name": "Brand",
+      "slug": "brand",
+      "jsonName": "brandDesign"
     },
     {
       "id": 1,
-      "name": "Web Design",
-      "slug": "web-design",
-      "json": "webDesign"
+      "name": "Web",
+      "slug": "web",
+      "jsonName": "webDesign"
     },
     {
       "id": 2,
       "name": "Social Media",
       "slug": "social-media",
-      "json": "socialMedia"
+      "jsonName": "socialMedia"
+    }
+  ],
+
+  "content": [
+    {
+      "id": 0,
+      "name": "Presentation",
+      "slug": "presentation",
+      "jsonName": "presentation"
+    },
+    {
+      "id": 1,
+      "name": "Proposal",
+      "slug": "proposal",
+      "jsonName": "proposal"
+    },
+    {
+      "id": 2,
+      "name": "Pitch",
+      "slug": "pitch",
+      "jsonName": "pitch"
     }
   ]
 }

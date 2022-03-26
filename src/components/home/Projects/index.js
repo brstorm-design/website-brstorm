@@ -86,6 +86,7 @@ export default function Projects({ content, common, client }) {
                 <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
                   <a href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
                     {/* <img src={item.cover} alt="Project" /> */}
+                    {console.log(item)}
                     <Image src={images[item.slug]} layout="responsive" />
                     <div>
                       <h5>{item.name}</h5>

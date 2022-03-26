@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
-import it from 'src/languages/it.json';
 import data from '../../../../public/data.json';
 import Header from "src/layouts/Header";
 import Hero from "src/components/home/Hero";
@@ -64,7 +63,6 @@ export async function getStaticPaths({ locales }) {
   }
   const arr = getPaths();
   const paths = arr.filter(el => el !== undefined);
-  console.log(paths);
   return { paths, fallback: false }
 }
 
@@ -77,10 +75,8 @@ export async function getStaticProps(context) {
 
   switch (context.locale) {
     case 'pt':
-      return { props: { content: pt, pitch, service, pitchContent: pt.pitch[service.json] } };
+      return { props: { content: pt, pitch, service, pitchContent: pt.pitch[service.jsonName] } };
     case 'en':
-      return { props: { content: en, pitch, service, pitchContent: en.pitch[service.json] } };
-    case 'it':
-      return { props: { content: it, pitch, service, pitchContent: it.pitch[service.json] } };
+      return { props: { content: en, pitch, service, pitchContent: en.pitch[service.jsonName] } };
   }
 }

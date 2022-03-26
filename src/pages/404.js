@@ -7,9 +7,15 @@ import Header from "src/layouts/Header";
 import Footer from "src/layouts/Footer";
 import Head from "next/head";
 
+const footerStyle = {
+  position: 'absolute',
+  bottom: '0',
+  width: '100%',
+}
+
 export default function NotFound(props) {
   return (
-    <div>
+    <div style={{height: '100vh'}}>
       <Head>
         <title>404 Not Found</title>
         <meta name="robots" content="noindex" />
@@ -27,7 +33,7 @@ export default function NotFound(props) {
         </Link>
       </div>
 
-      <Footer content={props.content.home.footer} common={props.content.common} />
+      <Footer style={footerStyle} content={props.content.home.footer} common={props.content.common} />
     </div>
   )
 }

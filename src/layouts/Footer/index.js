@@ -4,9 +4,9 @@ import { inOutQuad } from 'src/utils/easings';
 import styles from './Footer.module.scss';
 import ArrowUp from 'public/images/double-arrow-up.svg';
 
-export default function Footer({ content, common }) {
+export default function Footer({ content, common, ...props }) {
   return (
-    <footer className={styles.section} id="footer">
+    <footer {...props} className={styles.section} id="footer">
       <div className="container">
         <div className="row">
           <div className={styles.footer}>
