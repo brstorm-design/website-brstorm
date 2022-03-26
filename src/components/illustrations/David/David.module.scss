@@ -7,6 +7,9 @@
 
 .image {
   position: relative;
+  span img {
+    filter: drop-shadow(40px 0 70px black);
+  }
 
   & > div {
     z-index: 1;
