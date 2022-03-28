@@ -13,7 +13,7 @@ export default function Presentation({props}) {
     <>
       <Head>
         <meta name="robots" content="noindex" />
-        <title>{`${props.pitch.businessName} • ${props.contentType.name} - Br.Storm Design`}</title>
+        <title>{`${props.pitch.businessName} • ${props.contentType.name} | Br.Storm Design`}</title>
       </Head>
 
       <Slides />
