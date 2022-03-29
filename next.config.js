@@ -15,7 +15,7 @@ module.exports = {
     localeDetection: true,
   },
 
-  async rewrites() {
+  /* async rewrites() {
     return {
       beforeFiles: [
         // if the host is `app.acme.com`,
@@ -32,7 +32,7 @@ module.exports = {
         },
       ]
     }
-  },
+  }, */
 
   reactStrictMode: true,
 }
