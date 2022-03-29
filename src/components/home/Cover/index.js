@@ -10,7 +10,7 @@ import Arrow from 'public/images/arrow-down.svg';
 import MobileUI from 'public/images/cover/mobile-ui.svg'
 import usePausableAnimation from 'src/hooks/usePausableAnimations';
 
-export default function Cover({content, common}) {
+export default function Cover({ content, common, mt, mb }) {
   useEffect(() => {
     function cleanup() {
       document.getElementById('cover').removeEventListener('mousemove', e => {
@@ -48,7 +48,7 @@ export default function Cover({content, common}) {
   usePausableAnimation(section.current);
 
   return (
-    <section ref={section} className={styles.section} id="cover">
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} ref={section} className={styles.section} id="cover">
       <div className="container">
 
         <AnimatedLogo />

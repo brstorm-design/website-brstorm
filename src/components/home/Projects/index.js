@@ -20,7 +20,7 @@ const images = {
   util,
 }
 
-export default function Projects({ content, common, client }) {
+export default function Projects({ content, common, client, mt, mb }) {
   const introText = useRef(null);
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
@@ -68,7 +68,7 @@ export default function Projects({ content, common, client }) {
   }
 
   return (
-    <section className={styles.section} id="projects">
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="projects">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">

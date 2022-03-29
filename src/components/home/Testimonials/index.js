@@ -21,7 +21,7 @@ const clients = {
   'Hazem Alshakr': hazem,
 }
 
-export default function Testimonials({ content }) {
+export default function Testimonials({ content, mt, mb }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -60,7 +60,7 @@ export default function Testimonials({ content }) {
   }
 
   return (
-    <section className={styles.section} id="testimonials">
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="testimonials">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-10 offset-lg-2">

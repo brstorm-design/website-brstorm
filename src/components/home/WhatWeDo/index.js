@@ -3,7 +3,7 @@ import Samothrace from 'src/components/illustrations/Samothrace';
 import { constructSequentialAnimation, getTranslateValue, handleIntersection } from 'src/modules/App';
 import styles from './WhatWeDo.module.scss';
 
-export default function WhatWeDo({ content, common }) {
+export default function WhatWeDo({ content, common, mt, mb }) {
   const element = useRef(null);
   const [animations, setAnimations] = useState([]);
   const [mousePosition, setMousePosition] = useState(null);
@@ -45,7 +45,7 @@ export default function WhatWeDo({ content, common }) {
   }
 
   return (
-    <section className={styles.section} id="what-we-do" onMouseMove={move}>
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="what-we-do" onMouseMove={move}>
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
           <h3 className="gradient-bg">{content.subtitle}</h3>

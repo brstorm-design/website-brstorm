@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './Pricing.module.scss';
 
-export default function Pricing({ content }) {
+export default function Pricing({ content, mt, mb }) {
 
   useEffect(() => {
     const elements = document.querySelectorAll('#item-0-1, #item-1-1');
@@ -16,7 +16,7 @@ export default function Pricing({ content }) {
   }
 
   return (
-    <section className={styles.section}>
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section}>
       <div className="col-12 col-lg-6 mx-auto">
         <div className={styles.intro}>
           <h4 className="gradient-bg">{content.subtitle}</h4>

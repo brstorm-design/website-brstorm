@@ -4,7 +4,7 @@ import { constructSequentialAnimation, handleIntersection } from 'src/modules/Ap
 import AnchorButton from 'src/components/common/AnchorButton';
 import { inOutQuad } from 'src/utils/easings';
 
-export default function Hero({ content, common, client }) {
+export default function Hero({ content, common, client, mt, mb }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -40,7 +40,7 @@ export default function Hero({ content, common, client }) {
 
 
   return (
-    <section className={styles.section} id="hero">
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="hero">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5 d-flex align-items-center order-2 order-lg-1">

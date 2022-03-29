@@ -3,7 +3,7 @@ import Samothrace from 'src/components/illustrations/Samothrace';
 import { getMaxHeight, getTranslateValue } from 'src/modules/App';
 import styles from './Methodology.module.scss';
 
-export default function Methodology({ content }) {
+export default function Methodology({ content, mt, mb }) {
   const [mousePosition, setMousePosition] = useState(null);
   const [lineHeight, setLineHeight] = useState(0);
   const line = useRef(null);
@@ -59,7 +59,7 @@ export default function Methodology({ content }) {
   }, [screenCenter, target]);
 
   return (
-    <section className={styles.section} onMouseMove={move}>
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} onMouseMove={move}>
       <div>
         <h3 className="gradient-bg">{content.subtitle}</h3>
         <h1>{content.title}</h1>

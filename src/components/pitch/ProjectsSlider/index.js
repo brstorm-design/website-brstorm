@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ProjectsSlider.module.scss';
 
-export default function ProjectsSlider({ content }) {
+export default function ProjectsSlider({ content, mt, mb }) {
 
   const images1 = [
     {
@@ -57,7 +57,7 @@ export default function ProjectsSlider({ content }) {
   ]
 
   return (
-    <section className={styles.section}>
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">

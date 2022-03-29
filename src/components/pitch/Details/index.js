@@ -3,7 +3,7 @@ import David from 'src/components/illustrations/David';
 import { getTranslateValue } from 'src/modules/App';
 import styles from './Details.module.scss';
 
-export default function Details({ content }) {
+export default function Details({ content, mt, mb }) {
   const element = useRef(null);
   const [mousePosition, setMousePosition] = useState(null);
 
@@ -12,7 +12,7 @@ export default function Details({ content }) {
   }
 
   return (
-    <section className={styles.section} id="details" onMouseMove={move}>
+    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="details" onMouseMove={move}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5">
