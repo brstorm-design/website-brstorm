@@ -228,7 +228,7 @@
       "text": "We prepared a brief presentation for you to better know us and the solutions we provide. If you are interested, let's schedule a meeting to talk more."
     },
 
-    "brandDesign": {
+    "brand": {
       "details": {
         "title": "What is a Brand Project",
         "subtitle": "Your brand goes beyond the visual!",
@@ -416,7 +416,7 @@
         ]
       }
     },
-    "webDesign": {
+    "web": {
       "details": {
         "title": "What is a Web Design Project",
         "subtitle": "Out of sight, out of mind!",

@@ -226,7 +226,7 @@
       "subtitle": "Nós vamos agregar valor para a",
       "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos. Se tiver interesse, estamos disponíveis para conversamos mais em uma reunião."
     },
-    "brandDesign": {
+    "brand": {
       "details": {
         "title": "O Que é um Projeto de Brand Design",
         "subtitle": "Sua marca vai muito além do visual!",
@@ -406,7 +406,7 @@
         ]
       }
     },
-    "webDesign": {
+    "web": {
       "details": {
         "title": "O Que é um Projeto de Web Design",
         "subtitle": "Quem não é visto não é lembrado!",
