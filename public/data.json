@@ -272,13 +272,13 @@
       "id": 0,
       "name": "Brand",
       "slug": "brand",
-      "jsonName": "brandDesign"
+      "jsonName": "brand"
     },
     {
       "id": 1,
       "name": "Web",
       "slug": "web",
-      "jsonName": "webDesign"
+      "jsonName": "web"
     },
     {
       "id": 2,
