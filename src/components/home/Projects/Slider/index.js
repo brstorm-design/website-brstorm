@@ -1,95 +1,56 @@
-import React from 'react';
-import styles from './ProjectsSlider.module.scss';
+import React, { useEffect, useRef } from 'react';
+import styles from './Slider.module.scss';
+import images from 'src/utils/images';
+import Image from 'next/image';
 
-export default function ProjectsSlider({ content, mt, mb }) {
+export default function Slider({ content, mt, mb }) {
+  const topRow = useRef(null);
+  const bottomRow = useRef(null);
 
-  const images1 = [
-    {
-      id: '1'
-    },
-    {
-      id: '2'
-    },
-    {
-      id: '3'
-    },
-    {
-      id: '4'
-    },
-    {
-      id: '1'
-    },
-    {
-      id: '2'
-    },
-    {
-      id: '3'
-    },
-    {
-      id: '4'
-    },
-  ]
-  const images2 = [
-    {
-      id: '4'
-    },
-    {
-      id: '3'
-    },
-    {
-      id: '2'
-    },
-    {
-      id: '1'
-    },
-    {
-      id: '4'
-    },
-    {
-      id: '3'
-    },
-    {
-      id: '2'
-    },
-    {
-      id: '1'
-    },
-  ]
+  const translateValue = 150 + ((content.portifolio.length - 4) * 33.33);
+  function animateSlider(target, direction) {
+    target.animate([
+      { transform: `translate3d(calc(-33.33% / 2), 0, 0)` },
+      { transform: `translate3d(calc(-${translateValue}%), 0, 0)` },
+    ], {
+      duration: 15000,
+      iterations: Infinity,
+      easing: 'linear',
+      direction: direction,
+    })
+  }
+
+  useEffect(() => {
+    animateSlider(topRow.current, 'normal');
+    animateSlider(bottomRow.current, 'reverse');
+  }, [])
+
+  const firstRow = content.portifolio.concat(content.portifolio);
+  const secondRow = content.portifolio.concat(content.portifolio).reverse();
 
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section}>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-lg-6 mx-auto">
-            <div className={styles.intro}>
-              <h4 className="gradient-bg">{content.subtitle}</h4>
-              <h1>{content.title}</h1>
-              <p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
-            </div>
-          </div>
-        </div>
-        <div className={`row gy-4 flex-nowrap ${styles.row1}`}>
-          {
-            images1.map((img, index) => {
-              return (
-                <div className="col-4" key={`item-${index}`}>
-                  <img src={`/images/wireframes/projects-${img.id}.svg`} alt="" />
-                </div>
-              )
-            })
-          }
-        </div>
-        <div className={`row gy-4 flex-nowrap ${styles.row2}`}>
-          {
-            images2.map((img, index) => {
-              return (
-                <div className="col-4" key={`item-${index}`}>
-                  <img src={`/images/wireframes/projects-${img.id}.svg`} alt="" />
-                </div>
-              )
-            })
-          }
-        </div>
+    <section style={{ marginTop: `${mt}px`, marginBottom: `${mb}px` }} className={styles.section}>
+      <div className={`row gy-4 flex-nowrap ${styles.row1}`} ref={topRow}>
+        {
+          firstRow.map((img, index) => {
+            return (
+              <div className="col-4" key={`item-${index}`}>
+                <Image placeholder="blur" src={images[img.slug]} layout="responsive" />
+              </div>
+            )
+          })
+        }
+      </div>
+      <div className={`row gy-4 flex-nowrap ${styles.row2}`} ref={bottomRow}>
+        {
+          secondRow.map((img, index) => {
+            return (
+              <div className="col-4" key={`item-${index}`}>
+                <Image placeholder="blur" src={images[img.slug]} layout="responsive" />
+              </div>
+            )
+          })
+        }
       </div>
     </section>
   )

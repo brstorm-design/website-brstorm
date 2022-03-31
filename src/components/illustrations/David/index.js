@@ -42,7 +42,7 @@ export default function David({ forwardedRef, translate }) {
   return (
     <div className={styles.image}>
       <div ref={forwardedRef} id="purpose-image">
-        <Image src={david} alt="David" />
+        <Image placeholder="blur" src={david} alt="David" />
         <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g style={{ mixBlendMode: 'overlay' }}>
             <rect width="150" height="40" fill="#E93CAC" />

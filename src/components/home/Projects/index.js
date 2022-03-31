@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Projects.module.scss';
 import Mosaic from './Mosaic';
+import Slider from './Slider';
 
 
 export default function Projects({ content, common, client, mt, mb }) {
@@ -55,6 +56,7 @@ export default function Projects({ content, common, client, mt, mb }) {
           </div>
         </div>
         <Mosaic content={content} common={common} portifolio={portifolio} />
+        {/* <Slider content={content} /> */}
       </div>
     </section>
   )

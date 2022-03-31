@@ -1,7 +1,6 @@
-@use '../../../styles/scss/mixins';
+@use '../../../../styles/scss/mixins';
 
 .section {
-  margin-top: 300px;
   img {
     width: 100%;
   }
@@ -50,11 +49,9 @@
 }
 
 .row1 {
-  animation: slide-left 15s linear infinite;
   margin-bottom: 24px;
 }
 
 .row2 {
-  animation: slide-right 15s linear infinite;
   margin-bottom: 100px;
 }
