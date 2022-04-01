@@ -220,14 +220,12 @@
       ]
     }
   },
-
   "pitch": {
     "hero": {
       "title": "Hi",
       "subtitle": "We will bring value to",
       "text": "We prepared a brief presentation for you to better know us and the solutions we provide. If you are interested, let's schedule a meeting to talk more."
     },
-
     "brand": {
       "details": {
         "title": "What is a Brand Project",
@@ -830,14 +828,12 @@
         ]
       }
     },
-    
     "contact": {
       "title": "Let's Close a Deal?",
       "paragraph": "<strong>Are you interested?</strong> Do you want to hire our services or ask any <br> questions about what we offer? Make an appointment right now.",
       "availableHours": "<sup>*</sup> We’re available for meeting <br> Mon to Fri | 1pm to 7pm."
     }
   },
-
   "linkTree": {
     "logo": "/images/brstorm-horizontal-colored.svg",
     "desktopTitle": "The infinite possibilities of Design!",
@@ -900,5 +896,55 @@
     "seeMore": "See More",
     "contactUs": "Contact Us",
     "scrollToTop": "Scroll to Top"
-  }
+  },
+  "fullPortifolio": [
+    {
+      "slug": "petsvida",
+      "cover": "/images/portifolio/petsvida.png",
+      "size": "6",
+      "name": "PetsVida Brand Identity",
+      "type": "E-commerce Pet Shop",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "rivana",
+      "cover": "/images/portifolio/rivana.png",
+      "size": "6",
+      "name": "Rivana Brand Identity",
+      "type": "Clothing E-Commerce",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "maptrack",
+      "cover": "/images/portifolio/maptrack.png",
+      "size": "6",
+      "name": "MapTrack Brand Identity",
+      "type": "Asset Tracking Startup",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "catarge",
+      "cover": "/images/portifolio/catarge.png",
+      "size": "6",
+      "name": "Catarge Brand Identity",
+      "type": "Engineering and Architecture",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "daia",
+      "cover": "/images/portifolio/daia.png",
+      "size": "3",
+      "name": "Daia Brand Identity",
+      "type": "Family Photographer",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "util",
+      "cover": "/images/portifolio/util.png",
+      "size": "3",
+      "name": "Útil Brand Identity",
+      "type": "Cleaning Services",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    }
+  ]
 }

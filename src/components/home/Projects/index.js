@@ -3,9 +3,10 @@ import { constructSequentialAnimation, handleIntersection } from 'src/modules/Ap
 import styles from './Projects.module.scss';
 import Mosaic from './Mosaic';
 import Slider from './Slider';
+import Stairs from './Stairs';
 
 
-export default function Projects({ content, common, client, mt, mb }) {
+export default function Projects({ format, content, common, client, allProjects, mt, mb }) {
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -42,6 +43,16 @@ export default function Projects({ content, common, client, mt, mb }) {
     }
   }, [animations])
 
+  function renderProjects() {
+    switch (format) {
+      case 'mosaic':
+        return <Mosaic content={content} common={common} portifolio={portifolio} />;
+        case 'slider':
+        return <Slider content={content} />;
+        case 'stairs':
+        return <Stairs content={content} common={common} portifolio={allProjects} />;
+    }
+  }
 
   return (
     <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="projects">
@@ -55,8 +66,9 @@ export default function Projects({ content, common, client, mt, mb }) {
             </div>
           </div>
         </div>
-        <Mosaic content={content} common={common} portifolio={portifolio} />
-        {/* <Slider content={content} /> */}
+        {
+          renderProjects()
+        }
       </div>
     </section>
   )

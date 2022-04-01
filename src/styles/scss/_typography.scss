@@ -72,10 +72,6 @@ a:not(.btn) {
   color: colors.$gray;
   transition: all 250ms ease;
 
-  path {
-    transition: all 250ms ease;
-  }
-
   &:hover {
     color: colors.$white !important;
     /* path {

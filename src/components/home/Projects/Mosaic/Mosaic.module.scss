@@ -8,7 +8,6 @@
   img {
     width: 100%;
     height: auto;
-    box-shadow: 0px 10px 150px rgba(0, 0, 0, 0.75);
     transition: all 350ms cubic-bezier(0.27, 0.6, 0.12, 1.02);
   }
 
@@ -20,6 +19,7 @@
       bottom: auto !important;
       left: auto !important;
     }
+    box-shadow: 0px 10px 150px rgba(0, 0, 0, 0.75);
   }
 
   &:nth-child(1) a {
@@ -40,6 +40,10 @@
     div {
       span {
         display: none;
+
+        @include mixins.lg {
+          display: block;
+        }
       }
     }
   }
@@ -149,7 +153,7 @@
     margin-right: 20px;
   }
 
-  @include mixins.md {
+  @include mixins.lg {
     top: auto;
   }
 }
