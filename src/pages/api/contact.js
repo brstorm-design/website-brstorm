@@ -10,7 +10,7 @@ export default (req, res) => {
 
   const message = {
     from: process.env.SENDER_EMAIL,
-    to: process.env.SENDER_EMAIL,
+    to: 'luanferreira2136@gmail.com',
     subject: 'Sendgrid Test Message',
     text: `New message from your website!\n${req.body.msg}`
   }
