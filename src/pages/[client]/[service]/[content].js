@@ -12,7 +12,7 @@ export default function Content(props) {
     case 'presentation':
       return <Presentation props={props} />
     case 'pitch':
-      return <Pitch props={props} />
+      return <Pitch props={props} />;
   }
 }
 
