@@ -6,7 +6,7 @@ export default function Form() {
   const [submitStatus, setSubmitStatus] = useState('null');
   const submitButton = useRef(null);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     /* setSubmitted(true); */
     console.warn(msg + ' SUBMITTED');
@@ -15,7 +15,7 @@ export default function Form() {
       msg
     }
 
-    fetch('/api/contact', {
+    await fetch('/api/contact', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -23,11 +23,6 @@ export default function Form() {
       },
       body: JSON.stringify(data)
     })
-    .then(res => res.text())
-    .then(data => {
-      console.log(data);
-    })
-    .catch(err => console.error('error', err))
   }
 
   return (
