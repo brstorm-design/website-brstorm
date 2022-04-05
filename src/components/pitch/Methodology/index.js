@@ -22,11 +22,10 @@ export default function Methodology({ content, mt, mb }) {
   let numbers;
 
   function handleScroll() {
-    const el = document.querySelector(`.${styles.cards}`);
-    const top = el.getBoundingClientRect().top;
+    const top = document.querySelector(`.${styles.cards}`).getBoundingClientRect().top;
     const lineBottom = line.current.getBoundingClientRect().bottom;
     let height = screenCenter - top;
-    if (top < screenCenter && height < maxLineHeight) {
+    if (top < screenCenter && height < (maxLineHeight + 60)) {
       setLineHeight(height);
     }
 

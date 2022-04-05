@@ -58,6 +58,17 @@
     padding: 40px 30px;
     transition: all 500ms ease;
 
+    &:last-child::before {
+      content: "";
+      position: absolute;
+      left: calc(-85px);
+      margin-bottom: -80px;
+      width: 40px;
+      height: 40px;
+      background-color: colors.$black;
+      z-index: 5;
+    }
+
     &.active {
       background: colors.$lightGray;
       h5 {

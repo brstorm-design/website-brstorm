@@ -133,6 +133,10 @@ a:not(.btn) {
   }
 }
 
+//
+// TODO: fazer um componente para o efeito de texto em gradiente que seja mais performático
+//
+
 .gradient-bg {
   color: transparent !important;
   background-clip: text;
