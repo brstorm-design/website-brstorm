@@ -24,6 +24,4 @@ export default function usePausableAnimation(target = HTMLElement) {
       element.style.animationPlayState = playState;
     })
   }, [playState]);
-
-  console.log(playState);
 }

@@ -10,12 +10,12 @@ module.exports = {
   },
 
   i18n: {
-    locales: ['en', 'pt'],
-    defaultLocale: 'en',
+    locales: ['pt', 'en'],
+    defaultLocale: 'pt',
     localeDetection: true,
   },
 
-  /* async rewrites() {
+  async rewrites() {
     return {
       beforeFiles: [
         // if the host is `app.acme.com`,
@@ -28,11 +28,11 @@ module.exports = {
               value: 'brand.brstorm.design',
             },
           ],
-          destination: '/brand/:path*',
+          destination: '/services/brand/:path*',
         },
       ]
     }
-  }, */
+  },
 
   reactStrictMode: true,
 }

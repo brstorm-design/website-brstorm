@@ -1,91 +1,54 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Samothrace from 'src/components/illustrations/Samothrace';
 import { getMaxHeight, getTranslateValue } from 'src/modules/App';
+import Timeline from '../Timeline';
 import styles from './Methodology.module.scss';
 
-export default function Methodology({ content, mt, mb }) {
+export default function Methodology({ content, pitch, mt, mb }) {
   const [mousePosition, setMousePosition] = useState(null);
-  const [lineHeight, setLineHeight] = useState(0);
-  const line = useRef(null);
-
-  function Line() {
-    return <div ref={line} style={{ height: `${lineHeight}px` }} className={styles.line} />
-  }
 
   function move(e) {
     setMousePosition(getTranslateValue(e, [-40, 40]));
   }
 
-  let screenCenter;
-  let target;
-  let maxLineHeight;
-  let numbers;
-
-  function handleScroll() {
-    const top = document.querySelector(`.${styles.cards}`).getBoundingClientRect().top;
-    const lineBottom = line.current.getBoundingClientRect().bottom;
-    let height = screenCenter - top;
-    if (top < screenCenter && height < (maxLineHeight + 60)) {
-      setLineHeight(height);
-    }
-
-    numbers.forEach((number, index) => {
-      let margin;
-      index === 0 ? margin = 50 : margin = 0;
-      // 👆 adicionando uma margem de 100px para o primeiro elemento ficar ativo
-      if (number.getBoundingClientRect().top + margin < lineBottom) {
-        number.parentElement.classList.add(styles.active);
-      } else {
-        number.parentElement.classList.remove(styles.active);
-      }
-    });
-  }
-
-  useEffect(() => {
-    const cardList = document.querySelectorAll(`.${styles.cards} > div`);
-    //
-    screenCenter = window.innerHeight / 2;
-    target = document.querySelector(`.${styles.line}:last-child`);
-    maxLineHeight = getMaxHeight(cardList);
-    numbers = document.querySelectorAll(`.${styles.cards} > div span`);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
-  }, [screenCenter, target]);
-
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} onMouseMove={move}>
-      <div>
-        <h3 className="gradient-bg">{content.subtitle}</h3>
-        <h1>{content.title}</h1>
-      </div>
+    <section style={{ marginTop: `${mt}px`, marginBottom: `${mb}px` }} className={styles.section} onMouseMove={move}>
+      {
+        pitch ? (
+          <div className={styles.title}>
+            <h3 className="gradient-bg">{content.subtitle}</h3>
+            <h1>{content.title}</h1>
+          </div>
+        ) : null
+      }
       <div className="container">
         <div className="row">
-          <div className={`col-12 col-lg-6 ${styles.illustration}`}>
-            <Samothrace translateValues={mousePosition} />
+          <div className="col-12 col-lg-6">
+            {/* <Samothrace translateValues={mousePosition} /> */}
+            <div className={styles.primaryContent}>
+              {
+                pitch ? (
+                  <Samothrace translateValues={mousePosition} />
+                ) : (
+                  <div>
+                    <h3>Your brand goes beyond the visual!</h3>
+                    <h1>About a Brand Project</h1>
+                    <p>
+                      A <strong>well-planned and striking visual identity</strong> is a fundamental step to present
+                      yourself to your client as a company in which he can <strong>believe</strong> and <strong>invest</strong>.
+                    </p>
+                    <p>
+                      Big names in the market are represented by images and colors that <strong>awaken our memory</strong>, even
+                      unconsciously. It is this type of impact that you must make on your audience: a visual identity that
+                      <strong>makes your mission visible and makes you recognizable anywhere. Meet our method:</strong>
+                    </p>
+                  </div>
+                )
+              }
+            </div>
           </div>
           <div className="col-12 col-lg-4 offset-lg-2">
-            <div>
-              <div className={styles.cards}>
-                {
-                  content.steps.map((step, index) => {
-                    return (
-                      <div key={`step-${index}`}>
-                        <span id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
-                        {/* <img src={`/images/wireframes/img-icon.svg`} alt="" /> */}
-                        <h5>{step.name}</h5>
-                        <small>{step.text}</small>
-                        {index === 0 ? <Line /> : null}
-                      </div>
-                    )
-                  })
-                }
-              </div>
-            </div>
+            <Timeline steps={content.steps} />
           </div>
         </div>
       </div>

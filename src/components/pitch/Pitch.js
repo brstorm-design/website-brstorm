@@ -11,7 +11,7 @@ import Contact from "src/components/home/Contact";
 import Footer from "src/layouts/Footer";
 import Projects from "src/components/home/Projects";
 
-export default function Pitch({props}) {
+export default function Pitch({ props }) {
   const pitch = props.content.pitch;
   const home = props.content.home;
   const common = props.content.common;
@@ -31,7 +31,7 @@ export default function Pitch({props}) {
       <Projects content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} pitch />
-      <Methodology content={pitchContent.method} />
+      <Methodology content={pitchContent.method} pitch />
       <Pricing content={pitchContent.deliverables} />
       <Contact content={pitch.contact} common={common} />
 

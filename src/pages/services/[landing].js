@@ -2,11 +2,38 @@ import React from 'react';
 import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
+import Head from 'next/head';
+import Header from 'src/layouts/Header';
+import Methodology from 'src/components/pitch/Methodology';
+import Cover from 'src/components/home/Cover';
+import Projects from 'src/components/home/Projects';
+import WhyUs from 'src/components/home/WhyUs';
+import Contact from 'src/components/home/Contact';
+import Footer from 'src/layouts/Footer';
+import Testimonials from 'src/components/home/Testimonials';
 
 export default function LandingPage(props) {
-  console.log(props);
+  const { content, service } = props;
+  const page = content.home;
+  const pitch = content.pitch;
+  const common = content.common;
+
   return (
-    <div>LandingPage</div>
+    <>
+      <Head>
+        <title>Brand • Br.Storm</title>
+      </Head>
+      <Header content={page.header} common={content.common} />
+
+      <Cover content={page.cover} common={common} />
+      <Projects format="stairs" content={page.projects} common={common} allProjects={content.fullPortifolio} />
+      <Methodology content={pitch[service.jsonName].method} />
+      <WhyUs content={page.whyUs} />
+      <Testimonials content={page.testimonials} />
+      <Contact content={page.contact} common={common} />
+
+      <Footer content={page.footer} common={common} />
+    </>
   )
 }
 
@@ -25,7 +52,7 @@ export async function getStaticProps({ params, locale }) {
       return {
         props: {
           service,
-          pt
+          content: pt,
         }
       }
 
@@ -33,7 +60,7 @@ export async function getStaticProps({ params, locale }) {
       return {
         props: {
           service,
-          en
+          content: en,
         }
       }
   }
