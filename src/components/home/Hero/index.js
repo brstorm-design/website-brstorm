@@ -3,6 +3,7 @@ import styles from './Hero.module.scss';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import AnchorButton from 'src/components/common/AnchorButton';
 import { inOutQuad } from 'src/utils/easings';
+import { rootPath } from 'src/utils/env';
 
 export default function Hero({ content, common, client, mt, mb }) {
   const element = useRef(null);
@@ -60,7 +61,7 @@ export default function Hero({ content, common, client, mt, mb }) {
             </div>
           </div>
           <div className="col-12 col-lg-6 offset-lg-1 order-1 order-lg-2">
-            <img src="/images/illustrations/venus.png" alt="" className="img-fluid" />
+            <img src={`${rootPath}/images/illustrations/venus.png`} alt="" className="img-fluid" />
           </div>
         </div>
       </div>

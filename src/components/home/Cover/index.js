@@ -9,6 +9,7 @@ import styles from './Cover.module.scss';
 import Arrow from 'public/images/arrow-down.svg';
 import MobileUI from 'public/images/cover/mobile-ui.svg'
 import usePausableAnimation from 'src/hooks/usePausableAnimations';
+import { rootPath } from 'src/utils/env';
 
 export default function Cover({ content, common, mt, mb }) {
   useEffect(() => {
@@ -52,8 +53,8 @@ export default function Cover({ content, common, mt, mb }) {
       <div className="container">
 
         <AnimatedLogo />
-        <img className={`${styles.topRight}`} data-animated src="/images/cover/logo-rotate-360.svg" alt="" />
-        <img className={`${styles.bottomLeft} track`} src="/images/cover/grids-design.svg" alt="" />
+        <img className={`${styles.topRight}`} data-animated src={`${rootPath}/images/cover/logo-rotate-360.svg`} alt="" />
+        <img className={`${styles.bottomLeft} track`} src={`${rootPath}/images/cover/grids-design.svg`} alt="" />
         <a href="https://instagram.com/brstorm.design" target="_blank" rel="noopener noreferrer">
           <div className={`${styles.bottomRight} track`}>
             <MobileUI />

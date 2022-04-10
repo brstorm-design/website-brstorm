@@ -4,6 +4,7 @@ import { applyStyles } from 'src/modules/App';
 import styles from './David.module.scss';
 import david from 'public/images/purpose/david.png';
 import Words from 'public/images/purpose/words.svg';
+import { rootPath } from 'src/utils/env';
 
 export default function David({ forwardedRef, translate }) {
 
@@ -51,11 +52,11 @@ export default function David({ forwardedRef, translate }) {
             <rect width="150" height="40" fill="#E93CAC" />
           </g>
         </svg>
-        <img src="/images/purpose/seal.svg" alt="seal" />
-        <img src="/images/purpose/comment-michelangelo.svg" alt="comment" />
-        <img src="/images/purpose/pattern.svg" alt="pattern" />
-        <img src="/images/purpose/pin.svg" alt="pin" />
-        <img src="/images/purpose/exploring-the-infinite.svg" alt="writing" />
+        <img src={`${rootPath}/images/purpose/seal.svg`} alt="seal" />
+        <img src={`${rootPath}/images/purpose/comment-michelangelo.svg`} alt="comment" />
+        <img src={`${rootPath}/images/purpose/pattern.svg`} alt="pattern" />
+        <img src={`${rootPath}/images/purpose/pin.svg`} alt="pin" />
+        <img src={`${rootPath}/images/purpose/exploring-the-infinite.svg`} alt="writing" />
         <Words />
       </div>
     </div>

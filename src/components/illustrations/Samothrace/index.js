@@ -9,6 +9,7 @@ import GrayScale from 'public/images/whatWeDo/grayscale.svg';
 import Picker from 'public/images/whatWeDo/picker.svg';
 import Pin from 'public/images/whatWeDo/pin.svg';
 import Tech from 'public/images/whatWeDo/tech-creativity.svg';
+import { rootPath } from 'src/utils/env';
 
 export default function Samothrace({ translateValues }) {
   const container = useRef(null);
@@ -40,7 +41,7 @@ export default function Samothrace({ translateValues }) {
             <TypeEffect />
             <span>&lt;/title&gt;</span>
           </code>
-          <img src="/images/whatWeDo/code.svg" alt="code" />
+          <img src={`${rootPath}/images/whatWeDo/code.svg`} alt="code" />
         </div>
       </div>
     </div>

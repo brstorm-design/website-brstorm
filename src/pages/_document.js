@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import GoogleAnalytics from 'src/components/scripts/GoogleAnalytics'
 import GoogleTagManager from 'src/components/scripts/GoogleTagManager'
 import NoScript from 'src/components/scripts/NoScript'
-import { isDev } from 'src/utils/env'
+import { isDev, rootPath } from 'src/utils/env'
 
 class MyDocument extends Document {
 
@@ -22,6 +22,8 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+          <link rel="icon" href={`${rootPath}/favicon.svg`} />
           <meta property="og:image" content="/images/cover.png" />
         </Head>
         <body>

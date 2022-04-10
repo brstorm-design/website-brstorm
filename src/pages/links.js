@@ -1,14 +1,26 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import React from "react";
 import LinkTree from "src/components/linktree/LinkTree";
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
 
 export default function LinkPage(props) {
+
+  const router = useRouter();
+  let title;
+  switch (router.locale) {
+    case 'pt':
+      title = 'Nossos Links';
+      break;
+    case 'en':
+      title = 'Our Links'
+  }
+  
   return (
     <>
       <Head>
-        <title>Our Links - Br.Storm</title>
+        <title>{`${title} • Br.Storm`}</title>
       </Head>
 
       <LinkTree content={props.linkTree} />

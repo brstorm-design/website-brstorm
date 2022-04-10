@@ -1,4 +1,5 @@
 import React from 'react'
+import { rootPath } from 'src/utils/env';
 import Logo from '../common/Logo';
 import Svg from '../svg/Svg';
 import styles from './LinkTree.module.scss';
@@ -10,7 +11,7 @@ export default function LinkTree({ content, mt, mb }) {
         <div className="row align-items-center">
           <div className="col-12 col-md-4 offset-md-1">
             <div className={styles.article}>
-              <img className="img-fluid" src={content.logo} alt="Logo" />
+              <img className="img-fluid" src={rootPath + content.logo} alt="Logo" />
               <h4 className="d-none d-md-block">{content.desktopTitle}</h4>
               <h4 className="d-block d-md-none">{content.mobileTitle}</h4>
               <p>We specialize in creating unique and memorable projects exploring the best in each business.</p>
