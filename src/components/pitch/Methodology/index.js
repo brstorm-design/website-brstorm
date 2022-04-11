@@ -4,7 +4,7 @@ import { getMaxHeight, getTranslateValue } from 'src/modules/App';
 import Timeline from '../Timeline';
 import styles from './Methodology.module.scss';
 
-export default function Methodology({ content, pitch, mt, mb }) {
+export default function Methodology({ content, pitch }) {
   const [mousePosition, setMousePosition] = useState(null);
 
   function move(e) {
@@ -12,7 +12,7 @@ export default function Methodology({ content, pitch, mt, mb }) {
   }
 
   return (
-    <section style={{ marginTop: `${mt}px`, marginBottom: `${mb}px` }} className={styles.section} onMouseMove={move}>
+    <section className={styles.section} onMouseMove={move}>
       {
         pitch ? (
           <div className={styles.title}>

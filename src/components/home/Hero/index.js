@@ -5,7 +5,7 @@ import AnchorButton from 'src/components/common/AnchorButton';
 import { inOutQuad } from 'src/utils/easings';
 import { rootPath } from 'src/utils/env';
 
-export default function Hero({ content, common, client, mt, mb }) {
+export default function Hero({ content, common, client }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -41,7 +41,7 @@ export default function Hero({ content, common, client, mt, mb }) {
 
 
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="hero">
+    <section className={styles.section} id="hero">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5 d-flex align-items-center order-2 order-lg-1">

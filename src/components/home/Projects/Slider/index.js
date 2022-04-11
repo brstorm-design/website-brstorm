@@ -3,7 +3,7 @@ import styles from './Slider.module.scss';
 import images from 'src/utils/images';
 import Image from 'next/image';
 
-export default function Slider({ content, mt, mb }) {
+export default function Slider({ content }) {
   const topRow = useRef(null);
   const bottomRow = useRef(null);
 
@@ -29,7 +29,7 @@ export default function Slider({ content, mt, mb }) {
   const secondRow = content.portifolio.concat(content.portifolio).reverse();
 
   return (
-    <section style={{ marginTop: `${mt}px`, marginBottom: `${mb}px` }} className={styles.section}>
+    <section className={styles.section}>
       <div className={`row gy-4 flex-nowrap ${styles.row1}`} ref={topRow}>
         {
           firstRow.map((img, index) => {

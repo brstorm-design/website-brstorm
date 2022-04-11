@@ -6,7 +6,7 @@ import { inOutQuad } from 'src/utils/easings';
 import David from 'src/components/illustrations/David';
 import Arrow from 'public/images/arrow-down.svg';
 
-export default function Purpose({ content, common, mt, mb }) {
+export default function Purpose({ content, common }) {
   const element = useRef(null);
   const element1 = useRef(null);
   const refs = [element.current, element1.current];
@@ -41,7 +41,7 @@ export default function Purpose({ content, common, mt, mb }) {
   }
 
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="purpose" onMouseMove={move}>
+    <section className={styles.section} id="purpose" onMouseMove={move}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">

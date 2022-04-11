@@ -4,9 +4,9 @@ import Logo from '../common/Logo';
 import Svg from '../svg/Svg';
 import styles from './LinkTree.module.scss';
 
-export default function LinkTree({ content, mt, mb }) {
+export default function LinkTree({ content }) {
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section}>
+    <section className={styles.section}>
       <div className="container h-100">
         <div className="row align-items-center">
           <div className="col-12 col-md-4 offset-md-1">

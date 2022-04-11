@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Contact.module.scss';
 
-export default function Contact({ content, common, mt, mb }) {
+export default function Contact({ content, common }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -31,7 +31,7 @@ export default function Contact({ content, common, mt, mb }) {
   }, [animations])
 
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="contact">
+    <section className={styles.section} id="contact">
       <div className="container">
         <div className="row" ref={element}>
           <div className="col-12 col-lg-10 mx-auto">

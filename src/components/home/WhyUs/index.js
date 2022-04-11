@@ -6,7 +6,7 @@ import TailorMade from 'src/components/svg/reasons/TailorMade';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './WhyUs.module.scss';
 
-export default function WhyUs({ content, pitch, mt, mb }) {
+export default function WhyUs({ content, pitch }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -42,7 +42,7 @@ export default function WhyUs({ content, pitch, mt, mb }) {
   }
 
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="why-us">
+    <section className={styles.section} id="why-us">
       <div className={styles.title}>
         <h1 dangerouslySetInnerHTML={{__html: content.title}} />
         <p>{content.subtitle}</p>

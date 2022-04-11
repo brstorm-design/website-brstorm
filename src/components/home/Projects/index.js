@@ -6,7 +6,7 @@ import Slider from './Slider';
 import Stairs from './Stairs';
 
 
-export default function Projects({ format, content, common, client, allProjects, mt, mb }) {
+export default function Projects({ format, content, common, client, allProjects }) {
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -55,7 +55,7 @@ export default function Projects({ format, content, common, client, allProjects,
   }
 
   return (
-    <section style={{marginTop: `${mt}px`, marginBottom: `${mb}px`}} className={styles.section} id="projects">
+    <section className={styles.section} id="projects">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">
