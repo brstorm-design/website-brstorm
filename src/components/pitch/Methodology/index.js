@@ -13,6 +13,7 @@ export default function Methodology({ content, pitch }) {
 
   return (
     <section className={styles.section} onMouseMove={move}>
+      <div className="container">
       {
         pitch ? (
           <div className={styles.title}>
@@ -21,7 +22,6 @@ export default function Methodology({ content, pitch }) {
           </div>
         ) : null
       }
-      <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
             {/* <Samothrace translateValues={mousePosition} /> */}

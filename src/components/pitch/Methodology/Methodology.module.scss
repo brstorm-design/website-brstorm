@@ -43,4 +43,9 @@
   h3 {
     margin-bottom: 24px;
   }
+
+  @include mixins.lg {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
