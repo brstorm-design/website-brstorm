@@ -95,7 +95,8 @@
           "size": "6",
           "name": "Identidade VIsual PetsVida",
           "type": "E-commerce Pet Shop",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+          "categories": [0]
         },
         {
           "slug": "rivana",
@@ -103,7 +104,8 @@
           "size": "6",
           "name": "Identidade Visual Rivana",
           "type": "E-Commerce de Vestuário",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+          "categories": [0]
         },
         {
           "slug": "maptrack",
@@ -111,7 +113,8 @@
           "size": "6",
           "name": "Identidade Visual MapTrack",
           "type": "Startup de Rastreamento de Ativos",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+          "categories": [0]
         },
         {
           "slug": "catarge",
@@ -119,7 +122,8 @@
           "size": "6",
           "name": "Identidade Visual Catarge",
           "type": "Engenharia e Arquitetura",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+          "categories": [0]
         },
         {
           "slug": "daia",
@@ -127,7 +131,8 @@
           "size": "3",
           "name": "Identidade Visual Daia",
           "type": "Fotógrafa de Família",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+          "categories": [0]
         }
       ],
       "fullportfolio": "Portifólio Completo",
@@ -220,9 +225,7 @@
       ]
     }
   },
-  "landingPage": {
-    
-  },
+  "landingPage": {},
   "pitch": {
     "hero": {
       "title": "Olá",
@@ -894,7 +897,8 @@
       "size": "6",
       "name": "Identidade VIsual PetsVida",
       "type": "E-commerce Pet Shop",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+      "categories": [0]
     },
     {
       "slug": "rivana",
@@ -902,7 +906,8 @@
       "size": "6",
       "name": "Identidade Visual Rivana",
       "type": "E-Commerce de Vestuário",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+      "categories": [0]
     },
     {
       "slug": "maptrack",
@@ -910,7 +915,8 @@
       "size": "6",
       "name": "Identidade Visual MapTrack",
       "type": "Startup de Rastreamento de Ativos",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+      "categories": [0]
     },
     {
       "slug": "catarge",
@@ -918,7 +924,8 @@
       "size": "6",
       "name": "Identidade Visual Catarge",
       "type": "Engenharia e Arquitetura",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+      "categories": [0]
     },
     {
       "slug": "daia",
@@ -926,7 +933,8 @@
       "size": "3",
       "name": "Identidade Visual Daia",
       "type": "Fotógrafa de Família",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+      "categories": [0]
     },
     {
       "slug": "util",
@@ -934,7 +942,8 @@
       "size": "3",
       "name": "Identidade Visual Útil",
       "type": "Serviços de Limpeza",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
+      "categories": [0]
     }
   ]
 }

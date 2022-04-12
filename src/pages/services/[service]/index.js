@@ -39,28 +39,28 @@ export default function LandingPage(props) {
 
 export async function getStaticPaths() {
   const paths = data.services.map(service => ({
-    params: { landing: service.slug },
+    params: { service: service.slug },
   }))
   return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params, locale }) {
-  const service = data.services.find(s => s.slug === params.landing);
+  const service = data.services.find(s => s.slug === params.service);
 
   switch (locale) {
     case 'pt':
       return {
         props: {
-          service,
           content: pt,
+          service,
         }
       }
 
     case 'en':
       return {
         props: {
-          service,
           content: en,
+          service,
         }
       }
   }
