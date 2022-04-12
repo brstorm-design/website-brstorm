@@ -88,10 +88,10 @@
       "title": "Clientes Satisfeitos \nem Todo o Mundo",
       "subtitle": "Projetos & Depoimentos",
       "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "Identidade VIsual PetsVida",
           "type": "E-commerce Pet Shop",
@@ -99,7 +99,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Identidade Visual Rivana",
           "type": "E-Commerce de Vestuário",
@@ -107,7 +107,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "Identidade Visual MapTrack",
           "type": "Startup de Rastreamento de Ativos",
@@ -115,7 +115,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Identidade Visual Catarge",
           "type": "Engenharia e Arquitetura",
@@ -123,14 +123,14 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Identidade Visual Daia",
           "type": "Fotógrafa de Família",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         }
       ],
-      "fullPortifolio": "Portifólio Completo",
+      "fullportfolio": "Portifólio Completo",
       "url": "https://www.behance.net/brstorm-design"
     },
     "testimonials": {
@@ -887,10 +887,10 @@
     "contactUs": "Entre em Contato",
     "scrollToTop": "Voltar ao topo"
   },
-  "fullPortifolio": [
+  "fullportfolio": [
     {
       "slug": "petsvida",
-      "cover": "/images/portifolio/petsvida.png",
+      "cover": "/images/portfolio/petsvida.png",
       "size": "6",
       "name": "Identidade VIsual PetsVida",
       "type": "E-commerce Pet Shop",
@@ -898,7 +898,7 @@
     },
     {
       "slug": "rivana",
-      "cover": "/images/portifolio/rivana.png",
+      "cover": "/images/portfolio/rivana.png",
       "size": "6",
       "name": "Identidade Visual Rivana",
       "type": "E-Commerce de Vestuário",
@@ -906,7 +906,7 @@
     },
     {
       "slug": "maptrack",
-      "cover": "/images/portifolio/maptrack.png",
+      "cover": "/images/portfolio/maptrack.png",
       "size": "6",
       "name": "Identidade Visual MapTrack",
       "type": "Startup de Rastreamento de Ativos",
@@ -914,7 +914,7 @@
     },
     {
       "slug": "catarge",
-      "cover": "/images/portifolio/catarge.png",
+      "cover": "/images/portfolio/catarge.png",
       "size": "6",
       "name": "Identidade Visual Catarge",
       "type": "Engenharia e Arquitetura",
@@ -922,7 +922,7 @@
     },
     {
       "slug": "daia",
-      "cover": "/images/portifolio/daia.png",
+      "cover": "/images/portfolio/daia.png",
       "size": "3",
       "name": "Identidade Visual Daia",
       "type": "Fotógrafa de Família",
@@ -930,7 +930,7 @@
     },
     {
       "slug": "util",
-      "cover": "/images/portifolio/util.png",
+      "cover": "/images/portfolio/util.png",
       "size": "3",
       "name": "Identidade Visual Útil",
       "type": "Serviços de Limpeza",

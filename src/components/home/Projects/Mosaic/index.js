@@ -3,12 +3,12 @@ import Behance from 'public/images/socials/behance.svg';
 import styles from './Mosaic.module.scss';
 import Image from 'next/image';
 //
-import catarge from 'public/images/portifolio/catarge.png';
-import rivana from 'public/images/portifolio/rivana.png';
-import petsvida from 'public/images/portifolio/petsvida.png';
-import maptrack from 'public/images/portifolio/maptrack.png';
-import daia from 'public/images/portifolio/daia.png';
-import util from 'public/images/portifolio/util.png';
+import catarge from 'public/images/portfolio/catarge.png';
+import rivana from 'public/images/portfolio/rivana.png';
+import petsvida from 'public/images/portfolio/petsvida.png';
+import maptrack from 'public/images/portfolio/maptrack.png';
+import daia from 'public/images/portfolio/daia.png';
+import util from 'public/images/portfolio/util.png';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 
 const images = {
@@ -20,7 +20,7 @@ const images = {
   util,
 }
 
-export default function Mosaic({ common, content, portifolio }) {
+export default function Mosaic({ common, content, portfolio }) {
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -65,7 +65,7 @@ export default function Mosaic({ common, content, portifolio }) {
   return (
     <div className="row gy-4" ref={projects} id="projects-cards">
       {
-        portifolio.map((item, index) => {
+        portfolio.map((item, index) => {
           return (
             <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
               <a href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
@@ -83,7 +83,7 @@ export default function Mosaic({ common, content, portifolio }) {
         <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
           <Behance />
           <div>
-            <h4>{content.fullPortifolio}</h4>
+            <h4>{content.fullportfolio}</h4>
             <span>{common.seeMore}</span>
           </div>
         </a>

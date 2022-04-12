@@ -22,11 +22,10 @@ export async function getStaticPaths({ locales }) {
       return data.content.flatMap(cont => {
         return data.services.flatMap(service => {
           return locales.map(locale => {
-            let clientParams = client.parameters;
             if (
-              clientParams.langs.includes(locale) &&
-              clientParams.services.includes(service.id) &&
-              clientParams.content.includes(cont.id)
+              client.parameters.langs.includes(locale) &&
+              client.parameters.services.includes(service.id) &&
+              client.parameters.content.includes(cont.id)
             ) {
               return {
                 params: {

@@ -88,10 +88,10 @@
       "title": "Trusted By \nMany Clients \nAround the World",
       "subtitle": "Projects & Reviews",
       "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
           "type": "E-commerce Pet Shop",
@@ -99,7 +99,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
           "type": "Clothing E-Commerce",
@@ -107,7 +107,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
           "type": "Asset Tracking Startup",
@@ -115,7 +115,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
           "type": "Engineering and Architecture",
@@ -123,14 +123,14 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
           "type": "Family Photographer",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         }
       ],
-      "fullPortifolio": "Full Portifolio",
+      "fullportfolio": "Full portfolio",
       "url": "https://www.behance.net/brstorm-design"
     },
     "testimonials": {
@@ -897,10 +897,10 @@
     "contactUs": "Contact Us",
     "scrollToTop": "Scroll to Top"
   },
-  "fullPortifolio": [
+  "fullportfolio": [
     {
       "slug": "petsvida",
-      "cover": "/images/portifolio/petsvida.png",
+      "cover": "/images/portfolio/petsvida.png",
       "size": "6",
       "name": "PetsVida Brand Identity",
       "type": "E-commerce Pet Shop",
@@ -908,7 +908,7 @@
     },
     {
       "slug": "rivana",
-      "cover": "/images/portifolio/rivana.png",
+      "cover": "/images/portfolio/rivana.png",
       "size": "6",
       "name": "Rivana Brand Identity",
       "type": "Clothing E-Commerce",
@@ -916,7 +916,7 @@
     },
     {
       "slug": "maptrack",
-      "cover": "/images/portifolio/maptrack.png",
+      "cover": "/images/portfolio/maptrack.png",
       "size": "6",
       "name": "MapTrack Brand Identity",
       "type": "Asset Tracking Startup",
@@ -924,7 +924,7 @@
     },
     {
       "slug": "catarge",
-      "cover": "/images/portifolio/catarge.png",
+      "cover": "/images/portfolio/catarge.png",
       "size": "6",
       "name": "Catarge Brand Identity",
       "type": "Engineering and Architecture",
@@ -932,7 +932,7 @@
     },
     {
       "slug": "daia",
-      "cover": "/images/portifolio/daia.png",
+      "cover": "/images/portfolio/daia.png",
       "size": "3",
       "name": "Daia Brand Identity",
       "type": "Family Photographer",
@@ -940,7 +940,7 @@
     },
     {
       "slug": "util",
-      "cover": "/images/portifolio/util.png",
+      "cover": "/images/portfolio/util.png",
       "size": "3",
       "name": "Útil Brand Identity",
       "type": "Cleaning Services",

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Arrow from 'public/images/arrow-forward.svg';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 
-export default function Stairs({ content, common, portifolio }) {
+export default function Stairs({ content, common, portfolio }) {
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -42,7 +42,7 @@ export default function Stairs({ content, common, portifolio }) {
     <section className={styles.section}>
       <div className="row gy-4" ref={projects}>
         {
-          portifolio.map((item, index) => {
+          portfolio.map((item, index) => {
             return (
               <div key={`projects-${index}`} className="col-12 col-lg-6">
                 <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
@@ -58,7 +58,7 @@ export default function Stairs({ content, common, portifolio }) {
         }
         <div className="col-12 col-lg-6 offset-lg-6">
           <div className={styles.seeMore}>
-            <h4>{content.fullPortifolio}</h4>
+            <h4>{content.fullportfolio}</h4>
             <a href="#">
               {common.seeMore}
               <Arrow />

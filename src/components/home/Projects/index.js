@@ -10,7 +10,7 @@ export default function Projects({ format, content, common, client, allProjects 
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
 
-  const portifolio = client ? client.portifolio : content.portifolio;
+  const portfolio = client ? client.portfolio : content.portfolio;
 
   useEffect(() => {
     const refs = [introText.current];
@@ -46,11 +46,11 @@ export default function Projects({ format, content, common, client, allProjects 
   function renderProjects() {
     switch (format) {
       case 'mosaic':
-        return <Mosaic content={content} common={common} portifolio={portifolio} />;
+        return <Mosaic content={content} common={common} portfolio={portfolio} />;
         case 'slider':
         return <Slider content={content} />;
         case 'stairs':
-        return <Stairs content={content} common={common} portifolio={allProjects} />;
+        return <Stairs content={content} common={common} portfolio={allProjects} />;
     }
   }
 

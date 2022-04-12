@@ -7,7 +7,7 @@ export default function Slider({ content }) {
   const topRow = useRef(null);
   const bottomRow = useRef(null);
 
-  const translateValue = 150 + ((content.portifolio.length - 4) * 33.33);
+  const translateValue = 150 + ((content.portfolio.length - 4) * 33.33);
   function animateSlider(target, direction) {
     target.animate([
       { transform: `translate3d(calc(-33.33% / 2), 0, 0)` },
@@ -25,8 +25,8 @@ export default function Slider({ content }) {
     animateSlider(bottomRow.current, 'reverse');
   }, [])
 
-  const firstRow = content.portifolio.concat(content.portifolio);
-  const secondRow = content.portifolio.concat(content.portifolio).reverse();
+  const firstRow = content.portfolio.concat(content.portfolio);
+  const secondRow = content.portfolio.concat(content.portfolio).reverse();
 
   return (
     <section className={styles.section}>

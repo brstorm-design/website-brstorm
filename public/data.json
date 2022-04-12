@@ -10,10 +10,10 @@
         "services": [0],
         "content": [0, 2]
       },
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
           "type": "E-commerce Pet Shop",
@@ -21,7 +21,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
           "type": "Clothing E-Commerce",
@@ -29,7 +29,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
           "type": "Asset Tracking Startup",
@@ -37,7 +37,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
           "type": "Engineering and Architecture",
@@ -45,7 +45,7 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
           "type": "Family Photographer",
@@ -63,10 +63,10 @@
         "services": [0],
         "content": [0]
       },
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
           "type": "E-commerce Pet Shop",
@@ -74,7 +74,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
           "type": "Clothing E-Commerce",
@@ -82,7 +82,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
           "type": "Asset Tracking Startup",
@@ -90,7 +90,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
           "type": "Engineering and Architecture",
@@ -98,7 +98,7 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
           "type": "Family Photographer",
@@ -116,10 +116,10 @@
         "services": [0],
         "content": [0]
       },
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
           "type": "E-commerce Pet Shop",
@@ -127,7 +127,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
           "type": "Clothing E-Commerce",
@@ -135,7 +135,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
           "type": "Asset Tracking Startup",
@@ -143,7 +143,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
           "type": "Engineering and Architecture",
@@ -151,7 +151,7 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
           "type": "Family Photographer",
@@ -169,10 +169,10 @@
         "services": [0],
         "content": [0]
       },
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
           "type": "E-commerce Pet Shop",
@@ -180,7 +180,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
           "type": "Clothing E-Commerce",
@@ -188,7 +188,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
           "type": "Asset Tracking Startup",
@@ -196,7 +196,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
           "type": "Engineering and Architecture",
@@ -204,7 +204,7 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
           "type": "Family Photographer",
@@ -222,10 +222,10 @@
         "services": [0],
         "content": [0]
       },
-      "portifolio": [
+      "portfolio": [
         {
           "slug": "petsvida",
-          "cover": "/images/portifolio/petsvida.png",
+          "cover": "/images/portfolio/petsvida.png",
           "size": "6",
           "name": "PetsVida Brand Identity",
           "type": "E-commerce Pet Shop",
@@ -233,7 +233,7 @@
         },
         {
           "slug": "rivana",
-          "cover": "/images/portifolio/rivana.png",
+          "cover": "/images/portfolio/rivana.png",
           "size": "6",
           "name": "Rivana Brand Identity",
           "type": "Clothing E-Commerce",
@@ -241,7 +241,7 @@
         },
         {
           "slug": "maptrack",
-          "cover": "/images/portifolio/maptrack.png",
+          "cover": "/images/portfolio/maptrack.png",
           "size": "6",
           "name": "MapTrack Brand Identity",
           "type": "Asset Tracking Startup",
@@ -249,7 +249,7 @@
         },
         {
           "slug": "catarge",
-          "cover": "/images/portifolio/catarge.png",
+          "cover": "/images/portfolio/catarge.png",
           "size": "6",
           "name": "Catarge Brand Identity",
           "type": "Engineering and Architecture",
@@ -257,7 +257,7 @@
         },
         {
           "slug": "daia",
-          "cover": "/images/portifolio/daia.png",
+          "cover": "/images/portfolio/daia.png",
           "size": "3",
           "name": "Daia Brand Identity",
           "type": "Family Photographer",

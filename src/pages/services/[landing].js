@@ -26,7 +26,7 @@ export default function LandingPage(props) {
       <Header content={page.header} common={content.common} />
 
       <Cover content={page.cover} common={common} />
-      <Projects format="stairs" content={page.projects} common={common} allProjects={content.fullPortifolio} />
+      <Projects format="stairs" content={page.projects} common={common} allProjects={content.fullportfolio} />
       <Methodology content={pitch[service.jsonName].method} />
       <WhyUs content={page.whyUs} />
       <Testimonials content={page.testimonials} />
