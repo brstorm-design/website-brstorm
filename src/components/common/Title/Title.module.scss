@@ -1,0 +1,20 @@
+@use '../../../styles/scss/colors';
+@use '../../../styles/scss/mixins';
+
+.title {
+  padding-top: calc(80px + 160px);
+  margin-bottom: 160px;
+  
+  @include mixins.lg {
+    padding-top: calc(80px + 80px);
+    margin-bottom: 80px;
+  }
+
+  h4 {
+    color: colors.$gray;
+  }
+  h1 {
+    margin-bottom: 0;
+    white-space: break-spaces;
+  }
+}

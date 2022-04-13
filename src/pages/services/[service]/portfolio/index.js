@@ -2,32 +2,32 @@ import React from 'react';
 import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
+import BrandProjects from 'src/components/portfolio/BrandProjects';
+import Header from 'src/layouts/Header';
+import Footer from 'src/layouts/Footer';
+import Title from 'src/components/common/Title';
+import WhyUs from 'src/components/home/WhyUs';
+import Contact from 'src/components/home/Contact';
+import Head from 'next/head';
 
 export default function GeneralPortfolio(props) {
-
-  /* function gsp() {
-    const paths = data.services.flatMap(service => {
-      return pt.fullportfolio.map(project => {
-        if (project.categories.includes(service.id)) {
-          return {
-            params: {
-              service: service.slug,
-              project,
-            },
-          }
-        }
-      })
-    }).filter(el => el !== undefined);
-    return { paths, fallback: false }
-  }
-
-  const result = gsp();
-  console.log(result); */
-
-  console.log(props);
+  const home = props.content.home;
+  const common = props.content.common;
 
   return (
-    <div>Porti</div>
+    <>
+      <Head>
+        <title>Portfólio {props.service.name} • Br.Storm</title>
+      </Head>
+      <Header content={home.header} common={common} />
+
+      <Title mainTitle={home.projects.title} subTitle={'Nosso Portfólio'} align="center" />
+      <BrandProjects />
+      <WhyUs content={home.whyUs} />
+      <Contact common={common} content={home.contact} />
+
+      <Footer content={home.footer} common={common} />
+    </>
   )
 }
 

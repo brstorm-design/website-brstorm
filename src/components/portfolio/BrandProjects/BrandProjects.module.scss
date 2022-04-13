@@ -1,0 +1,29 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+
+.section {
+
+  :global {
+    @media (min-width: 992px) {
+      .col-lg-7 {
+        width: calc((100%/12) * 7.5);
+      }
+      .col-lg-5 {
+        width: calc((100%/12) * 4.5);
+      }
+    }
+  }
+}
+
+.placeholder {
+  height: 440px;
+  background-color: colors.$lightDark;
+  border: 1px solid colors.$ghost;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mixins.sm {
+    height: 225px;
+  }
+}
