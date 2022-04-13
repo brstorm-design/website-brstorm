@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Arrow from 'public/images/arrow-forward.svg';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import Link from 'next/link';
+import SeeMore from 'src/components/common/SeeMore';
 
 export default function Stairs({ content, common, portfolio }) {
   const projects = useRef(null);
@@ -58,15 +59,9 @@ export default function Stairs({ content, common, portfolio }) {
           })
         }
         <div className="col-12 col-lg-6 offset-lg-6">
-          <div className={styles.seeMore}>
-            <h4>{content.fullportfolio}</h4>
-            <Link href="/portfolio">
-              <a>
-                {common.seeMore}
-                <Arrow />
-              </a>
-            </Link>
-          </div>
+          <SeeMore linkText={common.seeMore} href="/portfolio">
+            {content.fullportfolio}
+          </SeeMore>
         </div>
       </div>
     </section>

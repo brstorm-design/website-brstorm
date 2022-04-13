@@ -19,19 +19,6 @@
   }
 }
 
-.seeMore {
-  svg {
-    margin-left: 5px;
-  }
-  h4 {
-    margin-bottom: 0;
-  }
-
-  @include mixins.md {
-    text-align: center;
-  }
-}
-
 .link {
   position: relative;
   display: block;

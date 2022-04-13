@@ -10,6 +10,7 @@ import maptrack from 'public/images/portfolio/maptrack.png';
 import daia from 'public/images/portfolio/daia.png';
 import util from 'public/images/portfolio/util.png';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import SeeMore from 'src/components/common/SeeMore';
 
 const images = {
   catarge,
@@ -82,10 +83,9 @@ export default function Mosaic({ common, content, portfolio }) {
       <div className="col-12 col-lg-3 offset-lg-5">
         <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
           <Behance />
-          <div>
-            <h4>{content.fullportfolio}</h4>
-            <span>{common.seeMore}</span>
-          </div>
+          <SeeMore linkText={common.seeMore}>
+            {content.fullportfolio}
+          </SeeMore>
         </a>
       </div>
     </div>
