@@ -4,7 +4,6 @@ import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 
 export default function SinglePortfolio(props) {
-  console.log(props);
   return (
     <div>SinglePortfolio</div>
   )

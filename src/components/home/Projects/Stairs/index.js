@@ -4,6 +4,7 @@ import images from 'src/utils/images';
 import Image from 'next/image';
 import Arrow from 'public/images/arrow-forward.svg';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import Link from 'next/link';
 
 export default function Stairs({ content, common, portfolio }) {
   const projects = useRef(null);
@@ -59,10 +60,12 @@ export default function Stairs({ content, common, portfolio }) {
         <div className="col-12 col-lg-6 offset-lg-6">
           <div className={styles.seeMore}>
             <h4>{content.fullportfolio}</h4>
-            <a href="#">
-              {common.seeMore}
-              <Arrow />
-            </a>
+            <Link href="/portfolio">
+              <a>
+                {common.seeMore}
+                <Arrow />
+              </a>
+            </Link>
           </div>
         </div>
       </div>
