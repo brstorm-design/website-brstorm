@@ -1,0 +1,22 @@
+@use "../../../styles/scss/mixins";
+
+.seeMore {
+  h4 {
+    margin-bottom: 0;
+  }
+  a {
+    display: block;
+  }
+
+  @include mixins.md {
+    h4 {
+      text-align: center;
+    }
+    a {
+      text-align: center;
+    }
+    span {
+      text-align: left;
+    }
+  }
+}

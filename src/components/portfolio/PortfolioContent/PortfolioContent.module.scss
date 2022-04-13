@@ -1,0 +1,16 @@
+@use '../../../styles/scss/colors';
+
+.section {
+  padding-top: calc(80px + 80px);
+}
+
+.placeholder {
+  height: 1792px;
+  width: 100%;
+  background-color: colors.$lightDark;
+  border-top: 1px solid colors.$ghost;
+  border-bottom: 1px solid colors.$ghost;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
