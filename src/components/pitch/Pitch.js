@@ -24,7 +24,7 @@ export default function Pitch({ props }) {
         <meta name="robots" content="noindex" />
         <title>{`${props.pitch.businessName} • ${props.contentType.name} | Br.Storm Design`}</title>
       </Head>
-      <Header content={home.header} common={common} />
+      <Header content={pitch.header} common={common} />
 
       <Hero client={client} content={pitch.hero} common={common} />
       <Details content={pitchContent.details} />

@@ -16,7 +16,7 @@ export default function SinglePortfolio({ content, project }) {
       <Head>
         <title>{project.name} • Br.Storm</title>
       </Head>
-      <Header common={content.common} content={content.home.header} />
+      <Header common={content.common} content={content.landingPage.header} />
       
       <PortfolioContent />
       <RecentProjects />

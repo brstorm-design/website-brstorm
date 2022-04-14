@@ -220,7 +220,61 @@
       ]
     }
   },
+  "landingPage": {
+    "header": {
+      "items": [
+        {
+          "name": "Projects",
+          "href": "#projects"
+        },
+        {
+          "name": "What We Do",
+          "href": "#methodology"
+        },
+        {
+          "name": "Why Us",
+          "href": "#why-us"
+        },
+        {
+          "name": "Testimonials",
+          "href": "#testimonials"
+        },
+        {
+          "name": "Get in Touch",
+          "href": "#contact"
+        }
+      ]
+    }
+  },
   "pitch": {
+    "header": {
+      "items": [
+        {
+          "name": "Introduction",
+          "href": "#hero"
+        },
+        {
+          "name": "Portfolio",
+          "href": "#projects"
+        },
+        {
+          "name": "Why Hire Us",
+          "href": "#why-us"
+        },
+        {
+          "name": "Creative Process",
+          "href": "#methodology"
+        },
+        {
+          "name": "Our Offers",
+          "href": "#pricing"
+        },
+        {
+          "name": "Contact",
+          "href": "#contact"
+        }
+      ]
+    },
     "hero": {
       "title": "Hi",
       "subtitle": "We will bring value to",

@@ -12,6 +12,7 @@ import Head from 'next/head';
 
 export default function GeneralPortfolio(props) {
   const home = props.content.home;
+  const landingPage = props.content.landingPage;
   const common = props.content.common;
 
   return (
@@ -19,7 +20,7 @@ export default function GeneralPortfolio(props) {
       <Head>
         <title>Portfólio {props.service.name} • Br.Storm</title>
       </Head>
-      <Header content={home.header} common={common} />
+      <Header content={landingPage.header} common={common} />
 
       <Title mainTitle={home.projects.title} subTitle={'Nosso Portfólio'} align="center" />
       <BrandProjects />

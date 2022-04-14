@@ -225,8 +225,61 @@
       ]
     }
   },
-  "landingPage": {},
+  "landingPage": {
+    "header": {
+      "items": [
+        {
+          "name": "Projetos",
+          "href": "#projects"
+        },
+        {
+          "name": "O Que Fazemos",
+          "href": "#methodology"
+        },
+        {
+          "name": "Por Que Nós",
+          "href": "#why-us"
+        },
+        {
+          "name": "Depoimentos",
+          "href": "#testimonials"
+        },
+        {
+          "name": "Entre em Contato",
+          "href": "#contact"
+        }
+      ]
+    }
+  },
   "pitch": {
+    "header": {
+      "items": [
+        {
+          "name": "Introdução",
+          "href": "#hero"
+        },
+        {
+          "name": "Portfólio",
+          "href": "#projects"
+        },
+        {
+          "name": "Por Que Nos Contratar",
+          "href": "#why-us"
+        },
+        {
+          "name": "Processo Criativo",
+          "href": "#methodology"
+        },
+        {
+          "name": "Nossas Ofertas",
+          "href": "#pricing"
+        },
+        {
+          "name": "Contato",
+          "href": "#contact"
+        }
+      ]
+    },
     "hero": {
       "title": "Olá",
       "subtitle": "Nós vamos agregar valor para a",

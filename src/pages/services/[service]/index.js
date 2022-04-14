@@ -12,18 +12,18 @@ import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
 import Testimonials from 'src/components/home/Testimonials';
 
-export default function LandingPage(props) {
-  const { content, service } = props;
+export default function LandingPage({ content, service }) {
   const page = content.home;
   const pitch = content.pitch;
   const common = content.common;
+  const landing = content.landingPage;
 
   return (
     <>
       <Head>
         <title>Brand • Br.Storm</title>
       </Head>
-      <Header content={page.header} common={content.common} />
+      <Header content={landing.header} common={content.common} />
 
       <Cover content={page.cover} common={common} />
       <Projects format="stairs" content={page.projects} common={common} allProjects={content.fullportfolio} />

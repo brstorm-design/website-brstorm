@@ -16,7 +16,7 @@ export default function Pricing({ content }) {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="pricing">
       <div className="col-12 col-lg-6 mx-auto">
         <div className={styles.intro}>
           <h4 className="gradient-bg">{content.subtitle}</h4>
