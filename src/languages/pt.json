@@ -96,7 +96,9 @@
           "name": "Identidade VIsual PetsVida",
           "type": "E-commerce Pet Shop",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [0]
+          "categories": [
+            0
+          ]
         },
         {
           "slug": "rivana",
@@ -105,7 +107,9 @@
           "name": "Identidade Visual Rivana",
           "type": "E-Commerce de Vestuário",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [0]
+          "categories": [
+            0
+          ]
         },
         {
           "slug": "maptrack",
@@ -114,7 +118,9 @@
           "name": "Identidade Visual MapTrack",
           "type": "Startup de Rastreamento de Ativos",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [0]
+          "categories": [
+            0
+          ]
         },
         {
           "slug": "catarge",
@@ -123,7 +129,9 @@
           "name": "Identidade Visual Catarge",
           "type": "Engenharia e Arquitetura",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [0]
+          "categories": [
+            0
+          ]
         },
         {
           "slug": "daia",
@@ -132,7 +140,9 @@
           "name": "Identidade Visual Daia",
           "type": "Fotógrafa de Família",
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [0]
+          "categories": [
+            0
+          ]
         }
       ],
       "fullportfolio": "Portfólio Completo",
@@ -223,6 +233,144 @@
           "icon": "<svg width='18' height='16' viewBox='0 0 18 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M17.5 7.54004V8.48358C17.5 8.53944 17.4781 8.59531 17.4693 8.65118C17.4188 8.99052 17.3881 9.334 17.3112 9.66921C16.94 11.3929 15.9559 12.9455 14.5217 14.0703C12.4169 15.7401 9.98941 16.3257 7.29201 15.8291C5.42578 15.4995 3.74251 14.5602 2.53809 13.1764C1.68633 12.2578 1.07583 11.1631 0.755934 9.98087C0.436039 8.79861 0.415733 7.56198 0.696656 6.37096C1.0635 4.6253 2.05813 3.05248 3.51258 1.91812C4.73821 0.921655 6.24676 0.285727 7.85169 0.0889741C8.16774 0.04966 8.48817 0.0289683 8.80642 0H9.20587C9.56801 0.0331066 9.93235 0.04966 10.3033 0.103458C11.7843 0.312139 13.1781 0.894064 14.3373 1.78776C15.9506 2.9981 17.0312 4.7289 17.3705 6.64616C17.4254 6.94205 17.4583 7.24208 17.5 7.54004ZM10.2682 9.1664C7.87802 9.99407 5.92685 11.279 4.62314 13.3565C4.66923 13.3916 4.69338 13.4123 4.71971 13.4289C5.69877 14.1155 6.84691 14.5563 8.05626 14.7098C9.26562 14.8632 10.4965 14.7244 11.6333 14.3062C11.7409 14.2669 11.7782 14.2276 11.7562 14.1158C11.5167 12.9456 11.2015 11.7902 10.8125 10.6562C10.6391 10.1637 10.4525 9.67542 10.2682 9.1664ZM1.82698 7.83179C1.78104 9.54136 2.42325 11.204 3.62451 12.4853C5.1477 10.3458 7.09448 8.7505 9.72823 7.96629C9.56801 7.6497 9.4056 7.34554 9.25635 7.03102C9.20148 6.91929 9.14442 6.8986 9.01493 6.93377C7.00185 7.46519 4.92819 7.766 2.83878 7.82972C2.51834 7.84214 2.18692 7.83179 1.82698 7.83179ZM1.98061 6.59029C4.19232 6.5705 6.39318 6.29603 8.53427 5.77297C8.19188 5.09842 6.17486 2.14986 5.89393 1.92639C4.91302 2.37619 4.05233 3.02876 3.37594 3.83553C2.69954 4.6423 2.22485 5.5825 1.9872 6.58615L1.98061 6.59029ZM7.41053 1.44842C7.41053 1.47118 7.4237 1.48152 7.42809 1.4898C8.35289 2.69114 9.20015 3.94387 9.96527 5.24119C10.0158 5.3281 10.064 5.32603 10.1496 5.29499C11.2322 4.9077 12.2288 4.33372 13.0885 3.60242C13.3079 3.3955 13.5274 3.17824 13.7469 2.96304C12.8974 2.24944 11.878 1.73924 10.7751 1.4756C9.67215 1.21196 8.51809 1.20263 7.41053 1.44842ZM14.5985 3.79278C13.5055 4.99703 12.1425 5.81021 10.6281 6.41441C10.8212 6.82824 11.0078 7.22966 11.2053 7.62901C11.2207 7.66005 11.3063 7.6766 11.3568 7.67246C12.6888 7.54614 14.0325 7.57951 15.3557 7.77178C15.6256 7.80696 15.8934 7.84627 16.1787 7.88766C16.1457 6.3957 15.5901 4.95596 14.5985 3.79278ZM11.7035 8.84568C12.2902 10.38 12.7453 11.9563 13.0643 13.5592C14.3154 13.0399 16.1875 10.2486 16.0558 9.11674C14.641 8.74114 13.1585 8.64881 11.7035 8.84568Z' fill='#E7E7E7'/></svg>"
         }
       ]
+    }
+  },
+  "contactForm": {
+    "header": {
+      "text": "Campos Respondidos"
+    },
+    "cover": {
+      "title": "Queremos conhecer um pouco sobre o seu negócio",
+      "subTitle": "Solicitação de Proposta",
+      "timeToFill": "Leva menos de 3 minutos"
+    },
+    "fields": [
+      {
+        "name": "name",
+        "title": "Como posso lhe chamar?",
+        "required": true,
+        "type": "text",
+        "placeholder": "Ex.: Luan"
+      },
+      {
+        "name": "businessName",
+        "title": ", qual o nome do seu negócio?",
+        "required": false,
+        "type": "text",
+        "placeholder": "Ex.: Br.Storm Design",
+        "helperText": "Caso ainda não tenha, deixe em branco."
+      },
+      {
+        "name": "details",
+        "title": "Nos conte o que você faz:",
+        "required": true,
+        "type": "text",
+        "placeholder": "Ex.: Web e Brand Design",
+        "helperText": " Fale um pouco sobre o que seu negócio se trata."
+      },
+      {
+        "name": "businessSize",
+        "title": "Qual o tamanho do seu negócio?",
+        "required": true,
+        "type": "radio",
+        "options": [
+          {
+            "name": "Trabalho Sozinho",
+            "value": "alone"
+          },
+          {
+            "name": "2 - 10 Colaboradores",
+            "value": "2-10"
+          },
+          {
+            "name": "11 - 50 Colaboradores",
+            "value": "11-50"
+          },
+          {
+            "name": "51 - 100 Colaboradores",
+            "value": "51-100"
+          },
+          {
+            "name": "+100 Colaboradores",
+            "value": "+100"
+          }
+        ]
+      },
+      {
+        "name": "service",
+        "title": "Como podemos lhe ajudar?",
+        "required": true,
+        "type": "checkbox",
+        "options": [
+          {
+            "name": "Marca",
+            "value": "brand"
+          },
+          {
+            "name": "Website",
+            "value": "website"
+          },
+          {
+            "name": "Redesign",
+            "value": "redesign"
+          },
+          {
+            "name": "Naming",
+            "value": "naming"
+          },
+          {
+            "name": "Redes Sociais",
+            "value": "social-media"
+          }
+        ],
+        "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço."
+      },
+      {
+        "name": "yourContact",
+        "title": "Por onde posso lhe contatar?",
+        "required": true,
+        "type": "checkbox",
+        "options": [
+          {
+            "name": "E-mail",
+            "value": "email",
+            "field": {
+              "name": "name",
+              "required": false,
+              "type": "email",
+              "placeholder": "Ex.: contact@brstorm.design"
+            }
+          },
+          {
+            "name": "WhatsApp",
+            "value": "whatsapp",
+            "field": {
+              "name": "phone",
+              "required": false,
+              "type": "tel",
+              "placeholder": "Ex.: (51) 98888-7777"
+            }
+          },
+          {
+            "name": "Outros",
+            "value": "other",
+            "field": {
+              "name": "otherContact",
+              "required": false,
+              "type": "text",
+              "placeholder": "Ex.: Instagram: @brstorm.design"
+            }
+          }
+        ]
+      }
+    ],
+    "submit": "Enviar Solicitação"
+  },
+  "contactSuccess": {
+    "title": {
+      "thanks": "Muito Obrigado!",
+      "contactYou": "Agradeçemos seu interesse, entraremos em contato em breve.",
+      "socialText": "Enquanto isso, lhe convidamos a conhecer nossas redes sociais e ver nossos projetos mais recentes."
     }
   },
   "landingPage": {
@@ -951,7 +1099,9 @@
       "name": "Identidade VIsual PetsVida",
       "type": "E-commerce Pet Shop",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [0]
+      "categories": [
+        0
+      ]
     },
     {
       "slug": "rivana",
@@ -960,7 +1110,9 @@
       "name": "Identidade Visual Rivana",
       "type": "E-Commerce de Vestuário",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [0]
+      "categories": [
+        0
+      ]
     },
     {
       "slug": "maptrack",
@@ -969,7 +1121,9 @@
       "name": "Identidade Visual MapTrack",
       "type": "Startup de Rastreamento de Ativos",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [0]
+      "categories": [
+        0
+      ]
     },
     {
       "slug": "catarge",
@@ -978,7 +1132,9 @@
       "name": "Identidade Visual Catarge",
       "type": "Engenharia e Arquitetura",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [0]
+      "categories": [
+        0
+      ]
     },
     {
       "slug": "daia",
@@ -987,7 +1143,9 @@
       "name": "Identidade Visual Daia",
       "type": "Fotógrafa de Família",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [0]
+      "categories": [
+        0
+      ]
     },
     {
       "slug": "util",
@@ -996,7 +1154,9 @@
       "name": "Identidade Visual Útil",
       "type": "Serviços de Limpeza",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [0]
+      "categories": [
+        0
+      ]
     }
   ]
 }

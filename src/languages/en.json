@@ -220,6 +220,144 @@
       ]
     }
   },
+  "contactForm": {
+    "header": {
+      "text": "Campos Respondidos"
+    },
+    "cover": {
+      "title": "Queremos conhecer um pouco sobre o seu negócio",
+      "subTitle": "Solicitação de Proposta",
+      "timeToFill": "Leva menos de 3 minutos"
+    },
+    "fields": [
+      {
+        "name": "name",
+        "title": "Como posso lhe chamar?",
+        "required": true,
+        "type": "text",
+        "placeholder": "Ex.: Luan"
+      },
+      {
+        "name": "businessName",
+        "title": ", qual o nome do seu negócio?",
+        "required": false,
+        "type": "text",
+        "placeholder": "Ex.: Br.Storm Design",
+        "helperText": "Caso ainda não tenha, deixe em branco."
+      },
+      {
+        "name": "details",
+        "title": "Nos conte o que você faz:",
+        "required": true,
+        "type": "text",
+        "placeholder": "Ex.: Web e Brand Design",
+        "helperText": " Fale um pouco sobre o que seu negócio se trata."
+      },
+      {
+        "name": "businessSize",
+        "title": "Qual o tamanho do seu negócio?",
+        "required": true,
+        "type": "radio",
+        "options": [
+          {
+            "name": "Trabalho Sozinho",
+            "value": "alone"
+          },
+          {
+            "name": "2 - 10 Colaboradores",
+            "value": "2-10"
+          },
+          {
+            "name": "11 - 50 Colaboradores",
+            "value": "11-50"
+          },
+          {
+            "name": "51 - 100 Colaboradores",
+            "value": "51-100"
+          },
+          {
+            "name": "+100 Colaboradores",
+            "value": "+100"
+          }
+        ]
+      },
+      {
+        "name": "service",
+        "title": "Como podemos lhe ajudar?",
+        "required": true,
+        "type": "checkbox",
+        "options": [
+          {
+            "name": "Marca",
+            "value": "brand"
+          },
+          {
+            "name": "Website",
+            "value": "website"
+          },
+          {
+            "name": "Redesign",
+            "value": "redesign"
+          },
+          {
+            "name": "Naming",
+            "value": "naming"
+          },
+          {
+            "name": "Redes Sociais",
+            "value": "social-media"
+          }
+        ],
+        "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço."
+      },
+      {
+        "name": "yourContact",
+        "title": "Por onde posso lhe contatar?",
+        "required": true,
+        "type": "checkbox",
+        "options": [
+          {
+            "name": "E-mail",
+            "value": "email",
+            "field": {
+              "name": "name",
+              "required": false,
+              "type": "email",
+              "placeholder": "Ex.: contact@brstorm.design"
+            }
+          },
+          {
+            "name": "WhatsApp",
+            "value": "whatsapp",
+            "field": {
+              "name": "phone",
+              "required": false,
+              "type": "tel",
+              "placeholder": "Ex.: (51) 98888-7777"
+            }
+          },
+          {
+            "name": "Outros",
+            "value": "other",
+            "field": {
+              "name": "otherContact",
+              "required": false,
+              "type": "text",
+              "placeholder": "Ex.: Instagram: @brstorm.design"
+            }
+          }
+        ]
+      }
+    ],
+    "submit": "Enviar Solicitação"
+  },
+  "contactSuccess": {
+    "title": {
+      "thanks": "Muito Obrigado!",
+      "contactYou": "Agradeçemos seu interesse, entraremos em contato em breve.",
+      "socialText": "Enquanto isso, lhe convidamos a conhecer nossas redes sociais e ver nossos projetos mais recentes."
+    }
+  },
   "landingPage": {
     "header": {
       "items": [
