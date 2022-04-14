@@ -5,6 +5,6 @@ export default function TextInput({ name, type, placeholder, required }) {
   const props = arguments[0];
   
   return (
-    <input {...props} className={styles.field} />
+    <input {...props} className={styles.field} id={name} />
   )
 }
