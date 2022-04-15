@@ -1,0 +1,57 @@
+@use "../../../styles/scss/colors";
+
+.input {
+  appearance: none;
+
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  border: 1px solid colors.$gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &[type="radio"], &[type="radio"]::before, &[type="radio"]::after {
+    border-radius: 50%;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 150ms ease-in-out;
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  &::after {
+    /* clip-path: path('M7.90121 1.19045L3.09655 5.90417C2.96556 6.03267 2.75405 6.03184 2.62412 5.9023L0.0968921 3.38261C-0.0330314 3.25307 -0.0321963 3.04387 0.0988129 2.91535L0.731282 2.29487C0.862263 2.16638 1.07378 2.1672 1.20371 2.29677L2.86824 3.95636L6.80331 0.0958303C6.93429 -0.0326651 7.14581 -0.0318388 7.27573 0.0977028L7.9031 0.723192C8.03303 0.852761 8.03219 1.06196 7.90121 1.19045Z'); */
+    background-color: colors.$gray;
+    width: 16px;
+    height: 16px;
+    z-index: 1;
+  }
+
+  &::before {
+    background-color: colors.$black;
+    width: 50%;
+    height: 37.5%;
+    mask-image: url("/images/check.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    z-index: 2;
+  }
+
+  &:checked {
+    &::before,
+    &::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
