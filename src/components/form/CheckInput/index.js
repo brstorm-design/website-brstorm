@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './CheckInput.module.scss';
 
-export default function CheckInput({ name, type, required, collapse }) {
+export default function CheckInput({ value, name, type, required, collapse }) {
 
   function handleChange(e) {
     const box = e.target.parentElement;
@@ -25,8 +25,9 @@ export default function CheckInput({ name, type, required, collapse }) {
     <input
       onChange={handleChange}
       className={styles.input}
-      id={name}
-      name={'service'}
+      value={value}
+      id={value}
+      name={name}
       type={type}
       required={!!required}
     />
