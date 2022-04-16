@@ -1,0 +1,53 @@
+@use "../../../styles/scss/colors";
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  border-image: linear-gradient(270deg, #55555500 0%, #555555ff 100%) 1;
+  background-color: colors.$black;
+  padding: 16px;
+  border-radius: 2px;
+  margin: 24px auto;
+  cursor: pointer;
+  color: colors.$ghost;
+  transition: all 350ms ease;
+  
+  &:global(.selected) {
+    border-image: linear-gradient(270deg, colors.$gray 0%, colors.$gray 100%) 1;
+    span {
+      color: colors.$gray;
+    }
+    input {
+      border-color: colors.$gray;
+    }
+  }
+
+  .collapseContent {
+    flex-basis: 100%;
+    color: colors.$gray;
+    margin-left: calc(24px + 16px);
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  & > div {
+    flex-basis: 100%;
+    opacity: 0;
+    transition: all 250ms ease;
+    
+    &:global(.show) {
+      opacity: 1;
+    }
+  }
+  
+  span {
+    transition: all 350ms ease;
+    color: inherit;
+    margin-left: 16px;
+  }
+
+  &:hover {
+    border-image: linear-gradient(270deg, colors.$ghost 0%, colors.$ghost 100%) 1;
+  }
+}
