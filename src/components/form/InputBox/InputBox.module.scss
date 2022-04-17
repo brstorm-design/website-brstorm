@@ -1,7 +1,9 @@
 @use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
 
 .box {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   border: 1px solid;
   border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
@@ -12,6 +14,10 @@
   cursor: pointer;
   color: colors.$carbon;
   transition: all 350ms ease;
+  
+  @include mixins.sm {
+    padding: 20px 40px 20px 20px;
+  }
   
   &:global(.selected) {
     border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
@@ -32,6 +38,11 @@
     &.nested {
       padding: 8px 0 24px 0px;
       margin-right: 16px;
+      
+      @include mixins.sm {
+        margin-right: 0;
+        padding: 12px 0 8px 0px;
+      }
     }
   }
 
