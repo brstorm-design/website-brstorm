@@ -16,7 +16,7 @@ export default function InputBox({ children, name, value, title, type, required 
     }
   }, []);
 
-  function handlePointerEnter() {
+  function handleMouseEnter() {
     if (label.current.control.checked) {
       return;
     } else {
@@ -24,7 +24,7 @@ export default function InputBox({ children, name, value, title, type, required 
     }
   }
 
-  function handlePointerLeave() {
+  function handleMouseLeave() {
     if (label.current.control.checked) {
       return;
     } else {
@@ -35,8 +35,8 @@ export default function InputBox({ children, name, value, title, type, required 
   return (
     <label
       ref={label}
-      onPointerEnter={type === 'checkbox' ? handlePointerEnter : null}
-      onPointerLeave={type === 'checkbox' ? handlePointerLeave : null}
+      onMouseEnter={type === 'checkbox' ? handleMouseEnter : null}
+      onMouseLeave={type === 'checkbox' ? handleMouseLeave : null}
       htmlFor={value}
       className={styles.box}
     >
