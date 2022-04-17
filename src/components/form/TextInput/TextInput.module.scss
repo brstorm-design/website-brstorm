@@ -1,7 +1,7 @@
 @use "../../../styles/scss/colors";
 
-.field {
-  background-color: colors.$dark;
+.textField {
+  background-color: colors.$black;
   border-style: solid;
   border-width: 1px;
   border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;

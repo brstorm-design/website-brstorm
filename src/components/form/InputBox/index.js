@@ -17,7 +17,6 @@ export default function InputBox({ children, name, value, title, type, required 
   }, []);
 
   function handlePointerEnter() {
-    console.log(collapse);
     if (label.current.control.checked) {
       return;
     } else {
@@ -47,7 +46,7 @@ export default function InputBox({ children, name, value, title, type, required 
       {
         children ? (
           <div className="collapse" id={`collapse-${value}`}>
-            <div className={styles.collapseContent}>{children}</div>
+            <div className={`${styles.collapseContent} ${typeof children === 'object' ? styles.nested : ''}`}>{children}</div>
           </div>
         ) : (
           null

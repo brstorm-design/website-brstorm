@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './TextInput.module.scss';
 
 export default function TextInput({ name, placeholder, required }) {
+  const inputProps = {name, placeholder, required};
   const [height, setHeight] = useState('auto');
   const field = useRef(null);
-  const props = arguments[0];
 
   function resize() {
     setHeight('auto');
@@ -12,16 +12,16 @@ export default function TextInput({ name, placeholder, required }) {
   }
 
   useEffect(() => {
-    document.querySelector('textarea').addEventListener('input', resize, false);
-    return () => document.querySelector('textarea').removeEventListener('input', resize, false);
+    field.current.addEventListener('input', resize, false);
+    return () => field.current.removeEventListener('input', resize, false);
   }, [])
 
   return (
     <textarea
-      {...props}
+      {...inputProps}
       ref={field}
       rows="1"
-      className={styles.field}
+      className={styles.textField}
       style={{ height: height }}
     />
   )

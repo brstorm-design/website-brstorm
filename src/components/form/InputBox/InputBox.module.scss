@@ -6,7 +6,7 @@
   border: 1px solid;
   border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
   background-color: colors.$black;
-  padding: 16px;
+  padding: 16px 40px 16px 16px;
   border-radius: 2px;
   margin: 24px auto;
   cursor: pointer;
@@ -27,14 +27,18 @@
     flex-basis: 100%;
     color: colors.$darkGray;
     margin-left: calc(24px + 16px);
-    padding-top: 24px;
-    padding-bottom: 16px;
+    padding: 24px 0 16px 0px;
+    
+    &.nested {
+      padding: 8px 0 24px 0px;
+      margin-right: 16px;
+    }
   }
 
   & > div {
     flex-basis: 100%;
     opacity: 0;
-    transition: all 250ms ease;
+    transition: all 350ms ease;
     
     &:global(.show) {
       opacity: 1;
@@ -49,5 +53,16 @@
 
   &:hover {
     border-image: linear-gradient(90deg, colors.$carbon 0%, colors.$carbon 100%) 1;
+  }
+
+  // nested text input, last question
+  textarea {
+    border-image: none;
+    border: 0;
+    border-bottom: 1px solid colors.$darkGray;
+
+    &:hover {
+      border-image: none;
+    }
   }
 }
