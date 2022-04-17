@@ -43,7 +43,7 @@
         color: colors.$dark;
       }
       small {
-        color: colors.$ghost;
+        color: colors.$carbon;
       }
       .number {
         background: colors.$lightGray;
@@ -75,7 +75,7 @@
   left: -65px;
   height: calc(100% * 8.6);
   width: 1px;
-  border-left: 1px solid colors.$ghost;
+  border-left: 1px solid colors.$carbon;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,7 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  color: colors.$gray;
+  color: colors.$darkGray;
 
   &::after {
     content: "";
@@ -111,6 +111,6 @@
     left: 50%;
     height: calc(100% + 205px);
     width: 1px;
-    border-left: 1px dashed colors.$ghost;
+    border-left: 1px dashed colors.$carbon;
   }
 }

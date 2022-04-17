@@ -55,7 +55,7 @@
     align-items: center;
 
     svg {
-      fill: colors.$gray;
+      fill: colors.$darkGray;
       margin-left: 7px;
     }
   }
@@ -154,7 +154,7 @@
 }
 
 .footerText {
-  border-top: 1px solid colors.$ghost;
+  border-top: 1px solid colors.$carbon;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;

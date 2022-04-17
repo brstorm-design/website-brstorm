@@ -63,16 +63,16 @@ html {
     background-color: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: rgba($color: colors.$gray, $alpha: 0.6);
+    background-color: rgba($color: colors.$darkGray, $alpha: 0.6);
     border-radius: 1000px;
     transition: all 350ms ease;
 
     &:hover {
-      background-color: color.adjust(colors.$gray, $lightness: -10%);
+      background-color: color.adjust(colors.$darkGray, $lightness: -10%);
     }
 
     &:active {
-      background-color: color.adjust(colors.$gray, $lightness: -30%);
+      background-color: color.adjust(colors.$darkGray, $lightness: -30%);
     }
   }
 }

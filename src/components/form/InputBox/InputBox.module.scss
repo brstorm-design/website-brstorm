@@ -10,22 +10,22 @@
   border-radius: 2px;
   margin: 24px auto;
   cursor: pointer;
-  color: colors.$ghost;
+  color: colors.$carbon;
   transition: all 350ms ease;
   
   &:global(.selected) {
-    border-image: linear-gradient(270deg, colors.$gray 0%, colors.$gray 100%) 1;
+    border-image: linear-gradient(270deg, colors.$darkGray 0%, colors.$darkGray 100%) 1;
     span {
-      color: colors.$gray;
+      color: colors.$darkGray;
     }
     input {
-      border-color: colors.$gray;
+      border-color: colors.$darkGray;
     }
   }
 
   .collapseContent {
     flex-basis: 100%;
-    color: colors.$gray;
+    color: colors.$darkGray;
     margin-left: calc(24px + 16px);
     padding-top: 24px;
     padding-bottom: 16px;
@@ -48,6 +48,6 @@
   }
 
   &:hover {
-    border-image: linear-gradient(270deg, colors.$ghost 0%, colors.$ghost 100%) 1;
+    border-image: linear-gradient(270deg, colors.$carbon 0%, colors.$carbon 100%) 1;
   }
 }

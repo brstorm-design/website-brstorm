@@ -43,7 +43,7 @@
 
 .pack {
   background-color: colors.$dark;
-  border: 1px solid colors.$ghost;
+  border: 1px solid colors.$carbon;
   padding: 50px 40px;
   opacity: 0.5;
   transition: all 350ms ease;
@@ -59,7 +59,7 @@
 
   p {
     margin-bottom: 0;
-    color: colors.$ghost;
+    color: colors.$carbon;
   }
 
   //Card Header
@@ -77,8 +77,8 @@
 
   //Card Body
   & > div:nth-child(2) {
-    border-top: 1px solid colors.$ghost;
-    border-bottom: 1px solid colors.$ghost;
+    border-top: 1px solid colors.$carbon;
+    border-bottom: 1px solid colors.$carbon;
     padding: 40px 0;
     margin: 50px 0;
 

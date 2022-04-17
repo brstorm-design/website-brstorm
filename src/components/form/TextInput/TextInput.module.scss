@@ -15,15 +15,15 @@
   
   &:focus-visible {
     outline: 0;
-    border-image: linear-gradient(270deg, colors.$gray 0%, colors.$gray 100%) 1;
+    border-image: linear-gradient(270deg, colors.$darkGray 0%, colors.$darkGray 100%) 1;
   }
   
   &:hover {
-    border-image: linear-gradient(270deg, colors.$ghost 0%, colors.$ghost 100%) 1;
+    border-image: linear-gradient(270deg, colors.$carbon 0%, colors.$carbon 100%) 1;
   }
 
   &::placeholder {
-    color: colors.$ghost;
+    color: colors.$carbon;
   }
 }
 

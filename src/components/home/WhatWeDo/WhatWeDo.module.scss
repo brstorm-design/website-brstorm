@@ -26,11 +26,11 @@
     }
     a {
       display: none;
-      color: colors.$ghost !important;
+      color: colors.$carbon !important;
       svg {
         margin-left: 5px;
         path {
-          color: colors.$ghost;
+          color: colors.$carbon;
         }
       }
     }
@@ -59,7 +59,7 @@
   text-align: center;
 
   h3 {
-    color: colors.$gray;
+    color: colors.$darkGray;
     margin: 0 auto;
   }
   h1 {
