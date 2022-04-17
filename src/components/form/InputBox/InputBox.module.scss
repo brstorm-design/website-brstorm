@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   border: 1px solid;
-  border-image: linear-gradient(270deg, #55555500 0%, #555555ff 100%) 1;
+  border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
   background-color: colors.$black;
   padding: 16px;
   border-radius: 2px;
@@ -14,7 +14,7 @@
   transition: all 350ms ease;
   
   &:global(.selected) {
-    border-image: linear-gradient(270deg, colors.$darkGray 0%, colors.$darkGray 100%) 1;
+    border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1;
     span {
       color: colors.$darkGray;
     }
@@ -48,6 +48,6 @@
   }
 
   &:hover {
-    border-image: linear-gradient(270deg, colors.$carbon 0%, colors.$carbon 100%) 1;
+    border-image: linear-gradient(90deg, colors.$carbon 0%, colors.$carbon 100%) 1;
   }
 }

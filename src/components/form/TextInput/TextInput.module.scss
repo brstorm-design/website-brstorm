@@ -4,7 +4,7 @@
   background-color: colors.$dark;
   border-style: solid;
   border-width: 1px;
-  border-image: linear-gradient(270deg, #55555500 0%, #555555ff 100%) 1;
+  border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
   border-radius: 2px;
   padding: 16px;
   width: 100%;
@@ -15,11 +15,11 @@
   
   &:focus-visible {
     outline: 0;
-    border-image: linear-gradient(270deg, colors.$darkGray 0%, colors.$darkGray 100%) 1;
+    border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1;
   }
   
   &:hover {
-    border-image: linear-gradient(270deg, colors.$carbon 0%, colors.$carbon 100%) 1;
+    border-image: linear-gradient(90deg, colors.$carbon 0%, colors.$carbon 100%) 1;
   }
 
   &::placeholder {
