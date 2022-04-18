@@ -415,8 +415,8 @@
     },
     "hero": {
       "title": "Hi",
-      "subtitle": "We will bring value to",
-      "text": "We prepared a brief presentation for you to better know us and the solutions we provide. If you are interested, let's schedule a meeting to talk more."
+      "subtitle": "We will help Bronzo Grow",
+      "text": "We prepared a brief presentation for you to better know us and the solutions we provide."
     },
     "brand": {
       "details": {
@@ -608,9 +608,47 @@
     },
     "web": {
       "details": {
-        "title": "What is a Web Design Project",
-        "subtitle": "Out of sight, out of mind!",
-        "text": "<p>Well-developed websites not only draw attention for their aesthetics, but also bring countless benefits to the company.</p><br/><p>They provide a simple, direct and interactive means by which the public can learn about the company and the brand, as well as its visions, values and missions. Where it is possible to disseminate various content related to the company.</p>"
+        "title": "Out of sight, out of mind!",
+        "subtitle": "Why invest in a website?",
+        "text": "<p>Did you ever think about <strong>having a showcase</strong> that can be seen anywhere? And be able to <strong>sell 24h a day, 7 days a week?</strong> That's the potential of a website.</p><p><strong>A well-planned website</strong> greatly expands the boundaries of the business! Without a website, your business is invisible to the thousands of <strong>people who search for your services every day on Google.</strong></p>"
+      },
+      "whyUs": {
+        "title": "Reasons Why Hire Us",
+        "text": "We always strive for the best, in everything\nwe do we always focus on delivering:",
+        "cards": [
+          {
+            "title": "Ideation and Strategy",
+            "body": "We explore and deeply understand every detail of each demand."
+          },
+          {
+            "title": "Full Customization",
+            "body": "We design your website tailor-made, 100% exclusive layouts for your brand."
+          },
+          {
+            "title": "Fast and Intuitive",
+            "body": "We work with cutting-edge technology that guarantees greater speed and smoothness in navigating."
+          },
+          {
+            "title": "Premium Support",
+            "body": "You will never be helpless, you can contact us whenever you need."
+          },
+          {
+            "title": "Responsiveness",
+            "body": "Your website at your fingertips! We create a version for each device: PC, Tablet and Smartphone."
+          },
+          {
+            "title": "Google Analytics",
+            "body": "Monitor your website traffic! We configure and make your Google Analytics available."
+          },
+          {
+            "title": "Search Engine Optimization",
+            "body": "We optimize the project so that your site is well placed in Google searches."
+          },
+          {
+            "title": "Integration",
+            "body": "Integration with Email Marketing, Social Networks, Google Analytics, WhatsApp…"
+          }
+        ]
       },
       "method": {
         "title": "Creative Process Steps",
@@ -618,35 +656,47 @@
         "steps": [
           {
             "icon": "img-icon.svg",
-            "name": "Briefing",
-            "text": "Collection of all essential information for project execution."
+            "name": "Strategy",
+            "text": "Understanding of the business goals and mapping of the project's needs."
           },
           {
             "icon": "img-icon.svg",
-            "name": "Layout",
-            "text": "Architecture and organization of project content."
+            "name": "Structure",
+            "text": "Content architecture and organization, sketching of the skeleton and page navigation."
           },
           {
             "icon": "img-icon.svg",
             "name": "Design",
-            "text": "Definition of all guidelines and visual aspects of the project."
+            "text": "Definition of all guidelines and visual aspects such as text, typography, shapes and colors."
           },
           {
             "icon": "img-icon.svg",
             "name": "Development",
-            "text": "Conversion of all visual components into interactive and functional items."
+            "text": "Coding of the visual components and creation of interactive and functional items."
           },
           {
             "icon": "img-icon.svg",
             "name": "Delivery",
-            "text": "Project implementation, hosting and publishing."
+            "text": "Testing and bug fixing, implementation and hosting, redirects and project publishing."
           },
           {
             "icon": "img-icon.svg",
             "name": "Support",
-            "text": "Period for adjustments and corrections of any bugs."
+            "text": "Provision of a project use guide accompanied by training in handling."
           }
         ]
+      },
+      "addons": {
+        "title": "Website \nAdd-ons",
+        "text": "Increase your website's reach potential with these add-ons. Apply along with your order.",
+        "blog": {
+          "title": "Blog",
+          "body": "Content creation portal aimed at reaching and maintaining the relationship with the target audience."
+        },
+        "langs": {
+          "title": "Extra Languages",
+          "body": "We live in the age of Globalization! Make your website available in multiple languages and win international customers."
+        }
       },
       "deliverables": {
         "title": "The Best Choice for \n Your Business",
@@ -1087,7 +1137,8 @@
     "bookAppointment": "Book an Appointment",
     "seeMore": "See More",
     "contactUs": "Contact Us",
-    "scrollToTop": "Scroll to Top"
+    "scrollToTop": "Scroll to Top",
+    "seeHow": "See How"
   },
   "fullportfolio": [
     {

@@ -10,6 +10,7 @@ import Pricing from "src/components/pitch/Pricing";
 import Contact from "src/components/home/Contact";
 import Footer from "src/layouts/Footer";
 import Projects from "src/components/home/Projects";
+import AddOns from "./AddOns";
 
 export default function Pitch({ props }) {
   const pitch = props.content.pitch;
@@ -33,6 +34,13 @@ export default function Pitch({ props }) {
       <WhyUs content={home.whyUs} pitch />
       <Methodology content={pitchContent.method} pitch />
       <Pricing content={pitchContent.deliverables} />
+      {
+        pitchContent['addons'] ? (
+          <AddOns content={pitchContent.addons} />
+        ) : (
+          null
+        )
+      }
       <Contact content={pitch.contact} common={common} />
 
       <Footer content={home.footer} common={common} />

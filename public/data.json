@@ -7,7 +7,7 @@
       "businessName": "Bronzo",
       "parameters": {
         "langs": ["en", "pt"],
-        "services": [0],
+        "services": [0, 1],
         "content": [0, 2]
       },
       "portfolio": [
