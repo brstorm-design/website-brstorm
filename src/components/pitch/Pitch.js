@@ -12,6 +12,7 @@ import Footer from "src/layouts/Footer";
 import Projects from "src/components/home/Projects";
 import AddOns from "./AddOns";
 import About from "./About";
+import Cover from "./Cover";
 
 export default function Pitch({ props }) {
   const pitch = props.content.pitch;
@@ -29,11 +30,17 @@ export default function Pitch({ props }) {
       </Head>
       <Header content={pitch.header} common={common} />
 
-      <Hero client={client} content={pitch.hero} common={common} />
+      {
+        service === 'web' ? (
+          <Cover />
+        ) : (
+          <Hero client={client} content={pitch.hero} common={common} />
+        )
+      }
       {
         service === 'web' ? (
           <About content={pitchContent.details} />
-          ) : (
+        ) : (
           <Details content={pitchContent.details} />
         )
       }

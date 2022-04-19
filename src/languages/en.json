@@ -415,7 +415,7 @@
     },
     "hero": {
       "title": "Hi",
-      "subtitle": "We will help Bronzo Grow",
+      "subtitle": "We will bring value to",
       "text": "We prepared a brief presentation for you to better know us and the solutions we provide."
     },
     "brand": {
@@ -607,6 +607,11 @@
       }
     },
     "web": {
+      "cover": {
+        "title": "Hi, Fabio and Sara!",
+        "subtitle": "We will help Bronzo grow.",
+        "text": "We prepared a brief presentation for you to better know us and the solutions we provide."
+      },
       "details": {
         "title": "Out of sight, out of mind!",
         "subtitle": "Why invest in a website?",

@@ -15,7 +15,7 @@ export default function About({ content }) {
             </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
-            <img className="img-fluid" src={`${rootPath}/images/wireframes/project-details.svg`} alt="" />
+            <img className="img-fluid" src={`${rootPath}/images/illustrations/venus.png`} alt="" />
           </div>
         </div>
       </div>
