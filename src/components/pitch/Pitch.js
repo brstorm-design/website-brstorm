@@ -37,7 +37,7 @@ export default function Pitch({ props }) {
           <Details content={pitchContent.details} />
         )
       }
-      <Projects format="slider" content={home.projects} common={common} client={client} />
+      <Projects format="stairs" allProjects={props.content.fullportfolio} content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
       <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
       <Methodology content={pitchContent.method} pitch service={service} />
