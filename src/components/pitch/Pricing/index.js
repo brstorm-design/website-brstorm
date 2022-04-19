@@ -47,7 +47,7 @@ export default function Pricing({ content }) {
                             return (
                               <li key={`inc-${includedIndex}`}>
                                 <a href={`#item-${includedIndex}-${packIndex}`} data-bs-toggle="collapse" aria-expanded="false" className="collapsed">
-                                  <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none" /><path /></svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#E93CAC"><path d="M0 0h24v24H0V0z" fill="none" /><path /></svg>
                                   <h6>{included.name}</h6>
                                 </a>
                                 <div id={`item-${includedIndex}-${packIndex}`} className="collapse">
