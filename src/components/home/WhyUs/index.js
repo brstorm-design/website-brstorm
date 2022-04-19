@@ -24,7 +24,6 @@ export default function WhyUs({ content, pitch, service }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
-  console.log(service);
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -56,16 +55,16 @@ export default function WhyUs({ content, pitch, service }) {
     3: <Delivery />,
   }
 
-  const webIcons = [
-    <Infographic />,
-    <Autonomy />,
-    <Browser />,
-    <Support />,
-    <Responsive />,
-    <CircularArrows />,
-    <Scanning />,
-    <Connection />,
-  ];
+  const webIcons = {
+    0: <Infographic />,
+    1: <Autonomy />,
+    2: <Browser />,
+    3: <Support />,
+    4: <Responsive />,
+    5: <CircularArrows />,
+    6: <Scanning />,
+    7: <Connection />,
+  };
 
   return (
     <section className={styles.section} id="why-us">
