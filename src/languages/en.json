@@ -655,32 +655,32 @@
         "subtitle": "Meet Our Method",
         "steps": [
           {
-            "icon": "img-icon.svg",
+            "icon": "Venn.svg",
             "name": "Strategy",
             "text": "Understanding of the business goals and mapping of the project's needs."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "FlowChart.svg",
             "name": "Structure",
             "text": "Content architecture and organization, sketching of the skeleton and page navigation."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Layers.svg",
             "name": "Design",
             "text": "Definition of all guidelines and visual aspects such as text, typography, shapes and colors."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Physics.svg",
             "name": "Development",
             "text": "Coding of the visual components and creation of interactive and functional items."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Computer.svg",
             "name": "Delivery",
             "text": "Testing and bug fixing, implementation and hosting, redirects and project publishing."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Certificate.svg",
             "name": "Support",
             "text": "Provision of a project use guide accompanied by training in handling."
           }

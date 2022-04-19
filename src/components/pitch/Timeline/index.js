@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { getMaxHeight } from 'src/modules/App';
+import { rootPath } from 'src/utils/env';
 import styles from './Timeline.module.scss';
 
 export default function Timeline({ steps, service }) {
   const [lineHeight, setLineHeight] = useState(0);
   const line = useRef(null);
+
 
   function Line() {
     return <div
@@ -63,7 +65,7 @@ export default function Timeline({ steps, service }) {
             return (
               <div key={`step-${index}`}>
                 <span style={{ opacity: service === 'web' ? '0' : '1' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
-                {/* <img src={`${rootPath}/images/wireframes/img-icon.svg`} alt="" /> */}
+                <img src={`${rootPath}/images/icons/${step.icon}`} alt="" />
                 <h5>{step.name}</h5>
                 <small>{step.text}</small>
                 {index === 0 ? <Line /> : null}
