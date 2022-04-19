@@ -613,8 +613,8 @@
         "text": "<p>Did you ever think about <strong>having a showcase</strong> that can be seen anywhere? And be able to <strong>sell 24h a day, 7 days a week?</strong> That's the potential of a website.</p><p><strong>A well-planned website</strong> greatly expands the boundaries of the business! Without a website, your business is invisible to the thousands of <strong>people who search for your services every day on Google.</strong></p>"
       },
       "whyUs": {
-        "title": "Reasons Why Hire Us",
-        "text": "We always strive for the best, in everything\nwe do we always focus on delivering:",
+        "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",
+        "subtitle": "We always strive for the best, in everything \nwe do we always focus on delivering:",
         "cards": [
           {
             "title": "Ideation and Strategy",

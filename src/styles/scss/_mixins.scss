@@ -80,15 +80,15 @@
   @keyframes logo-animation {
     0%,
     15% {
-      stroke-dashoffset: 15%;
+      stroke-dashoffset: 0%;
       stroke-dasharray: 0 100%;
       stroke-width: 0;
     }
     85%,
     100% {
-      stroke-dashoffset: 85%;
+      stroke-dashoffset: 100%;
       stroke-dasharray: 100% 0;
-      stroke-width: 0.4;
+      stroke-width: 1;
     }
   }
 }

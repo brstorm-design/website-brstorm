@@ -1,15 +1,30 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Autonomy from 'src/components/svg/reasons/Autonomy';
-import Delivery from 'src/components/svg/reasons/Delivery';
-import Support from 'src/components/svg/reasons/Support';
-import TailorMade from 'src/components/svg/reasons/TailorMade';
+
+// brand/default icons
+import Autonomy from 'public/images/icons/Replace.svg';
+import Support from 'public/images/icons/Feedback.svg';
+import Delivery from 'public/images/icons/Target.svg';
+import TailorMade from 'public/images/icons/Pen.svg';
+
+// web icons
+// import Autonomy from 'public/images/icons/Replace.svg';
+// import Support from 'public/images/icons/Feedback.svg';
+import Infographic from 'public/images/icons/Infographic.svg';
+import Browser from 'public/images/icons/Browser.svg';
+import Responsive from 'public/images/icons/Responsive.svg';
+import CircularArrows from 'public/images/icons/CircularArrows.svg';
+import Scanning from 'public/images/icons/Scanning.svg';
+import Connection from 'public/images/icons/Connection.svg';
+
+
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './WhyUs.module.scss';
 
-export default function WhyUs({ content, pitch }) {
+export default function WhyUs({ content, pitch, service }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
+  console.log(service);
 
   useEffect(() => {
     let targets = Array.from(element.current.children);
@@ -35,11 +50,22 @@ export default function WhyUs({ content, pitch }) {
   }, [animations]);
 
   const icons = {
-    0: <Autonomy styles={styles} />,
-    1: <Support styles={styles} />,
-    2: <TailorMade styles={styles} />,
-    3: <Delivery styles={styles} />,
+    0: <Autonomy />,
+    1: <Support />,
+    2: <TailorMade />,
+    3: <Delivery />,
   }
+
+  const webIcons = [
+    <Infographic />,
+    <Autonomy />,
+    <Browser />,
+    <Support />,
+    <Responsive />,
+    <CircularArrows />,
+    <Scanning />,
+    <Connection />,
+  ];
 
   return (
     <section className={styles.section} id="why-us">
@@ -48,13 +74,15 @@ export default function WhyUs({ content, pitch }) {
           <h1 dangerouslySetInnerHTML={{ __html: content.title }} />
           <p>{content.subtitle}</p>
         </div>
-        <div className="row gy-4 gy-md-0" ref={element}>
+        <div className="row gy-4" ref={element}>
           {
             content.cards.map((item, index) => {
               return (
                 <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>
-                    {icons[index]}
+                    {
+                      service === 'web' ? webIcons[index] : icons[index]
+                    }
                     <h5 className={styles.boxBottom}>{item.title}</h5>
                     <small>{item.body}</small>
                   </div>

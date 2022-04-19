@@ -39,7 +39,7 @@ export default function Pitch({ props }) {
       }
       <Projects content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
-      <WhyUs content={home.whyUs} pitch />
+      <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
       <Methodology content={pitchContent.method} pitch service={service} />
       <Pricing content={pitchContent.deliverables} />
       {

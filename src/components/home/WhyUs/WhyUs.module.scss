@@ -1,7 +1,9 @@
-@use 'sass:math';
+@use "sass:math";
 @use "sass:list";
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
+
+@include mixins.logo-animation;
 
 .section {
   margin-top: 250px;
@@ -41,57 +43,14 @@
   border: 1px solid;
   border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
 
+  & svg {
+    animation: logo-animation 3.5s ease infinite alternate;
+    width: 40px;
+    height: 40px;
+  }
+
   h5 {
     margin-top: 25px;
     margin-bottom: 25px;
-  }
-}
-
-$iconPaths: (
-  "autonomy": (
-    "arrowBody": 42,
-    "arrowTip": 12,
-    "boxLine": 17,
-    "boxMiddle": 62,
-    "boxTop": 62,
-    "boxBottom": 62,
-  ),
-  "support": (
-    "bubble": 155,
-    "star": 60,
-  ),
-  "delivery": (
-    "arrowFletching1": 30,
-    "arrowFletching2": 30,
-    "arrowShaft": 21,
-    "targetInner": 15,
-    "targetMiddle": 42,
-    "targetOuter": 70,
-  ),
-  "tailorMade": (
-    "penTip": 72,
-    "penBase": 40,
-    "penLine": 15,
-    "penCircle": 13,
-    "dot1": 13,
-    "dot2": 13,
-    "dot3": 13,
-    "dot4": 13,
-    "straightLine1": 19,
-    "straightLine2": 19,
-    "square": 17,
-    "curve1": 32,
-    "curve2": 32,
-  ),
-);
-
-@each $icon, $paths in $iconPaths {
-  @each $pathName, $size in $paths {
-    @include mixins.stroke-animation(#{$icon}__#{$pathName}, $size);
-    $i: list.index(($paths), ($pathName $size));
-    .#{$pathName} {
-      animation: #{$icon}__#{$pathName} 3s ease #{0 + math.div($i - 1, 8)}s infinite alternate both;
-      stroke-dasharray: $size;
-    }
   }
 }

@@ -3,7 +3,6 @@ import { rootPath } from 'src/utils/env';
 import styles from './About.module.scss';
 
 export default function About({ content }) {
-  console.log(content);
   return (
     <section className={styles.section}>
       <div className="container">
