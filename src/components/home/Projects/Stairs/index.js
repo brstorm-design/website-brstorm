@@ -6,6 +6,7 @@ import Arrow from 'public/images/arrow-forward.svg';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import Link from 'next/link';
 import SeeMore from 'src/components/common/SeeMore';
+import webImages from 'src/utils/webImages';
 
 export default function Stairs({ content, common, portfolio }) {
   const projects = useRef(null);
@@ -48,7 +49,7 @@ export default function Stairs({ content, common, portfolio }) {
             return (
               <div key={`projects-${index}`} className="col-12 col-lg-6">
                 <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                  <Image placeholder="blur" src={images[item.slug]} layout="responsive" />
+                  <Image placeholder="blur" src={webImages[item.slug]} layout="responsive" />
                   <div id="overlay-details">
                     <h5>{item.name}</h5>
                     <span className="details">{item.type}</span>
