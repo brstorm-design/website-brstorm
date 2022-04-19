@@ -24,6 +24,10 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
           <link rel="icon" href={`${rootPath}/favicon.svg`} />
           <meta property="og:image" content="/images/cover.png" />
+          <meta
+            name="description"
+            content="We specialize in creating unique and memorable projects exploring the best in each business. Let's do a remarkable project?"
+          />
         </Head>
         <body>
           <NoScript />
