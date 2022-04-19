@@ -615,97 +615,147 @@
     },
     "web": {
       "details": {
-        "title": "O Que é um Projeto de Web Design",
-        "subtitle": "Quem não é visto não é lembrado!",
-        "text": "<p>Websites bem desenvolvidos não só chamam a atenção por sua estética, como também trazem inúmeros benfícios para a empresa.</p><br/><p>Eles proporcionam um meio simples, direto e interativo pelo qual o público pode conhecer a empresa e a marca, bem como suas visões, valores e missões. Onde é possível divulgar diversos conteúdos relacionados à empresa.</p>"
+        "title": "Out of sight, out of mind!",
+        "subtitle": "Why invest in a website?",
+        "text": "<p>Did you ever think about <strong>having a showcase</strong> that can be seen anywhere? And be able to <strong>sell 24h a day, 7 days a week?</strong> That's the potential of a website.</p><p><strong>A well-planned website</strong> greatly expands the boundaries of the business! Without a website, your business is invisible to the thousands of <strong>people who search for your services every day on Google.</strong></p>"
+      },
+      "whyUs": {
+        "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",
+        "subtitle": "We always strive for the best, in everything \nwe do we always focus on delivering:",
+        "cards": [
+          {
+            "title": "Ideation and Strategy",
+            "body": "We explore and deeply understand every detail of each demand."
+          },
+          {
+            "title": "Full Customization",
+            "body": "We design your website tailor-made, 100% exclusive layouts for your brand."
+          },
+          {
+            "title": "Fast and Intuitive",
+            "body": "We work with cutting-edge technology that guarantees greater speed and smoothness in navigating."
+          },
+          {
+            "title": "Premium Support",
+            "body": "You will never be helpless, you can contact us whenever you need."
+          },
+          {
+            "title": "Responsiveness",
+            "body": "Your website at your fingertips! We create a version for each device: PC, Tablet and Smartphone."
+          },
+          {
+            "title": "Google Analytics",
+            "body": "Monitor your website traffic! We configure and make your Google Analytics available."
+          },
+          {
+            "title": "Search Engine Optimization",
+            "body": "We optimize the project so that your site is well placed in Google searches."
+          },
+          {
+            "title": "Integration",
+            "body": "Integration with Email Marketing, Social Networks, Google Analytics, WhatsApp…"
+          }
+        ]
       },
       "method": {
-        "title": "Etapas do Processo de Criação",
-        "subtitle": "Conheça Nosso Método",
+        "title": "Creative Process Steps",
+        "subtitle": "Meet Our Method",
         "steps": [
           {
             "icon": "img-icon.svg",
-            "name": "Briefing",
-            "text": "Coleta de todas as informações essenciais para a execução do projeto."
+            "name": "Strategy",
+            "text": "Understanding of the business goals and mapping of the project's needs."
           },
           {
             "icon": "img-icon.svg",
-            "name": "Layout",
-            "text": "Arquitetura e organização do conteúdo do projeto."
+            "name": "Structure",
+            "text": "Content architecture and organization, sketching of the skeleton and page navigation."
           },
           {
             "icon": "img-icon.svg",
             "name": "Design",
-            "text": "Definição de todas as diretrizes e aspectos visuais do projeto."
+            "text": "Definition of all guidelines and visual aspects such as text, typography, shapes and colors."
           },
           {
             "icon": "img-icon.svg",
-            "name": "Desenvolvimento",
-            "text": "Conversão dos componentes visuais em itens interativos e funcionais."
+            "name": "Development",
+            "text": "Coding of the visual components and creation of interactive and functional items."
           },
           {
             "icon": "img-icon.svg",
-            "name": "Entrega",
-            "text": "Implementação, hospedagem e publicação do projeto."
+            "name": "Delivery",
+            "text": "Testing and bug fixing, implementation and hosting, redirects and project publishing."
           },
           {
             "icon": "img-icon.svg",
-            "name": "Suporte",
-            "text": "Período destinado a ajustes e correções de eventuais bugs."
+            "name": "Support",
+            "text": "Provision of a project use guide accompanied by training in handling."
           }
         ]
       },
+      "addons": {
+        "title": "Website \nAdd-ons",
+        "text": "Increase your website's reach potential with these add-ons. Apply along with your order.",
+        "blog": {
+          "title": "Blog",
+          "body": "Content creation portal aimed at reaching and maintaining the relationship with the target audience."
+        },
+        "langs": {
+          "title": "Extra Languages",
+          "body": "We live in the age of Globalization! Make your website available in multiple languages and win international customers."
+        }
+      },
       "deliverables": {
-        "title": "A Melhor Escolha \n para o Seu Negócio",
-        "subtitle": "Nossos Pacotes de Serviços",
-        "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente <br class='d-none d-lg-block'/> podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
-        "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
+        "title": "The Best Choice for \n Your Business",
+        "subtitle": "Our Service Packages",
+        "text": "No matter the size or phase of your business, <strong>we can <br class='d-none d-lg-block'/> certainly help</strong> you choose the package that suits you.",
+        "note": "Note: To find out more about our payment terms and conditions please contact us.",
         "packages": [
           {
             "name": "Single",
             "value": "£290,00",
             "shortText": "Landing Page",
-            "longText": "Ideal para a apresentação de um produto ou oferta individual, limitando-se a uma única página com estrutura similar ou equivalente aos seguintes itens:",
+            "longText": "Ideal for presenting a product or individual offer, limited to a single page with a structure similar or equivalent to the following:",
             "included": [
               {
-                "name": "Chamada",
+                "name": "Callout",
                 "items": [
-                  "Título",
-                  "Subtítulo",
-                  "Botões de Ação (\"Call To Action\")"
+                  "Title",
+                  "Subtitle",
+                  "\"Call To Action\" Buttons."
                 ]
               },
               {
-                "name": "Descição da Oferta",
+                "name": "Offer Description",
                 "items": [
-                  "Texto Curto e Persuasivo",
-                  "Tópicos com Vantagens e Benefícios"
+                  "Short and Persuasive Text",
+                  "Topics with Advantages and Benefits"
                 ]
               },
               {
-                "name": "Prova Social",
+                "name": "Social Proof",
                 "items": [
-                  "Feedback e Depoimentos",
-                  "Lista de Logos de Clientes Atendidos"
+                  "Feedback and Testimonials",
+                  "List of Served Customers' Logos"
                 ]
               },
               {
-                "name": "Imagens",
+                "name": "Images",
                 "items": [
-                  "1 a 3 Imagens Ilustrativas"
+                  "1 to 3 Illustrative Images"
                 ]
               },
               {
-                "name": "Formulários de contato",
+                "name": "Contact Forms",
                 "items": [
-                  "Redirecionamento para Caixa de Entrada ou Sistema de Mailing"
+                  "Redirection to Inbox or Mailing System"
                 ]
               },
               {
-                "name": "Redirecionamentos",
+                "name": "Redirectings",
                 "items": [
-                  "Chat WhatsApp",
-                  "Website Institucional"
+                  "WhatsApp Chat",
+                  "Institutional Website"
                 ]
               }
             ]
@@ -713,51 +763,51 @@
           {
             "name": "Business",
             "value": "£840,00",
-            "shortText": "Site Institucional",
-            "longText": "Melhor opção para ser reconhecido, lembrado e fortalecer a imagem da sua emopresa, bem como permite a apresentação de múltiplos itens, tais como:",
+            "shortText": "Institutional",
+            "longText": "Best option to be recognized, remembered and strengthen your company's image, as well as allowing the presentation of multiple items, such as:",
             "included": [
               {
-                "name": "Página Principal",
+                "name": "Home Page",
                 "items": [
-                  "Prévia de Todos os Conteúdos",
-                  "Banner Randômico",
-                  "Carrossel de Imagens",
-                  "Depoimentos",
-                  "Botões de Ação (Call To Action)"
+                  "Preview of All Content",
+                  "Random Banner",
+                  "Image Carousel",
+                  "Testimonials",
+                  "Call To Action Buttons"
                 ]
               },
               {
-                "name": "Sobre Nós",
+                "name": "About Us",
                 "items": [
-                  "Nossa Equipe",
-                  "Galeria de Fotos",
-                  "Textos Informativos",
-                  "Missão / Visão / Valores"
+                  "Our Team",
+                  "Photo Gallery",
+                  "Informative Texts",
+                  "Mission / Vision / Values"
                 ]
               },
               {
-                "name": "Produtos / Serviços",
+                "name": "Products / Services",
                 "items": [
-                  "Imagens Ilustrativas",
-                  "Textos Descritivos",
-                  "Botões de Download e/ou Redirecionamento"
+                  "Illustrative Images",
+                  "Descriptive Texts",
+                  "Download and/or Redirect buttons"
                 ]
               },
               {
-                "name": "Contato",
+                "name": "Contact",
                 "items": [
-                  "Dados de Contato (Telefone, Email, Localização...)",
-                  "Formulários",
-                  "Textos Informativos"
+                  "Contact Information (Phone, Email, Location...)",
+                  "Forms",
+                  "Informative Texts"
                 ]
               },
               {
-                "name": "Redirecionamentos",
+                "name": "Redirects",
                 "items": [
-                  "Chat WhatsApp",
-                  "Redes Sociais",
-                  "Trabalhe Conosco",
-                  "Página de Captura (Landing Page)"
+                  "WhatsApp Chat",
+                  "Social Media",
+                  "Work With Us",
+                  "Capture Page (Landing Page)"
                 ]
               }
             ]
@@ -766,72 +816,72 @@
             "name": "Commercial",
             "value": "£1560,00",
             "shortText": "E-Commerce",
-            "longText": "Feito para quem visa comercializar seus produtos e/ou serviços através de uma plataforma exclusiva otimizada para venda, contando com a seguinte estrutura:",
+            "longText": "Made for those who intend to commercialize their products and/or services through an exclusive platform optimized for sale with, but not limited to the following structure:",
             "included": [
               {
-                "name": "Área do Cliente",
+                "name": "Client Area",
                 "items": [
-                  "Login com Redes Sociais",
-                  "Cadastro Fácil e Rápido",
-                  "Gerenciamento de Compra",
-                  "Sistema Criptografado e Seguro (LGPD)"
+                  "Login With Social Media",
+                  "Easy and Fast Registration",
+                  "Purchase Management",
+                  "Sistema Criptografado e Seguro (GDPR)"
                 ]
               },
               {
-                "name": "Integrações de Compra",
+                "name": "Purchase Integrations",
                 "items": [
-                  "Dados Cadastrais",
-                  "Meios de Pagamento",
-                  "Ferramentas de Agendamento",
-                  "Sistemas de Entrega",
-                  "Sistemas de Estoque",
-                  "Sistemas de Monitoramento"
+                  "Registration Data",
+                  "Payment Options",
+                  "Scheduling Tools",
+                  "Delivery Systems",
+                  "Stock Systems",
+                  "Monitoring Systems"
                 ]
               },
               {
-                "name": "Produtos / Serviços",
+                "name": "Products / Services",
                 "items": [
-                  "Imagens Ilustrativas",
-                  "Textos Descritivos",
-                  "Botões de Compra",
-                  "Filtros de Pesquisa",
-                  "Categorias"
+                  "Illustrative Images",
+                  "Descriptive Texts",
+                  "Purchase Buttons",
+                  "Search Filters",
+                  "Categories"
                 ]
               },
               {
-                "name": "Página Principal",
+                "name": "Home Page",
                 "items": [
-                  "Prévia de Todos os Conteúdos",
-                  "Banner Randômico",
-                  "Carrossel de Imagens",
-                  "Depoimentos",
-                  "Botões de Ação (Call To Action)"
+                  "Preview of All Content",
+                  "Random Banner",
+                  "Image Carousel",
+                  "Testimonials",
+                  "Call To Action Buttons"
                 ]
               },
               {
-                "name": "Sobre Nós",
+                "name": "About Us",
                 "items": [
-                  "Nossa Equipe",
-                  "Galeria de Fotos",
-                  "Textos Informativos",
-                  "Missão / Visão / Valores"
+                  "Our Team",
+                  "Photo Gallery",
+                  "Informative Texts",
+                  "Mission / Vision / Values"
                 ]
               },
               {
-                "name": "Contato",
+                "name": "Contact",
                 "items": [
-                  "Dados de Contato (Telefone, Email, Localização...)",
-                  "Formulários",
-                  "Textos Informativos"
+                  "Contact Information (Phone, Email, Location...)",
+                  "Forms",
+                  "Informative Texts"
                 ]
               },
               {
-                "name": "Redirecionamentos",
+                "name": "Redirects",
                 "items": [
-                  "Chat WhatsApp",
-                  "Redes Sociais",
-                  "Trabalhe Conosco",
-                  "Página de Captura (Landing Page)"
+                  "WhatsApp Chat",
+                  "Social Media",
+                  "Work With Us",
+                  "Capture Page (Landing Page)"
                 ]
               }
             ]
