@@ -18,6 +18,7 @@ export default function Pitch({ props }) {
   const common = props.content.common;
   const client = props.pitch;
   const pitchContent = props.pitchContent;
+  const service = props.service.slug;
 
   return (
     <>
@@ -32,10 +33,10 @@ export default function Pitch({ props }) {
       <Projects content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
       <WhyUs content={home.whyUs} pitch />
-      <Methodology content={pitchContent.method} pitch />
+      <Methodology content={pitchContent.method} pitch service={service} />
       <Pricing content={pitchContent.deliverables} />
       {
-        pitchContent['addons'] ? (
+        service === 'web' ? (
           <AddOns content={pitchContent.addons} />
         ) : (
           null

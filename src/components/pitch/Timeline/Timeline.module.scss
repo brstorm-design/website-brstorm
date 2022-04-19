@@ -23,7 +23,6 @@
     justify-content: center;
     background-color: colors.$lightDark;
     padding: 40px 30px;
-    padding: 40px 30px;
     transition: all 500ms ease;
 
     &:last-child::before {
@@ -112,5 +111,11 @@
     height: calc(100% + 205px);
     width: 1px;
     border-left: 1px dashed colors.$carbon;
+  }
+}
+
+.cards.web {
+  & > div:not(.line) {
+    padding: 90px 60px;
   }
 }

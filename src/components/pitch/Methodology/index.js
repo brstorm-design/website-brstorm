@@ -4,7 +4,7 @@ import { getMaxHeight, getTranslateValue } from 'src/modules/App';
 import Timeline from '../Timeline';
 import styles from './Methodology.module.scss';
 
-export default function Methodology({ content, pitch }) {
+export default function Methodology({ content, pitch, service }) {
   const [mousePosition, setMousePosition] = useState(null);
 
   function move(e) {
@@ -14,14 +14,14 @@ export default function Methodology({ content, pitch }) {
   return (
     <section className={styles.section} onMouseMove={move} id="methodology">
       <div className="container">
-      {
-        pitch ? (
-          <div className={styles.title}>
-            <h3 className="gradient-bg">{content.subtitle}</h3>
-            <h1>{content.title}</h1>
-          </div>
-        ) : null
-      }
+        {
+          pitch ? (
+            <div className={styles.title}>
+              <h3 className="gradient-bg">{content.subtitle}</h3>
+              <h1>{content.title}</h1>
+            </div>
+          ) : null
+        }
         <div className="row">
           <div className="col-12 col-lg-6">
             {/* <Samothrace translateValues={mousePosition} /> */}
@@ -47,9 +47,17 @@ export default function Methodology({ content, pitch }) {
               }
             </div>
           </div>
-          <div className="col-12 col-lg-4 offset-lg-2">
-            <Timeline steps={content.steps} />
-          </div>
+          {
+            service === 'web' ? (
+              <div className="col-12 col-lg-5 offset-lg-1">
+                <Timeline steps={content.steps} service="web" />
+              </div>
+            ) : (
+              <div className="col-12 col-lg-4 offset-lg-2">
+                <Timeline steps={content.steps} />
+              </div>
+            )
+          }
         </div>
       </div>
     </section>
