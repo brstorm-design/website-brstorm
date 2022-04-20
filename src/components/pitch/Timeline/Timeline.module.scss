@@ -17,7 +17,7 @@
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
-    position: relative;
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,15 @@
     border: 1px solid;
     border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
     transition: all 500ms ease;
-    
+
+    $val: 132;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        top: #{$val}px;
+      }
+      $val: $val + 32
+    }
+
     &:last-child::before {
       content: "";
       position: absolute;
@@ -37,7 +45,7 @@
       background-color: colors.$black;
       z-index: 5;
     }
-    
+
     &.active {
       border-image: linear-gradient(180deg, #555555 100%, rgba(85, 85, 85, 0) 100%) 1;
       .number {
@@ -45,17 +53,17 @@
         color: colors.$dark;
       }
     }
-    
+
     img {
       height: 50px;
       width: 50px;
     }
-    
+
     h5 {
       margin: 20px 0;
     }
   }
-  
+
   & > div:last-child {
     .number {
       overflow: hidden;
@@ -74,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   &:last-child {
     border-left: 1px solid colors.$lightGray /* $lightGray */;
     height: 0;
@@ -97,7 +105,7 @@
   width: 40px;
   border-radius: 50%;
   color: colors.$darkGray;
-  
+
   &::after {
     content: "";
     position: absolute;
