@@ -21,7 +21,6 @@ export default function Pitch({ props }) {
   const client = props.pitch;
   const pitchContent = props.pitchContent;
   const service = props.service.slug;
-  console.log(props.content.fullportfolio);
 
   return (
     <>
