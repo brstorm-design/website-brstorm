@@ -6,7 +6,7 @@
       "name": "Fabio e Sara",
       "businessName": "Bronzo",
       "parameters": {
-        "langs": ["en", "pt"],
+        "langs": ["en"],
         "services": [0, 1],
         "content": [0, 2]
       },
