@@ -1,0 +1,64 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+
+.section {
+  margin-top: 200px;
+  p,
+  h4,
+  h2 {
+    margin-bottom: 0;
+  }
+
+  @include mixins.md {
+    margin-top: 160px;
+    h4 {
+      text-align: center;
+    }
+  }
+}
+
+.textContent {
+  & > div {
+    &:first-child {
+      padding-bottom: 60px;
+      margin-bottom: 60px;
+      border-bottom: 1px solid;
+      border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
+
+      @include mixins.lg {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  & > div {
+    &:last-child {
+      p {
+        margin: 32px 0 40px 0;
+        @include mixins.lg {
+          margin: 24px 0 30px 0;
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin: 32px 0 48px 0;
+    @include mixins.lg {
+      margin: 24px 0 32px 0;
+    }
+  }
+
+  @include mixins.lg {
+    margin-top: 60px;
+  }
+}
+
+.placeholder {
+  height: 100%;
+  background-color: colors.$lightDark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
