@@ -21,12 +21,17 @@
 
   @include mixins.lg {
     h1 {
-      text-align: left;
       margin-top: 60px;
     }
 
     h2 {
       margin-bottom: 40px;
+    }
+  }
+
+  @include mixins.sm {
+    h1 {
+      white-space: break-spaces;
     }
   }
 }

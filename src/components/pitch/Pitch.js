@@ -13,6 +13,7 @@ import Projects from "src/components/home/Projects";
 import AddOns from "./AddOns";
 import About from "./About";
 import Cover from "./Cover";
+import ContentManager from "./ContentManager";
 
 export default function Pitch({ props }) {
   const pitch = props.content.pitch;
@@ -37,6 +38,7 @@ export default function Pitch({ props }) {
           <Hero client={client} content={pitch.hero} common={common} />
         )
       }
+
       {
         service === 'web' ? (
           <About content={pitchContent.details} />
@@ -47,6 +49,13 @@ export default function Pitch({ props }) {
       <Projects format="stairs" allProjects={props.content.fullportfolio} content={home.projects} common={common} client={client} />
       <Testimonials content={home.testimonials} />
       <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
+      {
+        service === 'web' ? (
+          <ContentManager />
+        ) : (
+          null
+        )
+      }
       <Methodology content={pitchContent.method} pitch service={service} />
       <Pricing content={pitchContent.deliverables} />
       {
