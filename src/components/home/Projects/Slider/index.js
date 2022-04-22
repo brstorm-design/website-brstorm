@@ -1,19 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Slider.module.scss';
 import images from 'src/utils/images';
 import Image from 'next/image';
+import webImages from 'src/utils/webImages';
 
 export default function Slider({ content }) {
   const topRow = useRef(null);
   const bottomRow = useRef(null);
+  const [topAnimation, setTopAnimation] = useState(null);
+  const [bottomAnimation, setBottomAnimation] = useState(null);
 
-  const translateValue = 150 + ((content.portfolio.length - 4) * 33.33);
+  const translateValue = 125 + ((content.portfolio.length - 2) * 50);
   function animateSlider(target, direction) {
-    target.animate([
-      { transform: `translate3d(calc(-33.33% / 2), 0, 0)` },
+    return target.animate([
+      { transform: `translate3d(calc(-50% / 2), 0, 0)` },
       { transform: `translate3d(calc(-${translateValue}%), 0, 0)` },
     ], {
-      duration: 15000,
+      duration: 30000,
       iterations: Infinity,
       easing: 'linear',
       direction: direction,
@@ -21,21 +24,36 @@ export default function Slider({ content }) {
   }
 
   useEffect(() => {
-    animateSlider(topRow.current, 'normal');
-    animateSlider(bottomRow.current, 'reverse');
-  }, [])
+    setTopAnimation(animateSlider(topRow.current, 'normal'));
+    setBottomAnimation(animateSlider(bottomRow.current, 'reverse'));
+  }, []);
+
+  function handleEnter() {
+    topAnimation.pause();
+    bottomAnimation.pause();
+  }
+  function handleLeave() {
+    topAnimation.play();
+    bottomAnimation.play();
+  }
 
   const firstRow = content.portfolio.concat(content.portfolio);
   const secondRow = content.portfolio.concat(content.portfolio).reverse();
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="slider" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
       <div className={`row gy-4 flex-nowrap ${styles.row1}`} ref={topRow}>
         {
           firstRow.map((img, index) => {
             return (
-              <div className="col-4" key={`item-${index}`}>
-                <Image placeholder="blur" src={images[img.slug]} layout="responsive" />
+              <div key={`top-row-${index}`} className="col-12 col-lg-6">
+                <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                  <Image placeholder="blur" src={webImages[img.slug]} layout="responsive" />
+                  <div id="overlay-details">
+                    <h5>{img.name}</h5>
+                    <span className="details">{img.type}</span>
+                  </div>
+                </a>
               </div>
             )
           })
@@ -45,8 +63,14 @@ export default function Slider({ content }) {
         {
           secondRow.map((img, index) => {
             return (
-              <div className="col-4" key={`item-${index}`}>
-                <Image placeholder="blur" src={images[img.slug]} layout="responsive" />
+              <div key={`bottom-row-${index}`} className="col-12 col-lg-6">
+                <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                  <Image placeholder="blur" src={webImages[img.slug]} layout="responsive" />
+                  <div id="overlay-details">
+                    <h5>{img.name}</h5>
+                    <span className="details">{img.type}</span>
+                  </div>
+                </a>
               </div>
             )
           })

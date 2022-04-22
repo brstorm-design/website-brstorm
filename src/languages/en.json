@@ -1177,6 +1177,22 @@
       "name": "Certivale Website",
       "type": "Digital Certificates",
       "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "zero27",
+      "cover": "/images/portfolio/zero27.png",
+      "size": "6",
+      "name": "Zero27 Barbering Website",
+      "type": "Barber Shop",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+    },
+    {
+      "slug": "arca",
+      "cover": "/images/portfolio/maptrack.png",
+      "size": "6",
+      "name": "Arca Institute Website",
+      "type": "Animal Protection",
+      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
     }
   ]
 }

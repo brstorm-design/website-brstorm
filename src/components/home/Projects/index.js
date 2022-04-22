@@ -43,6 +43,8 @@ export default function Projects({ format, content, common, client, allProjects 
     }
   }, [animations])
 
+  content.portfolio = allProjects;
+
   function renderProjects() {
     switch (format) {
       case 'mosaic':
