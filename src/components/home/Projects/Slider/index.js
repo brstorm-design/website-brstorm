@@ -7,6 +7,7 @@ import webImages from 'src/utils/webImages';
 export default function Slider({ content }) {
   const topRow = useRef(null);
   const bottomRow = useRef(null);
+  const [isMobile, setIsMobile] = useState(true);
   const [topAnimation, setTopAnimation] = useState(null);
   const [bottomAnimation, setBottomAnimation] = useState(null);
 
@@ -24,8 +25,12 @@ export default function Slider({ content }) {
   }
 
   useEffect(() => {
-    setTopAnimation(animateSlider(topRow.current, 'normal'));
-    setBottomAnimation(animateSlider(bottomRow.current, 'reverse'));
+    let mobile = window.matchMedia('(max-width: 992px)').matches;
+    setIsMobile(mobile);
+    if (!mobile) {
+      setTopAnimation(animateSlider(topRow.current, 'normal'));
+      setBottomAnimation(animateSlider(bottomRow.current, 'reverse'));
+    }
   }, []);
 
   function handleEnter() {
@@ -37,12 +42,17 @@ export default function Slider({ content }) {
     bottomAnimation.play();
   }
 
-  const firstRow = content.portfolio.concat(content.portfolio);
-  const secondRow = content.portfolio.concat(content.portfolio).reverse();
+  let firstRow = isMobile ? content.portfolio : content.portfolio.concat(content.portfolio);
+  let secondRow = content.portfolio.concat(content.portfolio).reverse();
 
   return (
-    <section className={styles.section} id="slider" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-      <div className={`row gy-4 flex-nowrap ${styles.row1}`} ref={topRow}>
+    <section
+      className={styles.section}
+      id="slider"
+      onMouseEnter={isMobile ? null : handleEnter}
+      onMouseLeave={isMobile ? null : handleLeave}
+    >
+      <div className={`row gy-4 ${styles.row1}`} ref={topRow}>
         {
           firstRow.map((img, index) => {
             return (
@@ -59,7 +69,7 @@ export default function Slider({ content }) {
           })
         }
       </div>
-      <div className={`row gy-4 flex-nowrap ${styles.row2}`} ref={bottomRow}>
+      <div style={{ display: isMobile ? 'none' : 'flex' }} className={`row gy-4 flex-nowrap ${styles.row2}`} ref={bottomRow}>
         {
           secondRow.map((img, index) => {
             return (
