@@ -58,7 +58,7 @@ export default function Slider({ content }) {
             return (
               <div key={`top-row-${index}`} className="col-12 col-lg-6">
                 <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                  <Image placeholder="blur" src={webImages[img.slug]} layout="responsive" />
+                  <Image placeholder="blur" src={webImages[img.slug]} layout="intrinsic" objectFit="cover" />
                   <div id="overlay-details">
                     <h5>{img.name}</h5>
                     <span className="details">{img.type}</span>

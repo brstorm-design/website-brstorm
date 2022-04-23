@@ -53,4 +53,8 @@
     margin-top: 25px;
     margin-bottom: 25px;
   }
+
+  @include mixins.md {
+    padding: 40px 40px 80px 40px;
+  }
 }

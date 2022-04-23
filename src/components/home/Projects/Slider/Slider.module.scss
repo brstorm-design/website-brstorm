@@ -106,4 +106,8 @@
       transform: initial;
     }
   }
+
+  @include mixins.lg {
+    height: 345px;
+  }
 }

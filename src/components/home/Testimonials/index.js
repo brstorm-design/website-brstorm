@@ -100,14 +100,6 @@ export default function Testimonials({ content }) {
             })
           }
         </Swiper>
-        <div className={`d-block d-lg-none mt-4 ${styles.nav}`}>
-          <button onClick={handleClick} id="prev">
-            <Prev />
-          </button>
-          <button onClick={handleClick} id="next">
-            <Next />
-          </button>
-        </div>
       </div>
     </section>
   )

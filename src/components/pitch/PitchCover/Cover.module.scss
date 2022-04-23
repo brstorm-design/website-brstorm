@@ -3,6 +3,11 @@
 
 .section {
   padding-top: calc(80px + 120px);
+  display: none;
+
+  @include mixins.lg {
+    display: block;
+  }
 
   & > * {
     text-align: center;
@@ -10,6 +15,14 @@
   h1 {
     margin-bottom: 40px;
   }
+  h3 {
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
   & > div {
     & > div {
       white-space: break-spaces;

@@ -11,7 +11,14 @@ import MobileUI from 'public/images/cover/mobile-ui.svg'
 import usePausableAnimation from 'src/hooks/usePausableAnimations';
 import { rootPath } from 'src/utils/env';
 
-export default function Cover({ content, common }) {
+export default function Cover({ content, common, service }) {
+  let data = service === 'web' ? {
+    bottomLeft: '/images/cover/web/desktop.svg',
+    bottomRight: '/images/cover/web/mobile.svg',
+  } : {
+    bottomLeft: '/images/cover/grids-design.svg',
+    bottomRight: '/images/cover/mobile-ui.svg',
+  }
   useEffect(() => {
     function cleanup() {
       document.getElementById('cover').removeEventListener('mousemove', e => {
@@ -45,31 +52,42 @@ export default function Cover({ content, common }) {
   }
 
   const section = useRef(null);
-  
+
   usePausableAnimation(section.current);
 
   return (
-    <section ref={section} className={styles.section} id="cover">
+    <section ref={section} className={`${styles.section} ${service === 'web' ? 'd-none d-lg-block' : ''}`} id="cover">
       <div className="container">
-
         <AnimatedLogo />
         <img className={`${styles.topRight}`} data-animated src={`${rootPath}/images/cover/logo-rotate-360.svg`} alt="" />
-        <img className={`${styles.bottomLeft} track`} src={`${rootPath}/images/cover/grids-design.svg`} alt="" />
-        <a href="https://instagram.com/brstorm.design" target="_blank" rel="noopener noreferrer">
-          <div className={`${styles.bottomRight} track`}>
-            <MobileUI />
-          </div>
-        </a>
+        <img className={`${styles.bottomLeft} track`} src={`${rootPath}${data.bottomLeft}`} alt="" />
+        <img className={`${styles.bottomRight} track`} src={`${rootPath}${data.bottomRight}`} alt="" />
 
         <div className="row">
           <div className="col-12 col-lg-9">
             <div className={styles.content}>
-              <h1>{content.title}</h1>
-              <h4>{content.subtitle}</h4>
-              <AnchorButton className="btn large ghost" href="#purpose" easing={inOutQuad} duration={1000}>
-                {common.seeMore}
-                <Arrow />
-              </AnchorButton>
+              {
+                service === 'web' ? (
+                  <>
+                    <h1>{content.title}</h1>
+                    <h2>{content.subtitle}</h2>
+                    <p>{'We prepared a brief presentation for you to better\n know us and the solutions we provide.'}</p>
+                    <AnchorButton className="btn large ghost" href="#about" easing={inOutQuad} duration={1000}>
+                      {common.seeHow}
+                      <Arrow />
+                    </AnchorButton>
+                  </>
+                ) : (
+                  <>
+                    <h1>{content.title}</h1>
+                    <h4>{content.subtitle}</h4>
+                    <AnchorButton className="btn large ghost" href="#purpose" easing={inOutQuad} duration={1000}>
+                      {common.seeMore}
+                      <Arrow />
+                    </AnchorButton>
+                  </>
+                )
+              }
 
               <div>
                 <div>
