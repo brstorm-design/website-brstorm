@@ -1,4 +1,5 @@
 import React from 'react';
+import CMSModal from '../CMSModal';
 import styles from './ContentManager.module.scss';
 
 export default function ContentManager({ /*content*/ }) {
@@ -31,12 +32,13 @@ export default function ContentManager({ /*content*/ }) {
               <div>
                 <h2>{content.knowMore.title}</h2>
                 <p>{content.knowMore.text}</p>
-                <button className="btn">{content.knowMore.preview}</button>
+                <button className="btn" data-bs-toggle="modal" data-bs-target="#cms-modal">{content.knowMore.preview}</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <CMSModal />
     </section>
   )
 }
