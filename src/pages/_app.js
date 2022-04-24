@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import '../../public/css/bootstrap.css';
 import 'src/styles/styles.scss';
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { useEffect } from 'react';
 import { rootPath } from 'src/utils/env';
 

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CMSModal from '../CMSModal';
 import styles from './ContentManager.module.scss';
 
 export default function ContentManager({ /*content*/ }) {
+  const [show, setShow] = useState(false);
   const content = {
     title: "Take Full Control of your Website",
     subtitle: "Content Manager",
@@ -13,6 +14,14 @@ export default function ContentManager({ /*content*/ }) {
       preview: "Launch Live Preview",
     }
   }
+
+  function showModal() {
+    setShow(true);
+  }
+  function hideModal() {
+    setShow(false);
+  }
+
   return (
     <section className={styles.section}>
       <div className="container">
@@ -32,13 +41,13 @@ export default function ContentManager({ /*content*/ }) {
               <div>
                 <h2>{content.knowMore.title}</h2>
                 <p>{content.knowMore.text}</p>
-                <button className="btn" data-bs-toggle="modal" data-bs-target="#cms-modal">{content.knowMore.preview}</button>
+                <button className="btn" onClick={() => showModal()} >{content.knowMore.preview}</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <CMSModal />
+      <CMSModal show={show} handleClose={hideModal} />
     </section>
   )
 }

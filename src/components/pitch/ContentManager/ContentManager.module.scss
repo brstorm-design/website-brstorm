@@ -23,6 +23,8 @@
       padding-bottom: 60px;
       margin-bottom: 60px;
       border-bottom: 1px solid;
+      border-left: 0;
+      border-top: 0;
       border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
 
       @include mixins.lg {
