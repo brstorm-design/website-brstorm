@@ -26,10 +26,16 @@
       border-left: 0;
       border-top: 0;
       border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
-
+      
       @include mixins.lg {
         padding-bottom: 40px;
         margin-bottom: 40px;
+      }
+      @include mixins.md {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+        text-align: center;
       }
     }
   }
@@ -41,6 +47,10 @@
         @include mixins.lg {
           margin: 24px 0 30px 0;
         }
+      }
+
+      @include mixins.md {
+        display: none;
       }
     }
   }

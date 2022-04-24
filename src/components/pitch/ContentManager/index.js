@@ -11,7 +11,7 @@ export default function ContentManager({ /*content*/ }) {
     knowMore: {
       title: "Want to Know More?",
       text: "Access a preview of the site's content management system and see the provided interface",
-      preview: "Launch Live Preview",
+      preview: "See a Preview",
     }
   }
 
@@ -27,9 +27,7 @@ export default function ContentManager({ /*content*/ }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-7">
-            <div className={styles.placeholder}>
-              <img src="/images/wireframes/img-icon.svg" alt="" />
-            </div>
+            <img src="/images/cms/illustration.png" className="img-fluid" alt="" />
           </div>
           <div className="col-12 col-lg-4 offset-lg-1">
             <div className={styles.textContent}>
