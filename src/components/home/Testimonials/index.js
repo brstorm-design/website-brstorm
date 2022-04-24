@@ -50,7 +50,7 @@ export default function Testimonials({ content }) {
   }, [animations])
 
   function handleClick(e) {
-    const swiper = document.querySelector('.swiper-container').swiper;
+    const swiper = document.querySelector('.swiper').swiper;
     const action = e.currentTarget.id;
     if (action === 'next') {
       swiper.slideNext();

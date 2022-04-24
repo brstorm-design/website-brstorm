@@ -6,7 +6,7 @@
   overflow: hidden;
 
   :global {
-    .swiper-container {
+    .swiper {
       overflow: initial;
       margin-left: 16.66666667% !important;
       @include mixins.md {
@@ -20,7 +20,7 @@
       }
     }
     .swiper-wrapper {
-      overflow-y: clip;
+      overflow-y: initial;
     }
     .container {
       @include mixins.sm {
