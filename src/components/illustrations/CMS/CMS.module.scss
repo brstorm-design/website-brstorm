@@ -1,0 +1,84 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/keyframes";
+
+$easing: cubic-bezier(.1,0,.9,1);
+
+.illustration {
+  position: relative;
+
+  svg {
+    position: relative;
+    z-index: 5;
+  }
+
+  :global {
+    .writer-cursor,
+    .writer-wrapper {
+      font-size: 8px;
+    }
+    .writer-cursor {
+      color: colors.$pink;
+    }
+    #front-end-text .dud {
+      fill: colors.$carbon;
+    }
+  }
+}
+
+.gradients {
+  width: 320px;
+  height: 235px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  
+  & > div {
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  // Blue
+  & > div:nth-of-type(1) {
+    animation: grad-1 11s $easing infinite;
+    width: 215px;
+    height: 215px;
+    top: 0;
+    left: 0;
+    background-color: colors.$blue;
+    z-index: 1;
+    filter: blur(75px);
+  }
+  // Cyan
+  & > div:nth-of-type(2) {
+    animation: grad-3 11s $easing infinite;
+    width: 115px;
+    height: 115px;
+    top: 115px;
+    left: 122px;
+    background-color: colors.$cyan;
+    z-index: 2;
+    filter: blur(50px);
+  }
+  // White
+  & > div:nth-of-type(3) {
+    animation: grad-3 11s $easing infinite;
+    width: 16px;
+    height: 16px;
+    top: 150px;
+    left: 220px;
+    background-color: colors.$white;
+    z-index: 3;
+    filter: blur(25px);
+  }
+  // Pink
+  & > div:nth-of-type(4) {
+    animation: grad-1 11s $easing infinite reverse;
+    width: 160px;
+    height: 160px;
+    top: 75px;
+    left: 160px;
+    background-color: colors.$pink;
+    z-index: 0;
+    filter: blur(75px);
+  }
+}
