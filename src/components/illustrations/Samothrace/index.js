@@ -21,6 +21,13 @@ export default function Samothrace({ translateValues }) {
     });
   });
 
+  const strings = [
+    'Focus on details',
+    'Superb design',
+    'Stunning websites',
+    'Great client experience',
+  ]
+
   return (
     <div className={styles.image}>
       <div ref={container}>
@@ -38,7 +45,7 @@ export default function Samothrace({ translateValues }) {
         <div>
           <code>
             <span>&lt;title&gt;</span>
-            <TypeEffect />
+            <TypeEffect strings={strings} />
             <span>&lt;/title&gt;</span>
           </code>
           <img src={`${rootPath}/images/whatWeDo/code.svg`} alt="code" />
