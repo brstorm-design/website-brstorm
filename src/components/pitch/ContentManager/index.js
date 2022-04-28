@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CMS from 'src/components/illustrations/CMS';
 import CMSModal from '../CMSModal';
 import styles from './ContentManager.module.scss';
 
@@ -27,7 +28,7 @@ export default function ContentManager({ /*content*/ }) {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-7">
-            <img src="/images/cms/illustration.png" className="img-fluid" alt="" />
+            <CMS />
           </div>
           <div className="col-12 col-lg-4 offset-lg-1">
             <div className={styles.textContent}>

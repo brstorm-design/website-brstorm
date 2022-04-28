@@ -1,5 +1,6 @@
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/keyframes";
+@use "../../../styles/scss/mixins";
 
 $easing: cubic-bezier(.1,0,.9,1);
 
@@ -9,6 +10,10 @@ $easing: cubic-bezier(.1,0,.9,1);
   svg {
     position: relative;
     z-index: 5;
+  }
+
+  @include mixins.md {
+    left: -130px;
   }
 
   :global {
@@ -22,6 +27,7 @@ $easing: cubic-bezier(.1,0,.9,1);
     #front-end-text .dud {
       fill: colors.$carbon;
     }
+    
   }
 }
 
@@ -31,6 +37,11 @@ $easing: cubic-bezier(.1,0,.9,1);
   position: absolute;
   top: 75px;
   right: 0;
+
+  @include mixins.md {
+    top: -35px;
+    right: -35px;
+  }
   
   & > div {
     position: absolute;
