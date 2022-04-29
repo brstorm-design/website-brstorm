@@ -1,4 +1,5 @@
 import React from 'react';
+import Thinker from 'src/components/illustrations/Thinker';
 import { rootPath } from 'src/utils/env';
 import styles from './About.module.scss';
 
@@ -15,7 +16,8 @@ export default function About({ content }) {
             </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
-            <img className="img-fluid d-block mx-auto" src={`${rootPath}/images/illustrations/the-thinker.png`} alt="" />
+            {/* <img className="img-fluid d-block mx-auto" src={`${rootPath}/images/illustrations/the-thinker.png`} alt="" /> */}
+            <Thinker />
           </div>
         </div>
       </div>

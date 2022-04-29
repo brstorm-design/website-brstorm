@@ -1,9 +1,15 @@
 @use "../../../styles/scss/keyframes";
 @use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
 
 .illustration {
   position: relative;
   width: max-content;
+
+  @include mixins.md {
+    left: -90px;
+    transform: scale(0.7);
+  }
 
   & > svg {
     position: absolute;
