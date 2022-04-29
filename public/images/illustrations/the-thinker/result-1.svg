@@ -1,0 +1,35 @@
+<svg width="215" height="89" viewBox="0 0 215 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Result">
+<g id="Backgrond" filter="url(#filter0_b_2523_2773)">
+<rect y="0.575195" width="215" height="87.9553" rx="2" fill="#010101" fill-opacity="0.75"/>
+<rect x="0.25" y="0.825195" width="214.5" height="87.4553" rx="1.75" stroke="url(#paint0_linear_2523_2773)" stroke-width="0.5"/>
+</g>
+<text id="https://www.brstorm.design" opacity="0.75" fill="#E7E7E7" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="6" letter-spacing="0em"><tspan x="24" y="18.7509">https://www.brstorm.design</tspan></text>
+<text id="Br.Storm Design" opacity="0.75" fill="#59CBE8" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="10" font-weight="500" letter-spacing="0em"><tspan x="12" y="41.1973">Br.Storm Design</tspan></text>
+<text id="We specialize in creating unique and memorable projects exploring the best in each business. Let&#39;s do a remarkable project?" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="6" letter-spacing="0em"><tspan x="12" y="61.7295">We specialize in creating unique and memorable projects exploring </tspan><tspan x="12" y="71.7295">the best in each business. Let&#39;s do a remarkable project?</tspan></text>
+<g id="Favicon">
+<g id="Symbol">
+<path id="Vector" d="M17.2247 14.3186L16.4793 15.0711C16.3487 14.9395 16.1937 14.835 16.0231 14.7638C15.8525 14.6925 15.6696 14.6558 15.485 14.6558C15.3003 14.6558 15.1175 14.6925 14.9469 14.7638C14.7763 14.835 14.6212 14.9395 14.4907 15.0711C14.3601 15.2028 14.2565 15.3591 14.1858 15.5311C14.1152 15.7031 14.0788 15.8875 14.0788 16.0737C14.0788 16.2598 14.1152 16.4442 14.1858 16.6162C14.2565 16.7882 14.3601 16.9445 14.4907 17.0762L13.7453 17.8278C13.2978 17.3597 13.0504 16.7332 13.0563 16.083C13.0621 15.4329 13.3209 14.8111 13.7768 14.3513C14.2327 13.8915 14.8493 13.6305 15.4941 13.6244C16.1389 13.6183 16.7603 13.8676 17.2247 14.3186Z" fill="#D5D5D5"/>
+<path id="Vector_2" d="M19 16.0732C19.0002 16.7742 18.7942 17.4594 18.408 18.0424C18.0219 18.6253 17.4729 19.0796 16.8306 19.3479C16.1883 19.6162 15.4815 19.6863 14.7997 19.5495C14.1178 19.4127 13.4915 19.0751 13 18.5793L13.7454 17.8277C14.2098 18.2788 14.8312 18.5281 15.476 18.522C16.1208 18.5159 16.7374 18.2549 17.1933 17.7951C17.6492 17.3353 17.908 16.7135 17.9138 16.0633C17.9197 15.4132 17.6723 14.7867 17.2248 14.3186L17.9711 13.567C18.2978 13.8959 18.5569 14.2866 18.7335 14.7166C18.91 15.1467 19.0006 15.6077 19 16.0732Z" fill="#E7E7E7"/>
+<path id="Vector_3" d="M16.8919 16.0731C16.8917 16.3535 16.8092 16.6275 16.6546 16.8606C16.5001 17.0937 16.2805 17.2753 16.0236 17.3826C15.7667 17.49 15.4841 17.5181 15.2113 17.4636C14.9386 17.409 14.688 17.2742 14.4912 17.0761L15.486 16.0731L16.4798 15.071C16.6107 15.2024 16.7145 15.3586 16.7852 15.5306C16.8559 15.7026 16.8922 15.887 16.8919 16.0731Z" fill="#E93CAC"/>
+</g>
+</g>
+<g id="More">
+<circle id="Ellipse 28" cx="208.5" cy="7.07214" r="0.5" fill="#555555"/>
+<circle id="Ellipse 29" cx="208.5" cy="9.07104" r="0.5" fill="#555555"/>
+<circle id="Ellipse 30" cx="208.5" cy="11.0701" r="0.5" fill="#555555"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_2523_2773" x="-5" y="-4.4248" width="225" height="97.9553" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="2.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2523_2773"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2523_2773" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_2523_2773" x1="108" y1="0.575195" x2="108" y2="88.5305" gradientUnits="userSpaceOnUse">
+<stop stop-color="#555555" stop-opacity="0.75"/>
+<stop offset="1" stop-color="#555555" stop-opacity="0.5"/>
+</linearGradient>
+</defs>
+</svg>

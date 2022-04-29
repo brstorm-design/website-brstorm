@@ -1,0 +1,20 @@
+<svg width="188" height="161" viewBox="0 0 188 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Snippet">
+<g id="Code">
+<g id="&#60;Head&#62;{isDev ? null : ( &#60;&#62; &#60;GoogleAnalytics/&#62;&#60;TagManager/&#62; &#60;/&#62; )}&#60;link rel=&#34;preconnect&#34; href=&#34;https://brstorm.design&#34;/&#62;family=&#226;&#128;&#157;Inter:wght@300;400;500;600;700&#38;display=swap&#34;rel=&#34;style sheet&#34;/&#62; &#60;meta property= &#34;og:image&#34; content=&#34;/images/cover.png&#34;/&#62; &#60;meta name= &#34;description&#34;/&#62; &#60;/Head&#62;" opacity="0.75">
+<text fill="#D5D5D5" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="40.9766" y="11.7858">{isDev ? </tspan><tspan x="118.926" y="11.7858"> : ( </tspan><tspan x="160.898" y="11.7858"> </tspan><tspan x="10.9961" y="27.7858">GoogleAnalytics</tspan><tspan x="118.926" y="27.7858">TagManager</tspan><tspan x="34.9805" y="43.7858"> )}</tspan><tspan x="82.9492" y="43.7858"> rel=&#34;</tspan><tspan x="178.887" y="43.7858">&#34; </tspan><tspan x="5" y="59.7858">href=&#34;</tspan><tspan x="172.891" y="59.7858">&#34;</tspan><tspan x="10.9961" y="75.7858">family=&#x201d;</tspan><tspan x="136.914" y="91.7858">&#34;rel=&#34;st</tspan><tspan x="5" y="107.786">yle sheet&#34;</tspan><tspan x="76.9531" y="107.786"> </tspan><tspan x="112.93" y="107.786"> property= </tspan><tspan x="5" y="123.786">&#34;</tspan><tspan x="58.9648" y="123.786">&#34; content=&#34;</tspan><tspan x="58.9648" y="139.786">&#34;</tspan><tspan x="76.9531" y="139.786"> </tspan><tspan x="112.93" y="139.786"> name= </tspan><tspan x="5" y="155.786">&#34;</tspan><tspan x="76.9531" y="155.786">&#34;</tspan><tspan x="94.9414" y="155.786"> </tspan></text>
+<text fill="#F5D67B" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="5" y="11.7858">&#60;Head&#62;</tspan><tspan x="148.906" y="11.7858">&#60;&#62;</tspan><tspan x="5" y="27.7858">&#60;</tspan><tspan x="100.938" y="27.7858">/&#62;&#60;</tspan><tspan x="178.887" y="27.7858">/</tspan><tspan x="5" y="43.7858">&#62; &#60;/&#62;</tspan><tspan x="52.9688" y="43.7858">&#60;link</tspan><tspan x="178.887" y="59.7858">/</tspan><tspan x="5" y="75.7858">&#62;</tspan><tspan x="64.9609" y="107.786">/&#62;</tspan><tspan x="82.9492" y="107.786">&#60;meta</tspan><tspan x="64.9609" y="139.786">/&#62;</tspan><tspan x="82.9492" y="139.786">&#60;meta</tspan><tspan x="100.938" y="155.786">&#60;/Head&#62;</tspan></text>
+<text fill="#F5D67B" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="82.9492" y="155.786">/&#62;</tspan></text>
+<text fill="#59CBE8" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="118.926" y="43.7858">preconnect</tspan><tspan x="40.9766" y="59.7858">https://</tspan><tspan x="58.9648" y="75.7858">Inter:wght@300;400;50</tspan><tspan x="5" y="91.7858">0;600;700&#38;display=swap</tspan><tspan x="10.9961" y="123.786">og:image</tspan><tspan x="124.922" y="123.786">/images/</tspan><tspan x="5" y="139.786">cover.png</tspan><tspan x="10.9961" y="155.786">description</tspan></text>
+<text fill="#E93CAC" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="94.9414" y="11.7858">null</tspan><tspan x="88.9453" y="59.7858">brstorm.design</tspan></text>
+</g>
+</g>
+<rect id="Dark Overlay" opacity="0.75" x="5" y="0.445801" width="183" height="160" fill="url(#paint0_linear_2664_2)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2664_2" x1="5" y1="80.4456" x2="188" y2="80.4456" gradientUnits="userSpaceOnUse">
+<stop stop-color="#010101"/>
+<stop offset="1" stop-color="#010101" stop-opacity="0.75"/>
+</linearGradient>
+</defs>
+</svg>
