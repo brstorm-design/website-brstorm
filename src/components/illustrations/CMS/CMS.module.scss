@@ -2,7 +2,7 @@
 @use "../../../styles/scss/keyframes";
 @use "../../../styles/scss/mixins";
 
-$easing: cubic-bezier(.1,0,.9,1);
+$easing: cubic-bezier(0.1, 0, 0.9, 1);
 
 .illustration {
   position: relative;
@@ -24,10 +24,16 @@ $easing: cubic-bezier(.1,0,.9,1);
     .writer-cursor {
       color: colors.$pink;
     }
-    #front-end-text .dud {
-      fill: colors.$carbon;
+    #front-end-text {
+      font-size: 16px;
+      color: colors.$gray;
+      font-weight: normal;
+      font-family: Montserrat, 'sans-serif';
+      .dud {
+        fill: colors.$carbon;
+        color: colors.$carbon;
+      }
     }
-    
   }
 }
 
@@ -39,10 +45,10 @@ $easing: cubic-bezier(.1,0,.9,1);
   right: 0;
 
   @include mixins.md {
-    top: -35px;
-    right: -35px;
+    top: 15px;
+    right: -145px;
   }
-  
+
   & > div {
     position: absolute;
     border-radius: 50%;

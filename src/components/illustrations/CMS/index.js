@@ -8,8 +8,7 @@ export default function CMS() {
 
   useEffect(() => {
     const text = document.getElementById('front-end-text');
-    const scrambleTop = new TextScramble(text.children[0]);
-    const scrambleBottom = new TextScramble(text.children[1]);
+    const scramble = new TextScramble(text);
 
     let type = new Typewriter('#cms-text', {
       loop: true,
@@ -19,8 +18,7 @@ export default function CMS() {
 
     type
       .callFunction(() => {
-        scrambleTop.setText('');
-        scrambleBottom.setText('');
+        scramble.setText('');
       })
 
       .pauseFor(2500)
@@ -28,8 +26,7 @@ export default function CMS() {
       .pauseFor(100)
 
       .callFunction(() => {
-        scrambleTop.setText('Be Unique');
-        scrambleBottom.setText('&amp; Memorable');
+        scramble.setText('Be Unique &amp; Memorable');
       })
 
       .pauseFor(3000)
