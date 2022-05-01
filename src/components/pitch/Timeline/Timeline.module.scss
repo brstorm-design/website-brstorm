@@ -1,8 +1,12 @@
 @use "../../../../src/styles/scss/mixins";
 @use "../../../../src/styles/scss/colors";
+@use "sass:math";
 
 .cards {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 
   @include mixins.md {
     & > div:not(.line):first-child {
@@ -15,8 +19,6 @@
 
   & > div:not(.line) {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -32,7 +34,7 @@
       &:nth-child(#{$i}) {
         top: #{$val}px;
       }
-      $val: $val + 32
+      $val: $val + 32;
     }
 
     &:last-child::before {
@@ -130,5 +132,13 @@
 .cards.web {
   & > div:not(.line) {
     padding: 90px 60px;
+  }
+
+  :global {
+    @for $i from 1 to 6 {
+      .opacity-#{$i} {
+        opacity: math.div($i, 10);
+      }
+    }
   }
 }

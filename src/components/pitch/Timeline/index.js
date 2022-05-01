@@ -7,11 +7,10 @@ export default function Timeline({ steps, service }) {
   const [lineHeight, setLineHeight] = useState(0);
   const line = useRef(null);
 
-
   function Line() {
     return <div
       ref={line}
-      style={{ height: `${lineHeight}px`, opacity: service === 'web' ? '0' : '1' }}
+      style={{ opacity: '0' }}
       className={styles.line}
     />
   }
@@ -20,9 +19,18 @@ export default function Timeline({ steps, service }) {
   let target;
   let maxLineHeight;
   let numbers;
+  let cardList;
 
   function handleScroll() {
-    const top = document.querySelector(`.${styles.cards}`).getBoundingClientRect().top;
+    cardList.forEach((card, index) => {
+      let cardTopOffset = card.getBoundingClientRect().top;
+      if (Math.ceil(cardTopOffset) === offsets[index]) {
+        card.previousElementSibling?.classList.add(`opacity-${index}`);
+      } else {
+        card.previousElementSibling?.classList.remove(`opacity-${index}`);
+      }
+    })
+    /* const top = document.querySelector(`.${styles.cards}`).getBoundingClientRect().top;
     const lineBottom = line.current.getBoundingClientRect().bottom;
     let height = screenCenter - top;
     if (top < screenCenter && height < (maxLineHeight + 50)) {
@@ -38,11 +46,11 @@ export default function Timeline({ steps, service }) {
       } else {
         number.parentElement.classList.remove(styles.active);
       }
-    });
+    }); */
   }
 
   useEffect(() => {
-    const cardList = document.querySelectorAll(`.${styles.cards} > div`);
+    cardList = document.querySelectorAll(`.${styles.cards} > div`);
     //
     screenCenter = window.innerHeight / 2;
     target = document.querySelector(`.${styles.line}:last-child`);
@@ -57,6 +65,26 @@ export default function Timeline({ steps, service }) {
     }
   }, [screenCenter, target]);
 
+  /* function handleIntersection(entries) {
+    entries.forEach(entry => {
+      console.log(entry);
+    })
+  }
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection);
+    document.querySelectorAll(`.${styles.cards} > div`).forEach(element => observer.observe(element));
+  }, []); */
+
+  let offsets = [
+    132,
+    164,
+    196,
+    228,
+    260,
+    292,
+  ]
+
   return (
     <div>
       <div className={`${styles.cards} ${service === 'web' ? styles.web : ''}`}>
@@ -64,7 +92,7 @@ export default function Timeline({ steps, service }) {
           steps.map((step, index) => {
             return (
               <div key={`step-${index}`}>
-                <span style={{ opacity: service === 'web' ? '0' : '1' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
+                <span style={{ opacity: '0'}} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
                 <img src={`${rootPath}/images/icons/${step.icon}`} alt="" />
                 <h5>{step.name}</h5>
                 <small>{step.text}</small>
