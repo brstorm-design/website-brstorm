@@ -27,7 +27,7 @@
     padding: 40px 30px;
     border: 1px solid;
     border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
-    transition: all 500ms ease;
+    transition: all 300ms ease-out;
 
     $val: 132;
     @for $i from 1 through 6 {

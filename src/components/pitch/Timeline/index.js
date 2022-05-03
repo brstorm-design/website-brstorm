@@ -6,6 +6,7 @@ import styles from './Timeline.module.scss';
 export default function Timeline({ steps, service }) {
   const [lineHeight, setLineHeight] = useState(0);
   const line = useRef(null);
+  const cards = useRef(null);
 
   function Line() {
     return <div
@@ -22,14 +23,14 @@ export default function Timeline({ steps, service }) {
   let cardList;
 
   function handleScroll() {
-    cardList.forEach((card, index) => {
+    /* cardList.forEach((card, index) => {
       let cardTopOffset = card.getBoundingClientRect().top;
       if (Math.ceil(cardTopOffset) === offsets[index]) {
         card.previousElementSibling?.classList.add(`opacity-${index}`);
       } else {
         card.previousElementSibling?.classList.remove(`opacity-${index}`);
       }
-    })
+    }) */
     /* const top = document.querySelector(`.${styles.cards}`).getBoundingClientRect().top;
     const lineBottom = line.current.getBoundingClientRect().bottom;
     let height = screenCenter - top;
@@ -65,34 +66,59 @@ export default function Timeline({ steps, service }) {
     }
   }, [screenCenter, target]);
 
-  /* function handleIntersection(entries) {
-    entries.forEach(entry => {
-      console.log(entry);
-    })
-  }
-
   useEffect(() => {
-    const observer = new IntersectionObserver(handleIntersection);
-    document.querySelectorAll(`.${styles.cards} > div`).forEach(element => observer.observe(element));
-  }, []); */
+    const opacities = [1, 0.5, 0.4, 0.3, 0.2, 0.1];
+    let stackedCards = cards.current.children.length - 1;
+    function handleIntersection(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          stackedCards += 1;
+          if (stackedCards > 0) {
+            for (let index = 0; index < stackedCards; index++) {
+              let opacityIndex = (index + stackedCards) - (index * 2);
+              cards.current.children[index].style.opacity = opacities[opacityIndex];
+            }
+          }
+        } else {
+          stackedCards -= 1;
+          entry.target.previousElementSibling?.style.opacity = 1;
+        }
+        /* let id = entry.target.id;
+        if (id.substring(id.length - 1) === '5') {
+          console.log(entry);
+          cards.current.childNodes.forEach(element => {
+            element.style.position = entry.isIntersecting ? 'sticky' : 'absolute';
+          })
+        } */
+      });
+    }
 
-  let offsets = [
-    132,
-    164,
-    196,
-    228,
-    260,
-    292,
-  ]
+    const windowHeight = window.innerHeight;
+    let margin = 100;
+    cards.current.childNodes.forEach(element => {
+      margin += 32;
+      let observer = new IntersectionObserver(handleIntersection, {
+        rootMargin: `0px 0px -${windowHeight - margin}px 0px`,
+      });
+      observer.observe(element);
+    });
+
+    /* return function cleanup() {
+      cards.current.childNodes.forEach(element => {
+        observer.unobserve(element);
+      });
+    } */
+
+  }, []);
 
   return (
     <div>
-      <div className={`${styles.cards} ${service === 'web' ? styles.web : ''}`}>
+      <div ref={cards} className={`${styles.cards} ${service === 'web' ? styles.web : ''}`} >
         {
           steps.map((step, index) => {
             return (
-              <div key={`step-${index}`}>
-                <span style={{ opacity: '0'}} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
+              <div key={`step-${index}`} id={`card_step-${index}`} style={{ opacity: 1 }}>
+                <span style={{ opacity: '0' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
                 <img src={`${rootPath}/images/icons/${step.icon}`} alt="" />
                 <h5>{step.name}</h5>
                 <small>{step.text}</small>
