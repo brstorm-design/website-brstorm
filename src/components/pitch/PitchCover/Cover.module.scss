@@ -3,7 +3,6 @@
 
 .section {
   padding-top: calc(80px + 120px);
-  display: none;
 
   @include mixins.lg {
     display: block;
@@ -23,11 +22,12 @@
     margin-bottom: 40px;
   }
 
-  & > div {
-    & > div {
+  .textContent {
+    margin-bottom: 160px;
+    color: colors.$darkGray;
+
+    @include mixins.md {
       white-space: break-spaces;
-      margin: 40px 0;
-      color: colors.$darkGray;
     }
   }
 }
@@ -76,8 +76,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background:
-      linear-gradient(180deg, rgba(1, 1, 1, 0) 0%, rgba(1, 1, 1, 0.5) 100%),
+    background: linear-gradient(180deg, rgba(1, 1, 1, 0) 0%, rgba(1, 1, 1, 0.5) 100%),
       linear-gradient(180deg, rgba(1, 1, 1, 0) 0%, rgba(1, 1, 1, 0.75) 100%);
   }
 

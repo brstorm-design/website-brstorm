@@ -11,6 +11,7 @@ import WhyUs from 'src/components/home/WhyUs';
 import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
 import Testimonials from 'src/components/home/Testimonials';
+import PitchCover from 'src/components/pitch/PitchCover';
 
 export default function LandingPage({ content, service }) {
   const page = content.home;
@@ -25,7 +26,7 @@ export default function LandingPage({ content, service }) {
       </Head>
       <Header content={landing.header} common={content.common} />
 
-      <Cover content={page.cover} common={common} />
+      <PitchCover />
       <Projects format="stairs" content={page.projects} common={common} allProjects={content.fullportfolio} />
       <Methodology content={pitch[service.jsonName].method} />
       <WhyUs content={page.whyUs} />
