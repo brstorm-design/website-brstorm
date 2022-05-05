@@ -444,34 +444,42 @@
         "subtitle": "Conheça Nosso Método",
         "steps": [
           {
+            "icon": "Notebook.svg",
             "name": "Briefing",
             "text": "Coleta de todas as informações essenciais para a execução do projeto."
           },
           {
+            "icon": "Research.svg",
             "name": "Pesquisa",
             "text": "Estudo do briefing, análise de concorrentes, pesquisa de mercado e mapa mental."
           },
           {
+            "icon": "Idea.svg",
             "name": "Desenho",
             "text": "Brainstorm, moodboard, rascunhos, protótipos e testes."
           },
           {
+            "icon": "Compass.svg",
             "name": "Refinamento",
             "text": "Definição da tipografia, símbolo, acordo cromático e elementos de apoio."
           },
           {
+            "icon": "Presentation.svg",
             "name": "Apresentação",
             "text": "Descrição dos caminhos até o resultado alcançado e elaboração de amostras visuais."
           },
           {
+            "icon": "Chat.svg",
             "name": "Avaliação e Ajustes",
             "text": "Validação do projeto e caso necessário ajuste e adequação as expectativas do cliente. "
           },
           {
+            "icon": "Checklist.svg",
             "name": "Materiais",
             "text": "Desenvolvimento de todos os materiais complementares inclusos no pacote da marca."
           },
           {
+            "icon": "Flag.svg",
             "name": "Entrega Final",
             "text": "Finalização e entrega do projeto, seguido de atendimento e suporte no uso da marca."
           }

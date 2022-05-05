@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Samothrace from 'src/components/illustrations/Samothrace';
 import { getMaxHeight, getTranslateValue } from 'src/modules/App';
 import Timeline from '../Timeline';
+import TimelineBrand from '../TimelineBrand';
 import styles from './Methodology.module.scss';
 
 export default function Methodology({ content, pitch, service }) {
@@ -54,7 +55,7 @@ export default function Methodology({ content, pitch, service }) {
               </div>
             ) : (
               <div className="col-12 col-lg-4 offset-lg-2">
-                <Timeline steps={content.steps} />
+                <TimelineBrand steps={content.steps} />
               </div>
             )
           }

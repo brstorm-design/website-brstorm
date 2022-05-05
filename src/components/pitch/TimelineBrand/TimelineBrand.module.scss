@@ -1,0 +1,118 @@
+@use "../../../../src/styles/scss/mixins";
+@use "../../../../src/styles/scss/colors";
+
+.cards {
+  position: relative;
+
+  @include mixins.md {
+    & > div:not(.line):first-child {
+      margin-top: 0;
+    }
+    & > div:not(.line):last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & > div:not(.line) {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: colors.$black;
+    padding: 40px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
+    transition: all 500ms ease;
+    
+    &:last-child::before {
+      content: "";
+      position: absolute;
+      left: calc(-85px);
+      margin-bottom: -80px;
+      width: 40px;
+      height: 40px;
+      background-color: colors.$black;
+      z-index: 5;
+    }
+    
+    &.active {
+      border-image: linear-gradient(90deg, #555555 100%, rgba(85, 85, 85, 0) 100%) 1;
+      .number {
+        background: colors.$black;
+        color: colors.$darkGray;
+        border: 1px solid colors.$gray;
+      }
+    }
+    
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    
+    h5 {
+      margin: 20px 0;
+    }
+  }
+  
+  & > div:last-child {
+    .number {
+      overflow: hidden;
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  left: -65px;
+  height: calc(100% * 8.6);
+  width: 1px;
+  border-left: 1px solid colors.$carbon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:last-child {
+    border-left: 1px solid colors.$lightGray;
+    height: 0;
+    transition: height 150ms ease;
+  }
+}
+
+.lineFill {
+  z-index: -1;
+}
+
+.number {
+  position: absolute;
+  left: -85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: colors.$lightDark;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: colors.$darkGray;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    height: calc(100% + 255px);
+    width: 1px;
+    border-left: 1px dashed colors.$carbon;
+  }
+}
+
+.cards.web {
+  & > div:not(.line) {
+    padding: 90px 60px;
+  }
+}
