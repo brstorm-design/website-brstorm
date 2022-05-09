@@ -1,4 +1,4 @@
-@use '../../../styles/scss/colors';
+@use "../../../styles/scss/colors";
 
 .question {
   h3 {
@@ -16,8 +16,11 @@
   }
 
   small {
+    color: colors.$carbon;
+  }
+
+  textarea + small {
     margin-top: 24px;
     display: inline-block;
-    color: colors.$carbon;
   }
 }
