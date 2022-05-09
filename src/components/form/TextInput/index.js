@@ -12,8 +12,8 @@ export default function TextInput({ name, placeholder, required }) {
   }
 
   useEffect(() => {
-    field.current.addEventListener('input', resize, false);
-    return () => field.current.removeEventListener('input', resize, false);
+    field.current.addEventListener('input', resize);
+    return () => field.current?.removeEventListener('input', resize);
   }, [])
 
   return (

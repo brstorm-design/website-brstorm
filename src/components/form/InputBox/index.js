@@ -2,14 +2,14 @@ import React, { useEffect, useRef, useState } from 'react';
 import CheckInput from '../CheckInput';
 import styles from './InputBox.module.scss';
 
-export default function InputBox({ children, name, value, title, type, required }) {
-  const inputProps = { value, name, type, required };
+export default function InputBox({ title, children, ...inputProps }) {
   const [collapse, setCollapse] = useState(null);
   const label = useRef(null);
+  const collapseTimeout = useRef(null);
 
   useEffect(() => {
     if (children) {
-      const collapse = new bootstrap.Collapse(document.getElementById(`collapse-${value}`), {
+      const collapse = new bootstrap.Collapse(document.getElementById(`collapse-${inputProps.value}`), {
         toggle: false
       })
       setCollapse(collapse);
@@ -20,11 +20,14 @@ export default function InputBox({ children, name, value, title, type, required 
     if (label.current.control.checked) {
       return;
     } else {
-      collapse.show();
+      collapseTimeout.current = setTimeout(() => {
+        collapse.show();
+      }, 500);
     }
   }
 
   function handleMouseLeave() {
+    clearTimeout(collapseTimeout.current);
     if (label.current.control.checked) {
       return;
     } else {
@@ -35,9 +38,9 @@ export default function InputBox({ children, name, value, title, type, required 
   return (
     <label
       ref={label}
-      onMouseEnter={type === 'checkbox' ? handleMouseEnter : null}
-      onMouseLeave={type === 'checkbox' ? handleMouseLeave : null}
-      htmlFor={value}
+      onMouseEnter={collapse ? handleMouseEnter : null}
+      onMouseLeave={collapse ? handleMouseLeave : null}
+      htmlFor={inputProps.value}
       className={styles.box}
     >
       <CheckInput {...inputProps} collapse={collapse} />
@@ -45,8 +48,10 @@ export default function InputBox({ children, name, value, title, type, required 
 
       {
         children ? (
-          <div className="collapse" id={`collapse-${value}`}>
-            <div className={`${styles.collapseContent} ${typeof children === 'object' ? styles.nested : ''}`}>{children}</div>
+          <div className="collapse" id={`collapse-${inputProps.value}`}>
+            <div className={`${styles.collapsedContent} ${typeof children === 'object' ? styles.nested : ''}`}>
+              {children}
+            </div>
           </div>
         ) : (
           null

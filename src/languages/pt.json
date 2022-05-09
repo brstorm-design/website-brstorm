@@ -240,101 +240,133 @@
       "text": "Campos Respondidos"
     },
     "cover": {
-      "title": "Queremos conhecer um pouco sobre o seu negócio",
       "subTitle": "Solicitação de Proposta",
+      "title": "Queremos conhecer um pouco sobre o seu negócio",
       "timeToFill": "Leva menos de 3 minutos"
     },
     "fields": [
       {
-        "name": "name",
         "title": "Como posso lhe chamar?",
-        "required": true,
-        "type": "text",
-        "placeholder": "Ex.: Luan"
+        "attributes": {
+          "name": "name",
+          "required": true,
+          "type": "text",
+          "placeholder": "Ex.: Luan"
+        }
       },
       {
-        "name": "businessName",
         "title": ", qual o nome do seu negócio?",
-        "required": false,
-        "type": "text",
-        "placeholder": "Ex.: Br.Storm Design",
-        "helperText": "Caso ainda não tenha, deixe em branco."
+        "helperText": "Caso ainda não tenha, deixe em branco.",
+        "attributes": {
+          "name": "businessName",
+          "required": false,
+          "type": "text",
+          "placeholder": "Ex.: Br.Storm Design"
+        }
       },
       {
-        "name": "details",
-        "title": "Nos conte o que você faz:",
-        "required": true,
-        "type": "text",
-        "placeholder": "Ex.: Web e Brand Design",
-        "helperText": " Fale um pouco sobre o que seu negócio se trata."
+        "title": "O que você faz?",
+        "helperText": " Fale um pouco sobre o que seu negócio se trata.",
+        "attributes": {
+          "name": "details",
+          "required": true,
+          "type": "text",
+          "placeholder": "Ex.: Web e Brand Design"
+        }
       },
       {
-        "name": "businessSize",
+        "title": "Já possui redes sociais ou site?",
+        "helperText": "Tem algum lugar onde possamos conhecer mais sobre o seu negócio?",
+        "attributes": {
+          "name": "yourContent",
+          "required": true,
+          "type": "text",
+          "placeholder": "Ex.: Sim, Instagram: @brstorm.design"
+        }
+      },
+      {
         "title": "Qual o tamanho do seu negócio?",
-        "required": true,
-        "type": "radio",
+        "attributes": {
+          "name": "businessSize",
+          "required": true,
+          "type": "radio"
+        },
         "options": [
           {
             "name": "Trabalho Sozinho",
-            "value": "alone"
+            "value": "alone",
+            "collapsedContent": ""
           },
           {
             "name": "2 - 10 Colaboradores",
-            "value": "2-10"
+            "value": "2-10",
+            "collapsedContent": ""
           },
           {
             "name": "11 - 50 Colaboradores",
-            "value": "11-50"
+            "value": "11-50",
+            "collapsedContent": ""
           },
           {
             "name": "51 - 100 Colaboradores",
-            "value": "51-100"
+            "value": "51-100",
+            "collapsedContent": ""
           },
           {
             "name": "+100 Colaboradores",
-            "value": "+100"
+            "value": "+100",
+            "collapsedContent": ""
           }
         ]
       },
       {
-        "name": "service",
         "title": "Como podemos lhe ajudar?",
-        "required": true,
-        "type": "checkbox",
+        "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço.",
+        "attributes": {
+          "name": "service",
+          "required": true,
+          "type": "checkbox"
+        },
         "options": [
           {
             "name": "Marca",
-            "value": "brand"
+            "value": "brand",
+            "collapsedContent": "Criação do conjunto visual da marca, envolvendo logo, acordo cromático, tipografia, grafismos e mais."
           },
           {
             "name": "Website",
-            "value": "website"
+            "value": "website",
+            "collapsedContent": "Desenvolvimento de plataforma online para o projeto."
           },
           {
             "name": "Redesign",
-            "value": "redesign"
+            "value": "redesign",
+            "collapsedContent": "Renovação, atualização ou reposicionamento de uma marca já existente."
           },
           {
             "name": "Naming",
-            "value": "naming"
+            "value": "naming",
+            "collapsedContent": "Criação estratégica de um nome para a marca."
           },
           {
-            "name": "Redes Sociais",
-            "value": "social-media"
+            "name": "Estratégia",
+            "value": "strategy",
+            "collapsedContent": "Análise de concorrentes e público-alvo, norteadores, posicionamento estratégico e mais."
           }
-        ],
-        "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço."
+        ]
       },
       {
-        "name": "yourContact",
         "title": "Por onde posso lhe contatar?",
-        "required": true,
-        "type": "checkbox",
+        "attributes": {
+          "name": "yourContact",
+          "required": true,
+          "type": "checkbox"
+        },
         "options": [
           {
             "name": "E-mail",
             "value": "email",
-            "field": {
+            "collapsedContent": {
               "name": "name",
               "required": false,
               "type": "email",
@@ -344,7 +376,7 @@
           {
             "name": "WhatsApp",
             "value": "whatsapp",
-            "field": {
+            "collapsedContent": {
               "name": "phone",
               "required": false,
               "type": "tel",
@@ -354,7 +386,7 @@
           {
             "name": "Outros",
             "value": "other",
-            "field": {
+            "collapsedContent": {
               "name": "otherContact",
               "required": false,
               "type": "text",

@@ -10,10 +10,17 @@
   background-color: colors.$black;
   padding: 16px 40px 16px 16px;
   border-radius: 2px;
-  margin: 24px auto;
+  margin: 16px auto;
   cursor: pointer;
   color: colors.$carbon;
   transition: all 350ms ease;
+
+  &:first-child {
+    margin-top: 32px;
+  }
+  &:last-child {
+    margin-top: 0;
+  }
   
   @include mixins.sm {
     padding: 20px 40px 20px 20px;
@@ -29,7 +36,7 @@
     }
   }
 
-  .collapseContent {
+  .collapsedContent {
     flex-basis: 100%;
     color: colors.$darkGray;
     margin-left: calc(24px + 16px);
@@ -71,6 +78,7 @@
     border-image: none;
     border: 0;
     border-bottom: 1px solid colors.$darkGray;
+    background: linear-gradient(0deg, #0A0A0A 0%, rgba(10, 10, 10, 0) 100%);
 
     &:hover {
       border-image: none;

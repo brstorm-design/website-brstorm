@@ -1,0 +1,23 @@
+@use '../../../styles/scss/colors';
+
+.question {
+  h3 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      right: calc(100% + 8px);
+      counter-increment: question;
+      content: counter(question) ". ";
+      color: colors.$pink;
+    }
+  }
+
+  small {
+    margin-top: 24px;
+    display: inline-block;
+    color: colors.$carbon;
+  }
+}

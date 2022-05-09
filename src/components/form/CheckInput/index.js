@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './CheckInput.module.scss';
 
 export default function CheckInput({ value, name, type, required, collapse }) {
