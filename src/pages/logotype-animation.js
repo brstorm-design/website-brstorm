@@ -5,7 +5,7 @@ import Head from 'next/head';
 export default function LogoTypeAnimation() {
 
   useEffect(() => {
-    document.body.classList.add('page');
+    document.body.classList.add('animation-page');
   }, [])
 
   return (

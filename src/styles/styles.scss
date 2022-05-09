@@ -31,11 +31,18 @@ body {
     overflow: hidden;
   }
 
-  &.page {
-    /* display: flex;
+  &.animation-page {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; */
+    height: 100vh;
+    overflow: hidden;
+    &::before {
+      background-image: none;
+    }
+  }
+
+  &.page {
     &::before {
       background-image: none;
     }

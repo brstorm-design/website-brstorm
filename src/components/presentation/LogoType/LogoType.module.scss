@@ -23,13 +23,12 @@
 }
 
 .logo {
-  stroke: white;
-
   width: 100vw;
 
   g:last-child > path {
+    stroke: white;
     $delay: 0;
-    @for $i from 1 through 6 {
+    @for $i from 1 through 9 {
       &:nth-child(#{$i}) {
         animation: logo-animation 7s #{$delay}ms ease-in-out infinite alternate both;
       }
