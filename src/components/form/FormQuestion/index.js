@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './FormQuestion.module.scss';
 
-export default function FormQuestion({ children, title, helperText, required }) {
+export default function FormQuestion({ children, title, helperText, required, name, type }) {
+  name === '' ? name = '_____' : name = name;
+  const display = type === 'checkbox' ? 'none' : 'inline-block';
   return (
     <div className={styles.question}>
-      <h3>{title} {required ? '' : <small>(Opcional)</small>}</h3>
+      <h3>{name ? name : ''}{title} {required ? '' : <small style={{display: display}}>(Opcional)</small>}</h3>
       {children}
       {helperText && <small>{helperText}</small>}
     </div>

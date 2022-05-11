@@ -294,7 +294,7 @@
         "options": [
           {
             "name": "Trabalho Sozinho",
-            "value": "alone",
+            "value": "1",
             "collapsedContent": ""
           },
           {
@@ -324,7 +324,7 @@
         "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço.",
         "attributes": {
           "name": "service",
-          "required": true,
+          "required": false,
           "type": "checkbox"
         },
         "options": [
@@ -359,7 +359,7 @@
         "title": "Por onde posso lhe contatar?",
         "attributes": {
           "name": "yourContact",
-          "required": true,
+          "required": false,
           "type": "checkbox"
         },
         "options": [
@@ -367,7 +367,7 @@
             "name": "E-mail",
             "value": "email",
             "collapsedContent": {
-              "name": "name",
+              "name": "email",
               "required": false,
               "type": "email",
               "placeholder": "Ex.: contact@brstorm.design"
