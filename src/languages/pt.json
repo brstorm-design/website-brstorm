@@ -322,9 +322,9 @@
       {
         "title": "Como podemos lhe ajudar?",
         "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço.",
+        "required": true,
         "attributes": {
           "name": "service",
-          "required": false,
           "type": "checkbox"
         },
         "options": [
@@ -357,9 +357,9 @@
       },
       {
         "title": "Por onde posso lhe contatar?",
+        "required": true,
         "attributes": {
           "name": "yourContact",
-          "required": false,
           "type": "checkbox"
         },
         "options": [
@@ -368,7 +368,6 @@
             "value": "email",
             "collapsedContent": {
               "name": "email",
-              "required": false,
               "type": "email",
               "placeholder": "Ex.: contact@brstorm.design"
             }
@@ -378,7 +377,6 @@
             "value": "whatsapp",
             "collapsedContent": {
               "name": "phone",
-              "required": false,
               "type": "tel",
               "placeholder": "Ex.: (51) 98888-7777"
             }
@@ -388,7 +386,6 @@
             "value": "other",
             "collapsedContent": {
               "name": "otherContact",
-              "required": false,
               "type": "text",
               "placeholder": "Ex.: Instagram: @brstorm.design"
             }

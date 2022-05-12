@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { validateForm } from 'src/utils/form';
 import FormQuestion from '../FormQuestion';
 import InputBox from '../InputBox';
 import TextInput from '../TextInput';
@@ -37,6 +38,8 @@ export default function Form({ fields }) {
         [e.currentTarget.name]: e.target.value,
       })
     } else if (e.target.type === 'checkbox') {
+      let field = e.target.parentElement.querySelector('textarea');
+      if (field) field.required = e.target.checked;
       setValues({
         ...values,
         [e.target.name]: {
@@ -55,12 +58,22 @@ export default function Form({ fields }) {
 
   function submitForm(e) {
     e.preventDefault();
-    console.log(e);
-    console.log(values);
+    try {
+      validateForm(values);
+      console.log('%cSUCCESS', 'color: #75e6b2;');
+      console.log(values);
+    } catch (e) {
+      e.element.parentElement.scrollIntoView({behavior: 'smooth'});
+      e.element.style.background = 'red';
+      console.warn(e);
+      setTimeout(() => {
+        e.element.style.background = 'initial'
+      }, 1500);
+    }
   }
 
   return (
-    <form onSubmit={submitForm} className={styles.form}>
+    <form onSubmit={submitForm} className={styles.form} noValidate>
       {
         fields.map((field, index) => {
           return (
@@ -70,11 +83,11 @@ export default function Form({ fields }) {
               helperText={field.helperText}
               required={field.attributes.required}
               type={field.attributes.type}
-              name={field.attributes.name === 'businessName' ? values.name : null }
+              name={field.attributes.name === 'businessName' ? values.name : null}
             >
               {
                 field.attributes.type === 'radio' || field.attributes.type === 'checkbox' ? (
-                  <fieldset name={field.attributes.name} type={field.attributes.type} onChange={handleFieldsetChange}>
+                  <fieldset required={field.required} name={field.attributes.name} type={field.attributes.type} onChange={handleFieldsetChange}>
                     {
                       field.options.map((option, index) => {
                         return (
