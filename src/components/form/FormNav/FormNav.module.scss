@@ -1,0 +1,39 @@
+@use "../../../styles/scss/colors";
+
+.formNav {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 12px;
+  flex: 1;
+  a {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid colors.$carbon;
+    border-radius: 2px;
+
+    svg {
+      width: 10px;
+      height: 5px;
+      color: colors.$carbon;
+      transition: all 250ms ease;
+    }
+
+    &:last-child {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      color: colors.$white;
+      border-color: colors.$white;
+
+      svg {
+        color: colors.$white;
+      }
+    }
+  }
+}

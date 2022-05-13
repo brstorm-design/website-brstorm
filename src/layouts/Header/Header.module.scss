@@ -1,5 +1,5 @@
-@use '../../styles/scss/mixins';
-@use '../../styles/scss/colors';
+@use "../../styles/scss/mixins";
+@use "../../styles/scss/colors";
 
 .header {
   min-height: 80px;
@@ -13,9 +13,9 @@
   transition: all 250ms ease;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: saturate(180%) blur(5px);
-  border-bottom: 1px solid rgba(255, 255, 255, .15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
-  a:hover {
+  .logo:hover {
     path:last-child {
       fill: colors.$pink;
     }

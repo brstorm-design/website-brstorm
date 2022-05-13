@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Form from 'src/components/form/Form';
+import Header from 'src/layouts/Header';
 
 export default function ContactForm({ content }) {
   const { header, fields, submit } = content;
@@ -12,6 +13,7 @@ export default function ContactForm({ content }) {
 
   return (
     <div style={{ paddingTop: '120px' }}>
+      <Header variant="form" answeredFields={5} next="asd" prev="aesede" />
       <div className="container d-flex flex-column" style={{ rowGap: '60px' }}>
         <section>
           <Form fields={fields} />

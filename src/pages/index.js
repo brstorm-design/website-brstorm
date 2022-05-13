@@ -20,7 +20,7 @@ export default function Home(props) {
       <Head>
         <title>Br.Storm Design</title>
       </Head>
-      <Header content={page.header} common={common} />
+      <Header content={page.header} common={common} variant="default" />
 
       <Cover content={page.cover} common={common} />
       <Purpose content={page.purpose} common={common} />
