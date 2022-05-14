@@ -5,56 +5,7 @@ import InputBox from '../InputBox';
 import TextInput from '../TextInput';
 import styles from './Form.module.scss';
 
-export default function Form({ fields }) {
-  const initalValues = {
-    name: '',
-    businessName: '',
-    details: '',
-    yourContent: '',
-    businessSize: '',
-    service: {
-      brand: false,
-      website: false,
-      redesign: false,
-      naming: false,
-      strategy: false,
-    },
-    yourContact: {
-      email: false,
-      whatsapp: false,
-      other: false,
-    },
-    email: '',
-    whatsapp: '',
-    other: '',
-  };
-
-  const [values, setValues] = useState(initalValues);
-
-  function handleFieldsetChange(e) {
-    if (e.target.type === 'radio') {
-      setValues({
-        ...values,
-        [e.currentTarget.name]: e.target.value,
-      })
-    } else if (e.target.type === 'checkbox') {
-      let field = e.target.parentElement.querySelector('textarea');
-      if (field) field.required = e.target.checked;
-      setValues({
-        ...values,
-        [e.target.name]: {
-          ...values[e.target.name],
-          [e.target.value]: e.target.checked,
-        },
-      })
-    } else {
-      return;
-    }
-  }
-
-  /* for (const val in values) {
-    console.log(val, `- ${values[val]}`);
-  } */
+export default function Form({ fields, values, setValues, handleFieldSetChange }) {
 
   function submitForm(e) {
     e.preventDefault();
@@ -87,7 +38,7 @@ export default function Form({ fields }) {
             >
               {
                 field.attributes.type === 'radio' || field.attributes.type === 'checkbox' ? (
-                  <fieldset required={field.required} name={field.attributes.name} type={field.attributes.type} onChange={handleFieldsetChange}>
+                  <fieldset required={field.required} name={field.attributes.name} type={field.attributes.type} onChange={handleFieldSetChange}>
                     {
                       field.options.map((option, index) => {
                         return (

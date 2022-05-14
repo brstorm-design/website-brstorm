@@ -10,18 +10,15 @@ export default function Header({ variant, ...props }) {
 
   switch (variant) {
     case 'form': {
-      var { um, dois } = props;
-      console.log('EXECUTED FORM');
+      var { values } = props;
       break;
     }
     case 'success': {
       var { tres, quatro } = props;
-      console.log('EXECUTED SUCCESS');
       break;
     }
     case 'default': {
       var { common, content } = props;
-      console.log('EXECUTED DEFAULT');
       break;
     }
   }
@@ -118,7 +115,7 @@ export default function Header({ variant, ...props }) {
               </div>
             )
           }
-          {variant === 'form' && <FilledFields />}
+          {variant === 'form' && <FilledFields values={values} />}
 
           { // fazer componente disso:
             variant === 'default' && (
