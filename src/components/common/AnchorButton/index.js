@@ -1,14 +1,32 @@
 import React from 'react';
+import { inOutCube } from 'src/utils/easings';
 
-export default function AnchorButton(props) {
+export default function AnchorButton({
+  href = 'body',
+  offset = 150,
+  dur = 1500,
+  easing = inOutCube,
+  className,
+  children,
+}) {
 
   function startAnimation() {
     let stop = false;
 
     let doc = document.documentElement;
     let startx = doc.scrollTop;
-    let destx = document.querySelector(props.href ? props.href : 'body').offsetTop - 150;
-    let duration = props.duration;
+    let destx;
+    let target = document.querySelector(href);
+    
+    if (typeof offset === 'number') {
+      destx = target.offsetTop - offset;
+    } else if (offset === 'center') {
+      destx = (target.offsetTop - (window.innerHeight / 2) + (target.clientHeight / 2));
+    } else {
+      throw new Error('Invalid `offset` data type')
+    }
+
+    let duration = dur;
     let start = null;
     let end = null;
 
@@ -22,7 +40,7 @@ export default function AnchorButton(props) {
       if (stop) return;
       if (now - start >= duration) stop = true;
       let p = (now - start) / duration;
-      let val = props.easing(p);
+      let val = easing(p);
       let x = startx + (destx - startx) * val;
       window.scrollTo(0, x);
       requestAnimationFrame(draw);
@@ -31,9 +49,9 @@ export default function AnchorButton(props) {
   }
 
   return (
-    <a onClick={startAnimation} href={props.href ? props.href : '#'} className={props.className}>
+    <a onClick={startAnimation} href={href ? href : '#'} className={className}>
       {
-        props.children
+        children
       }
     </a>
   )
