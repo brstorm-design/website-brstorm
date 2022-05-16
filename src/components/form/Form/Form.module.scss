@@ -3,4 +3,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+
+  :global {
+    .active {
+      opacity: 1;
+    }
+  }
 }

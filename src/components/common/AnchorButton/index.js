@@ -2,7 +2,7 @@ import React from 'react';
 import { inOutCube } from 'src/utils/easings';
 
 export default function AnchorButton({
-  href = 'body',
+  href,
   offset = 150,
   dur = 1500,
   easing = inOutCube,
@@ -11,6 +11,7 @@ export default function AnchorButton({
 }) {
 
   function startAnimation() {
+    if (!href) return;
     let stop = false;
 
     let doc = document.documentElement;
@@ -49,7 +50,7 @@ export default function AnchorButton({
   }
 
   return (
-    <a onClick={startAnimation} href={href ? href : '#'} className={className}>
+    <a onClick={startAnimation} href={href} className={className}>
       {
         children
       }

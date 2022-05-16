@@ -5,7 +5,7 @@ import InputBox from '../InputBox';
 import TextInput from '../TextInput';
 import styles from './Form.module.scss';
 
-export default function Form({ fields, values, setValues, handleFieldSetChange }) {
+export default function Form({ fields, values, setValues, handleFieldSetChange, activeField }) {
 
   function submitForm(e) {
     e.preventDefault();
@@ -23,31 +23,6 @@ export default function Form({ fields, values, setValues, handleFieldSetChange }
     }
   }
 
-  useEffect(() => {
-    const screenCenter = window.innerHeight / 2;
-
-    function handleIntersection(entries) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          if (entry.boundingClientRect.top > screenCenter) {
-            let prevElement = entry.target.previousElementSibling;
-            if (prevElement) prevElement.classList.remove('active');
-          } else {
-            let nextElement = entry.target.nextElementSibling;
-            if (nextElement) nextElement.classList.remove('active');
-          }
-        }
-      })
-    }
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      rootMargin: '-40% 0% -40% 0%',
-    });
-
-    document.querySelectorAll('form > *:not([type="submit"])').forEach(element => observer.observe(element));
-  }, [])
-
   return (
     <form onSubmit={submitForm} className={styles.form} noValidate>
       {
@@ -61,6 +36,7 @@ export default function Form({ fields, values, setValues, handleFieldSetChange }
               type={field.attributes.type}
               name={field.attributes.name === 'businessName' ? values.name : null}
               id={field.attributes.name}
+              active={activeField?.id === field.attributes.name ? true : false}
             >
               {
                 field.attributes.type === 'radio' || field.attributes.type === 'checkbox' ? (

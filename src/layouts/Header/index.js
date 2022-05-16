@@ -10,7 +10,7 @@ export default function Header({ variant, ...props }) {
 
   switch (variant) {
     case 'form': {
-      var { values } = props;
+      var { values, activeField } = props;
       break;
     }
     case 'success': {
@@ -124,7 +124,7 @@ export default function Header({ variant, ...props }) {
               </a>
             )
           }
-          {variant === 'form' && <FormNav />}
+          {variant === 'form' && <FormNav activeField={activeField} />}
         </div>
       </nav>
     </header>

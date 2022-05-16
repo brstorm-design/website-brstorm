@@ -1,6 +1,9 @@
 @use "../../../styles/scss/colors";
 
 .question {
+  opacity: 0.3;
+  transition: all 500ms ease;
+
   h3 {
     position: relative;
     font-weight: 500;

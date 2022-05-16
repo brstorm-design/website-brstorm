@@ -5,6 +5,7 @@ import Form from 'src/components/form/Form';
 import Header from 'src/layouts/Header';
 
 export default function ContactForm({ content }) {
+  const [activeField, setActiveField] = useState(null);
   const { header, fields, submit } = content;
 
   useEffect(() => {
@@ -57,12 +58,45 @@ export default function ContactForm({ content }) {
     }
   }
 
+  useEffect(() => {
+    const screenCenter = window.innerHeight / 2;
+    const formQuestions = document.querySelectorAll('form > *:not([type="submit"])');
+
+    function handleIntersection(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          setActiveField(entry.target);
+          if (entry.boundingClientRect.top > screenCenter) {
+            let prevElement = entry.target.previousElementSibling;
+            if (prevElement) prevElement.classList.remove('active');
+          } else {
+            let nextElement = entry.target.nextElementSibling;
+            if (nextElement) nextElement.classList.remove('active');
+          }
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: '-40% 0% -40% 0%',
+    });
+
+    formQuestions.forEach(element => observer.observe(element));
+  }, []);
+
   return (
     <div style={{ paddingTop: '120px' }}>
-      <Header variant="form" values={values} next="asd" prev="aesede" />
+      <Header variant="form" values={values} activeField={activeField} />
       <div className="container d-flex flex-column" style={{ rowGap: '60px' }}>
         <section>
-          <Form fields={fields} values={values} setValues={setValues} handleFieldSetChange={handleFieldSetChange} />
+          <Form
+            fields={fields}
+            values={values}
+            setValues={setValues}
+            handleFieldSetChange={handleFieldSetChange}
+            activeField={activeField}
+          />
         </section>
       </div>
     </div>
