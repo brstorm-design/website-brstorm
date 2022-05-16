@@ -1,0 +1,17 @@
+.section {
+  padding-top: calc(80px + 115px);
+
+  & > div {
+    max-width: 780px;
+    margin: 0 auto;
+
+    small {
+      display: block;
+    }
+
+    & > * {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

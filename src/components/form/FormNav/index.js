@@ -6,8 +6,8 @@ import { inOutQuad } from 'src/utils/easings';
 
 export default function FormNav({ activeField }) {
   
-  let prevId = activeField?.previousElementSibling.id || undefined;
-  let nextId = activeField?.nextElementSibling.id || undefined;
+  let prevId = activeField?.previousElementSibling?.id || undefined;
+  let nextId = activeField?.nextElementSibling?.id || undefined;
 
   return (
     <div className={styles.formNav}>

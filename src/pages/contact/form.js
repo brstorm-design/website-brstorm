@@ -3,10 +3,12 @@ import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Form from 'src/components/form/Form';
 import Header from 'src/layouts/Header';
+import Cover from 'src/components/form/Cover';
+import Footer from 'src/layouts/Footer';
 
-export default function ContactForm({ content }) {
+export default function ContactForm({ content, common, footer }) {
   const [activeField, setActiveField] = useState(null);
-  const { header, fields, submit } = content;
+  const { header, cover, fields, submit } = content;
 
   useEffect(() => {
     document.body.classList.add('page');
@@ -86,20 +88,19 @@ export default function ContactForm({ content }) {
   }, []);
 
   return (
-    <div style={{ paddingTop: '120px' }}>
+    <>
       <Header variant="form" values={values} activeField={activeField} />
-      <div className="container d-flex flex-column" style={{ rowGap: '60px' }}>
-        <section>
-          <Form
-            fields={fields}
-            values={values}
-            setValues={setValues}
-            handleFieldSetChange={handleFieldSetChange}
-            activeField={activeField}
-          />
-        </section>
-      </div>
-    </div>
+      <Cover content={cover} />
+      <Form
+        fields={fields}
+        submitText={submit}
+        values={values}
+        setValues={setValues}
+        handleFieldSetChange={handleFieldSetChange}
+        activeField={activeField}
+      />
+      <Footer content={footer} common={common} />
+    </>
   )
 }
 
@@ -107,13 +108,17 @@ export async function getStaticProps({ locale }) {
   if (locale === 'pt') {
     return {
       props: {
-        content: pt.contactForm
+        content: pt.contactForm,
+        common: pt.common,
+        footer: pt.home.footer,
       }
     }
   } else {
     return {
       props: {
-        content: en.contactForm
+        content: en.contactForm,
+        common: en.common,
+        footer: en.home.footer,
       }
     }
   }
