@@ -13,13 +13,12 @@
   resize: none;
   overflow: hidden;
   transition: all 350ms ease;
-  margin-top: 24px;
-  
+
   &:focus-visible {
     outline: 0;
     border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
   }
-  
+
   &:hover {
     border-image: linear-gradient(90deg, colors.$carbon 0%, colors.$carbon 100%) 1;
   }
@@ -31,4 +30,20 @@
 
 .wrapper {
   scroll-margin-top: 400px;
+  position: relative;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  & + small {
+    display: inline-block;
+    margin-top: 24px;
+  }
+
+  svg {
+    position: absolute;
+    right: 18px;
+  }
 }

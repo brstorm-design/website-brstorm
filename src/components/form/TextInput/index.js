@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './TextInput.module.scss';
+import ErrorIcon from 'public/images/icons/Error.svg';
 
 export default function TextInput({ name, placeholder, required, formValues, setFormValue }) {
   const inputProps = { name, placeholder, required };
@@ -9,6 +10,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const field = useRef(null);
 
   function handleChange(e) {
+    e.target.closest('section').classList.remove('error');
     setHeight('auto');
     setParentHeight(`${field.current?.scrollHeight}px`);
     setFormValue({
@@ -36,6 +38,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
         className={styles.textField}
         style={{ height: height }}
       />
+      {/* <ErrorIcon /> */}
     </div>
   )
 }

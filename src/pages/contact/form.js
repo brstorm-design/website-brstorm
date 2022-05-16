@@ -40,6 +40,7 @@ export default function ContactForm({ content, common, footer }) {
   const [values, setValues] = useState(initalValues);
 
   function handleFieldSetChange(e) {
+    e.target.closest('section').classList.remove('error');
     if (e.target.type === 'radio') {
       setValues({
         ...values,

@@ -14,12 +14,9 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
       console.log('%cSUCCESS', 'color: #75e6b2;');
       console.log(values);
     } catch (e) {
-      e.element.parentElement.scrollIntoView({ behavior: 'smooth' });
-      e.element.style.background = 'red';
+      e.element.scrollIntoView({ behavior: 'smooth' });
+      e.element.classList.add('error');
       console.warn(e);
-      setTimeout(() => {
-        e.element.style.background = 'initial'
-      }, 1500);
     }
   }
 
@@ -43,7 +40,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
                   >
                     {
                       field.attributes.type === 'radio' || field.attributes.type === 'checkbox' ? (
-                        <fieldset required={field.required} name={field.attributes.name} type={field.attributes.type} onChange={handleFieldSetChange}>
+                        <fieldset required={field.attributes.required} name={field.attributes.name} type={field.attributes.type} onChange={handleFieldSetChange}>
                           {
                             field.options.map((option, index) => {
                               return (

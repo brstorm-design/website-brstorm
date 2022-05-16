@@ -3,7 +3,22 @@
 .question {
   opacity: 0.3;
   transition: all 500ms ease;
-scroll-margin-top: 150px;
+  scroll-margin-top: 450px;
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    scroll-margin-top: 300px;
+  }
+
+  /* &:global(.error) {
+    textarea {
+      background-color: red;
+    }
+
+    fieldset {
+      background-color: red;
+    }
+  } */
 
   h3 {
     position: relative;
@@ -21,10 +36,5 @@ scroll-margin-top: 150px;
 
   small {
     color: colors.$carbon;
-  }
-
-  textarea + small {
-    margin-top: 24px;
-    display: inline-block;
   }
 }

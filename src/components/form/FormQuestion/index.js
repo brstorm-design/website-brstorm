@@ -42,10 +42,10 @@ export default function FormQuestion({ children, title, helperText, required, na
   }
 
   return (
-    <div className={styles.question} id={id} onClick={active ? null : handleClick}>
+    <section className={styles.question} id={id} onClick={active ? null : handleClick} type={type}>
       <h3>{name ? name : ''}{title} {required ? '' : <small style={{ display: display }}>(Opcional)</small>}</h3>
       {children}
       {helperText && <small>{helperText}</small>}
-    </div>
+    </section>
   )
 }
