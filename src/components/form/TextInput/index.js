@@ -26,7 +26,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
   }, [thisValue]);
 
   return (
-    <div style={{ minHeight: parentHeight }}>
+    <div style={{ minHeight: parentHeight }} className={styles.wrapper}>
       <textarea
         {...inputProps}
         onChange={handleChange}
