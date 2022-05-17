@@ -9,6 +9,8 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const [thisValue, setThisValue] = useState('');
   const field = useRef(null);
 
+  const showMessage = !(name === 'email' || name === 'phone' || name === 'otherContact');
+
   function handleChange(e) {
     e.target.closest('section').classList.remove('error');
     setHeight('auto');
@@ -38,7 +40,8 @@ export default function TextInput({ name, placeholder, required, formValues, set
         className={styles.textField}
         style={{ height: height }}
       />
-      {/* <ErrorIcon /> */}
+      <ErrorIcon />
+      { showMessage && <small>Por favor, preencha este campo</small> }
     </div>
   )
 }

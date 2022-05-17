@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './FormQuestion.module.scss';
+import ErrorIcon from 'public/images/icons/Error.svg';
 
 export default function FormQuestion({ children, title, helperText, required, name, type, id, active }) {
 
@@ -43,7 +44,13 @@ export default function FormQuestion({ children, title, helperText, required, na
 
   return (
     <section className={styles.question} id={id} onClick={active ? null : handleClick} type={type}>
-      <h3>{name ? name : ''}{title} {required ? '' : <small style={{ display: display }}>(Opcional)</small>}</h3>
+      <div className={styles.title}>
+        <h3>{name ? name : ''}{title} {required ? '' : <small style={{ display: display }}>(Opcional)</small>}</h3>
+        <div>
+          <small>Selecione alguma das opções abaixo</small>
+          <ErrorIcon />
+        </div>
+      </div>
       {children}
       {helperText && <small>{helperText}</small>}
     </section>
