@@ -13,11 +13,6 @@
   align-items: center;
   transition: all 350ms ease;
 
-  @include mixins.sm {
-    height: 16px;
-    width: 16px;
-  }
-
   &[type="radio"], &[type="radio"]::before, &[type="radio"]::after {
     border-radius: 50%;
   }
@@ -41,11 +36,6 @@
     width: 16px;
     height: 16px;
     z-index: 1;
-
-    @include mixins.sm {
-      width: 10px;
-      height: 10px;
-    }
   }
 
   &::before {

@@ -1,10 +1,16 @@
 @use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
 
 .formNav {
   display: flex;
   justify-content: flex-end;
   column-gap: 12px;
   flex: 1;
+
+  @include mixins.sm {
+    display: none;
+  }
+
   a {
     cursor: pointer;
     display: flex;

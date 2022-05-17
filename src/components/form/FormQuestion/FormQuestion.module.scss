@@ -41,21 +41,6 @@
         }
       }
     }
-
-    /* &::after {
-      content: "Selecione alguma das opções abaixo";
-      position: absolute;
-      top: 0;
-      right: 0;
-      line-height: 36px;
-      font-size: 14px;
-      color: colors.$error;
-      
-      @include mixins.lg {
-        line-height: 32px;
-        font-size: 13px;
-      }
-    } */
   }
 
   &:global(.error) {
@@ -78,11 +63,16 @@
     margin-bottom: 0;
 
     &::before {
+      content: counter(question) ". ";
       position: absolute;
       right: calc(100% + 8px);
       counter-increment: question;
-      content: counter(question) ". ";
       color: colors.$pink;
+
+      @include mixins.lg {
+        position: relative;
+        right: auto;
+      }
     }
   }
 

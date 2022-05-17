@@ -1,3 +1,5 @@
+@use '../../../styles/scss/mixins';
+
 .form {
   counter-set: question;
   margin-top: 120px;
@@ -10,5 +12,11 @@
     .active {
       opacity: 1;
     }
+  }
+
+  @include mixins.lg {
+    margin-top: 80px;
+    row-gap: 80px;
+    margin-bottom: 40px;
   }
 }

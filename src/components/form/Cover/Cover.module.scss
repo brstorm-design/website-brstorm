@@ -1,7 +1,9 @@
+@use '../../../styles/scss/mixins';
+
 .section {
   padding-top: calc(80px + 115px);
 
-  & > div {
+  .text {
     max-width: 780px;
     margin: 0 auto;
 
@@ -9,9 +11,17 @@
       display: block;
     }
 
+    h1 {
+      margin: 24px auto;
+    }
+
     & > * {
       text-align: center;
       margin: 0 auto;
     }
+  }
+
+  @include mixins.lg {
+    padding-top: calc(80px + 80px);
   }
 }

@@ -266,7 +266,7 @@
           "name": "yourContent",
           "required": true,
           "type": "text",
-          "placeholder": "Ex.: Sim, Instagram: @brstorm.design"
+          "placeholder": "Ex.: Instagram: @brstorm.design"
         }
       },
       {
