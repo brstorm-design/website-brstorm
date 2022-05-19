@@ -20,3 +20,6 @@ export function validateForm() {
     }
   });
 }
+
+export const nextQuestion = (formElement) => formElement.closest('section').nextElementSibling?.querySelector('textarea, input')?.focus();
+export const prevQuestion = (formElement) => formElement.closest('section').previousElementSibling?.querySelector('textarea, input')?.focus();

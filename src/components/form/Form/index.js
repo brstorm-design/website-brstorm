@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { smoothScroll } from 'src/modules/App';
 import { inOutQuad } from 'src/utils/easings';
-import { validateForm } from 'src/utils/form';
+import { nextQuestion, validateForm } from 'src/utils/form';
 import FormQuestion from '../FormQuestion';
 import InputBox from '../InputBox';
 import TextInput from '../TextInput';
@@ -26,7 +26,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
   function handleKeyDown(e) {
     if (e.key === 'Enter') {
       e.preventDefault();
-      e.target.closest('section').nextElementSibling?.querySelector('textarea, input')?.focus();
+      nextQuestion(e.target);
     }
   }
 

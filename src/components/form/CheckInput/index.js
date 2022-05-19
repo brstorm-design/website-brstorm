@@ -1,4 +1,5 @@
 import React from 'react';
+import { nextQuestion } from 'src/utils/form';
 import styles from './CheckInput.module.scss';
 
 export default function CheckInput({ value, name, type, required, collapse }) {
@@ -11,6 +12,7 @@ export default function CheckInput({ value, name, type, required, collapse }) {
       inputList.forEach(el => {
         el.classList.remove('selected')
       });
+      nextQuestion(e.target);
     }
 
     if (e.target.checked) {

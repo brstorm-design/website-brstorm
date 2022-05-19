@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './TextInput.module.scss';
 import ErrorIcon from 'public/images/icons/Error.svg';
+import { nextQuestion } from 'src/utils/form';
 
 export default function TextInput({ name, placeholder, required, formValues, setFormValue }) {
   const inputProps = { name, placeholder, required };
@@ -9,7 +10,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const [thisValue, setThisValue] = useState('');
   const field = useRef(null);
 
-  const showMessage = !(name === 'email' || name === 'phone' || name === 'otherContact');
+  const isNested = !(name === 'email' || name === 'phone' || name === 'otherContact');
 
   function handleChange(e) {
     e.target.closest('section').classList.remove('error');
@@ -35,9 +36,14 @@ export default function TextInput({ name, placeholder, required, formValues, set
         return;
       } else {
         e.preventDefault();
-        e.target.closest('section').nextElementSibling?.querySelector('textarea, input')?.focus();
+        nextQuestion(e.target);
       }
     }
+  }
+
+  function handleClick(e) {
+    e.target.closest('label').click();
+    e.target.focus();
   }
 
   return (
@@ -50,10 +56,11 @@ export default function TextInput({ name, placeholder, required, formValues, set
         ref={field}
         rows="1"
         className={styles.textField}
+        onClick={isNested ? null : handleClick}
         style={{ height: height }}
       />
       <ErrorIcon />
-      { showMessage && <small>Por favor, preencha este campo</small> }
+      {isNested && <small>Por favor, preencha este campo</small>}
     </div>
   )
 }
