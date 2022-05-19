@@ -65,7 +65,7 @@ export default function FormQuestion({ children, title, helperText, required, na
         </div>
       </div>
       {children}
-      {helperText && <small>{helperText}</small>}
+      {helperText && <small style={{ display: 'inline-block', marginTop: '24px' }}>{helperText}</small>}
     </section>
   )
 }
