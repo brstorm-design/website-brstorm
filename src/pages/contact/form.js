@@ -46,7 +46,9 @@ export default function ContactForm({ content, common, footer }) {
         ...values,
         [e.currentTarget.name]: e.target.value,
       })
-    } else if (e.target.type === 'checkbox') {
+    }
+
+    else if (e.target.type === 'checkbox') {
       let field = e.target.parentElement.querySelector('textarea');
       if (field) field.required = e.target.checked;
       setValues({
@@ -56,7 +58,9 @@ export default function ContactForm({ content, common, footer }) {
           [e.target.value]: e.target.checked,
         },
       })
-    } else {
+    }
+
+    else {
       return;
     }
   }
@@ -84,6 +88,12 @@ export default function ContactForm({ content, common, footer }) {
     const observer = new IntersectionObserver(handleIntersection, {
       rootMargin: '-40% 0% -40% 0%',
     });
+
+    if (window.scrollY === 0) {
+      const initialActive = document.querySelectorAll('form > *')[0];
+      setActiveField(initialActive);
+      initialActive.classList.add('active');
+    }
 
     formQuestions.forEach(element => observer.observe(element));
   }, []);

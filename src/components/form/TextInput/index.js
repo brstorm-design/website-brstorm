@@ -29,11 +29,23 @@ export default function TextInput({ name, placeholder, required, formValues, set
     setParentHeight(`${currentHeight}px`);
   }, [thisValue]);
 
+  function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      if (e.shiftKey) {
+        return;
+      } else {
+        e.preventDefault();
+        e.target.closest('section').nextElementSibling?.querySelector('textarea, input')?.focus();
+      }
+    }
+  }
+
   return (
     <div style={{ minHeight: parentHeight }} className={styles.wrapper}>
       <textarea
         {...inputProps}
         onChange={handleChange}
+        onKeyDown={handleKeyDown}
         value={formValues[name]}
         ref={field}
         rows="1"

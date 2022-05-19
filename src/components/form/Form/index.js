@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { smoothScroll } from 'src/modules/App';
+import { inOutQuad } from 'src/utils/easings';
 import { validateForm } from 'src/utils/form';
 import FormQuestion from '../FormQuestion';
 import InputBox from '../InputBox';
@@ -14,9 +16,17 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
       console.log('%cSUCCESS', 'color: #75e6b2;');
       console.log(values);
     } catch (e) {
-      e.element.scrollIntoView({ behavior: 'smooth' });
+      /* e.element.scrollIntoView({ behavior: 'smooth' }); */
+      smoothScroll(e.element, 'center', 1000, inOutQuad)
       e.element.classList.add('error');
       console.warn(e);
+    }
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      e.target.closest('section').nextElementSibling?.querySelector('textarea, input')?.focus();
     }
   }
 
@@ -24,7 +34,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
     <div className="container">
       <div className="row">
         <div className="col-12 col-lg-8 offset-lg-2">
-          <form onSubmit={submitForm} className={styles.form} noValidate id="form">
+          <form onSubmit={submitForm} onKeyDown={handleKeyDown} className={styles.form} noValidate id="form">
             {
               fields.map((field, index) => {
                 return (

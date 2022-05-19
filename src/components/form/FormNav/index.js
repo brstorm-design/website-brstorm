@@ -12,11 +12,11 @@ export default function FormNav({ activeField }) {
   return (
     <div className={styles.formNav}>
 
-      <AnchorButton href={`#${prevId}`} offset="center" easing={inOutQuad} dur={500}>
+      <AnchorButton href={prevId ? `#${prevId}` : prevId} offset="center" easing={inOutQuad} duration={500}>
         <Chevron />
       </AnchorButton>
 
-      <AnchorButton href={`#${nextId}`} offset="center" easing={inOutQuad} dur={500}>
+      <AnchorButton href={nextId ? `#${nextId}` : nextId} offset="center" easing={inOutQuad} duration={500}>
         <Chevron />
       </AnchorButton>
       

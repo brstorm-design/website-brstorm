@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './FormQuestion.module.scss';
 import ErrorIcon from 'public/images/icons/Error.svg';
+import { smoothScroll } from 'src/modules/App';
 
 export default function FormQuestion({ children, title, helperText, required, name, type, id, active }) {
 
@@ -42,8 +43,20 @@ export default function FormQuestion({ children, title, helperText, required, na
     startAnimation(e);
   }
 
+  function handleFocus(e) {
+    if (e.relatedTarget) {
+      smoothScroll(e.relatedTarget, 'center', 400);
+    }
+  }
+
   return (
-    <section className={styles.question} id={id} onClick={active ? null : handleClick} type={type}>
+    <section
+      className={styles.question}
+      id={id}
+      type={type}
+      onClick={active ? null : handleClick}
+      onBlur={handleFocus}
+    >
       <div className={styles.title}>
         <h3>{name ? name : ''}{title} {required ? '' : <small style={{ display: display }}>(Opcional)</small>}</h3>
         <div>
