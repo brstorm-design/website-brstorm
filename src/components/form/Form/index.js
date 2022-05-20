@@ -76,7 +76,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
               })
             }
           </form>
-          <button className="btn" type="submit" form="form">{submitText}</button>
+          <button className="btn large" type="submit" form="form">{submitText}</button>
         </div>
       </div>
     </div>
