@@ -27,7 +27,7 @@
     padding: 20px 40px 20px 20px;
   }
   
-  &:global(.selected) {
+  &:global(.selected), &:focus-within {
     border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
     span {
       color: colors.$darkGray;
