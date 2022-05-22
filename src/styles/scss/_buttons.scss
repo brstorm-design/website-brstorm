@@ -13,7 +13,7 @@
   line-height: 20px;
   height: 40px;
   transform: none;
-  transition: all 150ms ease;
+  transition: all 250ms ease;
 
   &.small {
     font-size: 14px;
@@ -42,6 +42,9 @@
     } */
   }
     
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(colors.$white, 0.45);
+  }
 
   &:hover {
     background-color: transparent;

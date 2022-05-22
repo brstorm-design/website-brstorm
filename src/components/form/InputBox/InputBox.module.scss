@@ -29,20 +29,27 @@
   
   &:global(.selected), &:focus-within {
     border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
+
     span {
       color: colors.$darkGray;
     }
+
     input {
       border-color: colors.$darkGray;
+    }
+
+    .collapsedContent {
+      color: colors.$darkGray;
     }
   }
 
   .collapsedContent {
     flex-basis: 100%;
-    color: colors.$darkGray;
+    color: colors.$carbon;
     margin-left: calc(24px + 16px);
     padding: 24px 0 16px 0px;
     font-size: 14px;
+    transition: all 350ms ease;
     
     &.nested {
       padding: 8px 0 24px 0px;
@@ -52,10 +59,6 @@
         margin-right: 0;
         padding: 12px 0 8px 0px;
       }
-    }
-
-    small {
-      color: colors.$darkGray;
     }
   }
 
@@ -83,12 +86,13 @@
   textarea {
     border-image: none;
     border: 0;
-    border-bottom: 1px solid colors.$darkGray;
+    border-bottom: 1px solid colors.$carbon;
     background: linear-gradient(0deg, #0A0A0A 0%, rgba(10, 10, 10, 0) 100%);
     font-size: 16px;
 
     &:hover {
       border-image: none;
+      border-color: colors.$darkGray;
     }
   }
 }

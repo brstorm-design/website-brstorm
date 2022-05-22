@@ -10,7 +10,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const [thisValue, setThisValue] = useState('');
   const field = useRef(null);
 
-  const isNested = !(name === 'email' || name === 'phone' || name === 'otherContact');
+  const isNested = (name === 'email' || name === 'phone' || name === 'otherContact');
 
   function handleChange(e) {
     e.target.closest('section').classList.remove('error');
@@ -31,6 +31,12 @@ export default function TextInput({ name, placeholder, required, formValues, set
   }, [thisValue]);
 
   function handleKeyDown(e) {
+    if (isNested) {
+      let label = e.target.closest('label')
+      label.classList.add('selected');
+      label.control.checked = true;
+    }
+
     if (e.key === 'Enter') {
       if (e.shiftKey) {
         return;
@@ -39,11 +45,6 @@ export default function TextInput({ name, placeholder, required, formValues, set
         nextQuestion(e.target);
       }
     }
-  }
-
-  function handleClick(e) {
-    e.target.closest('label').click();
-    e.target.focus();
   }
 
   return (
@@ -56,11 +57,10 @@ export default function TextInput({ name, placeholder, required, formValues, set
         ref={field}
         rows="1"
         className={styles.textField}
-        onClick={isNested ? null : handleClick}
         style={{ height: height }}
       />
       <ErrorIcon />
-      {isNested && <small>Por favor, preencha este campo</small>}
+      {!isNested && <small>Por favor, preencha este campo</small>}
     </div>
   )
 }

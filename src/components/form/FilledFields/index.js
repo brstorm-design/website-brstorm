@@ -6,6 +6,8 @@ export default function FilledFields({ values }) {
   delete values.email;
   delete values.whatsapp;
   delete values.other;
+  delete values.otherContact;
+  delete values.phone;
 
   const numberOfFields = Object.getOwnPropertyNames(values).length;
 
