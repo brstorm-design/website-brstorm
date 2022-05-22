@@ -12,11 +12,11 @@ export default function CheckInput({ value, name, type, required, collapse }) {
       inputList.forEach(el => {
         el.classList.remove('selected')
       });
-      nextQuestion(e.target);
     }
 
     if (e.target.checked) {
       box.classList.add('selected');
+      collapse?.show();
     } else {
       box.classList.remove('selected');
       collapse?.toggle();
