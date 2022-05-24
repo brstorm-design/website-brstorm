@@ -42,7 +42,9 @@ export default async (req, res) => {
     }
 
     const response = await sgMail.send(emailData); */
-    console.log('server');
+
+    // simulando 2 segundos de processamento:
+    await new Promise(r => setTimeout(r, 2000));
     return res.status(200).end();
   }
 

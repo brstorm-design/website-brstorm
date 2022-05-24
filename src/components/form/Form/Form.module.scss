@@ -8,6 +8,10 @@
   row-gap: 120px;
   margin-bottom: 80px;
 
+  & :disabled {
+    opacity: 0.3;
+  }
+
   :global {
     .active {
       opacity: 1;
@@ -19,4 +23,10 @@
     row-gap: 80px;
     margin-bottom: 40px;
   }
+}
+
+.form + div {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
 }

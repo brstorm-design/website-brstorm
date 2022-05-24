@@ -8,17 +8,19 @@ import TextInput from '../TextInput';
 import styles from './Form.module.scss';
 
 export default function Form({ fields, submitText, values, setValues, handleFieldSetChange, activeField }) {
+  const [loading, setLoading] = useState(false);
 
   async function submitForm(e) {
     e.preventDefault();
-    console.log('client');
     try {
       validateForm(values);
 
-      /* console.log('%cSUCCESS', 'color: #75e6b2;');
-      console.log(values); */
+      const formElements = Array.from(document.querySelector('form').elements)
+      formElements.forEach(element => {
+        element.disabled = true;
+      });
 
-      // desabilitar submissões ao form aqui
+      setLoading(true);
 
       const request = await fetch('/api/contact', {
         method: 'POST',
@@ -29,9 +31,9 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
         body: JSON.stringify(values),
       });
       if (request.ok) {
-        // sucesso
+        console.log('success');
       } else {
-        // !sucesso
+        window.location.reload();
       }
 
     } catch (e) {
@@ -94,7 +96,10 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
               })
             }
           </form>
-          <button className="btn large" type="submit" form="form">{submitText}</button>
+          <div>
+            <button className="btn large" type="submit" form="form">{submitText}</button>
+            <div style={{display: loading ? 'flex' : 'none'}} className="spinner-border" />
+          </div>
         </div>
       </div>
     </div>
