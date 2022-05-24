@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
-import FilledFields from 'src/components/form/FilledFields';
-import FormNav from 'src/components/form/FormNav';
+import FilledFields from 'src/components/form/form-page/FilledFields';
+import FormNav from 'src/components/form/form-page/FormNav';
 import { inOutQuad } from 'src/utils/easings';
 import Logo from '../../components/common/Logo';
 import styles from './Header.module.scss';
