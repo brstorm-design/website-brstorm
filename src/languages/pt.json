@@ -374,7 +374,7 @@
           },
           {
             "name": "WhatsApp",
-            "value": "whatsapp",
+            "value": "phone",
             "collapsedContent": {
               "name": "phone",
               "type": "tel",
@@ -383,7 +383,7 @@
           },
           {
             "name": "Outros",
-            "value": "other",
+            "value": "otherContact",
             "collapsedContent": {
               "name": "otherContact",
               "type": "text",

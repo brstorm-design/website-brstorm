@@ -29,12 +29,12 @@ export default function ContactForm({ content, common, footer }) {
     },
     yourContact: {
       email: false,
-      whatsapp: false,
-      other: false,
+      phone: false,
+      otherContact: false,
     },
     email: '',
-    whatsapp: '',
-    other: '',
+    phone: '',
+    otherContact: '',
   };
 
   const [values, setValues] = useState(initalValues);

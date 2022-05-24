@@ -9,14 +9,32 @@ import styles from './Form.module.scss';
 
 export default function Form({ fields, submitText, values, setValues, handleFieldSetChange, activeField }) {
 
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
+    console.log('client');
     try {
       validateForm(values);
-      console.log('%cSUCCESS', 'color: #75e6b2;');
-      console.log(values);
+
+      /* console.log('%cSUCCESS', 'color: #75e6b2;');
+      console.log(values); */
+
+      // desabilitar submissões ao form aqui
+
+      const request = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+      if (request.ok) {
+        // sucesso
+      } else {
+        // !sucesso
+      }
+
     } catch (e) {
-      /* e.element.scrollIntoView({ behavior: 'smooth' }); */
       smoothScroll(e.element, 'center', 1000, inOutQuad)
       e.element.classList.add('error');
       console.warn(e);
