@@ -6,14 +6,27 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useEffect } from 'react';
 import { rootPath } from 'src/utils/env';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
 
+  const router = useRouter();
+  const gradients = {
+    left: `url("${rootPath}/images/backgrounds/cover/left.svg")`,
+    right: `url("${rootPath}/images/backgrounds/cover/right.svg")`,
+    footer: `url("${rootPath}/images/backgrounds/footer.svg")`,
+  }
+
   useEffect(() => {
+    if (router.route.endsWith('success')) {
+      gradients.left = 'none';
+      gradients.right = 'none';
+    }
+
     document.body.style.setProperty('--background-detail', `
-    url("${rootPath}/images/backgrounds/cover/left.svg"),
-    url("${rootPath}/images/backgrounds/cover/right.svg"),
-    url("${rootPath}/images/backgrounds/footer.svg")
+    ${gradients.left},
+    ${gradients.right},
+    ${gradients.footer}
     `);
   }, []);
 

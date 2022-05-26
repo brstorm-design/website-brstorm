@@ -1,0 +1,33 @@
+.section {
+  /* height: 100vh; */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  white-space: break-spaces;
+
+  & > * {
+    margin: 0;
+  }
+
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  :global(.row) {
+    margin-top: 60px;
+  }
+
+  a {
+    width: 100%;
+    justify-content: center;
+    column-gap: 28px;
+    height: 56px;
+  }
+}

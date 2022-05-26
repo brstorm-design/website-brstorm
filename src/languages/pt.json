@@ -398,9 +398,27 @@
   "contactSuccess": {
     "title": {
       "thanks": "Muito Obrigado!",
-      "contactYou": "Agradeçemos seu interesse, entraremos em contato em breve.",
-      "socialText": "Enquanto isso, lhe convidamos a conhecer nossas redes sociais e ver nossos projetos mais recentes."
-    }
+      "contactYou": "Agradeçemos seu interesse,\nentraremos em contato em breve.",
+      "socialText": "Enquanto isso, lhe convidamos a conhecer nossas\nredes sociais e ver nossos projetos mais recentes."
+    },
+    "socials": [
+      {
+        "slug": "instagram",
+        "name": "Instagram"
+      },
+      {
+        "slug": "dribbble",
+        "name": "Dribbble"
+      },
+      {
+        "slug": "behance",
+        "name": "Behance"
+      },
+      {
+        "slug": "website",
+        "name": "Website"
+      }
+    ]
   },
   "landingPage": {
     "header": {

@@ -382,9 +382,9 @@
   },
   "contactSuccess": {
     "title": {
-      "thanks": "Muito Obrigado!",
-      "contactYou": "Agradeçemos seu interesse, entraremos em contato em breve.",
-      "socialText": "Enquanto isso, lhe convidamos a conhecer nossas redes sociais e ver nossos projetos mais recentes."
+      "thanks": "Thank You!",
+      "contactYou": "We appreciate yout interest, we will contact you soon.",
+      "socialText": "In the meantime, we invite you to discover our social media and see our latest projects."
     }
   },
   "landingPage": {
