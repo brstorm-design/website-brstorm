@@ -1,6 +1,6 @@
-@use '../../styles/scss/colors';
-@use '../../styles/scss/mixins';
-@use '../../styles/scss/keyframes';
+@use "../../styles/scss/colors";
+@use "../../styles/scss/mixins";
+@use "../../styles/scss/keyframes";
 
 .section {
   margin-top: 125px;
@@ -15,23 +15,33 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: 30px 0;
 
+  & > :only-child {
+    text-align: center;
+    justify-content: center !important;
+  }
+
   small {
     color: colors.$darkGray;
+    flex: 1;
     @include mixins.md {
       order: 1;
       margin-top: 15px;
     }
   }
 
-  & > a:last-child {
-    cursor: pointer;
+  & > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 
-    &:hover {
-      transform: translateY(-4px);
+    a {
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-4px);
+      }
     }
 
     svg {

@@ -6,45 +6,41 @@ import { inOutQuad } from 'src/utils/easings';
 import Logo from '../../components/common/Logo';
 import styles from './Header.module.scss';
 
-export default function Header({ variant, ...props }) {
+export default function Header({ variant = 'default', ...props }) {
+  let showComponent;
 
   switch (variant) {
     case 'form': {
       var { values, activeField } = props;
+      showComponent = {
+        mainNav: false,
+        cta: false,
+        formNav: true,
+        filledFields: true,
+      }
       break;
     }
     case 'success': {
       var { tres, quatro } = props;
+      showComponent = {
+        mainNav: false,
+        cta: false,
+        formNav: false,
+        filledFields: false,
+      }
       break;
     }
     case 'default': {
       var { common, content } = props;
+      showComponent = {
+        mainNav: true,
+        cta: true,
+        formNav: false,
+        filledFields: false,
+      }
       break;
     }
   }
-
-  let variants = {
-    default: {
-      mainNav: true,
-      cta: true,
-      formNav: false,
-      filledFields: false,
-    },
-    form: {
-      mainNav: false,
-      cta: false,
-      formNav: true,
-      filledFields: true,
-    },
-    success: {
-      mainNav: false,
-      cta: false,
-      formNav: false,
-      filledFields: false,
-    },
-  };
-
-  const variantData = variants[variant];
 
   useEffect(() => {
     const header = document.querySelector('header');
@@ -97,7 +93,7 @@ export default function Header({ variant, ...props }) {
           </Link>
 
           { // fazer componente disso:
-            variant === 'default' && (
+            showComponent.mainNav && (
               <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul className="navbar-nav">
                   {
@@ -115,16 +111,20 @@ export default function Header({ variant, ...props }) {
               </div>
             )
           }
-          {variant === 'form' && <FilledFields values={values} />}
+          {
+            showComponent.filledFields && <FilledFields values={values} />
+          }
 
           { // fazer componente disso:
-            variant === 'default' && (
+            showComponent.cta && (
               <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn small">
                 {common.bookMeeting}
               </a>
             )
           }
-          {variant === 'form' && <FormNav activeField={activeField} />}
+          {
+            showComponent.formNav && <FormNav activeField={activeField} />
+          }
         </div>
       </nav>
     </header>

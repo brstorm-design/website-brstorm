@@ -15,6 +15,14 @@
   backdrop-filter: saturate(180%) blur(5px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 
+  a[href="/"] {
+    &:only-child {
+      svg {
+        margin: auto;
+      }
+    }
+  }
+
   .logo:hover {
     path:last-child {
       fill: colors.$pink;

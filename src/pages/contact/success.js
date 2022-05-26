@@ -4,7 +4,7 @@ import Header from 'src/layouts/Header';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Success from 'src/components/contact/success/Success';
-import styles from 'src/styles/pages/success.module.scss';
+import styles from '../../styles/pages/success.module.scss';
 
 export default function FormSuccess({ content, common, footer }) {
   return (
@@ -13,7 +13,7 @@ export default function FormSuccess({ content, common, footer }) {
       
       <Success content={content} />
 
-      <Footer content={footer} common={common} />
+      <Footer content={footer} variant="success" common={common} />
     </div>
   )
 }
