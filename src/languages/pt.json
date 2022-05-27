@@ -404,19 +404,23 @@
     "socials": [
       {
         "slug": "instagram",
-        "name": "Instagram"
+        "name": "Instagram",
+        "url": "https://instagram.com/brstorm.design"
       },
       {
         "slug": "dribbble",
-        "name": "Dribbble"
+        "name": "Dribbble",
+        "url": "https://dribbble.com/brstorm-design"
       },
       {
         "slug": "behance",
-        "name": "Behance"
+        "name": "Behance",
+        "url": "http://www.be.net/brstorm-design"
       },
       {
         "slug": "website",
-        "name": "Website"
+        "name": "Website",
+        "url": "https://brstorm.design"
       }
     ]
   },

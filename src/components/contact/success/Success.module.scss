@@ -1,15 +1,26 @@
-.section {
-  /* height: 100vh; */
-}
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/colors";
 
-.content {
+.section {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+
+  @include mixins.md {
+    padding-top: calc(80px + 80px);
+    height: auto;
+  }
+}
+
+.content {
   text-align: center;
   white-space: break-spaces;
+
+  @include mixins.md {
+    white-space: normal;
+  }
 
   & > * {
     margin: 0;
@@ -20,14 +31,32 @@
     margin-bottom: 32px;
   }
 
-  :global(.row) {
-    margin-top: 60px;
+  h4 {
+    margin: 0 auto;
+  }
+}
+
+.socials {
+  margin-top: 60px;
+
+  strong {
+    color: colors.$black;
   }
 
   a {
     width: 100%;
     justify-content: center;
-    column-gap: 28px;
+    column-gap: 24px;
     height: 56px;
+
+    @include mixins.md {
+      column-gap: 16px;
+    }
+
+    &:hover {
+      strong {
+        color: colors.$white;
+      }
+    }
   }
 }

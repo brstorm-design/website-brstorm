@@ -4,16 +4,15 @@ import Header from 'src/layouts/Header';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Success from 'src/components/contact/success/Success';
-import styles from '../../styles/pages/success.module.scss';
 
 export default function FormSuccess({ content, common, footer }) {
   return (
-    <div className={styles.successPage}>
+    <div>
       <Header variant="success" />
       
       <Success content={content} />
 
-      <Footer content={footer} variant="success" common={common} />
+      <Footer content={footer} variant="success" common={common} fullPage />
     </div>
   )
 }

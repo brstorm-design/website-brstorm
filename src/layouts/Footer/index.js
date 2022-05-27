@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AnchorButton from 'src/components/common/AnchorButton';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './Footer.module.scss';
 import ArrowUp from 'public/images/double-arrow-up.svg';
 
-export default function Footer({ content, common, variant, ...props }) {
+export default function Footer({ content, common, variant, fullPage, ...props }) {
+  
+  useEffect(() => {
+    if (fullPage) {
+      document.querySelector('footer').classList.add('fullpage');
+    }
+  }, [])
+
   return (
     <footer {...props} className={styles.section} id="footer">
       <div className="container">

@@ -385,7 +385,29 @@
       "thanks": "Thank You!",
       "contactYou": "We appreciate yout interest, we will contact you soon.",
       "socialText": "In the meantime, we invite you to discover our social media and see our latest projects."
-    }
+    },
+    "socials": [
+      {
+        "slug": "instagram",
+        "name": "Instagram",
+        "url": "https://instagram.com/brstorm.design"
+      },
+      {
+        "slug": "dribbble",
+        "name": "Dribbble",
+        "url": "https://dribbble.com/brstorm-design"
+      },
+      {
+        "slug": "behance",
+        "name": "Behance",
+        "url": "http://www.be.net/brstorm-design"
+      },
+      {
+        "slug": "website",
+        "name": "Website",
+        "url": "https://brstorm.design"
+      }
+    ]
   },
   "landingPage": {
     "header": {
