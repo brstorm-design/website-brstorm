@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from 'src/layouts/Footer';
 import Header from 'src/layouts/Header';
 import pt from 'src/languages/pt.json';
@@ -6,6 +6,11 @@ import en from 'src/languages/en.json';
 import Success from 'src/components/contact/success/Success';
 
 export default function FormSuccess({ content, common, footer }) {
+
+  useEffect(() => {
+    document.body.classList.remove('page');
+  }, []);
+
   return (
     <div>
       <Header variant="success" />

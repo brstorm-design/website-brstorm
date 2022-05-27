@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
     ${gradients.right},
     ${gradients.footer}
     `);
-  }, []);
+  }, [router.route]);
 
   return (
     <>

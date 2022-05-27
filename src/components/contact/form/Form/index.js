@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { smoothScroll } from 'src/modules/App';
 import { inOutQuad } from 'src/utils/easings';
@@ -9,6 +10,7 @@ import styles from './Form.module.scss';
 
 export default function Form({ fields, submitText, values, setValues, handleFieldSetChange, activeField }) {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   async function submitForm(e) {
     e.preventDefault();
@@ -31,7 +33,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
         body: JSON.stringify(values),
       });
       if (request.ok) {
-        console.log('success');
+        router.push('/contact/success');
       } else {
         window.location.reload();
       }
