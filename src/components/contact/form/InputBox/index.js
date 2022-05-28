@@ -44,7 +44,7 @@ export default function InputBox({ title, children, ...inputProps }) {
       className={styles.box}
     >
       <CheckInput {...inputProps} collapse={collapse} />
-      <span>{title}</span>
+      <p>{title}</p>
 
       {
         children ? (

@@ -22,15 +22,17 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  
-  @include mixins.sm {
+
+  @include mixins.md {
     padding: 20px 40px 20px 20px;
   }
-  
-  &:global(.selected), &:focus-within {
-    border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
 
-    span {
+  &:global(.selected),
+  &:focus-within {
+    border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
+    background-color: colors.$dark;
+
+    p {
       color: colors.$darkGray;
     }
 
@@ -50,15 +52,21 @@
     padding: 24px 0 16px 0px;
     font-size: 14px;
     transition: all 350ms ease;
-    
+
     &.nested {
       padding: 8px 0 24px 0px;
       margin-right: 16px;
-      
+
       @include mixins.sm {
         margin-right: 0;
         padding: 12px 0 8px 0px;
       }
+    }
+
+    @include mixins.lg {
+      font-size: 10px;
+      margin-left: calc(16px + 20px);
+      padding: 16px 0 4px 0px;
     }
   }
 
@@ -66,29 +74,33 @@
     flex-basis: 100%;
     opacity: 0;
     transition: all 350ms ease;
-    
+
     &:global(.show) {
       opacity: 1;
     }
   }
-  
-  span {
+
+  p {
     transition: all 350ms ease;
     color: inherit;
     margin-left: 16px;
+    margin-bottom: 0;
+
+    @include mixins.lg {
+      margin-left: 20px;
+    }
   }
 
   &:hover {
     border-image: linear-gradient(90deg, colors.$carbon 0%, colors.$carbon 100%) 1;
   }
 
-  // nested text input, last question
+  // nested text inputs, last question
   textarea {
     border-image: none;
     border: 0;
     border-bottom: 1px solid colors.$carbon;
-    background: linear-gradient(0deg, #0A0A0A 0%, rgba(10, 10, 10, 0) 100%);
-    font-size: 16px;
+    background: linear-gradient(0deg, #0a0a0a 0%, rgba(10, 10, 10, 0) 100%);
 
     &:hover {
       border-image: none;

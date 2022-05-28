@@ -14,7 +14,7 @@
     column-gap: 32px;
     row-gap: 24px;
     flex-wrap: wrap;
-    
+
     & > div {
       display: none;
       column-gap: 16px;
@@ -72,7 +72,12 @@
       @include mixins.lg {
         position: relative;
         right: auto;
+        font-size: 20px;
       }
+    }
+
+    @include mixins.lg {
+      font-size: 20px;
     }
   }
 

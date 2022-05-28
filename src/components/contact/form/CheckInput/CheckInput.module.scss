@@ -13,7 +13,14 @@
   align-items: center;
   transition: all 350ms ease;
 
-  &[type="radio"], &[type="radio"]::before, &[type="radio"]::after {
+  @include mixins.lg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &[type="radio"],
+  &[type="radio"]::before,
+  &[type="radio"]::after {
     border-radius: 50%;
   }
 
@@ -36,6 +43,11 @@
     width: 16px;
     height: 16px;
     z-index: 1;
+
+    @include mixins.lg {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   &::before {
@@ -47,6 +59,10 @@
     mask-position: center;
     mask-size: 8px 6px;
     z-index: 2;
+
+    @include mixins.lg {
+      mask-size: 5px 3.5px;
+    }
   }
 
   &:checked {
