@@ -41,13 +41,6 @@ export default function Pitch({ props }) {
       }
       {
         service === 'web' ? (
-          <PitchCover />
-        ) : (
-          null
-        )
-      }
-      {
-        service === 'web' ? (
           <About content={pitchContent.details} />
         ) : (
           <Details content={pitchContent.details} />

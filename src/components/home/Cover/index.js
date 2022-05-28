@@ -56,7 +56,7 @@ export default function Cover({ content, common, service }) {
   usePausableAnimation(section.current);
 
   return (
-    <section ref={section} className={`${styles.section} ${service === 'web' ? 'd-none d-lg-block' : ''}`} id="cover">
+    <section ref={section} className={`${styles.section}`} id="cover">
       <div className="container">
         <AnimatedLogo />
         <img className={`${styles.topRight}`} data-animated src={`${rootPath}/images/cover/logo-rotate-360.svg`} alt="" />
