@@ -8,6 +8,10 @@
     margin-top: 24px;
   }
 
+  @include mixins.md {
+    margin-top: 160px;
+  }
+
   :global {
     .swiper {
       overflow: initial;

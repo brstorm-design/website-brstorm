@@ -30,6 +30,12 @@ function MyApp({ Component, pageProps }) {
     `);
   }, [router.route]);
 
+  useEffect(() => {
+    if (router.route.includes('portfolio') && !router.route.endsWith('portfolio')) {
+      document.querySelector('header + *').classList.add('portfolio');
+    }
+  }, []);
+
   return (
     <>
       <Head>

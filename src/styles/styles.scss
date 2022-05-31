@@ -49,6 +49,13 @@ body {
   }
 }
 
+.portfolio {
+  padding-top: 80px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 html {
   scroll-behavior: auto !important;
   overflow-x: clip;
