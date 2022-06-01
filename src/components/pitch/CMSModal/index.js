@@ -23,7 +23,7 @@ export default function CMSModal({ show, handleClose }) {
       [
         {
           opacity: '0',
-          transform: 'translateY(100%)',
+          transform: 'translateY(50%)',
         },
         {
           opacity: '1',
@@ -32,7 +32,7 @@ export default function CMSModal({ show, handleClose }) {
       ],
       {
         duration: 350,
-        easing: 'ease',
+        easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
         fill: 'both',
       })
     ani.onfinish = handleFinish;

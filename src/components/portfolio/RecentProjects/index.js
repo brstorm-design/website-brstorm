@@ -51,7 +51,7 @@ export default function RecentProjects() {
             portfolio.map(item => {
               return (
                 <SwiperSlide key={`project-${item.id}`}>
-                  <Link href="#">
+                  <Link href={`/portfolio/${item.name.toLowerCase()}`}>
                     <a className={styles.project}>
                       <Image objectFit="cover" placeholder="blur" src={item.cover} layout="responsive" />
                       <div>
