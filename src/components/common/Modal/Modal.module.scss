@@ -1,0 +1,40 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: adjust-color($color: #010101, $alpha: -0.2);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: none;
+  opacity: 0;
+  transform: translateY(50px);
+  overflow: auto;
+  flex-direction: column;
+
+  h1 {
+    background-color: adjust-color($color: #ff0000, $alpha: -0.7);
+  }
+}
+
+.button {
+  display: flex;
+  position: sticky;
+  margin-left: auto;
+  top: 24px;
+  right: calc(24px + 5px);
+  padding: 0;
+  z-index: 1001;
+  border: none;
+  background: transparent;
+  color: colors.$darkGray;
+  cursor: pointer;
+}
+
+.modalContent {
+  margin-top: -12px;
+}
