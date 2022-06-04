@@ -43,15 +43,15 @@ export default function Projects({ format, content, common, client, allProjects 
     }
   }, [animations])
 
-  content.portfolio = allProjects;
+  if (format !== 'mosaic') content.portfolio = allProjects;
 
   function renderProjects() {
     switch (format) {
       case 'mosaic':
         return <Mosaic content={content} common={common} portfolio={portfolio} />;
-        case 'slider':
+      case 'slider':
         return <Slider content={content} />;
-        case 'stairs':
+      case 'stairs':
         return <Stairs content={content} common={common} portfolio={allProjects} />;
     }
   }
