@@ -25,7 +25,7 @@ export default function Home(props) {
       <Cover content={page.cover} common={common} />
       <Purpose content={page.purpose} common={common} />
       <WhatWeDo content={page.whatWeDo} common={common} />
-      <Projects format="mosaic" content={page.projects} common={common} allProjects={props.fullportfolio} />
+      <Projects format="mosaic" content={page.projects} common={common} />
       <Testimonials content={page.testimonials} />
       <WhyUs content={page.whyUs} />
       <Contact content={page.contact} common={common} />
