@@ -48,7 +48,7 @@ export default function Projects({ format, content, common, client, allProjects 
   function renderProjects() {
     switch (format) {
       case 'mosaic':
-        return <Mosaic content={content} common={common} portfolio={portfolio} />;
+        return <Mosaic content={content} common={common} portfolio={content.portfolio} />;
       case 'slider':
         return <Slider content={content} />;
       case 'stairs':
