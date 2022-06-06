@@ -1,0 +1,13 @@
+@use "../../../../styles/scss/colors";
+
+.container {
+  background-color: colors.$dark;
+  padding: 0 0 120px;
+  overflow: hidden;
+
+  @media (min-width: 1400px) {
+    max-width: 100%;
+    margin: 0 96px;
+    width: auto;
+  }
+}

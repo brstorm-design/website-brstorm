@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import styles from './Modal.module.scss';
 import Close from 'public/images/close.svg';
+import ProjectHeader from 'src/components/portfolio/single/Header';
 
 function Modal({ children, open, toggleOpen }) {
   const [animation, setAnimation] = useState(null);
@@ -59,11 +60,10 @@ function Modal({ children, open, toggleOpen }) {
 
   return (
     <div ref={modalElement} className={styles.modal}>
-
       <div className={styles.button} onClick={toggleOpen}>
         <Close />
       </div>
-
+      
       <div className={styles.modalContent}>
         {children}
       </div>

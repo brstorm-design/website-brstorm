@@ -10,7 +10,7 @@ import petsvida from 'public/images/portfolio/petsvida.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function RecentProjects() {
+export default function RecentProjects({ modal }) {
   const portfolio = [
     {
       id: 1,
@@ -35,7 +35,9 @@ export default function RecentProjects() {
         <div className="row justify-content-between">
           <div className="col offset-lg-1">
             <div className={styles.title}>
-              <h1>Projetos Recentes</h1>
+              {
+                modal ? <h2>Projetos Recentes</h2> : <h1>Projetos Recentes</h1>
+              }
             </div>
           </div>
           <div className="col-md-4 d-flex justify-content-end">
