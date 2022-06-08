@@ -55,7 +55,7 @@ export default function WhatWeDo({ content, common }) {
           <div className="col-12 col-lg-6">
             <Samothrace translateValues={mousePosition} />
             <div className={`d-block d-lg-none ${styles.title}`}>
-              <h3 className="gradient-bg">{content.subtitle}</h3>
+              <h4 className="gradient-bg">{content.subtitle}</h4>
               <h1>{content.title}</h1>
             </div>
           </div>

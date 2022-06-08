@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import useMediaQuery from 'src/hooks/useMediaQuery';
 import styles from './Pricing.module.scss';
 
 export default function Pricing({ content }) {
+  const isMobile = useMediaQuery('sm');
 
   useEffect(() => {
     const elements = document.querySelectorAll('#item-0-1, #item-1-1');
@@ -13,6 +15,7 @@ export default function Pricing({ content }) {
 
   function toggleStyle() {
     document.querySelectorAll(`.${styles.pack}`)[1].classList.toggle(styles.active);
+    console.log(isMobile);
   }
 
   return (
@@ -31,14 +34,17 @@ export default function Pricing({ content }) {
             content.packages.map((pack, packIndex) => {
               return (
                 <div className="col-12 col-lg-4" key={`pack-${packIndex}`}>
-                  <div className={`${styles.pack} ${packIndex === 1 ? styles.active : ''}`} onMouseEnter={toggleStyle} onMouseLeave={toggleStyle}>
+                  <div className={`${styles.pack} ${packIndex === 1 ? styles.active : ''}`}
+                    onMouseEnter={isMobile ? null : toggleStyle}
+                    onMouseLeave={isMobile ? null : toggleStyle}
+                  >
                     <div className={styles.title}>
                       <h2>{pack.name}</h2>
                       <h6>{pack.shortText}</h6>
                     </div>
                     <div>
                       <small>{pack.longText}</small>
-                      
+
                       <ul>
 
                         {/* loop dos itens inclusos */}

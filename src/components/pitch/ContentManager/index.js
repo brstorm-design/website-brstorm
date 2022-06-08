@@ -27,7 +27,7 @@ export default function ContentManager({ /*content*/ }) {
     <section className={styles.section}>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-7">
+          <div className="col-12 col-lg-7 order-1 order-lg-0">
             <CMS />
           </div>
           <div className="col-12 col-lg-4 offset-lg-1">

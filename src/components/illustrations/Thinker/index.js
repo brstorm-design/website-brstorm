@@ -12,6 +12,7 @@ import SecondResult from 'public/images/illustrations/the-thinker/result-2.svg';
 import Snippet from 'public/images/illustrations/the-thinker/snippet.svg';
 import Typewriter from 'typewriter-effect/dist/core';
 import { constructAnimation } from 'src/modules/App';
+import Head from 'next/head';
 
 export default function Thinker() {
   const search = useRef(null);
@@ -76,6 +77,10 @@ export default function Thinker() {
 
   return (
     <div className={styles.illustration}>
+      <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+      </Head>
+      
       <Image className={styles.statue} placeholder="blur" src={thinker} alt="The Thinker Sculpture" />
       <DigitalDesign />
       <Logo />

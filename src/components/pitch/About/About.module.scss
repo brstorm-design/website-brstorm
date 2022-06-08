@@ -33,5 +33,17 @@
     h1 {
       white-space: break-spaces;
     }
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

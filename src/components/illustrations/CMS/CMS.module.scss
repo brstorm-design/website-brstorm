@@ -42,7 +42,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
   height: 235px;
   position: absolute;
   top: 75px;
-  right: 0;
+  right: 50px;
 
   @include mixins.md {
     top: 15px;
@@ -56,7 +56,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
 
   // Blue
   & > div:nth-of-type(1) {
-    animation: grad-1 11s $easing infinite;
+    animation: grad-1 9s $easing infinite;
     width: 215px;
     height: 215px;
     top: 0;
@@ -67,7 +67,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
   }
   // Cyan
   & > div:nth-of-type(2) {
-    animation: grad-3 11s $easing infinite;
+    animation: grad-3 9s $easing infinite;
     width: 115px;
     height: 115px;
     top: 115px;
@@ -78,7 +78,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
   }
   // White
   & > div:nth-of-type(3) {
-    animation: grad-3 11s $easing infinite;
+    animation: grad-3 9s $easing infinite;
     width: 16px;
     height: 16px;
     top: 150px;
@@ -89,7 +89,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
   }
   // Pink
   & > div:nth-of-type(4) {
-    animation: grad-1 11s $easing infinite reverse;
+    animation: grad-1 9s $easing infinite reverse;
     width: 160px;
     height: 160px;
     top: 75px;

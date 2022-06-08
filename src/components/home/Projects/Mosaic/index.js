@@ -22,7 +22,6 @@ const images = {
 }
 
 export default function Mosaic({ common, content, portfolio }) {
-  console.log(portfolio);
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
 

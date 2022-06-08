@@ -101,7 +101,7 @@ export default function Header({ variant = 'default', ...props }) {
                       return (
                         <li className="nav-item" key={`link-${index}`}>
                           <Link href={link.href}>
-                            <a onClick={startAnimation} className="nav-link">{link.name}</a>
+                            <a onClick={startAnimation} className="nav-link small">{link.name}</a>
                           </Link>
                         </li>
                       )

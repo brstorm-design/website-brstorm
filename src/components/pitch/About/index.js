@@ -12,11 +12,10 @@ export default function About({ content }) {
             <div className={styles.content}>
               <h1>{content.title}</h1>
               <h2>{content.subtitle}</h2>
-              <div dangerouslySetInnerHTML={{__html: content.text}} />
+              <div dangerouslySetInnerHTML={{ __html: content.text }} />
             </div>
           </div>
           <div className="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
-            {/* <img className="img-fluid d-block mx-auto" src={`${rootPath}/images/illustrations/the-thinker.png`} alt="" /> */}
             <Thinker />
           </div>
         </div>

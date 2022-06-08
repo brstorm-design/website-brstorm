@@ -34,7 +34,7 @@
   }
 
   small {
-    color: colors.$darkGray;
+    color: colors.$gray;
     flex: 1;
     @include mixins.md {
       order: 1;
@@ -49,6 +49,7 @@
 
     a {
       cursor: pointer;
+      color: colors.$gray;
       &:hover {
         transform: translateY(-4px);
       }
@@ -73,6 +74,11 @@
   a {
     display: flex;
     align-items: center;
+    color: colors.$lightGray;
+
+    path {
+      transition: fill 250ms ease;
+    }
 
     &:hover {
       transform: translateY(-4px);

@@ -18,7 +18,7 @@ export default function Methodology({ content, pitch, service }) {
         {
           pitch ? (
             <div className={styles.title}>
-              <h3 className="gradient-bg">{content.subtitle}</h3>
+              <h4 className="gradient-bg">{content.subtitle}</h4>
               <h1>{content.title}</h1>
             </div>
           ) : null
