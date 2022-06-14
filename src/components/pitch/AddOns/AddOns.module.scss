@@ -9,10 +9,14 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: colors.$lightDark;
+  background: linear-gradient(180deg, #010101 0%, rgba(1, 1, 1, 0) 100%);
+  backdrop-filter: blur(5px);
   column-gap: 80px;
   padding: 40px;
-  border: 1px solid colors.$carbon;
+  border: 0.75px solid;
+  border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
+  border-bottom: 0;
+  border-radius: 2px;
 
   @include mixins.xl {
     column-gap: 40px;
@@ -48,16 +52,27 @@
         position: absolute;
         width: 1px;
         height: calc(100% + 20px);
-        background: colors.$carbon;
+        background-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%);
+
+        @include mixins.lg {
+          background-image: none;
+          background-color: colors.$carbon;
+        }
       }
 
       &::before {
         left: -40px;
+        @include mixins.xl {
+          left: -20px;
+        }
       }
       &::after {
         right: -40px;
+        @include mixins.xl {
+          right: -20px;
+        }
       }
-      
+
       @include mixins.lg {
         &::after,
         &::before {
@@ -74,7 +89,7 @@
           bottom: -20px;
         }
       }
-      
+
       @include mixins.md {
         &::before {
           top: -40px;

@@ -44,14 +44,18 @@
 .pack {
   background: linear-gradient(180deg, #010101 0%, rgba(1, 1, 1, 0) 100%);
   backdrop-filter: blur(5px);
-  border: 1px solid;
+  border: 0.75px solid;
   border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
+  border-bottom: 0;
   padding: 65px 40px 50px;
   opacity: 0.25;
   transition: all 350ms ease;
 
   @include mixins.md {
     padding: 48px 32px;
+    opacity: 1;
+  }
+  @include mixins.lg {
     opacity: 1;
   }
 

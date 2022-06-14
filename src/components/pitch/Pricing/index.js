@@ -3,7 +3,7 @@ import useMediaQuery from 'src/hooks/useMediaQuery';
 import styles from './Pricing.module.scss';
 
 export default function Pricing({ content }) {
-  const isMobile = useMediaQuery('sm');
+  const isMobile = useMediaQuery('lg');
 
   useEffect(() => {
     const elements = document.querySelectorAll('#item-0-1, #item-1-1');

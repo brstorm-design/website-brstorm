@@ -42,7 +42,7 @@
   padding: 40px 25px;
   height: 270px;
   background-color: colors.$black;
-  border: 1px solid;
+  border: 0.75px solid;
   border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
 
   & svg {

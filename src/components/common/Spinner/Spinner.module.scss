@@ -1,0 +1,43 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/keyframes";
+
+.spinner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    stroke: #fff;
+    stroke-width: 1px;
+    fill: none;
+  }
+
+  div {
+    transform-origin: 49% 49%;
+
+    &:first-child {
+      position: relative;
+    }
+  }
+}
+
+.inner,
+.middle,
+.outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+$parts: inner, middle, outer;
+$delay: 0;
+
+@each $part in $parts {
+  .#{$part} {
+    animation: rotate 1.2s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+    animation-delay: #{$delay}ms;
+  }
+
+  $delay: $delay + 100;
+}

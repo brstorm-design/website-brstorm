@@ -69,10 +69,11 @@
   position: relative;
   height: 250px;
   border-radius: 2px;
-  background: rgba($color: colors.$black, $alpha: 0.25);
+  background: linear-gradient(180deg, #010101 0%, rgba(1, 1, 1, 0) 100%);
   backdrop-filter: blur(5px);
-  border: 1px solid;
-  border-image: linear-gradient(180deg, rgba(231, 231, 231, 0.2) 0%, rgba(182, 182, 182, 0) 100%) 1;
+  border: 0.75px solid;
+  border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
+  border-bottom: 0;
   transition: all 450ms ease;
   display: flex;
   flex-wrap: wrap;
