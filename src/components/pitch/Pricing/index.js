@@ -15,7 +15,6 @@ export default function Pricing({ content }) {
 
   function toggleStyle() {
     document.querySelectorAll(`.${styles.pack}`)[1].classList.toggle(styles.active);
-    console.log(isMobile);
   }
 
   return (

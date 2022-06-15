@@ -6,7 +6,7 @@ import Slider from './Slider';
 import Stairs from './Stairs';
 
 
-export default function Projects({ format, content, common, client, allProjects }) {
+export default function Projects({ layout, content, common, client, allProjects }) {
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -43,10 +43,10 @@ export default function Projects({ format, content, common, client, allProjects 
     }
   }, [animations])
 
-  if (format !== 'mosaic') content.portfolio = allProjects;
+  /* if (layout !== 'mosaic') content.portfolio = allProjects; */
 
   function renderProjects() {
-    switch (format) {
+    switch (layout) {
       case 'mosaic':
         return <Mosaic content={content} common={common} portfolio={content.portfolio} />;
       case 'slider':

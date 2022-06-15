@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params, locale }) {
   const service = data.services.find(s => s.slug === params.service);
-  const projects = pt.fullportfolio.filter(p => p.categories.includes(service.id));
+  const projects = pt.fullPortfolio[service.jsonName];
 
   switch (locale) {
     case 'pt':

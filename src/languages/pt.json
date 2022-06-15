@@ -95,10 +95,7 @@
           "size": "6",
           "name": "Identidade VIsual PetsVida",
           "type": "E-commerce Pet Shop",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [
-            0
-          ]
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "slug": "rivana",
@@ -106,10 +103,7 @@
           "size": "6",
           "name": "Identidade Visual Rivana",
           "type": "E-Commerce de Vestuário",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [
-            0
-          ]
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "slug": "maptrack",
@@ -117,10 +111,7 @@
           "size": "6",
           "name": "Identidade Visual MapTrack",
           "type": "Startup de Rastreamento de Ativos",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [
-            0
-          ]
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "slug": "catarge",
@@ -128,10 +119,7 @@
           "size": "6",
           "name": "Identidade Visual Catarge",
           "type": "Engenharia e Arquitetura",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [
-            0
-          ]
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
           "slug": "daia",
@@ -139,13 +127,10 @@
           "size": "3",
           "name": "Identidade Visual Daia",
           "type": "Fotógrafa de Família",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-          "categories": [
-            0
-          ]
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         }
       ],
-      "fullportfolio": "Portfólio Completo",
+      "fullPortfolio": "Portfólio Completo",
       "url": "https://www.behance.net/brstorm-design"
     },
     "testimonials": {
@@ -480,8 +465,8 @@
       ]
     },
     "hero": {
-      "title": "Olá",
-      "subtitle": "Nós vamos agregar valor para a",
+      "title": "Olá, |client|!",
+      "subtitle": "Nós vamos agregar valor para a |business|.",
       "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos. Se tiver interesse, estamos disponíveis para conversamos mais em uma reunião."
     },
     "brand": {
@@ -489,6 +474,55 @@
         "title": "O Que é um Projeto de Brand Design",
         "subtitle": "Sua marca vai muito além do visual!",
         "text": "<p>Uma identidade visual bem arquitetada e marcante é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode acreditar e investir.</p><br/><p>Grandes nomes do mercado são representados por imagens e cores que despertam a nossa memória, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que transpareça a sua missão e lhe torne reconhecível em qualquer lugar.</p>"
+      },
+      "projects": {
+        "title": "Clientes Satisfeitos \nem Todo o Mundo",
+        "subtitle": "Projetos & Depoimentos",
+        "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
+        "portfolio": [
+          {
+            "slug": "petsvida",
+            "cover": "/images/portfolio/petsvida.png",
+            "size": "6",
+            "name": "Identidade VIsual PetsVida",
+            "type": "E-commerce Pet Shop",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "rivana",
+            "cover": "/images/portfolio/rivana.png",
+            "size": "6",
+            "name": "Identidade Visual Rivana",
+            "type": "E-Commerce de Vestuário",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "maptrack",
+            "cover": "/images/portfolio/maptrack.png",
+            "size": "6",
+            "name": "Identidade Visual MapTrack",
+            "type": "Startup de Rastreamento de Ativos",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "catarge",
+            "cover": "/images/portfolio/catarge.png",
+            "size": "6",
+            "name": "Identidade Visual Catarge",
+            "type": "Engenharia e Arquitetura",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "daia",
+            "cover": "/images/portfolio/daia.png",
+            "size": "3",
+            "name": "Identidade Visual Daia",
+            "type": "Fotógrafa de Família",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          }
+        ],
+        "fullPortfolio": "Portfólio Completo",
+        "url": "https://www.behance.net/brstorm-design"
       },
       "method": {
         "title": "Etapas do Processo de Criação",
@@ -673,10 +707,66 @@
       }
     },
     "web": {
+      "cover": {
+        "title": "Olá, Fabio e Sara!",
+        "subtitle": "Nós vamos ajudar a Bronzo a crescer.",
+        "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos."
+      },
       "details": {
         "title": "Out of sight, out of mind!",
         "subtitle": "Why invest in a website?",
         "text": "<p>Did you ever think about <strong>having a showcase</strong> that can be seen anywhere? And be able to <strong>sell 24h a day, 7 days a week?</strong> That's the potential of a website.</p><p><strong>A well-planned website</strong> greatly expands the boundaries of the business! Without a website, your business is invisible to the thousands of <strong>people who search for your services every day on Google.</strong></p>"
+      },
+      "projects": {
+        "title": "Clientes Satisfeitos \nem Todo o Mundo",
+        "subtitle": "Projetos & Depoimentos",
+        "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
+        "portfolio": [
+          {
+            "slug": "grana",
+            "cover": "/images/portfolio/web/grana.png",
+            "name": "Website Grana Capital",
+            "type": "App de Imposto de Renda",
+            "url": "https://grana.capital"
+          },
+          {
+            "slug": "brc",
+            "cover": "/images/portfolio/rivana.png",
+            "name": "Website BRC Advogados",
+            "type": "Escritório de Advocacia",
+            "url": "https://brcadv.com"
+          },
+          {
+            "slug": "util",
+            "cover": "/images/portfolio/maptrack.png",
+            "name": "Website Útil",
+            "type": "Serviços de Limpeza",
+            "url": "https://utilfacilities.com.br"
+          },
+          {
+            "slug": "certivale",
+            "cover": "/images/portfolio/maptrack.png",
+            "name": "Website Certivale",
+            "type": "Certificados Digitais",
+            "url": "https://certivale.com.br"
+          },
+          {
+            "slug": "zero27",
+            "cover": "/images/portfolio/zero27.png",
+            "name": "Website Barbearia Zero27",
+            "type": "Barbearia",
+            "url": "https://www.zero27barbering.com"
+          },
+          {
+            "slug": "arca",
+            "cover": "/images/portfolio/maptrack.png",
+            "name": "Website Instituto Arca",
+            "type": "Proteção Animal",
+            "url": "https://institutoarca.com.br"
+          }
+        ],
+        "fullPortfolio": "Portfólio Completo",
+        "url": "https://www.behance.net/brstorm-design"
       },
       "whyUs": {
         "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",
@@ -1200,72 +1290,94 @@
     "contactUs": "Entre em Contato",
     "scrollToTop": "Voltar ao topo"
   },
-  "fullportfolio": [
-    {
-      "slug": "petsvida",
-      "cover": "/images/portfolio/petsvida.png",
-      "size": "6",
-      "name": "Identidade VIsual PetsVida",
-      "type": "E-commerce Pet Shop",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [
-        0
-      ]
-    },
-    {
-      "slug": "rivana",
-      "cover": "/images/portfolio/rivana.png",
-      "size": "6",
-      "name": "Identidade Visual Rivana",
-      "type": "E-Commerce de Vestuário",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [
-        0
-      ]
-    },
-    {
-      "slug": "maptrack",
-      "cover": "/images/portfolio/maptrack.png",
-      "size": "6",
-      "name": "Identidade Visual MapTrack",
-      "type": "Startup de Rastreamento de Ativos",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [
-        0
-      ]
-    },
-    {
-      "slug": "catarge",
-      "cover": "/images/portfolio/catarge.png",
-      "size": "6",
-      "name": "Identidade Visual Catarge",
-      "type": "Engenharia e Arquitetura",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [
-        0
-      ]
-    },
-    {
-      "slug": "daia",
-      "cover": "/images/portfolio/daia.png",
-      "size": "3",
-      "name": "Identidade Visual Daia",
-      "type": "Fotógrafa de Família",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [
-        0
-      ]
-    },
-    {
-      "slug": "util",
-      "cover": "/images/portfolio/util.png",
-      "size": "3",
-      "name": "Identidade Visual Útil",
-      "type": "Serviços de Limpeza",
-      "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01",
-      "categories": [
-        0
-      ]
-    }
-  ]
+  "fullPortfolio": {
+    "brand": [
+      {
+        "slug": "petsvida",
+        "cover": "/images/portfolio/petsvida.png",
+        "name": "Identidade Visual PetsVida",
+        "type": "E-commerce Pet Shop",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "rivana",
+        "cover": "/images/portfolio/rivana.png",
+        "name": "Identidade Visual Rivana",
+        "type": "E-Commerce de Vestuário",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "maptrack",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Identidade Visual MapTrack",
+        "type": "Startup de Rastreamento de Ativos",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "catarge",
+        "cover": "/images/portfolio/catarge.png",
+        "name": "Identidade Visual Catarge",
+        "type": "Engenharia e Arquitetura",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "daia",
+        "cover": "/images/portfolio/daia.png",
+        "name": "Identidade Visual Daia",
+        "type": "Fotógrafa de Família",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "util",
+        "cover": "/images/portfolio/util.png",
+        "name": "Identidade Visual Útil",
+        "type": "Serviços de Limpeza",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      }
+    ],
+    "web": [
+      {
+        "slug": "grana",
+        "cover": "/images/portfolio/web/grana.png",
+        "name": "Website Grana Capital",
+        "type": "App de Imposto de Renda",
+        "url": "https://grana.capital"
+      },
+      {
+        "slug": "brc",
+        "cover": "/images/portfolio/rivana.png",
+        "name": "Website BRC Advogados",
+        "type": "Escritório de Advocacia",
+        "url": "https://brcadv.com"
+      },
+      {
+        "slug": "util",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Website Útil",
+        "type": "Serviços de Limpeza",
+        "url": "https://utilfacilities.com.br"
+      },
+      {
+        "slug": "certivale",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Website Certivale",
+        "type": "Certificados Digitais",
+        "url": "https://certivale.com.br"
+      },
+      {
+        "slug": "zero27",
+        "cover": "/images/portfolio/zero27.png",
+        "name": "Website Barbearia Zero27",
+        "type": "Barbearia",
+        "url": "https://www.zero27barbering.com"
+      },
+      {
+        "slug": "arca",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Website Instituto Arca",
+        "type": "Proteção Animal",
+        "url": "https://institutoarca.com.br"
+      }
+    ]
+  }
 }

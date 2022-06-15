@@ -130,7 +130,7 @@
           "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         }
       ],
-      "fullportfolio": "Full portfolio",
+      "fullPortfolio": "Full portfolio",
       "url": "https://www.behance.net/brstorm-design"
     },
     "testimonials": {
@@ -465,8 +465,8 @@
       ]
     },
     "hero": {
-      "title": "Hi",
-      "subtitle": "We will bring value to",
+      "title": "Hi, |client|!",
+      "subtitle": "We will bring value to |business|.",
       "text": "We prepared a brief presentation for you to better know us and the solutions we provide."
     },
     "brand": {
@@ -474,6 +474,55 @@
         "title": "What is a Brand Project",
         "subtitle": "Your brand goes beyond the visual!",
         "text": "<p>A <strong>well-planned and striking visual identity</strong> is a fundamental step to present yourself to your client as a company in which he can <strong>believe</strong> and <strong>invest</strong>.</p><br/><p>Big names in the market are represented by images and colors that <strong>awaken our memory</strong>, even unconsciously. It is this type of impact that you must make on your audience: a visual identity that <strong>makes your mission visible and makes you recognizable anywhere</strong>.</p>"
+      },
+      "projects": {
+        "title": "Trusted By \nMany Clients \nAround the World",
+        "subtitle": "Projects & Reviews",
+        "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
+        "portfolio": [
+          {
+            "slug": "petsvida",
+            "cover": "/images/portfolio/petsvida.png",
+            "size": "6",
+            "name": "PetsVida Brand Identity",
+            "type": "E-commerce Pet Shop",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "rivana",
+            "cover": "/images/portfolio/rivana.png",
+            "size": "6",
+            "name": "Rivana Brand Identity",
+            "type": "Clothing E-Commerce",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "maptrack",
+            "cover": "/images/portfolio/maptrack.png",
+            "size": "6",
+            "name": "MapTrack Brand Identity",
+            "type": "Asset Tracking Startup",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "catarge",
+            "cover": "/images/portfolio/catarge.png",
+            "size": "6",
+            "name": "Catarge Brand Identity",
+            "type": "Engineering and Architecture",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "daia",
+            "cover": "/images/portfolio/daia.png",
+            "size": "3",
+            "name": "Daia Brand Identity",
+            "type": "Family Photographer",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          }
+        ],
+        "fullPortfolio": "Full portfolio",
+        "url": "https://www.behance.net/brstorm-design"
       },
       "method": {
         "title": "Creative Process Steps",
@@ -667,6 +716,57 @@
         "title": "Out of sight,\nOut of Mind!",
         "subtitle": "Why invest in a website?",
         "text": "<p>Did you ever think about <strong>having a showcase</strong> that can be seen anywhere? And be able to <strong>sell 24h a day, 7 days a week?</strong> That's the potential of a website.</p><p><strong>A well-planned website</strong> greatly expands the boundaries of the business! Without a website, your business is invisible to the thousands of <strong>people who search for your services every day on Google.</strong></p>"
+      },
+      "projects": {
+        "title": "Trusted By \nMany Clients \nAround the World",
+        "subtitle": "Projects & Reviews",
+        "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
+        "portfolio": [
+          {
+            "slug": "grana",
+            "cover": "/images/portfolio/web/grana.png",
+            "name": "Grana Capital Website",
+            "type": "Income Tax App",
+            "url": "https://grana.capital"
+          },
+          {
+            "slug": "brc",
+            "cover": "/images/portfolio/rivana.png",
+            "name": "BRC Advogados",
+            "type": "Law Firm",
+            "url": "https://brcadv.com"
+          },
+          {
+            "slug": "util",
+            "cover": "/images/portfolio/maptrack.png",
+            "name": "Útil Website",
+            "type": "Cleaning Services",
+            "url": "https://utilfacilities.com.br"
+          },
+          {
+            "slug": "certivale",
+            "cover": "/images/portfolio/maptrack.png",
+            "name": "Certivale Website",
+            "type": "Digital Certificates",
+            "url": "https://certivale.com.br"
+          },
+          {
+            "slug": "zero27",
+            "cover": "/images/portfolio/zero27.png",
+            "name": "Zero27 Barbering Website",
+            "type": "Barber Shop",
+            "url": "https://www.zero27barbering.com/"
+          },
+          {
+            "slug": "arca",
+            "cover": "/images/portfolio/maptrack.png",
+            "name": "Arca Institute Website",
+            "type": "Animal Protection",
+            "url": "https://institutoarca.com.br"
+          }
+        ],
+        "fullPortfolio": "Full portfolio",
+        "url": "https://www.behance.net/brstorm-design"
       },
       "whyUs": {
         "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",
@@ -1196,54 +1296,99 @@
     "scrollToTop": "Scroll to Top",
     "seeHow": "See How"
   },
-  "fullportfolio": [
-    {
-      "slug": "grana",
-      "cover": "/images/portfolio/web/grana.png",
-      "size": "6",
-      "name": "Grana Capital Website",
-      "type": "Income Tax App",
-      "url": "https://grana.capital"
-    },
-    {
-      "slug": "brc",
-      "cover": "/images/portfolio/rivana.png",
-      "size": "6",
-      "name": "BRC Advogados",
-      "type": "Law Firm",
-      "url": "https://brcadv.com"
-    },
-    {
-      "slug": "util",
-      "cover": "/images/portfolio/maptrack.png",
-      "size": "6",
-      "name": "Útil Website",
-      "type": "Cleaning Services",
-      "url": "https://utilfacilities.com.br"
-    },
-    {
-      "slug": "certivale",
-      "cover": "/images/portfolio/maptrack.png",
-      "size": "6",
-      "name": "Certivale Website",
-      "type": "Digital Certificates",
-      "url": "https://certivale.com.br"
-    },
-    {
-      "slug": "zero27",
-      "cover": "/images/portfolio/zero27.png",
-      "size": "6",
-      "name": "Zero27 Barbering Website",
-      "type": "Barber Shop",
-      "url": "https://www.zero27barbering.com/"
-    },
-    {
-      "slug": "arca",
-      "cover": "/images/portfolio/maptrack.png",
-      "size": "6",
-      "name": "Arca Institute Website",
-      "type": "Animal Protection",
-      "url": "https://institutoarca.com.br"
-    }
-  ]
+  "fullPortfolio": {
+    "brand": [
+      {
+        "slug": "petsvida",
+        "cover": "/images/portfolio/petsvida.png",
+        "size": "6",
+        "name": "PetsVida Brand Identity",
+        "type": "E-commerce Pet Shop",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "rivana",
+        "cover": "/images/portfolio/rivana.png",
+        "size": "6",
+        "name": "Rivana Brand Identity",
+        "type": "Clothing E-Commerce",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "maptrack",
+        "cover": "/images/portfolio/maptrack.png",
+        "size": "6",
+        "name": "MapTrack Brand Identity",
+        "type": "Asset Tracking Startup",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "catarge",
+        "cover": "/images/portfolio/catarge.png",
+        "size": "6",
+        "name": "Catarge Brand Identity",
+        "type": "Engineering and Architecture",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "daia",
+        "cover": "/images/portfolio/daia.png",
+        "size": "3",
+        "name": "Daia Brand Identity",
+        "type": "Family Photographer",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      },
+      {
+        "slug": "util",
+        "cover": "/images/portfolio/util.png",
+        "name": "Útil Brand Identity",
+        "type": "Cleaning Services",
+        "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+      }
+    ],
+    "web": [
+      {
+        "slug": "grana",
+        "cover": "/images/portfolio/web/grana.png",
+        "name": "Grana Capital Website",
+        "type": "Income Tax App",
+        "url": "https://grana.capital"
+      },
+      {
+        "slug": "brc",
+        "cover": "/images/portfolio/rivana.png",
+        "name": "BRC Advogados",
+        "type": "Law Firm",
+        "url": "https://brcadv.com"
+      },
+      {
+        "slug": "util",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Útil Website",
+        "type": "Cleaning Services",
+        "url": "https://utilfacilities.com.br"
+      },
+      {
+        "slug": "certivale",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Certivale Website",
+        "type": "Digital Certificates",
+        "url": "https://certivale.com.br"
+      },
+      {
+        "slug": "zero27",
+        "cover": "/images/portfolio/zero27.png",
+        "name": "Zero27 Barbering Website",
+        "type": "Barber Shop",
+        "url": "https://www.zero27barbering.com/"
+      },
+      {
+        "slug": "arca",
+        "cover": "/images/portfolio/maptrack.png",
+        "name": "Arca Institute Website",
+        "type": "Animal Protection",
+        "url": "https://institutoarca.com.br"
+      }
+    ]
+  }
 }

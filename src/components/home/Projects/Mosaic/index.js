@@ -84,7 +84,7 @@ export default function Mosaic({ common, content, portfolio }) {
         <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
           <Behance />
           <SeeMore linkText={common.seeMore}>
-            {content.fullportfolio}
+            {content.fullPortfolio}
           </SeeMore>
         </a>
       </div>

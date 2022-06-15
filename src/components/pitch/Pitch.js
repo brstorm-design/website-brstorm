@@ -22,7 +22,7 @@ export default function Pitch({ props }) {
   const common = props.content.common;
   const client = props.pitch;
   const pitchContent = props.pitchContent;
-  const service = props.service.slug
+  const service = props.service.slug;
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function Pitch({ props }) {
           <Details content={pitchContent.details} />
         )
       }
-      <Projects format="slider" allProjects={props.content.fullportfolio} content={home.projects} common={common} client={client} />
+      <Projects layout="slider" content={pitchContent.projects} common={common} />
       <Testimonials content={home.testimonials} />
       <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
       {

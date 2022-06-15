@@ -6,7 +6,7 @@
       "name": "Fabio e Sara",
       "businessName": "Bronzo",
       "parameters": {
-        "langs": ["en"],
+        "langs": ["en", "pt"],
         "services": [0, 1],
         "content": [0, 2]
       },
@@ -279,12 +279,6 @@
       "name": "Web",
       "slug": "web",
       "jsonName": "web"
-    },
-    {
-      "id": 2,
-      "name": "Social Media",
-      "slug": "social-media",
-      "jsonName": "socialMedia"
     }
   ],
 
