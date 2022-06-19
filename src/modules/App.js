@@ -103,12 +103,9 @@ export function getMaxHeight(elements = NodeList) {
   return height;
 }
 
-export function smoothScroll(href, offset = 150, duration = 1500, easing = inOutCube) {
-  if (!href) return;
+export function smoothScroll(href = document.documentElement, offset = 150, duration = 1500, easing = inOutCube) {
   let stop = false;
-
-  let doc = document.documentElement;
-  let startx = doc.scrollTop;
+  let startx = document.documentElement.scrollTop;
   let destx;
   let target;
 
