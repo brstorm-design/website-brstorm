@@ -5,7 +5,7 @@ import { inOutQuad } from 'src/utils/easings';
 import { rootPath } from 'src/utils/env';
 import styles from './Cover.module.scss';
 
-export default function PitchCover() {
+export default function PitchCover({ content, common }) {
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);

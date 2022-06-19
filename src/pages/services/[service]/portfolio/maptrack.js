@@ -14,7 +14,7 @@ export default function SinglePortfolio({ content }) {
       <Head>
         <title>{'project.name'} • Br.Storm</title>
       </Head>
-      <Header common={content.common} content={content.landingPage.header} />
+      <Header common={content.common} content={content.landingPage.brand.header} />
       
       <MapTrack />
       <RecentProjects />
@@ -26,7 +26,8 @@ export default function SinglePortfolio({ content }) {
 }
 
 export async function getStaticPaths() {
-  const paths = data.services.map(service => ({
+  const filteredServices = data.services.filter(service => service.hasLandingPage);
+  const paths = filteredServices.map(service => ({
     params: { service: service.slug },
   }))
   return { paths, fallback: false }

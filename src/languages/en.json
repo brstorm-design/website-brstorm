@@ -197,7 +197,7 @@
     "contact": {
       "title": "Let's Connect",
       "paragraph": "<strong>What did you think?</strong> If you have any doubts to clear or <br class='d-none d-lg-block'> questions to ask, feel free to schedule a meeting with us.",
-      "availableHours": "<sup>*</sup> We’re available for meeting <br> Mon to Fri | 1pm to 7pm."
+      "availableHours": "<sup>*</sup> We're available for meeting <br> Mon to Fri | 1pm to 7pm."
     },
     "footer": {
       "copyright": "Copyright © 2021 – Br.Storm Design",
@@ -410,29 +410,161 @@
     ]
   },
   "landingPage": {
-    "header": {
-      "items": [
+    "brand": {
+      "header": {
+        "items": [
+          {
+            "name": "Projects",
+            "href": "#projects"
+          },
+          {
+            "name": "What We Do",
+            "href": "#methodology"
+          },
+          {
+            "name": "Why Us",
+            "href": "#why-us"
+          },
+          {
+            "name": "Testimonials",
+            "href": "#testimonials"
+          },
+          {
+            "name": "Get in Touch",
+            "href": "#contact"
+          }
+        ]
+      },
+      "cover": {
+        "title": "Let your brand speak for you!",
+        "subtitle": "Your customer's first contact with you is your brand."
+      },
+      "details": {
+        "title": "What is a Brand Project",
+        "subtitle": "Your brand goes beyond the visual!",
+        "text": "<p>A <strong>well-planned and striking visual identity</strong> is a fundamental step to present yourself to your client as a company in which he can <strong>believe</strong> and <strong>invest</strong>.</p><br/><p>Big names in the market are represented by images and colors that <strong>awaken our memory</strong>, even unconsciously. It is this type of impact that you must make on your audience: a visual identity that <strong>makes your mission visible and makes you recognizable anywhere</strong>.</p>"
+      },
+      "projects": {
+        "title": "Trusted By \nMany Clients \nAround the World",
+      "subtitle": "Projects & Reviews",
+      "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
+      "portfolio": [
         {
-          "name": "Projects",
-          "href": "#projects"
+          "slug": "petsvida",
+          "cover": "/images/portfolio/petsvida.png",
+          "size": "6",
+          "name": "PetsVida Brand Identity",
+          "type": "E-commerce Pet Shop",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
-          "name": "What We Do",
-          "href": "#methodology"
+          "slug": "rivana",
+          "cover": "/images/portfolio/rivana.png",
+          "size": "6",
+          "name": "Rivana Brand Identity",
+          "type": "Clothing E-Commerce",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
-          "name": "Why Us",
-          "href": "#why-us"
+          "slug": "maptrack",
+          "cover": "/images/portfolio/maptrack.png",
+          "size": "6",
+          "name": "MapTrack Brand Identity",
+          "type": "Asset Tracking Startup",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
-          "name": "Testimonials",
-          "href": "#testimonials"
+          "slug": "catarge",
+          "cover": "/images/portfolio/catarge.png",
+          "size": "6",
+          "name": "Catarge Brand Identity",
+          "type": "Engineering and Architecture",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         },
         {
-          "name": "Get in Touch",
-          "href": "#contact"
+          "slug": "daia",
+          "cover": "/images/portfolio/daia.png",
+          "size": "3",
+          "name": "Daia Brand Identity",
+          "type": "Family Photographer",
+          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
         }
-      ]
+      ],
+      "fullPortfolio": "Full portfolio",
+      "url": "https://www.behance.net/brstorm-design"
+      },
+      "method": {
+        "title": "Creative Process Steps",
+        "subtitle": "Meet Our Method",
+        "steps": [
+          {
+            "icon": "img-icon.svg",
+            "name": "Design Brief",
+            "text": "Gathering of all essential information for project execution."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Research",
+            "text": "Briefing study, competition analysis, market research and mental map."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Design Concepts",
+            "text": "Brainstorm, moodboard, sketches, prototypes and tests."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Refinement",
+            "text": "Typography definition, symbol, color scheme and other visual elements."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Presentation",
+            "text": "Description of the paths to the achieved result and elaboration of visual samples."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Feedback and Review",
+            "text": "Project validation and, if necessary, adjust and adapt to the client's expectations."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Brand Collaterals",
+            "text": "Development of all complementary materials included in the brand package."
+          },
+          {
+            "icon": "img-icon.svg",
+            "name": "Final Delivery",
+            "text": "Finalization and delivery of the project, followed by attendance and support on the brand use."
+          }
+        ]
+      }
+    },
+    "web": {
+      "header": {
+        "items": [
+          {
+            "name": "Projects",
+            "href": "#projects"
+          },
+          {
+            "name": "What We Do",
+            "href": "#methodology"
+          },
+          {
+            "name": "Why Us",
+            "href": "#why-us"
+          },
+          {
+            "name": "Testimonials",
+            "href": "#testimonials"
+          },
+          {
+            "name": "Get in Touch",
+            "href": "#contact"
+          }
+        ]
+      }
     }
   },
   "pitch": {
@@ -529,42 +661,42 @@
         "subtitle": "Meet Our Method",
         "steps": [
           {
-            "icon": "img-icon.svg",
+            "icon": "Notebook.svg",
             "name": "Design Brief",
             "text": "Gathering of all essential information for project execution."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Research.svg",
             "name": "Research",
             "text": "Briefing study, competition analysis, market research and mental map."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Idea.svg",
             "name": "Design Concepts",
             "text": "Brainstorm, moodboard, sketches, prototypes and tests."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Compass.svg",
             "name": "Refinement",
             "text": "Typography definition, symbol, color scheme and other visual elements."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Presentation.svg",
             "name": "Presentation",
             "text": "Description of the paths to the achieved result and elaboration of visual samples."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Chat.svg",
             "name": "Feedback and Review",
             "text": "Project validation and, if necessary, adjust and adapt to the client's expectations."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Checklist.svg",
             "name": "Brand Collaterals",
             "text": "Development of all complementary materials included in the brand package."
           },
           {
-            "icon": "img-icon.svg",
+            "icon": "Flag.svg",
             "name": "Final Delivery",
             "text": "Finalization and delivery of the project, followed by attendance and support on the brand use."
           }

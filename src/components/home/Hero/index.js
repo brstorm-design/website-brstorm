@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.scss';
-import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import { constructSequentialAnimation, fillPlaceholders, handleIntersection } from 'src/modules/App';
 import AnchorButton from 'src/components/common/AnchorButton';
 import { inOutQuad } from 'src/utils/easings';
 import { rootPath } from 'src/utils/env';
@@ -36,9 +36,7 @@ export default function Hero({ content, common, client }) {
     if (animations) {
       handleIntersection(refs, animations);
     }
-  }, [animations])
-
-
+  }, [animations]);
 
   return (
     <section className={styles.section} id="hero">
@@ -46,8 +44,8 @@ export default function Hero({ content, common, client }) {
         <div className="row">
           <div className="col-12 col-lg-5 d-flex align-items-center order-2 order-lg-1">
             <div ref={element}>
-              <h1>{`${content.title}, ${client.name}`}</h1>
-              <h4>{`${content.subtitle} ${client.businessName}`}</h4>
+              <h1>{`${fillPlaceholders(content.title, { client: 'Fabio e Sara' })}`}</h1>
+              <h4>{`${fillPlaceholders(content.subtitle, { business: 'Bronzo' })}`}</h4>
               <p>{content.text}</p>
               <div className="d-flex d-md-block">
                 <a className="btn large" href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer">

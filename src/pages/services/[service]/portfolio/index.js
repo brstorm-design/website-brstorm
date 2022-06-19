@@ -12,7 +12,8 @@ import Head from 'next/head';
 
 export default function GeneralPortfolio(props) {
   const home = props.content.home;
-  const landingPage = props.content.landingPage;
+  const service = props.service.jsonName;
+  const landingPage = props.content.landingPage[service];
   const common = props.content.common;
 
   return (
@@ -33,7 +34,8 @@ export default function GeneralPortfolio(props) {
 }
 
 export async function getStaticPaths() {
-  const paths = data.services.map(service => ({
+  const filteredServices = data.services.filter(service => service.hasLandingPage);
+  const paths = filteredServices.map(service => ({
     params: { service: service.slug },
   }))
   return { paths, fallback: false }

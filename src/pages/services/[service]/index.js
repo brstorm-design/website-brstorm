@@ -12,12 +12,12 @@ import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
 import Testimonials from 'src/components/home/Testimonials';
 import PitchCover from 'src/components/pitch/PitchCover';
+import Details from 'src/components/pitch/Details';
 
 export default function LandingPage({ content, service }) {
-  const page = content.home;
-  const pitch = content.pitch;
+  const home = content.home;
   const common = content.common;
-  const landing = content.landingPage;
+  const landing = content.landingPage[service.jsonName];
 
   return (
     <>
@@ -26,20 +26,22 @@ export default function LandingPage({ content, service }) {
       </Head>
       <Header content={landing.header} common={content.common} />
 
-      <PitchCover />
-      <Projects format="stairs" content={page.projects} common={common} allProjects={content.fullPortfolio} />
-      <Methodology content={pitch[service.jsonName].method} />
-      <WhyUs content={page.whyUs} />
-      <Testimonials content={page.testimonials} />
-      <Contact content={page.contact} common={common} />
+      <PitchCover content={landing.cover} common={common} />
+      <Details content={landing.details} />
+      <Projects layout="stairs" content={home.projects} common={common} />
+      <Methodology content={landing.method} />
+      <WhyUs content={home.whyUs} />
+      <Testimonials content={home.testimonials} />
+      <Contact content={home.contact} common={common} />
 
-      <Footer content={page.footer} common={common} />
+      <Footer content={home.footer} common={common} />
     </>
   )
 }
 
 export async function getStaticPaths() {
-  const paths = data.services.map(service => ({
+  const filteredServices = data.services.filter(service => service.hasLandingPage);
+  const paths = filteredServices.map(service => ({
     params: { service: service.slug },
   }))
   return { paths, fallback: false }

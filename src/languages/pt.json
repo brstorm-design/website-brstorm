@@ -410,29 +410,162 @@
     ]
   },
   "landingPage": {
-    "header": {
-      "items": [
-        {
-          "name": "Projetos",
-          "href": "#projects"
-        },
-        {
-          "name": "O Que Fazemos",
-          "href": "#methodology"
-        },
-        {
-          "name": "Por Que Nós",
-          "href": "#why-us"
-        },
-        {
-          "name": "Depoimentos",
-          "href": "#testimonials"
-        },
-        {
-          "name": "Entre em Contato",
-          "href": "#contact"
-        }
-      ]
+    "brand": {
+      "header": {
+        "items": [
+          {
+            "name": "Projetos",
+            "href": "#projects"
+          },
+          {
+            "name": "O Que Fazemos",
+            "href": "#methodology"
+          },
+          {
+            "name": "Por Que Nós",
+            "href": "#why-us"
+          },
+          {
+            "name": "Depoimentos",
+            "href": "#testimonials"
+          },
+          {
+            "name": "Entre em Contato",
+            "href": "#contact"
+          }
+        ]
+      },
+      "cover": {
+        "title": "Deixe sua marca falar por você!",
+        "subtitle": "O primeiro contato do seu cliente com você é a sua marca."
+      },
+      "details": {
+        "title": "O Que é um Projeto de Brand Design",
+        "subtitle": "Sua marca vai muito além do visual!",
+        "text": "<p>Uma identidade visual bem arquitetada e marcante é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode acreditar e investir.</p><br/><p>Grandes nomes do mercado são representados por imagens e cores que despertam a nossa memória, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que transpareça a sua missão e lhe torne reconhecível em qualquer lugar.</p>"
+      },
+      "projects": {
+        "title": "Clientes Satisfeitos \nem Todo o Mundo",
+        "subtitle": "Projetos & Depoimentos",
+        "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
+        "portfolio": [
+          {
+            "slug": "petsvida",
+            "cover": "/images/portfolio/petsvida.png",
+            "size": "6",
+            "name": "Identidade VIsual PetsVida",
+            "type": "E-commerce Pet Shop",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "rivana",
+            "cover": "/images/portfolio/rivana.png",
+            "size": "6",
+            "name": "Identidade Visual Rivana",
+            "type": "E-Commerce de Vestuário",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "maptrack",
+            "cover": "/images/portfolio/maptrack.png",
+            "size": "6",
+            "name": "Identidade Visual MapTrack",
+            "type": "Startup de Rastreamento de Ativos",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "catarge",
+            "cover": "/images/portfolio/catarge.png",
+            "size": "6",
+            "name": "Identidade Visual Catarge",
+            "type": "Engenharia e Arquitetura",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "daia",
+            "cover": "/images/portfolio/daia.png",
+            "size": "3",
+            "name": "Identidade Visual Daia",
+            "type": "Fotógrafa de Família",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          }
+        ],
+        "fullPortfolio": "Portfólio Completo",
+        "url": "https://www.behance.net/brstorm-design"
+      },
+      "method": {
+        "title": "O Que é um Projeto de Brand Design",
+        "subtitle": "Sua marca vai muito além do visual!",
+        "text": "<p>Uma <strong>identidade visual bem arquitetada e marcante</strong> é um passo fundamental para se apresentar ao seu cliente como uma empresa em que ele pode <strong>acreditar</strong> e <strong>investir</strong>.</p><br/><p>Grandes nomes do mercado são representados por imagens e cores que <strong>despertam a nossa memória</strong>, até mesmo de forma inconsciente. É este tipo de impacto que você deve causar em seu público: uma identidade visual que <strong>transpareça a sua missão e lhe torne reconhecível em qualquer lugar</strong>. Conheça nosso método:</p>",
+        "steps": [
+          {
+            "icon": "Notebook.svg",
+            "name": "Briefing",
+            "text": "Coleta de todas as informações essenciais para a execução do projeto."
+          },
+          {
+            "icon": "Research.svg",
+            "name": "Pesquisa",
+            "text": "Estudo do briefing, análise de concorrentes, pesquisa de mercado e mapa mental."
+          },
+          {
+            "icon": "Idea.svg",
+            "name": "Desenho",
+            "text": "Brainstorm, moodboard, rascunhos, protótipos e testes."
+          },
+          {
+            "icon": "Compass.svg",
+            "name": "Refinamento",
+            "text": "Definição da tipografia, símbolo, acordo cromático e elementos de apoio."
+          },
+          {
+            "icon": "Presentation.svg",
+            "name": "Apresentação",
+            "text": "Descrição dos caminhos até o resultado alcançado e elaboração de amostras visuais."
+          },
+          {
+            "icon": "Chat.svg",
+            "name": "Avaliação e Ajustes",
+            "text": "Validação do projeto e caso necessário ajuste e adequação as expectativas do cliente. "
+          },
+          {
+            "icon": "Checklist.svg",
+            "name": "Materiais",
+            "text": "Desenvolvimento de todos os materiais complementares inclusos no pacote da marca."
+          },
+          {
+            "icon": "Flag.svg",
+            "name": "Entrega Final",
+            "text": "Finalização e entrega do projeto, seguido de atendimento e suporte no uso da marca."
+          }
+        ]
+      }
+    },
+    "web": {
+      "header": {
+        "items": [
+          {
+            "name": "Projetos",
+            "href": "#projects"
+          },
+          {
+            "name": "O Que Fazemos",
+            "href": "#methodology"
+          },
+          {
+            "name": "Por Que Nós",
+            "href": "#why-us"
+          },
+          {
+            "name": "Depoimentos",
+            "href": "#testimonials"
+          },
+          {
+            "name": "Entre em Contato",
+            "href": "#contact"
+          }
+        ]
+      }
     }
   },
   "pitch": {

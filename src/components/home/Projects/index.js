@@ -52,7 +52,7 @@ export default function Projects({ layout, content, common, client, allProjects 
       case 'slider':
         return <Slider content={content} />;
       case 'stairs':
-        return <Stairs content={content} common={common} portfolio={allProjects} />;
+        return <Stairs content={content} common={common} portfolio={content.portfolio} />;
     }
   }
 

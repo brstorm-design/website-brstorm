@@ -150,3 +150,11 @@ export function smoothScroll(href, offset = 150, duration = 1500, easing = inOut
   }
   requestAnimationFrame(trigger);
 }
+
+export function fillPlaceholders(string = '', replacement = {}, character = '|') {
+  string = string.split(character).join('');
+  for (const key in replacement) {
+    string = string.replaceAll(key, replacement[key]);
+  }
+  return string;
+}

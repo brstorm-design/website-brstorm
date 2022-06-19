@@ -46,7 +46,7 @@ export default function Pitch({ props }) {
           <Details content={pitchContent.details} />
         )
       }
-      <Projects layout="slider" content={pitchContent.projects} common={common} />
+      <Projects layout={service === 'web' ? 'slider' : 'mosaic'} content={pitchContent.projects} common={common} />
       <Testimonials content={home.testimonials} />
       <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
       {

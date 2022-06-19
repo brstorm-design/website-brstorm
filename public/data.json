@@ -6,9 +6,9 @@
       "name": "Fabio e Sara",
       "businessName": "Bronzo",
       "parameters": {
-        "langs": ["en", "pt"],
+        "langs": ["en"],
         "services": [0, 1],
-        "content": [0, 2]
+        "content": [2]
       },
       "portfolio": [
         {
@@ -272,13 +272,15 @@
       "id": 0,
       "name": "Brand",
       "slug": "brand",
-      "jsonName": "brand"
+      "jsonName": "brand",
+      "hasLandingPage": true
     },
     {
       "id": 1,
       "name": "Web",
       "slug": "web",
-      "jsonName": "web"
+      "jsonName": "web",
+      "hasLandingPage": false
     }
   ],
 
