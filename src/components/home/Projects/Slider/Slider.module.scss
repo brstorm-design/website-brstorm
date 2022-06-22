@@ -1,9 +1,16 @@
-@use '../../../../styles/scss/mixins';
-@use '../../../../styles/scss/colors';
+@use "../../../../styles/scss/mixins";
+@use "../../../../styles/scss/colors";
 
 .section {
   img {
     width: 100%;
+  }
+
+  :global {
+    .swiper-slide {
+      width: 600px;
+      height: 480px;
+    }
   }
 }
 
@@ -33,15 +40,38 @@
 
 .row1 {
   margin-bottom: 24px;
-  flex-wrap: nowrap;
 
   @include mixins.lg {
-    flex-wrap: wrap;
+    :global {
+      .swiper-wrapper {
+        flex-direction: column;
+        row-gap: 24px;
+      }
+
+      .swiper-slide {
+        width: 100%;
+        height: 344px;
+        padding: 0 calc(12px + 30px);
+      }
+    }
   }
 }
 
 .row2 {
   margin-bottom: 100px;
+}
+
+.row1,
+.row2 {
+  a {
+    cursor: grab;
+  }
+
+  &:active {
+    a {
+      cursor: grabbing;
+    }
+  }
 }
 
 .link {

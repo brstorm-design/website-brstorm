@@ -68,10 +68,10 @@ export default function Projects({ layout, content, common, client, allProjects 
             </div>
           </div>
         </div>
-        {
-          renderProjects()
-        }
       </div>
+      {
+        renderProjects()
+      }
     </section>
   )
 }

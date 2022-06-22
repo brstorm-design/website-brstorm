@@ -64,29 +64,31 @@ export default function Mosaic({ common, content, portfolio }) {
   }
 
   return (
-    <div className="row gy-4" ref={projects} id="projects-cards">
-      {
-        portfolio.map((item, index) => {
-          return (
-            <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
-              <a href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
-                <Image placeholder="blur" src={images[item.slug]} layout="responsive" />
-                <div>
-                  <h5>{item.name}</h5>
-                  <span className="details">{item.type}</span>
-                </div>
-              </a>
-            </div>
-          )
-        })
-      }
-      <div className="col-12 col-lg-3 offset-lg-5">
-        <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
-          <Behance />
-          <SeeMore linkText={common.seeMore}>
-            {content.fullPortfolio}
-          </SeeMore>
-        </a>
+    <div className="container">
+      <div className="row gy-4" ref={projects} id="projects-cards">
+        {
+          portfolio.map((item, index) => {
+            return (
+              <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
+                <a href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
+                  <Image placeholder="blur" src={images[item.slug]} layout="responsive" />
+                  <div>
+                    <h5>{item.name}</h5>
+                    <span className="details">{item.type}</span>
+                  </div>
+                </a>
+              </div>
+            )
+          })
+        }
+        <div className="col-12 col-lg-3 offset-lg-5">
+          <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
+            <Behance />
+            <SeeMore linkText={common.seeMore}>
+              {content.fullPortfolio}
+            </SeeMore>
+          </a>
+        </div>
       </div>
     </div>
   )

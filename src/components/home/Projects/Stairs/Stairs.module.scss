@@ -3,17 +3,19 @@
 
 .section {
   & > div {
-    & > div:nth-child(odd) {
-      /* transform: translateY(100px); */
-      position: relative;
-      top: 100px;
+    & > div {
+      & > div:nth-child(odd) {
+        /* transform: translateY(100px); */
+        position: relative;
+        top: 100px;
 
-      &:last-child {
-        top: 0;
-      }
+        &:last-child {
+          top: 0;
+        }
 
-      @include mixins.lg {
-        position: static;
+        @include mixins.lg {
+          position: static;
+        }
       }
     }
   }

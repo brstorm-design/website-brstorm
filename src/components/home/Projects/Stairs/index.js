@@ -43,26 +43,28 @@ export default function Stairs({ content, common, portfolio }) {
 
   return (
     <section className={styles.section}>
-      <div className="row gy-4" ref={projects}>
-        {
-          portfolio.map((item, index) => {
-            return (
-              <div key={`projects-${index}`} className="col-12 col-lg-6">
-                <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                  <Image placeholder="blur" src={images[item.slug]} layout="responsive" />
-                  <div id="overlay-details">
-                    <h5>{item.name}</h5>
-                    <span className="details">{item.type}</span>
-                  </div>
-                </a>
-              </div>
-            )
-          })
-        }
-        <div className="col-12 col-lg-6 offset-lg-6">
-          <SeeMore linkText={common.seeMore} href="#">
-            {content.fullPortfolio}
-          </SeeMore>
+      <div className="container">
+        <div className="row gy-4" ref={projects}>
+          {
+            portfolio.map((item, index) => {
+              return (
+                <div key={`projects-${index}`} className="col-12 col-lg-6">
+                  <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                    <Image placeholder="blur" src={images[item.slug]} layout="responsive" />
+                    <div id="overlay-details">
+                      <h5>{item.name}</h5>
+                      <span className="details">{item.type}</span>
+                    </div>
+                  </a>
+                </div>
+              )
+            })
+          }
+          <div className="col-12 col-lg-6 offset-lg-6">
+            <SeeMore linkText={common.seeMore} href="#">
+              {content.fullPortfolio}
+            </SeeMore>
+          </div>
         </div>
       </div>
     </section>
