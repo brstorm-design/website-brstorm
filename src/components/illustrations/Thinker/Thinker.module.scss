@@ -17,6 +17,26 @@
     &:nth-of-type(1) {
       top: 250px;
       left: 8px;
+
+      path {
+        // "Digital" animation
+        $digitalDelay: 0;
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            animation: design 6s #{$digitalDelay}ms ease-in-out infinite alternate both;
+          }
+          $digitalDelay: $digitalDelay + 50;
+        }
+
+        // "Design" animation
+        $designDelay: 0;
+        @for $i from 7 through 14 {
+          &:nth-child(#{$i}) {
+            animation: digital 6s #{$designDelay}ms ease-in-out infinite alternate both;
+          }
+          $designDelay: $designDelay + 250;
+        }
+      }
     }
     &:nth-of-type(2) {
       top: 38px;
@@ -73,5 +93,37 @@
         }
       }
     }
+  }
+}
+
+//
+
+@keyframes digital {
+  0%,
+  25% {
+    stroke-dasharray: 0 100%;
+    stroke-opacity: 0;
+  }
+
+  30% {
+    stroke-opacity: 1;
+  }
+
+  45%,
+  100% {
+    stroke-dasharray: 100% 0;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes design {
+  0%,
+  65% {
+    opacity: 0;
+  }
+
+  75%,
+  100% {
+    opacity: 1;
   }
 }
