@@ -1,7 +1,7 @@
 export default async (req, res) => {
   if (req.method === 'POST') {
 
-    /* const sgMail = require('@sendgrid/mail');
+    const sgMail = require('@sendgrid/mail');
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     const {name, businessName, details, yourContent, businessSize, service, yourContact, email, phone, otherContact} = req.body;
@@ -36,15 +36,15 @@ export default async (req, res) => {
 
     const emailData = {
       from: process.env.SENDER_EMAIL,
-      to: 'luanferreira2136@gmail.com',
+      to: process.env.SENDER_EMAIL,
       subject: 'Nova Solicitação de Proposta',
       html: message,
     }
 
-    const response = await sgMail.send(emailData); */
+    const response = await sgMail.send(emailData);
 
     // simulando 2 segundos de processamento:
-    await new Promise(r => setTimeout(r, 2000));
+    /* await new Promise(r => setTimeout(r, 2000)); */
     return res.status(200).end();
   }
 

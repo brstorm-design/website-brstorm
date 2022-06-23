@@ -30,7 +30,6 @@
   &:global(.selected),
   &:focus-within {
     border-image: linear-gradient(90deg, colors.$darkGray 0%, colors.$darkGray 100%) 1 !important;
-    background-color: colors.$dark;
 
     p {
       color: colors.$darkGray;

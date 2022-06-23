@@ -27,6 +27,10 @@
 
   &::placeholder {
     color: colors.$carbon;
+
+    @include mixins.md {
+      visibility: hidden;
+    }
   }
 
   @include mixins.lg {

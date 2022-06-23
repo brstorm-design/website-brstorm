@@ -117,9 +117,11 @@ export default function Header({ variant = 'default', ...props }) {
 
           { // fazer componente disso:
             showComponent.cta && (
-              <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn small">
-                {common.bookMeeting}
-              </a>
+              <Link href="/contact/form">
+                <a target="_blank" rel="noopener noreferrer" className="btn small">
+                  {common.bookMeeting}
+                </a>
+              </Link>
             )
           }
           {

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Contact.module.scss';
@@ -31,7 +32,7 @@ export default function Contact({ content, common }) {
   }, [animations])
 
   return (
-    <section className={styles.section} id="contact">
+    <div className={styles.section} id="contact">
       <div className="container">
         <div className="row" ref={element}>
           <div className="col-12 col-lg-10 mx-auto">
@@ -41,15 +42,17 @@ export default function Contact({ content, common }) {
                 <p dangerouslySetInnerHTML={{__html: content.paragraph}} />
               </div>
               <div>
-                <a href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer" className="btn large">
-                  {common.bookMeeting}
-                </a>
+                <Link href="/contact/form">
+                  <a target="_blank" rel="noopener noreferrer" className="btn large">
+                    {common.bookMeeting}
+                  </a>
+                </Link>
                 <small dangerouslySetInnerHTML={{__html: content.availableHours}} />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

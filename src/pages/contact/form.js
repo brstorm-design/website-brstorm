@@ -5,6 +5,7 @@ import Form from 'src/components/contact/form/Form';
 import Header from 'src/layouts/Header';
 import Cover from 'src/components/contact/form/Cover';
 import Footer from 'src/layouts/Footer';
+import Head from 'next/head';
 
 export default function ContactForm({ content, common, footer }) {
   const [activeField, setActiveField] = useState(null);
@@ -100,6 +101,10 @@ export default function ContactForm({ content, common, footer }) {
 
   return (
     <>
+      <Head>
+        <title>Começar um Projeto • Br.Storm</title>
+      </Head>
+
       <Header variant="form" values={values} activeField={activeField} />
       <Cover content={cover} />
       <Form

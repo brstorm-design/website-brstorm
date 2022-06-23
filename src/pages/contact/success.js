@@ -4,6 +4,7 @@ import Header from 'src/layouts/Header';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Success from 'src/components/contact/success/Success';
+import Head from 'next/head';
 
 export default function FormSuccess({ content, common, footer }) {
 
@@ -13,6 +14,10 @@ export default function FormSuccess({ content, common, footer }) {
 
   return (
     <div>
+      <Head>
+        <title>Muito Obrigado! • Br.Storm</title>
+      </Head>
+      
       <Header variant="success" />
       
       <Success content={content} />

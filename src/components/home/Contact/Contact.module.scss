@@ -58,12 +58,10 @@
   }
 }
  */
-.section {
-  margin-top: 150px;
-  @include mixins.md {
-    margin-top: 125px;
-  }
-}
+
+ .section {
+   margin-top: 150px;
+ }
 
 .contact {
   position: relative;

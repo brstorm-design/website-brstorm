@@ -1420,9 +1420,9 @@
     ]
   },
   "common": {
-    "bookMeeting": "Book a Meeting",
-    "bookMeetingNow": "Book a Meeting\nRight Now",
-    "bookAppointment": "Book an Appointment",
+    "bookMeeting": "Start a Project",
+    "bookMeetingNow": "Start a Project",
+    "bookAppointment": "Start a Project",
     "seeMore": "See More",
     "contactUs": "Contact Us",
     "scrollToTop": "Scroll to Top",
