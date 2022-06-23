@@ -1,0 +1,48 @@
+@use "../../../styles/scss/easings";
+
+.interface {
+  foreignObject {
+    // sliding alements animation
+    $slideDelay: 0;
+    @for $i from 1 through 5 {
+      &:nth-of-type(#{$i}) > div {
+        animation: fade-up 4.5s #{$slideDelay}ms easings.$inOutQuad infinite alternate;
+      }
+      $slideDelay: $slideDelay + 300;
+    }
+
+    div {
+      & > div {
+        position: absolute;
+      }
+    }
+  }
+
+  line {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: write-line 4.5s 2s ease infinite alternate;
+  }
+}
+
+@keyframes fade-up {
+  0%, 30% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  60%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes write-line {
+  0%, 40% {
+    stroke-dashoffset: 1;
+  }
+
+  60%, 100% {
+    stroke-dashoffset: 0;
+  }
+}
