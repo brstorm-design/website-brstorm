@@ -13,6 +13,7 @@ import Footer from 'src/layouts/Footer';
 import Testimonials from 'src/components/home/Testimonials';
 import PitchCover from 'src/components/pitch/PitchCover';
 import Details from 'src/components/pitch/Details';
+import Section from 'src/components/common/Section';
 
 export default function LandingPage({ content, service }) {
   const home = content.home;
@@ -26,13 +27,33 @@ export default function LandingPage({ content, service }) {
       </Head>
       <Header content={landing.header} common={content.common} />
 
-      <PitchCover content={landing.cover} common={common} />
-      <Details content={landing.details} />
-      <Projects layout="stairs" content={home.projects} common={common} />
-      <Methodology content={landing.method} />
-      <WhyUs content={home.whyUs} />
-      <Testimonials content={home.testimonials} />
-      <Contact content={home.contact} common={common} />
+      <Section mt={0}>
+        <PitchCover content={landing.cover} common={common} />
+      </Section>
+
+      <Section>
+        <Details content={landing.details} />
+      </Section>
+
+      <Section>
+        <Projects layout="stairs" content={home.projects} common={common} />
+      </Section>
+
+      <Section>
+        <Methodology content={landing.method} />
+      </Section>
+
+      <Section>
+        <WhyUs content={home.whyUs} />
+      </Section>
+
+      <Section>
+        <Testimonials content={home.testimonials} />
+      </Section>
+
+      <Section>
+        <Contact content={home.contact} common={common} />
+      </Section>
 
       <Footer content={home.footer} common={common} />
     </>

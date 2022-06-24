@@ -10,6 +10,7 @@ import Testimonials from 'src/components/home/Testimonials';
 import WhyUs from 'src/components/home/WhyUs';
 import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
+import Section from 'src/components/common/Section';
 
 export default function Home(props) {
   const page = props.home;
@@ -22,13 +23,33 @@ export default function Home(props) {
       </Head>
       <Header content={page.header} common={common} variant="default" />
 
-      <Cover content={page.cover} common={common} />
-      <Purpose content={page.purpose} common={common} />
-      <WhatWeDo content={page.whatWeDo} common={common} />
-      <Projects layout="mosaic" content={page.projects} common={common} />
-      <Testimonials content={page.testimonials} />
-      <WhyUs content={page.whyUs} />
-      <Contact content={page.contact} common={common} />
+      <Section pt={12 + 8} mt={0}>
+        <Cover content={page.cover} common={common} />
+      </Section>
+
+      <Section>
+        <Purpose content={page.purpose} common={common} />
+      </Section>
+
+      <Section>
+        <WhatWeDo content={page.whatWeDo} common={common} />
+      </Section>
+
+      <Section>
+        <Projects layout="mosaic" content={page.projects} common={common} />
+      </Section>
+
+      <Section>
+        <Testimonials content={page.testimonials} />
+      </Section>
+
+      <Section>
+        <WhyUs content={page.whyUs} />
+      </Section>
+
+      <Section>
+        <Contact content={page.contact} common={common} />
+      </Section>
 
       <Footer content={page.footer} common={common} />
     </>

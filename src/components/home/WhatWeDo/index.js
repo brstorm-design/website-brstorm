@@ -45,7 +45,7 @@ export default function WhatWeDo({ content, common }) {
   }
 
   return (
-    <section className={styles.section} id="what-we-do" onMouseMove={move}>
+    <div className={styles.section} id="what-we-do" onMouseMove={move}>
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
           <h3 className="gradient-bg">{content.subtitle}</h3>
@@ -88,6 +88,6 @@ export default function WhatWeDo({ content, common }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

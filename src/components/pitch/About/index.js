@@ -5,7 +5,7 @@ import styles from './About.module.scss';
 
 export default function About({ content }) {
   return (
-    <section className={styles.section} id="about">
+    <div className={styles.section} id="about">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 d-flex align-items-center order-2 order-lg-1">
@@ -20,6 +20,6 @@ export default function About({ content }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

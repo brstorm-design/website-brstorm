@@ -6,9 +6,8 @@
 @include mixins.logo-animation;
 
 .section {
-  margin-top: 250px;
   overflow: hidden;
-
+  
   @include mixins.lg {
     margin-top: 150px;
   }

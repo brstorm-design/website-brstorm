@@ -7,18 +7,12 @@ import Triangle from 'public/images/cover/triangle.svg';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './Cover.module.scss';
 import Arrow from 'public/images/arrow-down.svg';
-import MobileUI from 'public/images/cover/mobile-ui.svg'
 import usePausableAnimation from 'src/hooks/usePausableAnimations';
 import { rootPath } from 'src/utils/env';
+import MobileUI from 'src/components/svg/MobileUI';
+import DesktopUI from 'src/components/svg/DesktopUI';
 
 export default function Cover({ content, common, service }) {
-  let data = service === 'web' ? {
-    bottomLeft: '/images/cover/web/desktop.svg',
-    bottomRight: '/images/cover/web/mobile.svg',
-  } : {
-    bottomLeft: '/images/cover/grids-design.svg',
-    bottomRight: '/images/cover/mobile-ui.svg',
-  }
   useEffect(() => {
     function cleanup() {
       document.getElementById('cover').removeEventListener('mousemove', e => {
@@ -44,10 +38,10 @@ export default function Cover({ content, common, service }) {
     let translateY3 = - (((90 * relY) / 100) - 45);
 
     window.requestAnimationFrame(() => {
-      let track = document.querySelectorAll('.track');
+      let track = section.current.querySelectorAll('.container > *');
       track[0].style.transform = `translate3d(${translateX1}px, ${translateY1}px, 0)`;
-      track[1].style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
-      track[2].style.transform = `translate3d(${translateX3}px, ${translateY3}px, 0)`;
+      track[2].style.transform = `translate3d(${translateX2}px, ${translateY2}px, 0)`;
+      track[3].style.transform = `translate3d(${translateX3}px, ${translateY3}px, 0)`;
     })
   }
 
@@ -56,12 +50,24 @@ export default function Cover({ content, common, service }) {
   usePausableAnimation(section.current);
 
   return (
-    <section ref={section} className={`${styles.section}`} id="cover">
+    <div ref={section} className={styles.section} id="cover">
       <div className="container">
         <AnimatedLogo />
         <img className={`${styles.topRight}`} data-animated src={`${rootPath}/images/cover/logo-rotate-360.svg`} alt="" />
-        <img className={`${styles.bottomLeft} track`} src={`${rootPath}${data.bottomLeft}`} alt="" />
-        <img className={`${styles.bottomRight} track`} src={`${rootPath}${data.bottomRight}`} alt="" />
+        {
+          service === 'web' ? (
+            <DesktopUI />
+          ) : (
+            <img className={`${styles.bottomLeft} track`} src={`${rootPath}/images/cover/grids-design.svg`} alt="" />
+          )
+        }
+        {
+          service === 'web' ? (
+            <MobileUI />
+          ) : (
+            <img className={`${styles.bottomRight} track`} src={`${rootPath}/images/cover/mobile-ui.svg`} alt="" />
+          )
+        }
 
         <div className="row">
           <div className="col-12 col-lg-9">
@@ -103,6 +109,6 @@ export default function Cover({ content, common, service }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

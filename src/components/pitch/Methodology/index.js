@@ -13,7 +13,7 @@ export default function Methodology({ content, pitch, service }) {
   }
 
   return (
-    <section className={styles.section} onMouseMove={move} id="methodology">
+    <div className={styles.section} onMouseMove={move} id="methodology">
       <div className="container">
         {
           pitch ? (
@@ -53,6 +53,6 @@ export default function Methodology({ content, pitch, service }) {
           }
         </div>
       </div>
-    </section>
+    </div>
   )
 }

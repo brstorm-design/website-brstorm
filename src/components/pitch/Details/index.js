@@ -12,7 +12,7 @@ export default function Details({ content }) {
   }
 
   return (
-    <section className={styles.section} id="details" onMouseMove={move}>
+    <div className={styles.section} id="details" onMouseMove={move}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-5">
@@ -27,6 +27,6 @@ export default function Details({ content }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

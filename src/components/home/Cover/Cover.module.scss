@@ -1,9 +1,8 @@
-@use '../../../styles/scss/colors';
-@use '../../../styles/scss/mixins';
-@use '../../../styles/scss/keyframes';
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/keyframes";
 
 .section {
-  padding-top: 150px;
   position: relative;
 
   & > div > div > div {
@@ -11,19 +10,47 @@
     margin-right: auto;
   }
 
-  a [href="https://instagram.com/brstorm.design"]:not(.btn):hover path {
+  a [href="https://instagram.com/brstorm.design"]:not(.btn):hover path
+  {
     fill: none !important;
   }
 
   :global {
     .container {
       position: relative;
-    }
-  }
 
-  img {
-    position: absolute;
-    transition: transform 200ms ease-out;
+      & > img,
+      & > svg {
+        position: absolute;
+        transition: transform 200ms ease-out;
+
+        &:nth-child(3) {
+          bottom: 40px;
+          left: 0;
+          z-index: 1;
+          backdrop-filter: blur(5px);
+          @include mixins.md {
+            height: 125px;
+            z-index: 1;
+            bottom: 50px;
+            left: -30px;
+          }
+        }
+        &:nth-child(4) {
+          position: absolute;
+          bottom: 0;
+          right: 40px;
+          z-index: 1;
+          backdrop-filter: blur(5px);
+
+          @include mixins.md {
+            height: 250px;
+            right: -70px;
+            bottom: -40px;
+          }
+        }
+      }
+    }
   }
 
   .topRight {
@@ -37,30 +64,9 @@
   }
 
   .bottomLeft {
-    bottom: 40px;
-    left: 0;
-    z-index: 1;
-    backdrop-filter: blur(5px);
-    @include mixins.md {
-      height: 125px;
-      z-index: 1;
-      bottom: 50px;
-      left: -30px;
-    }
   }
 
   .bottomRight {
-    position: absolute;
-    bottom: 0;
-    right: 40px;
-    z-index: 1;
-    backdrop-filter: blur(5px);
-    
-    @include mixins.md {
-      height: 250px;
-      right: -70px;
-      bottom: -40px;
-    }
   }
 }
 
@@ -127,7 +133,7 @@
     justify-content: center;
 
     a {
-      font-family: Montserrat, 'sans-serif';
+      font-family: Montserrat, "sans-serif";
       font-size: 10px;
       color: colors.$darkGray;
       display: inline-flex;

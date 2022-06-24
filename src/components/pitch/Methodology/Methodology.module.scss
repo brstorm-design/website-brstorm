@@ -2,11 +2,7 @@
 @use "../../../styles/scss/mixins";
 
 .section {
-  margin-top: 225px;
-
   @include mixins.md {
-    margin-top: 125px;
-
     & > div:first-child {
       margin-bottom: 50px;
 

@@ -57,7 +57,7 @@ export default function Projects({ layout, content, common, client, allProjects 
   }
 
   return (
-    <section className={styles.section} id="projects">
+    <div className={styles.section} id="projects">
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">
@@ -72,6 +72,6 @@ export default function Projects({ layout, content, common, client, allProjects 
       {
         renderProjects()
       }
-    </section>
+    </div>
   )
 }

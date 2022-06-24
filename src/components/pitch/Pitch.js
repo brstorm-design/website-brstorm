@@ -15,6 +15,7 @@ import About from "./About";
 import Cover from "src/components/home/Cover";
 import ContentManager from "./ContentManager";
 import PitchCover from "./PitchCover";
+import Section from "../common/Section";
 
 export default function Pitch({ props }) {
   const pitch = props.content.pitch;
@@ -32,40 +33,69 @@ export default function Pitch({ props }) {
       </Head>
       <Header content={pitch.header} common={common} />
 
+      <Section pt={12 + 8} mt={0}>
+        {
+          service === 'web' ? (
+            <Cover service={'web'} content={pitchContent.cover} common={common} />
+          ) : (
+            <Hero client={client} content={pitch.hero} common={common} />
+          )
+        }
+      </Section>
+
+      <Section>
+        {
+          service === 'web' ? (
+            <About content={pitchContent.details} />
+          ) : (
+            <Details content={pitchContent.details} />
+          )
+        }
+      </Section>
+
+      <Section>
+        <Projects layout={service === 'web' ? 'slider' : 'mosaic'} content={pitchContent.projects} common={common} />
+      </Section>
+
+      <Section>
+        <Testimonials content={home.testimonials} />
+      </Section>
+
+      <Section>
+        <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
+      </Section>
+
       {
         service === 'web' ? (
-          <Cover service={'web'} content={pitchContent.cover} common={common} />
-        ) : (
-          <Hero client={client} content={pitch.hero} common={common} />
-        )
-      }
-      {
-        service === 'web' ? (
-          <About content={pitchContent.details} />
-        ) : (
-          <Details content={pitchContent.details} />
-        )
-      }
-      <Projects layout={service === 'web' ? 'slider' : 'mosaic'} content={pitchContent.projects} common={common} />
-      <Testimonials content={home.testimonials} />
-      <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
-      {
-        service === 'web' ? (
-          <ContentManager />
+          <Section>
+            <ContentManager />
+          </Section>
         ) : (
           null
         )
       }
-      <Methodology content={pitchContent.method} pitch service={service} />
-      <Pricing content={pitchContent.deliverables} />
+
+      <Section>
+        <Methodology content={pitchContent.method} pitch service={service} />
+      </Section>
+
+      <Section>
+        <Pricing content={pitchContent.deliverables} />
+      </Section>
+
       {
         service === 'web' ? (
-          <AddOns content={pitchContent.addons} />
+          <Section>
+            <AddOns content={pitchContent.addons} />
+          </Section>
         ) : (
           null
         )
       }
-      <Contact content={pitch.contact} common={common} />
+
+      <Section>
+        <Contact content={pitch.contact} common={common} />
+      </Section>
 
       <Footer content={home.footer} common={common} />
     </>

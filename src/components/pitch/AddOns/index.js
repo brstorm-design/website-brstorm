@@ -3,7 +3,7 @@ import styles from './AddOns.module.scss';
 
 export default function AddOns({ content }) {
   return (
-    <section className={styles.section}>
+    <div className={styles.section}>
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -24,6 +24,6 @@ export default function AddOns({ content }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

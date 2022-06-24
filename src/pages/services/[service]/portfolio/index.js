@@ -9,6 +9,7 @@ import Title from 'src/components/common/Title';
 import WhyUs from 'src/components/home/WhyUs';
 import Contact from 'src/components/home/Contact';
 import Head from 'next/head';
+import Section from 'src/components/common/Section';
 
 export default function GeneralPortfolio(props) {
   const home = props.content.home;
@@ -24,9 +25,16 @@ export default function GeneralPortfolio(props) {
       <Header content={landingPage.header} common={common} />
 
       <Title mainTitle={home.projects.title} subTitle={'Nosso Portfólio'} align="center" />
+
       <BrandProjects />
-      <WhyUs content={home.whyUs} />
-      <Contact common={common} content={home.contact} />
+
+      <Section>
+        <WhyUs content={home.whyUs} />
+      </Section>
+
+      <Section>
+        <Contact common={common} content={home.contact} />
+      </Section>
 
       <Footer content={home.footer} common={common} />
     </>

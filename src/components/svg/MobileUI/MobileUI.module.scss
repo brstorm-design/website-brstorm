@@ -2,11 +2,11 @@
 
 .interface {
   foreignObject {
-    // sliding alements animation
+    // sliding elements animation
     $slideDelay: 0;
     @for $i from 1 through 5 {
       &:nth-of-type(#{$i}) > div {
-        animation: fade-up 4.5s #{$slideDelay}ms easings.$inOutQuad infinite alternate;
+        animation: fade-up 4.5s #{$slideDelay}ms easings.$inOutQuad infinite alternate both;
       }
       $slideDelay: $slideDelay + 300;
     }

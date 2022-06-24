@@ -2,8 +2,6 @@
 @use "../../../styles/scss/colors";
 
 .section {
-  margin-top: 150px;
-
   @include mixins.lg {
     :global {
       .col-12:nth-child(2) > div {

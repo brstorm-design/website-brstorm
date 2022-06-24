@@ -41,7 +41,7 @@ export default function Purpose({ content, common }) {
   }
 
   return (
-    <section className={styles.section} id="purpose" onMouseMove={move}>
+    <div className={styles.section} id="purpose" onMouseMove={move}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6">
@@ -59,6 +59,6 @@ export default function Purpose({ content, common }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

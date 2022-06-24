@@ -67,7 +67,7 @@ export default function WhyUs({ content, pitch, service }) {
   };
 
   return (
-    <section className={styles.section} id="why-us">
+    <div className={styles.section} id="why-us">
       <div className="container">
         <div className={styles.title}>
           <h1 dangerouslySetInnerHTML={{ __html: content.title }} />
@@ -91,6 +91,6 @@ export default function WhyUs({ content, pitch, service }) {
           }
         </div>
       </div>
-    </section>
+    </div>
   )
 }
