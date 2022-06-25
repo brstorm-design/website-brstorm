@@ -29,12 +29,15 @@
     border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
     transition: all 300ms ease-out;
 
-    $val: 132;
+    /* position: absolute; */
+
+    $topValue: 0;
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
-        top: #{$val}px;
+        top: 132px;
+        transform: translateY(#{$topValue}px);
       }
-      $val: $val + 32;
+      $topValue: $topValue + 32;
     }
 
     &:last-child::before {
