@@ -52,7 +52,7 @@
         $techDelay: 0;
         @for $i from 1 through 5 {
           &:nth-child(#{$i}) {
-            animation: tech-and 6s #{$techDelay}ms ease-in-out infinite alternate;
+            animation: tech-and 6s #{$techDelay}ms ease-in-out infinite alternate both;
           }
           $techDelay: $techDelay + 50;
         }
@@ -61,7 +61,7 @@
         $creatDelay: 0;
         @for $i from 6 through 17 {
           &:nth-child(#{$i}) {
-            animation: creativity 6s #{$creatDelay}ms ease-in-out infinite alternate;
+            animation: creativity 6s #{$creatDelay}ms ease-in-out infinite alternate both;
           }
           $creatDelay: $creatDelay + 250;
         }
@@ -128,17 +128,17 @@
   0%,
   35% {
     stroke-dasharray: 0 100%;
-    stroke-width: 0;
+    stroke-opacity: 0;
   }
 
   40% {
-    stroke-width: 1.75;
+    stroke-opacity: 1;
   }
 
   65%,
   100% {
     stroke-dasharray: 100% 0;
-    stroke-width: 1.75;
+    stroke-opacity: 1;
   }
 }
 
