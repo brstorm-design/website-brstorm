@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Section({
   children,
@@ -13,10 +13,10 @@ export default function Section({
   /* const { mt, mb, pt, pb } = spacing; */
 
   let style = {
-    ...(mt && { marginTop: `${mt}vh` }),
-    ...(mb && { marginBottom: `${mb}vh` }),
-    ...(pt && { paddingTop: `${pt}vh` }),
-    ...(pb && { paddingBottom: `${pb}vh` }),
+    ...(mt && { marginTop: `${mt}vmin` }),
+    ...(mb && { marginBottom: `${mb}vmin` }),
+    ...(pt && { paddingTop: `${pt}vmin` }),
+    ...(pb && { paddingBottom: `${pb}vmin` }),
   }
 
   return (

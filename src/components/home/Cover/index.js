@@ -96,10 +96,10 @@ export default function Cover({ content, common, service }) {
               }
 
               <div>
-                <div>
+                <div className="d-none d-md-block">
                   <a href="https://brstorm.design">brstorm.design</a>
                 </div>
-                <div>
+                <div className="d-none d-md-block">
                   <Circle />
                   <Triangle />
                   <Square />

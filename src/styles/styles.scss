@@ -29,6 +29,10 @@ body {
     animation: gradient-pulse 5s infinite alternate;
     animation-delay: 3s;
     overflow: hidden;
+
+    @include mixins.md {
+      background-position: -420px 0, calc(100% + 590px) -700px, calc(100% + 100px) calc(100% + 650px);
+    }
   }
 
   &.animation-page {
