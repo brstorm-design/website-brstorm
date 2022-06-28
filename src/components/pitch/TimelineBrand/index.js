@@ -2,6 +2,16 @@ import React, { useEffect, useRef, useState } from 'react';
 import { getMaxHeight } from 'src/modules/App';
 import { rootPath } from 'src/utils/env';
 import styles from './TimelineBrand.module.scss';
+//
+// icons
+import Brief from 'public/images/icons/Notebook.svg';
+import Research from 'public/images/icons/Research.svg';
+import Design from 'public/images/icons/Idea.svg';
+import Refinement from 'public/images/icons/Compass.svg';
+import Presentation from 'public/images/icons/Presentation.svg';
+import Feedback from 'public/images/icons/Chat.svg';
+import Collaterals from 'public/images/icons/Checklist.svg';
+import Delivery from 'public/images/icons/Flag.svg';
 
 export default function TimelineBrand({ steps, service }) {
   const [lineHeight, setLineHeight] = useState(0);
@@ -56,15 +66,28 @@ export default function TimelineBrand({ steps, service }) {
     }
   }, [screenCenter, target]);
 
+  const icons = [
+    Brief,
+    Research,
+    Design,
+    Refinement,
+    Presentation,
+    Feedback,
+    Collaterals,
+    Delivery,
+  ]
+
   return (
     <div>
       <div className={`${styles.cards} ${service === 'web' ? styles.web : ''}`}>
         {
           steps.map((step, index) => {
+            const Icon = icons[index];
+
             return (
               <div key={`step-${index}`}>
                 <span style={{ opacity: service === 'web' ? '0' : '1' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
-                <img src={`${rootPath}/images/icons/${step.icon}`} alt="" />
+                <Icon />
                 <h5>{step.name}</h5>
                 <small>{step.text}</small>
                 {index === 0 ? <Line /> : null}

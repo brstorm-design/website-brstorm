@@ -48,23 +48,23 @@ export default function WhyUs({ content, pitch, service }) {
     }
   }, [animations]);
 
-  const icons = {
-    0: <Autonomy />,
-    1: <Support />,
-    2: <TailorMade />,
-    3: <Delivery />,
-  }
+  const icons = [
+    Autonomy,
+    Support,
+    TailorMade,
+    Delivery,
+  ];
 
-  const webIcons = {
-    0: <Infographic />,
-    1: <Autonomy />,
-    2: <Browser />,
-    3: <Support />,
-    4: <Responsive />,
-    5: <CircularArrows />,
-    6: <Scanning />,
-    7: <Connection />,
-  };
+  const webIcons = [
+    Infographic,
+    Autonomy,
+    Browser,
+    Support,
+    Responsive,
+    CircularArrows,
+    Scanning,
+    Connection,
+  ];
 
   return (
     <div className={styles.section} id="why-us">
@@ -76,12 +76,12 @@ export default function WhyUs({ content, pitch, service }) {
         <div className="row gy-4" ref={element}>
           {
             content.cards.map((item, index) => {
+              const Icon = service === 'web' ? webIcons[index] : icons[index];
+              
               return (
                 <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>
-                    {
-                      service === 'web' ? webIcons[index] : icons[index]
-                    }
+                    <Icon />
                     <h5 className={styles.boxBottom}>{item.title}</h5>
                     <small>{item.body}</small>
                   </div>

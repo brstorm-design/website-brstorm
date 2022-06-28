@@ -2,6 +2,8 @@
 @use "../../../../src/styles/scss/colors";
 @use "sass:math";
 
+@include mixins.logo-animation;
+
 .cards {
   position: relative;
   display: flex;
@@ -28,8 +30,6 @@
     border: 0.75px solid;
     border-image: linear-gradient(180deg, #555555 0%, rgba(85, 85, 85, 0) 100%) 1;
     transition: all 300ms ease-out;
-
-    /* position: absolute; */
 
     $topValue: 0;
     @for $i from 1 through 6 {
@@ -59,9 +59,8 @@
       }
     }
 
-    img {
-      height: 50px;
-      width: 50px;
+    svg {
+      animation: logo-animation 3.5s ease infinite alternate both;
     }
 
     h5 {

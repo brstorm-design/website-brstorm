@@ -1,6 +1,8 @@
 @use "../../../../src/styles/scss/mixins";
 @use "../../../../src/styles/scss/colors";
 
+@include mixins.logo-animation;
+
 .cards {
   position: relative;
   display: flex;
@@ -44,13 +46,12 @@
       .number {
         background: colors.$black;
         color: colors.$darkGray;
-        border: 1px solid colors.$gray;
+        border-color: colors.$gray;
       }
     }
     
-    img {
-      height: 50px;
-      width: 50px;
+    svg {
+      animation: logo-animation 3.5s ease infinite alternate both;
     }
     
     h5 {
@@ -99,6 +100,8 @@
   width: 40px;
   border-radius: 50%;
   color: colors.$darkGray;
+  border: 1px solid transparent;
+  transition: all 350ms ease;
   
   &::after {
     content: "";

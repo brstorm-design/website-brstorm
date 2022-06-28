@@ -2,6 +2,14 @@ import React, { useEffect, useRef, useState } from 'react';
 import { getMaxHeight } from 'src/modules/App';
 import { rootPath } from 'src/utils/env';
 import styles from './Timeline.module.scss';
+//
+// icons
+import Strategy from 'public/images/icons/Venn.svg';
+import Structure from 'public/images/icons/FlowChart.svg';
+import Design from 'public/images/icons/Layers.svg';
+import Development from 'public/images/icons/Physics.svg';
+import Delivery from 'public/images/icons/Computer.svg';
+import Support from 'public/images/icons/Certificate.svg';
 
 export default function Timeline({ steps, service }) {
   const cards = useRef(null);
@@ -38,15 +46,27 @@ export default function Timeline({ steps, service }) {
     });
   }, []);
 
+  const icons = [
+    Strategy,
+    Structure,
+    Design,
+    Development,
+    Delivery,
+    Support,
+  ]
+
   return (
     <div>
       <div ref={cards} className={`${styles.cards} ${service === 'web' ? styles.web : ''}`} >
         {
           steps.map((step, index) => {
+            const Icon = icons[index];
+
             return (
               <div key={`step-${index}`} id={`card_step-${index}`} style={{ opacity: 1 }}>
                 <span style={{ opacity: '0' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
-                <img src={`${rootPath}/images/icons/${step.icon}`} alt="" />
+                {/* <img src={`${rootPath}/images/icons/${step.icon}`} alt="" /> */}
+                <Icon />
                 <h5>{step.name}</h5>
                 <small>{step.text}</small>
               </div>
