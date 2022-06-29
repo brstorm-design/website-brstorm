@@ -11,6 +11,8 @@ import daia from 'public/images/portfolio/daia.png';
 import util from 'public/images/portfolio/util.png';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import SeeMore from 'src/components/common/SeeMore';
+import { rootPath } from 'src/utils/env';
+import Link from 'next/link';
 
 const images = {
   catarge,
@@ -82,12 +84,14 @@ export default function Mosaic({ common, content, portfolio }) {
           })
         }
         <div className="col-12 col-lg-3 offset-lg-5">
-          <a className={styles.seeAll} rel="noopener noreferrer" target="_blank" href={content.url}>
-            <Behance />
-            <SeeMore linkText={common.seeMore}>
-              {content.fullPortfolio}
-            </SeeMore>
-          </a>
+          <Link href={`${rootPath}${content.url}`}>
+            <a className={styles.seeAll}>
+              <Behance />
+              <SeeMore linkText={common.seeMore}>
+                {content.fullPortfolio}
+              </SeeMore>
+            </a>
+          </Link>
         </div>
       </div>
     </div>

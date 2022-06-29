@@ -131,7 +131,7 @@
         }
       ],
       "fullPortfolio": "Portfólio Completo",
-      "url": "https://www.behance.net/brstorm-design"
+      "url": "/portfolio"
     },
     "testimonials": {
       "title": "O Que Dizem \nSobre Nós",
@@ -491,7 +491,7 @@
           }
         ],
         "fullPortfolio": "Portfólio Completo",
-        "url": "https://www.behance.net/brstorm-design"
+        "url": "/portfolio"
       },
       "method": {
         "title": "O Que é um Projeto de Brand Design",
@@ -655,7 +655,7 @@
           }
         ],
         "fullPortfolio": "Portfólio Completo",
-        "url": "https://www.behance.net/brstorm-design"
+        "url": "/portfolio"
       },
       "method": {
         "title": "Etapas do Processo de Criação",
@@ -899,7 +899,7 @@
           }
         ],
         "fullPortfolio": "Portfólio Completo",
-        "url": "https://www.behance.net/brstorm-design"
+        "url": "/portfolio"
       },
       "whyUs": {
         "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",

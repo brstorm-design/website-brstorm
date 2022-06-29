@@ -2,11 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Stairs.module.scss';
 import images from 'src/utils/images';
 import Image from 'next/image';
-import Arrow from 'public/images/arrow-forward.svg';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
-import Link from 'next/link';
 import SeeMore from 'src/components/common/SeeMore';
-import webImages from 'src/utils/webImages';
+import { rootPath } from 'src/utils/env';
 
 export default function Stairs({ content, common, portfolio }) {
   const projects = useRef(null);
@@ -61,7 +59,7 @@ export default function Stairs({ content, common, portfolio }) {
             })
           }
           <div className="col-12 col-lg-6 offset-lg-6">
-            <SeeMore linkText={common.seeMore} href="#">
+            <SeeMore linkText={common.seeMore} href={`${rootPath}${content.url}`}>
               {content.fullPortfolio}
             </SeeMore>
           </div>

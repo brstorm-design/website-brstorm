@@ -131,7 +131,7 @@
         }
       ],
       "fullPortfolio": "Full portfolio",
-      "url": "https://www.behance.net/brstorm-design"
+      "url": "/portfolio"
     },
     "testimonials": {
       "title": "What People \nSay About Us",
@@ -149,7 +149,7 @@
           "photo": "/images/testimonials/michael.jpg"
         },
         {
-          "body": "The best designers I’ve ever worked with, they know a lot about visual identity and took care of every detail so that the result turned out unique as I wanted.",
+          "body": "The best designers I've ever worked with, they know a lot about visual identity and took care of every detail so that the result turned out unique as I wanted.",
           "author": "Willian Medeiros",
           "company": "Chibum Game Studio",
           "photo": "/images/testimonials/willian.jpg"
@@ -491,7 +491,7 @@
         }
       ],
       "fullPortfolio": "Full portfolio",
-      "url": "https://www.behance.net/brstorm-design"
+      "url": "/portfolio"
       },
       "method": {
         "title": "Creative Process Steps",
@@ -654,7 +654,7 @@
           }
         ],
         "fullPortfolio": "Full portfolio",
-        "url": "https://www.behance.net/brstorm-design"
+        "url": "/portfolio"
       },
       "method": {
         "title": "Creative Process Steps",
@@ -898,7 +898,7 @@
           }
         ],
         "fullPortfolio": "Full portfolio",
-        "url": "https://www.behance.net/brstorm-design"
+        "url": "/portfolio"
       },
       "whyUs": {
         "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",
