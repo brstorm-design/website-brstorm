@@ -15,7 +15,6 @@ export default function Timeline({ steps, service }) {
   const cards = useRef(null);
 
   useEffect(() => {
-    const opacities = [1, 0.5, 0.4, 0.3, 0.2, 0.1];
     let stackedCards = cards.current.children.length - 1;
     function handleIntersection(entries) {
       entries.forEach(entry => {
@@ -24,13 +23,13 @@ export default function Timeline({ steps, service }) {
           if (stackedCards > 0) {
             for (let index = 0; index < stackedCards; index++) {
               let opacityIndex = (index + stackedCards) - (index * 2);
-              cards.current.children[index].style.opacity = opacities[opacityIndex];
+              cards.current.children[index].className = `stacked-${opacityIndex + 1}`;
             }
           }
         } else {
           stackedCards -= 1;
           let hasPreviousElement = !!entry.target.previousElementSibling;
-          hasPreviousElement ? entry.target.previousElementSibling.style.opacity = 1 : null;
+          if (hasPreviousElement) entry.target.previousElementSibling.className = '';
         }
       });
     }
@@ -63,7 +62,7 @@ export default function Timeline({ steps, service }) {
             const Icon = icons[index];
 
             return (
-              <div key={`step-${index}`} id={`card_step-${index}`} style={{ opacity: 1 }}>
+              <div key={`step-${index}`} id={`card_step-${index}`}>
                 <span style={{ opacity: '0' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
                 {/* <img src={`${rootPath}/images/icons/${step.icon}`} alt="" /> */}
                 <Icon />

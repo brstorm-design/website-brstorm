@@ -18,8 +18,6 @@ module.exports = {
   async rewrites() {
     return {
       beforeFiles: [
-        // if the host is `app.acme.com`,
-        // this rewrite will be applied
         {
           source: '/:path*',
           has: [
@@ -29,6 +27,16 @@ module.exports = {
             },
           ],
           destination: '/services/brand/:path*',
+        },
+        {
+          source: '/:path*',
+          has: [
+            {
+              type: 'host',
+              value: 'web.brstorm.design',
+            },
+          ],
+          destination: '/services/web/:path*',
         },
       ]
     }

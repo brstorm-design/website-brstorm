@@ -44,8 +44,16 @@ export default function Hero({ content, common, client }) {
         <div className="row">
           <div className="col-12 col-lg-5 d-flex align-items-center order-2 order-lg-1">
             <div ref={element}>
-              <h1>{`${fillPlaceholders(content.title, { client: 'Fabio e Sara' })}`}</h1>
-              <h4>{`${fillPlaceholders(content.subtitle, { business: 'Bronzo' })}`}</h4>
+              <h1>
+                {
+                  `${fillPlaceholders(content.title, { client: 'Fabio e Sara' })}`
+                }
+              </h1>
+              <h4>
+                {
+                  `${fillPlaceholders(content.subtitle, { business: 'Bronzo' })}`
+                }
+              </h4>
               <p>{content.text}</p>
               <div className="d-flex d-md-block">
                 <a className="btn large" href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer">

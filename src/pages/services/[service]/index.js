@@ -14,42 +14,91 @@ import Testimonials from 'src/components/home/Testimonials';
 import PitchCover from 'src/components/pitch/PitchCover';
 import Details from 'src/components/pitch/Details';
 import Section from 'src/components/common/Section';
+import About from 'src/components/pitch/About';
+import ContentManager from 'src/components/pitch/ContentManager';
+import AddOns from 'src/components/pitch/AddOns';
 
 export default function LandingPage({ content, service }) {
   const home = content.home;
   const common = content.common;
   const landing = content.landingPage[service.jsonName];
+  const pitch = content.pitch[service.jsonName];
 
   return (
     <>
       <Head>
-        <title>Brand • Br.Storm</title>
+        <title>{service.name} • Br.Storm</title>
       </Head>
       <Header content={landing.header} common={content.common} />
 
-      <Section mt={0}>
-        <PitchCover content={landing.cover} common={common} />
-      </Section>
+      {
+        service.slug === 'brand' ? (
 
-      <Section>
-        <Details content={landing.details} />
-      </Section>
+          // brand
+          <>
+            <Section mt={0}>
+              <PitchCover content={landing.cover} common={common} />
+            </Section>
 
-      <Section>
-        <Projects layout="stairs" content={home.projects} common={common} />
-      </Section>
+            <Section>
+              <Details content={landing.details} />
+            </Section>
 
-      <Section>
-        <Methodology content={landing.method} />
-      </Section>
+            <Section>
+              <Projects layout="stairs" content={home.projects} common={common} />
+            </Section>
 
-      <Section>
-        <WhyUs content={home.whyUs} />
-      </Section>
+            <Section>
+              <Methodology content={landing.method} />
+            </Section>
 
-      <Section>
-        <Testimonials content={home.testimonials} />
-      </Section>
+            <Section>
+              <WhyUs content={home.whyUs} />
+            </Section>
+
+            <Section>
+              <Testimonials content={home.testimonials} />
+            </Section>
+          </>
+
+        ) : (
+
+          // web
+          <>
+            <Section pt={12 + 8} mt={0}>
+              <Cover service={'web'} content={pitch.cover} common={common} />
+            </Section>
+
+            <Section>
+              <About content={pitch.details} />
+            </Section>
+
+            <Section>
+              <Projects layout="slider" content={pitch.projects} common={common} />
+            </Section>
+
+            <Section>
+              <Testimonials content={home.testimonials} />
+            </Section>
+
+            <Section>
+              <WhyUs service={service.slug} content={pitch.whyUs} pitch />
+            </Section>
+
+            <Section>
+              <ContentManager />
+            </Section>
+
+            <Section>
+              <Methodology content={pitch.method} pitch service={service.slug} />
+            </Section>
+
+            <Section>
+              <AddOns content={pitch.addons} />
+            </Section>
+          </>
+        )
+      }
 
       <Section>
         <Contact content={home.contact} common={common} />

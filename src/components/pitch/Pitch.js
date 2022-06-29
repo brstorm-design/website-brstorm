@@ -33,63 +33,81 @@ export default function Pitch({ props }) {
       </Head>
       <Header content={pitch.header} common={common} />
 
-      <Section pt={12 + 8} mt={0}>
-        {
-          service === 'web' ? (
-            <Cover service={'web'} content={pitchContent.cover} common={common} />
-          ) : (
-            <Hero client={client} content={pitch.hero} common={common} />
-          )
-        }
-      </Section>
-
-      <Section>
-        {
-          service === 'web' ? (
-            <About content={pitchContent.details} />
-          ) : (
-            <Details content={pitchContent.details} />
-          )
-        }
-      </Section>
-
-      <Section>
-        <Projects layout={service === 'web' ? 'slider' : 'mosaic'} content={pitchContent.projects} common={common} />
-      </Section>
-
-      <Section>
-        <Testimonials content={home.testimonials} />
-      </Section>
-
-      <Section>
-        <WhyUs service={service} content={service === 'web' ? pitchContent.whyUs : home.whyUs} pitch />
-      </Section>
-
       {
         service === 'web' ? (
-          <Section>
-            <ContentManager />
-          </Section>
+
+          // web design page components
+          <>
+            <Section pt={12 + 8} mt={0}>
+              <Cover service={'web'} content={pitchContent.cover} common={common} />
+            </Section>
+
+            <Section>
+              <About content={pitchContent.details} />
+            </Section>
+
+            <Section>
+              <Projects layout="slider" content={pitchContent.projects} common={common} />
+            </Section>
+
+            <Section>
+              <Testimonials content={home.testimonials} />
+            </Section>
+
+            <Section>
+              <WhyUs service={service} content={pitchContent.whyUs} pitch />
+            </Section>
+
+            <Section>
+              <ContentManager />
+            </Section>
+
+            <Section>
+              <Methodology content={pitchContent.method} pitch service={service} />
+            </Section>
+
+            <Section>
+              <Pricing content={pitchContent.deliverables} />
+            </Section>
+
+            <Section>
+              <AddOns content={pitchContent.addons} />
+            </Section>
+          </>
+
         ) : (
-          null
-        )
-      }
 
-      <Section>
-        <Methodology content={pitchContent.method} pitch service={service} />
-      </Section>
+          // brand design page components
+          <>
+            <Section pt={12 + 8} mt={0}>
+              <Hero client={client} content={pitch.hero} common={common} />
+            </Section>
 
-      <Section>
-        <Pricing content={pitchContent.deliverables} />
-      </Section>
+            <Section>
+              <Details content={pitchContent.details} />
+            </Section>
 
-      {
-        service === 'web' ? (
-          <Section>
-            <AddOns content={pitchContent.addons} />
-          </Section>
-        ) : (
-          null
+            <Section>
+              <Projects layout="mosaic" content={pitchContent.projects} common={common} />
+            </Section>
+
+            <Section>
+              <Testimonials content={home.testimonials} />
+            </Section>
+
+            <Section>
+              <WhyUs service={service} content={home.whyUs} pitch />
+            </Section>
+
+            <Section>
+              <Methodology content={pitchContent.method} pitch service={service} />
+            </Section>
+
+            <Section>
+              <Pricing content={pitchContent.deliverables} />
+            </Section>
+          </>
+
         )
       }
 

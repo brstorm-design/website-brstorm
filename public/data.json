@@ -280,7 +280,7 @@
       "name": "Web",
       "slug": "web",
       "jsonName": "web",
-      "hasLandingPage": false
+      "hasLandingPage": true
     }
   ],
 
