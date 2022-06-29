@@ -21,7 +21,7 @@ export default function GeneralPortfolio(props) {
       <Head>
         <title>{portfolioPage.pageTitle} • Br.Storm</title>
       </Head>
-      <Header content={landingPage.header} common={common} />
+      <Header content={home.header} common={common} />
 
       <Section pt={24} mb={20} mt={0}>
         <Title mainTitle={portfolioPage.title} subTitle={portfolioPage.subtitle} align="center" />
