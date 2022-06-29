@@ -21,7 +21,7 @@ export default function GeneralPortfolio(props) {
       <Head>
         <title>{portfolioPage.pageTitle} • Br.Storm</title>
       </Head>
-      <Header content={landingPage.header} common={common} />
+      <Header content={home.header} common={common} />
 
       <Section pt={24} mb={20} mt={0}>
         <Title mainTitle={portfolioPage.title} subTitle={portfolioPage.subtitle} align="center" />
@@ -42,25 +42,25 @@ export default function GeneralPortfolio(props) {
   )
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const filteredServices = data.services.filter(service => service.hasLandingPage);
   const paths = filteredServices.map(service => ({
     params: { service: service.slug },
   }))
   return { paths, fallback: false }
-}
+} */
 
 export async function getStaticProps({ params, locale }) {
-  const service = data.services.find(s => s.slug === params.service);
-  const projects = pt.fullPortfolio[service.jsonName];
+  /* const service = data.services.find(s => s.slug === params.service);
+  const projects = pt.fullPortfolio[service.jsonName]; */
 
   switch (locale) {
     case 'pt':
       return {
         props: {
           content: pt,
-          service,
-          projects,
+          /* service,
+          projects, */
         }
       }
 
@@ -68,8 +68,8 @@ export async function getStaticProps({ params, locale }) {
       return {
         props: {
           content: en,
-          service,
-          projects,
+          /* service,
+          projects, */
         }
       }
   }

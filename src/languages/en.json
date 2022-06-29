@@ -446,52 +446,52 @@
       },
       "projects": {
         "title": "Trusted By \nMany Clients \nAround the World",
-      "subtitle": "Projects & Reviews",
-      "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
-      "portfolio": [
-        {
-          "slug": "petsvida",
-          "cover": "/images/portfolio/petsvida.png",
-          "size": "6",
-          "name": "PetsVida Brand Identity",
-          "type": "E-commerce Pet Shop",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "rivana",
-          "cover": "/images/portfolio/rivana.png",
-          "size": "6",
-          "name": "Rivana Brand Identity",
-          "type": "Clothing E-Commerce",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "maptrack",
-          "cover": "/images/portfolio/maptrack.png",
-          "size": "6",
-          "name": "MapTrack Brand Identity",
-          "type": "Asset Tracking Startup",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "catarge",
-          "cover": "/images/portfolio/catarge.png",
-          "size": "6",
-          "name": "Catarge Brand Identity",
-          "type": "Engineering and Architecture",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "daia",
-          "cover": "/images/portfolio/daia.png",
-          "size": "3",
-          "name": "Daia Brand Identity",
-          "type": "Family Photographer",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        }
-      ],
-      "fullPortfolio": "Full portfolio",
-      "url": "/portfolio"
+        "subtitle": "Projects & Reviews",
+        "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
+        "portfolio": [
+          {
+            "slug": "petsvida",
+            "cover": "/images/portfolio/petsvida.png",
+            "size": "6",
+            "name": "PetsVida Brand Identity",
+            "type": "E-commerce Pet Shop",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "rivana",
+            "cover": "/images/portfolio/rivana.png",
+            "size": "6",
+            "name": "Rivana Brand Identity",
+            "type": "Clothing E-Commerce",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "maptrack",
+            "cover": "/images/portfolio/maptrack.png",
+            "size": "6",
+            "name": "MapTrack Brand Identity",
+            "type": "Asset Tracking Startup",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "catarge",
+            "cover": "/images/portfolio/catarge.png",
+            "size": "6",
+            "name": "Catarge Brand Identity",
+            "type": "Engineering and Architecture",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          },
+          {
+            "slug": "daia",
+            "cover": "/images/portfolio/daia.png",
+            "size": "3",
+            "name": "Daia Brand Identity",
+            "type": "Family Photographer",
+            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
+          }
+        ],
+        "fullPortfolio": "Full portfolio",
+        "url": "/portfolio"
       },
       "method": {
         "title": "Creative Process Steps",
@@ -1418,6 +1418,11 @@
         "logo": "<svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.46176 17C3.77113 16.9292 -0.0338036 13.171 0.0002265 8.40933C0.0388552 3.75608 3.90173 -0.0545424 8.53902 0.000590831C10.7862 0.00837278 12.9386 0.905818 14.5247 2.49627C16.1107 4.08673 17.0011 6.24049 17.0006 8.48559C16.9932 13.1802 13.2545 16.9605 8.46176 17ZM8.50499 6.36848H6.29763C6.05022 6.36848 6.05023 6.36848 6.02631 6.61382C6.02631 6.63128 6.02631 6.64966 6.02631 6.66712C5.99412 7.12656 5.95641 7.5759 5.93434 8.02983C5.89203 8.84304 5.96837 9.65166 6.04195 10.4603C6.0539 10.5898 6.10357 10.6284 6.23693 10.6275C7.7315 10.622 9.22514 10.6275 10.7197 10.6275C10.9542 10.6275 10.9542 10.6275 10.9873 10.3886C10.9873 10.384 10.9873 10.3794 10.9873 10.3748C11.0159 9.85749 11.0563 9.34108 11.072 8.82283C11.0945 8.04722 11.0586 7.27101 10.9644 6.5008C10.9524 6.40064 10.9147 6.36756 10.8108 6.36848C10.04 6.36848 9.27205 6.36664 8.50499 6.36664V6.36848ZM4.94747 6.37491C4.93224 6.37229 4.91689 6.37045 4.90148 6.3694C3.75979 6.3694 2.61809 6.3694 1.4764 6.3694C1.45055 6.3737 1.42618 6.38435 1.40547 6.40039C1.38476 6.41642 1.36836 6.43735 1.35775 6.46129C1.2794 6.69582 1.21793 6.93565 1.17381 7.17894C1.06988 7.90578 1.08183 8.63629 1.12414 9.36681C1.13764 9.74996 1.20673 10.1291 1.32924 10.4924C1.33836 10.5355 1.36367 10.5734 1.39995 10.5984C1.43623 10.6233 1.48071 10.6334 1.52422 10.6266C2.62054 10.622 3.71779 10.6266 4.81411 10.6266H4.94379C4.92539 9.90436 4.89412 9.20233 4.89412 8.5003C4.89412 7.79827 4.92999 7.09164 4.94747 6.37307V6.37491ZM12.0377 10.6156C12.0581 10.6191 12.0786 10.6216 12.0993 10.6229C13.241 10.6229 14.3827 10.6229 15.5244 10.6229C15.5397 10.6251 15.5554 10.6242 15.5704 10.6203C15.5854 10.6164 15.5995 10.6095 15.6118 10.6001C15.6242 10.5907 15.6345 10.579 15.6422 10.5655C15.6499 10.5521 15.6549 10.5372 15.6568 10.5218C15.7148 10.2866 15.7939 10.0532 15.8279 9.8143C15.9157 9.08898 15.9323 8.35683 15.8776 7.62827C15.8639 7.24025 15.7933 6.85633 15.6679 6.48885C15.6584 6.44875 15.6343 6.41362 15.6003 6.39033C15.5663 6.36705 15.5248 6.35729 15.4839 6.36296C14.3802 6.36296 13.2821 6.36296 12.1812 6.36296H12.0386C12.1406 7.77807 12.1403 9.19868 12.0377 10.6137V10.6156ZM10.7887 5.33014C10.7901 5.30811 10.7901 5.28601 10.7887 5.26398C10.6195 4.29271 10.3739 3.34442 9.93609 2.45586C9.74203 2.06165 9.5167 1.68675 9.18559 1.38903C8.98601 1.21076 8.76252 1.08212 8.48292 1.08672C8.20332 1.09131 8.00098 1.22363 7.81243 1.39914C7.48317 1.70513 7.26059 2.08371 7.05641 2.47975C6.66369 3.25437 6.46411 4.09148 6.26728 4.92858C6.23693 5.05723 6.22497 5.18955 6.20382 5.33014H10.7887ZM10.8144 11.6787H6.21578C6.21484 11.6949 6.21484 11.7112 6.21578 11.7274C6.38777 12.7116 6.62874 13.6755 7.08125 14.576C7.29094 14.9922 7.53467 15.3874 7.909 15.6842C8.30265 15.9993 8.69629 16.0003 9.0927 15.6915C9.36004 15.4684 9.58364 15.1976 9.75215 14.893C10.1531 14.225 10.3904 13.4944 10.5799 12.7446C10.6608 12.389 10.7335 12.038 10.8144 11.6705V11.6787ZM10.5578 1.35136C10.7243 1.68307 10.8954 1.99457 11.0389 2.31986C11.4316 3.21026 11.6725 4.14753 11.8666 5.09766C11.908 5.29889 11.9126 5.30349 12.1241 5.30716C12.8323 5.31758 13.5408 5.32493 14.2496 5.32922C14.5605 5.32922 14.8705 5.32922 15.1859 5.32922C15.1427 5.00669 14.4179 3.93251 13.8799 3.37474C12.9702 2.41981 11.8242 1.72181 10.5578 1.35136ZM15.2144 11.6861C15.1225 11.6806 15.07 11.6741 15.013 11.6741C14.6746 11.6741 14.3361 11.6631 14.0013 11.6659C13.3575 11.6705 12.7201 11.6833 12.0791 11.687C11.9494 11.687 11.9062 11.744 11.8767 11.8634C11.725 12.4846 11.5824 13.1085 11.3994 13.7196C11.2065 14.4012 10.9156 15.0512 10.5358 15.6492C11.4711 15.3653 12.3053 14.9683 13.0448 14.3821C13.9664 13.6626 14.7089 12.7399 15.2144 11.6861ZM5.09738 5.309C5.3733 3.91781 5.7228 2.57623 6.45951 1.3633C5.82397 1.40097 4.16018 2.36581 3.33242 3.17167C2.69964 3.78824 2.1662 4.47465 1.80474 5.309H5.09738ZM6.40064 15.5932C5.69429 14.3738 5.3733 13.0424 5.09738 11.6898H1.79187C2.32926 12.8037 3.13283 13.7685 4.13166 14.4988C4.81324 14.9987 5.5807 15.3696 6.39604 15.5932H6.40064Z' fill='black'/></svg>"
       }
     ]
+  },
+  "portfolioPage": {
+    "title": "Trusted by Many Clients \nAround the World",
+    "subtitle": "Our Portfolio",
+    "pageTitle": "Portfolio"
   },
   "common": {
     "bookMeeting": "Start a Project",

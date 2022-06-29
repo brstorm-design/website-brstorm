@@ -1,13 +1,9 @@
-@use '../../../styles/scss/colors';
-@use '../../../styles/scss/mixins';
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
 
 .title {
-  padding-top: calc(80px + 160px);
-  margin-bottom: 160px;
-  
-  @include mixins.lg {
-    padding-top: calc(80px + 80px);
-    margin-bottom: 80px;
+  @include mixins.sm {
+    margin-top: 24vmin;
   }
 
   h4 {
