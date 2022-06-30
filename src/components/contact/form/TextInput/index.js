@@ -13,7 +13,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const isNested = (name === 'email' || name === 'phone' || name === 'otherContact');
 
   function handleChange(e) {
-    e.target.closest('section').classList.remove('error');
+    e.target.closest('section')?.classList.remove('error');
     setHeight('auto');
     setParentHeight(`${field.current?.scrollHeight}px`);
     setFormValue({
@@ -25,7 +25,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
 
   useEffect(() => {
     let currentHeight = field.current?.scrollHeight;
-    field.current?.scrollHeight === 0 ? currentHeight = 'auto' : null;
+    field.current?.scrollHeight < 56 ? currentHeight = 56 : null;
     setHeight(`${currentHeight}px`);
     setParentHeight(`${currentHeight}px`);
   }, [thisValue]);

@@ -45,8 +45,8 @@
 
   &:global(.error) {
     textarea {
-      border-image: none;
-      border-color: colors.$error;
+      border-image: none !important;
+      border-color: colors.$error !important;
     }
     svg {
       opacity: 1;
