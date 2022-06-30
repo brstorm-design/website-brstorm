@@ -3,8 +3,7 @@ import styles from './Testimonials.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import Quote from 'public/images/testimonials/quotation.svg';
-import Prev from 'public/images/navigate-before.svg';
-import Next from 'public/images/navigate-next.svg';
+import Chevron from 'public/images/chevron-up.svg';
 //
 import paras from 'public/images/testimonials/paras.png';
 import michael from 'public/images/testimonials/michael.png';
@@ -68,10 +67,10 @@ export default function Testimonials({ content }) {
               <h1>{content.title}</h1>
               <div className={`d-none d-lg-block ${styles.nav}`}>
                 <button onClick={handleClick} id="prev">
-                  <Prev />
+                  <Chevron />
                 </button>
                 <button onClick={handleClick} id="next">
-                  <Next />
+                  <Chevron />
                 </button>
               </div>
             </div>

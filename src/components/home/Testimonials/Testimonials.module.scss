@@ -120,5 +120,16 @@
       background-color: colors.$white;
       color: colors.$dark;
     }
+
+    &:first-of-type {
+      svg {
+        transform: rotate(270deg);
+      }
+    }
+    &:last-of-type {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
   }
 }

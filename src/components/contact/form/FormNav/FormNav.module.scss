@@ -18,13 +18,13 @@
     width: 24px;
     justify-content: center;
     align-items: center;
-    border: 1px solid colors.$carbon;
-    border-radius: 2px;
+    border: 1.25px solid colors.$carbon;
+    border-radius: 1px;
 
     svg {
       width: 10px;
       height: 5px;
-      color: colors.$carbon;
+      color: colors.$darkGray;
       transition: all 250ms ease;
     }
 
