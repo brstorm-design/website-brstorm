@@ -84,7 +84,7 @@ export default function Mosaic({ common, content, portfolio }) {
           })
         }
         <div className="col-12 col-lg-3 offset-lg-5">
-          <Link href={`${rootPath}${content.url}`}>
+          <Link href={`${content.url}`}>
             <a className={styles.seeAll}>
               <Behance />
               <SeeMore linkText={common.seeMore}>

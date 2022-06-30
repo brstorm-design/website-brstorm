@@ -59,7 +59,7 @@ export default function Stairs({ content, common, portfolio }) {
             })
           }
           <div className="col-12 col-lg-6 offset-lg-6">
-            <SeeMore linkText={common.seeMore} href={`${rootPath}${content.url}`}>
+            <SeeMore linkText={common.seeMore} href={`${content.url}`}>
               {content.fullPortfolio}
             </SeeMore>
           </div>
