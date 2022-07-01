@@ -48,7 +48,7 @@ export default function Stairs({ content, common, portfolio }) {
               return (
                 <div key={`projects-${index}`} className="col-12 col-lg-6">
                   <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                    <Image placeholder="blur" src={images[item.slug]} layout="responsive" />
+                    <Image src={images[item.slug]} layout="responsive" />
                     <div id="overlay-details">
                       <h5>{item.name}</h5>
                       <span className="details">{item.type}</span>

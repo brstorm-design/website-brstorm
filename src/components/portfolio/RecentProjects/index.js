@@ -55,7 +55,7 @@ export default function RecentProjects({ modal }) {
                 <SwiperSlide key={`project-${item.id}`}>
                   <Link href={`/portfolio/${item.name.toLowerCase()}`}>
                     <a className={styles.project}>
-                      <Image objectFit="cover" placeholder="blur" src={item.cover} layout="responsive" />
+                      <Image objectFit="cover" src={item.cover} layout="responsive" />
                       <div>
                         <h5>{item.name}</h5>
                         <span className="details">{item.type}</span>
@@ -75,7 +75,7 @@ export default function RecentProjects({ modal }) {
                 <div className="" key={`project-mobile-${item.id}`}>
                   <Link href="#">
                     <a className={styles.project}>
-                      <Image objectFit="cover" placeholder="blur" src={item.cover} layout="responsive" />
+                      <Image objectFit="cover" src={item.cover} layout="responsive" />
                       <div>
                         <h5>{item.name}</h5>
                         <span className="details">{item.type}</span>

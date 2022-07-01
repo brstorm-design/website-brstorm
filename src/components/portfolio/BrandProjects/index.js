@@ -1,6 +1,6 @@
 import React from 'react';
 import { rootPath } from 'src/utils/env';
-import styles from './BrandProjects.module.scss'
+import styles from './BrandProjects.module.scss';
 
 export default function BrandProjects() {
 
@@ -46,7 +46,7 @@ export default function BrandProjects() {
 
   return (
     <section className={styles.section}>
-      <div className="container">
+      <div className="container-fluid px-0 px-sm-4">
         <div className="row gy-4">
           {
             projectList.map((project, index) => {

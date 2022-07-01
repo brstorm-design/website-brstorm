@@ -151,6 +151,8 @@ a:not(.btn) {
   animation: text-gradient 10s ease-in-out infinite alternate;
   background-size: 500%;
   width: max-content;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(-60deg, colors.$pink, colors.$cyan);
 
   @include mixins.md {

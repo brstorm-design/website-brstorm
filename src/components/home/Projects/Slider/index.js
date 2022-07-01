@@ -43,7 +43,7 @@ export default function Slider({ content }) {
               return (
                 <SwiperSlide key={`top-row-${index}`}>
                   <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                    <Image placeholder="blur" src={webImages[img.slug]} layout="responsive" objectFit="cover" />
+                    <Image src={webImages[img.slug]} layout="responsive" objectFit="cover" />
                     <div id="overlay-details">
                       <h5>{img.name}</h5>
                       <span className="details">{img.type}</span>
@@ -77,7 +77,7 @@ export default function Slider({ content }) {
               return (
                 <SwiperSlide key={`bottom-row-${index}`}>
                   <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                    <Image placeholder="blur" src={webImages[img.slug]} layout="responsive" objectFit="cover" />
+                    <Image src={webImages[img.slug]} layout="responsive" objectFit="cover" />
                     <div id="overlay-details">
                       <h5>{img.name}</h5>
                       <span className="details">{img.type}</span>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
@@ -15,6 +15,10 @@ export default function GeneralPortfolio(props) {
   const home = props.content.home;
   const common = props.content.common;
   const portfolioPage = props.content.portfolioPage;
+
+  useEffect(() => {
+    document.body.classList.add('page');
+  }, []);
 
   return (
     <>
