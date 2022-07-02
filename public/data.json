@@ -303,5 +303,40 @@
       "slug": "pitch",
       "jsonName": "pitch"
     }
+  ],
+
+  "projects": [
+    {
+      "name": "Catarge",
+      "slug": "catarge"
+    },
+    {
+      "name": "LFD",
+      "slug": "lfd"
+    },
+    {
+      "name": "MapTrack",
+      "slug": "maptrack"
+    },
+    {
+      "name": "NewAge",
+      "slug": "new-age"
+    },
+    {
+      "name": "PetsVida",
+      "slug": "petsvida"
+    },
+    {
+      "name": "Rivana",
+      "slug": "rivana"
+    },
+    {
+      "name": "RukaMachi",
+      "slug": "rukamachi"
+    },
+    {
+      "name": "TiagoGarcia",
+      "slug": "tiago-garcia"
+    }
   ]
 }

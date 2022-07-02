@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import daia from 'public/images/portfolio/daia.png';
 import catarge from 'public/images/portfolio/catarge.png';
 import petsvida from 'public/images/portfolio/petsvida.png';
+import rivana from 'public/images/portfolio/rivana.png';
+import maptrack from 'public/images/portfolio/maptrack.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -26,6 +28,16 @@ export default function RecentProjects({ modal }) {
       id: 3,
       name: 'PetsVida',
       cover: petsvida,
+    },
+    {
+      id: 4,
+      name: 'Rivana',
+      cover: rivana,
+    },
+    {
+      id: 5,
+      name: 'MapTrack',
+      cover: maptrack,
     },
   ]
 

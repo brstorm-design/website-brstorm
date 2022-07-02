@@ -47,8 +47,7 @@ export default function GeneralPortfolio(props) {
 }
 
 export async function getStaticPaths() {
-  const filteredServices = data.services.filter(service => service.hasLandingPage);
-  const paths = filteredServices.map(service => ({
+  const paths = data.services.map(service => ({
     params: { service: service.slug },
   }))
   return { paths, fallback: false }

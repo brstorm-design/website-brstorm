@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-    if (router.route.endsWith('success')) {
+    if (router.route.endsWith('success') || router.route.includes('portfolio')) {
       gradients.left = 'none';
       gradients.right = 'none';
     }
