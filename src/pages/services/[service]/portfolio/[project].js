@@ -19,7 +19,7 @@ import Footer from 'src/layouts/Footer';
 
 export default function Project({ content, project }) {
   const projectComponents = {
-    Catarage: Catarge,
+    Catarge: Catarge,
     LFD: LFD,
     MapTrack: MapTrack,
     NewAge: NewAge,
@@ -29,7 +29,7 @@ export default function Project({ content, project }) {
     TiagoGarcia: TiagoGarcia,
   }
 
-  const Project = projectComponents[project.name];
+  const ProjectComponent = projectComponents[project.name];
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function Project({ content, project }) {
       </Head>
       <Header common={content.common} content={content.landingPage.brand.header} />
 
-      <Project />
+      <ProjectComponent />
       <RecentProjects />
       <Contact common={content.common} content={content.home.contact} />
 
