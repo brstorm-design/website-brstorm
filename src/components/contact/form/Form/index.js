@@ -71,7 +71,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
                     helperText={field.helperText}
                     required={field.attributes.required}
                     type={field.attributes.type}
-                    name={field.attributes.name === 'businessName' ? values.name : null}
+                    name={field.attributes.name === 'entry.1868660285' ? values['entry.1247986906'] : null}
                     id={field.attributes.name}
                     active={activeField?.id === field.attributes.name ? true : false}
                   >
