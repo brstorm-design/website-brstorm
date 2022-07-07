@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { smoothScroll } from 'src/modules/App';
 import { inOutQuad } from 'src/utils/easings';
-import { nextQuestion, validateForm } from 'src/utils/form';
+import { getQueryString, nextQuestion, validateForm } from 'src/utils/form';
 import FormQuestion from '../FormQuestion';
 import InputBox from '../InputBox';
 import TextInput from '../TextInput';
@@ -17,31 +17,36 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
     try {
       validateForm(values);
 
-      const formElements = Array.from(document.querySelector('form').elements)
+      const formElements = Array.from(document.querySelector('form').elements);
       formElements.forEach(element => {
         element.disabled = true;
       });
 
       setLoading(true);
 
-      const request = await fetch('/api/contact', {
+      const request = await fetch('https://docs.google.com/forms/d/e/1FAIpQLScp0gGg8EFD0CF9pUYxEXGOmxzDLGMEe2MkSZ4ZlUPCBifiwQ/formResponse', {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json',
+          'Accept': '*/*',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(values),
+        body: getQueryString(values),
       });
-      if (request.ok) {
+      if (request) {
         router.push('/contact/success');
       } else {
         window.location.reload();
       }
 
     } catch (e) {
-      smoothScroll(e.element, 'center', 1000, inOutQuad)
-      e.element.classList.add('error');
-      console.warn(e);
+      if (e.element) {
+        smoothScroll(e.element, 'center', 1000, inOutQuad)
+        e.element.classList.add('error');
+        console.warn(e);
+      } else {
+        window.location.reload();
+      }
     }
   }
 
@@ -100,7 +105,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
           </form>
           <div>
             <button className="btn large" type="submit" form="form">{submitText}</button>
-            <div style={{display: loading ? 'flex' : 'none'}} className="spinner-border" />
+            <div style={{ display: loading ? 'flex' : 'none' }} className="spinner-border" />
           </div>
         </div>
       </div>

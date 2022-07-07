@@ -233,7 +233,7 @@
       {
         "title": "Como posso lhe chamar?",
         "attributes": {
-          "name": "name",
+          "name": "entry.1247986906",
           "required": true,
           "type": "text",
           "placeholder": "Ex.: Luan"
@@ -243,7 +243,7 @@
         "title": ", qual o nome do seu negócio?",
         "helperText": "Caso ainda não tenha, deixe em branco.",
         "attributes": {
-          "name": "businessName",
+          "name": "entry.1868660285",
           "required": false,
           "type": "text",
           "placeholder": "Ex.: Br.Storm Design"
@@ -253,7 +253,7 @@
         "title": "O que você faz?",
         "helperText": " Fale um pouco sobre o que seu negócio se trata.",
         "attributes": {
-          "name": "details",
+          "name": "entry.948784691",
           "required": true,
           "type": "text",
           "placeholder": "Ex.: Web e Brand Design"
@@ -263,7 +263,7 @@
         "title": "Já possui redes sociais ou site?",
         "helperText": "Tem algum lugar onde possamos conhecer mais sobre o seu negócio?",
         "attributes": {
-          "name": "yourContent",
+          "name": "entry.130241094",
           "required": true,
           "type": "text",
           "placeholder": "Ex.: Instagram: @brstorm.design"
@@ -272,34 +272,34 @@
       {
         "title": "Qual o tamanho do seu negócio?",
         "attributes": {
-          "name": "businessSize",
+          "name": "entry.1655813198",
           "required": true,
           "type": "radio"
         },
         "options": [
           {
             "name": "Trabalho Sozinho",
-            "value": "1",
+            "value": "Trabalho Sozinho",
             "collapsedContent": ""
           },
           {
             "name": "2 - 10 Colaboradores",
-            "value": "2-10",
+            "value": "2 - 10 Colaboradores",
             "collapsedContent": ""
           },
           {
             "name": "11 - 50 Colaboradores",
-            "value": "11-50",
+            "value": "11 - 50 Colaboradores",
             "collapsedContent": ""
           },
           {
             "name": "51 - 100 Colaboradores",
-            "value": "51-100",
+            "value": "51 - 100 Colaboradores",
             "collapsedContent": ""
           },
           {
             "name": "+100 Colaboradores",
-            "value": "+100",
+            "value": "+100 Colaboradores",
             "collapsedContent": ""
           }
         ]
@@ -309,33 +309,33 @@
         "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço.",
         "required": true,
         "attributes": {
-          "name": "service",
+          "name": "entry.1765316974",
           "type": "checkbox"
         },
         "options": [
           {
             "name": "Marca",
-            "value": "brand",
+            "value": "Marca",
             "collapsedContent": "Criação do conjunto visual da marca, envolvendo logo, acordo cromático, tipografia, grafismos e mais."
           },
           {
             "name": "Website",
-            "value": "website",
+            "value": "Website",
             "collapsedContent": "Desenvolvimento de plataforma online para o projeto."
           },
           {
             "name": "Redesign",
-            "value": "redesign",
+            "value": "Redesign",
             "collapsedContent": "Renovação, atualização ou reposicionamento de uma marca já existente."
           },
           {
             "name": "Naming",
-            "value": "naming",
+            "value": "Naming",
             "collapsedContent": "Criação estratégica de um nome para a marca."
           },
           {
             "name": "Estratégia",
-            "value": "strategy",
+            "value": "Estratégia",
             "collapsedContent": "Análise de concorrentes e público-alvo, norteadores, posicionamento estratégico e mais."
           }
         ]
@@ -352,7 +352,7 @@
             "name": "E-mail",
             "value": "email",
             "collapsedContent": {
-              "name": "email",
+              "name": "entry.264212494",
               "type": "email",
               "placeholder": "Ex.: contact@brstorm.design"
             }
@@ -361,7 +361,7 @@
             "name": "WhatsApp",
             "value": "phone",
             "collapsedContent": {
-              "name": "phone",
+              "name": "entry.2132000314",
               "type": "tel",
               "placeholder": "Ex.: (51) 98888-7777"
             }
@@ -370,7 +370,7 @@
             "name": "Outros",
             "value": "otherContact",
             "collapsedContent": {
-              "name": "otherContact",
+              "name": "entry.41791649",
               "type": "text",
               "placeholder": "Ex.: Instagram: @brstorm.design"
             }

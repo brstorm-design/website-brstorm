@@ -10,7 +10,8 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const [thisValue, setThisValue] = useState('');
   const field = useRef(null);
 
-  const isNested = (name === 'email' || name === 'phone' || name === 'otherContact');
+  // if name is 'email', 'whatsapp' or 'other':
+  const isNested = (name === 'entry.264212494' || name === 'entry.2132000314' || name === 'entry.41791649');
 
   function handleChange(e) {
     e.target.closest('section')?.classList.remove('error');

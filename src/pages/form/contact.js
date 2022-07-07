@@ -16,26 +16,26 @@ export default function ContactForm({ content, common, footer }) {
   }, []);
 
   const initalValues = {
-    name: '',
-    businessName: '',
-    details: '',
-    yourContent: '',
-    businessSize: '',
-    service: {
-      brand: false,
-      website: false,
-      redesign: false,
-      naming: false,
-      strategy: false,
+    'entry.1247986906': '', // name
+    'entry.1868660285': '', // business name
+    'entry.948784691': '', // details
+    'entry.130241094': '', // your content
+    'entry.1655813198': '', // business size
+    'entry.1765316974': { // service
+      Marca: false,
+      Website: false,
+      Redesign: false,
+      Naming: false,
+      Estratégia: false,
     },
     yourContact: {
       email: false,
       phone: false,
       otherContact: false,
     },
-    email: '',
-    phone: '',
-    otherContact: '',
+    'entry.264212494': '', // email
+    'entry.2132000314': '', // whatsapp
+    'entry.41791649': '', // other
   };
 
   const [values, setValues] = useState(initalValues);
@@ -109,9 +109,9 @@ export default function ContactForm({ content, common, footer }) {
       <Cover content={cover} />
       <Form
         fields={fields}
+        setValues={setValues}
         submitText={submit}
         values={values}
-        setValues={setValues}
         handleFieldSetChange={handleFieldSetChange}
         activeField={activeField}
       />

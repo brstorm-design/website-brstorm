@@ -7,7 +7,7 @@ export default function FilledFields({ values }) {
   function countFilledFields() {
     let count = 0;
     for (const field in values) {
-      let ignore = (field === 'email' || field === 'phone' || field === 'otherContact');
+      let ignore = (field === 'entry.264212494' || field === 'entry.2132000314' || field === 'entry.41791649'); // *
       if (typeof values[field] === 'string') {
         values[field] && !ignore ? count += 1 : null;
       } else {
@@ -21,6 +21,7 @@ export default function FilledFields({ values }) {
     }
     return count;
   }
+  // * ignored fields for counting: 'email', 'whatsapp', 'other'
 
   return (
     <div className={styles.filledFields}>
