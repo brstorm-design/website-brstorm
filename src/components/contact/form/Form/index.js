@@ -41,7 +41,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
 
     } catch (e) {
       if (e.element) {
-        smoothScroll(e.element, 'center', 1000, inOutQuad)
+        smoothScroll(e.element, 'center', 0, 1000, inOutQuad);
         e.element.classList.add('error');
         console.warn(e);
       } else {
@@ -78,6 +78,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
                     {
                       field.attributes.type === 'radio' || field.attributes.type === 'checkbox' ? (
                         <fieldset required={field.attributes.required} name={field.attributes.name} type={field.attributes.type} onChange={handleFieldSetChange}>
+                          <input type="text" className={styles.focusGuide} />
                           {
                             field.options.map((option, index) => {
                               return (

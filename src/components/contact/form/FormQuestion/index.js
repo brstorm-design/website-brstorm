@@ -45,7 +45,19 @@ export default function FormQuestion({ children, title, helperText, required, na
 
   function handleFocus(e) {
     if (e.relatedTarget) {
-      smoothScroll(e.relatedTarget, 'center', 400);
+      let isSameQuestion = e.target.closest('section').id === e.relatedTarget.closest('section').id;
+      if (isSameQuestion) {
+        return;
+      }
+
+      let scrollTarget;
+      if (e.relatedTarget.type === 'checkbox' || e.relatedTarget.type === 'radio' || e.relatedTarget.className.includes('Guide')) {
+        scrollTarget = e.relatedTarget.closest('fieldset');
+      } else {
+        scrollTarget = e.relatedTarget;
+      }
+
+      smoothScroll(scrollTarget, 'center', 0, 400);
     }
   }
 

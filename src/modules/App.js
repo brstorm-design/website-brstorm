@@ -103,7 +103,7 @@ export function getMaxHeight(elements = NodeList) {
   return height;
 }
 
-export function smoothScroll(href = document.documentElement, offset = 150, duration = 1500, easing = inOutCube) {
+export function smoothScroll(href = document.documentElement, offset = 150, offsetCenter = 0, duration = 1500, easing = inOutCube) {
   let stop = false;
   let startx = document.documentElement.scrollTop;
   let destx;
@@ -122,7 +122,7 @@ export function smoothScroll(href = document.documentElement, offset = 150, dura
   if (typeof offset === 'number') {
     destx = offsetTop - offset;
   } else if (offset === 'center') {
-    destx = (offsetTop - (window.innerHeight / 2) + (target.clientHeight / 2));
+    destx = (offsetTop - (window.innerHeight / 2) + (target.clientHeight / 2)) + offsetCenter;
   } else {
     throw new TypeError('Invalid `offset` value')
   }
