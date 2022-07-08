@@ -11,7 +11,7 @@ export function validateForm() {
 
   const checkboxFieldsets = document.querySelectorAll('fieldset[type="checkbox"], fieldset[type="radio"]');
   checkboxFieldsets.forEach(fieldset => {
-    const inputs = Array.from(fieldset.children);
+    const inputs = Array.from(fieldset.querySelectorAll('label'));
     if (inputs.every(input => !input.control.checked)) {
       throw {
         message: 'Marque pelo menos uma caixa.',

@@ -45,7 +45,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
         e.element.classList.add('error');
         console.warn(e);
       } else {
-        window.location.reload();
+        console.error(e);
       }
     }
   }

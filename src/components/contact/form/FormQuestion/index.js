@@ -45,7 +45,7 @@ export default function FormQuestion({ children, title, helperText, required, na
 
   function handleFocus(e) {
     if (e.relatedTarget) {
-      let isSameQuestion = e.target.closest('section').id === e.relatedTarget.closest('section').id;
+      let isSameQuestion = e.target.closest('section')?.id === e.relatedTarget.closest('section')?.id;
       if (isSameQuestion) {
         return;
       }
