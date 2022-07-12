@@ -4,9 +4,13 @@ import 'src/styles/styles.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { useEffect } from 'react';
 import { rootPath } from 'src/utils/env';
 import { useRouter } from 'next/router';
+import { AppWrapper } from 'src/context/store';
+
+/* import '../../public/css/test.css'; */
 
 function MyApp({ Component, pageProps }) {
 
@@ -36,13 +40,32 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
+  /* useEffect(() => {
+    const stickyDiv = document.querySelector('#sticky-container > div');
+    const initialOffsetTop = stickyDiv.getBoundingClientRect().top;
+
+    let scroll;
+    import("locomotive-scroll").then((locomotiveModule) => {
+      scroll = new locomotiveModule.default({
+        el: document.documentElement,
+        smooth: true,
+      });
+
+      
+    });
+
+    
+  }, []); */
+
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <Component {...pageProps} />
+      <AppWrapper>
+        <Component {...pageProps} />
+      </AppWrapper>
     </>
   )
 }

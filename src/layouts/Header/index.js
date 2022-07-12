@@ -42,17 +42,6 @@ export default function Header({ variant = 'default', ...props }) {
     }
   }
 
-  useEffect(() => {
-    const header = document.querySelector('header');
-    window.onscroll = () => {
-      if (window.pageYOffset > 24) {
-        header.classList.add(styles.shrink);
-      }
-      else {
-        header.classList.remove(styles.shrink);
-      }
-    }
-  }, [])
 
   function startAnimation(e) {
     let stop = false;
