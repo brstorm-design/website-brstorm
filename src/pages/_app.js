@@ -8,9 +8,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { useEffect } from 'react';
 import { rootPath } from 'src/utils/env';
 import { useRouter } from 'next/router';
-import { AppWrapper } from 'src/context/store';
-
-/* import '../../public/css/test.css'; */
+import { SmoothScrollProvider } from 'src/contexts/SmoothScrollContext';
 
 function MyApp({ Component, pageProps }) {
 
@@ -28,9 +26,9 @@ function MyApp({ Component, pageProps }) {
     }
 
     document.body.style.setProperty('--background-detail', `
-    ${gradients.left},
-    ${gradients.right},
-    ${gradients.footer}
+      ${gradients.left},
+      ${gradients.right},
+      ${gradients.footer}
     `);
   }, [router.route]);
 
@@ -40,32 +38,17 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  /* useEffect(() => {
-    const stickyDiv = document.querySelector('#sticky-container > div');
-    const initialOffsetTop = stickyDiv.getBoundingClientRect().top;
-
-    let scroll;
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default({
-        el: document.documentElement,
-        smooth: true,
-      });
-
-      
-    });
-
-    
-  }, []); */
-
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <AppWrapper>
-        <Component {...pageProps} />
-      </AppWrapper>
+      <main data-scroll-container>
+        <SmoothScrollProvider options={{smooth: true}}>
+          <Component {...pageProps} />
+        </SmoothScrollProvider>
+      </main>
     </>
   )
 }
