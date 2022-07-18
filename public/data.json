@@ -8,7 +8,7 @@
       "parameters": {
         "langs": ["en"],
         "services": [0, 1],
-        "content": [2]
+        "content": [0, 2]
       },
       "portfolio": [
         {
