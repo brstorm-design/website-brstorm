@@ -23,7 +23,7 @@ const images = {
   util,
 }
 
-export default function Mosaic({ common, content, portfolio }) {
+export default function Mosaic({ common, content }) {
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -69,7 +69,7 @@ export default function Mosaic({ common, content, portfolio }) {
     <div className="container">
       <div className="row gy-4" ref={projects} id="projects-cards">
         {
-          portfolio.map((item, index) => {
+          content.portfolio.map((item, index) => {
             return (
               <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
                 <a href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>

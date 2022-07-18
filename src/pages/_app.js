@@ -38,6 +38,10 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
+  useEffect(() => {
+    window.dispatchEvent(new Event('resize'));
+  }, [Component]);
+
   return (
     <>
       <Head>

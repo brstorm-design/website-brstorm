@@ -44,8 +44,16 @@ export default function WhatWeDo({ content, common }) {
     setMousePosition(getTranslateValue(e, [-40, 40]));
   }
 
+  const illustrationAttributes = {
+    'data-scroll': true,
+    'data-scroll-sticky': true,
+    'data-scroll-repeat': true,
+    'data-scroll-offset': '50, 125',
+    'data-scroll-target': 'section>.stickyparent',
+  }
+
   return (
-    <div className={styles.section} id="what-we-do" onMouseMove={move}>
+    <div className={`stickyparent ${styles.section}`} id="what-we-do" onMouseMove={move}>
       <div className="container">
         <div className={`d-none d-lg-block ${styles.title}`}>
           <h3 className="gradient-bg">{content.subtitle}</h3>
@@ -53,7 +61,9 @@ export default function WhatWeDo({ content, common }) {
         </div>
         <div className="row">
           <div className="col-12 col-lg-6">
-            <Samothrace translateValues={mousePosition} />
+            <div {...illustrationAttributes}>
+              <Samothrace translateValues={mousePosition} />
+            </div>
             <div className={`d-block d-lg-none ${styles.title}`}>
               <h4 className="gradient-bg">{content.subtitle}</h4>
               <h1>{content.title}</h1>

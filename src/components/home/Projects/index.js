@@ -4,13 +4,12 @@ import styles from './Projects.module.scss';
 import Mosaic from './Mosaic';
 import Slider from './Slider';
 import Stairs from './Stairs';
+import SliderScroll from './SliderScroll';
 
 
-export default function Projects({ layout, content, common, client, allProjects }) {
+export default function Projects({ layout, content, common, client }) {
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
-
-  const portfolio = client ? client.portfolio : content.portfolio;
 
   useEffect(() => {
     const refs = [introText.current];
@@ -48,7 +47,9 @@ export default function Projects({ layout, content, common, client, allProjects 
   function renderProjects() {
     switch (layout) {
       case 'mosaic':
-        return <Mosaic content={content} common={common} portfolio={content.portfolio} />;
+        return <Mosaic content={content} common={common} />;
+      case 'scroll':
+        return <SliderScroll content={content} common={common} />;
       case 'slider':
         return <Slider content={content} />;
       case 'stairs':

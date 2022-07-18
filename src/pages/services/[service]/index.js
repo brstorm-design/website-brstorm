@@ -24,10 +24,12 @@ export default function LandingPage({ content, service }) {
   const landing = content.landingPage[service.jsonName];
   const pitch = content.pitch[service.jsonName];
 
+  const pageTitle = `${service.name} • Br.Storm`;
+
   return (
     <>
       <Head>
-        <title>{service.name} • Br.Storm</title>
+        <title>{ pageTitle }</title>
       </Head>
       <Header content={landing.header} common={content.common} />
 
@@ -45,7 +47,7 @@ export default function LandingPage({ content, service }) {
             </Section>
 
             <Section>
-              <Projects layout="stairs" content={home.projects} common={common} />
+              <Projects layout="scroll" content={landing.projects} common={common} />
             </Section>
 
             <Section>
