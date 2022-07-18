@@ -42,8 +42,8 @@ export default function Contact({ content, common }) {
                 <p dangerouslySetInnerHTML={{__html: content.paragraph}} />
               </div>
               <div>
-                <Link href="/contact/form">
-                  <a target="_blank" rel="noopener noreferrer" className="btn large">
+                <Link href="/form/contact">
+                  <a rel="noopener noreferrer" className="btn large">
                     {common.bookMeeting}
                   </a>
                 </Link>

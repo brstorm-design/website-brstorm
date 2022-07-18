@@ -89,9 +89,9 @@ export default function Header({ variant = 'default', ...props }) {
                     content.items.map((link, index) => {
                       return (
                         <li className="nav-item" key={`link-${index}`}>
-                          <Link href={link.href}>
-                            <a onClick={startAnimation} className="nav-link small">{link.name}</a>
-                          </Link>
+                          {/* <Link href={link.href}> */}
+                            <a className="nav-link small">{link.name}</a>
+                          {/* </Link> */}
                         </li>
                       )
                     })
@@ -106,8 +106,8 @@ export default function Header({ variant = 'default', ...props }) {
 
           { // fazer componente disso:
             showComponent.cta && (
-              <Link href="/contact/form">
-                <a target="_blank" rel="noopener noreferrer" className="btn small">
+              <Link href="/form/contact">
+                <a rel="noopener noreferrer" className="btn small">
                   {common.bookMeeting}
                 </a>
               </Link>
