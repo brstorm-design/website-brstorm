@@ -16,7 +16,6 @@ import Details from 'src/components/pitch/Details';
 import Section from 'src/components/common/Section';
 import About from 'src/components/pitch/About';
 import ContentManager from 'src/components/pitch/ContentManager';
-import AddOns from 'src/components/pitch/AddOns';
 
 export default function LandingPage({ content, service }) {
   const home = content.home;
@@ -91,12 +90,8 @@ export default function LandingPage({ content, service }) {
               <ContentManager />
             </Section>
 
-            <Section>
+            <Section mb={52}>
               <Methodology content={pitch.method} pitch service={service.slug} />
-            </Section>
-
-            <Section>
-              <AddOns content={pitch.addons} />
             </Section>
           </>
         )
