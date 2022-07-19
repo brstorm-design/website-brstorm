@@ -12,6 +12,14 @@ export default function Methodology({ content, pitch, service }) {
     setMousePosition(getTranslateValue(e, [-40, 40]));
   }
 
+  const stickyAttributes = {
+    'data-scroll': true,
+    'data-scroll-sticky': true,
+    'data-scroll-repeat': true,
+    'data-scroll-offset': '-132, -205',
+    'data-scroll-target': '#cards',
+  }
+
   return (
     <div className={styles.section} onMouseMove={move} id="methodology">
       <div className="container">
@@ -26,7 +34,7 @@ export default function Methodology({ content, pitch, service }) {
         <div className="row">
           <div className="col-12 col-lg-6">
             {/* <Samothrace translateValues={mousePosition} /> */}
-            <div className={styles.primaryContent}>
+            <div className={styles.primaryContent} {...stickyAttributes}>
               {
                 pitch ? (
                   <Samothrace translateValues={mousePosition} />

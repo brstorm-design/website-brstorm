@@ -5,8 +5,6 @@
 @include mixins.pin-pulse(colors.$cyan);
 
 .image {
-  position: sticky;
-  top: 150px;
   @include mixins.md {
     transform: translateX(-150px);
   }

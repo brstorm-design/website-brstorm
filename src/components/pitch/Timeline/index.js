@@ -52,19 +52,26 @@ export default function Timeline({ steps, service }) {
     Development,
     Delivery,
     Support,
-  ]
+  ];
+
+  let offsets = ['-132', '236', '604', '972', '1340', '1708', '2076', '2444'];
 
   return (
     <div>
-      <div ref={cards} className={`${styles.cards} ${service === 'web' ? styles.web : ''}`} >
+      <div ref={cards} className={`${styles.cards} ${service === 'web' ? styles.web : ''}`} id="cards">
         {
           steps.map((step, index) => {
             const Icon = icons[index];
 
             return (
-              <div key={`step-${index}`} id={`card_step-${index}`}>
+              <div key={`step-${index}`} id={`card_step-${index}`}
+                data-scroll
+                data-scroll-sticky
+                data-scroll-repeat
+                data-scroll-offset={offsets[index]}
+                data-scroll-target="#cards"
+              >
                 <span style={{ opacity: '0' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
-                {/* <img src={`${rootPath}/images/icons/${step.icon}`} alt="" /> */}
                 <Icon />
                 <h5>{step.name}</h5>
                 <small>{step.text}</small>
