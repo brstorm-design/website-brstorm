@@ -1,5 +1,5 @@
+import React from 'react';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
 import FilledFields from 'src/components/contact/form/FilledFields';
 import FormNav from 'src/components/contact/form/FormNav';
 import { inOutQuad } from 'src/utils/easings';
@@ -89,9 +89,9 @@ export default function Header({ variant = 'default', ...props }) {
                     content.items.map((link, index) => {
                       return (
                         <li className="nav-item" key={`link-${index}`}>
-                          {/* <Link href={link.href}> */}
+                          <Link href={link.href} scroll={false}>
                             <a className="nav-link small">{link.name}</a>
-                          {/* </Link> */}
+                          </Link>
                         </li>
                       )
                     })
