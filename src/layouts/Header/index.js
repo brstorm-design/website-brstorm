@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import FilledFields from 'src/components/contact/form/FilledFields';
 import FormNav from 'src/components/contact/form/FormNav';
 import { inOutQuad } from 'src/utils/easings';
 import Logo from '../../components/common/Logo';
 import styles from './Header.module.scss';
+import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 
 export default function Header({ variant = 'default', ...props }) {
+  const fixedHeader = useRef(null);
   let showComponent;
 
   switch (variant) {
@@ -42,37 +44,26 @@ export default function Header({ variant = 'default', ...props }) {
     }
   }
 
+  const {scroll} = useContext(SmoothScrollContext);
 
-  function startAnimation(e) {
-    let stop = false;
-
-    let doc = document.documentElement;
-    let startx = doc.scrollTop;
-    let destx = document.querySelector(e.target.hash).offsetTop - 150;
-    let duration = 1800;
-    let start = null;
-    let end = null;
-
-    function trigger(timeStamp) {
-      start = timeStamp;
-      end = start + duration;
-      draw(timeStamp);
+  useEffect(() => {
+    function handleScroll(e) {
+      if (e.scroll.y > 24) {
+        fixedHeader.current.classList.add(styles.shrink);
+      } else {
+        fixedHeader.current.classList.remove(styles.shrink);
+      }
     }
 
-    function draw(now) {
-      if (stop) return;
-      if (now - start >= duration) stop = true;
-      let p = (now - start) / duration;
-      let val = inOutQuad(p);
-      let x = startx + (destx - startx) * val;
-      window.scrollTo(0, x);
-      requestAnimationFrame(draw);
+    scroll?.on('scroll', handleScroll);
+
+    return () => {
+      scroll?.off('scroll', handleScroll);
     }
-    requestAnimationFrame(trigger);
-  }
+  }, [scroll]);
 
   return (
-    <header className={styles.header} id="header">
+    <header ref={fixedHeader} className={styles.header} id="header" data-scroll data-scroll-sticky data-scroll-target="main">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <Link href="/" className={styles.logo}>
