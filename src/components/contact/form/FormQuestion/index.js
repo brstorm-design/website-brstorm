@@ -1,13 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import { inOutQuad } from 'src/utils/easings';
 import styles from './FormQuestion.module.scss';
 import ErrorIcon from 'public/images/icons/Error.svg';
 import { smoothScroll } from 'src/modules/App';
+import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 
 export default function FormQuestion({ children, title, helperText, required, name, type, id, active }) {
 
   name === '' ? name = '_____' : name = name;
   const display = type === 'checkbox' ? 'none' : 'inline-block';
+
+  const { scroll } = useContext(SmoothScrollContext);
 
   // fazer um módulo depois:
   function startAnimation(e) {
@@ -57,7 +60,8 @@ export default function FormQuestion({ children, title, helperText, required, na
         scrollTarget = e.relatedTarget;
       }
 
-      smoothScroll(scrollTarget, 'center', 0, 400);
+      let offset = -((window.innerHeight - scrollTarget.clientHeight) / 2);
+      scroll?.scrollTo(scrollTarget, { duration: 400, offset });
     }
   }
 
@@ -66,7 +70,7 @@ export default function FormQuestion({ children, title, helperText, required, na
       className={styles.question}
       id={id}
       type={type}
-      onClick={active ? null : handleClick}
+      /* onClick={active ? null : handleClick} */
       onBlur={handleFocus}
     >
       <div className={styles.title}>

@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 import { smoothScroll } from 'src/modules/App';
 import { inOutQuad } from 'src/utils/easings';
 import { getQueryString, nextQuestion, validateForm } from 'src/utils/form';
@@ -11,6 +12,8 @@ import styles from './Form.module.scss';
 export default function Form({ fields, submitText, values, setValues, handleFieldSetChange, activeField }) {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+
+  const { scroll } = useContext(SmoothScrollContext);
 
   async function submitForm(e) {
     e.preventDefault();
@@ -41,7 +44,8 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
 
     } catch (e) {
       if (e.element) {
-        smoothScroll(e.element, 'center', 0, 1000, inOutQuad);
+        let offset = -((window.innerHeight - e.element.clientHeight) / 2);
+        scroll?.scrollTo(e.element, { offset });
         e.element.classList.add('error');
         console.warn(e);
       } else {
@@ -72,7 +76,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
                     required={field.attributes.required}
                     type={field.attributes.type}
                     name={field.attributes.name === 'entry.1868660285' ? values['entry.1247986906'] : null}
-                    id={field.attributes.name}
+                    id={field.sectionName}
                     active={activeField?.id === field.attributes.name ? true : false}
                   >
                     {

@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import AnchorButton from 'src/components/common/AnchorButton';
 import { constructSequentialAnimation, getTranslateValue, handleIntersection } from 'src/modules/App';
 import styles from './Purpose.module.scss';
-import { inOutQuad } from 'src/utils/easings';
 import David from 'src/components/illustrations/David';
 import Arrow from 'public/images/arrow-down.svg';
+import Link from 'next/link';
 
 export default function Purpose({ content, common }) {
   const element = useRef(null);
@@ -51,10 +50,12 @@ export default function Purpose({ content, common }) {
             <article ref={element} id="purpose-article">
               <h2>{content.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: content.paragraph }} />
-              <AnchorButton className="btn large ghost" easing={inOutQuad} duration={3000} href="#contact">
-                {common.contactUs}
-                <Arrow />
-              </AnchorButton>
+              <Link href="#contact" scroll={false}>
+                <a className="btn large ghost">
+                  {common.contactUs}
+                  <Arrow />
+                </a>
+              </Link>
             </article>
           </div>
         </div>

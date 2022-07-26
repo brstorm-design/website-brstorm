@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.scss';
 import { constructSequentialAnimation, fillPlaceholders, handleIntersection } from 'src/modules/App';
-import AnchorButton from 'src/components/common/AnchorButton';
-import { inOutQuad } from 'src/utils/easings';
 import { rootPath } from 'src/utils/env';
+import Arrow from 'public/images/arrow-down.svg';
 
 export default function Hero({ content, common, client }) {
   const element = useRef(null);
@@ -59,10 +58,12 @@ export default function Hero({ content, common, client }) {
                 <a className="btn large" href="https://calendly.com/br-storm/presentation" target="_blank" rel="noopener noreferrer">
                   {common.bookAppointment}
                 </a>
-                <AnchorButton className="btn large ghost" href="#details" easing={inOutQuad} duration={1000}>
-                  {common.seeMore}
-                  <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
-                </AnchorButton>
+                <Link href="#details" scroll={false}>
+                  <a className="btn large ghost">
+                    {common.seeMore}
+                    <Arrow />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

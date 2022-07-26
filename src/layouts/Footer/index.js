@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react';
-import AnchorButton from 'src/components/common/AnchorButton';
-import { inOutQuad } from 'src/utils/easings';
+import React, { useContext, useEffect } from 'react';
 import styles from './Footer.module.scss';
 import ArrowUp from 'public/images/double-arrow-up.svg';
+import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 
 export default function Footer({ content, common, variant, fullPage, ...props }) {
-  
+
   useEffect(() => {
     if (fullPage) {
       document.querySelector('footer').classList.add('fullpage');
     }
-  }, [])
+  }, []);
+
+  const { scroll } = useContext(SmoothScrollContext);
 
   return (
     <footer {...props} className={styles.section} id="footer">
@@ -41,10 +42,13 @@ export default function Footer({ content, common, variant, fullPage, ...props })
             {
               variant !== 'success' && (
                 <div>
-                  <AnchorButton className="small d-none d-md-inline-block" easing={inOutQuad} duration={2100}>
+                  <a
+                    href="#"
+                    className="small d-none d-md-inline-block"
+                    onClick={ () => scroll?.scrollTo(0) }>
                     <ArrowUp />
                     {common.scrollToTop}
-                  </AnchorButton>
+                  </a>
                 </div>
               )
             }

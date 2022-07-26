@@ -33,28 +33,50 @@ export const SmoothScrollProvider = ({ children, options }) => {
   useEffect(() => {
     let routeChangeTimeout;
 
-    function handleHashStart(url) {
-      scroll?.scrollTo(url.substring(url.indexOf('#')), { offset: -100 });
+    // formatted this way to prevent errors when specific characters are used on the element's id
+    const formatURL = url => url.slice(url.indexOf('#') + 1);
+
+    function getScrollParameters(url) {
+      console.log(url);
+      const id = formatURL(url);
+      const target = document.getElementById(id);
+      let offset;
+      if (target?.clientHeight > window.innerHeight || !target) {
+        offset = 100;
+        return [target, -offset];
+      } else {
+        offset = (window.innerHeight - target.clientHeight) / 2;
+        return [target, -offset];
+        /* console.log(`${window.innerHeight} - ${target.clientHeight}`); */
+      }
+    }
+
+    function handleHashComplete(url) {
+      console.log(url);
+      const [target, offset] = getScrollParameters(url);
+      scroll?.scrollTo(target, { offset, duration: 500 });
     }
 
     function handleRouteComplete(url) {
+      console.log(url);
       routeChangeTimeout = setTimeout(() => {
-        if (scroll && url.includes('#')) {
+        if (url.includes('#')) {
           // changed into a page with a hash:
-          scroll.scrollTo(url.substring(url.indexOf('#')), { offset: -100 });
+          const [target, offset] = getScrollParameters(url);
+          scroll?.scrollTo(target, { offset, duration: 500 });
         } else {
           // changed into a page with no hash:
-          scroll?.scrollTo(0, { duration: 0 });
+          scroll?.scrollTo(0, { duration: 200 });
         }
       }, 1);
     }
 
     router.events.on('routeChangeComplete', handleRouteComplete);
-    router.events.on('hashChangeComplete', handleHashStart);
+    router.events.on('hashChangeComplete', handleHashComplete);
 
     return () => {
       router.events.off('routeChangeComplete', handleRouteComplete);
-      router.events.off('hashChangeComplete', handleHashStart);
+      router.events.off('hashChangeComplete', handleHashComplete);
       clearTimeout(routeChangeTimeout);
     }
   }, [scroll]);

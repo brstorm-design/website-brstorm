@@ -49,7 +49,7 @@ body {
   }
 
   &.page {
-    &::before {
+    main::before {
       background-image: none;
     }
   }

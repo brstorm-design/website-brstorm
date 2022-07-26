@@ -11,6 +11,7 @@ import usePausableAnimation from 'src/hooks/usePausableAnimations';
 import { rootPath } from 'src/utils/env';
 import MobileUI from 'src/components/svg/MobileUI';
 import DesktopUI from 'src/components/svg/DesktopUI';
+import Link from 'next/link';
 
 export default function Cover({ content, common, service }) {
   useEffect(() => {
@@ -78,19 +79,23 @@ export default function Cover({ content, common, service }) {
                     <h1>{content.title}</h1>
                     <h2>{content.subtitle}</h2>
                     <p>{'We prepared a brief presentation for you to better\n know us and the solutions we provide.'}</p>
-                    <AnchorButton className="btn large ghost" href="#about" easing={inOutQuad} duration={1000}>
-                      {common.seeHow}
-                      <Arrow />
-                    </AnchorButton>
+                    <Link href="#about" scroll={false}>
+                      <a className="btn large ghost">
+                        {common.seeHow}
+                        <Arrow />
+                      </a>
+                    </Link>
                   </>
                 ) : (
                   <>
                     <h1>{content.title}</h1>
                     <h4>{content.subtitle}</h4>
-                    <AnchorButton className="btn large ghost" href="#purpose" easing={inOutQuad} duration={1000}>
-                      {common.seeMore}
-                      <Arrow />
-                    </AnchorButton>
+                    <Link href="#purpose" scroll={false}>
+                      <a className="btn large ghost">
+                        {common.seeMore}
+                        <Arrow />
+                      </a>
+                    </Link>
                   </>
                 )
               }

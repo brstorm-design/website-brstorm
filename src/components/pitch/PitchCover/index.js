@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import AnchorButton from 'src/components/common/AnchorButton';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
-import { inOutQuad } from 'src/utils/easings';
 import { rootPath } from 'src/utils/env';
 import styles from './Cover.module.scss';
+import Arrow from 'public/images/arrow-down.svg';
+import Link from 'next/link';
 
 export default function PitchCover({ content, common }) {
   const element = useRef(null);
@@ -41,10 +41,12 @@ export default function PitchCover({ content, common }) {
             <div className={styles.textContent}>
               <h1>{'Let your brand \nspeak for you!'}</h1>
               <h3>{"Your customer's first contact \nwith you is your brand"}</h3>
-              <AnchorButton className="btn large ghost" href="#about" easing={inOutQuad} duration={1000}>
-                See More
-                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.8333 6L9.89332 5.06L6.16666 8.78V0.666668H4.83332V8.78L1.11332 5.05333L0.166656 6L5.49999 11.3333L10.8333 6Z" fill="#555" /></svg>
-              </AnchorButton>
+              <Link href="#contact" scroll={false}>
+                <a className="btn large ghost">
+                  {common.seeMore}
+                  <Arrow />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -13,8 +13,9 @@ export default function AnchorButton({
 
   return (
     <a
-      onClick={() => smoothScroll(href, offset, duration, easing)}
-      href={href}
+      style={{ backgroundColor: 'limegreen' }}
+      /* onClick={() => smoothScroll(href, offset, duration, easing)}
+      href={href} */
       className={className}
     >
       {

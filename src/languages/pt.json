@@ -232,6 +232,7 @@
     "fields": [
       {
         "title": "Como posso lhe chamar?",
+        "sectionName": "name",
         "attributes": {
           "name": "entry.1247986906",
           "required": true,
@@ -241,6 +242,7 @@
       },
       {
         "title": ", qual o nome do seu negócio?",
+        "sectionName": "businessName",
         "helperText": "Caso ainda não tenha, deixe em branco.",
         "attributes": {
           "name": "entry.1868660285",
@@ -251,6 +253,7 @@
       },
       {
         "title": "O que você faz?",
+        "sectionName": "details",
         "helperText": " Fale um pouco sobre o que seu negócio se trata.",
         "attributes": {
           "name": "entry.948784691",
@@ -261,6 +264,7 @@
       },
       {
         "title": "Já possui redes sociais ou site?",
+        "sectionName": "yourContent",
         "helperText": "Tem algum lugar onde possamos conhecer mais sobre o seu negócio?",
         "attributes": {
           "name": "entry.130241094",
@@ -271,6 +275,7 @@
       },
       {
         "title": "Qual o tamanho do seu negócio?",
+        "sectionName": "businessSize",
         "attributes": {
           "name": "entry.1655813198",
           "required": true,
@@ -306,6 +311,7 @@
       },
       {
         "title": "Como podemos lhe ajudar?",
+        "sectionName": "service",
         "helperText": "Selecione os itens para saber mais detalhes sobre cada serviço.",
         "required": true,
         "attributes": {
@@ -342,6 +348,7 @@
       },
       {
         "title": "Por onde posso lhe contatar?",
+        "sectionName": "yourContact",
         "required": true,
         "attributes": {
           "name": "yourContact",

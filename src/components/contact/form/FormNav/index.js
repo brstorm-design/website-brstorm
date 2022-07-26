@@ -1,24 +1,28 @@
 import React from 'react';
 import styles from './FormNav.module.scss';
 import Chevron from 'public/images/chevron-up.svg';
-import AnchorButton from 'src/components/common/AnchorButton';
-import { inOutQuad } from 'src/utils/easings';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function FormNav({ activeField }) {
-  
-  let prevId = activeField?.previousElementSibling?.id || undefined;
-  let nextId = activeField?.nextElementSibling?.id || undefined;
+
+  let prevId = activeField?.previousElementSibling?.id || '';
+  let nextId = activeField?.nextElementSibling?.id || '';
 
   return (
     <div className={styles.formNav}>
 
-      <AnchorButton href={prevId ? `#${prevId}` : prevId} offset="center" easing={inOutQuad} duration={500}>
-        <Chevron />
-      </AnchorButton>
+      <Link scroll={false} href={prevId ? `#${prevId}` : prevId} as={prevId ? `#${prevId}` : prevId}>
+        <a>
+          <Chevron />
+        </a>
+      </Link>
 
-      <AnchorButton href={nextId ? `#${nextId}` : nextId} offset="center" easing={inOutQuad} duration={500}>
-        <Chevron />
-      </AnchorButton>
+      <Link scroll={false} href={nextId ? `#${nextId}` : nextId} as={nextId ? `#${nextId}` : nextId}>
+        <a>
+          <Chevron />
+        </a>
+      </Link>
       
     </div>
   )
