@@ -3,6 +3,7 @@ import styles from './Hero.module.scss';
 import { constructSequentialAnimation, fillPlaceholders, handleIntersection } from 'src/modules/App';
 import { rootPath } from 'src/utils/env';
 import Arrow from 'public/images/arrow-down.svg';
+import Link from 'next/link';
 
 export default function Hero({ content, common, client }) {
   const element = useRef(null);
