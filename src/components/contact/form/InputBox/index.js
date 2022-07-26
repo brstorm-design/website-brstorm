@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 import CheckInput from '../CheckInput';
 import styles from './InputBox.module.scss';
 
@@ -7,14 +8,37 @@ export default function InputBox({ title, children, ...inputProps }) {
   const label = useRef(null);
   const collapseTimeout = useRef(null);
 
+  const { scroll } = useContext(SmoothScrollContext);
+
   useEffect(() => {
-    if (children) {
-      const collapse = new bootstrap.Collapse(document.getElementById(`collapse-${inputProps.value}`), {
-        toggle: false
-      })
-      setCollapse(collapse);
-    }
+    if (!children) return;
+
+    const collapsibleElement = document.getElementById(`collapse-${inputProps.value}`);
+    const collapse = new bootstrap.Collapse(collapsibleElement, {
+      toggle: false
+    });
+    setCollapse(collapse);
   }, []);
+
+  useEffect(() => {
+    if (!children) return;
+    
+    const collapsibleElement = document.getElementById(`collapse-${inputProps.value}`);
+    const updateLocomotive = () => {
+      if (scroll) {
+        scroll.update();
+        console.log('%cupdated', 'color:lime', scroll);
+      }
+    };
+
+    collapsibleElement.addEventListener('shown.bs.collapse', updateLocomotive);
+    collapsibleElement.addEventListener('hidden.bs.collapse', updateLocomotive);
+
+    return () => {
+      collapsibleElement.removeEventListener('shown.bs.collapse', updateLocomotive);
+      collapsibleElement.removeEventListener('hidden.bs.collapse', updateLocomotive);
+    }
+  }, [scroll]);
 
   function handleMouseEnter() {
     if (label.current.control.checked) {

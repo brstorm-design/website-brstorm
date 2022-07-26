@@ -37,7 +37,6 @@ export const SmoothScrollProvider = ({ children, options }) => {
     const formatURL = url => url.slice(url.indexOf('#') + 1);
 
     function getScrollParameters(url) {
-      console.log(url);
       const id = formatURL(url);
       const target = document.getElementById(id);
       let offset;
@@ -47,18 +46,15 @@ export const SmoothScrollProvider = ({ children, options }) => {
       } else {
         offset = (window.innerHeight - target.clientHeight) / 2;
         return [target, -offset];
-        /* console.log(`${window.innerHeight} - ${target.clientHeight}`); */
       }
     }
 
     function handleHashComplete(url) {
-      console.log(url);
       const [target, offset] = getScrollParameters(url);
       scroll?.scrollTo(target, { offset, duration: 500 });
     }
 
     function handleRouteComplete(url) {
-      console.log(url);
       routeChangeTimeout = setTimeout(() => {
         if (url.includes('#')) {
           // changed into a page with a hash:
