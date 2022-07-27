@@ -840,8 +840,8 @@
     },
     "web": {
       "cover": {
-        "title": "Hi, Fabio and Sara!",
-        "subtitle": "We will help Bronzo grow.",
+        "title": "Hi, |name|!",
+        "subtitle": "We will help |businessName| grow.",
         "text": "We prepared a brief presentation for you to better know us and the solutions we provide."
       },
       "details": {

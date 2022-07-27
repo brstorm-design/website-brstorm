@@ -12,8 +12,11 @@ import { rootPath } from 'src/utils/env';
 import MobileUI from 'src/components/svg/MobileUI';
 import DesktopUI from 'src/components/svg/DesktopUI';
 import Link from 'next/link';
+import { fillPlaceholders } from 'src/modules/App';
 
-export default function Cover({ content, common, service }) {
+export default function Cover({ content, common, service, client }) {
+  let { name, businessName } = client ?? {};
+
   useEffect(() => {
     function cleanup() {
       document.getElementById('cover').removeEventListener('mousemove', e => {
@@ -76,8 +79,16 @@ export default function Cover({ content, common, service }) {
               {
                 service === 'web' ? (
                   <>
-                    <h1>{content.title}</h1>
-                    <h2>{content.subtitle}</h2>
+                    <h1>
+                      {
+                        fillPlaceholders(content.title, { name })
+                      }
+                    </h1>
+                    <h2>
+                      {
+                        fillPlaceholders(content.subtitle, { businessName })
+                      }
+                    </h2>
                     <p>{'We prepared a brief presentation for you to better\n know us and the solutions we provide.'}</p>
                     <Link href="#about" scroll={false}>
                       <a className="btn large ghost">

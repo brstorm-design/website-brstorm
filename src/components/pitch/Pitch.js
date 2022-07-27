@@ -39,7 +39,7 @@ export default function Pitch({ props }) {
           // web design page components
           <>
             <Section pt={12 + 8} mt={0}>
-              <Cover service={'web'} content={pitchContent.cover} common={common} />
+              <Cover service={'web'} content={pitchContent.cover} common={common} client={client} />
             </Section>
 
             <Section>
@@ -66,9 +66,15 @@ export default function Pitch({ props }) {
               <Methodology content={pitchContent.method} pitch service={service} />
             </Section>
 
-            <Section>
-              <Pricing content={pitchContent.deliverables} />
-            </Section>
+            {
+              client.showPricing ? (
+                <Section>
+                  <Pricing content={pitchContent.deliverables} />
+                </Section>
+              ) : (
+                null
+              )
+            }
 
             <Section>
               <AddOns content={pitchContent.addons} />

@@ -20,7 +20,7 @@ export default function Section({
   }
 
   return (
-    <section style={style} {...rest} >
+    <section style={style} {...rest}>
       {children}
     </section>
   )

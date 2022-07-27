@@ -49,7 +49,15 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <main data-scroll-container>
-        <SmoothScrollProvider options={{ smooth: true }}>
+        <SmoothScrollProvider options={{
+          smooth: true,
+          tablet: {
+            smooth: true,
+          },
+          smartphone: {
+            smooth: true,
+          },
+        }}>
           <Component {...pageProps} />
         </SmoothScrollProvider>
       </main>
