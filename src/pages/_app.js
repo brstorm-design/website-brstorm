@@ -52,10 +52,11 @@ function MyApp({ Component, pageProps }) {
         <SmoothScrollProvider options={{
           smooth: true,
           tablet: {
-            smooth: true,
+            breakpoint: 992,
+            smooth: false,
           },
           smartphone: {
-            smooth: true,
+            smooth: false,
           },
         }}>
           <Component {...pageProps} />
