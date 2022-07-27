@@ -104,6 +104,28 @@
         "services": [1],
         "content": [2]
       }
+    },
+    {
+      "slugName": "paragon",
+      "name": "Linda",
+      "businessName": "Paragon",
+      "showPricing": false,
+      "parameters": {
+        "langs": ["en"],
+        "services": [1],
+        "content": [2]
+      }
+    },
+    {
+      "slugName": "that-festival",
+      "name": "Jack",
+      "businessName": "That Festival Site",
+      "showPricing": false,
+      "parameters": {
+        "langs": ["en"],
+        "services": [1],
+        "content": [2]
+      }
     }
   ],
 
