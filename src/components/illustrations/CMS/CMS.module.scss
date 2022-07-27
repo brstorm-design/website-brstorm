@@ -29,6 +29,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
       color: colors.$gray;
       font-weight: normal;
       font-family: Montserrat, 'sans-serif';
+      white-space: break-spaces;
       .dud {
         fill: colors.$carbon;
         color: colors.$carbon;

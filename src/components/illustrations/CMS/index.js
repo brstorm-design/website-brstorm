@@ -26,7 +26,7 @@ export default function CMS() {
       .pauseFor(100)
 
       .callFunction(() => {
-        scramble.setText('Be Unique &amp; Memorable');
+        scramble.setText('Be Unique\n&amp; Memorable');
       })
 
       .pauseFor(3000)
