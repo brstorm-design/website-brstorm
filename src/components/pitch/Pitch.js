@@ -62,23 +62,25 @@ export default function Pitch({ props }) {
               <ContentManager />
             </Section>
 
-            <Section>
+            <Section mb={48}>
               <Methodology content={pitchContent.method} pitch service={service} />
             </Section>
 
             {
               client.showPricing ? (
-                <Section>
-                  <Pricing content={pitchContent.deliverables} />
-                </Section>
+                <>
+                  <Section>
+                    <Pricing content={pitchContent.deliverables} />
+                  </Section>
+
+                  <Section>
+                    <AddOns content={pitchContent.addons} />
+                  </Section>
+                </>
               ) : (
                 null
               )
             }
-
-            <Section>
-              <AddOns content={pitchContent.addons} />
-            </Section>
           </>
 
         ) : (

@@ -196,8 +196,8 @@
     },
     "contact": {
       "title": "Let's Connect",
-      "paragraph": "<strong>What did you think?</strong> If you have any doubts to clear or <br class='d-none d-lg-block'> questions to ask, feel free to schedule a meeting with us.",
-      "availableHours": "<sup>*</sup> We're available for meeting <br> Mon to Fri | 1pm to 7pm."
+      "paragraph": "<strong>What did you think?</strong> If you have any doubts to clear or <br class='d-none d-lg-block'> questions to ask, feel free to request a proposal.",
+      "availableHours": "Fill in a quick form in<br>less than 3 minutes."
     },
     "footer": {
       "copyright": "Copyright © 2021 – Br.Storm Design",
@@ -1360,8 +1360,8 @@
     },
     "contact": {
       "title": "Let's Connect",
-      "paragraph": "<strong>Are you interested?</strong> Do you want to hire our services or ask any <br> questions about what we offer? Make an appointment right now.",
-      "availableHours": "<sup>*</sup> We're available for meeting <br> Mon to Fri | 1pm to 7pm."
+      "paragraph": "<strong>Are you interested?</strong> Do you want to hire our services or ask any <br> questions about what we offer? Request a proposal.",
+      "availableHours": "Fill in a quick form in<br>less than 3 minutes."
     }
   },
   "linkTree": {
