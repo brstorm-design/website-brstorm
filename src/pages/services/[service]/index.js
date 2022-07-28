@@ -49,7 +49,7 @@ export default function LandingPage({ content, service }) {
               <Projects layout="scroll" content={landing.projects} common={common} />
             </Section>
 
-            <Section>
+            <Section mb={52}>
               <Methodology content={landing.method} />
             </Section>
 

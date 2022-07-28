@@ -12,13 +12,25 @@ export default function Methodology({ content, pitch, service }) {
     setMousePosition(getTranslateValue(e, [-40, 40]));
   }
 
-  const stickyAttributes = {
-    'data-scroll': true,
-    'data-scroll-sticky': true,
-    'data-scroll-repeat': true,
-    'data-scroll-offset': '-132, -205',
-    'data-scroll-target': '#cards',
-  }
+  let stickyAttributes;
+
+  service === 'web' ? (
+    stickyAttributes = {
+      'data-scroll': true,
+      'data-scroll-sticky': true,
+      'data-scroll-repeat': true,
+      'data-scroll-offset': '-132, -205',
+      'data-scroll-target': '#cards',
+    }
+  ) : (
+    stickyAttributes = {
+      'data-scroll': true,
+      'data-scroll-sticky': true,
+      'data-scroll-repeat': true,
+      'data-scroll-offset': '-150, 150',
+      'data-scroll-target': '#methodology .row',
+    }
+  )
 
   return (
     <div className={styles.section} onMouseMove={move} id="methodology">
@@ -42,7 +54,7 @@ export default function Methodology({ content, pitch, service }) {
                   <div>
                     <h3>{content.subtitle}</h3>
                     <h1>{content.title}</h1>
-                    <div dangerouslySetInnerHTML={{__html: content.text}} />
+                    <div dangerouslySetInnerHTML={{ __html: content.text }} />
                   </div>
                 )
               }

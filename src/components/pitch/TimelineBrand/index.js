@@ -79,7 +79,7 @@ export default function TimelineBrand({ steps, service }) {
 
   return (
     <div>
-      <div className={`${styles.cards} ${service === 'web' ? styles.web : ''}`}>
+      <div className={`${styles.cards} ${service === 'web' ? styles.web : ''}`} id="cards">
         {
           steps.map((step, index) => {
             const Icon = icons[index];
