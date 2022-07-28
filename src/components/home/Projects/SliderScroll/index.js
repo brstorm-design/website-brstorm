@@ -59,7 +59,7 @@ export default function SliderScroll({ content, common }) {
                   return (
                     <div key={`projects-${index}`}>
                       <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                        <Image src={images[item.slug]} layout="responsive" objectFit="contain" />
+                        <Image src={images[item.slug]} layout="responsive" />
                         <div id="overlay-details">
                           <h5>{item.name}</h5>
                           <span className="details">{item.type}</span>
