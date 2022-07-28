@@ -83,7 +83,6 @@ export const SmoothScrollProvider = ({ children, options }) => {
     const scrollEventController = new AbortController();
 
     const isTablet = window.matchMedia('(min-width: 992px)').matches;
-    console.log(isTablet);
 
     if (isTablet) {
       window.addEventListener('scroll', () => {

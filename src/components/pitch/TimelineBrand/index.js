@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { getMaxHeight } from 'src/modules/App';
 import { rootPath } from 'src/utils/env';
 import styles from './TimelineBrand.module.scss';
@@ -12,6 +12,7 @@ import Presentation from 'public/images/icons/Presentation.svg';
 import Feedback from 'public/images/icons/Chat.svg';
 import Collaterals from 'public/images/icons/Checklist.svg';
 import Delivery from 'public/images/icons/Flag.svg';
+import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 
 export default function TimelineBrand({ steps, service }) {
   const [lineHeight, setLineHeight] = useState(0);
@@ -50,6 +51,8 @@ export default function TimelineBrand({ steps, service }) {
     });
   }
 
+  const { scroll } = useContext(SmoothScrollContext);
+
   useEffect(() => {
     const cardList = document.querySelectorAll(`.${styles.cards} > div`);
     //
@@ -57,14 +60,14 @@ export default function TimelineBrand({ steps, service }) {
     target = document.querySelector(`.${styles.line}:last-child`);
     maxLineHeight = getMaxHeight(cardList);
     numbers = document.querySelectorAll(`.${styles.cards} > div span`);
-  }, []);
+  }, [scroll]);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    scroll?.on('scroll', handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      scroll?.off('scroll', handleScroll);
     }
-  }, [screenCenter, target]);
+  }, [screenCenter, target, scroll]);
 
   const icons = [
     Brief,
