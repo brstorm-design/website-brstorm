@@ -50,13 +50,11 @@ export const SmoothScrollProvider = ({ children, options }) => {
     }
 
     function handleHashComplete(url) {
-      window.onscroll = () => window.scrollTo(0, 0);
       const [target, offset] = getScrollParameters(url);
       scroll?.scrollTo(target, { offset, duration: 500 });
     }
 
     function handleRouteComplete(url) {
-      window.onscroll = () => window.scrollTo(0, 0);
       routeChangeTimeout = setTimeout(() => {
         if (url.includes('#')) {
           // changed into a page with a hash:
@@ -73,7 +71,6 @@ export const SmoothScrollProvider = ({ children, options }) => {
     router.events.on('hashChangeComplete', handleHashComplete);
 
     return () => {
-      window.onscroll = null;
       router.events.off('routeChangeComplete', handleRouteComplete);
       router.events.off('hashChangeComplete', handleHashComplete);
       clearTimeout(routeChangeTimeout);
@@ -86,9 +83,10 @@ export const SmoothScrollProvider = ({ children, options }) => {
     const scrollEventController = new AbortController();
 
     const isTablet = window.matchMedia('(min-width: 992px)').matches;
+    console.log(isTablet);
 
     if (isTablet) {
-      window.addEventListener('scroll', e => {
+      window.addEventListener('scroll', () => {
         window.scrollTo(0, 0);
       }, { signal: scrollEventController.signal });
     }

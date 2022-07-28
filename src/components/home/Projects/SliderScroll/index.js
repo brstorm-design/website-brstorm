@@ -23,7 +23,7 @@ export default function SliderScroll({ content, common }) {
     }
 
     function onSmoothScroll(e) {
-      if (e.currentElements.el0) {
+      if (e.currentElements.el1) {
         sliderElement.current.style.transform = `translate3d(-${e.scroll.y - initialOffsetTop}px, 0, 0)`;
       }
     }
@@ -59,7 +59,7 @@ export default function SliderScroll({ content, common }) {
                   return (
                     <div key={`projects-${index}`}>
                       <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
-                        <Image src={images[item.slug]} layout="responsive" objectFit="cover" />
+                        <Image src={images[item.slug]} layout="responsive" objectFit="contain" />
                         <div id="overlay-details">
                           <h5>{item.name}</h5>
                           <span className="details">{item.type}</span>
