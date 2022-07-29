@@ -55,7 +55,12 @@ body {
   }
 }
 
+.c-scrollbar {
+  z-index: 15;
+}
+
 .c-scrollbar_thumb {
+  z-index: 15;
   background-color: colors.$darkGray !important;
 }
 

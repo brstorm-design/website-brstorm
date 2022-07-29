@@ -28,80 +28,82 @@ export default function LandingPage({ content, service }) {
   return (
     <>
       <Head>
-        <title>{ pageTitle }</title>
+        <title>{pageTitle}</title>
       </Head>
       <Header content={landing.header} common={content.common} />
 
-      {
-        service.slug === 'brand' ? (
+      <main data-scroll-container>
+        {
+          service.slug === 'brand' ? (
 
-          // brand
-          <>
-            <Section mt={0}>
-              <PitchCover content={landing.cover} common={common} />
-            </Section>
+            // brand
+            <>
+              <Section mt={0}>
+                <PitchCover content={landing.cover} common={common} />
+              </Section>
 
-            <Section>
-              <Details content={landing.details} />
-            </Section>
+              <Section>
+                <Details content={landing.details} />
+              </Section>
 
-            <Section>
-              <Projects layout="scroll" content={landing.projects} common={common} />
-            </Section>
+              <Section>
+                <Projects layout="scroll" content={landing.projects} common={common} />
+              </Section>
 
-            <Section mb={52}>
-              <Methodology content={landing.method} />
-            </Section>
+              <Section mb={52}>
+                <Methodology content={landing.method} />
+              </Section>
 
-            <Section>
-              <WhyUs content={home.whyUs} />
-            </Section>
+              <Section>
+                <WhyUs content={home.whyUs} />
+              </Section>
 
-            <Section>
-              <Testimonials content={home.testimonials} />
-            </Section>
-          </>
+              <Section>
+                <Testimonials content={home.testimonials} />
+              </Section>
+            </>
 
-        ) : (
+          ) : (
 
-          // web
-          <>
-            <Section pt={12 + 8} mt={0}>
-              <Cover service={'web'} content={pitch.cover} common={common} />
-            </Section>
+            // web
+            <>
+              <Section pt={12 + 8} mt={0}>
+                <Cover service={'web'} content={pitch.cover} common={common} />
+              </Section>
 
-            <Section>
-              <About content={pitch.details} />
-            </Section>
+              <Section>
+                <About content={pitch.details} />
+              </Section>
 
-            <Section>
-              <Projects layout="slider" content={pitch.projects} common={common} />
-            </Section>
+              <Section>
+                <Projects layout="slider" content={pitch.projects} common={common} />
+              </Section>
 
-            <Section>
-              <Testimonials content={home.testimonials} />
-            </Section>
+              <Section>
+                <Testimonials content={home.testimonials} />
+              </Section>
 
-            <Section>
-              <WhyUs service={service.slug} content={pitch.whyUs} pitch />
-            </Section>
+              <Section>
+                <WhyUs service={service.slug} content={pitch.whyUs} pitch />
+              </Section>
 
-            <Section>
-              <ContentManager />
-            </Section>
+              <Section>
+                <ContentManager />
+              </Section>
 
-            <Section mb={52}>
-              <Methodology content={pitch.method} pitch service={service.slug} />
-            </Section>
-          </>
-        )
-      }
+              <Section mb={52}>
+                <Methodology content={pitch.method} pitch service={service.slug} />
+              </Section>
+            </>
+          )
+        }
 
-      <Section>
-        <Contact content={home.contact} common={common} />
-      </Section>
+        <Section>
+          <Contact content={home.contact} common={common} />
+        </Section>
 
-      <Footer content={home.footer} common={common} />
+        <Footer content={home.footer} common={common} />
+      </main>
     </>
   )
 }

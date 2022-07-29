@@ -106,16 +106,21 @@ export default function ContactForm({ content, common, footer }) {
       </Head>
 
       <Header variant="form" values={values} activeField={activeField} />
-      <Cover content={cover} />
-      <Form
-        fields={fields}
-        setValues={setValues}
-        submitText={submit}
-        values={values}
-        handleFieldSetChange={handleFieldSetChange}
-        activeField={activeField}
-      />
-      <Footer content={footer} common={common} />
+      
+      <main data-scroll-container>
+        <Cover content={cover} />
+
+        <Form
+          fields={fields}
+          setValues={setValues}
+          submitText={submit}
+          values={values}
+          handleFieldSetChange={handleFieldSetChange}
+          activeField={activeField}
+        />
+
+        <Footer content={footer} common={common} />
+      </main>
     </>
   )
 }

@@ -23,7 +23,8 @@ export default function SliderScroll({ content, common }) {
     }
 
     function onSmoothScroll(e) {
-      if (e.currentElements.el1) {
+      console.log(e.currentElements);
+      if (e.currentElements.el0) {
         sliderElement.current.style.transform = `translate3d(-${e.scroll.y - initialOffsetTop}px, 0, 0)`;
       }
     }

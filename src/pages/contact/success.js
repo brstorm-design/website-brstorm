@@ -17,12 +17,14 @@ export default function FormSuccess({ content, common, footer }) {
       <Head>
         <title>Muito Obrigado! • Br.Storm</title>
       </Head>
-      
-      <Header variant="success" />
-      
-      <Success content={content} />
 
-      <Footer content={footer} variant="success" common={common} fullPage />
+      <Header variant="success" />
+
+      <main data-scroll-container>
+        <Success content={content} />
+
+        <Footer content={footer} variant="success" common={common} fullPage />
+      </main>
     </div>
   )
 }

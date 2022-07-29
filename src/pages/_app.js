@@ -48,20 +48,18 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main data-scroll-container>
-        <SmoothScrollProvider options={{
-          smooth: true,
-          tablet: {
-            breakpoint: 992,
-            smooth: false,
-          },
-          smartphone: {
-            smooth: false,
-          },
-        }}>
-          <Component {...pageProps} />
-        </SmoothScrollProvider>
-      </main>
+      <SmoothScrollProvider options={{
+        smooth: true,
+        tablet: {
+          breakpoint: 992,
+          smooth: false,
+        },
+        smartphone: {
+          smooth: false,
+        },
+      }}>
+        <Component {...pageProps} />
+      </SmoothScrollProvider>
     </>
   )
 }

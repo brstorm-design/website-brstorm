@@ -28,7 +28,7 @@ export default function Project({ content, project }) {
     RukaMachi: RukaMachi,
     TiagoGarcia: TiagoGarcia,
   }
-  
+
   const ProjectComponent = projectComponents[project.name];
 
   return (
@@ -38,11 +38,15 @@ export default function Project({ content, project }) {
       </Head>
       <Header common={content.common} content={content.landingPage.brand.header} />
 
-      <ProjectComponent />
-      <RecentProjects />
-      <Contact common={content.common} content={content.home.contact} />
+      <main data-scroll-container>
+        <ProjectComponent />
 
-      <Footer common={content.common} content={content.home.footer} />
+        <RecentProjects />
+
+        <Contact common={content.common} content={content.home.contact} />
+
+        <Footer common={content.common} content={content.home.footer} />
+      </main>
     </>
   )
 }

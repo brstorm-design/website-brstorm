@@ -16,14 +16,16 @@ export default function LinkPage(props) {
     case 'en':
       title = 'Our Links'
   }
-  
+
   return (
     <>
       <Head>
         <title>{`${title} • Br.Storm`}</title>
       </Head>
 
-      <LinkTree content={props.linkTree} />
+      <main data-scroll-container>
+        <LinkTree content={props.linkTree} />
+      </main>
     </>
   )
 }

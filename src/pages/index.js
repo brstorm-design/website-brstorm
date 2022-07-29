@@ -23,35 +23,38 @@ export default function Home(props) {
       </Head>
       <Header content={page.header} common={common} variant="default" />
 
-      <Section pt={12 + 8} mt={0}>
-        <Cover content={page.cover} common={common} />
-      </Section>
+      <main data-scroll-container>
+        <Section pt={12 + 8} mt={0}>
+          <Cover content={page.cover} common={common} />
+        </Section>
 
-      <Section>
-        <Purpose content={page.purpose} common={common} />
-      </Section>
+        <Section>
+          <Purpose content={page.purpose} common={common} />
+        </Section>
 
-      <Section>
-        <WhatWeDo content={page.whatWeDo} common={common} />
-      </Section>
+        <Section>
+          <WhatWeDo content={page.whatWeDo} common={common} />
+        </Section>
 
-      <Section>
-        <Projects layout="mosaic" content={page.projects} common={common} />
-      </Section>
+        <Section>
+          <Projects layout="mosaic" content={page.projects} common={common} />
+        </Section>
 
-      <Section>
-        <Testimonials content={page.testimonials} />
-      </Section>
+        <Section>
+          <Testimonials content={page.testimonials} />
+        </Section>
 
-      <Section>
-        <WhyUs content={page.whyUs} />
-      </Section>
+        <Section>
+          <WhyUs content={page.whyUs} />
+        </Section>
 
-      <Section>
-        <Contact content={page.contact} common={common} />
-      </Section>
+        <Section>
+          <Contact content={page.contact} common={common} />
+        </Section>
 
-      <Footer content={page.footer} common={common} />
+        <Footer content={page.footer} common={common} />
+      </main>
+
     </>
   )
 }

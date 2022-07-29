@@ -27,7 +27,6 @@ export default function InputBox({ title, children, ...inputProps }) {
     const updateLocomotive = () => {
       if (scroll) {
         scroll.update();
-        console.log('%cupdated', 'color:lime', scroll);
       }
     };
 

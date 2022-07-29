@@ -17,21 +17,23 @@ export default function ModalTest() {
 
   return (
     <div className={styles.section}>
-      <Head>
-        <title>Modal Test</title>
-      </Head>
+      <main data-scroll-container>
+        <Head>
+          <title>Modal Test</title>
+        </Head>
 
-      <Modal open={open} toggleOpen={toggleOpen}>
-        <ProjectHeader />
-        <ProjectBody>
-          <MapTrack />
-          <RecentProjects modal />
-        </ProjectBody>
-      </Modal>
+        <Modal open={open} toggleOpen={toggleOpen}>
+          <ProjectHeader />
+          <ProjectBody>
+            <MapTrack />
+            <RecentProjects modal />
+          </ProjectBody>
+        </Modal>
 
-      <section>
-        <button className="btn" onClick={toggleOpen}>Open Modal</button>
-      </section>
+        <section>
+          <button className="btn" onClick={toggleOpen}>Open Modal</button>
+        </section>
+      </main>
     </div>
   )
 }

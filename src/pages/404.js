@@ -15,7 +15,7 @@ const footerStyle = {
 
 export default function NotFound(props) {
   return (
-    <div style={{height: '100vh'}}>
+    <div style={{ height: '100vh' }}>
       <Head>
         <title>404 Not Found</title>
         <meta name="robots" content="noindex" />
@@ -23,17 +23,19 @@ export default function NotFound(props) {
 
       <Header content={props.content.home.header} common={props.content.common} />
 
-      <div className={styles.error}>
-        <div>
-          <h1>404</h1>
-          <h2>{props.text}</h2>
+      <main data-scroll-container>
+        <div className={styles.error}>
+          <div>
+            <h1>404</h1>
+            <h2>{props.text}</h2>
+          </div>
+          <Link href="/">
+            <a>← {props.back}</a>
+          </Link>
         </div>
-        <Link href="/">
-          <a>← {props.back}</a>
-        </Link>
-      </div>
 
-      <Footer style={footerStyle} content={props.content.home.footer} common={props.content.common} />
+        <Footer style={footerStyle} content={props.content.home.footer} common={props.content.common} />
+      </main>
     </div>
   )
 }

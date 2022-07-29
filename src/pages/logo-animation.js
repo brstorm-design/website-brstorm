@@ -15,7 +15,9 @@ export default function LogoAnimation() {
         <title>Logo Animation</title>
       </Head>
 
-      <Logo />
+      <main data-scroll-container>
+        <Logo />
+      </main>
     </>
   )
 }

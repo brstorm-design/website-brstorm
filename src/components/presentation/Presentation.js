@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Slides from 'src/components/presentation/Slides';
 
-export default function Presentation({props}) {
+export default function Presentation({ props }) {
 
   useEffect(() => {
     document.body.style.backgroundColor = '#0a0a0a';
@@ -16,7 +16,9 @@ export default function Presentation({props}) {
         <title>{`${props.pitch.businessName} • ${props.contentType.name} | Br.Storm Design`}</title>
       </Head>
 
-      <Slides />
+      <main data-scroll-container>
+        <Slides />
+      </main>
     </>
   )
 }

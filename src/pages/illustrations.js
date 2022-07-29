@@ -26,7 +26,7 @@ export default function Illustrations() {
   }
 
   return (
-    <div>
+    <main data-scroll-container>
       <Head>
         <title>Illustrations</title>
       </Head>
@@ -46,6 +46,6 @@ export default function Illustrations() {
       <div style={style}>
         <CMS />
       </div>
-    </div>
+    </main>
   )
 }

@@ -38,11 +38,13 @@ export default function Project({ content, project }) {
       </Head>
       <Header common={content.common} content={content.landingPage.brand.header} />
 
-      <ProjectComponent />
-      <RecentProjects />
-      <Contact common={content.common} content={content.home.contact} />
+      <main data-scroll-container>
+        <ProjectComponent />
+        <RecentProjects />
+        <Contact common={content.common} content={content.home.contact} />
 
-      <Footer common={content.common} content={content.home.footer} />
+        <Footer common={content.common} content={content.home.footer} />
+      </main>
     </>
   )
 }
