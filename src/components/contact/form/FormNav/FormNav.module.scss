@@ -11,7 +11,8 @@
     display: none;
   }
 
-  a {
+  a,
+  button {
     cursor: pointer;
     display: flex;
     height: 24px;
@@ -20,6 +21,8 @@
     align-items: center;
     border: 1.25px solid colors.$carbon;
     border-radius: 1px;
+    background-color: colors.$black;
+    transition: all 250ms ease;
 
     svg {
       width: 10px;
