@@ -95,6 +95,18 @@ export const SmoothScrollProvider = ({ children, options }) => {
     }
   }, []);
 
+  useEffect(() => {
+    const updateLocomotive = () => scroll?.update();
+
+    window.addEventListener('shown.bs.collapse', updateLocomotive);
+    window.addEventListener('hidden.bs.collapse', updateLocomotive);
+
+    return () => {
+      window.removeEventListener('shown.bs.collapse', updateLocomotive);
+      window.removeEventListener('hidden.bs.collapse', updateLocomotive);
+    }
+  }, [scroll]);
+
   return (
     <SmoothScrollContext.Provider value={{ scroll }}>
       {children}
