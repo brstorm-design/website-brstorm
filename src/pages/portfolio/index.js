@@ -23,7 +23,7 @@ export default function GeneralPortfolio(props) {
   return (
     <>
       <Head>
-        <title>{portfolioPage.pageTitle} • Br.Storm</title>
+        <title>{`${portfolioPage.pageTitle} • Br.Storm`}</title>
       </Head>
       <Header content={home.header} common={common} />
 

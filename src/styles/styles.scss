@@ -38,13 +38,15 @@ body {
   }
 
   &.animation-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    &::before {
-      background-image: none;
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      &::before {
+        background-image: none;
+      }
     }
   }
 
