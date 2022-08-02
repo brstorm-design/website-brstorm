@@ -1297,6 +1297,7 @@
     "brand": [
       {
         "slug": "petsvida",
+        "service": "brand",
         "cover": "/images/portfolio/petsvida.png",
         "size": "6",
         "name": "PetsVida Brand Identity",
@@ -1305,6 +1306,7 @@
       },
       {
         "slug": "rivana",
+        "service": "brand",
         "cover": "/images/portfolio/rivana.png",
         "size": "6",
         "name": "Rivana Brand Identity",
@@ -1313,6 +1315,7 @@
       },
       {
         "slug": "maptrack",
+        "service": "brand",
         "cover": "/images/portfolio/maptrack.png",
         "size": "6",
         "name": "MapTrack Brand Identity",
@@ -1321,6 +1324,7 @@
       },
       {
         "slug": "catarge",
+        "service": "brand",
         "cover": "/images/portfolio/catarge.png",
         "size": "6",
         "name": "Catarge Brand Identity",
@@ -1329,6 +1333,7 @@
       },
       {
         "slug": "daia",
+        "service": "brand",
         "cover": "/images/portfolio/daia.png",
         "size": "3",
         "name": "Daia Brand Identity",
@@ -1337,6 +1342,7 @@
       },
       {
         "slug": "util",
+        "service": "brand",
         "cover": "/images/portfolio/util.png",
         "name": "Útil Brand Identity",
         "type": "Cleaning Services",
@@ -1346,6 +1352,7 @@
     "web": [
       {
         "slug": "grana",
+        "service": "web",
         "cover": "/images/portfolio/web/grana.png",
         "name": "Grana Capital Website",
         "type": "Income Tax App",
@@ -1353,6 +1360,7 @@
       },
       {
         "slug": "brc",
+        "service": "web",
         "cover": "/images/portfolio/rivana.png",
         "name": "BRC Advogados",
         "type": "Law Firm",
@@ -1360,6 +1368,7 @@
       },
       {
         "slug": "util",
+        "service": "web",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Útil Website",
         "type": "Cleaning Services",
@@ -1367,6 +1376,7 @@
       },
       {
         "slug": "certivale",
+        "service": "web",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Certivale Website",
         "type": "Digital Certificates",
@@ -1374,6 +1384,7 @@
       },
       {
         "slug": "zero27",
+        "service": "web",
         "cover": "/images/portfolio/zero27.png",
         "name": "Zero27 Barbering Website",
         "type": "Barber Shop",
@@ -1381,6 +1392,7 @@
       },
       {
         "slug": "arca",
+        "service": "web",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Arca Institute Website",
         "type": "Animal Protection",

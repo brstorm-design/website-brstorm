@@ -1300,6 +1300,7 @@
     "brand": [
       {
         "slug": "petsvida",
+        "service": "brand",
         "cover": "/images/portfolio/petsvida.png",
         "name": "Identidade Visual PetsVida",
         "type": "E-commerce Pet Shop",
@@ -1308,6 +1309,7 @@
       },
       {
         "slug": "rivana",
+        "service": "brand",
         "cover": "/images/portfolio/rivana.png",
         "name": "Identidade Visual Rivana",
         "type": "E-Commerce de Vestuário",
@@ -1316,6 +1318,7 @@
       },
       {
         "slug": "maptrack",
+        "service": "brand",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Identidade Visual MapTrack",
         "type": "Startup de Rastreamento de Ativos",
@@ -1324,6 +1327,7 @@
       },
       {
         "slug": "catarge",
+        "service": "brand",
         "cover": "/images/portfolio/catarge.png",
         "name": "Identidade Visual Catarge",
         "type": "Engenharia e Arquitetura",
@@ -1332,6 +1336,7 @@
       },
       {
         "slug": "daia",
+        "service": "brand",
         "cover": "/images/portfolio/daia.png",
         "name": "Identidade Visual Daia",
         "type": "Fotógrafa de Família",
@@ -1340,6 +1345,7 @@
       },
       {
         "slug": "util",
+        "service": "brand",
         "cover": "/images/portfolio/util.png",
         "name": "Identidade Visual Útil",
         "type": "Serviços de Limpeza",
@@ -1350,6 +1356,7 @@
     "web": [
       {
         "slug": "grana",
+        "service": "web",
         "cover": "/images/portfolio/web/grana.png",
         "name": "Website Grana Capital",
         "type": "App de Imposto de Renda",
@@ -1357,6 +1364,7 @@
       },
       {
         "slug": "brc",
+        "service": "web",
         "cover": "/images/portfolio/rivana.png",
         "name": "Website BRC Advogados",
         "type": "Escritório de Advocacia",
@@ -1364,6 +1372,7 @@
       },
       {
         "slug": "util",
+        "service": "web",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Website Útil",
         "type": "Serviços de Limpeza",
@@ -1371,6 +1380,7 @@
       },
       {
         "slug": "certivale",
+        "service": "web",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Website Certivale",
         "type": "Certificados Digitais",
@@ -1378,6 +1388,7 @@
       },
       {
         "slug": "zero27",
+        "service": "web",
         "cover": "/images/portfolio/zero27.png",
         "name": "Website Barbearia Zero27",
         "type": "Barbearia",
@@ -1385,6 +1396,7 @@
       },
       {
         "slug": "arca",
+        "service": "web",
         "cover": "/images/portfolio/maptrack.png",
         "name": "Website Instituto Arca",
         "type": "Proteção Animal",
