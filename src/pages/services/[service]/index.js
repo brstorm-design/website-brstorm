@@ -22,6 +22,7 @@ export default function LandingPage({ content, service }) {
   const common = content.common;
   const landing = content.landingPage[service.jsonName];
   const pitch = content.pitch[service.jsonName];
+  const fullPortfolio = content.fullPortfolio;
 
   const pageTitle = `${service.name} • Br.Storm`;
 
@@ -47,7 +48,7 @@ export default function LandingPage({ content, service }) {
               </Section>
 
               <Section>
-                <Projects layout="scroll" content={landing.projects} common={common} />
+                <Projects layout="scroll" content={landing.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
               </Section>
 
               <Section mb={52}>
@@ -76,7 +77,7 @@ export default function LandingPage({ content, service }) {
               </Section>
 
               <Section>
-                <Projects layout="slider" content={pitch.projects} common={common} />
+                <Projects layout="slider" content={pitch.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
               </Section>
 
               <Section>

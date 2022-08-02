@@ -6,7 +6,7 @@ import webImages from 'src/utils/webImages';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper';
 
-export default function Slider({ content }) {
+export default function Slider({ content, portfolio }) {
   const topSwiper = useRef(null);
   const bottomSwiper = useRef(null);
   const [isMobile, setIsMobile] = useState(true);
@@ -39,7 +39,7 @@ export default function Slider({ content }) {
           }}
         >
           {
-            content.portfolio.map((img, index) => {
+            portfolio.map((img, index) => {
               return (
                 <SwiperSlide key={`top-row-${index}`}>
                   <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
@@ -73,7 +73,7 @@ export default function Slider({ content }) {
           }}
         >
           {
-            content.portfolio.map((img, index) => {
+            portfolio.map((img, index) => {
               return (
                 <SwiperSlide key={`bottom-row-${index}`}>
                   <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>

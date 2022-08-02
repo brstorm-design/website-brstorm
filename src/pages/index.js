@@ -15,6 +15,7 @@ import Section from 'src/components/common/Section';
 export default function Home(props) {
   const page = props.home;
   const common = props.common;
+  const fullPortfolio = props.fullPortfolio.brand;
 
   return (
     <>
@@ -37,7 +38,7 @@ export default function Home(props) {
         </Section>
 
         <Section>
-          <Projects layout="mosaic" content={page.projects} common={common} />
+          <Projects layout="mosaic" content={page.projects} allProjects={fullPortfolio} common={common} />
         </Section>
 
         <Section>

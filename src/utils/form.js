@@ -43,5 +43,4 @@ export function getQueryString(object) {
   }
 
   return params;
-  /* params.forEach((value, key) => console.log(`${key}: ${value}`)); */
 }

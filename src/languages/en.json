@@ -89,46 +89,11 @@
       "subtitle": "Projects & Reviews",
       "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
       "portfolio": [
-        {
-          "slug": "petsvida",
-          "cover": "/images/portfolio/petsvida.png",
-          "size": "6",
-          "name": "PetsVida Brand Identity",
-          "type": "E-commerce Pet Shop",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "rivana",
-          "cover": "/images/portfolio/rivana.png",
-          "size": "6",
-          "name": "Rivana Brand Identity",
-          "type": "Clothing E-Commerce",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "maptrack",
-          "cover": "/images/portfolio/maptrack.png",
-          "size": "6",
-          "name": "MapTrack Brand Identity",
-          "type": "Asset Tracking Startup",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "catarge",
-          "cover": "/images/portfolio/catarge.png",
-          "size": "6",
-          "name": "Catarge Brand Identity",
-          "type": "Engineering and Architecture",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        },
-        {
-          "slug": "daia",
-          "cover": "/images/portfolio/daia.png",
-          "size": "3",
-          "name": "Daia Brand Identity",
-          "type": "Family Photographer",
-          "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-        }
+        "petsvida",
+        "rivana",
+        "maptrack",
+        "catarge",
+        "daia"
       ],
       "fullPortfolio": "Full portfolio",
       "url": "/portfolio"
@@ -449,46 +414,11 @@
         "subtitle": "Projects & Reviews",
         "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
         "portfolio": [
-          {
-            "slug": "petsvida",
-            "cover": "/images/portfolio/petsvida.png",
-            "size": "6",
-            "name": "PetsVida Brand Identity",
-            "type": "E-commerce Pet Shop",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "rivana",
-            "cover": "/images/portfolio/rivana.png",
-            "size": "6",
-            "name": "Rivana Brand Identity",
-            "type": "Clothing E-Commerce",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "maptrack",
-            "cover": "/images/portfolio/maptrack.png",
-            "size": "6",
-            "name": "MapTrack Brand Identity",
-            "type": "Asset Tracking Startup",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "catarge",
-            "cover": "/images/portfolio/catarge.png",
-            "size": "6",
-            "name": "Catarge Brand Identity",
-            "type": "Engineering and Architecture",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "daia",
-            "cover": "/images/portfolio/daia.png",
-            "size": "3",
-            "name": "Daia Brand Identity",
-            "type": "Family Photographer",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          }
+          "petsvida",
+          "rivana",
+          "maptrack",
+          "catarge",
+          "daia"
         ],
         "fullPortfolio": "Full portfolio",
         "url": "/portfolio"
@@ -612,46 +542,11 @@
         "subtitle": "Projects & Reviews",
         "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
         "portfolio": [
-          {
-            "slug": "petsvida",
-            "cover": "/images/portfolio/petsvida.png",
-            "size": "6",
-            "name": "PetsVida Brand Identity",
-            "type": "E-commerce Pet Shop",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "rivana",
-            "cover": "/images/portfolio/rivana.png",
-            "size": "6",
-            "name": "Rivana Brand Identity",
-            "type": "Clothing E-Commerce",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "maptrack",
-            "cover": "/images/portfolio/maptrack.png",
-            "size": "6",
-            "name": "MapTrack Brand Identity",
-            "type": "Asset Tracking Startup",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "catarge",
-            "cover": "/images/portfolio/catarge.png",
-            "size": "6",
-            "name": "Catarge Brand Identity",
-            "type": "Engineering and Architecture",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          },
-          {
-            "slug": "daia",
-            "cover": "/images/portfolio/daia.png",
-            "size": "3",
-            "name": "Daia Brand Identity",
-            "type": "Family Photographer",
-            "url": "https://www.behance.net/gallery/122746595/Logofolio-Vol-01"
-          }
+          "petsvida",
+          "rivana",
+          "maptrack",
+          "catarge",
+          "daia"
         ],
         "fullPortfolio": "Full portfolio",
         "url": "/portfolio"
@@ -854,48 +749,12 @@
         "subtitle": "Projects & Reviews",
         "paragraph": "We are a team with vast experience, having already served clients around the world, always delivering <strong>beautiful and creative results. </strong>Check out some of our projects and understand more about our<strong> work, style, and quality.</strong>",
         "portfolio": [
-          {
-            "slug": "grana",
-            "cover": "/images/portfolio/web/grana.png",
-            "name": "Grana Capital Website",
-            "type": "Income Tax App",
-            "url": "https://grana.capital"
-          },
-          {
-            "slug": "brc",
-            "cover": "/images/portfolio/rivana.png",
-            "name": "BRC Advogados",
-            "type": "Law Firm",
-            "url": "https://brcadv.com"
-          },
-          {
-            "slug": "util",
-            "cover": "/images/portfolio/maptrack.png",
-            "name": "Útil Website",
-            "type": "Cleaning Services",
-            "url": "https://utilfacilities.com.br"
-          },
-          {
-            "slug": "certivale",
-            "cover": "/images/portfolio/maptrack.png",
-            "name": "Certivale Website",
-            "type": "Digital Certificates",
-            "url": "https://certivale.com.br"
-          },
-          {
-            "slug": "zero27",
-            "cover": "/images/portfolio/zero27.png",
-            "name": "Zero27 Barbering Website",
-            "type": "Barber Shop",
-            "url": "https://www.zero27barbering.com/"
-          },
-          {
-            "slug": "arca",
-            "cover": "/images/portfolio/maptrack.png",
-            "name": "Arca Institute Website",
-            "type": "Animal Protection",
-            "url": "https://institutoarca.com.br"
-          }
+          "grana",
+          "brc",
+          "util",
+          "certivale",
+          "zero27",
+          "arca"
         ],
         "fullPortfolio": "Full portfolio",
         "url": "/portfolio"

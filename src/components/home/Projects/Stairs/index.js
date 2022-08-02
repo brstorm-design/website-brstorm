@@ -6,7 +6,7 @@ import { constructSequentialAnimation, handleIntersection } from 'src/modules/Ap
 import SeeMore from 'src/components/common/SeeMore';
 import { rootPath } from 'src/utils/env';
 
-export default function Stairs({ content, common, portfolio }) {
+export default function Stairs({ content, common }) {
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -44,7 +44,7 @@ export default function Stairs({ content, common, portfolio }) {
       <div className="container">
         <div className="row gy-4" ref={projects}>
           {
-            portfolio.map((item, index) => {
+            content.portfolio.map((item, index) => {
               return (
                 <div key={`projects-${index}`} className="col-12 col-lg-6">
                   <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>

@@ -24,6 +24,7 @@ export default function Pitch({ props }) {
   const client = props.pitch;
   const pitchContent = props.pitchContent;
   const service = props.service.slug;
+  const fullPortfolio = props.content.fullPortfolio;
 
   return (
     <>
@@ -48,7 +49,7 @@ export default function Pitch({ props }) {
               </Section>
 
               <Section>
-                <Projects layout="slider" content={pitchContent.projects} common={common} />
+                <Projects layout="slider" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
               </Section>
 
               <Section>
@@ -97,7 +98,7 @@ export default function Pitch({ props }) {
               </Section>
 
               <Section>
-                <Projects layout="mosaic" content={pitchContent.projects} common={common} />
+                <Projects layout="mosaic" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
               </Section>
 
               <Section>

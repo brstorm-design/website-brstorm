@@ -5,7 +5,7 @@ import styles from './SliderScroll.module.scss';
 import SeeMore from 'src/components/common/SeeMore';
 import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 
-export default function SliderScroll({ content, common }) {
+export default function SliderScroll({ content, portfolio, common }) {
   const spaceHolder = useRef(null);
   const sliderElement = useRef(null);
 
@@ -23,7 +23,6 @@ export default function SliderScroll({ content, common }) {
     }
 
     function onSmoothScroll(e) {
-      console.log(e.currentElements);
       if (e.currentElements.el0) {
         sliderElement.current.style.transform = `translate3d(-${e.scroll.y - initialOffsetTop}px, 0, 0)`;
       }
@@ -56,7 +55,7 @@ export default function SliderScroll({ content, common }) {
           <div className="container">
             <div className={styles.cards} ref={sliderElement}>
               {
-                content.portfolio.map((item, index) => {
+                portfolio.map((item, index) => {
                   return (
                     <div key={`projects-${index}`}>
                       <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>

@@ -7,7 +7,7 @@ import Stairs from './Stairs';
 import SliderScroll from './SliderScroll';
 
 
-export default function Projects({ layout, content, common, client }) {
+export default function Projects({ layout, content, allProjects, common }) {
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -42,18 +42,20 @@ export default function Projects({ layout, content, common, client }) {
     }
   }, [animations])
 
-  /* if (layout !== 'mosaic') content.portfolio = allProjects; */
+  const filteredProjects = allProjects.filter(project => {
+    return content.portfolio.some(client => client === project.slug);
+  });
 
   function renderProjects() {
     switch (layout) {
       case 'mosaic':
-        return <Mosaic content={content} common={common} />;
+        return <Mosaic content={content} portfolio={filteredProjects} common={common} />;
       case 'scroll':
-        return <SliderScroll content={content} common={common} />;
+        return <SliderScroll content={content} portfolio={filteredProjects} common={common} />;
       case 'slider':
-        return <Slider content={content} />;
+        return <Slider content={content} portfolio={filteredProjects} />;
       case 'stairs':
-        return <Stairs content={content} common={common} portfolio={content.portfolio} />;
+        return <Stairs content={content} portfolio={filteredProjects} common={common} />;
     }
   }
 

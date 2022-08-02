@@ -80,7 +80,6 @@ export default function CMSModal({ show, handleClose }) {
                       objectFit="contain"
                       src={cmsImages[img]}
                       layout="responsive"
-                      placeholder="blur"
                       quality={40}
                     />
                   </div>

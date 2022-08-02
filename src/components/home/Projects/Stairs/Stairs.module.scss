@@ -5,7 +5,6 @@
   & > div {
     & > div {
       & > div:nth-child(odd) {
-        /* transform: translateY(100px); */
         position: relative;
         top: 100px;
 
@@ -28,7 +27,7 @@
   height: 100%;
 
   & > span {
-    position: static !important;
+    height: 100% !important;
   }
 
   div {
@@ -70,7 +69,6 @@
   }
 
   &:hover {
-    /* transform: scale(1.04); */
     z-index: 3;
 
     &::after {
