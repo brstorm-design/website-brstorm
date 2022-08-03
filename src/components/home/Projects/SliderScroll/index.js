@@ -4,6 +4,7 @@ import images from 'src/utils/images';
 import styles from './SliderScroll.module.scss';
 import SeeMore from 'src/components/common/SeeMore';
 import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
+import ProjectCard from '../ProjectCard';
 
 export default function SliderScroll({ content, portfolio, common }) {
   const spaceHolder = useRef(null);
@@ -58,13 +59,13 @@ export default function SliderScroll({ content, portfolio, common }) {
                 portfolio.map((item, index) => {
                   return (
                     <div key={`projects-${index}`}>
-                      <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                      <ProjectCard href={item.url} rel="noopener noreferrer" target="_blank">
                         <Image src={images[item.slug]} layout="responsive" />
                         <div id="overlay-details">
                           <h5>{item.name}</h5>
                           <span className="details">{item.type}</span>
                         </div>
-                      </a>
+                      </ProjectCard>
                     </div>
                   )
                 })

@@ -13,6 +13,7 @@ import { constructSequentialAnimation, handleIntersection } from 'src/modules/Ap
 import SeeMore from 'src/components/common/SeeMore';
 import { rootPath } from 'src/utils/env';
 import Link from 'next/link';
+import ProjectCard from '../ProjectCard';
 
 const images = {
   catarge,
@@ -72,13 +73,13 @@ export default function Mosaic({ content, portfolio, common }) {
           portfolio.map((item, index) => {
             return (
               <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
-                <a className={styles.link} href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
+                <ProjectCard href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
                   <Image src={images[item.slug]} layout="responsive" />
                   <div>
                     <h5>{item.name}</h5>
                     <span className="details">{item.type}</span>
                   </div>
-                </a>
+                </ProjectCard>
               </div>
             )
           })

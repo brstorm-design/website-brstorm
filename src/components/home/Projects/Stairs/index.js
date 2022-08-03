@@ -5,8 +5,9 @@ import Image from 'next/image';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import SeeMore from 'src/components/common/SeeMore';
 import { rootPath } from 'src/utils/env';
+import ProjectCard from '../ProjectCard';
 
-export default function Stairs({ content, common }) {
+export default function Stairs({ content, portfolio, common }) {
   const projects = useRef(null);
   const [animations, setAnimations] = useState([]);
 
@@ -44,16 +45,16 @@ export default function Stairs({ content, common }) {
       <div className="container">
         <div className="row gy-4" ref={projects}>
           {
-            content.portfolio.map((item, index) => {
+            portfolio.map((item, index) => {
               return (
                 <div key={`projects-${index}`} className="col-12 col-lg-6">
-                  <a href={item.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                  <ProjectCard href={item.url} rel="noopener noreferrer" target="_blank">
                     <Image src={images[item.slug]} layout="responsive" />
                     <div id="overlay-details">
                       <h5>{item.name}</h5>
                       <span className="details">{item.type}</span>
                     </div>
-                  </a>
+                  </ProjectCard>
                 </div>
               )
             })

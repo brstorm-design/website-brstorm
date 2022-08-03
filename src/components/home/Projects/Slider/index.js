@@ -5,8 +5,9 @@ import Image from 'next/image';
 import webImages from 'src/utils/webImages';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper';
+import ProjectCard from '../ProjectCard';
 
-export default function Slider({ content, portfolio }) {
+export default function Slider({ portfolio }) {
   const topSwiper = useRef(null);
   const bottomSwiper = useRef(null);
   const [isMobile, setIsMobile] = useState(true);
@@ -42,13 +43,13 @@ export default function Slider({ content, portfolio }) {
             portfolio.map((img, index) => {
               return (
                 <SwiperSlide key={`top-row-${index}`}>
-                  <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                  <ProjectCard href={img.url} rel="noopener noreferrer" target="_blank">
                     <Image src={webImages[img.slug]} layout="responsive" objectFit="cover" />
                     <div id="overlay-details">
                       <h5>{img.name}</h5>
                       <span className="details">{img.type}</span>
                     </div>
-                  </a>
+                  </ProjectCard>
                 </SwiperSlide>
               )
             })
@@ -76,13 +77,13 @@ export default function Slider({ content, portfolio }) {
             portfolio.map((img, index) => {
               return (
                 <SwiperSlide key={`bottom-row-${index}`}>
-                  <a href={img.url} rel="noopener noreferrer" target="_blank" className={styles.link}>
+                  <ProjectCard href={img.url} rel="noopener noreferrer" target="_blank">
                     <Image src={webImages[img.slug]} layout="responsive" objectFit="cover" />
                     <div id="overlay-details">
                       <h5>{img.name}</h5>
                       <span className="details">{img.type}</span>
                     </div>
-                  </a>
+                  </ProjectCard>
                 </SwiperSlide>
               )
             })
