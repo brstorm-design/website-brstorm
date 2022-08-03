@@ -16,7 +16,7 @@ export default function CMSModal({ show, handleClose }) {
     if (playback.currentTime === 0) {
       modal.current.style.display = 'none';
       modal.current.style.top = '0px';
-      /* document.documentElement.style.overflowY = 'auto'; */
+      document.querySelector('header').style.transform = 'translateY(0%)';
       playback.currentTarget.playbackRate = 1;
     }
   }
@@ -49,6 +49,7 @@ export default function CMSModal({ show, handleClose }) {
         modal.current.style.top = Math.abs(modal.current.getBoundingClientRect().top) + 'px';
         scroll.stop();
         animation.play();
+        document.querySelector('header').style.transform = 'translateY(-100%)';
       } else {
         scroll.start();
         animation.reverse();

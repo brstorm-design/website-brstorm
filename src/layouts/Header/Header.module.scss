@@ -10,7 +10,7 @@
   width: 100%;
   z-index: 10;
   top: 0;
-  transition: min-height 350ms ease;
+  transition: min-height, transform 350ms ease;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: saturate(180%) blur(5px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
