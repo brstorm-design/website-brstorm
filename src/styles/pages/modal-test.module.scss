@@ -4,11 +4,17 @@
 
   /* background-image: url('https://cdn.pixabay.com/photo/2019/03/03/20/23/flowers-4032775__340.png'); */
   /* background-image: url('https://i.pinimg.com/originals/cc/55/e1/cc55e1a82ce355d546db0208a3acf177.jpg'); */
-  background-image: url('https://img.freepik.com/free-vector/hand-drawn-colorful-abstract-leaves-pattern_79603-1779.jpg');
+  /* background-image: url('https://img.freepik.com/free-vector/hand-drawn-colorful-abstract-leaves-pattern_79603-1779.jpg'); */
   background-size: 45%;
 
   & > section {
     display: flex;
+    flex-direction: column;
     column-gap: 24px;
+    row-gap: 240px;
+
+    button {
+      width: max-content;
+    }
   }
 }

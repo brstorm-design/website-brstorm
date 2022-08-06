@@ -2,20 +2,23 @@
 @use "../../../styles/scss/mixins";
 
 .modal {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
+  position: absolute;
+  min-width: 100vw;
   top: 0;
   left: 0;
   background-color: adjust-color($color: #010101, $alpha: -0.2);
   backdrop-filter: blur(5px);
-  z-index: 1000;
+  z-index: 11;
   display: none;
   opacity: 0;
   transform: translateY(50px);
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
   flex-direction: column;
+
+  :global(.c-scrollbar) {
+    height: 100vh;
+  }
 }
 
 .button {
@@ -23,9 +26,9 @@
   position: sticky;
   margin-left: auto;
   top: 24px;
-  right: calc(24px + 5px);
+  right: 24px;
   padding: 0;
-  z-index: 1001;
+  z-index: 12;
   border: none;
   background: transparent;
   color: colors.$darkGray;
@@ -33,5 +36,5 @@
 }
 
 .modalContent {
-  margin: -12px 0 120px;
+  margin-bottom: 120px;
 }

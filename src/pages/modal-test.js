@@ -11,13 +11,9 @@ import ProjectBody from 'src/components/portfolio/single/Body';
 export default function ModalTest() {
   const { status: open, toggleStatus: toggleOpen } = useToggle();
 
-  useEffect(() => {
-    document.body.classList.add('page');
-  }, []);
-
   return (
-    <div className={styles.section}>
-      <main data-scroll-container>
+    <main data-scroll-container>
+      <div className={styles.section}>
         <Head>
           <title>Modal Test</title>
         </Head>
@@ -31,9 +27,13 @@ export default function ModalTest() {
         </Modal>
 
         <section>
-          <button className="btn" onClick={toggleOpen}>Open Modal</button>
+          <button className="btn" onClick={toggleOpen}>Open Modal 1</button>
+          <button className="btn" onClick={toggleOpen}>Open Modal 2</button>
+          <button className="btn" onClick={toggleOpen}>Open Modal 3</button>
+          <button className="btn" onClick={toggleOpen}>Open Modal 4</button>
+          <button className="btn" onClick={toggleOpen}>Open Modal 5</button>
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
   )
 }
