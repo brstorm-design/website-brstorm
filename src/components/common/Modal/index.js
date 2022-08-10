@@ -10,6 +10,7 @@ function Modal({ children, open, toggleOpen }) {
 
   const { scroll } = useContext(SmoothScrollContext);
 
+  /*** create and set modal `locomotive-scroll` instance ***/
   useEffect(() => {
     if (!modalScroll) {
       (async () => {
@@ -22,6 +23,7 @@ function Modal({ children, open, toggleOpen }) {
         }
 
         const modalLocomotive = new LocomotiveScroll(options);
+        modalLocomotive?.scroll?.scrollbar?.classList.add('modal-scrollbar')
         setModalScroll(modalLocomotive)
       })();
     }
@@ -30,6 +32,7 @@ function Modal({ children, open, toggleOpen }) {
 
   }, [modalScroll]);
 
+  /*** create and set animation ***/
   useEffect(() => {
     const ani = modalElement.current.animate(
       [
@@ -54,9 +57,9 @@ function Modal({ children, open, toggleOpen }) {
 
   const handleKeyDown = useCallback(e => {
     if (e.key === 'Escape') {
-      toggleOpen();
+      animation.reverse();
     }
-  }, []);
+  }, [animation]);
 
   useEffect(() => {
     if (animation && animation.startTime) {
@@ -66,6 +69,7 @@ function Modal({ children, open, toggleOpen }) {
         document.body.classList.add('modal-open');
         document.addEventListener('keydown', handleKeyDown, false);
         scroll.stop();
+        document.querySelector('#header').style.transform = 'translateY(-100%)';
         modalScroll.start();
         modalScroll.update();
         animation.play();
@@ -73,15 +77,16 @@ function Modal({ children, open, toggleOpen }) {
         document.removeEventListener('keydown', handleKeyDown, false);
         scroll.start();
         modalScroll.stop();
-        animation.reverse();
       }
     }
   }, [open]);
 
   function handleFinish(playback) {
     if (playback.currentTime === 0) {
+      toggleOpen();
       modalElement.current.style.display = 'none';
       modalElement.current.style.top = '0px';
+      document.querySelector('#header').style.transform = 'translateY(0%)';
       playback.currentTarget.playbackRate = 1;
       document.body.classList.remove('modal-open');
     }
@@ -89,7 +94,9 @@ function Modal({ children, open, toggleOpen }) {
 
   return (
     <div ref={modalElement} className={styles.modal} role="dialog">
-      <div className={styles.button} onClick={toggleOpen}>
+      <div className={styles.button} onClick={() => {
+        animation.reverse();
+      }}>
         <Close />
       </div>
 

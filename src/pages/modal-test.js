@@ -3,10 +3,7 @@ import Head from 'next/head';
 import Modal from 'src/components/common/Modal';
 import styles from '../styles/pages/modal-test.module.scss'
 import useToggle from 'src/hooks/useToggle';
-import ProjectHeader from 'src/components/portfolio/single/Header';
-import MapTrack from 'src/components/portfolio/MapTrack';
-import RecentProjects from 'src/components/portfolio/RecentProjects';
-import ProjectBody from 'src/components/portfolio/single/Body';
+import ModalBody from 'src/components/common/Modal/ModalBody';
 
 export default function ModalTest() {
   const { status: open, toggleStatus: toggleOpen } = useToggle();
@@ -19,11 +16,7 @@ export default function ModalTest() {
         </Head>
 
         <Modal open={open} toggleOpen={toggleOpen}>
-          <ProjectHeader />
-          <ProjectBody>
-            <MapTrack />
-            <RecentProjects modal />
-          </ProjectBody>
+          <ModalBody project={{ slug: 'maptrack' }} />
         </Modal>
 
         <section>

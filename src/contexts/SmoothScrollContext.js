@@ -54,13 +54,21 @@ export const SmoothScrollProvider = ({ children, options }) => {
       scroll?.scrollTo(target, { offset, duration: 500 });
     }
 
-    function handleRouteComplete(url) {
+    function handleRouteComplete(url, { shallow }) {
+      if (shallow) return;
+
       routeChangeTimeout = setTimeout(() => {
         if (url.includes('#')) {
           // changed into a page with a hash:
           const [target, offset] = getScrollParameters(url);
           scroll?.scrollTo(target, { offset, duration: 500 });
-        } else {
+        }
+
+        else if (url.includes('?')) {
+          return;
+        }
+
+        else {
           // changed into a page with no hash:
           scroll?.scrollTo(0, { duration: 200 });
         }

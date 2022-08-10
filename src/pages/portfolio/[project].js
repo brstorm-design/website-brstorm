@@ -3,33 +3,13 @@ import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Header from 'src/layouts/Header';
-//
-import Catarge from 'src/components/portfolio/Catarge';
-import LFD from 'src/components/portfolio/LFD';
-import MapTrack from 'src/components/portfolio/MapTrack';
-import NewAge from 'src/components/portfolio/NewAge';
-import PetsVida from 'src/components/portfolio/PetsVida';
-import Rivana from 'src/components/portfolio/Rivana';
-import RukaMachi from 'src/components/portfolio/RukaMachi';
-import TiagoGarcia from 'src/components/portfolio/TiagoGarcia';
 import Head from 'next/head';
 import RecentProjects from 'src/components/portfolio/RecentProjects';
 import Contact from 'src/components/home/Contact';
 import Footer from 'src/layouts/Footer';
+import ProjectPresentation from 'src/components/portfolio/ProjectPresentation';
 
 export default function Project({ content, project }) {
-  const projectComponents = {
-    Catarge: Catarge,
-    LFD: LFD,
-    MapTrack: MapTrack,
-    NewAge: NewAge,
-    PetsVida: PetsVida,
-    Rivana: Rivana,
-    RukaMachi: RukaMachi,
-    TiagoGarcia: TiagoGarcia,
-  }
-
-  const ProjectComponent = projectComponents[project.name];
 
   return (
     <>
@@ -39,7 +19,7 @@ export default function Project({ content, project }) {
       <Header common={content.common} content={content.landingPage.brand.header} />
 
       <main data-scroll-container>
-        <ProjectComponent />
+        <ProjectPresentation project={project} />
 
         <RecentProjects />
 

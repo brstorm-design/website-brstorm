@@ -14,15 +14,6 @@ body {
   height: 100%;
   overflow-x: clip;
 
-  &.modal-open {
-     & > .c-scrollbar:last-child {
-      display: none;
-    }
-     & > .c-scrollbar:not(:last-child) {
-      display: block;
-    }
-  }
-
   main {
     position: relative;
     &::before {
@@ -64,16 +55,25 @@ body {
       background-image: none;
     }
   }
+
+  &.modal-open {
+    & > .c-scrollbar {
+      visibility: hidden;
+    }
+
+    & > .c-scrollbar.modal-scrollbar {
+      visibility: visible;
+    }
+  }
 }
 
-.c-scrollbar:last-child {
-  display: block;
+.c-scrollbar {
+  visibility: visible;
   z-index: 15;
 }
 
-.c-scrollbar:not(:last-child) {
-  display: none;
-  z-index: 15;
+.c-scrollbar.modal-scrollbar {
+  visibility: hidden;
 }
 
 .c-scrollbar_thumb {

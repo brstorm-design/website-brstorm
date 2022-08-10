@@ -11,7 +11,6 @@ import daia from 'public/images/portfolio/daia.png';
 import util from 'public/images/portfolio/util.png';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import SeeMore from 'src/components/common/SeeMore';
-import { rootPath } from 'src/utils/env';
 import Link from 'next/link';
 import ProjectCard from '../ProjectCard';
 
@@ -73,7 +72,15 @@ export default function Mosaic({ content, portfolio, common }) {
           portfolio.map((item, index) => {
             return (
               <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
-                <ProjectCard href={item.url} rel="noopener noreferrer" target="_blank" onMouseEnter={handleHover} onMouseLeave={handleHover}>
+                <ProjectCard
+                  /* href={`?project=${item.slug}`}
+                  as={`/portfolio/${item.slug}`} */
+                  href={item.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  onMouseEnter={handleHover}
+                  onMouseLeave={handleHover}
+                >
                   <Image src={images[item.slug]} layout="responsive" />
                   <div>
                     <h5>{item.name}</h5>

@@ -1,15 +1,29 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { capitalize, constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Projects.module.scss';
 import Mosaic from './Mosaic';
 import Slider from './Slider';
 import Stairs from './Stairs';
 import SliderScroll from './SliderScroll';
-
+import { useRouter } from 'next/router';
+import useToggle from 'src/hooks/useToggle';
+import Modal from 'src/components/common/Modal';
+import ModalBody from 'src/components/common/Modal/ModalBody';
 
 export default function Projects({ layout, content, allProjects, common }) {
   const introText = useRef(null);
   const [animations, setAnimations] = useState([]);
+  const router = useRouter();
+  const { status: open, toggleStatus: toggleOpen } = useToggle();
+
+  function onClose() {
+    toggleOpen();
+    router.push(router.route, undefined, { shallow: true });
+  }
+
+  useEffect(() => {
+    if (router.query.project) toggleOpen();
+  }, [router.query]);
 
   useEffect(() => {
     const refs = [introText.current];
@@ -72,9 +86,16 @@ export default function Projects({ layout, content, allProjects, common }) {
           </div>
         </div>
       </div>
+
       {
         renderProjects()
       }
+
+      <Modal open={open} toggleOpen={onClose}>
+        {
+          router.query.project && <ModalBody project={{ slug: router.query.project }} />
+        }
+      </Modal>
     </div>
   )
 }
