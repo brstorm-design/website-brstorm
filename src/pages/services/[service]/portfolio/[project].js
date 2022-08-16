@@ -2,7 +2,7 @@ import React from 'react';
 import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
-import Header from 'src/layouts/Header';
+import Header from 'src/layouts/Main/Header';
 //
 import Catarge from 'src/components/portfolio/Catarge';
 import LFD from 'src/components/portfolio/LFD';
@@ -15,7 +15,7 @@ import TiagoGarcia from 'src/components/portfolio/TiagoGarcia';
 import Head from 'next/head';
 import RecentProjects from 'src/components/portfolio/RecentProjects';
 import Contact from 'src/components/home/Contact';
-import Footer from 'src/layouts/Footer';
+import Footer from 'src/layouts/Main/Footer';
 
 export default function Project({ content, project }) {
   const projectComponents = {

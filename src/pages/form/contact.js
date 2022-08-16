@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Form from 'src/components/contact/form/Form';
-import Header from 'src/layouts/Header';
+import Header from 'src/layouts/Main/Header';
 import Cover from 'src/components/contact/form/Cover';
-import Footer from 'src/layouts/Footer';
+import Footer from 'src/layouts/Main/Footer';
 import Head from 'next/head';
 
 export default function ContactForm({ content, common, footer }) {

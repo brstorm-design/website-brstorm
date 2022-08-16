@@ -53,8 +53,18 @@ export async function getStaticProps(context) {
 
   switch (context.locale) {
     case 'pt':
-      return { props: { content: pt, pitch, service, contentType, pitchContent: pt.pitch[service.jsonName] } };
+      return {
+        props: {
+          content: pt, pitch, service, contentType,
+          pitchContent: pt.pitch[service.jsonName],
+        }
+      };
     case 'en':
-      return { props: { content: en, pitch, service, contentType, pitchContent: en.pitch[service.jsonName] } };
+      return {
+        props: {
+          content: en, pitch, service, contentType,
+          pitchContent: en.pitch[service.jsonName],
+        }
+      };
   }
 }

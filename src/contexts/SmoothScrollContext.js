@@ -5,7 +5,7 @@ export const SmoothScrollContext = createContext({
   scroll: null,
 });
 
-export const SmoothScrollProvider = ({ children, options }) => {
+export const SmoothScrollProvider = ({ children }) => {
   const [scroll, setScroll] = useState(null);
 
   const router = useRouter();
@@ -18,7 +18,14 @@ export const SmoothScrollProvider = ({ children, options }) => {
         setScroll(
           new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]') ?? undefined,
-            ...options,
+            smooth: true,
+            tablet: {
+              breakpoint: 992,
+              smooth: false,
+            },
+            smartphone: {
+              smooth: false,
+            },
           })
         )
       })()
@@ -103,6 +110,7 @@ export const SmoothScrollProvider = ({ children, options }) => {
     }
   }, []);
 
+  /***  update all elements' dimensions when expanding/collapsing ***/
   useEffect(() => {
     const updateLocomotive = () => scroll?.update();
 

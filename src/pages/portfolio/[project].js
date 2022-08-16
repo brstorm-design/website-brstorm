@@ -2,11 +2,11 @@ import React from 'react';
 import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
-import Header from 'src/layouts/Header';
+import Header from 'src/layouts/Main/Header';
 import Head from 'next/head';
 import RecentProjects from 'src/components/portfolio/RecentProjects';
 import Contact from 'src/components/home/Contact';
-import Footer from 'src/layouts/Footer';
+import Footer from 'src/layouts/Main/Footer';
 import ProjectPresentation from 'src/components/portfolio/ProjectPresentation';
 
 export default function Project({ content, project }) {

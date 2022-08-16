@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Footer from 'src/layouts/Footer';
-import Header from 'src/layouts/Header';
+import Footer from 'src/layouts/Main/Footer';
+import Header from 'src/layouts/Main/Header';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
 import Success from 'src/components/contact/success/Success';

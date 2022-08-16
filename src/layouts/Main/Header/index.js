@@ -3,13 +3,48 @@ import Link from 'next/link';
 import FilledFields from 'src/components/contact/form/FilledFields';
 import FormNav from 'src/components/contact/form/FormNav';
 import { inOutQuad } from 'src/utils/easings';
-import Logo from '../../components/common/Logo';
+import Logo from '../../../components/common/Logo';
 import styles from './Header.module.scss';
 import { SmoothScrollContext } from 'src/contexts/SmoothScrollContext';
 
 export default function Header({ variant = 'default', ...props }) {
   const fixedHeader = useRef(null);
   let showComponent;
+
+  /* let content = {
+    "items": [
+      {
+        "name": "Propósito",
+        "href": "/#purpose"
+      },
+      {
+        "name": "O que fazemos",
+        "href": "/#what-we-do"
+      },
+      {
+        "name": "Projetos & Depoimentos",
+        "href": "/#projects"
+      },
+      {
+        "name": "Por que Nós",
+        "href": "/#why-us"
+      },
+      {
+        "name": "Entre em Contato",
+        "href": "/#contact"
+      }
+    ]
+  };
+  let common = {
+    "bookMeeting": "Começar um Projeto",
+    "bookMeetingNow": "Começar um Projeto",
+    "bookAppointment": "Começar um Projeto",
+    "seeMore": "Ver Mais",
+    "seeMoreProjects": "Ver Mais Projetos",
+    "contactUs": "Entre em Contato",
+    "scrollToTop": "Voltar ao topo",
+    "seeHow": "Veja Como"
+  }; */
 
   switch (variant) {
     case 'form': {
@@ -44,7 +79,7 @@ export default function Header({ variant = 'default', ...props }) {
     }
   }
 
-  const {scroll} = useContext(SmoothScrollContext);
+  const { scroll } = useContext(SmoothScrollContext);
 
   useEffect(() => {
     function handleScroll(e) {

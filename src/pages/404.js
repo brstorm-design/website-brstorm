@@ -3,8 +3,8 @@ import Link from "next/link";
 import styles from 'src/styles/404.module.scss';
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
-import Header from "src/layouts/Header";
-import Footer from "src/layouts/Footer";
+import Header from "src/layouts/Main/Header";
+import Footer from "src/layouts/Main/Footer";
 import Head from "next/head";
 
 const footerStyle = {

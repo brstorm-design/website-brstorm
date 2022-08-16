@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import en from 'src/languages/en.json';
 import pt from 'src/languages/pt.json';
-import Header from 'src/layouts/Header';
+import Header from 'src/layouts/Main/Header';
 import Cover from 'src/components/home/Cover';
 import Purpose from 'src/components/home/Purpose';
 import WhatWeDo from 'src/components/home/WhatWeDo';
@@ -9,7 +9,7 @@ import Projects from 'src/components/home/Projects';
 import Testimonials from 'src/components/home/Testimonials';
 import WhyUs from 'src/components/home/WhyUs';
 import Contact from 'src/components/home/Contact';
-import Footer from 'src/layouts/Footer';
+import Footer from 'src/layouts/Main/Footer';
 import Section from 'src/components/common/Section';
 
 export default function Home(props) {
