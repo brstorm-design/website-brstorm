@@ -24,7 +24,7 @@ export default function Home(props) {
       </Head>
       <Header content={page.header} common={common} variant="default" />
 
-      <main data-scroll-container>
+      <div className="main" data-scroll-section>
         <Section pt={12 + 8} mt={0}>
           <Cover content={page.cover} common={common} />
         </Section>
@@ -52,9 +52,8 @@ export default function Home(props) {
         <Section>
           <Contact content={page.contact} common={common} />
         </Section>
-
         <Footer content={page.footer} common={common} />
-      </main>
+      </div>
 
     </>
   )

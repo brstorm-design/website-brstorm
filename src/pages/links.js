@@ -23,9 +23,11 @@ export default function LinkPage(props) {
         <title>{`${title} • Br.Storm`}</title>
       </Head>
 
-      <main data-scroll-container>
-        <LinkTree content={props.linkTree} />
-      </main>
+      <div className="main" data-scroll-section>
+        <main>
+          <LinkTree content={props.linkTree} />
+        </main>
+      </div>
     </>
   )
 }

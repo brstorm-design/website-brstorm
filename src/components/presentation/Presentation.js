@@ -16,9 +16,11 @@ export default function Presentation({ props }) {
         <title>{`${props.pitch.businessName} • ${props.contentType.name} | Br.Storm Design`}</title>
       </Head>
 
-      <main data-scroll-container>
-        <Slides />
-      </main>
+        <div className="main" data-scroll-section>
+          <main>
+            <Slides />
+          </main>
+        </div>
     </>
   )
 }

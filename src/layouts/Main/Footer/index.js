@@ -14,7 +14,7 @@ export default function Footer({ content, common, variant, fullPage, ...props })
   const { scroll } = useContext(SmoothScrollContext);
 
   return (
-    <footer className={styles.section} id="footer" data-scroll-section {...props}>
+    <footer className={styles.section} id="footer" {...props}>
       <div className="container">
         <div className="row">
           <div className={styles.footer}>

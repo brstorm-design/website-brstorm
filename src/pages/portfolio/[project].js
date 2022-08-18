@@ -18,15 +18,14 @@ export default function Project({ content, project }) {
       </Head>
       <Header common={content.common} content={content.landingPage.brand.header} />
 
-      <main data-scroll-container>
-        <ProjectPresentation project={project} />
-
-        <RecentProjects />
-
-        <Contact common={content.common} content={content.home.contact} />
-
+      <div className="main" data-scroll-section>
+        <main>
+          <ProjectPresentation project={project} />
+          <RecentProjects />
+          <Contact common={content.common} content={content.home.contact} />
+        </main>
         <Footer common={content.common} content={content.home.footer} />
-      </main>
+      </div>
     </>
   )
 }

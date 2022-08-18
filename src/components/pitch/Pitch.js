@@ -34,99 +34,93 @@ export default function Pitch({ props }) {
       </Head>
       <Header content={pitch.header} common={common} />
 
-      <main data-scroll-container>
-        {
-          service === 'web' ? (
+      <div className="main">
+        <main>
+          {
+            service === 'web' ? (
+              // web design page components
+              <>
+                <Section data-scroll-section pt={12 + 8} mt={0}>
+                  <Cover service={'web'} content={pitchContent.cover} common={common} client={client} />
+                </Section>
 
-            // web design page components
-            <>
-              <Section pt={12 + 8} mt={0}>
-                <Cover service={'web'} content={pitchContent.cover} common={common} client={client} />
-              </Section>
+                <Section data-scroll-section>
+                  <About content={pitchContent.details} />
+                </Section>
 
-              <Section>
-                <About content={pitchContent.details} />
-              </Section>
+                {/* <Section data-scroll-section>
+                  <Projects layout="slider" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
+                </Section> */}
 
-              <Section>
-                <Projects layout="slider" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
-              </Section>
+                <Section data-scroll-section>
+                  <Testimonials content={home.testimonials} />
+                </Section>
 
-              <Section>
-                <Testimonials content={home.testimonials} />
-              </Section>
+                <Section data-scroll-section>
+                  <WhyUs service={service} content={pitchContent.whyUs} pitch />
+                </Section>
 
-              <Section>
-                <WhyUs service={service} content={pitchContent.whyUs} pitch />
-              </Section>
+                {/* <Section data-scroll-section>
+                  <ContentManager />
+                </Section> */}
 
-              <Section>
-                <ContentManager />
-              </Section>
+                <Section data-scroll-section mb={48}>
+                  <Methodology content={pitchContent.method} pitch service={service} />
+                </Section>
+                {
+                  client.showPricing ? (
+                    <>
+                      <Section data-scroll-section>
+                        <Pricing content={pitchContent.deliverables} />
+                      </Section>
+                      <Section data-scroll-section>
+                        <AddOns content={pitchContent.addons} />
+                      </Section>
+                    </>
+                  ) : (
+                    null
+                  )
+                }
+              </>
+            ) : (
+              // brand design page components
+              <>
+                <Section data-scroll-section pt={12 + 8} mt={0}>
+                  <Hero client={client} content={pitch.hero} common={common} />
+                </Section>
 
-              <Section mb={48}>
-                <Methodology content={pitchContent.method} pitch service={service} />
-              </Section>
+                <Section data-scroll-section>
+                  <Details content={pitchContent.details} />
+                </Section>
 
-              {
-                client.showPricing ? (
-                  <>
-                    <Section>
-                      <Pricing content={pitchContent.deliverables} />
-                    </Section>
+                <Section data-scroll-section>
+                  <Projects layout="mosaic" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
+                </Section>
 
-                    <Section>
-                      <AddOns content={pitchContent.addons} />
-                    </Section>
-                  </>
-                ) : (
-                  null
-                )
-              }
-            </>
+                <Section data-scroll-section>
+                  <Testimonials content={home.testimonials} />
+                </Section>
 
-          ) : (
+                <Section data-scroll-section>
+                  <WhyUs service={service} content={home.whyUs} pitch />
+                </Section>
 
-            // brand design page components
-            <>
-              <Section pt={12 + 8} mt={0}>
-                <Hero client={client} content={pitch.hero} common={common} />
-              </Section>
+                <Section data-scroll-section>
+                  <Methodology content={pitchContent.method} pitch service={service} />
+                </Section>
 
-              <Section>
-                <Details content={pitchContent.details} />
-              </Section>
-
-              <Section>
-                <Projects layout="mosaic" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
-              </Section>
-
-              <Section>
-                <Testimonials content={home.testimonials} />
-              </Section>
-
-              <Section>
-                <WhyUs service={service} content={home.whyUs} pitch />
-              </Section>
-
-              <Section>
-                <Methodology content={pitchContent.method} pitch service={service} />
-              </Section>
-
-              <Section>
-                <Pricing content={pitchContent.deliverables} />
-              </Section>
-            </>
-
-          )
-        }
-
-        <Section>
-          <Contact content={pitch.contact} common={common} />
-        </Section>
-
-        <Footer content={home.footer} common={common} />
-      </main>
+                <Section data-scroll-section>
+                  <Pricing content={pitchContent.deliverables} />
+                </Section>
+              </>
+            )
+          }
+          <Section data-scroll-section>
+            <Contact content={pitch.contact} common={common} />
+          </Section>
+        </main>
+        <Footer data-scroll-section content={home.footer} common={common} />
+      </div>
     </>
   )
 }

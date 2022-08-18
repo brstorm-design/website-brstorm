@@ -98,7 +98,7 @@ export default function Header({ variant = 'default', ...props }) {
   }, [scroll]);
 
   return (
-    <header ref={fixedHeader} className={styles.header} id="header" data-scroll data-scroll-sticky data-scroll-target="main">
+    <header ref={fixedHeader} className={styles.header} id="header">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <Link href="/" className={styles.logo}>

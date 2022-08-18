@@ -14,7 +14,7 @@ body {
   height: 100%;
   overflow-x: clip;
 
-  main {
+  .main {
     position: relative;
     &::before {
       content: "";
@@ -38,7 +38,7 @@ body {
   }
 
   &.animation-page {
-    main {
+    .main {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,7 +51,7 @@ body {
   }
 
   &.page {
-    main::before {
+    .main::before {
       background-image: none;
     }
   }

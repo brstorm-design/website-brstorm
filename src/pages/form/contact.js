@@ -106,8 +106,8 @@ export default function ContactForm({ content, common, footer }) {
       </Head>
 
       <Header variant="form" values={values} activeField={activeField} />
-      
-      <main data-scroll-container>
+
+      <div className="main" data-scroll-section>
         <Cover content={cover} />
 
         <Form
@@ -120,7 +120,7 @@ export default function ContactForm({ content, common, footer }) {
         />
 
         <Footer content={footer} common={common} />
-      </main>
+      </div>
     </>
   )
 }

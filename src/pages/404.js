@@ -23,19 +23,20 @@ export default function NotFound(props) {
 
       <Header content={props.content.home.header} common={props.content.common} />
 
-      <main data-scroll-container>
-        <div className={styles.error}>
-          <div>
-            <h1>404</h1>
-            <h2>{props.text}</h2>
+      <div className="main" data-scroll-section>
+        <main>
+          <div className={styles.error}>
+            <div>
+              <h1>404</h1>
+              <h2>{props.text}</h2>
+            </div>
+            <Link href="/">
+              <a>← {props.back}</a>
+            </Link>
           </div>
-          <Link href="/">
-            <a>← {props.back}</a>
-          </Link>
-        </div>
-
+        </main>
         <Footer style={footerStyle} content={props.content.home.footer} common={props.content.common} />
-      </main>
+      </div>
     </div>
   )
 }

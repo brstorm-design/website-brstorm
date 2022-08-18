@@ -12,11 +12,6 @@ import { SmoothScrollProvider } from 'src/contexts/SmoothScrollContext';
 
 function MyApp({ Component, pageProps }) {
 
-  useEffect(() => {
-    console.log('%cComponent', 'color:limegreen', Component,);
-    console.log('%cpageProps', 'color:limegreen', pageProps,);
-  }, [])
-
   const router = useRouter();
   const gradients = {
     left: `url("${rootPath}/images/backgrounds/cover/left.svg")`,
@@ -53,9 +48,11 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <SmoothScrollProvider>
-        <Component {...pageProps} />
-      </SmoothScrollProvider>
+      <div data-scroll-container>
+        <SmoothScrollProvider>
+          <Component {...pageProps} />
+        </SmoothScrollProvider>
+      </div>
     </>
   )
 }
