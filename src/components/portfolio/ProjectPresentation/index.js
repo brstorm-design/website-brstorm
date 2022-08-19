@@ -10,7 +10,7 @@ import RukaMachi from 'src/components/portfolio/RukaMachi';
 import TiagoGarcia from 'src/components/portfolio/TiagoGarcia';
 
 export default function ProjectPresentation({ project }) {
-  console.log('current project:', project);
+  /* console.log('current project:', project); */
   const projectComponents = {
     'catarge': Catarge, 
     'lfd': LFD,
