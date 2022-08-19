@@ -74,7 +74,7 @@ function Modal({ children, open, toggleOpen }) {
         document.body.classList.add('modal-open');
         document.addEventListener('keydown', handleKeyDown, false);
         scroll.stop();
-        document.querySelector('#header')?.style.transform = 'translateY(-100%)';
+        document.querySelector('#header').style.transform = 'translateY(-100%)';
         modalScroll.start();
         modalScroll.update();
         animation.play();
@@ -91,7 +91,7 @@ function Modal({ children, open, toggleOpen }) {
       toggleOpen();
       modalElement.current.style.display = 'none';
       modalElement.current.style.top = '0px';
-      document.querySelector('#header')?.style.transform = 'translateY(0%)';
+      document.querySelector('#header').style.transform = 'translateY(0%)';
       playback.currentTarget.playbackRate = 1;
       document.body.classList.remove('modal-open');
     }
