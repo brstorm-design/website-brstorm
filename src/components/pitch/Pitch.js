@@ -48,9 +48,9 @@ export default function Pitch({ props }) {
                   <About content={pitchContent.details} />
                 </Section>
 
-                {/* <Section data-scroll-section>
+                <Section data-scroll-section>
                   <Projects layout="slider" content={pitchContent.projects} allProjects={fullPortfolio[service]} common={common} />
-                </Section> */}
+                </Section>
 
                 <Section data-scroll-section>
                   <Testimonials content={home.testimonials} />
@@ -60,9 +60,9 @@ export default function Pitch({ props }) {
                   <WhyUs service={service} content={pitchContent.whyUs} pitch />
                 </Section>
 
-                {/* <Section data-scroll-section>
+                <Section data-scroll-section>
                   <ContentManager />
-                </Section> */}
+                </Section>
 
                 <Section data-scroll-section mb={48}>
                   <Methodology content={pitchContent.method} pitch service={service} />

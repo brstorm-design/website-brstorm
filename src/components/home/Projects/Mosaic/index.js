@@ -73,11 +73,12 @@ export default function Mosaic({ content, portfolio, common }) {
             return (
               <div key={`projects-${index}`} className={`col-12 col-lg-${item.size} ${styles.projects}`}>
                 <ProjectCard
-                  /* href={`?project=${item.slug}`}
-                  as={`/portfolio/${item.slug}`} */
-                  href={item.url}
+                  modal
+                  href={`?project=${item.slug}`}
+                  as={`/portfolio/${item.slug}`}
+                  /* href={item.url}
                   rel="noreferrer"
-                  target="_blank"
+                  target="_blank" */
                   onMouseEnter={handleHover}
                   onMouseLeave={handleHover}
                 >
