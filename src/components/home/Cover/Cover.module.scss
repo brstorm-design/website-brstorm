@@ -1,6 +1,7 @@
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/keyframes";
+@use "../../../styles/scss/spacing" as s;
 
 .section {
   position: relative;
@@ -115,22 +116,16 @@
   }
 
   p {
-    margin-bottom: 50px;
+    margin-bottom: s.$spacer-48;
+    margin-top: s.$spacer-32;
     white-space: break-spaces;
     text-align: center;
   }
 
-  & > a {
-    color: colors.$dark;
-    transition: all 300ms ease-out;
-    &:hover {
-      color: colors.$white;
-      transform: translateY(8px);
-    }
-  }
-
   h1 {
     margin-bottom: 0;
+    white-space: break-spaces;
+    text-align: center;
   }
 
   h2 {

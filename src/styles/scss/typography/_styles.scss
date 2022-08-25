@@ -1,5 +1,6 @@
 @use "../colors";
 @use "../mixins";
+@use './mixins' as type;
 @use "../keyframes";
 
 h1,
@@ -10,6 +11,11 @@ h5,
 h6 {
   color: colors.$white;
   font-family: Merriweather, "serif";
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -78,7 +84,7 @@ span {
 
 strong,
 .strong {
-  font-weight: 600;
+  @include type.underline;
   color: colors.$white;
 }
 

@@ -482,24 +482,32 @@
       "header": {
         "items": [
           {
-            "name": "Projetos",
-            "href": "#projects"
+            "name": "Início",
+            "href": "#"
           },
           {
-            "name": "O Que Fazemos",
-            "href": "#methodology"
+            "name": "Sobre o Projeto",
+            "href": "#"
           },
           {
-            "name": "Por Que Nós",
-            "href": "#why-us"
+            "name": "Portfólio",
+            "href": "#"
           },
           {
-            "name": "Depoimentos",
-            "href": "#testimonials"
+            "name": "Depoimetnos",
+            "href": "#"
           },
           {
-            "name": "Entre em Contato",
-            "href": "#contact"
+            "name": "Vantagens",
+            "href": "#"
+          },
+          {
+            "name": "Processo Criativo",
+            "href": "#"
+          },
+          {
+            "name": "Contato",
+            "href": "#"
           }
         ]
       }
@@ -743,9 +751,9 @@
     },
     "web": {
       "cover": {
-        "title": "Olá, Fabio e Sara!",
-        "subtitle": "Nós vamos ajudar a Bronzo a crescer.",
-        "text": "Nós preparamos uma breve apresentação para você entender melhor as soluções que oferecemos."
+        "title": "Quem não é visto, \nnão é lembrado!",
+        "text": "Criamos websites marcantes feitos para \n<strong>gerar resultados para seu negócio</strong>.",
+        "cta": "Começar um Projeto"
       },
       "details": {
         "title": "Out of sight, out of mind!",
@@ -1287,6 +1295,7 @@
     "bookMeeting": "Começar um Projeto",
     "bookMeetingNow": "Começar um Projeto",
     "bookAppointment": "Começar um Projeto",
+    "startProject": "Começar um Projeto",
     "seeMore": "Ver Mais",
     "seeMoreProjects": "Ver Mais Projetos",
     "contactUs": "Entre em Contato",

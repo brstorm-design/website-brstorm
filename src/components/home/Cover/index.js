@@ -17,6 +17,8 @@ import { fillPlaceholders } from 'src/modules/App';
 export default function Cover({ content, common, service, client }) {
   let { name, businessName } = client ?? {};
 
+  console.log(content);
+
   useEffect(() => {
     function cleanup() {
       document.getElementById('cover').removeEventListener('mousemove', e => {
@@ -79,21 +81,11 @@ export default function Cover({ content, common, service, client }) {
               {
                 service === 'web' ? (
                   <>
-                    <h1>
-                      {
-                        fillPlaceholders(content.title, { name })
-                      }
-                    </h1>
-                    <h2>
-                      {
-                        fillPlaceholders(content.subtitle, { businessName })
-                      }
-                    </h2>
-                    <p>{'We prepared a brief presentation for you to better\n know us and the solutions we provide.'}</p>
-                    <Link href="#about" scroll={false}>
-                      <a className="btn large ghost">
-                        {common.seeHow}
-                        <Arrow />
+                    <h1>{content.title}</h1>
+                    <p dangerouslySetInnerHTML={{__html: content.text}} />
+                    <Link href="/form/contact" scroll={false}>
+                      <a className="btn">
+                        {common.startProject}
                       </a>
                     </Link>
                   </>
