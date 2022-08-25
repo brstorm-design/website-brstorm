@@ -1,41 +1,39 @@
-@use 'colors';
-@use 'mixins';
+@use "colors";
+@use "mixins";
+@use "typography/mixins" as type;
 
 .btn {
   border: 1px solid colors.$white;
   background-color: colors.$white;
   border-radius: 2px;
-  padding: 0 16px;
+  padding: 0 32px;
   cursor: pointer;
   color: #000;
   display: inline-flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 20px;
-  height: 40px;
+  height: 48px;
   transform: none;
   transition: all 250ms ease;
+  @include type.btn-large;
 
   @include mixins.lg {
     font-size: 13px;
   }
 
   &.small {
-    font-size: 14px;
-    line-height: 20px;
-    height: 32px;
-    padding: 0 14px;
+    height: 40px;
+    padding: 0 24px;
+    @include type.btn-default;
 
     @include mixins.lg {
       font-size: 13px;
     }
   }
-  
+
   &.large {
-    font-size: 16px;
-    line-height: 24px;
-    height: 48px;
-    padding: 0 18px;
+    height: 60px;
+    padding: 0 40px;
+    @include type.btn-large;
 
     @include mixins.lg {
       font-size: 14px;
@@ -49,19 +47,31 @@
 
     svg {
       margin-left: 8px;
-    }/* 
+    } /* 
     &:hover path {
       fill: colors.$white;
     } */
   }
-    
-  &:focus {
-    box-shadow: 0 0 0 0.25rem rgba(colors.$white, 0.45);
+
+  &.secondary {
+    border-color: colors.$white;
+    color: colors.$white;
+    background-color: transparent;
+
+    &:hover {
+      border-color: transparent;
+      color: colors.$black;
+      background-color: colors.$white;
+    }
   }
 
   &:hover {
     background-color: transparent;
     color: colors.$white;
     border-color: colors.$white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(colors.$white, 0.45);
   }
 }

@@ -80,15 +80,22 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 460px;
+  height: 560px;
   margin-top: 60px;
   margin-bottom: 100px;
   box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.5);
   transition: transform 200ms ease-out;
-  border: 1px solid;
-  border-image: linear-gradient(rgb(182, 182, 182) 0%, rgba(182, 182, 182, 0) 100%) 1;
+  border: 0.75px solid;
+  border-image: linear-gradient(
+      236.75deg,
+      rgba(204, 204, 204, 0.9) -5.58%,
+      rgba(204, 204, 204, 0.7) 22.04%,
+      rgba(204, 204, 204, 0.1) 53.6%,
+      rgba(204, 204, 204, 0.4) 89.11%
+    )
+    1;
   backdrop-filter: blur(5px);
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.8) 0%, rgba(1, 1, 1, 0.4) 100%);
+  background: linear-gradient(180deg, rgba(1, 1, 1, 0.8) 0%, rgba(1, 1, 1, 0) 100%);
   border-radius: 2px;
 
   @include mixins.md {

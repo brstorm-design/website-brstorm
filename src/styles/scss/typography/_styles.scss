@@ -1,49 +1,62 @@
-@use 'colors';
-@use 'mixins';
-@use 'keyframes';
+@use "../colors";
+@use "../mixins";
+@use "../keyframes";
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: colors.$white;
+  font-family: Merriweather, "serif";
 }
 
-
-h1 { // xxl
+h1 {
+  // xxl
   font-size: 48px;
   line-height: 72px;
 }
 
-h2 { // xl
+h2 {
+  // xl
   font-size: 36px;
   line-height: 54px;
 }
 
-h3 { // lg
+h3 {
+  // lg
   font-size: 24px;
   line-height: 36px;
 }
 
-h4 { // md
+h4 {
+  // md
   font-size: 20px;
   line-height: 30px;
 }
 
-h5 { // sm
+h5 {
+  // sm
   font-size: 16px;
   line-height: 24px;
 }
 
-h6 { // xs
+h6 {
+  // xs
   font-size: 14px;
   line-height: 21px;
 }
 
-p, span, strong {
+p,
+span,
+strong {
   font-size: 16px;
   line-height: 26px;
 }
 
-small, .small {
+small,
+.small {
   font-size: 14px;
   line-height: 21px;
   color: colors.$darkGray;
@@ -58,11 +71,13 @@ small, .small {
   line-height: 18px;
 }
 
-p, span {
+p,
+span {
   color: colors.$darkGray;
 }
 
-strong, .strong {
+strong,
+.strong {
   font-weight: 600;
   color: colors.$white;
 }
@@ -85,42 +100,51 @@ a:not(.btn) {
 }
 
 @include mixins.lg {
-  h1 { // xxl
+  h1 {
+    // xxl
     font-size: 32px;
     line-height: 44px;
   }
-  
-  h2 { // xl
+
+  h2 {
+    // xl
     font-size: 24px;
     line-height: 34px;
   }
-  
-  h3 { // lg
+
+  h3 {
+    // lg
     font-size: 22px;
     line-height: 32px;
   }
-  
-  h4 { // md
+
+  h4 {
+    // md
     font-size: 18px;
     line-height: 28px;
   }
-  
-  h5 { // sm
+
+  h5 {
+    // sm
     font-size: 14px;
     line-height: 22px;
   }
-  
-  h6 { // xs
+
+  h6 {
+    // xs
     font-size: 13px;
     line-height: 20px;
   }
-  
-  p, a span, strong {
+
+  p,
+  a span,
+  strong {
     font-size: 14px;
     line-height: 24px;
   }
-  
-  small, .small {
+
+  small,
+  .small {
     font-size: 13px;
     line-height: 21px;
     strong {
@@ -128,7 +152,7 @@ a:not(.btn) {
       line-height: 21px;
     }
   }
-  
+
   .details {
     font-size: 10px;
     line-height: 18px;

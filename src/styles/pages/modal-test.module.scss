@@ -1,3 +1,6 @@
+@use "../scss/typography/mixins" as type;
+@use "../scss/spacing" as s;
+
 .section {
   padding: 150px;
   height: 4000px;
@@ -17,4 +20,73 @@
       width: max-content;
     }
   }
+}
+
+.main {
+  padding: s.$spacer-32;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+// -=-=-=-=-
+
+.h1 {
+  @include type.display;
+}
+.h2 {
+  @include type.heading-extra-large;
+}
+.h3 {
+  @include type.heading-large;
+}
+.h4 {
+  @include type.heading-medium;
+}
+.h5 {
+  @include type.heading-small;
+}
+.h6 {
+  @include type.heading-extra-small;
+}
+.overline {
+  @include type.overline;
+}
+.pDefault {
+  @include type.p-default;
+}
+.pBold {
+  @include type.p-bold;
+}
+.pUnder {
+  @include type.p-underline;
+}
+.smDefault {
+  @include type.sm-default;
+}
+.smBold {
+  @include type.sm-bold;
+}
+.smUnder {
+  @include type.sm-underline;
+}
+.capDefault {
+  @include type.caption-default;
+}
+.capBold {
+  @include type.caption-bold;
+}
+.btnLarge {
+  @include type.btn-default;
+}
+.btnDefault {
+  @include type.btn-large;
 }

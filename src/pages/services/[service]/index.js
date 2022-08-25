@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from 'public/data.json';
 import pt from 'src/languages/pt.json';
 import en from 'src/languages/en.json';
@@ -24,7 +24,16 @@ export default function LandingPage({ content, service }) {
   const pitch = content.pitch[service.jsonName];
   const fullPortfolio = content.fullPortfolio;
 
-  const pageTitle = `${service.name} • Br.Storm`;
+  useEffect(() => {
+    document.body.classList.add('page');
+  }, []);
+
+  let pageTitle;
+  service.slug === 'web' ? (
+    pageTitle = 'Criação de Sites Profissionais | Design & Resultado • Br.Storm'
+  ) : (
+    pageTitle = 'Brand • Br.Storm'
+  )
 
   return (
     <>
@@ -67,7 +76,7 @@ export default function LandingPage({ content, service }) {
               // web
               <>
                 <Section pt={12 + 8} mt={0}>
-                  <Cover service={'web'} content={pitch.cover} common={common} />
+                  <Cover service="web" content={pitch.cover} common={common} />
                 </Section>
 
                 <Section>
