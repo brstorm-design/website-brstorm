@@ -2,6 +2,7 @@
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/keyframes";
 @use "../../../styles/scss/spacing" as s;
+@use "../../../styles/scss/typography/mixins" as type;
 
 .section {
   position: relative;
@@ -120,6 +121,10 @@
     margin-top: s.$spacer-32;
     white-space: break-spaces;
     text-align: center;
+  }
+
+  strong {
+    text-decoration: underline;
   }
 
   h1 {

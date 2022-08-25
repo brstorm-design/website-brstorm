@@ -84,7 +84,7 @@ span {
 
 strong,
 .strong {
-  @include type.underline;
+  @include type.bold;
   color: colors.$white;
 }
 
