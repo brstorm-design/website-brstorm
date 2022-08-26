@@ -78,6 +78,7 @@ span {
 
 .overline {
   @include type.overline;
+  color: colors.$magenta;
 }
 
 strong,
