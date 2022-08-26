@@ -756,9 +756,11 @@
         "cta": "Começar um Projeto"
       },
       "details": {
-        "title": "Out of sight, out of mind!",
-        "subtitle": "Why invest in a website?",
-        "text": "<p>Did you ever think about <strong>having a showcase</strong> that can be seen anywhere? And be able to <strong>sell 24h a day, 7 days a week?</strong> That's the potential of a website.</p><p><strong>A well-planned website</strong> greatly expands the boundaries of the business! Without a website, your business is invisible to the thousands of <strong>people who search for your services every day on Google.</strong></p>"
+        "overline": "Potencial e Resultados",
+        "title": "Esteja Onde Seus \nClientes Estão",
+        "firstParagraph": "Tenha uma vitrine que pode ser vista em qualquer lugar, \na qualquer momento e em qualquer dispositivo. <strong>Venda 24/7</strong>. \n<strong>Este é o potencial de um website profissional!</strong>",
+        "secondParagraph": "Um website bem planejado <strong>expande os limites do negócio</strong>. \nSem presença online sua empresa é invisível para milhares de \npessoas que <strong>buscam pelos seus serviços todos os dias no Google</strong>.",
+        "ctaText": "Detalhes"
       },
       "projects": {
         "title": "Clientes Satisfeitos \nem Todo o Mundo",

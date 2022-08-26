@@ -42,6 +42,7 @@
 // -> overline
 
 @mixin overline {
+  @include bold;
   font-size: 18px;
   line-height: 28px;
 }

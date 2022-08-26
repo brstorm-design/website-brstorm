@@ -17,8 +17,6 @@ import { fillPlaceholders } from 'src/modules/App';
 export default function Cover({ content, common, service, client }) {
   let { name, businessName } = client ?? {};
 
-  console.log(content);
-
   useEffect(() => {
     function cleanup() {
       document.getElementById('cover').removeEventListener('mousemove', e => {

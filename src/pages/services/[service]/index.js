@@ -80,7 +80,7 @@ export default function LandingPage({ content, service }) {
                 </Section>
 
                 <Section>
-                  <About content={pitch.details} />
+                  <About content={pitch.details} common={common} />
                 </Section>
 
                 <Section>

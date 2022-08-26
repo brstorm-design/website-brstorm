@@ -1,45 +1,56 @@
-@use '../../../styles/scss/mixins';
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/spacing" as s;
+@use "../../../styles/scss/typography/mixins" as type;
 
-.content {
-  display: flex;
+.textContent {
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+  white-space: break-spaces;
 
-  h1 {
-    margin-bottom: 40px;
+  @include mixins.sm {
+    white-space: normal;
   }
-  h2 {
-    margin-bottom: 60px;
-  }
+
   p {
-    margin-bottom: 24px;
-  }
-
-  @include mixins.lg {
-    h1 {
-      margin-top: 60px;
+    &:first-child {
+      @include type.overline;
+      margin-bottom: s.$spacer-16;
+      margin-left: 0;
     }
 
-    h2 {
-      margin-bottom: 40px;
+    &:last-child {
+      margin-top: s.$spacer-24;
+      margin-bottom: s.$spacer-48;
+    }
+  }
+
+  h2 {
+    white-space: break-spaces;
+    margin-bottom: s.$spacer-32;
+
+    @include mixins.xl {
+      white-space: normal;
     }
   }
 
   @include mixins.sm {
-    h1 {
-      white-space: break-spaces;
-    }
-
     h2 {
       text-align: center;
     }
 
     p {
       text-align: center;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
+  }
+}
+
+.callToAction {
+  display: flex;
+  flex-wrap: wrap;
+  gap: s.$spacer-24;
+
+  @include mixins.sm {
+    justify-content: center;
   }
 }
