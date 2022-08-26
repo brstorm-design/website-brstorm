@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Testimonials.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
-import Quote from 'public/images/testimonials/quotation.svg';
+import QuoteIcon from 'public/images/testimonials/quotation.svg';
 import Chevron from 'public/images/chevron-up.svg';
 //
 import paras from 'public/images/testimonials/paras.png';
@@ -64,7 +64,7 @@ export default function Testimonials({ content }) {
         <div className="row">
           <div className="col-12 col-lg-10 offset-lg-2">
             <div className={styles.titleSection}>
-              <h1>{content.title}</h1>
+              <h2>{content.title}</h2>
               <div className={`d-none d-lg-block ${styles.nav}`}>
                 <button onClick={handleClick} id="prev">
                   <Chevron />
@@ -81,19 +81,23 @@ export default function Testimonials({ content }) {
             content.cards.map((item, index) => {
               return (
                 <SwiperSlide key={`testimonial-${index}`}>
-                  <div className={styles.testimonial}>
-                    <Quote />
-                    <small>{item.body}</small>
-                    <div>
+                  <figure className={styles.testimonial}>
+                    <QuoteIcon />
+                    <blockquote>
+                      <p className="small">
+                        {item.body}
+                      </p>
+                    </blockquote>
+                    <figcaption>
                       <div>
                         <Image src={clients[item.author]} width={35} height={35} />
                       </div>
                       <div>
-                        <strong className="details">{item.author}</strong>
-                        <div className="details">{item.company}</div>
+                        <p className="details">{item.author}</p>
+                        <p className="details">{item.company}</p>
                       </div>
-                    </div>
-                  </div>
+                    </figcaption>
+                  </figure>
                 </SwiperSlide>
               )
             })

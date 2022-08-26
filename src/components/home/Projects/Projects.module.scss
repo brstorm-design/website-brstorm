@@ -39,5 +39,9 @@
   h2 {
     white-space: break-spaces;
     margin-bottom: s.$spacer-32;
+
+    @include mixins.sm {
+      white-space: normal;
+    }
   }
 }
