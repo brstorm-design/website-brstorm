@@ -67,7 +67,7 @@
       position: absolute;
       right: calc(100% + 8px);
       counter-increment: question;
-      color: colors.$pink;
+      color: colors.$magenta;
 
       @include mixins.lg {
         position: relative;

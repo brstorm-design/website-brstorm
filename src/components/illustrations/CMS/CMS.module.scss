@@ -22,7 +22,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
       font-size: 8px;
     }
     .writer-cursor {
-      color: colors.$pink;
+      color: colors.$magenta;
     }
     #front-end-text {
       font-size: 16px;
@@ -95,7 +95,7 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
     height: 160px;
     top: 75px;
     left: 160px;
-    background-color: colors.$pink;
+    background-color: colors.$magenta;
     z-index: 0;
     filter: blur(75px);
   }

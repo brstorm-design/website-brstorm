@@ -2,7 +2,7 @@
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/keyframes";
 
-@include mixins.pin-pulse(colors.$pink);
+@include mixins.pin-pulse(colors.$magenta);
 @include mixins.stroke-fill-animation(words-animation, false);
 
 .image {
