@@ -12,7 +12,7 @@ export default function About({ content, common }) {
         <div className="row">
           <div className="col-12 col-lg-6 offset-lg-1 d-flex justify-content-center flex-column order-2 order-lg-1">
             <div className={styles.textContent}>
-              <p className="gradient-bg mr-auto">{content.overline}</p>
+              <p className="overline">{content.overline}</p>
               <h2>{content.title}</h2>
               <p dangerouslySetInnerHTML={{ __html: content.firstParagraph }} />
               <p dangerouslySetInnerHTML={{ __html: content.secondParagraph }} />

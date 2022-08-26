@@ -1,5 +1,6 @@
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
+@use "../../../styles/scss/spacing" as s;
 
 .section {
   scroll-margin-top: 110px;
@@ -29,22 +30,14 @@
 
 .intro {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: s.$spacer-80;
 
-  h4 {
-    margin: 0 auto 25px;
-  }
-  h1 {
-    margin-bottom: 50px;
-  }
-  p {
-    margin-bottom: 0;
+  & > :global(.overline) {
+    margin-bottom: s.$spacer-16;
   }
 
-  @include mixins.md {
-    margin-bottom: 50px;
-    h1 {
-      white-space: break-spaces;
-    }
+  h2 {
+    white-space: break-spaces;
+    margin-bottom: s.$spacer-32;
   }
 }

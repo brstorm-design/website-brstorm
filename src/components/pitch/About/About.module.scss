@@ -14,7 +14,7 @@
 
   p {
     &:first-child {
-      @include type.overline;
+      // overline:
       margin-bottom: s.$spacer-16;
       margin-left: 0;
     }

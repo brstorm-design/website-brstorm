@@ -763,8 +763,8 @@
         "ctaText": "Detalhes"
       },
       "projects": {
-        "title": "Clientes Satisfeitos \nem Todo o Mundo",
-        "subtitle": "Projetos & Depoimentos",
+        "overline": "Projetos & Depoimentos",
+        "title": "Atendemos Clientes \nem Todo do Mundo",
         "paragraph": "Somos um time com vasta experiência, atendemos diversos clientes ao redor do mundo, entregando sempre <strong>resultados bonitos e criativos.</strong> Confira alguns dos nossos projetos e conheça mais sobre nosso <strong>trabalho, estilo e qualidade</strong>.",
         "portfolio": [
           "grana",
