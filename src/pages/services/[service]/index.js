@@ -96,7 +96,7 @@ export default function LandingPage({ content, service }) {
                 </Section>
 
                 <Section>
-                  <ContentManager />
+                  <ContentManager content={pitch.contentManager} />
                 </Section>
 
                 <Section mb={52}>

@@ -797,6 +797,14 @@
           }
         ]
       },
+      "contentManager": {
+        "overline": "Take Full Control of your Website",
+        "title": "Content Manager",
+        "about": "Through an <strong>administrative panel</strong>, you can add texts, posts, photos, videos, promotions and other content with <strong>ease and autonomy</strong>.",
+        "knowMore": "Want to Know More?",
+        "knowMoreText": "Access a preview of the site's content management system and see the provided interface",
+        "button": "See a Preview"
+      },
       "method": {
         "title": "Creative Process Steps",
         "subtitle": "Meet Our Method",

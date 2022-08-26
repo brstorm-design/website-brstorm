@@ -2,19 +2,10 @@ import React, { useState } from 'react';
 import CMS from 'src/components/illustrations/CMS';
 import CMSModal from '../CMSModal';
 import styles from './ContentManager.module.scss';
+import ArrowIcon from 'public/images/arrow-forward.svg';
 
-export default function ContentManager({ /*content*/ }) {
+export default function ContentManager({ content }) {
   const [show, setShow] = useState(false);
-  const content = {
-    title: "Take Full Control of your Website",
-    subtitle: "Content Manager",
-    text: "Through an <strong>administrative panel</strong>, you can add texts, posts, photos, videos, promotions and other content with <strong>ease and autonomy</strong>.",
-    knowMore: {
-      title: "Want to Know More?",
-      text: "Access a preview of the site's content management system and see the provided interface",
-      preview: "See a Preview",
-    }
-  }
 
   function showModal() {
     setShow(true);
@@ -33,14 +24,17 @@ export default function ContentManager({ /*content*/ }) {
           <div className="col-12 col-lg-4 offset-lg-1">
             <div className={styles.textContent}>
               <div>
-                <h4 className="gradient-bg">{content.subtitle}</h4>
-                <h1>{content.title}</h1>
-                <p dangerouslySetInnerHTML={{ __html: content.text }} />
+                <p className="overline">{content.overline}</p>
+                <h2>{content.title}</h2>
+                <p dangerouslySetInnerHTML={{ __html: content.about }} />
               </div>
               <div>
-                <h2>{content.knowMore.title}</h2>
-                <p>{content.knowMore.text}</p>
-                <button className="btn" onClick={() => showModal()} >{content.knowMore.preview}</button>
+                <h2>{content.knowMore}</h2>
+                <p>{content.knowMoreText}</p>
+                <button className="btn secondary" onClick={() => showModal()}>
+                  {content.button}
+                  <ArrowIcon />
+                </button>
               </div>
             </div>
           </div>

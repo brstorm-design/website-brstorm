@@ -7,6 +7,14 @@ $easing: cubic-bezier(0.1, 0, 0.9, 1);
 .illustration {
   position: relative;
 
+  & > svg {
+    width: 100%;
+
+    @include mixins.lg {
+      width: auto;
+    }
+  }
+
   svg {
     position: relative;
     z-index: 5;

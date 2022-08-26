@@ -815,6 +815,14 @@
           }
         ]
       },
+      "contentManager": {
+        "overline": "Gerenciador de Conteúdo",
+        "title": "Liberdade para \nControlar seu Site",
+        "about": "Através do <strong>painel administrativo</strong> você poderá adicionar e editar textos, posts, fotos, vídeos e outros <strong>itens relevantes do seu site</strong>, tudo isso sem a necessidade de conhecimento técnico.",
+        "knowMore": "Quer saber mais?",
+        "knowMoreText": "Acesse uma prévia do sistema de gerenciamento de conteúdo e veja a interface disponibilizada.",
+        "button": "Visualizar CMS"
+      },
       "method": {
         "title": "Creative Process Steps",
         "subtitle": "Etapas do Processo de Criação",

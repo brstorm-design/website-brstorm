@@ -1,38 +1,29 @@
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
+@use "../../../styles/scss/spacing" as s;
+@use "../../../styles/scss/typography/mixins" as type;
 
 .section {
-  margin-top: 200px;
-
-  h4 {
-    margin-left: 0;
-  }
-
-  p,
-  h4,
-  h2 {
-    margin-bottom: 0;
-  }
-
-  @include mixins.md {
-    margin-top: 160px;
-    h4 {
-      text-align: center;
-      margin-left: auto;
-    }
-  }
 }
 
 .textContent {
   & > div {
+    :global(.overline) {
+      margin-bottom: s.$spacer-16;
+    }
+
     &:first-child {
-      padding-bottom: 60px;
-      margin-bottom: 60px;
-      border-bottom: 1px solid;
+      padding-bottom: s.$spacer-32;
+      margin-bottom: s.$spacer-32;
+      border-bottom: 0.75px solid;
       border-left: 0;
       border-top: 0;
-      border-image: linear-gradient(90deg, #555555ff 0%, #55555500 100%) 1;
-      
+      border-color: colors.$gray-50;
+
+      h2 {
+        margin-bottom: s.$spacer-32;
+      }
+
       @include mixins.lg {
         padding-bottom: 40px;
         margin-bottom: 40px;
@@ -44,15 +35,14 @@
         text-align: center;
       }
     }
-  }
 
-  & > div {
     &:last-child {
+      h2 {
+        @include type.heading-medium;
+      }
+
       p {
-        margin: 16px 0 24px 0;
-        @include mixins.lg {
-          margin: 24px 0 30px 0;
-        }
+        margin: s.$spacer-32 0;
       }
 
       @include mixins.md {
@@ -71,12 +61,4 @@
   @include mixins.lg {
     margin-bottom: 48px;
   }
-}
-
-.placeholder {
-  height: 100%;
-  background-color: colors.$lightDark;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
