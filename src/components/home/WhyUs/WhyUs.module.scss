@@ -2,6 +2,8 @@
 @use "sass:list";
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
+@use "../../../styles/scss/spacing" as s;
+@use "../../../styles/scss/typography/mixins" as type;
 
 @include mixins.logo-animation;
 
@@ -14,25 +16,19 @@
 }
 
 .title {
-  h1 {
-    margin-bottom: 50px;
-    text-align: center;
-    span {
-      font-size: inherit;
-      color: inherit;
-      font-weight: inherit;
-      line-height: inherit;
-    }
-  }
-  p {
-    margin-bottom: 75px;
-    text-align: center;
-    white-space: break-spaces;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: s.$spacer-56;
+  gap: 24px;
 
-  @include mixins.md {
-    h1 {
-      margin-bottom: 30px;
+  @include mixins.sm {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h2 {
+      flex-basis: 100%;
+      text-align: center;
     }
   }
 }
@@ -50,9 +46,10 @@
     height: 40px;
   }
 
-  h5 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  h3 {
+    @include type.heading-extra-small;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   @include mixins.md {

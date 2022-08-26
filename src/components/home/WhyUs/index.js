@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import ArrowIcon from 'public/images/arrow-forward.svg';
 
 // brand/default icons
 import Autonomy from 'public/images/icons/Replace.svg';
@@ -19,6 +20,8 @@ import Connection from 'public/images/icons/Connection.svg';
 
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './WhyUs.module.scss';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function WhyUs({ content, pitch, service }) {
   const element = useRef(null);
@@ -70,8 +73,13 @@ export default function WhyUs({ content, pitch, service }) {
     <div className={styles.section} id="why-us">
       <div className="container">
         <div className={styles.title}>
-          <h1 dangerouslySetInnerHTML={{ __html: content.title }} />
-          <p>{content.subtitle}</p>
+          <h2>{content.title}</h2>
+          <Link href="#contact">
+            <a className="btn secondary">
+              {content.cta}
+              <ArrowIcon />
+            </a>
+          </Link>
         </div>
         <div className="row gy-4" ref={element}>
           {
@@ -82,8 +90,8 @@ export default function WhyUs({ content, pitch, service }) {
                 <div key={`whyUs-${index}`} className="col-12 col-lg-3">
                   <div className={styles.card}>
                     <Icon />
-                    <h5 className={styles.boxBottom}>{item.title}</h5>
-                    <small>{item.body}</small>
+                    <h3 className={styles.boxBottom}>{item.title}</h3>
+                    <p className="small">{item.body}</p>
                   </div>
                 </div>
               )

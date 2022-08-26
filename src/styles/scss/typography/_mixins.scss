@@ -89,6 +89,11 @@
 @mixin p-default {
   font-size: 16px;
   line-height: 28px;
+
+  @include mixins.lg {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 @mixin p-bold {
@@ -106,6 +111,11 @@
 @mixin sm-default {
   font-size: 14px;
   line-height: 22px;
+  
+  @include mixins.lg {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 @mixin sm-bold {
@@ -123,6 +133,11 @@
 @mixin caption-default {
   font-size: 12px;
   line-height: 18px;
+
+  @include mixins.lg {
+    font-size: 10px;
+    line-height: 16px;
+  }
 }
 
 @mixin caption-bold {
@@ -136,10 +151,20 @@
   font-size: 14px;
   line-height: 14px;
   @include bold;
+
+  @include mixins.lg {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 @mixin btn-large {
   font-size: 16px;
   line-height: 16px;
   @include bold;
+
+  @include mixins.lg {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

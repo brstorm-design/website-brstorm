@@ -494,7 +494,7 @@
             "href": "#"
           },
           {
-            "name": "Depoimetnos",
+            "name": "Depoimentos",
             "href": "#"
           },
           {
@@ -778,40 +778,40 @@
         "url": "/portfolio"
       },
       "whyUs": {
-        "title": "<span class='d-none d-md-block'>Reasons Why Hire Us</span><span class='d-block d-md-none'>Why Hire Us</span>",
-        "subtitle": "We always strive for the best, in everything \nwe do we always focus on delivering:",
+        "title": "Foco nos Detalhes",
+        "cta": "Fale Conosco",
         "cards": [
           {
-            "title": "Ideation and Strategy",
-            "body": "We explore and deeply understand every detail of each demand."
+            "title": "Ideação e Estratégia",
+            "body": "Investigamos e entendemos profundamente todos os detalhes de cada demanda."
           },
           {
-            "title": "Full Customization",
-            "body": "We design your website tailor-made, 100% exclusive layouts for your brand."
+            "title": "Personalização Completa",
+            "body": "Desenhamos seu site de forma artesanal, layouts 100% exclusivos para a sua marca."
           },
           {
-            "title": "Fast and Intuitive",
-            "body": "We work with cutting-edge technology that guarantees greater speed and smoothness in navigating."
+            "title": "Intuitivo e Veloz",
+            "body": "Trabalhamos com tecnologia de ponta que garante maior velocidade e fluidez na navegação."
           },
           {
-            "title": "Premium Support",
-            "body": "You will never be helpless, you can contact us whenever you need."
+            "title": "Suporte Premium",
+            "body": "Você nunca ficará desamparado, pode entrar em contato conosco sempre que precisar."
           },
           {
-            "title": "Responsiveness",
-            "body": "Your website at your fingertips! We create a version for each device: PC, Tablet and Smartphone."
+            "title": "Responsividade",
+            "body": "Seu site na ponta dos dedos! Criamos uma versão para cada dispositivo."
           },
           {
             "title": "Google Analytics",
-            "body": "Monitor your website traffic! We configure and make your Google Analytics available."
+            "body": "Monitore os acessos do seu site! Configuramos e disponibilizamos o seu Google Analytics."
           },
           {
-            "title": "Search Engine Optimization",
-            "body": "We optimize the project so that your site is well placed in Google searches."
+            "title": "Mecanismos de Busca",
+            "body": "Otimizamos o projeto para que seu site fique bem colocado nas buscas do Google."
           },
           {
-            "title": "Integration",
-            "body": "Integration with Email Marketing, Social Networks, Google Analytics, WhatsApp…"
+            "title": "Integração",
+            "body": "Integração com Email Marketing, Redes Sociais, Google Tag Manager, WhatsApp…"
           }
         ]
       },
