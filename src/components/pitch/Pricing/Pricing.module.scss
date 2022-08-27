@@ -1,5 +1,7 @@
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/colors";
+@use "../../../styles/scss/spacing" as s;
+@use "../../../styles/scss/typography/mixins" as type;
 
 .section {
   @include mixins.lg {
@@ -14,24 +16,21 @@
 .intro {
   text-align: center;
 
-  h1 {
-    margin-top: 25px;
-    margin-bottom: 50px;
+  :global(.overline) {
+    margin-bottom: s.$spacer-16;
+  }
+
+  h2 {
+    margin-bottom: s.$spacer-32;
     white-space: break-spaces;
   }
 
-  h4 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-  }
-
-  p {
-    margin-bottom: 100px;
+  p:last-child {
+    margin-bottom: s.$spacer-72;
   }
 
   @include mixins.md {
-    h1 {
+    h2 {
       white-space: normal;
       margin-top: 20px;
       margin-bottom: 40px;
@@ -48,6 +47,7 @@
   padding: 65px 40px 50px;
   opacity: 0.25;
   transition: all 350ms ease;
+  margin-top: 20px;
 
   @include mixins.md {
     padding: 48px 32px;
@@ -66,11 +66,6 @@
     }
   }
 
-  p {
-    margin-bottom: 0;
-    color: colors.$carbon;
-  }
-
   // Card Header
   & > div:first-child {
     width: 100%;
@@ -78,12 +73,9 @@
     justify-content: space-between;
     align-items: center;
 
-    h2,
-    h6 {
-      margin: 0;
-    }
-    h6 {
+    p {
       color: colors.$magenta;
+      @include type.bold;
     }
   }
 
@@ -91,8 +83,10 @@
   & > div:nth-child(2) {
     border-top: 1px solid colors.$carbon;
     border-bottom: 1px solid colors.$carbon;
-    padding: 40px 0;
-    margin: 25px 0 40px;
+    padding-top: s.$spacer-32;
+    padding-bottom: s.$spacer-40;
+    margin-top: s.$spacer-24;
+    margin-bottom: s.$spacer-40;
 
     strong small {
       color: colors.$white;
@@ -151,12 +145,12 @@
       margin-top: 40px;
 
       li:not(:first-child) {
-        margin-top: 25px;
+        margin-top: s.$spacer-24;
       }
 
       li > div > div {
-        padding-top: 5px;
-        padding-left: 15px;
+        padding-top: s.$spacer-16;
+        padding-left: s.$spacer-16;
       }
     }
   }
@@ -167,11 +161,17 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 30px;
+    margin-bottom: s.$spacer-24;
+    flex-wrap: wrap;
 
-    h4 {
-      margin-bottom: 0;
+    :global(.overline) {
+      color: colors.$white;
     }
+  }
+
+  // Note:
+  & > p {
+    color: colors.$gray-40;
   }
 }
 

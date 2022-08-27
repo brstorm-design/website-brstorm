@@ -872,182 +872,183 @@
         }
       },
       "deliverables": {
-        "title": "The Best Choice for \n Your Business",
-        "subtitle": "Our Service Packages",
-        "text": "No matter the size or phase of your business, <strong>we can <br class='d-none d-lg-block'/> certainly help</strong> you choose the package that suits you.",
-        "note": "Note: To find out more about our payment terms and conditions please contact us.",
+        "overline": "Nossos Pacotes de Serviços",
+        "title": "A Melhor Escolha \npara o Seu Negócio",
+        "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente podemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
+        "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
+        "valueText": "Investmentimento a partir de:",
         "packages": [
           {
             "name": "Single",
-            "value": "£290,00",
+            "value": "R$997,00",
             "shortText": "Landing Page",
-            "longText": "Ideal for presenting a product or individual offer, limited to a single page with a structure similar or equivalent to the following:",
+            "longText": "Ideal para a apresentação de um produto ou oferta individual, limitando-se a uma única página com estrutura similar ou equivalente aos seguintes itens:",
             "included": [
               {
-                "name": "Callout",
+                "name": "Chamada",
                 "items": [
-                  "Title",
-                  "Subtitle",
-                  "\"Call To Action\" Buttons."
+                  "Título",
+                  "Subtítulo",
+                  "Botões \"Call To Action\"."
                 ]
               },
               {
-                "name": "Offer Description",
+                "name": "Descrição da Oferta",
                 "items": [
-                  "Short and Persuasive Text",
-                  "Topics with Advantages and Benefits"
+                  "Texto Curto e Persuasivo",
+                  "Tópicos com Vantagens e Benefícios"
                 ]
               },
               {
-                "name": "Social Proof",
+                "name": "Prova Social",
                 "items": [
-                  "Feedback and Testimonials",
-                  "List of Served Customers' Logos"
+                  "Feedback e Depoimentos",
+                  "Lista de Logos de Clientes Atendidos"
                 ]
               },
               {
-                "name": "Images",
+                "name": "Imagens",
                 "items": [
-                  "1 to 3 Illustrative Images"
+                  "1 a 3 Imagens Ilustrativas"
                 ]
               },
               {
-                "name": "Contact Forms",
+                "name": "Formulários de Contato",
                 "items": [
-                  "Redirection to Inbox or Mailing System"
+                  "Redirecionamento para Caixa de Entrada ou Sistema de Mailing"
                 ]
               },
               {
-                "name": "Redirectings",
+                "name": "Redirecionamentos",
                 "items": [
-                  "WhatsApp Chat",
-                  "Institutional Website"
+                  "Chat WhatsApp",
+                  "Website Institucional"
                 ]
               }
             ]
           },
           {
             "name": "Business",
-            "value": "£840,00",
-            "shortText": "Institutional",
-            "longText": "Best option to be recognized, remembered and strengthen your company's image, as well as allowing the presentation of multiple items, such as:",
+            "value": "R$2997,00",
+            "shortText": "Institucional",
+            "longText": "Melhor opção para ser reconhecido, lembrado e fortalecer a imagem da sua empresa, esse pacote inclui múltiplos conteúdos, tais como:",
             "included": [
               {
-                "name": "Home Page",
+                "name": "Página Principal",
                 "items": [
-                  "Preview of All Content",
-                  "Random Banner",
-                  "Image Carousel",
-                  "Testimonials",
-                  "Call To Action Buttons"
+                  "Prévia de Todos os Conteúdos",
+                  "Banner Randômico",
+                  "Carrossel de Imagens",
+                  "Depoimentos",
+                  "Botões de Ação (Call To Action)"
                 ]
               },
               {
-                "name": "About Us",
+                "name": "Sobre Nós",
                 "items": [
-                  "Our Team",
-                  "Photo Gallery",
-                  "Informative Texts",
-                  "Mission / Vision / Values"
+                  "Nossa Equipe",
+                  "Galeria de Fotos",
+                  "Textos Informativos",
+                  "Missão / Visão / Valores"
                 ]
               },
               {
-                "name": "Products / Services",
+                "name": "Produtos / Serviços",
                 "items": [
-                  "Illustrative Images",
-                  "Descriptive Texts",
-                  "Download and/or Redirect buttons"
+                  "Imagens Ilustrativas",
+                  "Textos Descritivos",
+                  "Botões de Download e/ou Redirecionamento"
                 ]
               },
               {
-                "name": "Contact",
+                "name": "Contato",
                 "items": [
-                  "Contact Information (Phone, Email, Location...)",
-                  "Forms",
-                  "Informative Texts"
+                  "Dados de Contato (Telefone, Email, Localização...)",
+                  "Formulários",
+                  "Textos Informativos"
                 ]
               },
               {
-                "name": "Redirects",
+                "name": "Redirecionamentos",
                 "items": [
-                  "WhatsApp Chat",
-                  "Social Media",
-                  "Work With Us",
-                  "Capture Page (Landing Page)"
+                  "Chat WhatsApp",
+                  "Redes Sociais",
+                  "Trabalhe Conosco",
+                  "Página de Captura (Landing Page)"
                 ]
               }
             ]
           },
           {
-            "name": "Commercial",
-            "value": "£1560,00",
+            "name": "Comercial",
+            "value": "Sob Consulta",
             "shortText": "E-Commerce",
-            "longText": "Made for those who intend to commercialize their products and/or services through an exclusive platform optimized for sale with, but not limited to the following structure:",
+            "longText": "Feito para quem visa comercializar seus produtos e/ou serviços através de uma plataforma exclusiva otimizada para venda, contando com a seguinte estrutura:",
             "included": [
               {
-                "name": "Client Area",
+                "name": "Área do Cliente",
                 "items": [
-                  "Login With Social Media",
-                  "Easy and Fast Registration",
-                  "Purchase Management",
-                  "Sistema Criptografado e Seguro (GDPR)"
+                  "Login com Redes Sociais",
+                  "Cadastro Fácil e Rápido",
+                  "Gerenciamento de Compra",
+                  "Sistema Criptografado e Seguro (LGPD)"
                 ]
               },
               {
-                "name": "Purchase Integrations",
+                "name": "Integrações de Compra",
                 "items": [
-                  "Registration Data",
-                  "Payment Options",
-                  "Scheduling Tools",
-                  "Delivery Systems",
-                  "Stock Systems",
-                  "Monitoring Systems"
+                  "Dados Cadastrais",
+                  "Meios de Pagamento",
+                  "Ferramentas de Agendamento",
+                  "Sistemas de Entrega",
+                  "Sistemas de Estoque",
+                  "Sistemas de Monitoramento"
                 ]
               },
               {
-                "name": "Products / Services",
+                "name": "Produtos / Serviços",
                 "items": [
-                  "Illustrative Images",
-                  "Descriptive Texts",
-                  "Purchase Buttons",
-                  "Search Filters",
-                  "Categories"
+                  "Imagens Ilustrativas",
+                  "Textos Descritivos",
+                  "Botões de Compra",
+                  "Filtros de Pesquisa",
+                  "Categorias"
                 ]
               },
               {
-                "name": "Home Page",
+                "name": "Página Principal",
                 "items": [
-                  "Preview of All Content",
-                  "Random Banner",
-                  "Image Carousel",
-                  "Testimonials",
-                  "Call To Action Buttons"
+                  "Prévia de Todos os Conteúdos",
+                  "Banner Randômico",
+                  "Carrossel de Imagens",
+                  "Depoimentos",
+                  "Botões de Ação (Call To Action)"
                 ]
               },
               {
-                "name": "About Us",
+                "name": "Sobre Nós",
                 "items": [
-                  "Our Team",
-                  "Photo Gallery",
-                  "Informative Texts",
-                  "Mission / Vision / Values"
+                  "Nossa Equipe",
+                  "Galeria de Fotos",
+                  "Textos Informativos",
+                  "Missão / Visão / Valores"
                 ]
               },
               {
-                "name": "Contact",
+                "name": "Contato",
                 "items": [
-                  "Contact Information (Phone, Email, Location...)",
-                  "Forms",
-                  "Informative Texts"
+                  "Dados de Contato (Telefone, Email, Localização...)",
+                  "Formulários",
+                  "Textos Informativos"
                 ]
               },
               {
-                "name": "Redirects",
+                "name": "Redirecionamentos",
                 "items": [
-                  "WhatsApp Chat",
-                  "Social Media",
-                  "Work With Us",
-                  "Capture Page (Landing Page)"
+                  "Chat WhatsApp",
+                  "Redes Sociais",
+                  "Trabalhe Conosco",
+                  "Página de Captura (Landing Page)"
                 ]
               }
             ]

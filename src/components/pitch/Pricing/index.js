@@ -21,8 +21,8 @@ export default function Pricing({ content }) {
     <div className={styles.section}>
       <div className="col-12 col-lg-6 mx-auto">
         <div className={styles.intro}>
-          <h4 className="gradient-bg">{content.subtitle}</h4>
-          <h1>{content.title}</h1>
+          <p className="overline">{content.overline}</p>
+          <h2>{content.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: content.text }} />
         </div>
       </div>
@@ -38,12 +38,11 @@ export default function Pricing({ content }) {
                     onMouseLeave={isMobile ? null : toggleStyle}
                   >
                     <div className={styles.title}>
-                      <h2>{pack.name}</h2>
-                      <h6>{pack.shortText}</h6>
+                      <h3>{pack.name}</h3>
+                      <p className="small">{pack.shortText}</p>
                     </div>
                     <div>
-                      <small>{pack.longText}</small>
-
+                      <p className="small">{pack.longText}</p>
                       <ul>
 
                         {/* loop dos itens inclusos */}
@@ -53,7 +52,7 @@ export default function Pricing({ content }) {
                               <li key={`inc-${includedIndex}`}>
                                 <a href={`#item-${includedIndex}-${packIndex}`} data-bs-toggle="collapse" aria-expanded="false" className="collapsed">
                                   <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#E93CAC"><path d="M0 0h24v24H0V0z" fill="none" /><path /></svg>
-                                  <h6>{included.name}</h6>
+                                  <p className="small">{included.name}</p>
                                 </a>
                                 <div id={`item-${includedIndex}-${packIndex}`} className="collapse">
                                   <div>
@@ -76,8 +75,8 @@ export default function Pricing({ content }) {
                       </ul>
                     </div>
                     <div>
-                      <small>Investment value:</small>
-                      <h4>{pack.value}</h4>
+                      <p className="small">{content.valueText}</p>
+                      <p className="overline">{pack.value}</p>
                     </div>
                     <p className="details">{content.note}</p>
                   </div>

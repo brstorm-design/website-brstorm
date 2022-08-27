@@ -858,6 +858,7 @@
         "subtitle": "Our Service Packages",
         "text": "No matter the size or phase of your business, <strong>we can <br class='d-none d-lg-block'/> certainly help</strong> you choose the package that suits you.",
         "note": "Note: To find out more about our payment terms and conditions please contact us.",
+        "valueText": "Investment value:",
         "packages": [
           {
             "name": "Single",
