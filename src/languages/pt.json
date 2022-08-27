@@ -860,15 +860,15 @@
         ]
       },
       "addons": {
-        "title": "Website \nAdd-ons",
-        "text": "Increase your website's reach potential with these add-ons. Apply along with your order.",
+        "title": "Recursos Extras",
+        "text": "Aumente o potencial de alcance do seu site com esses recusos extras.",
         "blog": {
           "title": "Blog",
-          "body": "Content creation portal aimed at reaching and maintaining the relationship with the target audience."
+          "body": "Portal de criação de conteúdo visando o alcance e manutenção do relacionamento com o público-alvo."
         },
         "langs": {
-          "title": "Extra Languages",
-          "body": "We live in the age of Globalization! Make your website available in multiple languages and win international customers."
+          "title": "Multi-idiomas",
+          "body": "Vivemos na era da Globalização! Disponibilize seu site em vários idiomas e conquiste clientes internacionais."
         }
       },
       "deliverables": {

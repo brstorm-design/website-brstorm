@@ -9,15 +9,15 @@ export default function AddOns({ content }) {
           <div className="col-12">
             <div className={styles.row}>
               <div>
-                <h3>{content.title}</h3>
+                <h2>{content.title}</h2>
                 <p className="details">{content.text}</p>
               </div>
               <div>
-                <h6>{content.blog.title}</h6>
+                <h3>{content.blog.title}</h3>
                 <p className="details">{content.blog.body}</p>
               </div>
               <div>
-                <h6>{content.langs.title}</h6>
+                <h3>{content.langs.title}</h3>
                 <p className="details">{content.langs.body}</p>
               </div>
             </div>

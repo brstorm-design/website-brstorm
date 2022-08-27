@@ -1,5 +1,7 @@
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
+@use "../../../styles/scss/spacing" as s;
+@use "../../../styles/scss/typography/mixins" as type;
 
 .row {
   display: flex;
@@ -26,17 +28,22 @@
     padding: 50px 32px;
   }
 
-  p {
-    margin-bottom: 0;
-  }
-
   & > div {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    h3,
-    h6 {
-      margin-bottom: 16px;
+
+    h2,
+    h3 {
+      margin-bottom: s.$spacer-16;
+    }
+
+    h2 {
+      @include type.heading-small;
+    }
+
+    h3 {
+      @include type.heading-extra-small;
     }
 
     &:nth-child(2) {
