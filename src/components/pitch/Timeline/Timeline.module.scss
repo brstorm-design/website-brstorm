@@ -1,5 +1,7 @@
 @use "../../../../src/styles/scss/mixins";
 @use "../../../../src/styles/scss/colors";
+@use "../../../../src/styles/scss/spacing" as s;
+@use "../../../../src/styles/scss/typography/mixins" as type;
 @use "sass:math";
 @use "sass:list";
 
@@ -71,8 +73,9 @@
       animation: logo-animation 3.5s ease infinite alternate both;
     }
 
-    h5 {
-      margin: 20px 0;
+    h3 {
+      @include type.heading-small;
+      margin: s.$spacer-32 0;
     }
 
     @include mixins.md {
@@ -142,7 +145,8 @@
 
 .cards.web {
   & > div:not(.line) {
-    padding: 90px 60px;
+    height: auto;
+    padding: 56px 56px 96px;
   }
 
   :global {

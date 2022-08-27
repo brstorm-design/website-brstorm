@@ -38,14 +38,13 @@ export default function Methodology({ content, pitch, service }) {
         {
           pitch ? (
             <div className={styles.title}>
-              <h4 className="gradient-bg">{content.subtitle}</h4>
-              <h1>{content.title}</h1>
+              <p className="overline">{content.overline}</p>
+              <h2>{content.title}</h2>
             </div>
           ) : null
         }
         <div className="row">
           <div className="col-12 col-lg-6">
-            {/* <Samothrace translateValues={mousePosition} /> */}
             <div className={styles.primaryContent} {...stickyAttributes}>
               {
                 pitch ? (

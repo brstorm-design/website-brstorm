@@ -1,25 +1,27 @@
 @use "../../../styles/scss/colors";
 @use "../../../styles/scss/mixins";
+@use "../../../styles/scss/spacing" as s;
 
 .section {
   @include mixins.md {
     & > div:first-child {
-      margin-bottom: 50px;
-
-      h3 {
-        margin-bottom: 25px;
-      }
+      margin-bottom: s.$spacer-48;
     }
   }
 }
 
 .title {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: s.$spacer-80;
 
-  h4 {
-    position: relative;
-    margin: 0 auto;
+  h2 {
+    @include mixins.sm {
+      white-space: break-spaces;
+    }
+  }
+
+  p {
+    margin-bottom: s.$spacer-16;
   }
 }
 

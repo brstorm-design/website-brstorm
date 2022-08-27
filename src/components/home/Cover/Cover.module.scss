@@ -131,6 +131,10 @@
     margin-bottom: 0;
     white-space: break-spaces;
     text-align: center;
+
+    @include mixins.sm {
+      white-space: normal;
+    }
   }
 
   h2 {

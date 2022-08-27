@@ -73,8 +73,8 @@ export default function Timeline({ steps, service }) {
               >
                 <span style={{ opacity: '0' }} id={`step-${index + 1}`} className={styles.number}>{index + 1}</span>
                 <Icon />
-                <h5>{step.name}</h5>
-                <small>{step.text}</small>
+                <h3>{step.name}</h3>
+                <p>{step.text}</p>
               </div>
             )
           })

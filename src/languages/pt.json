@@ -824,17 +824,17 @@
         "button": "Visualizar CMS"
       },
       "method": {
-        "title": "Creative Process Steps",
-        "subtitle": "Etapas do Processo de Criação",
+        "overline": "Conheça Nosso Método",
+        "title": "Etapas do Processo \nde Criação",
         "steps": [
           {
             "icon": "Venn.svg",
-            "name": "Strategy",
+            "name": "Estratégia",
             "text": "Compreensão dos objetivos do negócio e mapeamento das necessidades do projeto."
           },
           {
             "icon": "FlowChart.svg",
-            "name": "Structure",
+            "name": "Estrutura",
             "text": "Arquitetura e organização do conteúdo, esboço do esqueleto e navegação das páginas."
           },
           {
@@ -844,17 +844,17 @@
           },
           {
             "icon": "Physics.svg",
-            "name": "Development",
+            "name": "Desenvolvimento",
             "text": "Codificação dos componentes visuais e criação de itens interativos e funcionais."
           },
           {
             "icon": "Computer.svg",
-            "name": "Delivery",
+            "name": "Entrega",
             "text": "Testes e correção de bugs, implementação e hospedagem, redirecionamentos e publicação do projeto."
           },
           {
             "icon": "Certificate.svg",
-            "name": "Support",
+            "name": "Suporte",
             "text": "Disponibilização de guia de uso do projeto acompanhado de um treinamento para o manuseio.  "
           }
         ]
