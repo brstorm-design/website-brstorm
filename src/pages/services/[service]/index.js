@@ -116,7 +116,7 @@ export default function LandingPage({ content, service }) {
             )
           }
           <Section>
-            <Contact content={home.contact} common={common} />
+            <Contact content={content.pitch.contact} common={common} />
           </Section>
         </main>
         <Footer content={home.footer} common={common} />

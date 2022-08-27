@@ -38,7 +38,7 @@ export default function Contact({ content, common }) {
           <div className="col-12 col-lg-10 mx-auto">
             <div className={styles.contact}>
               <div>
-                <h1>{content.title}</h1>
+                <h2>{content.title}</h2>
                 <p dangerouslySetInnerHTML={{__html: content.paragraph}} />
               </div>
               <div>
