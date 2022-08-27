@@ -39,15 +39,13 @@ export default function Contact({ content, common }) {
             <div className={styles.contact}>
               <div>
                 <h2>{content.title}</h2>
-                <p dangerouslySetInnerHTML={{__html: content.paragraph}} />
+                <p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
               </div>
               <div>
-                <Link href="/form/contact">
-                  <a rel="noopener noreferrer" className="btn large">
-                    {common.bookMeeting}
-                  </a>
-                </Link>
-                <small dangerouslySetInnerHTML={{__html: content.availableHours}} />
+                <a href="https://api.whatsapp.com/send?phone=5551989836186" rel="noopener noreferrer" className="btn large">
+                  {common.bookMeeting}
+                </a>
+                <small dangerouslySetInnerHTML={{ __html: content.availableHours }} />
               </div>
             </div>
           </div>

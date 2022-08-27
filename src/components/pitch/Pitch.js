@@ -45,7 +45,7 @@ export default function Pitch({ props }) {
                 </Section>
 
                 <Section data-scroll-section>
-                  <About content={pitchContent.details} />
+                  <About content={pitchContent.details} common={common} />
                 </Section>
 
                 <Section data-scroll-section>
@@ -61,7 +61,7 @@ export default function Pitch({ props }) {
                 </Section>
 
                 <Section data-scroll-section>
-                  <ContentManager />
+                  <ContentManager content={pitchContent.contentManager} />
                 </Section>
 
                 <Section data-scroll-section mb={48}>

@@ -145,8 +145,12 @@
 
 .cards.web {
   & > div:not(.line) {
-    height: auto;
     padding: 56px 56px 96px;
+
+    svg {
+      width: 55px;
+      height: 55px;
+    }
   }
 
   :global {

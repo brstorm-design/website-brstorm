@@ -27,6 +27,11 @@
 
   p:last-child {
     margin-bottom: s.$spacer-72;
+    white-space: break-spaces;
+    
+    @include mixins.sm {
+      white-space: normal;
+    }
   }
 
   @include mixins.md {
