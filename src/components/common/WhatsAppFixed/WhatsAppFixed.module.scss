@@ -1,0 +1,84 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/typography/mixins" as type;
+@use "../../../styles/scss/spacing" as s;
+
+.button {
+  position: fixed;
+  display: flex;
+  bottom: 40px;
+  right: 48px;
+  z-index: 1;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+
+  .cta {
+    overflow: hidden;
+
+    strong {
+      @include type.underline;
+      color: colors.$success;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        @include type.btn-default;
+        color: colors.$white;
+      }
+
+      svg {
+        color: colors.$success;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 32px;
+      background: rgba(1, 1, 1, 0.8);
+      border: 1px solid colors.$white;
+      backdrop-filter: blur(8px);
+      transform: translateY(100%);
+      opacity: 0;
+
+      & > p {
+        margin-top: s.$spacer-16;
+        margin-bottom: s.$spacer-16;
+      }
+
+      &:hover {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  .iconButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colors.$success;
+    color: colors.$white;
+    transition: all 350ms ease;
+
+    &:hover {
+      background-color: colors.$white;
+      color: colors.$success !important;
+
+      & ~ div a {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    svg {
+      height: 28px;
+      width: 28px;
+    }
+  }
+}

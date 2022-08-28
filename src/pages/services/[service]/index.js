@@ -18,6 +18,7 @@ import About from 'src/components/pitch/About';
 import ContentManager from 'src/components/pitch/ContentManager';
 import Pricing from 'src/components/pitch/Pricing';
 import AddOns from 'src/components/pitch/AddOns';
+import WhatsAppFixed from 'src/components/common/WhatsAppFixed';
 
 export default function LandingPage({ content, service }) {
   const home = content.home;
@@ -43,6 +44,8 @@ export default function LandingPage({ content, service }) {
         <title>{pageTitle}</title>
       </Head>
       <Header content={landing.header} common={content.common} />
+
+      <WhatsAppFixed />
 
       <div className="main" data-scroll-section>
         <main>
