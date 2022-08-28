@@ -23,7 +23,7 @@ export default function About({ content, common }) {
                   {common.startProject}
                 </a>
               </Link>
-              <Link href="#">
+              <Link href="#details" scroll={false}>
                 <a className="btn ghost">
                   {content.ctaText}
                   <Arrow />

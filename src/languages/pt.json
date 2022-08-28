@@ -483,31 +483,31 @@
         "items": [
           {
             "name": "Início",
-            "href": "#"
+            "href": "#cover"
           },
           {
             "name": "Sobre o Projeto",
-            "href": "#"
+            "href": "#about"
           },
           {
             "name": "Portfólio",
-            "href": "#"
+            "href": "#projects"
           },
           {
             "name": "Depoimentos",
-            "href": "#"
+            "href": "#testimonials"
           },
           {
             "name": "Vantagens",
-            "href": "#"
+            "href": "#details"
           },
           {
             "name": "Processo Criativo",
-            "href": "#"
+            "href": "#methodology"
           },
           {
             "name": "Contato",
-            "href": "#"
+            "href": "#contact"
           }
         ]
       }

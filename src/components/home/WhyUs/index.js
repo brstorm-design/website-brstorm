@@ -70,11 +70,11 @@ export default function WhyUs({ content, pitch, service }) {
   ];
 
   return (
-    <div className={styles.section} id="why-us">
+    <div className={styles.section} id="details">
       <div className="container">
         <div className={styles.title}>
           <h2>{content.title}</h2>
-          <Link href="#contact">
+          <Link href="#contact" scroll={false}>
             <a className="btn secondary">
               {content.cta}
               <ArrowIcon />
