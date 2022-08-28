@@ -30,7 +30,7 @@ export default function Slider({ portfolio }) {
           slidesPerView={'auto'}
           modules={[Autoplay, FreeMode]}
           loop
-          speed={800}
+          speed={1800}
           freeMode
           autoplay={{
             delay: 200,
@@ -64,7 +64,7 @@ export default function Slider({ portfolio }) {
           slidesPerView={'auto'}
           modules={[Autoplay, FreeMode]}
           loop
-          speed={800}
+          speed={1800}
           freeMode
           autoplay={{
             delay: 200,
