@@ -22,6 +22,10 @@
 
       h2 {
         margin-bottom: s.$spacer-32;
+
+        @include mixins.sm {
+          white-space: break-spaces;
+        }
       }
 
       @include mixins.lg {

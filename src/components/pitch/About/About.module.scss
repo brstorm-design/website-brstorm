@@ -3,9 +3,6 @@
 @use "../../../styles/scss/typography/mixins" as type;
 
 .textContent {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   white-space: break-spaces;
 
   @include mixins.sm {

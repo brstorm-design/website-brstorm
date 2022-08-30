@@ -80,45 +80,45 @@ export default function LandingPage({ content, service }) {
             ) : (
               // web
               <>
-                <Section pt={12 + 8} mt={0}>
+                <Section pt="120 190">
                   <Cover service="web" content={pitch.cover} common={common} />
                 </Section>
 
-                <Section>
+                <Section mt="200 120">
                   <About content={pitch.details} common={common} />
                 </Section>
 
-                <Section>
+                <Section mt="200 160">
                   <Projects layout="slider" content={pitch.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
                 </Section>
 
-                <Section>
+                <Section mt="160 120">
                   <Testimonials content={home.testimonials} />
                 </Section>
 
-                <Section>
+                <Section mt="240 160">
                   <WhyUs service={service.slug} content={pitch.whyUs} pitch />
                 </Section>
 
-                <Section>
+                <Section mt="240 160">
                   <ContentManager content={pitch.contentManager} />
                 </Section>
 
-                <Section mb={52}>
+                <Section mt="240 160">
                   <Methodology content={pitch.method} pitch service={service.slug} />
                 </Section>
 
-                <Section>
+                <Section mt="380 200">
                   <Pricing content={pitch.deliverables} />
                 </Section>
 
-                <Section>
+                <Section mt="120 40">
                   <AddOns content={pitch.addons} />
                 </Section>
               </>
             )
           }
-          <Section>
+          <Section mt="160 160" mb="120 120">
             <Contact content={content.pitch.contact} common={common} />
           </Section>
         </main>

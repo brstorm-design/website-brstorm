@@ -83,8 +83,8 @@
   justify-content: center;
   position: relative;
   height: 560px;
-  margin-top: 60px;
-  margin-bottom: 100px;
+  margin-top: 84px;
+  margin-bottom: 50px;
   box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.5);
   transition: transform 200ms ease-out;
   border: 0.75px solid;
@@ -102,7 +102,7 @@
 
   @include mixins.md {
     margin-bottom: 0;
-    margin-top: 8vmin;
+    margin-top: 0;
     padding: 0;
     height: auto;
     text-align: center;
@@ -110,10 +110,6 @@
     box-shadow: none;
     backdrop-filter: none;
     background: none;
-  }
-
-  @include mixins.sm {
-    margin-top: 24vmin;
   }
 
   p {

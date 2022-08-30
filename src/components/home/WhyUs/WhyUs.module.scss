@@ -9,10 +9,6 @@
 
 .section {
   overflow: hidden;
-  
-  @include mixins.lg {
-    margin-top: 150px;
-  }
 }
 
 .title {
