@@ -49,75 +49,30 @@ export default function LandingPage({ content, service }) {
 
       <div className="main" data-scroll-section>
         <main>
-          {
-            service.slug === 'brand' ? (
-              // brand
-              <>
-                <Section mt={0}>
-                  <PitchCover content={landing.cover} common={common} />
-                </Section>
+          <Section mt={0}>
+            <PitchCover content={landing.cover} common={common} />
+          </Section>
 
-                <Section>
-                  <Details content={landing.details} />
-                </Section>
+          <Section>
+            <Details content={landing.details} />
+          </Section>
 
-                <Section>
-                  <Projects layout="scroll" content={landing.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
-                </Section>
+          <Section>
+            <Projects layout="scroll" content={landing.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
+          </Section>
 
-                <Section mb={52}>
-                  <Methodology content={landing.method} />
-                </Section>
+          <Section mb={52}>
+            <Methodology content={landing.method} />
+          </Section>
 
-                <Section>
-                  <WhyUs content={home.whyUs} />
-                </Section>
+          <Section>
+            <WhyUs content={home.whyUs} />
+          </Section>
 
-                <Section>
-                  <Testimonials content={home.testimonials} />
-                </Section>
-              </>
-            ) : (
-              // web
-              <>
-                <Section pt="120 190">
-                  <Cover service="web" content={pitch.cover} common={common} />
-                </Section>
-
-                <Section mt="200 120">
-                  <About content={pitch.details} common={common} />
-                </Section>
-
-                <Section mt="200 160">
-                  <Projects layout="slider" content={pitch.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
-                </Section>
-
-                <Section mt="160 120">
-                  <Testimonials content={home.testimonials} />
-                </Section>
-
-                <Section mt="240 160">
-                  <WhyUs service={service.slug} content={pitch.whyUs} pitch />
-                </Section>
-
-                <Section mt="240 160">
-                  <ContentManager content={pitch.contentManager} />
-                </Section>
-
-                <Section mt="240 160">
-                  <Methodology content={pitch.method} pitch service={service.slug} />
-                </Section>
-
-                <Section mt="380 200">
-                  <Pricing content={pitch.deliverables} />
-                </Section>
-
-                <Section mt="120 40">
-                  <AddOns content={pitch.addons} />
-                </Section>
-              </>
-            )
-          }
+          <Section>
+            <Testimonials content={home.testimonials} />
+          </Section>
+          
           <Section mt="160 160" mb="120 120">
             <Contact content={content.pitch.contact} common={common} />
           </Section>
@@ -128,16 +83,17 @@ export default function LandingPage({ content, service }) {
   )
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const filteredServices = data.services.filter(service => service.hasLandingPage);
   const paths = filteredServices.map(service => ({
     params: { service: service.slug },
   }))
   return { paths, fallback: false }
-}
+} */
 
 export async function getStaticProps({ params, locale }) {
-  const service = data.services.find(s => s.slug === params.service);
+  /* const service = data.services.find(s => s.slug === params.service); */
+  const service = data.services[0];
 
   switch (locale) {
     case 'pt':
