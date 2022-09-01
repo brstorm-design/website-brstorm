@@ -134,7 +134,7 @@ export default function Header({ variant = 'default', ...props }) {
             showComponent.cta && (
               <Link href="/form/contact">
                 <a rel="noopener noreferrer" className="btn small">
-                  {common.bookMeeting}
+                  {common.startProject}
                 </a>
               </Link>
             )

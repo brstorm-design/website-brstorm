@@ -1,4 +1,16 @@
+let env = process.env.NODE_ENV;
+let extensions;
+
+console.log(env);
+
+env === 'development' ? (
+  extensions = ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts']
+) : (
+  extensions = ['mdx', 'md', 'js', 'tsx', 'ts']
+)
+
 module.exports = {
+  pageExtensions: extensions,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
