@@ -109,7 +109,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
             }
           </form>
           <div>
-            <button className="btn large" type="submit" form="form">{submitText}</button>
+            <button className="btn large form-submit" type="submit" form="form">{submitText}</button>
             <div style={{ display: loading ? 'flex' : 'none' }} className="spinner-border" />
           </div>
         </div>

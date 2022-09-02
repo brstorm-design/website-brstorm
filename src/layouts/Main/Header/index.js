@@ -133,7 +133,7 @@ export default function Header({ variant = 'default', ...props }) {
           { // fazer componente disso:
             showComponent.cta && (
               <Link href="/form/contact">
-                <a rel="noopener noreferrer" className="btn small">
+                <a rel="noopener noreferrer" className="btn small form-button">
                   {common.startProject}
                 </a>
               </Link>

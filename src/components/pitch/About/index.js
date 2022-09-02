@@ -19,7 +19,7 @@ export default function About({ content, common }) {
             </div>
             <div className={styles.callToAction}>
               <Link href="/form/contact">
-                <a className="btn">
+                <a className="btn form-button">
                   {common.startProject}
                 </a>
               </Link>

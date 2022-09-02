@@ -45,7 +45,7 @@ export default function Contact({ content, common }) {
                 <a
                   href="https://api.whatsapp.com/send?phone=5551989836186&text=Quer%20marcar%20uma%20reuni%C3%A3o?%20Solicite%20um%20hor%C3%A1rio%20e%20vamos%20conversar."
                   rel="noopener noreferrer"
-                  className="btn large"
+                  className="btn large whatsapp-contact"
                 >
                   {common.bookMeeting}
                 </a>
