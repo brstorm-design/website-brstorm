@@ -38,7 +38,7 @@ export default function Methodology({ content, pitch, service }) {
         {
           pitch ? (
             <div className={styles.title}>
-              <p className="overline">{content.overline}</p>
+              <p className="overline gradient-bg">{content.overline}</p>
               <h2>{content.title}</h2>
             </div>
           ) : null

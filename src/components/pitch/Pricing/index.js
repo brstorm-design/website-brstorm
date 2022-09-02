@@ -21,7 +21,7 @@ export default function Pricing({ content }) {
     <div className={styles.section}>
       <div className="col-12 col-lg-6 mx-auto">
         <div className={styles.intro}>
-          <p className="overline">{content.overline}</p>
+          <p className="overline gradient-bg">{content.overline}</p>
           <h2>{content.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: content.text }} />
         </div>

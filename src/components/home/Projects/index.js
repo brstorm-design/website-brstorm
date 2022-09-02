@@ -79,7 +79,7 @@ export default function Projects({ layout, content, allProjects, common }) {
         <div className="row">
           <div className="col-12 col-lg-6 mx-auto">
             <div className={styles.intro} ref={introText} id="projects-text">
-              <p className="overline">{content.overline}</p>
+              <p className="overline gradient-bg">{content.overline}</p>
               <h2>{content.title}</h2>
               <p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
             </div>

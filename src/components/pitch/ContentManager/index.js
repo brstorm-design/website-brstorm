@@ -24,7 +24,7 @@ export default function ContentManager({ content }) {
           <div className="col-12 col-lg-4 offset-lg-1">
             <div className={styles.textContent}>
               <div>
-                <p className="overline">{content.overline}</p>
+                <p className="overline gradient-bg">{content.overline}</p>
                 <h2>{content.title}</h2>
                 <p dangerouslySetInnerHTML={{ __html: content.about }} />
               </div>

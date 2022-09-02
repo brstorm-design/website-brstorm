@@ -27,10 +27,6 @@ export default function LandingPage({ content, service }) {
   const pitch = content.pitch[service.jsonName];
   const fullPortfolio = content.fullPortfolio;
 
-  useEffect(() => {
-    document.body.classList.add('page');
-  }, []);
-
   let pageTitle;
   service.slug === 'web' ? (
     pageTitle = 'Criação de Sites Profissionais | Design & Resultado • Br.Storm'
