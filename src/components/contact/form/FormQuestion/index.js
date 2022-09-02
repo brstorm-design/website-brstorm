@@ -74,7 +74,7 @@ export default function FormQuestion({ children, title, helperText, required, na
       onBlur={handleFocus}
     >
       <div className={styles.title}>
-        <h3>{name ? name : ''}{title} {required ? '' : <small style={{ display: display }}>(Opcional)</small>}</h3>
+        <h2>{name ? name : ''}{title} {required ? '' : <small style={{ display: display }}>(Opcional)</small>}</h2>
         <div>
           <small>Selecione alguma das opções abaixo</small>
           <ErrorIcon />

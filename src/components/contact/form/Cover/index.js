@@ -8,7 +8,7 @@ export default function Cover({ content }) {
         <div className="row">
           <div className="col-12">
             <div className={styles.text}>
-              <h4 className="gradient-bg">{content.subTitle}</h4>
+              <p className="overline gradient-bg">{content.subTitle}</p>
               <h1>{content.title}</h1>
               <small>{content.timeToFill}</small>
             </div>
