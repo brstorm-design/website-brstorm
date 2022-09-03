@@ -206,7 +206,45 @@
         }
       },
       {
-        "title": ", qual o nome do seu negócio?",
+        "title": ", por onde posso lhe contatar?",
+        "sectionName": "yourContact",
+        "required": true,
+        "attributes": {
+          "name": "yourContact",
+          "type": "checkbox"
+        },
+        "options": [
+          {
+            "name": "E-mail",
+            "value": "email",
+            "collapsedContent": {
+              "name": "entry.264212494",
+              "type": "email",
+              "placeholder": "Ex.: contact@brstorm.design"
+            }
+          },
+          {
+            "name": "WhatsApp",
+            "value": "phone",
+            "collapsedContent": {
+              "name": "entry.2132000314",
+              "type": "tel",
+              "placeholder": "Ex.: (51) 98888-7777"
+            }
+          },
+          {
+            "name": "Outros",
+            "value": "otherContact",
+            "collapsedContent": {
+              "name": "entry.41791649",
+              "type": "text",
+              "placeholder": "Ex.: Instagram: @brstorm.design"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Qual o nome do seu negócio?",
         "sectionName": "businessName",
         "helperText": "Caso ainda não tenha, deixe em branco.",
         "attributes": {
@@ -308,44 +346,6 @@
             "name": "Estratégia",
             "value": "Estratégia",
             "collapsedContent": "Análise de concorrentes e público-alvo, norteadores, posicionamento estratégico e mais."
-          }
-        ]
-      },
-      {
-        "title": "Por onde posso lhe contatar?",
-        "sectionName": "yourContact",
-        "required": true,
-        "attributes": {
-          "name": "yourContact",
-          "type": "checkbox"
-        },
-        "options": [
-          {
-            "name": "E-mail",
-            "value": "email",
-            "collapsedContent": {
-              "name": "entry.264212494",
-              "type": "email",
-              "placeholder": "Ex.: contact@brstorm.design"
-            }
-          },
-          {
-            "name": "WhatsApp",
-            "value": "phone",
-            "collapsedContent": {
-              "name": "entry.2132000314",
-              "type": "tel",
-              "placeholder": "Ex.: (51) 98888-7777"
-            }
-          },
-          {
-            "name": "Outros",
-            "value": "otherContact",
-            "collapsedContent": {
-              "name": "entry.41791649",
-              "type": "text",
-              "placeholder": "Ex.: Instagram: @brstorm.design"
-            }
           }
         ]
       }
