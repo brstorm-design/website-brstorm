@@ -1,5 +1,6 @@
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/colors";
+@use "../../../styles/scss/typography/mixins" as type;
 
 .section {
   height: 100vh;
@@ -26,12 +27,13 @@
     margin: 0;
   }
 
-  h2 {
+  h1 {
+    @include type.heading-extra-large;
     margin-top: 24px;
     margin-bottom: 32px;
   }
 
-  h4 {
+  p {
     margin: 0 auto;
   }
 }

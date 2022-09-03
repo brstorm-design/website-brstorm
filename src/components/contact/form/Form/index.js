@@ -85,8 +85,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
           },
           body: queryString,
         })
-          .then(res => {
-            console.log(res);
+          .then(() => {
             setInfosSent(true);
           })
           .catch(err => {

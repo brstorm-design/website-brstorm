@@ -1,7 +1,7 @@
 let env = process.env.NODE_ENV;
 let extensions;
 
-console.log(env);
+console.log('Current environment set to', env);
 
 env === 'development' ? (
   extensions = ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts']

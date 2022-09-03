@@ -20,8 +20,8 @@ export default function Success({ content }) {
         <div className="row">
           <div className="col-12">
             <div className={styles.content}>
-              <h4 className="gradient-bg">{content.title.thanks}</h4>
-              <h2>{content.title.contactYou}</h2>
+              <p className="overline gradient-bg">{content.title.thanks}</p>
+              <h1>{content.title.contactYou}</h1>
               <p>{content.title.socialText}</p>
             </div>
           </div>
