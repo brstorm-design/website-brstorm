@@ -101,11 +101,11 @@ export default function Header({ variant = 'default', ...props }) {
     <header ref={fixedHeader} className={styles.header} id="header">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
-          <Link href="/" className={styles.logo}>
+          {/* <Link href="/" className={styles.logo}> */}
             <a style={{ flex: variant === 'default' ? 'initial' : '1' }}>
               <Logo />
             </a>
-          </Link>
+          {/* </Link> */}
 
           { // fazer componente disso:
             showComponent.mainNav && (
