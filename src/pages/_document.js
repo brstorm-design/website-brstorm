@@ -13,7 +13,7 @@ class MyDocument extends Document {
           {
             isDev ? null : (
               <>
-                <GoogleAnalytics />
+                {/* <GoogleAnalytics /> */}
                 <GoogleTagManager />
               </>
             )
