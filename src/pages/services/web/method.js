@@ -41,8 +41,6 @@ export default function LandingPage({ content, service }) {
       </Head>
       <Header content={landing.header} common={content.common} />
 
-      <WhatsAppFixed />
-
       <div className="main" data-scroll-section>
         <main>
           <Section pt="120 190">

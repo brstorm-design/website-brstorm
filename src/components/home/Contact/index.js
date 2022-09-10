@@ -42,13 +42,11 @@ export default function Contact({ content, common }) {
                 <p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
               </div>
               <div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5551989836186&text=Quer%20marcar%20uma%20reuni%C3%A3o?%20Solicite%20um%20hor%C3%A1rio%20e%20vamos%20conversar."
-                  rel="noopener noreferrer"
-                  className="btn large whatsapp-contact"
-                >
-                  {common.bookMeeting}
-                </a>
+                <Link href="/form/contact">
+                  <a className="btn large">
+                    {common.bookMeeting}
+                  </a>
+                </Link>
                 <small dangerouslySetInnerHTML={{ __html: content.availableHours }} />
               </div>
             </div>
