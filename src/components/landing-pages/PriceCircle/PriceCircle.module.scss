@@ -1,0 +1,106 @@
+@use "../../../styles/scss/colors";
+@use "../../../styles/scss/mixins";
+
+.circle {
+  width: 100%;
+
+  :global {
+    #ActiveLines {
+      & > line {
+        transition: stroke-dashoffset 2s ease-in;
+      }
+    }
+
+    .milestone {
+      fill: colors.$gray-30;
+      transition: fill 350ms ease, opacity 350ms ease;
+      * {
+        transition: inherit;
+      }
+    }
+    .card-professional {
+      transition: fill 350ms ease;
+      * {
+        transition: inherit;
+      }
+    }
+    .active {
+      //milestones:
+      .outerCircle {
+        fill: colors.$white;
+        opacity: 0.5;
+      }
+      .innerCircle {
+        fill: colors.$white;
+      }
+      .plus {
+        fill: colors.$black;
+      }
+      text {
+        fill: colors.$white;
+      }
+
+      // professionals:
+      .cardOuter {
+        stroke: colors.$gray-20;
+      }
+      .textContent {
+        fill: colors.$white;
+      }
+      .value {
+        fill: colors.$black;
+      }
+      .currency {
+        fill: colors.$gray-30;
+      }
+      .caption {
+        fill: colors.$gray-30;
+      }
+      .profession {
+        fill: colors.$black;
+      }
+    }
+    .circleFill {
+      /* animation: circle-fill_1 375ms ease-in-out both; */
+      animation-duration: calc(4s / 8);
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+    }
+
+    .startCircle {
+      animation: pin-pulse 2s infinite;
+    }
+
+    .othersPrice,
+    .brPrice {
+      transition: all 150ms ease;
+      opacity: 0;
+    }
+  }
+}
+
+// -=-=-=-
+
+.circleMobile {
+  width: 100%;
+  padding: 0 24px;
+
+  :global {
+    .active {
+      path {
+        fill: colors.$white;
+      }
+      text {
+        fill: colors.$black;
+      }
+      .caption {
+        fill: colors.$gray-30;
+      }
+    }
+  }
+}
+
+/* .ellipse {
+  width: 100%;
+  fill: rgba(32, 178, 171, 0.192);
+} */

@@ -1,0 +1,253 @@
+<svg width="264" height="956" viewBox="0 0 264 956" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <foreignObject x="110.68" y="286.576" width="200" height="10">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sentinel" />
+  </foreignObject>
+
+  <foreignObject x="121.281" y="161.576" width="200" height="10">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sentinel" />
+  </foreignObject>
+
+  <foreignObject x="119.305" y="411.576" width="200" height="10">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sentinel" />
+  </foreignObject>
+
+  <foreignObject x="109.68" y="536.576" width="200" height="10">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="sentinel" />
+  </foreignObject>
+
+  <g id="PriceCircleMobile">
+    <g id="R$ 19.320,00">
+      <text fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0em">
+        <tspan x="56.7891" y="681.545"></tspan>
+      </text>
+      <text fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="bold" letter-spacing="0em">
+        <tspan class="currency" x="25.3125" y="681.545">R$</tspan>
+      </text>
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" font-weight="bold" letter-spacing="0em">
+        <tspan x="64.1953" y="681.545">19.320</tspan>
+      </text>
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="bold" letter-spacing="0em">
+        <tspan x="199.078" y="681.545">,00</tspan>
+      </text>
+    </g>
+    <text id="Este &#195;&#169; o custo para contratar uma&#226;&#128;&#168;equipe de profissionais especialistas." fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em">
+      <tspan x="19.9863" y="719.091">Este &#xe9; o custo para contratar uma&#10;</tspan>
+      <tspan x="9.00098" y="741.091">equipe de profissionais especialistas.</tspan>
+    </text>
+    <g id="Na Br.Storm desenvolvemos seu projeto completo a partir de:">
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em">
+        <tspan x="46.5371" y="779.091">Br.Storm</tspan>
+      </text>
+      <text fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em">
+        <tspan x="24.1699" y="779.091">Na </tspan>
+        <tspan x="105.436" y="779.091"> desenvolvemos seu&#10;</tspan>
+        <tspan x="37.7734" y="801.091">projeto completo a partir de:</tspan>
+      </text>
+    </g>
+    <g id="R$ 997,00">
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="64" font-weight="600" letter-spacing="-0.1em">
+        <tspan x="155.522" y="884.773">7</tspan>
+      </text>
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="64" font-weight="600" letter-spacing="0em">
+        <tspan x="72.5219" y="884.773">99</tspan>
+      </text>
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="600" letter-spacing="0em">
+        <tspan x="196.122" y="884.773">00</tspan>
+      </text>
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="600" letter-spacing="0em">
+        <tspan x="186.684" y="884.773">,</tspan>
+      </text>
+      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="600" letter-spacing="-0.1em">
+        <tspan x="67.7844" y="884.773"></tspan>
+      </text>
+      <text fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="600" letter-spacing="0em">
+        <tspan class="currency" x="26.1906" y="884.773">R$</tspan>
+      </text>
+    </g>
+    <g id="TimeLine">
+      <line id="Line 4" x1="130.626" y1="598.624" x2="131.717" y2="24.3745" stroke="#525252" stroke-width="0.75" stroke-linecap="square" stroke-dasharray="4 4" />
+      <circle id="Ellipse 36" cx="132" cy="24" r="24" fill="white" />
+      <text id="$" fill="#010101" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0em">
+        <tspan x="124.207" y="33.2273">$</tspan>
+      </text>
+      <g id="Card Profissional" class="card">
+        <g id="Image Placehoder">
+          <g clip-path="url(#clip0_4252_1322)">
+            <mask id="path-8-inside-1_4252_1322" fill="white">
+              <path d="M1 223C1 221.895 1.89543 221 3 221H86V306H3C1.89543 306 1 305.105 1 304V223Z" />
+            </mask>
+            <path d="M1 223C1 221.895 1.89543 221 3 221H86V306H3C1.89543 306 1 305.105 1 304V223Z" fill="#141414" />
+            <rect id="telegram-cloud-photo-size-4-6046472259893311741-y 1" x="1" y="204" width="85" height="119" fill="url(#pattern0)" />
+          </g>
+          <path d="M0.5 223C0.5 221.619 1.61929 220.5 3 220.5H86V221.5H3C2.17157 221.5 1.5 222.172 1.5 223H0.5ZM86 306.5H3C1.61929 306.5 0.5 305.381 0.5 304H1.5C1.5 304.828 2.17157 305.5 3 305.5H86V306.5ZM3 306.5C1.61929 306.5 0.5 305.381 0.5 304V223C0.5 221.619 1.61929 220.5 3 220.5V221.5C2.17157 221.5 1.5 222.172 1.5 223V304C1.5 304.828 2.17157 305.5 3 305.5V306.5ZM86 221V306V221Z" fill="#141414" mask="url(#path-8-inside-1_4252_1322)" />
+        </g>
+        <g id="Rectangle 34">
+          <mask id="path-11-inside-2_4252_1322" fill="white">
+            <path d="M86 221H262C263.105 221 264 221.895 264 223V304C264 305.105 263.105 306 262 306H86V221Z" />
+          </mask>
+          <path d="M86 221H262C263.105 221 264 221.895 264 223V304C264 305.105 263.105 306 262 306H86V221Z" fill="#0A0A0A" />
+          <path d="M86 220.5H262C263.381 220.5 264.5 221.619 264.5 223H263.5C263.5 222.172 262.828 221.5 262 221.5H86V220.5ZM264.5 304C264.5 305.381 263.381 306.5 262 306.5H86V305.5H262C262.828 305.5 263.5 304.828 263.5 304H264.5ZM86 306V221V306ZM262 220.5C263.381 220.5 264.5 221.619 264.5 223V304C264.5 305.381 263.381 306.5 262 306.5V305.5C262.828 305.5 263.5 304.828 263.5 304V223C263.5 222.172 262.828 221.5 262 221.5V220.5Z" fill="#141414" mask="url(#path-11-inside-2_4252_1322)" />
+        </g>
+        <g id="Remunera&#195;&#167;&#195;&#163;o de um Dev back-end">
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" font-weight="600" letter-spacing="0em">
+            <tspan class="profession" x="110.68" y="286.576">Dev back-end</tspan>
+          </text>
+          <text class="caption" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em">
+            <tspan x="110.68" y="272.576">Remunera&#xe7;&#xe3;o de um&#10;</tspan>
+          </text>
+        </g>
+        <text id="R$ 5.399" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em">
+          <tspan class="currency" x="110.68" y="255.273">R$ 5.399</tspan>
+        </text>
+      </g>
+      <g id="Card Profissional_2" class="card">
+        <g id="Rectangle 34_2">
+          <mask id="path-15-inside-3_4252_1322" fill="white">
+            <path d="M85 96H261C262.105 96 263 96.8954 263 98V179C263 180.105 262.105 181 261 181H85V96Z" />
+          </mask>
+          <path d="M85 96H261C262.105 96 263 96.8954 263 98V179C263 180.105 262.105 181 261 181H85V96Z" fill="#0A0A0A" />
+          <path d="M85 95.5H261C262.381 95.5 263.5 96.6193 263.5 98H262.5C262.5 97.1716 261.828 96.5 261 96.5H85V95.5ZM263.5 179C263.5 180.381 262.381 181.5 261 181.5H85V180.5H261C261.828 180.5 262.5 179.828 262.5 179H263.5ZM85 181V96V181ZM261 95.5C262.381 95.5 263.5 96.6193 263.5 98V179C263.5 180.381 262.381 181.5 261 181.5V180.5C261.828 180.5 262.5 179.828 262.5 179V98C262.5 97.1716 261.828 96.5 261 96.5V95.5Z" fill="#141414" mask="url(#path-15-inside-3_4252_1322)" />
+        </g>
+        <g id="Remunera&#195;&#167;&#195;&#163;o de um UI Designer">
+          <text fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em">
+            <tspan x="121.281" y="161.576"></tspan>
+          </text>
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" font-weight="600" letter-spacing="0em">
+            <tspan class="profession" x="123.531" y="161.576">UI Designer</tspan>
+          </text>
+          <text class="caption" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em">
+            <tspan x="109.68" y="147.576">Remunera&#xe7;&#xe3;o de&#10;</tspan>
+            <tspan x="109.68" y="161.576">um</tspan>
+          </text>
+        </g>
+        <text id="R$ 4.982" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em">
+          <tspan class="currency" x="109.68" y="130.273">R$ 4.982</tspan>
+        </text>
+        <g id="Image Placehoder_2">
+          <g clip-path="url(#clip1_4252_1322)">
+            <mask id="path-19-inside-4_4252_1322" fill="white">
+              <path d="M0 98C0 96.8954 0.895431 96 2 96H85V181H2C0.89543 181 0 180.105 0 179V98Z" />
+            </mask>
+            <path d="M0 98C0 96.8954 0.895431 96 2 96H85V181H2C0.89543 181 0 180.105 0 179V98Z" fill="#141414" />
+            <rect id="photo_2022-05-12 17.31 1" x="-2.5" y="93.5" width="90" height="90" fill="url(#pattern1)" />
+          </g>
+          <path d="M-0.5 98C-0.5 96.6193 0.619288 95.5 2 95.5H85V96.5H2C1.17157 96.5 0.5 97.1716 0.5 98H-0.5ZM85 181.5H2C0.619288 181.5 -0.5 180.381 -0.5 179H0.5C0.5 179.828 1.17157 180.5 2 180.5H85V181.5ZM2 181.5C0.619288 181.5 -0.5 180.381 -0.5 179V98C-0.5 96.6193 0.619288 95.5 2 95.5V96.5C1.17157 96.5 0.5 97.1716 0.5 98V179C0.5 179.828 1.17157 180.5 2 180.5V181.5ZM85 96V181V96Z" fill="#141414" mask="url(#path-19-inside-4_4252_1322)" />
+        </g>
+      </g>
+      <g id="Card Profissional_3" class="card">
+        <g id="Rectangle 34_3">
+          <mask id="path-22-inside-5_4252_1322" fill="white">
+            <path d="M85 346H261C262.105 346 263 346.895 263 348V429C263 430.105 262.105 431 261 431H85V346Z" />
+          </mask>
+          <path d="M85 346H261C262.105 346 263 346.895 263 348V429C263 430.105 262.105 431 261 431H85V346Z" fill="#0A0A0A" />
+          <path d="M85 345.5H261C262.381 345.5 263.5 346.619 263.5 348H262.5C262.5 347.172 261.828 346.5 261 346.5H85V345.5ZM263.5 429C263.5 430.381 262.381 431.5 261 431.5H85V430.5H261C261.828 430.5 262.5 429.828 262.5 429H263.5ZM85 431V346V431ZM261 345.5C262.381 345.5 263.5 346.619 263.5 348V429C263.5 430.381 262.381 431.5 261 431.5V430.5C261.828 430.5 262.5 429.828 262.5 429V348C262.5 347.172 261.828 346.5 261 346.5V345.5Z" fill="#141414" mask="url(#path-22-inside-5_4252_1322)" />
+        </g>
+        <g id="Remunera&#195;&#167;&#195;&#163;o de um DevOps">
+          <text fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em">
+            <tspan x="119.305" y="411.576"></tspan>
+            <tspan x="133.156" y="411.576"></tspan>
+          </text>
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" font-weight="600" letter-spacing="0em">
+            <tspan class="profession" x="135.406" y="411.576">DevOps</tspan>
+          </text>
+          <text class="caption" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em">
+            <tspan x="109.68" y="397.576">Remunera&#xe7;&#xe3;o&#10;</tspan>
+            <tspan x="109.68" y="411.576">de</tspan>
+            <tspan x="121.555" y="411.576">um</tspan>
+          </text>
+        </g>
+        <text id="R$ 4.490" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em">
+          <tspan class="currency" x="109.68" y="380.273">R$ 4.490</tspan>
+        </text>
+        <g id="Image Placehoder_3">
+          <g clip-path="url(#clip2_4252_1322)">
+            <mask id="path-26-inside-6_4252_1322" fill="white">
+              <path d="M0 348C0 346.895 0.895431 346 2 346H85V431H2C0.89543 431 0 430.105 0 429V348Z" />
+            </mask>
+            <path d="M0 348C0 346.895 0.895431 346 2 346H85V431H2C0.89543 431 0 430.105 0 429V348Z" fill="#141414" />
+            <rect id="Daniel 1" x="-2.5" y="343.5" width="90" height="90" fill="url(#pattern2)" />
+          </g>
+          <path d="M-0.5 348C-0.5 346.619 0.619288 345.5 2 345.5H85V346.5H2C1.17157 346.5 0.5 347.172 0.5 348H-0.5ZM85 431.5H2C0.619288 431.5 -0.5 430.381 -0.5 429H0.5C0.5 429.828 1.17157 430.5 2 430.5H85V431.5ZM2 431.5C0.619288 431.5 -0.5 430.381 -0.5 429V348C-0.5 346.619 0.619288 345.5 2 345.5V346.5C1.17157 346.5 0.5 347.172 0.5 348V429C0.5 429.828 1.17157 430.5 2 430.5V431.5ZM85 346V431V346Z" fill="#141414" mask="url(#path-26-inside-6_4252_1322)" />
+        </g>
+      </g>
+      <g id="Card Profissional_4" class="card">
+        <g id="Rectangle 34_4">
+          <mask id="path-29-inside-7_4252_1322" fill="white">
+            <path d="M85 471H261C262.105 471 263 471.895 263 473V554C263 555.105 262.105 556 261 556H85V471Z" />
+          </mask>
+          <path d="M85 471H261C262.105 471 263 471.895 263 473V554C263 555.105 262.105 556 261 556H85V471Z" fill="#0A0A0A" />
+          <path d="M85 470.5H261C262.381 470.5 263.5 471.619 263.5 473H262.5C262.5 472.172 261.828 471.5 261 471.5H85V470.5ZM263.5 554C263.5 555.381 262.381 556.5 261 556.5H85V555.5H261C261.828 555.5 262.5 554.828 262.5 554H263.5ZM85 556V471V556ZM261 470.5C262.381 470.5 263.5 471.619 263.5 473V554C263.5 555.381 262.381 556.5 261 556.5V555.5C261.828 555.5 262.5 554.828 262.5 554V473C262.5 472.172 261.828 471.5 261 471.5V470.5Z" fill="#141414" mask="url(#path-29-inside-7_4252_1322)" />
+        </g>
+        <g id="Remunera&#195;&#167;&#195;&#163;o de um Dev Front-end">
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" font-weight="600" letter-spacing="0em">
+            <tspan class="profession" x="109.68" y="536.576">Dev Front-end</tspan>
+          </text>
+          <text class="caption" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="8" letter-spacing="0em">
+            <tspan x="109.68" y="522.576">Remunera&#xe7;&#xe3;o de um&#10;</tspan>
+          </text>
+        </g>
+        <text id="R$ 4.449" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em">
+          <tspan class="currency" x="109.68" y="505.273">R$ 4.449</tspan>
+        </text>
+        <g id="Image Placehoder_4">
+          <g clip-path="url(#clip3_4252_1322)">
+            <mask id="path-33-inside-8_4252_1322" fill="white">
+              <path d="M0 473C0 471.895 0.895431 471 2 471H85V556H2C0.89543 556 0 555.105 0 554V473Z" />
+            </mask>
+            <path d="M0 473C0 471.895 0.895431 471 2 471H85V556H2C0.89543 556 0 555.105 0 554V473Z" fill="#141414" />
+            <rect id="Luan 1" x="-14.5" y="450" width="114" height="127" fill="url(#pattern3)" />
+          </g>
+          <path d="M-0.5 473C-0.5 471.619 0.619288 470.5 2 470.5H85V471.5H2C1.17157 471.5 0.5 472.172 0.5 473H-0.5ZM85 556.5H2C0.619288 556.5 -0.5 555.381 -0.5 554H0.5C0.5 554.828 1.17157 555.5 2 555.5H85V556.5ZM2 556.5C0.619288 556.5 -0.5 555.381 -0.5 554V473C-0.5 471.619 0.619288 470.5 2 470.5V471.5C1.17157 471.5 0.5 472.172 0.5 473V554C0.5 554.828 1.17157 555.5 2 555.5V556.5ZM85 471V556V471Z" fill="#141414" mask="url(#path-33-inside-8_4252_1322)" />
+        </g>
+      </g>
+      <g id="Quanto Custa">
+        <rect id="Rectangle 36" x="78" y="596" width="109" height="27" rx="2" fill="#101010" />
+        <text id="Quanto Custa_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em">
+          <tspan x="92" y="613.864">Quanto Custa</tspan>
+        </text>
+      </g>
+    </g>
+    <g id="Button" style="cursor:pointer;">
+      <text id="Solicite uma Proposta" fill="white" stroke="white" stroke-width="0.515949" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0.02em">
+        <tspan x="44" y="941.091">Solicite uma Proposta</tspan>
+      </text>
+      <g id="Arrow">
+        <g id="Icon">
+          <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M206 936C206 935.801 206.079 935.61 206.22 935.47C206.36 935.329 206.551 935.25 206.75 935.25H215.438L212.218 932.032C212.077 931.891 211.998 931.7 211.998 931.501C211.998 931.302 212.077 931.111 212.218 930.97C212.359 930.829 212.55 930.75 212.749 930.75C212.948 930.75 213.139 930.829 213.28 930.97L217.779 935.469C217.849 935.539 217.904 935.622 217.942 935.713C217.98 935.804 217.999 935.901 217.999 936C217.999 936.099 217.98 936.196 217.942 936.287C217.904 936.378 217.849 936.461 217.779 936.531L213.28 941.03C213.139 941.171 212.948 941.25 212.749 941.25C212.55 941.25 212.359 941.171 212.218 941.03C212.077 940.889 211.998 940.698 211.998 940.499C211.998 940.3 212.077 940.109 212.218 939.968L215.438 936.75H206.75C206.551 936.75 206.36 936.671 206.22 936.53C206.079 936.39 206 936.199 206 936Z" fill="#CCCCCC" />
+        </g>
+      </g>
+      <path d="M220 955H44V957H220V955Z" fill="#CCCCCC" mask="url(#path-38-inside-9_4252_1322)" />
+    </g>
+  </g>
+  <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_4252_1322" transform="translate(-0.0516475 -0.0822038) scale(0.00127193 0.000909347)" />
+    </pattern>
+    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image1_4252_1322" transform="scale(0.0015625)" />
+    </pattern>
+    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image2_4252_1322" transform="translate(0 -0.00110619) scale(0.00221239)" />
+    </pattern>
+    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image3_4252_1322" transform="translate(-0.00438596 0.104438) scale(0.000412882 0.000371387)" />
+    </pattern>
+    <clipPath id="clip0_4252_1322">
+      <path d="M1 223C1 221.895 1.89543 221 3 221H86V306H3C1.89543 306 1 305.105 1 304V223Z" fill="white" />
+    </clipPath>
+    <clipPath id="clip1_4252_1322">
+      <path d="M0 98C0 96.8954 0.895431 96 2 96H85V181H2C0.89543 181 0 180.105 0 179V98Z" fill="white" />
+    </clipPath>
+    <clipPath id="clip2_4252_1322">
+      <path d="M0 348C0 346.895 0.895431 346 2 346H85V431H2C0.89543 431 0 430.105 0 429V348Z" fill="white" />
+    </clipPath>
+    <clipPath id="clip3_4252_1322">
+      <path d="M0 473C0 471.895 0.895431 471 2 471H85V556H2C0.89543 556 0 555.105 0 554V473Z" fill="white" />
+    </clipPath>
+    <image id="image0_4252_1322" data-name="telegram-cloud-photo-size-4-6046472259893311741-y(edit).jpg" width="853" height="1280" href="/images/landing-pages/web/b/backend.png" />
+    <image id="image1_4252_1322" data-name="photo_2022-05-12 17.31.jpg" width="640" height="640" href="/images/landing-pages/web/b/uidesigner.png" />
+    <image id="image2_4252_1322" data-name="Daniel.png" width="452" height="453" href="/images/landing-pages/web/b/devops.png" />
+    <image id="image3_4252_1322" data-name="Luan.jpg" width="2480" height="2030" href="/images/landing-pages/web/b/frontend.png" />
+  </defs>
+</svg>

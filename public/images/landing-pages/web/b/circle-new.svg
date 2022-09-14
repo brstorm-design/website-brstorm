@@ -1,0 +1,426 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1016" height="1476" viewBox="0 0 1016 1476" fill="none">
+  <style id="keyframes">
+    @keyframes pin-pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      }
+    }
+    @keyframes circle-fill_1 {
+      from {
+        stroke-dashoffset: 1;
+      }
+      to {
+        stroke-dashoffset: 0.875;
+      }
+    }
+    @keyframes circle-fill_2 {
+      from {
+        stroke-dashoffset: 0.875;
+      }
+      to {
+        stroke-dashoffset: 0.75;
+      }
+    }
+    @keyframes circle-fill_3 {
+      from {
+        stroke-dashoffset: 0.75;
+      }
+      to {
+        stroke-dashoffset: 0.625;
+      }
+    }
+    @keyframes circle-fill_4 {
+      from {
+        stroke-dashoffset: 0.625;
+      }
+      to {
+        stroke-dashoffset: 0.5;
+      }
+    }
+    @keyframes circle-fill_5 {
+      from {
+        stroke-dashoffset: 0.5;
+      }
+      to {
+        stroke-dashoffset: 0.375;
+      }
+    }
+    @keyframes circle-fill_6 {
+      from {
+        stroke-dashoffset: 0.375;
+      }
+      to {
+        stroke-dashoffset: 0.25;
+      }
+    }
+    @keyframes circle-fill_7 {
+      from {
+        stroke-dashoffset: 0.25;
+      }
+      to {
+        stroke-dashoffset: 0.125;
+      }
+    }
+    @keyframes circle-fill_8 {
+      from {
+        stroke-dashoffset: 0.125;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <style>
+    .startCircle {
+      animation: pin-pulse 2s infinite;
+    }
+    <!-- #CostCircle foreignObject {
+      position: absolute;
+      width: 1px;
+      height: 463px;
+      background: white;
+      y: 25;
+      x: 506;
+    }
+    #CostCircle foreignObject > div {
+      width: 100%;
+      height: 100%;
+    } -->
+    .is-inview #ActiveLines > line {
+      stroke-dashoffset: 0;
+    }
+    #Button {
+      cursor: pointer;
+    }
+  </style>
+  <g id="CostCircle">
+    <g id="Content">
+      <g id="Timeline">
+        <g id="DefaultLines">
+          <circle id="Ellipse" cx="509" cy="915" r="426" stroke="#3D3D3D" stroke-width="0.75" stroke-linecap="square" stroke-dasharray="4 4" />
+          <line id="Line" x1="506.625" y1="488.625" x2="506.625" y2="25.375" stroke="#3D3D3D" stroke-width="0.75" stroke-linecap="square" stroke-dasharray="4 4" />
+        </g>
+        <g id="ActiveLines">
+          <path xmlns="http://www.w3.org/2000/svg" id="Ellipse_2" d="M509 489C672.795 489 815 581.442 886.287 717" stroke="transparent" stroke-linecap="square" />
+          <circle class="circleFill" id="EllipseFill" cx="509" cy="915" r="426" stroke="white" stroke-width="1" stroke-linecap="square" stroke-dasharray="1" stroke-dashoffset="1" pathLength="1" style="transform-box: fill-box; transform-origin: center; transform: rotate(-90deg);" />
+          <line class="startLineFill" xmlns="http://www.w3.org/2000/svg" id="Line_2" x1="506.5" y2="488.5" x2="506.5" y1="25.5" stroke="white" stroke-linecap="square" stroke-dasharray="1" stroke-dashoffset="1" pathLength="1" />
+        </g>
+        <g id="Start">
+          <!-- <foreignObject>
+            <div id="lineFill" xmlns="http://www.w3.org/1999/xhtml" />
+          </foreignObject> -->
+          <circle id="Ellipse 35" opacity="0.2" cx="506" cy="28" r="28" fill="white" />
+          <circle class="startCircle" id="Ellipse 36" cx="506" cy="28" r="20" fill="white" />
+          <text id="$" fill="#010101" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em">
+            <tspan x="500.208" y="32.5455">$</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Card Profissional" class="card-professional timeline-item-8">
+        <g id="Photo">
+          <g clip-path="url(#clip0_3832_1737)">
+            <rect id="telegram-cloud-photo-size-1-4906951401142332166-y 1" x="348" y="334" width="331" height="499" fill="url(#pattern0)" />
+            <rect id="photo_2022-05-12 17.31 1" x="428" y="364" width="161" height="161" fill="url(#pattern1)" />
+            <rect id="Gradient" x="589" y="521" width="160" height="40" transform="rotate(-180 589 521)" fill="url(#paint0_linear_3832_1737)" fill-opacity="0.8" />
+          </g>
+        </g>
+        <g id="Content_2">
+          <path d="M429 521H589V623C589 624.105 588.105 625 587 625H431C429.895 625 429 624.105 429 623V521Z" fill="#0A0A0A" class="textContent" />
+          <g id="R$ 4.982">
+            <text fill="#010101" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="600" letter-spacing="0em">
+              <tspan x="468.328" y="557.545"></tspan>
+            </text>
+            <text class="value" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em">
+              <tspan x="471.305" y="557.545">4.982</tspan>
+            </text>
+            <text class="currency" fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+              <tspan x="453" y="557.545">R$</tspan>
+            </text>
+          </g>
+          <g id="RemuneraÃ§Ã£o de â¨um UI Designer">
+            <text fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+              <tspan x="548.66" y="586.364"></tspan>
+            </text>
+            <text class="caption" fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+              <tspan x="453" y="586.364">Remuneração de </tspan>
+              <tspan x="453" y="604.364">um </tspan>
+            </text>
+            <text class="profession" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="473.777" y="604.364">UI Designer</tspan>
+            </text>
+          </g>
+        </g>
+        <rect x="428.5" y="368.5" width="161" height="257" rx="2.5" stroke="#141414" class="cardOuter" />
+      </g>
+      <g id="Card Profissional_2" class="card-professional timeline-item-2">
+        <g id="Photo_2">
+          <g clip-path="url(#clip1_3832_1737)">
+            <rect id="telegram-cloud-photo-size-4-6046472259893311741-y 1" x="855" y="746" width="160" height="239" fill="url(#pattern2)" />
+            <rect id="Gradient_2" x="1015" y="946" width="160" height="40" transform="rotate(-180 1015 946)" fill="url(#paint1_linear_3832_1737)" fill-opacity="0.8" />
+          </g>
+        </g>
+        <g id="Content_3">
+          <path d="M855 946H1015V1048C1015 1049.1 1014.1 1050 1013 1050H857C855.895 1050 855 1049.1 855 1048V946Z" fill="#0A0A0A" class="textContent" />
+          <g id="R$ 5.399">
+            <text class="value" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em">
+              <tspan x="897.633" y="982.545">5.399</tspan>
+            </text>
+            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="894.457" y="982.545"></tspan>
+            </text>
+            <text class="currency" fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="879" y="982.545">R$</tspan>
+            </text>
+          </g>
+          <g id="RemuneraÃ§Ã£o de umâ¨Dev Back-end">
+            <text class="caption" fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+              <tspan x="879" y="1011.36">Remuneração de um
+</tspan>
+            </text>
+            <text class="profession" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="879" y="1029.36">Dev Back-end</tspan>
+            </text>
+          </g>
+        </g>
+        <rect x="854.5" y="793.5" width="161" height="257" rx="2.5" stroke="#141414" class="cardOuter" />
+      </g>
+      <g id="Card Profissional_3" class="card-professional timeline-item-4">
+        <g id="Photo_3">
+          <g clip-path="url(#clip2_3832_1737)">
+            <rect id="Gradient_3" x="587" y="1371" width="160" height="40" transform="rotate(-180 587 1371)" fill="url(#paint2_linear_3832_1737)" fill-opacity="0.8" />
+            <rect id="Daniel 1" x="422" y="1215" width="168" height="168" fill="url(#pattern3)" />
+          </g>
+        </g>
+        <g id="Content_4">
+          <path d="M427 1371H587V1473C587 1474.1 586.105 1475 585 1475H429C427.895 1475 427 1474.1 427 1473V1371Z" fill="#0A0A0A" class="textContent" />
+          <g id="R$ 4.490">
+            <text class="value" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em">
+              <tspan x="469.633" y="1407.55">4.490</tspan>
+            </text>
+            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="466.457" y="1407.55"></tspan>
+            </text>
+            <text fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan class="currency" x="451" y="1407.55">R$</tspan>
+            </text>
+          </g>
+          <g id="RemuneraÃ§Ã£oâ¨de um DevOps">
+            <text class="caption" fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+              <tspan x="451" y="1436.36">Remuneração
+</tspan>
+              <tspan x="451" y="1454.36">de um </tspan>
+            </text>
+            <text class="profession" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="489.59" y="1454.36">DevOps</tspan>
+            </text>
+          </g>
+        </g>
+        <rect x="426.5" y="1218.5" width="161" height="257" rx="2.5" stroke="#141414" class="cardOuter" />
+      </g>
+      <g id="Card Profissional_4" class="card-professional timeline-item-6">
+        <g id="Photo_4">
+          <g clip-path="url(#clip3_3832_1737)">
+            <rect id="Luan 1" x="-30" y="794" width="229" height="229" fill="url(#pattern4)" />
+            <rect id="Gradient_4" x="161" y="946" width="160" height="40" transform="rotate(-180 161 946)" fill="url(#paint3_linear_3832_1737)" fill-opacity="0.8" />
+          </g>
+        </g>
+        <g id="Content_5">
+          <path d="M1 946H161V1048C161 1049.1 160.105 1050 159 1050H3C1.89543 1050 1 1049.1 1 1048V946Z" fill="#0A0A0A" class="textContent" />
+          <g id="R$ 4.449">
+            <text class="value" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em">
+              <tspan x="43.6328" y="982.545">4.449</tspan>
+            </text>
+            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="40.457" y="982.545"></tspan>
+            </text>
+            <text fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan class="currency" x="25" y="982.545">R$</tspan>
+            </text>
+          </g>
+          <g id="RemuneraÃ§Ã£o de umâ¨Dev Front-end">
+            <text class="caption" fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+              <tspan x="25" y="1011.36">Remuneração de um</tspan>
+            </text>
+            <text class="profession" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+              <tspan x="25" y="1029.36">Dev Front-end</tspan>
+            </text>
+          </g>
+        </g>
+        <rect x="0.5" y="793.5" width="161" height="257" rx="2.5" stroke="#141414" class="cardOuter" />
+      </g>
+      <g id="Milestone / Default" class="milestone timeline-item-3">
+        <g id="Dot">
+          <circle class="outerCircle" id="Ellipse 37" opacity="0.5" cx="811" cy="1220" r="20" fill="#292929" />
+          <circle class="innerCircle" id="Ellipse 38" cx="811" cy="1220" r="10" fill="#0A0A0A" />
+          <path class="plus" id="+" d="M810.092 1224H811.908V1220.91H815V1219.09H811.908V1216H810.092V1219.09H807V1220.91H810.092V1224Z" fill="white" />
+        </g>
+        <text id="Funcionalidades e Regras de NegÃ³cio" fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0.01em">
+          <tspan x="847" y="1214.09">Funcionalidades e</tspan>
+          <tspan x="847" y="1236.09">Regras de Negócio</tspan>
+        </text>
+      </g>
+      <g id="Milestone / Default_2" class="milestone timeline-item-5">
+        <text id="Gestão da Infraestrutura, Hospedagem e Domínios" fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0.01em">
+          <tspan x="2.81383" y="1214.09">Gestão da Infraestrutura,</tspan>
+          <tspan x="3.94804" y="1236.09">Hospedagem e Domínios</tspan>
+        </text>
+        <g id="Dot_2">
+          <circle class="outerCircle" id="Ellipse 37_2" opacity="0.5" cx="208" cy="1220" r="20" fill="#292929" />
+          <circle class="innerCircle" id="Ellipse 38_2" cx="208" cy="1220" r="10" fill="#0A0A0A" />
+          <path class="plus" id="+_2" d="M207.092 1224H208.908V1220.91H212V1219.09H208.908V1216H207.092V1219.09H204V1220.91H207.092V1224Z" fill="white" />
+        </g>
+      </g>
+      <g id="Milestone / Default_3" class="milestone timeline-item-7">
+        <text id="Desenvolvimento da Interface e do Visual" fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="13" letter-spacing="0em">
+          <tspan x="46.3066" y="612.727">Desenvolvimento da</tspan>
+          <tspan x="44.834" y="630.727">Interface e do Visual</tspan>
+        </text>
+        <g id="Dot_3">
+          <circle class="outerCircle" id="Ellipse 37_3" opacity="0.5" cx="207" cy="617" r="20" fill="#292929" />
+          <circle class="innerCircle" id="Ellipse 38_3" cx="207" cy="617" r="10" fill="#0A0A0A" />
+          <path class="plus" id="+_3" d="M206.092 621H207.908V617.908H211V616.092H207.908V613H206.092V616.092H203V617.908H206.092V621Z" fill="white" />
+        </g>
+      </g>
+      <g id="Milestone / Active" class="milestone timeline-item-1">
+        <g id="Dot_4">
+          <circle class="outerCircle" id="Ellipse 37_4" opacity="0.5" cx="811" cy="617" r="20" fill="#292929" />
+          <circle class="innerCircle" id="Ellipse 38_4" cx="811" cy="617" r="10" fill="#0A0A0A" />
+          <path class="plus" id="+_4" d="M810.092 621H811.908V617.908H815V616.092H811.908V613H810.092V616.092H807V617.908H810.092V621Z" fill="white" />
+        </g>
+        <text id="Planejamento e Arquitetura do Projeto" fill="#666666" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0.01em">
+          <tspan x="847" y="611.091">Planejamento e</tspan>
+          <tspan x="847" y="633.091">Arquitetura do Projeto</tspan>
+        </text>
+      </g>
+      <g id="Content_6">
+        <g id="Label">
+          <rect x="446.5" y="741" width="123" height="34" rx="2" fill="#101010" />
+          <text id="Quanto Custa" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+            <tspan x="458.5" y="762.364">Quanto Custa</tspan>
+          </text>
+          <g id="Arrow">
+            <g id="Icon">
+              <path id="Arrow=Down" fill-rule="evenodd" clip-rule="evenodd" d="M551.5 753.5C551.649 753.5 551.792 753.559 551.898 753.665C552.003 753.77 552.062 753.913 552.062 754.062V760.578L554.476 758.163C554.529 758.111 554.591 758.07 554.659 758.041C554.727 758.013 554.8 757.998 554.874 757.998C554.948 757.998 555.022 758.013 555.09 758.041C555.158 758.07 555.22 758.111 555.273 758.163C555.325 758.216 555.366 758.278 555.395 758.346C555.423 758.414 555.437 758.488 555.437 758.562C555.437 758.636 555.423 758.709 555.395 758.777C555.366 758.845 555.325 758.907 555.273 758.96L551.898 762.334C551.846 762.387 551.784 762.428 551.716 762.456C551.647 762.485 551.574 762.499 551.5 762.499C551.426 762.499 551.353 762.485 551.284 762.456C551.216 762.428 551.154 762.387 551.102 762.334L547.727 758.96C547.675 758.907 547.634 758.845 547.605 758.777C547.577 758.709 547.562 758.636 547.562 758.562C547.562 758.488 547.577 758.414 547.605 758.346C547.634 758.278 547.675 758.216 547.727 758.163C547.833 758.058 547.976 757.998 548.126 757.998C548.2 757.998 548.273 758.013 548.341 758.041C548.409 758.07 548.471 758.111 548.524 758.163L550.938 760.578V754.062C550.938 753.913 550.997 753.77 551.102 753.665C551.208 753.559 551.351 753.5 551.5 753.5V753.5Z" fill="white" />
+            </g>
+          </g>
+        </g>
+        <g id="R$ 19.320,00" class="othersPrice">
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="500" letter-spacing="0em">
+            <tspan x="572.302" y="825.545">,00</tspan>
+          </text>
+          <text x="442.615" y="825.545" id="others-price" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" font-weight="500" letter-spacing="0em" />
+          <text fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="500" letter-spacing="0em">
+            <tspan x="406.432" y="825.545">R$</tspan>
+          </text>
+          <text fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="500" letter-spacing="-0.1em">
+            <tspan x="437.346" y="825.545"></tspan>
+          </text>
+        </g>
+        <text id="Fonte: SalÃ¡rios 2022 - Glassdoor" fill="#3D3D3D" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
+          <tspan x="415.146" y="852.364">Fonte: Salários 2022 - Glassdoor</tspan>
+        </text>
+        <g id="Label_2">
+          <rect x="388.5" y="881" width="239" height="34" rx="2" fill="#E93CAC" />
+          <text id="Seu Projeto Completo na Br.Storm" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" font-weight="500" letter-spacing="0em">
+            <tspan x="400.5" y="902.364">Seu Projeto Completo na Br.Storm</tspan>
+          </text>
+          <g id="Arrow_2">
+            <g id="Icon_2">
+              <path id="Arrow=Down_2" fill-rule="evenodd" clip-rule="evenodd" d="M609.5 893.5C609.649 893.5 609.792 893.559 609.898 893.665C610.003 893.77 610.062 893.913 610.062 894.062V900.578L612.476 898.163C612.529 898.111 612.591 898.07 612.659 898.041C612.727 898.013 612.8 897.998 612.874 897.998C612.948 897.998 613.022 898.013 613.09 898.041C613.158 898.07 613.22 898.111 613.273 898.163C613.325 898.216 613.366 898.278 613.395 898.346C613.423 898.414 613.437 898.488 613.437 898.562C613.437 898.636 613.423 898.709 613.395 898.777C613.366 898.845 613.325 898.907 613.273 898.96L609.898 902.334C609.846 902.387 609.784 902.428 609.716 902.456C609.647 902.485 609.574 902.499 609.5 902.499C609.426 902.499 609.353 902.485 609.284 902.456C609.216 902.428 609.154 902.387 609.102 902.334L605.727 898.96C605.675 898.907 605.634 898.845 605.605 898.777C605.577 898.709 605.562 898.636 605.562 898.562C605.562 898.488 605.577 898.414 605.605 898.346C605.634 898.278 605.675 898.216 605.727 898.163C605.833 898.058 605.976 897.998 606.126 897.998C606.2 897.998 606.273 898.013 606.341 898.041C606.409 898.07 606.471 898.111 606.524 898.163L608.938 900.578V894.062C608.938 893.913 608.997 893.77 609.102 893.665C609.208 893.559 609.351 893.5 609.5 893.5V893.5Z" fill="white" />
+            </g>
+          </g>
+        </g>
+        <g id="R$ 997,00" class="brPrice">
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" font-weight="500" letter-spacing="0em">
+            <tspan x="590.312" y="1000.59">00</tspan>
+          </text>
+          <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" font-weight="500" letter-spacing="0em">
+            <tspan x="578.789" y="1000.59">,</tspan>
+          </text>
+          <text y="1000.59" x="438.742" id="brstorm-price" fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="80" font-weight="500" letter-spacing="0em" />
+          <!-- <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="80" font-weight="500" letter-spacing="-0.1em">
+            <tspan x="425.57" y="1000.59"></tspan>
+            <tspan x="540.461" y="1000.59">7</tspan>
+          </text> -->
+          <text fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="40" font-weight="500" letter-spacing="0em">
+            <tspan x="374.047" y="1000.59">R$</tspan>
+          </text>
+        </g>
+        <g id="Button">
+          <!-- <foreignObject x="407.5" y="1065.09" width="200" height="34">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <a href="www.google.com">
+                Link
+              </a>
+            </div>
+          </foreignObject> -->
+          <text id="ConheÃ§a Nossos Pacotes" fill="white" stroke="white" stroke-width="0.515949" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0.02em">
+            <tspan x="407.5" y="1065.09">Conheça Nossos Pacotes</tspan>
+          </text>
+          <g id="Arrow_3">
+            <g id="Icon_3">
+              <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M594.5 1060C594.5 1059.8 594.579 1059.61 594.72 1059.47C594.86 1059.33 595.051 1059.25 595.25 1059.25H603.938L600.718 1056.03C600.577 1055.89 600.498 1055.7 600.498 1055.5C600.498 1055.3 600.577 1055.11 600.718 1054.97C600.859 1054.83 601.05 1054.75 601.249 1054.75C601.448 1054.75 601.639 1054.83 601.78 1054.97L606.279 1059.47C606.349 1059.54 606.404 1059.62 606.442 1059.71C606.48 1059.8 606.499 1059.9 606.499 1060C606.499 1060.1 606.48 1060.2 606.442 1060.29C606.404 1060.38 606.349 1060.46 606.279 1060.53L601.78 1065.03C601.639 1065.17 601.448 1065.25 601.249 1065.25C601.05 1065.25 600.859 1065.17 600.718 1065.03C600.577 1064.89 600.498 1064.7 600.498 1064.5C600.498 1064.3 600.577 1064.11 600.718 1063.97L603.938 1060.75H595.25C595.051 1060.75 594.86 1060.67 594.72 1060.53C594.579 1060.39 594.5 1060.2 594.5 1060Z" fill="#E93CAC" />
+            </g>
+          </g>
+          <path d="M608.5 1083H407.5V1085H608.5V1083Z" fill="#CCCCCC" mask="url(#path-62-inside-1_3832_1737)" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0_3832_1737" transform="translate(-0.00232133) scale(0.00117778 0.00078125)" />
+    </pattern>
+    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image1_3832_1737" transform="scale(0.0015625)" />
+    </pattern>
+    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image2_3832_1737" transform="translate(0 -0.00228826) scale(0.00117233 0.000784825)" />
+    </pattern>
+    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image3_3832_1737" transform="translate(0 -0.00110619) scale(0.00221239)" />
+    </pattern>
+    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image4_3832_1737" transform="scale(0.000412882)" />
+    </pattern>
+    <linearGradient id="paint0_linear_3832_1737" x1="669" y1="521" x2="669" y2="561" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A" />
+      <stop offset="1" stop-color="#0A0A0A" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint1_linear_3832_1737" x1="1095" y1="946" x2="1095" y2="986" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A" />
+      <stop offset="1" stop-color="#0A0A0A" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint2_linear_3832_1737" x1="667" y1="1371" x2="667" y2="1411" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A" />
+      <stop offset="1" stop-color="#0A0A0A" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="paint3_linear_3832_1737" x1="241" y1="946" x2="241" y2="986" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A" />
+      <stop offset="1" stop-color="#0A0A0A" stop-opacity="0" />
+    </linearGradient>
+    <clipPath id="clip0_3832_1737">
+      <path d="M429 371C429 369.895 429.895 369 431 369H587C588.105 369 589 369.895 589 371V521H429V371Z" fill="white" />
+    </clipPath>
+    <clipPath id="clip1_3832_1737">
+      <path d="M855 796C855 794.895 855.895 794 857 794H1013C1014.1 794 1015 794.895 1015 796V946H855V796Z" fill="white" />
+    </clipPath>
+    <clipPath id="clip2_3832_1737">
+      <path d="M427 1221C427 1219.9 427.895 1219 429 1219H585C586.105 1219 587 1219.9 587 1221V1371H427V1221Z" fill="white" />
+    </clipPath>
+    <clipPath id="clip3_3832_1737">
+      <path d="M1 796C1 794.895 1.89543 794 3 794H159C160.105 794 161 794.895 161 796V946H1V796Z" fill="white" />
+    </clipPath>
+    <image id="image1_3832_1737" data-name="uidesigner.png" width="640" height="640" href="/images/landing-pages/web/b/uidesigner.png" />
+    <image id="image2_3832_1737" data-name="backend.png" width="85%" height="90%" href="/images/landing-pages/web/b/backend.png" />
+    <image id="image3_3832_1737" data-name="devops.png" width="452" height="453" href="/images/landing-pages/web/b/devops.png" />
+    <image id="image4_3832_1737" data-name="frontend.png" width="230%" height="110%" href="/images/landing-pages/web/b/frontend.png" />
+  </defs>
+</svg>

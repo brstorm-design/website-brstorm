@@ -4,6 +4,8 @@
 @use "../../../styles/scss/typography/mixins" as type;
 
 .section {
+  scroll-margin-top: 120px;
+
   @include mixins.lg {
     :global {
       .col-12:nth-child(2) > div {
@@ -28,7 +30,7 @@
   p:last-child {
     margin-bottom: s.$spacer-72;
     white-space: break-spaces;
-    
+
     @include mixins.sm {
       white-space: normal;
     }

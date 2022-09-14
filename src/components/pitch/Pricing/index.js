@@ -18,7 +18,7 @@ export default function Pricing({ content }) {
   }
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="pricing">
       <div className="col-12 col-lg-6 mx-auto">
         <div className={styles.intro}>
           <p className="overline gradient-bg">{content.overline}</p>
