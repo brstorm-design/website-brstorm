@@ -34,8 +34,8 @@ export default function TextInput({ name, placeholder, required, formValues, set
   function handleKeyDown(e) {
     if (isNested) {
       let label = e.target.closest('label')
-      label?.classList.add('selected');
-      label?.control.checked = true;
+      label.classList.add('selected');
+      label.control.checked = true;
     }
 
     if (e.key === 'Enter') {

@@ -112,6 +112,29 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
     values['entry.41791649']
   ]); // 👆 deps: name field and the 3 contact fields
 
+  useEffect(() => {
+    let { name, email } = router.query;
+    if (!name && !email) return;
+    if (infosSent) return;
+
+    const nameField = document.querySelector('[name="entry.1247986906"]');
+    const emailField = document.querySelector('[name="entry.264212494"]');
+    const nativeTextAreaSetter = Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype, "value").set;
+
+    const inputEvent = new Event("input", { bubbles: true });
+
+    setTimeout(() => {
+      nativeTextAreaSetter.call(nameField, name);
+      nameField.dispatchEvent(inputEvent);
+
+      nativeTextAreaSetter.call(emailField, email);
+      emailField.dispatchEvent(inputEvent);
+
+      document.querySelector('label[for="email"]').click();
+      document.querySelector('[name="entry.1868660285"]').focus();
+    }, 1000);
+  }, [router.query.name, router.query.email]);
+
   return (
     <div className="container">
       <div className="row">

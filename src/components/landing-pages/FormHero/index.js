@@ -4,12 +4,11 @@ import styles from './FormHero.module.scss';
 import Arrow from 'public/images/arrow-forward.svg';
 import Illustration from 'public/images/landing-pages/web/b/web-dev-illust.svg';
 import { useRouter } from 'next/router';
-import { getQueryString } from 'src/utils/form';
 
 export default function FormHero() {
   const initialValues = {
-    'entry.576692421': '', // name
-    'entry.1100959596': '', // email
+    name: '',
+    email: '',
   }
 
   const router = useRouter();
@@ -17,12 +16,9 @@ export default function FormHero() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(e);
+    const { name, email } = values;
 
-    const queryString = getQueryString(values);
-
-    router.push(`/form/contact?${queryString}#yourContact`);
-    /* router.push('/contact/success'); */
+    router.push(`/form/contact?name=${name}&email=${email}`);
   }
 
   return (
