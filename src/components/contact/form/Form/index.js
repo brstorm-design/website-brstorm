@@ -140,7 +140,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
                                 <InputBox key={`opt-${index}`} title={option.name} value={option.value} {...field.attributes}>
                                   {
                                     typeof option.collapsedContent === 'object' ? (
-                                      <TextInput {...option.collapsedContent} formValues={values} setFormValue={setValues} />
+                                      <TextInput {...option.collapsedContent} formValues={values} setFormValue={setValues} baseHeight={56} />
                                     ) : (
                                       option.collapsedContent
                                     )
@@ -151,7 +151,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
                           }
                         </fieldset>
                       ) : (
-                        <TextInput {...field.attributes} formValues={values} setFormValue={setValues} />
+                        <TextInput {...field.attributes} formValues={values} setFormValue={setValues} baseHeight={56} />
                       )
                     }
                   </FormQuestion>

@@ -3,7 +3,7 @@ import styles from './TextInput.module.scss';
 import ErrorIcon from 'public/images/icons/Error.svg';
 import { nextQuestion } from 'src/utils/form';
 
-export default function TextInput({ name, placeholder, required, formValues, setFormValue }) {
+export default function TextInput({ name, placeholder, required, formValues, setFormValue, style, baseHeight }) {
   const inputProps = { name, placeholder, required };
   const [height, setHeight] = useState('auto');
   const [parentHeight, setParentHeight] = useState('auto');
@@ -26,7 +26,7 @@ export default function TextInput({ name, placeholder, required, formValues, set
 
   useEffect(() => {
     let currentHeight = field.current?.scrollHeight;
-    field.current?.scrollHeight < 56 ? currentHeight = 56 : null;
+    field.current?.scrollHeight < baseHeight ? currentHeight = baseHeight : null;
     setHeight(`${currentHeight}px`);
     setParentHeight(`${currentHeight}px`);
   }, [thisValue]);
@@ -34,8 +34,8 @@ export default function TextInput({ name, placeholder, required, formValues, set
   function handleKeyDown(e) {
     if (isNested) {
       let label = e.target.closest('label')
-      label.classList.add('selected');
-      label.control.checked = true;
+      label?.classList.add('selected');
+      label?.control.checked = true;
     }
 
     if (e.key === 'Enter') {
@@ -58,7 +58,10 @@ export default function TextInput({ name, placeholder, required, formValues, set
         ref={field}
         rows="1"
         className={styles.textField}
-        style={{ height: height }}
+        style={{
+          height: height,
+          ...(style)
+        }}
       />
       <ErrorIcon />
       {!isNested && <small>Por favor, preencha este campo</small>}
