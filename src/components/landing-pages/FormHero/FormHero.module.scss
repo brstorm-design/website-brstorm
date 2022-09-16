@@ -7,12 +7,20 @@
   textarea {
     border-image: none;
     border-color: colors.$gray-30;
+
+    &::placeholder {
+      visibility: visible;
+    }
   }
 
   .illust {
     position: absolute;
     right: 0;
     width: 53%;
+
+    @include mixins.md {
+      display: none;
+    }
   }
 }
 
@@ -24,11 +32,28 @@
     @include mixins.xl {
       white-space: normal;
     }
+
+    @include mixins.md {
+      white-space: break-spaces;
+      text-align: center;
+    }
+
+    @include mixins.sm {
+      white-space: normal;
+    }
+  }
+
+  :global(.gradient-bg) {
+    margin-left: 0;
   }
 
   h1 {
     margin-top: s.$spacer-24;
     margin-bottom: s.$spacer-40;
+
+    @include mixins.md {
+      margin-top: s.$spacer-16;
+    }
   }
 
   strong {
@@ -45,6 +70,14 @@
 
       &:last-of-type {
         margin-top: 20px;
+      }
+    }
+
+    @include mixins.md {
+      text-align: center;
+
+      & > div {
+        margin-right: auto;
       }
     }
   }

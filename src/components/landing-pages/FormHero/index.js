@@ -26,9 +26,9 @@ export default function FormHero() {
       <Illustration className={styles.illust} />
       <div className="container">
         <div className="row flex-nowrap">
-          <div className="col-5">
+          <div className="col-12 col-md-5">
             <div className={styles.formSection}>
-              <p className="overline">Tudo em um Único Lugar</p>
+              <p className="overline gradient-bg">Tudo em um Único Lugar</p>
               <h1>
                 Quem não é visto, {'\n'}
                 não é lembrado!
