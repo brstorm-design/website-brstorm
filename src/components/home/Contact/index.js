@@ -3,7 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { constructSequentialAnimation, handleIntersection } from 'src/modules/App';
 import styles from './Contact.module.scss';
 
-export default function Contact({ content, common }) {
+export default function Contact({ content, common, short }) {
+  console.log('short:', short);
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
@@ -32,22 +33,22 @@ export default function Contact({ content, common }) {
   }, [animations])
 
   return (
-    <div className={styles.section} id="contact">
+    <div className={styles.section + short ? ' short' : ''} id="contact">
       <div className="container">
         <div className="row" ref={element}>
           <div className="col-12 col-lg-10 mx-auto">
-            <div className={styles.contact}>
+            <div className={styles.contact} data-short={short ? true : null}>
               <div>
                 <h2>{content.title}</h2>
-                <p dangerouslySetInnerHTML={{ __html: content.paragraph }} />
+                {!short && <p dangerouslySetInnerHTML={{ __html: content.paragraph }} />}
               </div>
               <div>
                 <Link href="/form/contact">
                   <a className="btn large">
-                    {common.bookMeeting}
+                    {short ? 'Solicitar uma Proposta' : common.bookMeeting}
                   </a>
                 </Link>
-                <small dangerouslySetInnerHTML={{ __html: content.availableHours }} />
+                {!short && <small dangerouslySetInnerHTML={{ __html: content.availableHours }} />}
               </div>
             </div>
           </div>

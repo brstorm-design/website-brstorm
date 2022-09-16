@@ -69,4 +69,29 @@
       }
     }
   }
+
+  &[data-short] {
+    gap: 152px;
+
+    @include mixins.xl {
+      gap: 40px;
+    }
+
+    & > div:first-child {
+      h2 {
+        margin-bottom: 0;
+        white-space: break-spaces;
+
+        @include mixins.sm {
+          white-space: normal;
+        }
+      }
+    }
+
+    & > div:last-child {
+      a {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

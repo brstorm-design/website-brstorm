@@ -94,7 +94,7 @@ export default function PriceCircle() {
   }, []);
 
   return (
-    <div style={{ padding: '980px 0' }}>
+    <div style={{ /* padding: '980px 0' */ }}>
       {/* <div className="container">
         <div className="row">
           <div className="col-8 offset-2 p-0">
