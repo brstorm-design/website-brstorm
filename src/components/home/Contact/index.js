@@ -4,7 +4,6 @@ import { constructSequentialAnimation, handleIntersection } from 'src/modules/Ap
 import styles from './Contact.module.scss';
 
 export default function Contact({ content, common, short }) {
-  console.log('short:', short);
   const element = useRef(null);
   const refs = [element.current];
   const [animations, setAnimations] = useState(null);
