@@ -418,9 +418,9 @@
     <clipPath id="clip3_3832_1737">
       <path d="M1 796C1 794.895 1.89543 794 3 794H159C160.105 794 161 794.895 161 796V946H1V796Z" fill="white" />
     </clipPath>
-    <image id="image1_3832_1737" data-name="uidesigner.png" width="640" height="640" href="/images/landing-pages/web/b/uidesigner.png" />
-    <image id="image2_3832_1737" data-name="backend.png" width="85%" height="90%" href="/images/landing-pages/web/b/backend.png" />
-    <image id="image3_3832_1737" data-name="devops.png" width="452" height="453" href="/images/landing-pages/web/b/devops.png" />
-    <image id="image4_3832_1737" data-name="frontend.png" width="230%" height="110%" href="/images/landing-pages/web/b/frontend.png" />
+    <image id="image1_3832_1737" data-name="uidesigner.png" width="640" height="640" href="https://brstorm.design/images/landing-pages/web/b/uidesigner.png" />
+    <image id="image2_3832_1737" data-name="backend.png" width="85%" height="90%" href="https://brstorm.design/images/landing-pages/web/b/backend.png" />
+    <image id="image3_3832_1737" data-name="devops.png" width="452" height="453" href="https://brstorm.design/images/landing-pages/web/b/devops.png" />
+    <image id="image4_3832_1737" data-name="frontend.png" width="230%" height="110%" href="https://brstorm.design/images/landing-pages/web/b/frontend.png" />
   </defs>
 </svg>
