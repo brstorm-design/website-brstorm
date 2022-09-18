@@ -6,7 +6,7 @@
     $slideDelay: 0;
     @for $i from 1 through 5 {
       &:nth-of-type(#{$i}) > div {
-        animation: fade-up 4.5s #{$slideDelay}ms easings.$inOutQuad infinite alternate both;
+        animation: fade-up 4.5s #{$slideDelay}ms easings.$outCirc infinite alternate both;
       }
       $slideDelay: $slideDelay + 300;
     }
@@ -28,11 +28,14 @@
 @keyframes fade-up {
   0%, 30% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(56px);
+  }
+
+  80% {
+    opacity: 1;
   }
 
   60%, 100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }

@@ -4,6 +4,7 @@ import styles from './FormHero.module.scss';
 import Arrow from 'public/images/arrow-forward.svg';
 import Illustration from 'public/images/landing-pages/web/b/web-dev-illust.svg';
 import { useRouter } from 'next/router';
+import WebDevelopment from 'src/components/illustrations/WebDevelopment';
 
 export default function FormHero() {
   const initialValues = {
@@ -23,7 +24,9 @@ export default function FormHero() {
 
   return (
     <div className={styles.section} id="form-cover">
-      <Illustration className={styles.illust} />
+      <div className={styles.illust}>
+        <WebDevelopment />
+      </div>
       <div className="container">
         <div className="row flex-nowrap">
           <div className="col-12 col-md-5">

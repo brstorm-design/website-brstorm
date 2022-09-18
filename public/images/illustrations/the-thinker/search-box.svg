@@ -15,7 +15,7 @@
 </g>
 <g>
 <foreignObject x="12" y="0" width="100px" height="34" style="white-space: pre" font-family="Montserrat" font-size="7" >
-  <div id="search-text" xmlns="http://www.w3.org/1999/xhtml"><span className="details"></span></div>
+  <div id="search-text" class="searchText" xmlns="http://www.w3.org/1999/xhtml"><span className="details"></span></div>
 </foreignObject>
 </g>
 </g>

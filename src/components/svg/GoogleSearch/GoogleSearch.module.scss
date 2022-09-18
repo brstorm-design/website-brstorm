@@ -1,0 +1,59 @@
+@use "../../../styles/scss/colors";
+
+/* @use "../../../styles/lib/typed";
+$speeds: (
+  type: 0.15,
+  pause-typed: 2.5,
+  pause-deleted: 2.1,
+);
+$options: (
+  name: "type-search",
+  caret-width: 0.3ch,
+  caret-color: colors.$magenta,
+); */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+
+  /* :global(.searchText) {
+    @include typed.typed("Br.Storm Design", $speeds, $options);
+    font-size: 10px;
+    line-height: 18px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+  } */
+
+  :global {
+    #search-text {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      span {
+        &.writer-wrapper {
+          color: colors.$gray;
+          font-size: 10px;
+          line-height: 18px;
+        }
+        &.Typewriter__cursor {
+          color: colors.$magenta;
+        }
+      }
+    }
+  }
+
+  svg {
+    backdrop-filter: blur(5px);
+
+    &:nth-of-type(2) {
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    &:nth-of-type(3) {
+    }
+  }
+}

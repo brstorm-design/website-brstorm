@@ -1,0 +1,18 @@
+<svg width="188" height="160" viewBox="0 0 188 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Snippet" opacity="0.2">
+<g id="Code">
+<g id="&#60;Head&#62;{isDev ? null : ( &#60;&#62; &#60;GoogleAnalytics/&#62;&#60;TagManager/&#62; &#60;/&#62; )}&#60;link rel=&#34;preconnect&#34; href=&#34;https://brstorm.design&#34;/&#62;family=&#226;&#128;&#157;Inter:wght@300;400;500;600;700&#38;display=swap&#34;rel=&#34;style sheet&#34;/&#62; &#60;meta property= &#34;og:image&#34; content=&#34;/images/cover.png&#34;/&#62; &#60;meta name= &#34;description&#34;/&#62; &#60;/Head&#62;" opacity="0.75">
+<text fill="#59CBE8" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="120.926" y="43.34">preconnect</tspan><tspan x="42.9766" y="59.34">https://</tspan><tspan x="60.9648" y="75.34">Inter:wght@300;400;50</tspan><tspan x="7" y="91.34">0;600;700&#38;display=swap</tspan><tspan x="12.9961" y="123.34">og:image</tspan><tspan x="126.922" y="123.34">/images/</tspan><tspan x="7" y="139.34">cover.png</tspan><tspan x="12.9961" y="155.34">description</tspan></text>
+<text fill="#E93CAC" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="96.9414" y="11.34">null</tspan><tspan x="90.9453" y="59.34">brstorm.design</tspan></text>
+<text fill="#CCCCCC" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="42.9766" y="11.34">{isDev ? </tspan><tspan x="120.926" y="11.34"> : ( </tspan><tspan x="162.898" y="11.34"> </tspan><tspan x="12.9961" y="27.34">GoogleAnalytics</tspan><tspan x="120.926" y="27.34">TagManager</tspan><tspan x="36.9805" y="43.34"> )}</tspan><tspan x="84.9492" y="43.34"> rel=&#34;</tspan><tspan x="180.887" y="43.34">&#34; </tspan><tspan x="7" y="59.34">href=&#34;</tspan><tspan x="174.891" y="59.34">&#34;</tspan><tspan x="12.9961" y="75.34">family=&#x201d;</tspan><tspan x="138.914" y="91.34">&#34;rel=&#34;st</tspan><tspan x="7" y="107.34">yle sheet&#34;</tspan><tspan x="78.9531" y="107.34"> </tspan><tspan x="114.93" y="107.34"> property= </tspan><tspan x="7" y="123.34">&#34;</tspan><tspan x="60.9648" y="123.34">&#34; content=&#34;</tspan><tspan x="60.9648" y="139.34">&#34;</tspan><tspan x="78.9531" y="139.34"> </tspan><tspan x="114.93" y="139.34"> name= </tspan><tspan x="7" y="155.34">&#34;</tspan><tspan x="78.9531" y="155.34">&#34;</tspan><tspan x="96.9414" y="155.34"> </tspan></text>
+<text fill="#F5D67B" xml:space="preserve" style="white-space: pre" font-family="Fira Code" font-size="10" font-weight="450" letter-spacing="0em"><tspan x="7" y="11.34">&#60;Head&#62;</tspan><tspan x="150.906" y="11.34">&#60;&#62;</tspan><tspan x="7" y="27.34">&#60;</tspan><tspan x="102.938" y="27.34">/&#62;&#60;</tspan><tspan x="180.887" y="27.34">/</tspan><tspan x="7" y="43.34">&#62; &#60;/&#62;</tspan><tspan x="54.9688" y="43.34">&#60;link</tspan><tspan x="180.887" y="59.34">/</tspan><tspan x="7" y="75.34">&#62;</tspan><tspan x="66.9609" y="107.34">/&#62;</tspan><tspan x="84.9492" y="107.34">&#60;meta</tspan><tspan x="66.9609" y="139.34">/&#62;</tspan><tspan x="84.9492" y="139.34">&#60;meta</tspan><tspan x="84.9492" y="155.34">/&#62;</tspan><tspan x="102.938" y="155.34">&#60;/Head&#62;</tspan></text>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_105_145" x1="93.5" y1="0" x2="93.5" y2="160" gradientUnits="userSpaceOnUse">
+<stop stop-color="#010101"/>
+<stop offset="1" stop-color="#010101" stop-opacity="0.75"/>
+</linearGradient>
+</defs>
+</svg>
