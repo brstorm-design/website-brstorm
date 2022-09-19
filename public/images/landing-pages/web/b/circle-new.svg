@@ -96,8 +96,11 @@
     .is-inview #ActiveLines > line {
       stroke-dashoffset: 0;
     }
-    #Button {
+    .pricingButton {
       cursor: pointer;
+    }
+    .pricingButton:hover line {
+      stroke-dashoffset: 0;
     }
   </style>
   <g id="CostCircle">
@@ -353,7 +356,7 @@
             <tspan x="374.047" y="1000.59">R$</tspan>
           </text>
         </g>
-        <g id="Button">
+        <g id="Button" style="cursor:pointer;" class="pricingButton">
           <!-- <foreignObject x="407.5" y="1065.09" width="200" height="34">
             <div xmlns="http://www.w3.org/1999/xhtml">
               <a href="www.google.com">
@@ -369,7 +372,8 @@
               <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M594.5 1060C594.5 1059.8 594.579 1059.61 594.72 1059.47C594.86 1059.33 595.051 1059.25 595.25 1059.25H603.938L600.718 1056.03C600.577 1055.89 600.498 1055.7 600.498 1055.5C600.498 1055.3 600.577 1055.11 600.718 1054.97C600.859 1054.83 601.05 1054.75 601.249 1054.75C601.448 1054.75 601.639 1054.83 601.78 1054.97L606.279 1059.47C606.349 1059.54 606.404 1059.62 606.442 1059.71C606.48 1059.8 606.499 1059.9 606.499 1060C606.499 1060.1 606.48 1060.2 606.442 1060.29C606.404 1060.38 606.349 1060.46 606.279 1060.53L601.78 1065.03C601.639 1065.17 601.448 1065.25 601.249 1065.25C601.05 1065.25 600.859 1065.17 600.718 1065.03C600.577 1064.89 600.498 1064.7 600.498 1064.5C600.498 1064.3 600.577 1064.11 600.718 1063.97L603.938 1060.75H595.25C595.051 1060.75 594.86 1060.67 594.72 1060.53C594.579 1060.39 594.5 1060.2 594.5 1060Z" fill="#E93CAC" />
             </g>
           </g>
-          <path d="M608.5 1083H407.5V1085H608.5V1083Z" fill="#CCCCCC" mask="url(#path-62-inside-1_3832_1737)" />
+          <!-- <path d="M608.5 1083H407.5V1085H608.5V1083Z" fill="#CCCCCC" mask="url(#path-62-inside-1_3832_1737)" /> -->
+          <line xmlns="http://www.w3.org/2000/svg" stroke="#CCCCCC" stroke-width="2" x1="407.5" x2="607.5" y1="1080" y2="1080" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" stroke-linecap="square" style="transition: all 500ms ease;" />
         </g>
       </g>
     </g>

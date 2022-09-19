@@ -73,7 +73,7 @@ export default function PriceCircle() {
 
   /*** scroll on button click ***/
   useEffect(() => {
-    const button = document.getElementById('Button');
+    const buttons = document.querySelectorAll('.pricingButton');
     const handleClick = () => {
       if (scroll && !isMobile) {
         scroll.scrollTo('#pricing', { offset: -100 });
@@ -82,9 +82,13 @@ export default function PriceCircle() {
       }
     }
 
-    button.addEventListener('click', handleClick);
+    buttons.forEach(button => {
+      button.addEventListener('click', handleClick);
+    });
     return () => {
-      button.removeEventListener('click', handleClick);
+      buttons.forEach(button => {
+        button.removeEventListener('click', handleClick);
+      });
     }
   }, [scroll, isMobile]);
 
