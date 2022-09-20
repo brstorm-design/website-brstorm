@@ -12,31 +12,49 @@
       <rect width="285" height="180" rx="2" fill="url(#paint0_linear_2500_2637)" fill-opacity="0.75" />
       <rect x="0.375" y="0.375" width="284.25" height="179.25" rx="1.625" stroke="url(#paint1_linear_2500_2637)" stroke-width="0.75" />
     </g>
-    <foreignObject>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <svg height="180" width="285">
-          <rect id="Button" opacity="0.5" x="19.75" y="113.75" width="20.5" height="6.5" rx="0.5" stroke="#555555" stroke-width="0.5" />
+    <foreignObject class="block">
+      <div>
+        <svg>
+          <rect class="fadein" id="Button" opacity="0.5" x="19.75" y="113.75" width="20.5" height="6.5" rx="0.5" stroke="#555555" stroke-width="0.5" />
         </svg>
       </div>
     </foreignObject>
     <g id="Text">
-      <line pathLength="1" id="Line 111" opacity="0.75" x1="20" y1="85.625" x2="92" y2="85.625" stroke="#B6B6B6" stroke-width="0.75" />
-      <line pathLength="1" id="Line 113" opacity="0.8" x1="20" y1="93.625" x2="105" y2="93.625" stroke="#555555" stroke-width="0.75" />
-      <line pathLength="1" id="Line 112" opacity="0.6" x1="20" y1="101.625" x2="68.5714" y2="101.625" stroke="#555555" stroke-width="0.75" />
+      <foreignObject x="20" class="line">
+        <div style="width: max-content">
+          <svg style="width: 73px">
+            <line transform="translate(-20, 0)" pathLength="1" id="Line 111" opacity="0.75" x1="20" y1="85.625" x2="92" y2="85.625" stroke="#B6B6B6" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
+      <foreignObject x="20" class="line">
+        <div style="width: max-content">
+          <svg style="width: 86px">
+            <line transform="translate(-20, 0)" pathLength="1" id="Line 113" opacity="0.8" x1="20" y1="93.625" x2="105" y2="93.625" stroke="#555555" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
+      <foreignObject x="20" class="line">
+        <div style="width: max-content">
+          <svg style="width: 50px">
+            <line transform="translate(-20, 0)" pathLength="1" id="Line 112" opacity="0.6" x1="20" y1="101.625" x2="68.5714" y2="101.625" stroke="#555555" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
     </g>
-    <foreignObject>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <svg height="180" width="285">
-          <text id="Be Memorable" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="8" font-weight="300" letter-spacing="0em">
+    <foreignObject class="block">
+      <div>
+        <svg>
+          <text class="fadein" id="Be Memorable" fill="#B6B6B6" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="8" font-weight="300" letter-spacing="0em">
             <tspan x="20.125" y="69.868">Be Memorable</tspan>
           </text>
         </svg>
       </div>
     </foreignObject>
-    <foreignObject>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <svg height="180" width="285">
-          <g id="Placeholder">
+    <foreignObject class="block">
+      <div>
+        <svg>
+          <g class="fadein" id="Placeholder">
             <g id="Rectangle 28" filter="url(#filter1_bd_2500_2637)">
               <rect x="145" y="38" width="120" height="120" rx="2" fill="url(#paint2_linear_2500_2637)" fill-opacity="0.5" shape-rendering="crispEdges" />
               <rect x="145.375" y="38.375" width="119.25" height="119.25" rx="1.625" stroke="url(#paint3_linear_2500_2637)" stroke-width="0.75" shape-rendering="crispEdges" />
@@ -52,22 +70,46 @@
       </div>
     </foreignObject>
     <g id="Menu">
-      <line pathLength="1" id="Line 111_2" x1="172" y1="18.625" x2="184" y2="18.625" stroke="#555555" stroke-width="0.75" />
-      <line pathLength="1" id="Line 113_2" x1="149" y1="18.625" x2="161" y2="18.625" stroke="#555555" stroke-width="0.75" />
-      <line pathLength="1" id="Line 114" x1="125" y1="18.625" x2="137" y2="18.625" stroke="#555555" stroke-width="0.75" />
-      <line pathLength="1" id="Line 115" x1="101" y1="18.625" x2="113" y2="18.625" stroke="#555555" stroke-width="0.75" />
+      <foreignObject x="172" class="line">
+        <div style="width: max-content">
+          <svg style="width: 13px">
+            <line transform="translate(-172, 0)" pathLength="1" id="Line 111_2" x1="172" y1="18.625" x2="184" y2="18.625" stroke="#555555" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
+      <foreignObject x="149" class="line">
+        <div style="width: max-content">
+          <svg style="width: 13px">
+            <line transform="translate(-149, 0)" pathLength="1" id="Line 113_2" x1="149" y1="18.625" x2="161" y2="18.625" stroke="#555555" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
+      <foreignObject x="125" class="line">
+        <div style="width: max-content">
+          <svg style="width: 13px">
+            <line transform="translate(-125, 0)" pathLength="1" id="Line 114" x1="125" y1="18.625" x2="137" y2="18.625" stroke="#555555" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
+      <foreignObject x="101" class="line">
+        <div style="width: max-content">
+          <svg style="width: 13px">
+            <line transform="translate(-101, 0)" pathLength="1" id="Line 115" x1="101" y1="18.625" x2="113" y2="18.625" stroke="#555555" stroke-width="0.75" />
+          </svg>
+        </div>
+      </foreignObject>
     </g>
-    <foreignObject>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <svg height="180" width="285">
-          <rect id="Button_2" x="244.75" y="16.75" width="20.5" height="4.5" rx="0.75" stroke="#B6B6B6" stroke-width="0.5" />
+    <foreignObject class="block">
+      <div>
+        <svg>
+          <rect class="fadein" id="Button_2" x="244.75" y="16.75" width="20.5" height="4.5" rx="0.75" stroke="#B6B6B6" stroke-width="0.5" />
         </svg>
       </div>
     </foreignObject>
-    <foreignObject>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <svg height="180" width="285">
-          <g id="Logo">
+    <foreignObject class="block">
+      <div>
+        <svg>
+          <g class="fadein" id="Logo">
             <path id="Vector" d="M25.2744 20.3208C25.2744 21.3233 24.4858 21.9042 22.9738 21.9042H20V16.1035H22.8097C24.2472 16.1035 24.9897 16.7076 24.9897 17.6106C24.9948 17.8751 24.9251 18.1356 24.7888 18.3617C24.6526 18.5878 24.4554 18.7701 24.2203 18.8874C24.8628 19.0944 25.2744 19.5911 25.2744 20.3208ZM21.3221 17.1138V18.4877H22.6417C23.2906 18.4877 23.6432 18.2561 23.6432 17.7994C23.6432 17.3428 23.2906 17.1203 22.6417 17.1203L21.3221 17.1138ZM23.9356 20.1798C23.9356 19.6908 23.565 19.4592 22.8751 19.4592H21.3221V20.8926H22.8751C23.565 20.8926 23.9356 20.6778 23.9356 20.1798Z" fill="#B6B6B6" />
             <path id="Vector_2" d="M28.9381 17.3789V18.5729C28.8317 18.5639 28.7496 18.5561 28.6509 18.5561C27.9443 18.5561 27.4762 18.9442 27.4762 19.7993V21.9041H26.1938V17.4449H27.4172V18.0335C27.7314 17.6027 28.2572 17.3789 28.9381 17.3789Z" fill="#B6B6B6" />
             <path id="Vector_3" d="M31.0703 21.3337L31.5217 20.3221C32.0797 20.7116 32.7411 20.9225 33.4196 20.9275C34.2083 20.9275 34.5289 20.6623 34.5289 20.3053C34.5289 19.2199 31.1844 19.9663 31.1844 17.8111C31.1844 16.8254 31.9744 16 33.6081 16C34.3314 16 35.0713 16.1733 35.6048 16.5175L35.1944 17.5369C34.7111 17.2484 34.1619 17.0911 33.6004 17.0802C32.8118 17.0802 32.5079 17.379 32.5079 17.7438C32.5079 18.8124 35.851 18.075 35.851 20.2018C35.851 21.1707 35.0547 22 33.4145 22C32.5002 22.0038 31.5794 21.7296 31.0703 21.3337Z" fill="#B6B6B6" />
@@ -104,7 +146,7 @@
       <stop stop-color="#010101" />
       <stop offset="1" stop-color="#010101" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="paint1_linear_2500_2637" x1="142.5" y1="0" x2="142.5" y2="180" gradientUnits="userSpaceOnUse">
+    <linearGradient id="paint1_linear_2500_2637" x1="320.5" y1="-81.5" x2="232.5" y2="198" gradientUnits="userSpaceOnUse">
       <stop stop-color="#B6B6B6" />
       <stop offset="1" stop-color="#B6B6B6" stop-opacity="0" />
     </linearGradient>
