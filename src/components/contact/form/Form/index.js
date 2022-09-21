@@ -22,9 +22,7 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
       validateForm(values);
 
       const formElements = Array.from(document.querySelector('form').elements);
-      formElements.forEach(element => {
-        element.disabled = true;
-      });
+      formElements.forEach(element => element.disabled = true);
 
       setLoading(true);
 
@@ -32,7 +30,6 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
         method: 'POST',
         mode: 'no-cors',
         headers: {
-          'Accept': '*/*',
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: getQueryString(values),
@@ -80,7 +77,6 @@ export default function Form({ fields, submitText, values, setValues, handleFiel
           method: 'POST',
           mode: 'no-cors',
           headers: {
-            'Accept': '*/*',
             'Content-Type': 'application/x-www-form-urlencoded',
           },
           body: queryString,

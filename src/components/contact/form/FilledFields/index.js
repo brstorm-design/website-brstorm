@@ -2,14 +2,24 @@ import React from 'react';
 import styles from './FilledFields.module.scss';
 
 export default function FilledFields({ values }) {
-  const numberOfFields = Object.getOwnPropertyNames(values).length;
+  const numberOfFields = 7 //Object.getOwnPropertyNames(values).length;
 
   function countFilledFields() {
     let count = 0;
     for (const field in values) {
-      let ignore = (field === 'entry.264212494' || field === 'entry.2132000314' || field === 'entry.41791649'); // *
+      let ignore = (
+        field === 'entry.264212494' ||
+        field === 'entry.2132000314' ||
+        field === 'entry.41791649' ||
+        field === 'Instagram' ||
+        field === 'Facebook' ||
+        field === 'Website' ||
+        field === 'Outro'
+      ); // *
       if (typeof values[field] === 'string') {
-        values[field] && !ignore ? count += 1 : null;
+        if (values[field] && !ignore) {
+          count += 1;
+        }
       } else {
         let optionsArray = [];
         for (const subField in values[field]) {
@@ -21,11 +31,11 @@ export default function FilledFields({ values }) {
     }
     return count;
   }
-  // * ignored fields for counting: 'email', 'whatsapp', 'other'
+  // * ignored fields for counting: 'email', 'whatsapp', 'other'; 'instagram', 'facebook', 'site', 'other';
 
   return (
     <div className={styles.filledFields}>
-      <small><strong>{countFilledFields()}</strong> / {numberOfFields - 3}</small>
+      <small><strong>{countFilledFields()}</strong> / {numberOfFields}</small>
       <small>Campos Respondidos</small>
     </div>
   )

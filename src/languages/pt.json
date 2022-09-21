@@ -268,13 +268,50 @@
       {
         "title": "Já possui redes sociais ou site? Se sim, qual?",
         "sectionName": "yourContent",
+        "required": true,
         "helperText": "Tem algum lugar onde possamos conhecer mais sobre o seu negócio?",
         "attributes": {
-          "name": "entry.130241094",
-          "required": true,
-          "type": "text",
-          "placeholder": "Ex.: Instagram: @brstorm.design"
-        }
+          "name": "yourContent",
+          "type": "checkbox"
+        },
+        "options": [
+          {
+            "name": "Instagram",
+            "value": "instagram",
+            "collapsedContent": {
+              "name": "Instagram",
+              "type": "text",
+              "placeholder": "Ex.: @brstorm.design"
+            }
+          },
+          {
+            "name": "Facebook",
+            "value": "facebook",
+            "collapsedContent": {
+              "name": "Facebook",
+              "type": "text",
+              "placeholder": "Ex.: facebook.com/sua-pagina"
+            }
+          },
+          {
+            "name": "Website",
+            "value": "website",
+            "collapsedContent": {
+              "name": "Website",
+              "type": "text",
+              "placeholder": "Ex.: brstorm.design"
+            }
+          },
+          {
+            "name": "Outro",
+            "value": "another",
+            "collapsedContent": {
+              "name": "Outro",
+              "type": "text",
+              "placeholder": "Ex.: dribbble.com/brstorm-design"
+            }
+          }
+        ]
       },
       {
         "title": "Qual o tamanho do seu negócio?",

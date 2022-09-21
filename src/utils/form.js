@@ -28,6 +28,14 @@ export function getQueryString(object) {
   const data = { ...object };
   const params = new URLSearchParams();
 
+  for (const key in data) {
+    if (key === 'Instagram' || key === 'Facebook' || key === 'Website' || key === 'Outro') {
+      if (data[key]) {
+        data['entry.130241094'] += `${key}: "${data[key]}"; `;
+      }
+    }
+  }
+
   for (let key in data) {
     let value = data[key];
     if (key.includes('entry')) {

@@ -11,7 +11,15 @@ export default function TextInput({ name, placeholder, required, formValues, set
   const field = useRef(null);
 
   // if name is 'email', 'whatsapp' or 'other':
-  const isNested = (name === 'entry.264212494' || name === 'entry.2132000314' || name === 'entry.41791649');
+  const isNested = (
+    name === 'entry.264212494' ||
+    name === 'entry.2132000314' ||
+    name === 'entry.41791649' ||
+    name === 'Instagram' ||
+    name === 'Facebook' ||
+    name === 'Website' ||
+    name === 'Outro'
+  );
 
   function handleChange(e) {
     e.target.closest('section')?.classList.remove('error');

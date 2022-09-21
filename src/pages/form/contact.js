@@ -20,6 +20,10 @@ export default function ContactForm({ content, common, footer }) {
     'entry.1868660285': '', // business name
     'entry.948784691': '', // details
     'entry.130241094': '', // your content
+    Instagram: '',
+    Facebook: '',
+    Website: '',
+    Outro: '',
     'entry.1655813198': '', // business size
     'entry.1765316974': { // service
       Marca: false,
@@ -28,11 +32,11 @@ export default function ContactForm({ content, common, footer }) {
       Naming: false,
       Estratégia: false,
     },
-    yourContact: {
+    /* yourContact: {
       email: false,
       phone: false,
       otherContact: false,
-    },
+    }, */
     'entry.264212494': '', // email
     'entry.2132000314': '', // whatsapp
     'entry.41791649': '', // other
