@@ -1,9 +1,9 @@
 <svg width="285" height="180" viewBox="0 0 285 180" fill="none" xmlns="http://www.w3.org/2000/svg" id="desktop-ui">
 
   <style>
-    #desktop-ui foreignObject {
-      width: 100%;
-      height: 100%;
+    #desktop-ui foreignObject, #desktop-ui div, #desktop-ui g {
+      width: inherit;
+      height: inherit;
     }
   </style>
 

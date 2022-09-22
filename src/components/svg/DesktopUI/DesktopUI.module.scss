@@ -1,6 +1,10 @@
 @use "../../../styles/scss/easings";
 
 .interface {
+  svg {
+    width: inherit;
+    height: inherit;
+  }
 
   foreignObject {
     // sliding elements animation

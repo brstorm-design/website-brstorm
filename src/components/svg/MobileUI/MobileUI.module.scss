@@ -1,6 +1,11 @@
 @use "../../../styles/scss/easings";
 
 .interface {
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+
   foreignObject {
     // sliding elements animation
     $slideDelay: 0;
@@ -26,7 +31,8 @@
 }
 
 @keyframes fade-up {
-  0%, 30% {
+  0%,
+  30% {
     opacity: 0;
     transform: translateY(56px);
   }
@@ -35,17 +41,20 @@
     opacity: 1;
   }
 
-  60%, 100% {
+  60%,
+  100% {
     transform: translateY(0);
   }
 }
 
 @keyframes write-line {
-  0%, 40% {
+  0%,
+  40% {
     stroke-dashoffset: 1;
   }
 
-  60%, 100% {
+  60%,
+  100% {
     stroke-dashoffset: 0;
   }
 }

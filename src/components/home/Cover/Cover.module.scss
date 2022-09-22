@@ -21,8 +21,11 @@
     .container {
       position: relative;
 
-      & > img,
-      & > svg {
+      & > img {
+        position: absolute;
+      }
+
+      & > .track {
         position: absolute;
         transition: transform 200ms ease-out;
 
