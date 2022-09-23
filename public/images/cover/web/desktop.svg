@@ -1,9 +1,13 @@
 <svg width="285" height="180" viewBox="0 0 285 180" fill="none" xmlns="http://www.w3.org/2000/svg" id="desktop-ui">
 
   <style>
-    #desktop-ui foreignObject, #desktop-ui div, #desktop-ui g {
+    #desktop-ui, #desktop-ui foreignObject, #desktop-ui div, #desktop-ui svg, #desktop-ui g {
       width: inherit;
       height: inherit;
+    }
+
+    #desktop-ui {
+      backdrop-filter: blur(4px);
     }
   </style>
 

@@ -1,11 +1,6 @@
 @use "../../../styles/scss/easings";
 
 .interface {
-  svg {
-    width: inherit;
-    height: inherit;
-  }
-
   foreignObject {
     // sliding elements animation
     $slideDelay: 0;
@@ -25,8 +20,6 @@
 
   :global(.line) > div {
     animation: write-line 4.5s 2s ease infinite alternate;
-
-    /* animation: write-line 1.5s 0s ease infinite alternate; */
   }
 }
 

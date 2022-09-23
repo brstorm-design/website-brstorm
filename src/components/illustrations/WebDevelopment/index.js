@@ -23,7 +23,7 @@ export default function WebDevelopment() {
       </div>
 
       <div className={styles.desktop}>
-        <DesktopUI style={{width: '100%', height: '100%'}} />
+        <DesktopUI width={580} height={366} />
       </div>
 
       <div className={styles.snippet}>

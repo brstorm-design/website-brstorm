@@ -28,14 +28,13 @@
 .mobile {
   top: 185px;
   right: 5px;
-
-  margin-right: -30px;
 }
 
 .desktop {
   top: 0;
   left: 52px;
   width: 580px;
+  z-index: -1;
 
   svg {
     width: 100%;
@@ -46,6 +45,7 @@
 .snippet {
   top: 0;
   right: 0;
+  z-index: -2;
 }
 
 .tools {

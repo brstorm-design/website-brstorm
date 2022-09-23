@@ -1,16 +1,11 @@
 @use "../../../styles/scss/easings";
 
 .interface {
-  svg {
-    width: inherit;
-    height: inherit;
-  }
-
   foreignObject {
     // sliding elements animation
     $slideDelay: 0;
     @for $i from 1 through 5 {
-      &:nth-of-type(#{$i}) > div {
+      &:global(.block):nth-of-type(#{$i}) > div {
         animation: fade-up 4.5s #{$slideDelay}ms easings.$outCirc infinite alternate both;
       }
       $slideDelay: $slideDelay + 300;
@@ -23,9 +18,7 @@
     }
   }
 
-  line {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
+  :global(.line) > div {
     animation: write-line 4.5s 2s ease infinite alternate;
   }
 }
@@ -50,11 +43,11 @@
 @keyframes write-line {
   0%,
   40% {
-    stroke-dashoffset: 1;
+    transform: translate3d(-100%, 0, 0);
   }
 
   60%,
   100% {
-    stroke-dashoffset: 0;
+    transform: translate3d(0, 0, 0);
   }
 }
