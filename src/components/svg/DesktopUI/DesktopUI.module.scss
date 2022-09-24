@@ -6,7 +6,7 @@
     $slideDelay: 0;
     @for $i from 1 through 5 {
       &:global(.block):nth-of-type(#{$i}) > div {
-        animation: fade-up 4.5s #{$slideDelay}ms easings.$inOutQuad infinite alternate both;
+        animation: fade-up 4.5s #{$slideDelay + 1000}ms easings.$inOutQuad infinite alternate both;
       }
       $slideDelay: $slideDelay + 300;
     }
@@ -19,7 +19,7 @@
   }
 
   :global(.line) > div {
-    animation: write-line 4.5s 2s ease infinite alternate;
+    animation: write-line 4.5s 3s ease infinite alternate both;
   }
 }
 
