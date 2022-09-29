@@ -4,6 +4,7 @@ import PriceCircle from 'src/components/landing-pages/PriceCircle';
 import DesktopUI from 'src/components/svg/DesktopUI';
 import GoogleSearch from 'src/components/svg/GoogleSearch';
 import MobileUI from 'src/components/svg/MobileUI';
+import Pin from 'src/components/svg/Pin';
 
 export default function PriceCirlcePage() {
 
@@ -19,7 +20,9 @@ export default function PriceCirlcePage() {
     }}
       className="main"
     >
-      <WebDevelopment />
+      <Pin fill="magenta" />
+      {/* <WebDevelopment /> */}
+      {/* <GoogleSearch /> */}
       {/* <div className="d-flex">
         <MobileUI width={500} height={500} />
         <DesktopUI width={500} height={500} />

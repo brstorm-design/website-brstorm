@@ -1,0 +1,9 @@
+@use "../../../styles/scss/keyframes";
+@use "../../../styles/scss/mixins";
+@use "../../../styles/scss/colors";
+
+.pin {
+  display: flex;
+  width: max-content;
+  z-index: 0;
+}

@@ -31,15 +31,19 @@ export default function Illustrations() {
         <Head>
           <title>Illustrations</title>
         </Head>
+
         <div style={style} onMouseMove={e => setDavidMousePos(getTranslateValue(e, [40]))}>
           <David forwardedRef={davidRef} translate={davidMousePos} />
         </div>
+
         <div style={style} onMouseMove={e => setVictoryMousePos(getTranslateValue(e, [-40, 40]))}>
           <Samothrace translateValues={victoryMousePos} />
         </div>
+
         <div style={style}>
           <Thinker />
         </div>
+
         <div style={style}>
           <CMS />
         </div>

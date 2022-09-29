@@ -7,9 +7,9 @@ import samothrace from 'public/images/whatWeDo/samothrace.png';
 import Pattern from 'public/images/whatWeDo/pattern.svg';
 import GrayScale from 'public/images/whatWeDo/grayscale.svg';
 import Picker from 'public/images/whatWeDo/picker.svg';
-import Pin from 'public/images/whatWeDo/pin.svg';
 import Tech from 'public/images/whatWeDo/tech-creativity.svg';
 import { rootPath } from 'src/utils/env';
+import Pin from 'src/components/svg/Pin';
 
 export default function Samothrace({ translateValues }) {
   const container = useRef(null);
@@ -41,7 +41,7 @@ export default function Samothrace({ translateValues }) {
         <GrayScale />
         <Picker />
         <Tech />
-        <Pin />
+        <Pin className="victory-pin" />
         <div>
           <code>
             <span>&lt;title&gt;</span>

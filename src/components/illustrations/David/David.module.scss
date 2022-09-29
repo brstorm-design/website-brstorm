@@ -2,7 +2,6 @@
 @use "../../../styles/scss/mixins";
 @use "../../../styles/scss/keyframes";
 
-@include mixins.pin-pulse(colors.$magenta);
 @include mixins.stroke-fill-animation(words-animation, false);
 
 .image {
@@ -42,7 +41,7 @@
       position: relative;
     }
     // color
-    svg {
+    :global(.color-bar) {
       position: absolute;
       top: 60px;
       left: 260px;
@@ -53,13 +52,13 @@
       }
     }
     // seal
-    img:nth-last-of-type(5) {
+    img:nth-last-of-type(4) {
       top: 0;
       right: 0;
       animation: rotate 10s linear infinite;
     }
     // comment
-    img:nth-last-of-type(4) {
+    img:nth-last-of-type(3) {
       bottom: 25px;
       right: -65px;
       @include mixins.md {
@@ -67,16 +66,20 @@
       }
     }
     // pattern
-    img:nth-last-of-type(3) {
+    img:nth-last-of-type(2) {
       bottom: 175px;
       left: -25px;
     }
     // pin
-    img:nth-last-of-type(2) {
+    :global(.david-pin) {
+      @include mixins.pin-pulse(colors.$magenta);
+      color: colors.$magenta;
+
+      position: absolute;
       bottom: 135px;
       right: 145px;
       border-radius: 50%;
-      animation: pin-pulse 2s infinite;
+
       @include mixins.md {
         display: none;
       }

@@ -5,6 +5,7 @@ import styles from './David.module.scss';
 import david from 'public/images/purpose/david.png';
 import Words from 'public/images/purpose/words.svg';
 import { rootPath } from 'src/utils/env';
+import Pin from 'src/components/svg/Pin';
 
 export default function David({ forwardedRef, translate }) {
 
@@ -44,7 +45,7 @@ export default function David({ forwardedRef, translate }) {
     <div className={styles.image}>
       <div ref={forwardedRef} id="purpose-image">
         <Image placeholder="blur" src={david} alt="David" />
-        <svg id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="color-bar" id="color" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g style={{ mixBlendMode: 'overlay' }}>
             <rect width="150" height="40" fill="#E93CAC" />
           </g>
@@ -55,7 +56,7 @@ export default function David({ forwardedRef, translate }) {
         <img src={`${rootPath}/images/purpose/seal.svg`} alt="seal" />
         <img src={`${rootPath}/images/purpose/comment-michelangelo.svg`} alt="comment" />
         <img src={`${rootPath}/images/purpose/pattern.svg`} alt="pattern" />
-        <img src={`${rootPath}/images/purpose/pin.svg`} alt="pin" />
+        <Pin className="david-pin" />
         <img src={`${rootPath}/images/purpose/exploring-the-infinite.svg`} alt="writing" />
         <Words />
       </div>
