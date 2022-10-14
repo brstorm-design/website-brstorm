@@ -913,7 +913,7 @@
         "title": "A Melhor Escolha \npara o Seu Negócio",
         "text": "Não importa o tamanho ou a fase do seu negócio, <strong>nós certamente \npodemos lhe ajudar</strong>, escolha o pacote que lhe atende.",
         "note": "Observação: Para saber mais sobre nossos prazos e condições de pagamento entre em contato conosco.",
-        "valueText": "Investimento a partir de:",
+        "valueText": "Investimento de:",
         "packages": [
           {
             "name": "Single",
@@ -966,7 +966,7 @@
           },
           {
             "name": "Business",
-            "value": "R$2997,00",
+            "value": "R$3K - R$5K",
             "shortText": "Institucional",
             "longText": "Melhor opção para ser reconhecido, lembrado e fortalecer a imagem da sua empresa, esse pacote inclui múltiplos conteúdos, tais como:",
             "included": [

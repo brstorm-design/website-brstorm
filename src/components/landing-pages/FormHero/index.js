@@ -6,7 +6,7 @@ import Illustration from 'public/images/landing-pages/web/b/web-dev-illust.svg';
 import { useRouter } from 'next/router';
 import WebDevelopment from 'src/components/illustrations/WebDevelopment';
 
-export default function FormHero() {
+export default function FormHero({ overline, title, showForm }) {
   const initialValues = {
     name: '',
     email: '',
@@ -41,30 +41,34 @@ export default function FormHero() {
                 para <strong>gerar resultados para seu negócio</strong>. {'\n'}
                 Que tal começar seu projeto agora mesmo? {'\n'}
               </p>
-              <form onSubmit={handleSubmit}>
-                <TextInput
-                  baseHeight={48}
-                  formValues={values}
-                  setFormValue={setValues}
-                  name={Object.keys(initialValues)[0]}
-                  placeholder="Nome"
-                  required
-                  style={{ padding: '13px 16px', fontSize: '14px' }}
-                />
-                <TextInput
-                  baseHeight={48}
-                  formValues={values}
-                  setFormValue={setValues}
-                  name={Object.keys(initialValues)[1]}
-                  placeholder="E-mail para Contato"
-                  required
-                  style={{ padding: '13px 16px', fontSize: '14px' }}
-                />
-                <button type="submit" className="btn">
-                  Começar Projeto
-                  <Arrow />
-                </button>
-              </form>
+              {
+                showForm && (
+                  <form onSubmit={handleSubmit}>
+                    <TextInput
+                      baseHeight={48}
+                      formValues={values}
+                      setFormValue={setValues}
+                      name={Object.keys(initialValues)[0]}
+                      placeholder="Nome"
+                      required
+                      style={{ padding: '13px 16px', fontSize: '14px' }}
+                    />
+                    <TextInput
+                      baseHeight={48}
+                      formValues={values}
+                      setFormValue={setValues}
+                      name={Object.keys(initialValues)[1]}
+                      placeholder="E-mail para Contato"
+                      required
+                      style={{ padding: '13px 16px', fontSize: '14px' }}
+                    />
+                    <button type="submit" className="btn">
+                      Começar Projeto
+                      <Arrow />
+                    </button>
+                  </form>
+                )
+              }
             </div>
           </div>
         </div>

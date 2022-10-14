@@ -41,10 +41,10 @@ export default function GoldenPrice({ content, service }) {
       <div className="main" data-scroll-section>
         <main>
           <Section pt="200 190">
-            <FormHero showForm />
+            <FormHero />
           </Section>
 
-          <Section mt="80 120">
+          <Section mt="200 120">
             <PriceCircle />
           </Section>
 
