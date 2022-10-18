@@ -1,10 +1,8 @@
 @keyframes ani {
   from {
-    opacity: 0;
-    transform: rotateX(200deg);
+    transform: rotateX(0deg);
   }
   to {
-    opacity: 1;
     transform: rotateX(360deg);
   }
 }
@@ -13,34 +11,36 @@
   display: flex;
   gap: 2.2%;
   width: 500px;
+  perspective: 750px;
+  transform-style: preserve-3d;
 }
 
 .char {
   position: relative;
-  perspective: 300px;
-  transform-style: preserve-3d;
+  transition: width 300ms ease-out;
+  transform-origin: center center -80px;
+  backface-visibility: hidden;
 
-  /* animation: ani 1600ms ease-in-out infinite alternate; */
+  &:first-child {
+    /* width: 0%;
+    width: 140px; */
+    /* & > div {
+      width: 0%;
+      width: 100%;
+    } */
+  }
 
   & > div {
     display: none;
-    transform-origin: center center -150px;
 
     &.visible {
       display: flex;
-      backface-visibility: hidden;
-      animation: ani 0.5s both;
     }
   }
 
   svg {
     width: 100%;
     height: auto;
-    position: relative;
-
-    &.visible {
-      display: flex;
-    }
 
     /* &:not(:nth-child(3)) {
       display: none;
