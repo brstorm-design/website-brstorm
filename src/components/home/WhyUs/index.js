@@ -70,7 +70,7 @@ export default function WhyUs({ content, pitch, service }) {
   ];
 
   return (
-    <div className={styles.section} id="details">
+    <div className={styles.section} id="benefits">
       <div className="container">
         <div className={styles.title}>
           <h2>{content.title}</h2>

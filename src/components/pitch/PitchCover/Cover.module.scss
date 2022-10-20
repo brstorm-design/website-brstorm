@@ -2,8 +2,6 @@
 @use "../../../styles/scss/mixins";
 
 .section {
-  padding-top: calc(80px + 120px);
-
   @include mixins.lg {
     display: block;
   }
@@ -23,8 +21,9 @@
   }
 
   .textContent {
-    margin-bottom: 160px;
     color: colors.$darkGray;
+    position: relative;
+    z-index: 1;
 
     @include mixins.md {
       white-space: break-spaces;
@@ -39,7 +38,7 @@
   overflow: hidden;
   width: calc(100% + (8.228% * 2));
   left: -8.228%;
-  top: -175px;
+  margin-top: -60px;
 
   & > div {
     width: calc(21.528% + 12px);

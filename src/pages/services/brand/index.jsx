@@ -49,31 +49,31 @@ export default function LandingPage({ content, service }) {
 
       <div className="main" data-scroll-section>
         <main>
-          <Section mt={0}>
+          <Section pt="220">
             <PitchCover content={landing.cover} common={common} />
           </Section>
 
-          <Section>
+          <Section mt="165 180">
             <Details content={landing.details} />
           </Section>
 
-          <Section>
+          <Section mt="235 200">
             <Projects layout="scroll" content={landing.projects} allProjects={fullPortfolio[service.jsonName]} common={common} />
           </Section>
 
-          <Section mb={52}>
+          <Section mt="240 200">
             <Methodology content={landing.method} />
           </Section>
 
-          <Section>
+          <Section mt="200">
             <WhyUs content={home.whyUs} />
           </Section>
 
-          <Section>
+          <Section mt="200">
             <Testimonials content={home.testimonials} />
           </Section>
-          
-          <Section mt="160 160" mb="120 120">
+
+          <Section mt="200" mb="120 200">
             <Contact content={content.pitch.contact} common={common} />
           </Section>
         </main>

@@ -41,7 +41,7 @@ export default function PitchCover({ content, common }) {
             <div className={styles.textContent}>
               <h1>{'Let your brand \nspeak for you!'}</h1>
               <h3>{"Your customer's first contact \nwith you is your brand"}</h3>
-              <Link href="#contact" scroll={false}>
+              <Link href="#details" scroll={false}>
                 <a className="btn large ghost">
                   {common.seeMore}
                   <Arrow />

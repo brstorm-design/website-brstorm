@@ -16,10 +16,6 @@
       position: relative;
     }
   }
-
-  @include mixins.md {
-    margin-top: 100px;
-  }
 }
 
 .footer {

@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react';
-import WebDevelopment from 'src/components/illustrations/WebDevelopment';
-import PriceCircle from 'src/components/landing-pages/PriceCircle';
-import DesktopUI from 'src/components/svg/DesktopUI';
-import GoogleSearch from 'src/components/svg/GoogleSearch';
-import MobileUI from 'src/components/svg/MobileUI';
-import Pin from 'src/components/svg/Pin';
+import Type from 'src/components/illustrations/Type';
+import Arrow from 'public/images/arrow-down.svg';
 
 export default function PriceCirlcePage() {
 
   useEffect(() => {
-    document.body.classList.add('page');
+    document.body.classList.add('page')
   }, []);
 
   return (
@@ -20,13 +16,7 @@ export default function PriceCirlcePage() {
     }}
       className="main"
     >
-      <Pin fill="magenta" />
-      {/* <WebDevelopment /> */}
-      {/* <GoogleSearch /> */}
-      {/* <div className="d-flex">
-        <MobileUI width={500} height={500} />
-        <DesktopUI width={500} height={500} />
-      </div> */}
+      <Type />
     </div>
   )
 }
