@@ -20,8 +20,8 @@ export default function Details({ content }) {
           </div>
           <div className="col-12 col-lg-6 offset-lg-1 d-flex align-items-center">
             <article>
-              <h1>{content.title}</h1>
-              <h3>{content.subtitle}</h3>
+              <p className="overline gradient-bg">{content.subtitle}</p>
+              <h2>{content.title}</h2>
               <div dangerouslySetInnerHTML={{ __html: content.text }} />
             </article>
           </div>

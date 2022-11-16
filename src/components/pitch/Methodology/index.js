@@ -51,8 +51,8 @@ export default function Methodology({ content, pitch, service }) {
                   <Samothrace translateValues={mousePosition} />
                 ) : (
                   <div>
-                    <h3>{content.subtitle}</h3>
-                    <h1>{content.title}</h1>
+                    <p className="overline gradient-bg">{content.subtitle}</p>
+                    <h2>{content.title}</h2>
                     <div dangerouslySetInnerHTML={{ __html: content.text }} />
                   </div>
                 )

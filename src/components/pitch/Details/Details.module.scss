@@ -2,12 +2,12 @@
 
 .section {
   article {
-    h1 {
-      margin-top: 60px;
+    h2 {
       margin-bottom: 40px;
     }
-    h3 {
-      margin: 0;
+    & > p {
+      margin-bottom: 16px;
+      margin-left: 0;
     }
     div {
       margin-top: 35px;
@@ -16,5 +16,10 @@
 
   @include mixins.md {
     margin-top: 150px;
+  }
+  @include mixins.lg {
+    article {
+      margin-top: 64px;
+    }
   }
 }
