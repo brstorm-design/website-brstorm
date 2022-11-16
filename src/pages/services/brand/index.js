@@ -74,7 +74,10 @@ export default function LandingPage({ content, service }) {
       <Section data-scroll-section mt="200" mb="120 200">
         <Contact content={content.pitch.contact} common={common} />
       </Section>
-      {/* <Footer content={home.footer} common={common} /> */}
+      
+      <Section data-scroll-section>
+        <Footer content={home.footer} common={common} />
+      </Section>
     </>
   )
 }
